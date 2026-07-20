@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Orbitron", "Segoe UI", sans-serif;
+  --font-body: "Rajdhani", "Segoe UI", sans-serif;
+  --color-neon-cyan: #22d3ee;
+  --color-neon-lime: #a3e635;
+  --color-neon-pink: #f472b6;
+  --color-neon-amber: #fbbf24;
+  --color-arcade-bg: #020617;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    color: #e2e8f0;
+    background:
+      radial-gradient(ellipse 90% 50% at 50% -15%, rgba(34, 211, 238, 0.14), transparent),
+      radial-gradient(ellipse 50% 40% at 100% 100%, rgba(245, 158, 11, 0.08), transparent),
+      #020617;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root {
+    min-height: 100svh;
+  }
+
+  .math-text .katex {
+    font-size: 1.05em;
+    color: inherit;
+  }
+
+  .math-text .math-inline {
+    display: inline-block;
+    margin: 0 0.1em;
+    vertical-align: middle;
+  }
+}
