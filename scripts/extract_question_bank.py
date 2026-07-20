@@ -82,6 +82,17 @@ def html_to_text(fragment: str) -> str:
     s = re.sub(r" *\n *", "\n", s)
     s = re.sub(r"\n{3,}", "\n\n", s)
     s = re.sub(r" +", " ", s)
+
+    # cases/matrix: lone "\ " between rows was meant to be LaTeX "\\"
+    def fix_env(m: re.Match[str]) -> str:
+        body = re.sub(r"(?<!\\)\\ (?=\S)", r"\\\\ ", m.group(2))
+        return f"{m.group(1)}{body}{m.group(3)}"
+
+    s = re.sub(
+        r"(\\begin\{(?:cases|matrix|pmatrix|bmatrix|vmatrix|array)\})([\s\S]*?)(\\end\{(?:cases|matrix|pmatrix|bmatrix|vmatrix|array)\})",
+        fix_env,
+        s,
+    )
     return s.strip()
 
 

@@ -12,7 +12,6 @@ import {
   PartyPopper,
   XCircle,
   Keyboard,
-  ListChecks,
 } from 'lucide-react'
 import { QUESTION_BANK } from './data/questions'
 import MathText from './components/MathText'
@@ -351,149 +350,123 @@ export default function App() {
 
   return (
     <div
-      className={`min-h-svh px-4 py-6 text-slate-100 ${shaking ? 'animate-shake' : ''}`}
+      className={`flex h-svh flex-col overflow-hidden px-3 py-2 text-slate-100 ${shaking ? 'animate-shake' : ''}`}
     >
-      <div className="mx-auto flex w-full max-w-xl flex-col gap-5">
+      <div className="mx-auto flex h-full w-full max-w-lg min-h-0 flex-col gap-2">
         {/* Top Bar */}
-        <header className="sticky top-0 z-20 -mx-4 border-b border-slate-800/80 bg-slate-950/85 px-4 py-4 backdrop-blur-md">
-          <div className="mx-auto flex max-w-xl items-center justify-between gap-3">
+        <header className="flex shrink-0 items-center justify-between gap-2">
+          <div className="flex min-w-0 items-center gap-2">
+            <h1 className="font-display shrink-0 text-sm font-extrabold tracking-[0.14em] text-cyan-300">
+              MATH WAGER
+            </h1>
             <div
-              className={`flex items-center gap-3 rounded-2xl border border-amber-500/30 bg-slate-900 px-4 py-3 ${
+              className={`flex items-center gap-1.5 rounded-lg border border-amber-500/30 bg-slate-900 px-2 py-1 ${
                 goldPulse ? 'animate-gold-pop' : ''
               }`}
             >
-              <Coins className="size-7 text-amber-400" />
-              <div className="leading-tight">
-                <p className="font-body text-sm tracking-wide text-slate-400">
-                  我的總資產
-                </p>
-                <p className="font-display text-2xl font-bold text-amber-400">
-                  ${formatGold(displayWallet)}{' '}
-                  <span className="text-sm font-semibold text-amber-500/80">
-                    Gold
-                  </span>
-                </p>
-              </div>
+              <Coins className="size-4 text-amber-400" />
+              <p className="font-display text-sm font-bold text-amber-400">
+                ${formatGold(displayWallet)}
+              </p>
             </div>
+          </div>
 
-            <div className="flex items-center gap-3 rounded-2xl border border-rose-500/30 bg-slate-900 px-4 py-3">
-              <Flame className="size-7 text-orange-400" />
-              <div className="leading-tight text-right">
-                <p className="font-body text-sm text-slate-400">連勝</p>
-                <p className="font-display text-xl font-bold text-orange-300">
-                  {streak}{' '}
-                  <span className="text-sm font-semibold text-slate-400">
-                    (x{multiplier.toFixed(1)})
-                  </span>
-                </p>
-              </div>
-            </div>
+          <div className="flex items-center gap-1.5 rounded-lg border border-rose-500/30 bg-slate-900 px-2 py-1">
+            <Flame className="size-4 text-orange-400" />
+            <p className="font-display text-sm font-bold text-orange-300">
+              {streak}
+              <span className="ml-1 text-[11px] font-semibold text-slate-400">
+                x{multiplier.toFixed(1)}
+              </span>
+            </p>
           </div>
         </header>
 
-        <div className="text-center">
-          <h1 className="font-display text-3xl font-extrabold tracking-[0.18em] text-cyan-300 drop-shadow-[0_0_18px_rgba(34,211,238,0.35)] md:text-4xl">
-            MATH WAGER
-          </h1>
-          <p className="mt-2 font-body text-lg text-slate-400">
-            下注 · 解題 · 收割
-          </p>
-        </div>
-
-        {/* Question Card */}
-        <section className="rounded-3xl border border-slate-700/80 bg-slate-900/90 p-6 shadow-[0_0_40px_rgba(15,23,42,0.8)] md:p-8">
-          <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="rounded-lg border border-cyan-500/30 bg-cyan-500/10 px-3 py-1.5 font-body text-base font-semibold tracking-wide text-cyan-300">
+        {/* Question Card — takes remaining space above controls */}
+        <section className="flex min-h-0 flex-1 flex-col overflow-hidden rounded-xl border border-slate-700/80 bg-slate-900/90 p-3">
+          <div className="mb-1.5 flex shrink-0 flex-wrap items-center justify-between gap-1.5">
+            <div className="flex min-w-0 flex-wrap items-center gap-1">
+              <span className="max-w-[10rem] truncate rounded border border-cyan-500/30 bg-cyan-500/10 px-1.5 py-0.5 font-body text-[11px] font-semibold text-cyan-300">
                 {question.knowledgePoint}
               </span>
-              <span className="rounded-lg border border-slate-600 bg-slate-800 px-3 py-1.5 font-body text-sm font-semibold text-slate-300">
+              <span className="rounded border border-slate-600 bg-slate-800 px-1.5 py-0.5 font-body text-[11px] font-semibold text-slate-300">
                 {question.difficulty}
               </span>
-              <span className="rounded-lg border border-violet-500/30 bg-violet-500/10 px-3 py-1.5 font-body text-sm font-semibold text-violet-300">
-                {choiceMode ? '選擇題' : '填數字'}
+              <span className="rounded border border-violet-500/30 bg-violet-500/10 px-1.5 py-0.5 font-body text-[11px] font-semibold text-violet-300">
+                {choiceMode ? '選擇' : '數字'}
               </span>
             </div>
-            <span className="inline-flex items-center gap-1.5 font-body text-lg font-semibold text-amber-400">
-              <Gem className="size-5" />
-              本題底金：${formatGold(question.baseValue)} Gold
+            <span className="inline-flex items-center gap-1 font-body text-xs font-semibold text-amber-400">
+              <Gem className="size-3.5" />${formatGold(question.baseValue)}
             </span>
           </div>
-          <p className="font-body text-2xl font-semibold leading-relaxed whitespace-pre-wrap text-slate-50 md:text-3xl">
+          <div className="min-h-0 flex-1 overflow-hidden font-body text-[15px] font-semibold leading-snug text-slate-50">
             <MathText text={question.question} />
-          </p>
+          </div>
         </section>
 
-        {/* Stage 1 */}
-        {stage === STAGE.STRATEGY && (
-          <section className="flex flex-col gap-4">
-            <p className="text-center font-body text-lg text-slate-400">
-              選擇策略後開始作答
-            </p>
-
-            <button
-              type="button"
-              onClick={chooseSafe}
-              className="rounded-3xl border border-emerald-500/40 bg-emerald-500/10 p-5 text-left transition hover:border-emerald-400 hover:bg-emerald-500/20 active:scale-[0.98] md:p-6"
-            >
-              <div className="mb-2 flex items-center gap-2 font-display text-xl font-bold text-emerald-300 md:text-2xl">
-                <Shield className="size-7" />
-                【🛡️ 穩健作答】
-              </div>
-              <p className="font-body text-lg text-slate-300">
-                Win: +${formatGold(Math.round(question.baseValue * multiplier))}{' '}
-                | Loss: $0（零風險）
-              </p>
-            </button>
-
-            <button
-              type="button"
-              onClick={chooseBold}
-              className="rounded-3xl border border-amber-500/40 bg-amber-500/10 p-5 text-left transition hover:border-amber-400 hover:bg-amber-500/20 active:scale-[0.98] md:p-6"
-            >
-              <div className="mb-2 flex items-center gap-2 font-display text-xl font-bold text-amber-300 md:text-2xl">
-                <Zap className="size-7" />
-                【⚡ 自信爆擊】
-              </div>
-              <p className="font-body text-lg text-slate-300">
-                Win: +$
-                {formatGold(Math.round(question.baseValue * 3 * multiplier))} |
-                Loss: -${formatGold(question.baseValue)}
-              </p>
-            </button>
-
-            <button
-              type="button"
-              onClick={skipQuestion}
-              className="rounded-3xl border border-slate-600 bg-slate-800/80 p-5 text-left transition hover:border-slate-400 hover:bg-slate-800 active:scale-[0.98] md:p-6"
-            >
-              <div className="mb-2 flex items-center gap-2 font-display text-xl font-bold text-slate-200 md:text-2xl">
-                <RefreshCw className="size-7 text-cyan-300" />
-                【🃏 戰術換題】
-              </div>
-              <p className="font-body text-lg text-slate-400">
-                花費 ${SKIP_FEE} Gold 直接跳下一題
-              </p>
-            </button>
-          </section>
-        )}
-
-        {/* Stage 2 */}
-        {stage === STAGE.ANSWER && (
-          <section className="flex flex-col gap-4">
-            <div
-              className={`rounded-2xl border px-4 py-3 text-center font-body text-base font-semibold md:text-lg ${modeBadge.className}`}
-            >
-              {modeBadge.label}
-            </div>
-
-            {choiceMode ? (
-              <>
-                <div className="flex items-center justify-center gap-2 font-body text-sm tracking-widest text-slate-500">
-                  <ListChecks className="size-4" />
-                  點選選項 · 鍵盤 A–D · Enter 送出
+        {/* Stage controls — fixed compact bottom */}
+        <div className="flex shrink-0 flex-col gap-1.5">
+          {/* Stage 1 */}
+          {stage === STAGE.STRATEGY && (
+            <section className="flex flex-col gap-1.5">
+              <button
+                type="button"
+                onClick={chooseSafe}
+                className="rounded-xl border border-emerald-500/40 bg-emerald-500/10 px-3 py-2 text-left transition active:scale-[0.99]"
+              >
+                <div className="flex items-center gap-1.5 font-display text-sm font-bold text-emerald-300">
+                  <Shield className="size-4" />
+                  穩健作答
                 </div>
-                <div className="flex flex-col gap-3">
+                <p className="font-body text-xs text-slate-300">
+                  +${formatGold(Math.round(question.baseValue * multiplier))} /
+                  錯 $0
+                </p>
+              </button>
+
+              <button
+                type="button"
+                onClick={chooseBold}
+                className="rounded-xl border border-amber-500/40 bg-amber-500/10 px-3 py-2 text-left transition active:scale-[0.99]"
+              >
+                <div className="flex items-center gap-1.5 font-display text-sm font-bold text-amber-300">
+                  <Zap className="size-4" />
+                  自信爆擊
+                </div>
+                <p className="font-body text-xs text-slate-300">
+                  +$
+                  {formatGold(
+                    Math.round(question.baseValue * 3 * multiplier),
+                  )}{' '}
+                  / 錯 -${formatGold(question.baseValue)}
+                </p>
+              </button>
+
+              <button
+                type="button"
+                onClick={skipQuestion}
+                className="rounded-xl border border-slate-600 bg-slate-800/80 px-3 py-2 text-left transition active:scale-[0.99]"
+              >
+                <div className="flex items-center gap-1.5 font-display text-sm font-bold text-slate-200">
+                  <RefreshCw className="size-4 text-cyan-300" />
+                  戰術換題 · ${SKIP_FEE}
+                </div>
+              </button>
+            </section>
+          )}
+
+          {/* Stage 2 */}
+          {stage === STAGE.ANSWER && (
+            <section className="flex flex-col gap-1.5">
+              <div
+                className={`rounded-lg border px-2 py-1 text-center font-body text-[11px] font-semibold leading-tight ${modeBadge.className}`}
+              >
+                {modeBadge.label}
+              </div>
+
+              {choiceMode ? (
+                <div className="grid grid-cols-2 gap-1.5">
                   {(question.options || []).map((opt) => {
                     const selected = input === opt.letter
                     return (
@@ -501,17 +474,17 @@ export default function App() {
                         key={opt.letter}
                         type="button"
                         onClick={() => setInput(opt.letter)}
-                        className={`rounded-2xl border p-4 text-left transition active:scale-[0.99] ${
+                        className={`rounded-lg border p-2 text-left transition active:scale-[0.99] ${
                           selected
-                            ? 'border-cyan-400 bg-cyan-500/20 shadow-[0_0_24px_rgba(34,211,238,0.25)]'
-                            : 'border-slate-700 bg-slate-800/80 hover:border-cyan-500/40 hover:bg-slate-800'
+                            ? 'border-cyan-400 bg-cyan-500/20'
+                            : 'border-slate-700 bg-slate-800/80'
                         }`}
                       >
-                        <div className="flex items-start gap-3">
-                          <span className="font-display flex size-10 shrink-0 items-center justify-center rounded-xl bg-slate-900 text-xl font-bold text-cyan-300">
+                        <div className="flex items-start gap-1.5">
+                          <span className="font-display flex size-6 shrink-0 items-center justify-center rounded-md bg-slate-900 text-xs font-bold text-cyan-300">
                             {opt.letter}
                           </span>
-                          <span className="font-body pt-1.5 text-lg font-semibold leading-snug text-slate-100 md:text-xl">
+                          <span className="font-body line-clamp-2 text-xs font-semibold leading-snug text-slate-100">
                             <MathText text={opt.text} />
                           </span>
                         </div>
@@ -519,165 +492,157 @@ export default function App() {
                     )
                   })}
                 </div>
-              </>
-            ) : (
-              <>
-                <div className="rounded-3xl border border-slate-700 bg-slate-950 px-4 py-5 md:px-6 md:py-6">
-                  <div className="mb-2 flex items-center justify-center gap-2 font-body text-sm tracking-widest text-slate-500">
-                    <Keyboard className="size-4" />
-                    可用鍵盤直接輸入 · Enter 送出
-                  </div>
-                  <input
-                    ref={inputRef}
-                    type="text"
-                    inputMode="decimal"
-                    autoComplete="off"
-                    autoCorrect="off"
-                    spellCheck={false}
-                    value={input}
-                    onChange={(e) =>
-                      setInput(sanitizeAnswerInput(e.target.value))
-                    }
-                    onKeyDown={(e) => {
-                      if (e.key === 'Enter') {
-                        e.preventDefault()
-                        submitAnswer()
+              ) : (
+                <>
+                  <div className="flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-950 px-2 py-1.5">
+                    <Keyboard className="size-3.5 shrink-0 text-slate-500" />
+                    <input
+                      ref={inputRef}
+                      type="text"
+                      inputMode="decimal"
+                      autoComplete="off"
+                      autoCorrect="off"
+                      spellCheck={false}
+                      value={input}
+                      onChange={(e) =>
+                        setInput(sanitizeAnswerInput(e.target.value))
                       }
-                    }}
-                    placeholder="輸入答案…"
-                    className="w-full bg-transparent text-center font-display text-5xl font-bold tracking-wider text-cyan-200 caret-cyan-300 outline-none placeholder:text-slate-600 md:text-6xl"
-                    aria-label="答案輸入"
-                  />
-                </div>
-
-                <div className="grid grid-cols-3 gap-2.5">
-                  {keys.map((key) => (
-                    <button
-                      key={key}
-                      type="button"
-                      onClick={() => {
-                        if (key === '-') toggleNeg()
-                        else appendDigit(key)
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter') {
+                          e.preventDefault()
+                          submitAnswer()
+                        }
                       }}
-                      className="flex h-16 items-center justify-center rounded-2xl border border-slate-700 bg-slate-800 font-display text-3xl font-bold text-slate-100 transition hover:border-cyan-500/50 hover:bg-slate-700 active:scale-95 md:h-[4.5rem]"
-                      aria-label={key === '-' ? 'Negative' : key}
+                      placeholder="答案…"
+                      className="w-full bg-transparent text-center font-display text-2xl font-bold tracking-wider text-cyan-200 caret-cyan-300 outline-none placeholder:text-slate-600"
+                      aria-label="答案輸入"
+                    />
+                    <button
+                      type="button"
+                      onClick={backspace}
+                      className="flex size-8 shrink-0 items-center justify-center rounded-md border border-slate-700 bg-slate-800 text-slate-200"
+                      aria-label="Backspace"
                     >
-                      {key}
+                      <Delete className="size-4" />
                     </button>
-                  ))}
+                  </div>
+
+                  <div className="grid grid-cols-6 gap-1">
+                    {keys.map((key) => (
+                      <button
+                        key={key}
+                        type="button"
+                        onClick={() => {
+                          if (key === '-') toggleNeg()
+                          else appendDigit(key)
+                        }}
+                        className="flex h-9 items-center justify-center rounded-md border border-slate-700 bg-slate-800 font-display text-base font-bold text-slate-100 active:scale-95"
+                        aria-label={key === '-' ? 'Negative' : key}
+                      >
+                        {key}
+                      </button>
+                    ))}
+                  </div>
+                </>
+              )}
+
+              <button
+                type="button"
+                onClick={submitAnswer}
+                disabled={!canSubmit}
+                className="flex h-10 items-center justify-center gap-1.5 rounded-xl bg-cyan-500 font-display text-sm font-bold text-slate-950 transition hover:bg-cyan-400 disabled:cursor-not-allowed disabled:bg-slate-700 disabled:text-slate-400 active:scale-[0.99]"
+              >
+                <Send className="size-4" />
+                送出答案
+              </button>
+            </section>
+          )}
+
+          {/* Stage 3 */}
+          {stage === STAGE.RESULT && result && (
+            <section className="flex flex-col gap-1.5">
+              <div
+                className={`rounded-xl border px-3 py-3 text-center ${
+                  result.correct
+                    ? 'border-emerald-500/40 bg-emerald-500/10'
+                    : 'border-rose-500/40 bg-rose-500/10'
+                }`}
+              >
+                <div className="mb-1 flex justify-center">
+                  {result.correct ? (
+                    <PartyPopper className="size-7 text-emerald-400" />
+                  ) : (
+                    <XCircle className="size-7 text-rose-400" />
+                  )}
                 </div>
 
-                <button
-                  type="button"
-                  onClick={backspace}
-                  className="flex h-14 items-center justify-center gap-2 rounded-2xl border border-slate-700 bg-slate-800/80 font-display text-lg font-bold text-slate-200 transition hover:bg-slate-700 active:scale-[0.98]"
+                <p
+                  className={`font-display text-3xl font-extrabold tracking-wide ${
+                    result.correct ? 'text-emerald-400' : 'text-rose-500'
+                  }`}
                 >
-                  <Delete className="size-6" />
-                  刪除
-                </button>
-              </>
-            )}
+                  {result.delta >= 0 ? '+' : '-'}$
+                  {formatGold(Math.abs(result.delta))}
+                </p>
 
-            <button
-              type="button"
-              onClick={submitAnswer}
-              disabled={!canSubmit}
-              className="flex h-16 items-center justify-center gap-2 rounded-2xl bg-cyan-500 font-display text-xl font-bold text-slate-950 shadow-[0_0_28px_rgba(34,211,238,0.35)] transition hover:bg-cyan-400 disabled:cursor-not-allowed disabled:bg-slate-700 disabled:text-slate-400 disabled:shadow-none active:scale-[0.98]"
-            >
-              <Send className="size-6" />
-              送出答案
-            </button>
-          </section>
-        )}
+                <p className="mt-0.5 font-body text-sm text-slate-300">
+                  {result.correct ? '開牌成功！' : '開牌失敗…'}
+                </p>
 
-        {/* Stage 3 */}
-        {stage === STAGE.RESULT && result && (
-          <section className="flex flex-col gap-5">
-            <div
-              className={`rounded-3xl border p-7 text-center md:p-8 ${
-                result.correct
-                  ? 'border-emerald-500/40 bg-emerald-500/10'
-                  : 'border-rose-500/40 bg-rose-500/10'
-              }`}
-            >
-              <div className="mb-4 flex justify-center">
-                {result.correct ? (
-                  <PartyPopper className="size-14 text-emerald-400" />
-                ) : (
-                  <XCircle className="size-14 text-rose-400" />
+                {!result.correct && (
+                  <div className="mt-2 rounded-lg border border-slate-700 bg-slate-950/70 px-2.5 py-2 text-left">
+                    <p className="font-body text-xs text-slate-400">正確答案</p>
+                    <p className="font-display text-lg font-bold text-cyan-300">
+                      {choiceMode ? (
+                        <>
+                          {question.answer}.{' '}
+                          <MathText
+                            text={
+                              question.options?.find(
+                                (o) => o.letter === question.answer,
+                              )?.text || ''
+                            }
+                          />
+                        </>
+                      ) : (
+                        <MathText text={String(question.answer)} />
+                      )}
+                    </p>
+                  </div>
                 )}
               </div>
 
-              <p
-                className={`font-display text-5xl font-extrabold tracking-wide md:text-6xl ${
-                  result.correct ? 'text-emerald-400' : 'text-rose-500'
-                }`}
+              <button
+                type="button"
+                onClick={goNextQuestion}
+                className="flex h-10 items-center justify-center gap-1.5 rounded-xl bg-amber-500 font-display text-sm font-bold text-slate-950 transition hover:bg-amber-400 active:scale-[0.99]"
               >
-                {result.delta >= 0 ? '+' : '-'}$
-                {formatGold(Math.abs(result.delta))} Gold
-              </p>
-
-              <p className="mt-3 font-body text-xl text-slate-300">
-                {result.correct ? '開牌成功！資產進帳' : '開牌失敗…'}
-              </p>
-
-              {!result.correct && (
-                <div className="mt-5 rounded-2xl border border-slate-700 bg-slate-950/70 px-5 py-4 text-left">
-                  <p className="font-body text-lg text-slate-400">正確答案：</p>
-                  <p className="mt-1 font-display text-2xl font-bold text-cyan-300">
-                    {choiceMode ? (
-                      <>
-                        {question.answer}.{' '}
-                        <MathText
-                          text={
-                            question.options?.find(
-                              (o) => o.letter === question.answer,
-                            )?.text || ''
-                          }
-                        />
-                      </>
-                    ) : (
-                      <MathText text={String(question.answer)} />
-                    )}
-                  </p>
-                  <p className="mt-2 font-body text-base text-slate-400">
-                    知識點：{question.knowledgePoint} · {question.difficulty}
-                  </p>
-                </div>
-              )}
-            </div>
-
-            <button
-              type="button"
-              onClick={goNextQuestion}
-              className="flex h-16 items-center justify-center gap-2 rounded-2xl bg-amber-500 font-display text-xl font-bold text-slate-950 shadow-[0_0_28px_rgba(245,158,11,0.35)] transition hover:bg-amber-400 active:scale-[0.98]"
-            >
-              下一題 →
-              <span className="text-base font-semibold text-slate-800/70">
-                (Space)
-              </span>
-            </button>
-          </section>
-        )}
+                下一題 →
+                <span className="text-xs font-semibold text-slate-800/70">
+                  Space
+                </span>
+              </button>
+            </section>
+          )}
+        </div>
       </div>
 
       {bailoutOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4 backdrop-blur-sm">
-          <div className="w-full max-w-md rounded-3xl border border-amber-500/40 bg-slate-900 p-8 text-center shadow-[0_0_50px_rgba(245,158,11,0.25)]">
-            <p className="font-display text-3xl font-extrabold text-amber-400">
+          <div className="w-full max-w-sm rounded-2xl border border-amber-500/40 bg-slate-900 p-5 text-center">
+            <p className="font-display text-xl font-extrabold text-amber-400">
               破產救濟
             </p>
-            <p className="mt-4 font-body text-xl text-slate-300">
-              資產低於 ${BAILOUT_THRESHOLD}，系統發放救濟金{' '}
+            <p className="mt-2 font-body text-sm text-slate-300">
+              資產低於 ${BAILOUT_THRESHOLD}，發放{' '}
               <span className="font-bold text-amber-400">
-                ${formatGold(BAILOUT_AMOUNT)} Gold
+                ${formatGold(BAILOUT_AMOUNT)}
               </span>
-              ，繼續戰！
             </p>
             <button
               type="button"
               onClick={claimBailout}
-              className="mt-6 w-full rounded-2xl bg-amber-500 py-4 font-display text-xl font-bold text-slate-950 transition hover:bg-amber-400"
+              className="mt-4 w-full rounded-xl bg-amber-500 py-2.5 font-display text-sm font-bold text-slate-950"
             >
               領取救濟金
             </button>
@@ -688,19 +653,19 @@ export default function App() {
       <style>{`
         @keyframes shake {
           0%, 100% { transform: translateX(0); }
-          20% { transform: translateX(-6px); }
-          40% { transform: translateX(6px); }
-          60% { transform: translateX(-4px); }
-          80% { transform: translateX(4px); }
+          20% { transform: translateX(-4px); }
+          40% { transform: translateX(4px); }
+          60% { transform: translateX(-3px); }
+          80% { transform: translateX(3px); }
         }
-        .animate-shake { animation: shake 0.45s ease-in-out; }
+        .animate-shake { animation: shake 0.4s ease-in-out; }
 
         @keyframes gold-pop {
-          0% { transform: scale(1); box-shadow: 0 0 0 rgba(251,191,36,0); }
-          40% { transform: scale(1.06); box-shadow: 0 0 24px rgba(251,191,36,0.45); }
-          100% { transform: scale(1); box-shadow: 0 0 0 rgba(251,191,36,0); }
+          0% { transform: scale(1); }
+          40% { transform: scale(1.06); }
+          100% { transform: scale(1); }
         }
-        .animate-gold-pop { animation: gold-pop 0.65s ease-out; }
+        .animate-gold-pop { animation: gold-pop 0.5s ease-out; }
       `}</style>
     </div>
   )

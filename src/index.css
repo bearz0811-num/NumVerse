@@ -15,6 +15,7 @@
   body,
   #root {
     height: 100%;
+    overflow: hidden;
   }
 
   body {
@@ -29,18 +30,18 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  #root {
-    min-height: 100svh;
-  }
-
   .math-text .katex {
-    font-size: 1.05em;
+    font-size: 0.92em;
     color: inherit;
   }
 
   .math-text .math-inline {
-    display: inline-block;
-    margin: 0 0.1em;
-    vertical-align: middle;
+    display: inline;
+    margin: 0 0.05em;
+  }
+
+  /* cases / multi-line envs: keep readable but not huge */
+  .math-text .katex .mtable {
+    margin: 0.1em 0;
   }
 }

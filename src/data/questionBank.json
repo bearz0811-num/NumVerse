@@ -5123,7 +5123,7 @@
     {
       "id": 558,
       "knowledgePoint": "代入消去法",
-      "question": "若二元一次聯立方程式 \\begin{cases} x = 2y \\ x + 3y = 15 \\end{cases} 的解為 x = a, y = b ，則 a - b 之值為何？",
+      "question": "若二元一次聯立方程式 \\begin{cases} x = 2y \\\\ x + 3y = 15 \\end{cases} 的解為 x = a, y = b ，則 a - b 之值為何？",
       "difficulty": "易",
       "answer": "A",
       "answerType": "choice",
@@ -5161,7 +5161,7 @@
     {
       "id": 559,
       "knowledgePoint": "代入消去法",
-      "question": "阿強在夜市賣烤肉串與香腸。已知烤肉串的單價是香腸單價的 2 倍少 5 元。某天小芬買了 3 串烤肉串與 4 支香腸，共花費 135 元。若設烤肉串單價為 x 元，香腸單價為 y 元，可列出聯立方程式 \\begin{cases} x = 2y - 5 \\ 3x + 4y = 135 \\end{cases} 。請問利用代入消去法解聯立方程式後，香腸的單價為 _____ 元。",
+      "question": "阿強在夜市賣烤肉串與香腸。已知烤肉串的單價是香腸單價的 2 倍少 5 元。某天小芬買了 3 串烤肉串與 4 支香腸，共花費 135 元。若設烤肉串單價為 x 元，香腸單價為 y 元，可列出聯立方程式 \\begin{cases} x = 2y - 5 \\\\ 3x + 4y = 135 \\end{cases} 。請問利用代入消去法解聯立方程式後，香腸的單價為 _____ 元。",
       "difficulty": "中",
       "answer": "15",
       "answerType": "number",
@@ -5181,7 +5181,7 @@
     {
       "id": 560,
       "knowledgePoint": "代入消去法",
-      "question": "已知二元一次聯立方程式 \\begin{cases} 3x - 2y = 12 \\ y = \\frac{1}{2}x - 2 \\end{cases} 。請利用代入消去法，求出此聯立方程式中 x 的值。",
+      "question": "已知二元一次聯立方程式 \\begin{cases} 3x - 2y = 12 \\\\ y = \\frac{1}{2}x - 2 \\end{cases} 。請利用代入消去法，求出此聯立方程式中 x 的值。",
       "difficulty": "難",
       "answer": "4",
       "answerType": "number",
@@ -5201,7 +5201,7 @@
     {
       "id": 561,
       "knowledgePoint": "代入消去法",
-      "question": "已知二元一次聯立方程式 \\begin{cases} y = 2x - 3 \\ 3x + 2y = 8 \\end{cases} ，若以代入消去法求解，將第一式代入第二式後，可得下列哪一個一元一次方程式？",
+      "question": "已知二元一次聯立方程式 \\begin{cases} y = 2x - 3 \\\\ 3x + 2y = 8 \\end{cases} ，若以代入消去法求解，將第一式代入第二式後，可得下列哪一個一元一次方程式？",
       "difficulty": "易",
       "answer": "A",
       "answerType": "choice",
@@ -5239,7 +5239,7 @@
     {
       "id": 562,
       "knowledgePoint": "代入消去法",
-      "question": "阿強去文具店買筆，已知原子筆的單價是鉛筆的 3 倍。阿強買了 2 支原子筆和 4 支鉛筆，總共花了 100 元。若假設鉛筆一支 x 元，原子筆一支 y 元，可列出聯立方程式：\n\\begin{cases} y = 3x \\ 2y + 4x = 100 \\end{cases}\n請利用代入消去法，求出鉛筆一支為 _____ 元。",
+      "question": "阿強去文具店買筆，已知原子筆的單價是鉛筆的 3 倍。阿強買了 2 支原子筆和 4 支鉛筆，總共花了 100 元。若假設鉛筆一支 x 元，原子筆一支 y 元，可列出聯立方程式：\n\\begin{cases} y = 3x \\\\ 2y + 4x = 100 \\end{cases}\n請利用代入消去法，求出鉛筆一支為 _____ 元。",
       "difficulty": "易",
       "answer": "10",
       "answerType": "number",
@@ -5259,7 +5259,7 @@
     {
       "id": 563,
       "knowledgePoint": "代入消去法",
-      "question": "外送員阿強今天的總收入為 1200 元。他送了 x 筆短程訂單與 y 筆長程訂單，兩種訂單合計共 15 筆。已知短程每筆賺 60 元，長程每筆賺 100 元，可列出聯立方程式：\n\\begin{cases} x + y = 15 \\ 60x + 100y = 1200 \\end{cases}\n阿強打算用代入消去法求 y 的值，他將第一式改寫為 x = 15 - y 後代入第二式。下列哪一個選項是代入後正確展開並化簡的結果？",
+      "question": "外送員阿強今天的總收入為 1200 元。他送了 x 筆短程訂單與 y 筆長程訂單，兩種訂單合計共 15 筆。已知短程每筆賺 60 元，長程每筆賺 100 元，可列出聯立方程式：\n\\begin{cases} x + y = 15 \\\\ 60x + 100y = 1200 \\end{cases}\n阿強打算用代入消去法求 y 的值，他將第一式改寫為 x = 15 - y 後代入第二式。下列哪一個選項是代入後正確展開並化簡的結果？",
       "difficulty": "中",
       "answer": "A",
       "answerType": "choice",
@@ -5297,7 +5297,7 @@
     {
       "id": 564,
       "knowledgePoint": "代入消去法",
-      "question": "請以「代入消去法」解二元一次聯立方程式：\n\\begin{cases} 3x - y = 5 \\ 2x + 3y = 18 \\end{cases}\n求出解 (x, y) 後，計算出 x + y 的值。",
+      "question": "請以「代入消去法」解二元一次聯立方程式：\n\\begin{cases} 3x - y = 5 \\\\ 2x + 3y = 18 \\end{cases}\n求出解 (x, y) 後，計算出 x + y 的值。",
       "difficulty": "中",
       "answer": "7",
       "answerType": "number",
@@ -5317,7 +5317,7 @@
     {
       "id": 565,
       "knowledgePoint": "代入消去法",
-      "question": "阿強解二元一次聯立方程式 \\begin{cases} ax + by = 5 \\ 2x - y = 3 \\end{cases} ，他將第二式移項得到 y = 2x - 3 ，代入第一式後，整理得到一元一次方程式 10x = 20 。請問下列關於 a 與 b 的敘述，何者正確？",
+      "question": "阿強解二元一次聯立方程式 \\begin{cases} ax + by = 5 \\\\ 2x - y = 3 \\end{cases} ，他將第二式移項得到 y = 2x - 3 ，代入第一式後，整理得到一元一次方程式 10x = 20 。請問下列關於 a 與 b 的敘述，何者正確？",
       "difficulty": "難",
       "answer": "C",
       "answerType": "choice",
@@ -5355,7 +5355,7 @@
     {
       "id": 566,
       "knowledgePoint": "代入消去法",
-      "question": "老張一家人搭乘捷運出遊，去程買了 2 張學生票和 3 張全票，共花費 160 元；回程時買了 3 張學生票和 4 張全票，共花費 220 元。\n已知學生票每張 x 元，全票每張 y 元，可列出聯立方程式：\n\\begin{cases} 2x + 3y = 160 \\ 3x + 4y = 220 \\end{cases}\n老張決定使用代入消去法，他由第一式推導出 x = 80 - \\frac{3}{2}y ，接著代入第二式。請順著老張的思路求出全票每張為多少元？",
+      "question": "老張一家人搭乘捷運出遊，去程買了 2 張學生票和 3 張全票，共花費 160 元；回程時買了 3 張學生票和 4 張全票，共花費 220 元。\n已知學生票每張 x 元，全票每張 y 元，可列出聯立方程式：\n\\begin{cases} 2x + 3y = 160 \\\\ 3x + 4y = 220 \\end{cases}\n老張決定使用代入消去法，他由第一式推導出 x = 80 - \\frac{3}{2}y ，接著代入第二式。請順著老張的思路求出全票每張為多少元？",
       "difficulty": "難",
       "answer": "40",
       "answerType": "number",
@@ -5375,7 +5375,7 @@
     {
       "id": 567,
       "knowledgePoint": "加減消去法",
-      "question": "小芬想要解二元一次聯立方程式 \\begin{cases} 3x + 2y = 12 \\dots (1) \\ 2x - y = 5 \\dots (2) \\end{cases} 。若她想利用加減消去法完全消去 y 項，下列哪一個操作是正確的？",
+      "question": "小芬想要解二元一次聯立方程式 \\begin{cases} 3x + 2y = 12 \\dots (1) \\\\ 2x - y = 5 \\dots (2) \\end{cases} 。若她想利用加減消去法完全消去 y 項，下列哪一個操作是正確的？",
       "difficulty": "易",
       "answer": "A",
       "answerType": "choice",
@@ -5433,7 +5433,7 @@
     {
       "id": 569,
       "knowledgePoint": "加減消去法",
-      "question": "已知二元一次聯立方程式 \\begin{cases} mx + ny = 8 \\ nx - my = 1 \\end{cases} 的解為 x = 3, y = -1 。請利用加減消去法先求出常數 m 與 n 的值，並計算出 m^2 - n^2 的值為何？",
+      "question": "已知二元一次聯立方程式 \\begin{cases} mx + ny = 8 \\\\ nx - my = 1 \\end{cases} 的解為 x = 3, y = -1 。請利用加減消去法先求出常數 m 與 n 的值，並計算出 m^2 - n^2 的值為何？",
       "difficulty": "難",
       "answer": "6",
       "answerType": "number",
