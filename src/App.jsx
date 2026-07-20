@@ -382,9 +382,9 @@ export default function App() {
           </div>
         </header>
 
-        {/* Question Card — takes remaining space above controls */}
-        <section className="flex min-h-0 flex-1 flex-col overflow-hidden rounded-xl border border-slate-700/80 bg-slate-900/90 p-3">
-          <div className="mb-1.5 flex shrink-0 flex-wrap items-center justify-between gap-1.5">
+        {/* Question: height = content only (no flex-1 empty void) */}
+        <section className="shrink-0 rounded-xl border border-slate-700/80 bg-slate-900/90 p-3">
+          <div className="mb-1.5 flex flex-wrap items-center justify-between gap-1.5">
             <div className="flex min-w-0 flex-wrap items-center gap-1">
               <span className="max-w-[10rem] truncate rounded border border-cyan-500/30 bg-cyan-500/10 px-1.5 py-0.5 font-body text-[11px] font-semibold text-cyan-300">
                 {question.knowledgePoint}
@@ -400,13 +400,13 @@ export default function App() {
               <Gem className="size-3.5" />${formatGold(question.baseValue)}
             </span>
           </div>
-          <div className="min-h-0 flex-1 overflow-hidden font-body text-[15px] font-semibold leading-snug text-slate-50">
+          <div className="max-h-[38svh] overflow-y-auto font-body text-[15px] font-semibold leading-snug text-slate-50">
             <MathText text={question.question} />
           </div>
         </section>
 
-        {/* Stage controls — fixed compact bottom */}
-        <div className="flex shrink-0 flex-col gap-1.5">
+        {/* Controls sit right under the question */}
+        <div className="flex min-h-0 shrink-0 flex-col gap-1.5">
           {/* Stage 1 */}
           {stage === STAGE.STRATEGY && (
             <section className="flex flex-col gap-1.5">
