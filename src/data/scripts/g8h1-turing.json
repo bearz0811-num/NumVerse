@@ -1,0 +1,2403 @@
+{
+  "id": "g8h1-turing",
+  "grade": 8,
+  "half": 1,
+  "gradeLabel": "八上",
+  "mathematician": "艾倫・圖靈",
+  "mathematicianSpeaker": "Mathematician",
+  "episode": "紙上的萬用機器",
+  "setting": "劍橋研究室、紙帶模型桌與倫敦數學學會投稿室",
+  "era": "1935 至 1936 年",
+  "acts": [
+    "畫出可延伸的紙帶",
+    "定義讀寫與狀態規則",
+    "把程序編成資料",
+    "建構能模擬程序的機器",
+    "證明計算也有邊界"
+  ],
+  "insights": [
+    "機器的程序也能編成資料，交由另一台機器讀取與模擬",
+    "精確定義計算能力，也會同時暴露計算能力的邊界"
+  ],
+  "props": [
+    "無限紙帶草圖",
+    "狀態卡",
+    "程序編碼表",
+    "萬用機器模型",
+    "論文手稿"
+  ],
+  "endingSummary": "圖靈在戰後持續研究電腦、人工智慧與形態發生，1954 年離世；後世才逐步還他應有的名字。",
+  "legendNote": null,
+  "objectives": [
+    "把人工計算拆成有限狀態、讀寫與移動規則",
+    "用數列、函數與多項式檢查程序是否一致",
+    "完成能讀取其他程序編碼的通用機器模型",
+    "在投稿期限前說清可計算能力及其限制"
+  ],
+  "beats": [
+    {
+      "scene": "向兩端延伸的方格紙帶",
+      "problem": "紙格編號依固定數列延伸，玩家要補出缺項，才能讓讀寫頭找到第一個輸入。",
+      "major": "數列與等差級數"
+    },
+    {
+      "scene": "讀、寫、左移、右移",
+      "problem": "狀態卡被風吹亂，必須依輸入與輸出的函數關係還原正確順序。",
+      "major": "函數及其圖形"
+    },
+    {
+      "scene": "遠端紙格的編號",
+      "problem": "讀寫頭一次跨越固定格數，圖靈要用等差數列算出第若干步所在位置。",
+      "major": "數列與等差級數"
+    },
+    {
+      "scene": "兩套外觀不同的規則",
+      "problem": "兩張狀態表寫法不同，必須展開乘法公式，確認輸出是否其實完全相同。",
+      "major": "乘法公式與多項式"
+    },
+    {
+      "scene": "重複程序的代數指紋",
+      "problem": "投稿篇幅不足，玩家要化簡多項式，刪除只換了外觀的重複規則。",
+      "major": "乘法公式與多項式"
+    },
+    {
+      "scene": "一個輸入是否有兩個出口",
+      "problem": "函數圖上出現分岔，若同一狀態同時指向兩個結果，機器定義便無法執行。",
+      "major": "函數及其圖形"
+    },
+    {
+      "scene": "紙帶架的斜撐",
+      "problem": "木架晃動將撕裂長紙帶，必須用畢氏定理算出斜撐長度。",
+      "major": "平方根與畢氏定理"
+    },
+    {
+      "scene": "把每台機器編成一串數",
+      "problem": "操作代碼依數列排列，玩家必須找出漏掉的一段，否則整台機器會被錯誤描述。",
+      "major": "數列與等差級數"
+    },
+    {
+      "scene": "程序成為另一台機器的輸入",
+      "problem": "玩家與圖靈把狀態表交給新模型讀取，首次看見同一台機器依編碼模擬不同程序。",
+      "major": "函數及其圖形"
+    },
+    {
+      "scene": "萬用模擬器的選擇函數",
+      "problem": "多組程序共享一台模型，必須由輸入代碼判讀該套用哪條函數規則。",
+      "major": "函數及其圖形"
+    },
+    {
+      "scene": "被偽裝的同一個輸出式",
+      "problem": "審稿人指出兩個例子可能重複，玩家要以乘法公式證明它們等價或找出差異。",
+      "major": "乘法公式與多項式"
+    },
+    {
+      "scene": "工作室兩點間的最短佈線",
+      "problem": "萬用模型必須接上遠端紙帶架，平方根與畢氏關係將決定線材是否足夠。",
+      "major": "平方根與畢氏定理"
+    },
+    {
+      "scene": "永遠往前的狀態序列",
+      "problem": "一個程序持續產生項目，必須分析數列規律，而不能僅因等得夠久便宣稱它永不停止。",
+      "major": "數列與等差級數"
+    },
+    {
+      "scene": "不存在的通用停止判定",
+      "problem": "玩家與圖靈嘗試把所有程序塞進同一判定函數，矛盾迫使兩人承認萬用計算仍有不可判定的問題。",
+      "major": "函數及其圖形"
+    },
+    {
+      "scene": "投稿倒數的頁數級數",
+      "problem": "印刷所只留最後一個時段，玩家要計算各節累積頁數，保住定義、證明與關鍵例子。",
+      "major": "數列與等差級數"
+    }
+  ],
+  "choices": [
+    {
+      "prompt": "紙帶模型先定義哪一端？",
+      "firstLabel": "先定義狀態",
+      "firstResult": "機器何時讀寫與轉換先被固定，紙帶符號隨後接上。",
+      "secondLabel": "先定義符號",
+      "secondResult": "可讀寫的字母先被限制，狀態表因此不再含糊。"
+    },
+    {
+      "prompt": "兩套規則看似不同，怎麼比？",
+      "firstLabel": "先做代數化簡",
+      "firstResult": "外層形式被剝掉，相同結構立刻顯現。",
+      "secondLabel": "先代入測試值",
+      "secondResult": "數個輸出一致，但圖靈要求再補上一般化簡。"
+    },
+    {
+      "prompt": "程序代碼應如何排列？",
+      "firstLabel": "依狀態編號",
+      "firstResult": "查找速度提高，轉換順序仍須另加索引。",
+      "secondLabel": "依執行順序",
+      "secondResult": "模擬過程清楚展開，再由編號表消除歧義。"
+    },
+    {
+      "prompt": "程序遲遲不停，下一步是什麼？",
+      "firstLabel": "繼續追蹤數列",
+      "firstResult": "更多項目確認循環跡象，卻仍不能成為一般證明。",
+      "secondLabel": "尋找反證結構",
+      "secondResult": "你們停止無限等待，轉而檢查通用判定會導致的矛盾。"
+    },
+    {
+      "prompt": "篇幅只夠先補一處，選哪裡？",
+      "firstLabel": "補嚴格定義",
+      "firstResult": "論證地基穩住，直觀例子隨後被壓縮保留。",
+      "secondLabel": "補萬用機器例子",
+      "secondResult": "讀者先看懂模型，圖靈再把形式定義嵌回例子。"
+    }
+  ],
+  "version": 1,
+  "title": "八上 × 艾倫・圖靈",
+  "language": "zh-TW",
+  "companions": [
+    "NumNum",
+    "Numi"
+  ],
+  "journalTitle": "紙上的萬用機器",
+  "notes": [
+    "玩家本人與 NumNum、Numi 一起冒險。",
+    "題目只從所選年段 questionBank 抽取。",
+    "題面依當下研究場景整段改寫；數字、算式、答案不變。",
+    "答錯保留同一題並給提示，直到答對。",
+    "Eureka 僅在玩家與數學家共同領悟關鍵知識時觸發。"
+  ],
+  "detourTemplates": [
+    [
+      {
+        "speaker": "NumNum",
+        "text": "條件還在。慢一點，沿同一條路再走一次。"
+      }
+    ],
+    [
+      {
+        "speaker": "Numi",
+        "text": "別換題。眼前這件事還等著我們把它算開。"
+      }
+    ],
+    [
+      {
+        "speaker": "Mathematician",
+        "text": "我也沒放棄。重看剛才那一步。"
+      }
+    ]
+  ],
+  "correctFeedback": [
+    [
+      {
+        "speaker": "narrator",
+        "text": "數字對上，眼前的阻礙鬆開了一格。"
+      }
+    ]
+  ],
+  "nodes": [
+    {
+      "id": "opening",
+      "type": "narrative",
+      "objective": "把人工計算拆成有限狀態、讀寫與移動規則",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "數學世界的藍紫色安靜得像一張沒有折痕的紙。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那邊有一點光——很細，還在抖。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "不是 Eureka。只是有人卡在一個還沒想通的問題前。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "你們追著微光穿過薄紙般的界面。1935 至 1936 年，劍橋研究室、紙帶模型桌與倫敦數學學會投稿室。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "艾倫・圖靈站在無限紙帶草圖旁，手裡那一步已經停了很久。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "你們是誰？算了——如果看得懂數字，就過來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}也在！我們不是來旁觀的。"
+        }
+      ],
+      "next": "q01"
+    },
+    {
+      "id": "q01",
+      "type": "quiz",
+      "anchor": 1,
+      "scene": "向兩端延伸的方格紙帶",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "向兩端延伸的方格紙帶。紙格編號依固定數列延伸，玩家要補出缺項，才能讓讀寫頭找到第一個輸入。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "從畫出可延伸的紙帶連續紀錄連續紀錄裡找出規律，推到尚未測量的一項。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "數列與等差級數",
+        "chapterIncludes": "數列與等差級數 等差數列",
+        "knowledgePoint": "一般項求法",
+        "questionIds": [
+          970,
+          967,
+          971
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-turing-scene-01",
+        "setting": "劍橋研究室、紙帶模型桌與倫敦數學學會投稿室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "畫出可延伸的紙帶連續紀錄",
+          "無限紙帶草圖",
+          "狀態卡"
+        ],
+        "sceneNeed": "紙格編號依固定數列延伸，玩家要補出缺項，才能讓讀寫頭找到第一個輸入。",
+        "rewrites": {
+          "967": {
+            "question": "畫出可延伸的紙帶連續紀錄的紀錄停在這一行；下一步正等著它：若等差數列的首項為 20 ，公差為 -3 ，則此數列從第幾項開始為負數？",
+            "options": {
+              "A": "第 7 項",
+              "B": "第 8 項",
+              "C": "第 9 項",
+              "D": "第 10 項"
+            },
+            "preserveImage": false
+          },
+          "970": {
+            "question": "向兩端延伸的方格紙帶。艾倫・圖靈在畫出可延伸的紙帶連續紀錄上留下這組條件：已知一個等差數列的第 4 項為 17 ，第 10 項為 41 。請問此數列的第 20 項為多少？",
+            "preserveImage": false
+          },
+          "971": {
+            "question": "要讓向兩端延伸的方格紙帶繼續，你得先解開畫出可延伸的紙帶連續紀錄旁這一筆：已知等差數列的前六項依序為 a_1, a_2, a_3, a_4, a_5, a_6 。若 a_2 + a_5 = 18 ，且 a_3 = 7 。請問此等差數列的公差為何？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "畫出可延伸的紙帶連續紀錄上的數字對上了。畫出可延伸的紙帶終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_1",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "紙帶模型先定義哪一端？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查無限紙帶草圖。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選狀態卡。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "先定義狀態",
+          "next": "choice_1_measure"
+        },
+        {
+          "id": "observe",
+          "label": "先定義符號",
+          "next": "choice_1_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_1_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "機器何時讀寫與轉換先被固定，紙帶符號隨後接上。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "choice_1_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "可讀寫的字母先被限制，狀態表因此不再含糊。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "q02",
+      "type": "quiz",
+      "anchor": 2,
+      "scene": "讀、寫、左移、右移",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "讀、寫、左移、右移。狀態卡被風吹亂，必須依輸入與輸出的函數關係還原正確順序。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把畫出可延伸的紙帶坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_1": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_1": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "函數及其圖形",
+        "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+        "knowledgePoint": "函數值",
+        "questionIds": [
+          1005,
+          1007,
+          1009
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-turing-scene-02",
+        "setting": "劍橋研究室、紙帶模型桌與倫敦數學學會投稿室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "畫出可延伸的紙帶坐標圖",
+          "無限紙帶草圖",
+          "狀態卡"
+        ],
+        "sceneNeed": "狀態卡被風吹亂，必須依輸入與輸出的函數關係還原正確順序。",
+        "rewrites": {
+          "1005": {
+            "question": "讀、寫、左移、右移。艾倫・圖靈在畫出可延伸的紙帶坐標圖上留下這組條件：已知一次函數 y = -3x + 5，當 x = -2 時，其函數值為何？",
+            "options": {
+              "A": "-1",
+              "B": "11",
+              "C": "-11",
+              "D": "1"
+            },
+            "preserveImage": false
+          },
+          "1007": {
+            "question": "畫出可延伸的紙帶坐標圖的紀錄停在這一行；下一步正等著它：已知一次函數 y = ax - 4 的圖形通過點 (2 , 6)。求當 x = -3 時，此函數的函數值為何？",
+            "preserveImage": false
+          },
+          "1009": {
+            "question": "現場只剩畫出可延伸的紙帶坐標圖上的這份計算還沒核對：已知兩個常數函數 y = f(x) 與 y = g(x)。若 f(10) + g(5) = 12，且 f(3) - 2g(8) = -6，則 f(20) × g(20) 的值為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "畫出可延伸的紙帶坐標圖上的數字對上了。畫出可延伸的紙帶終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q03",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q03",
+      "type": "quiz",
+      "anchor": 3,
+      "scene": "遠端紙格的編號",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "遠端紙格的編號。讀寫頭一次跨越固定格數，圖靈要用等差數列算出第若干步所在位置。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "從畫出可延伸的紙帶連續紀錄連續紀錄裡找出規律，推到尚未測量的一項。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "數列與等差級數",
+        "chapterIncludes": "數列與等差級數 等比數列",
+        "knowledgePoint": "等比數列的首項與公比",
+        "questionIds": [
+          2278,
+          990,
+          2279
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-turing-scene-03",
+        "setting": "劍橋研究室、紙帶模型桌與倫敦數學學會投稿室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "畫出可延伸的紙帶連續紀錄",
+          "無限紙帶草圖",
+          "狀態卡"
+        ],
+        "sceneNeed": "讀寫頭一次跨越固定格數，圖靈要用等差數列算出第若干步所在位置。",
+        "rewrites": {
+          "990": {
+            "question": "遠端紙格的編號。艾倫・圖靈在畫出可延伸的紙帶連續紀錄上留下這組條件：已知一數列為 3, -6, 12, -24, 48 。請問下列關於此數列的敘述，何者正確？",
+            "options": {
+              "A": "首項為 3 ，公差為 -3",
+              "B": "首項為 3 ，公比為 -2",
+              "C": "首項為 -6 ，公比為 -2",
+              "D": "首項為 3 ，公比為 2"
+            },
+            "preserveImage": false
+          },
+          "2278": {
+            "question": "艾倫・圖靈把遠端紙格的編號剛測到的數字推到你面前：判斷下列哪一個數列是首項為 2 、公比為 -2 的等比數列？",
+            "options": {
+              "A": "2, -4, 8, -16",
+              "B": "-2, -4, -6, -8",
+              "C": "2, 0, -2, -4",
+              "D": "2, -4, 8, 24"
+            },
+            "preserveImage": false
+          },
+          "2279": {
+            "question": "現場只剩畫出可延伸的紙帶連續紀錄上的這份計算還沒核對：已知一等比數列的首項為 a （其中 a\neq 0 ），公比為 r 且 r < 0 。關於此數列的各項性質，下列敘述何者必然正確？",
+            "options": {
+              "A": "此數列的每一項皆為負數。",
+              "B": "若將此數列的每一項皆同乘以 -2 ，則新數列的公比會變成 -2r 。",
+              "C": "此數列的第 1 項與第 3 項之乘積必為正數。",
+              "D": "若將此數列的每一項皆平方，形成的新數列之公比仍為 r 。"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "畫出可延伸的紙帶連續紀錄上的數字對上了。畫出可延伸的紙帶終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_2",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "畫出可延伸的紙帶告一段落，萬用機器模型卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是定義讀寫與狀態規則；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q04"
+    },
+    {
+      "id": "q04",
+      "type": "quiz",
+      "anchor": 4,
+      "scene": "兩套外觀不同的規則",
+      "objective": "用數列、函數與多項式檢查程序是否一致",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "兩套外觀不同的規則。兩張狀態表寫法不同，必須展開乘法公式，確認輸出是否其實完全相同。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "整理萬用機器模型上的代數式，讓重複結構現形。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "乘法公式與多項式",
+        "chapterIncludes": "乘法公式與多項式 乘法公式",
+        "knowledgePoint": "平方差公式",
+        "questionIds": [
+          757,
+          759,
+          755
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-turing-scene-04",
+        "setting": "劍橋研究室、紙帶模型桌與倫敦數學學會投稿室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "萬用機器模型",
+          "無限紙帶草圖",
+          "狀態卡"
+        ],
+        "sceneNeed": "兩張狀態表寫法不同，必須展開乘法公式，確認輸出是否其實完全相同。",
+        "rewrites": {
+          "755": {
+            "question": "兩套外觀不同的規則。艾倫・圖靈在萬用機器模型上留下這組條件：利用平方差公式判斷， 98 \\times 102 的值與下列哪一個算式的結果相同？",
+            "options": {
+              "A": "100^2 - 2^2",
+              "B": "100^2 + 2^2",
+              "C": "90^2 - 8^2",
+              "D": "100^2 - 4^2"
+            },
+            "preserveImage": false
+          },
+          "757": {
+            "question": "萬用機器模型的紀錄停在這一行；下一步正等著它：若 2023^2 - 2022^2 = k ，則 k 的值為 _____。",
+            "preserveImage": false
+          },
+          "759": {
+            "question": "現場只剩萬用機器模型上的這份計算還沒核對：請利用乘法公式，計算 (2+1)(2^2+1)(2^4+1)(2^8+1) - 2^{16} 的值。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "萬用機器模型上的數字對上了。定義讀寫與狀態規則終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_2",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "兩套規則看似不同，怎麼比？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查程序編碼表。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選萬用機器模型。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "先做代數化簡",
+          "next": "choice_2_measure"
+        },
+        {
+          "id": "observe",
+          "label": "先代入測試值",
+          "next": "choice_2_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_2_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "外層形式被剝掉，相同結構立刻顯現。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "choice_2_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "數個輸出一致，但圖靈要求再補上一般化簡。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "q05",
+      "type": "quiz",
+      "anchor": 5,
+      "scene": "重複程序的代數指紋",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "重複程序的代數指紋。投稿篇幅不足，玩家要化簡多項式，刪除只換了外觀的重複規則。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "整理論文手稿上的代數式，讓重複結構現形。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_2": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_2": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "乘法公式與多項式",
+        "chapterIncludes": "乘法公式與多項式 多項式的加法與減法",
+        "knowledgePoint": "多項式的定義與相關名詞",
+        "questionIds": [
+          767,
+          765,
+          764
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-turing-scene-05",
+        "setting": "劍橋研究室、紙帶模型桌與倫敦數學學會投稿室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "論文手稿",
+          "無限紙帶草圖",
+          "狀態卡"
+        ],
+        "sceneNeed": "投稿篇幅不足，玩家要化簡多項式，刪除只換了外觀的重複規則。",
+        "rewrites": {
+          "764": {
+            "question": "現場只剩論文手稿上的這份計算還沒核對：下列哪一個數學式子是 x 的多項式？",
+            "options": {
+              "A": "2x^2 + \\frac{1}{x} - 3",
+              "B": "|x| + 5",
+              "C": "4x^3 - 7x + 2",
+              "D": "\\sqrt{x} + x^2"
+            },
+            "preserveImage": false
+          },
+          "765": {
+            "question": "重複程序的代數指紋。艾倫・圖靈在論文手稿上留下這組條件：已知 (a-2)x^3 + (b+3)x^2 + cx + 5 是一個 x 的一次多項式，且一次項的係數為 4 。請問 a+b+c 的值為何？",
+            "preserveImage": false
+          },
+          "767": {
+            "question": "論文手稿的紀錄停在這一行；下一步正等著它：若多項式 (m^2 - 4)x^2 + (m - 2)x + (m + 3) 是一個零次多項式，則 m 的值為何？ _____",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "論文手稿上的數字對上了。定義讀寫與狀態規則終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q06",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q06",
+      "type": "quiz",
+      "anchor": 6,
+      "scene": "一個輸入是否有兩個出口",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "一個輸入是否有兩個出口。函數圖上出現分岔，若同一狀態同時指向兩個結果，機器定義便無法執行。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把定義讀寫與狀態規則坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "函數及其圖形",
+        "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+        "knowledgePoint": "函數的對應關係",
+        "questionIds": [
+          2282,
+          2284,
+          2285
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-turing-scene-06",
+        "setting": "劍橋研究室、紙帶模型桌與倫敦數學學會投稿室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "定義讀寫與狀態規則坐標圖",
+          "無限紙帶草圖",
+          "狀態卡"
+        ],
+        "sceneNeed": "函數圖上出現分岔，若同一狀態同時指向兩個結果，機器定義便無法執行。",
+        "rewrites": {
+          "2282": {
+            "question": "定義讀寫與狀態規則坐標圖的紀錄停在這一行；下一步正等著它：若 f(x) 是一個常數函數，且已知 f(2) + f(5) = 14 ，則 f(-3) 的值為\n_____。",
+            "preserveImage": false
+          },
+          "2284": {
+            "question": "現場只剩定義讀寫與狀態規則坐標圖上的這份計算還沒核對：已知一次函數 f(x) = -3x + 8 ，若輸入一個數 a 後，得到的函數值為 -7 （即 f(a) = -7 ），則 a =\n_____。",
+            "preserveImage": false
+          },
+          "2285": {
+            "question": "一個輸入是否有兩個出口。艾倫・圖靈在定義讀寫與狀態規則坐標圖上留下這組條件：判斷下列關於變數 x 與變數 y 的對應關係中，何者可以說明「 y 是 x 的函數」？",
+            "options": {
+              "A": "若 x 為某個正整數， y 為 x 的因數。",
+              "B": "若 x 為某個正整數， y 為 x 的平方根。",
+              "C": "若 x 為平年中某個月份的天數， y 為該月份的月份數字。",
+              "D": "若 x 為某個正整數， y 為 x 除以 3 所得到的餘數。"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "定義讀寫與狀態規則坐標圖上的數字對上了。定義讀寫與狀態規則終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q07",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q07",
+      "type": "quiz",
+      "anchor": 7,
+      "scene": "紙帶架的斜撐",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "紙帶架的斜撐。木架晃動將撕裂長紙帶，必須用畢氏定理算出斜撐長度。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把狀態卡上的條件逐項核對。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "平方根與畢氏定理",
+        "chapterIncludes": "平方根與畢氏定理 根式的運算",
+        "knowledgePoint": "根式的化簡",
+        "questionIds": [
+          2267,
+          832,
+          835
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-turing-scene-07",
+        "setting": "劍橋研究室、紙帶模型桌與倫敦數學學會投稿室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "狀態卡",
+          "無限紙帶草圖",
+          "程序編碼表"
+        ],
+        "sceneNeed": "木架晃動將撕裂長紙帶，必須用畢氏定理算出斜撐長度。",
+        "rewrites": {
+          "832": {
+            "question": "狀態卡的紀錄停在這一行；下一步正等著它：將 \\sqrt{180} 化為最簡根式，其結果為下列何者？",
+            "options": {
+              "A": "6\\sqrt{5}",
+              "B": "3\\sqrt{20}",
+              "C": "9\\sqrt{20}",
+              "D": "36\\sqrt{5}"
+            },
+            "preserveImage": false
+          },
+          "835": {
+            "question": "紙帶架的斜撐。艾倫・圖靈在狀態卡上留下這組條件：計算並化簡 \\sqrt{72} - \\frac{8}{\\sqrt{2}} + (\\sqrt{2} + 1)(\\sqrt{2} - 3) 的值。",
+            "preserveImage": false
+          },
+          "2267": {
+            "question": "狀態卡的紀錄停在這一行；下一步正等著它：化簡 \\sqrt{48} - \\sqrt{12} 的結果為下列何者？",
+            "options": {
+              "A": "2\\sqrt{3}",
+              "B": "6",
+              "C": "4\\sqrt{3}",
+              "D": "\\sqrt{36}"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "狀態卡上的數字對上了。把程序編成資料終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_3",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_3",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "程序代碼應如何排列？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查論文手稿。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選無限紙帶草圖。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "依狀態編號",
+          "next": "choice_3_measure"
+        },
+        {
+          "id": "observe",
+          "label": "依執行順序",
+          "next": "choice_3_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_3_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "查找速度提高，轉換順序仍須另加索引。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "choice_3_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "模擬過程清楚展開，再由編號表消除歧義。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "q08",
+      "type": "quiz",
+      "anchor": 8,
+      "scene": "把每台機器編成一串數",
+      "objective": "完成能讀取其他程序編碼的通用機器模型",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "把每台機器編成一串數。操作代碼依數列排列，玩家必須找出漏掉的一段，否則整台機器會被錯誤描述。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "從把程序編成資料連續紀錄連續紀錄裡找出規律，推到尚未測量的一項。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_3": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_3": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "數列與等差級數",
+        "chapterIncludes": "數列與等差級數 等差級數",
+        "knowledgePoint": "等差級數求和公式及其應用問題",
+        "questionIds": [
+          987,
+          984,
+          985
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-turing-scene-08",
+        "setting": "劍橋研究室、紙帶模型桌與倫敦數學學會投稿室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "把程序編成資料連續紀錄",
+          "無限紙帶草圖",
+          "狀態卡"
+        ],
+        "sceneNeed": "操作代碼依數列排列，玩家必須找出漏掉的一段，否則整台機器會被錯誤描述。",
+        "rewrites": {
+          "984": {
+            "question": "現場只剩把程序編成資料連續紀錄上的這份計算還沒核對：已知一個等差級數共有 15 項，其首項為 5，第 15 項為 47，求此等差級數的和為多少？",
+            "options": {
+              "A": "390",
+              "B": "780",
+              "C": "364",
+              "D": "375"
+            },
+            "preserveImage": false
+          },
+          "985": {
+            "question": "把每台機器編成一串數。艾倫・圖靈在把程序編成資料連續紀錄上留下這組條件：你在現場擺套圈圈測點，你在架上第一排擺了 3 個樣品，第二排擺了 5 個樣品，第三排擺了 7 個樣品，依此類推。若你一共擺了 10 排，請問你總共準備了多少個樣品？_____",
+            "preserveImage": false
+          },
+          "987": {
+            "question": "把程序編成資料連續紀錄的紀錄停在這一行；下一步正等著它：已知一等差數列的前 11 項和為 220，且第 2 項為 8。求此等差數列的第 10 項為多少？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "把程序編成資料連續紀錄上的數字對上了。把程序編成資料終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q09",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q09",
+      "type": "quiz",
+      "anchor": 9,
+      "scene": "程序成為另一台機器的輸入",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "程序成為另一台機器的輸入。玩家與圖靈把狀態表交給新模型讀取，首次看見同一台機器依編碼模擬不同程序。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把把程序編成資料坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "函數及其圖形",
+        "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+        "knowledgePoint": "常數函數",
+        "questionIds": [
+          1014,
+          1016,
+          2287
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-turing-scene-09",
+        "setting": "劍橋研究室、紙帶模型桌與倫敦數學學會投稿室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "把程序編成資料坐標圖",
+          "無限紙帶草圖",
+          "狀態卡"
+        ],
+        "sceneNeed": "玩家與圖靈把狀態表交給新模型讀取，首次看見同一台機器依編碼模擬不同程序。",
+        "rewrites": {
+          "1014": {
+            "question": "現場只剩把程序編成資料坐標圖上的這份計算還沒核對：若函數 f(x) = -5 是一個常數函數，則當 x = 3 時，對應的函數值為何？",
+            "options": {
+              "A": "-15",
+              "B": "-5",
+              "C": "-2",
+              "D": "3"
+            },
+            "preserveImage": false
+          },
+          "1016": {
+            "question": "要讓程序成為另一台機器的輸入繼續，你得先解開把程序編成資料坐標圖旁這一筆：已知一次函數 y = ax + b 的圖形為一條平行 x 軸的直線，且此直線不通過第三象限與第四象限。則關於 a 與 b 的條件限制，下列敘述何者必然正確？",
+            "options": {
+              "A": "a = 0 且 b > 0",
+              "B": "a > 0 且 b = 0",
+              "C": "a = 0 且 b",
+              "D": "a 為任意數且 b > 0"
+            },
+            "preserveImage": false
+          },
+          "2287": {
+            "question": "把程序編成資料坐標圖的紀錄停在這一行；下一步正等著它：已知一次函數 y = ax + b 的圖形是一條平行 x 軸的直線，且該圖形通過點 (4, -5) 。關於此函數，下列敘述何者正確？",
+            "options": {
+              "A": "此直線的關係式為 x = 4 ，且它不是常數函數",
+              "B": "在此函數關係式中， a = -5 且 b = 0",
+              "C": "此為常數函數，且當 x = 2024 時，對應的函數值為 -5",
+              "D": "因為不同的 x 值都對應到相同的 y 值，所以 y 不是 x 的函數"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "把程序編成資料坐標圖上的數字對上了。把程序編成資料終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_1",
+      "type": "eureka",
+      "eurekaId": "g8h1-turing-insight-1",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "機器的程序也能編成資料，交由另一台機器讀取與模擬"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "transition_4"
+    },
+    {
+      "id": "transition_4",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "把程序編成資料告一段落，無限紙帶草圖卻送來新的壞消息。原先穩定的讀數突然偏了一格；這不是能略過的小差。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是建構能模擬程序的機器；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q10"
+    },
+    {
+      "id": "q10",
+      "type": "quiz",
+      "anchor": 10,
+      "scene": "萬用模擬器的選擇函數",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "萬用模擬器的選擇函數。多組程序共享一台模型，必須由輸入代碼判讀該套用哪條函數規則。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把建構能模擬程序的機器坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "函數及其圖形",
+        "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+        "knowledgePoint": "一次函數（線型函數）及其圖形",
+        "questionIds": [
+          1022,
+          1024,
+          1025
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-turing-scene-10",
+        "setting": "劍橋研究室、紙帶模型桌與倫敦數學學會投稿室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "建構能模擬程序的機器坐標圖",
+          "無限紙帶草圖",
+          "狀態卡"
+        ],
+        "sceneNeed": "多組程序共享一台模型，必須由輸入代碼判讀該套用哪條函數規則。",
+        "rewrites": {
+          "1022": {
+            "question": "建構能模擬程序的機器坐標圖的紀錄停在這一行；下一步正等著它：下列各選項的關係式中，哪一個不是線型函數？",
+            "options": {
+              "A": "y = 5",
+              "B": "y = -3x + 2",
+              "C": "y = \\frac{1}{x} + 4",
+              "D": "y = \\frac{x}{2} - 1"
+            },
+            "preserveImage": false
+          },
+          "1024": {
+            "question": "現場只剩建構能模擬程序的機器坐標圖上的這份計算還沒核對：已知有兩個一次函數 y = 4x - 5 與 y = -2x + 7。若當 x = a 時，這兩個函數的函數值相等，則 a 的值為何？",
+            "options": {
+              "A": "\\frac{1}{3}",
+              "B": "2",
+              "C": "3",
+              "D": "6"
+            },
+            "preserveImage": false
+          },
+          "1025": {
+            "question": "萬用模擬器的選擇函數。艾倫・圖靈在建構能模擬程序的機器坐標圖上留下這組條件：你家有一個大水箱，水箱內原有 120 公升的水。你打開水龍頭開始注水，每分鐘固定注入 15 公升的水。若注水時間為 x 分鐘，水箱內的水量為 y 公升。若你想要讓水箱內的水量達到 345 公升，請問需要注水多少分鐘？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "建構能模擬程序的機器坐標圖上的數字對上了。建構能模擬程序的機器終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_4",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_4",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "程序遲遲不停，下一步是什麼？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查狀態卡。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選程序編碼表。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "繼續追蹤數列",
+          "next": "choice_4_measure"
+        },
+        {
+          "id": "observe",
+          "label": "尋找反證結構",
+          "next": "choice_4_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_4_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "更多項目確認循環跡象，卻仍不能成為一般證明。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "choice_4_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "你們停止無限等待，轉而檢查通用判定會導致的矛盾。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "q11",
+      "type": "quiz",
+      "anchor": 11,
+      "scene": "被偽裝的同一個輸出式",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "被偽裝的同一個輸出式。審稿人指出兩個例子可能重複，玩家要以乘法公式證明它們等價或找出差異。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "整理無限紙帶草圖上的代數式，讓重複結構現形。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_4": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_4": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "乘法公式與多項式",
+        "chapterIncludes": "乘法公式與多項式 多項式的乘法與除法",
+        "knowledgePoint": "多項式的乘法運算",
+        "questionIds": [
+          791,
+          2264,
+          793
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-turing-scene-11",
+        "setting": "劍橋研究室、紙帶模型桌與倫敦數學學會投稿室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "無限紙帶草圖",
+          "狀態卡",
+          "程序編碼表"
+        ],
+        "sceneNeed": "審稿人指出兩個例子可能重複，玩家要以乘法公式證明它們等價或找出差異。",
+        "rewrites": {
+          "791": {
+            "question": "要讓被偽裝的同一個輸出式繼續，你得先解開無限紙帶草圖旁這一筆：已知 (x^2 - ax + 3)(2x - 5) 的展開式中， x^2 項的係數是 -11 ，則 x 項的係數為何？",
+            "preserveImage": false
+          },
+          "793": {
+            "question": "艾倫・圖靈把被偽裝的同一個輸出式剛測到的數字推到你面前：若兩個多項式相乘的結果為 (ax + 2)(3x - b) = 6x^2 - cx - 10 （其中 a, b, c 均為正整數），則 a+b+c 的值為 _____。",
+            "preserveImage": false
+          },
+          "2264": {
+            "question": "現場只剩無限紙帶草圖上的這份計算還沒核對：已知多項式 (x^2 + ax - 3)(3x - 2) 的展開式中， x^2 項的係數為 7 ，則此展開式中 x 項的係數為何？",
+            "options": {
+              "A": "-15",
+              "B": "-6",
+              "C": "3",
+              "D": "15"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "無限紙帶草圖上的數字對上了。建構能模擬程序的機器終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q12",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q12",
+      "type": "quiz",
+      "anchor": 12,
+      "scene": "工作室兩點間的最短佈線",
+      "objective": "在投稿期限前說清可計算能力及其限制",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "工作室兩點間的最短佈線。萬用模型必須接上遠端紙帶架，平方根與畢氏關係將決定線材是否足夠。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用直角與距離核對狀態卡的實際長度。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "平方根與畢氏定理",
+        "chapterIncludes": "平方根與畢氏定理 平方根與近似值",
+        "knowledgePoint": "平方根的意義",
+        "questionIds": [
+          808,
+          810,
+          807
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-turing-scene-12",
+        "setting": "劍橋研究室、紙帶模型桌與倫敦數學學會投稿室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "狀態卡",
+          "無限紙帶草圖",
+          "程序編碼表"
+        ],
+        "sceneNeed": "萬用模型必須接上遠端紙帶架，平方根與畢氏關係將決定線材是否足夠。",
+        "rewrites": {
+          "807": {
+            "question": "狀態卡的紀錄停在這一行；下一步正等著它：下列關於平方根的敘述，何者正確？\n(A) 16 的平方根是 4\n(B) \\sqrt{25} 的平方根是 \\pm 5\n(C) 0 的平方根只有一個，就是 0\n(D) 因為 -9 沒有平方根，所以 \\sqrt{-9} = -3",
+            "options": {
+              "A": "16 的平方根是 4",
+              "B": "\\sqrt{25} 的平方根是 \\pm 5",
+              "C": "0 的平方根只有一個，就是 0",
+              "D": "因為 -9 沒有平方根，所以 \\sqrt{-9} = -3"
+            },
+            "preserveImage": false
+          },
+          "808": {
+            "question": "艾倫・圖靈把工作室兩點間的最短佈線剛測到的數字推到你面前：若 3x - 5 的平方根是 \\pm 4 ，請求出 x 的值。",
+            "preserveImage": false
+          },
+          "810": {
+            "question": "工作室兩點間的最短佈線。艾倫・圖靈在狀態卡上留下這組條件：已知 x 為正整數，且 \\sqrt{20 - x} 也是一個正整數。請問滿足條件的 x 值中，最小的 x 值為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "狀態卡上的數字對上了。建構能模擬程序的機器終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_5",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "建構能模擬程序的機器告一段落，狀態卡卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是證明計算也有邊界；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q13"
+    },
+    {
+      "id": "q13",
+      "type": "quiz",
+      "anchor": 13,
+      "scene": "永遠往前的狀態序列",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "永遠往前的狀態序列。一個程序持續產生項目，必須分析數列規律，而不能僅因等得夠久便宣稱它永不停止。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "從證明計算也有邊界連續紀錄連續紀錄裡找出規律，推到尚未測量的一項。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "數列與等差級數",
+        "chapterIncludes": "數列與等差級數 等差數列",
+        "knowledgePoint": "數列的規律性",
+        "questionIds": [
+          951,
+          953,
+          952
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-turing-scene-13",
+        "setting": "劍橋研究室、紙帶模型桌與倫敦數學學會投稿室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "證明計算也有邊界連續紀錄",
+          "無限紙帶草圖",
+          "狀態卡"
+        ],
+        "sceneNeed": "一個程序持續產生項目，必須分析數列規律，而不能僅因等得夠久便宣稱它永不停止。",
+        "rewrites": {
+          "951": {
+            "question": "要讓永遠往前的狀態序列繼續，你得先解開證明計算也有邊界連續紀錄旁這一筆：已知一個等差數列的首項為 5，公差為 4，請問此數列的第 15 項是多少？",
+            "preserveImage": false
+          },
+          "952": {
+            "question": "證明計算也有邊界連續紀錄的紀錄停在這一行；下一步正等著它：你為了取用禮物給同行者，決定每天存錢。你第一天存了 10 枚，之後每一天都比前一天多存 5 枚。請問到了第幾天時，你當天存進撲滿的金額會剛好是 100 枚？",
+            "preserveImage": false
+          },
+          "953": {
+            "question": "艾倫・圖靈把永遠往前的狀態序列剛測到的數字推到你面前：觀察數列的規律：1, 4, 7, 10, ...，下列關於此數列的敘述何者正確？",
+            "options": {
+              "A": "此數列的第 20 項為 61",
+              "B": "數列中沒有偶數",
+              "C": "100 是此數列的其中一項",
+              "D": "此數列的第 n 項可以表示為 3n - 1"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "證明計算也有邊界連續紀錄上的數字對上了。證明計算也有邊界終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_5",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "篇幅只夠先補一處，選哪裡？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查萬用機器模型。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選論文手稿。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "補嚴格定義",
+          "next": "choice_5_measure"
+        },
+        {
+          "id": "observe",
+          "label": "補萬用機器例子",
+          "next": "choice_5_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_5_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "論證地基穩住，直觀例子隨後被壓縮保留。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "choice_5_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "讀者先看懂模型，圖靈再把形式定義嵌回例子。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "q14",
+      "type": "quiz",
+      "anchor": 14,
+      "scene": "不存在的通用停止判定",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "不存在的通用停止判定。玩家與圖靈嘗試把所有程序塞進同一判定函數，矛盾迫使兩人承認萬用計算仍有不可判定的問題。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把證明計算也有邊界坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_5": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_5": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "函數及其圖形",
+        "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+        "knowledgePoint": "函數值",
+        "questionIds": [
+          1006,
+          1010,
+          1008
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-turing-scene-14",
+        "setting": "劍橋研究室、紙帶模型桌與倫敦數學學會投稿室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "證明計算也有邊界坐標圖",
+          "無限紙帶草圖",
+          "狀態卡"
+        ],
+        "sceneNeed": "玩家與圖靈嘗試把所有程序塞進同一判定函數，矛盾迫使兩人承認萬用計算仍有不可判定的問題。",
+        "rewrites": {
+          "1006": {
+            "question": "要讓不存在的通用停止判定繼續，你得先解開證明計算也有邊界坐標圖旁這一筆：你去現場取用樣品，已知總花費 y（元）與取用的樣品數量 x（串）的關係為 y = 35x + 10（其中 10 枚為塑膠袋和竹籤的固定費用）。若你取用了 4 串烤肉，則你需要交付 _____ 元。",
+            "preserveImage": false
+          },
+          "1008": {
+            "question": "艾倫・圖靈把不存在的通用停止判定剛測到的數字推到你面前：紀錄系統「快送」的運費計算方式為：基本費 30 枚，每增加 1 里程格加收 15 枚；另一家「好送」的運費計算方式為：基本費 50 枚，每增加 1 里程格加收 10 枚。若你家距離餐廳 x 里程格，且兩家紀錄系統的運費剛好相同，則 x 的值為何？（已知運費 y 與距離 x 的函數關係分別為 y = 15x + 30 與 y = 10x + 50）",
+            "options": {
+              "A": "2",
+              "B": "4",
+              "C": "5",
+              "D": "6"
+            },
+            "preserveImage": false
+          },
+          "1010": {
+            "question": "不存在的通用停止判定。艾倫・圖靈在證明計算也有邊界坐標圖上留下這組條件：你經營租車行，租借電動車的總費用 y（元）與租借時間 x（小時）為一次函數關係。已知租借 2 小時需花費 300 枚，租借 5 小時需花費 600 枚。若你帶了 800 枚去租車，且將錢全數用完，請問你可以租借這輛電動車幾小時？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "證明計算也有邊界坐標圖上的數字對上了。證明計算也有邊界終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_2",
+      "type": "eureka",
+      "eurekaId": "g8h1-turing-insight-2",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "精確定義計算能力，也會同時暴露計算能力的邊界"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "q15"
+    },
+    {
+      "id": "q15",
+      "type": "quiz",
+      "anchor": 15,
+      "scene": "投稿倒數的頁數級數",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "投稿倒數的頁數級數。印刷所只留最後一個時段，玩家要計算各節累積頁數，保住定義、證明與關鍵例子。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "從證明計算也有邊界連續紀錄連續紀錄裡找出規律，推到尚未測量的一項。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "數列與等差級數",
+        "chapterIncludes": "數列與等差級數 等差數列",
+        "knowledgePoint": "等差數列首項與公差",
+        "questionIds": [
+          959,
+          962,
+          961
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-turing-scene-15",
+        "setting": "劍橋研究室、紙帶模型桌與倫敦數學學會投稿室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "證明計算也有邊界連續紀錄",
+          "無限紙帶草圖",
+          "狀態卡"
+        ],
+        "sceneNeed": "印刷所只留最後一個時段，玩家要計算各節累積頁數，保住定義、證明與關鍵例子。",
+        "rewrites": {
+          "959": {
+            "question": "現場只剩證明計算也有邊界連續紀錄上的這份計算還沒核對：若一等差數列的首項為 20，公差為 -3 ，則此數列從第幾項開始為負數？",
+            "options": {
+              "A": "第 7 項",
+              "B": "第 8 項",
+              "C": "第 9 項",
+              "D": "第 10 項"
+            },
+            "preserveImage": false
+          },
+          "961": {
+            "question": "要讓投稿倒數的頁數級數繼續，你得先解開證明計算也有邊界連續紀錄旁這一筆：你參加銀行的「階梯式存錢計畫」，第一天存入 15 枚，之後每一天都比前一天多存 5 枚。請問你在第幾天會剛好存入 100 枚？",
+            "preserveImage": false
+          },
+          "962": {
+            "question": "證明計算也有邊界連續紀錄的紀錄停在這一行；下一步正等著它：有兩個等差數列 a_n 與 b_n 。已知 a_3 = b_5 ，且數列 a_n 的公差為 4，數列 b_n 的公差為 3。若 a_1 + b_1 = 10 ，則 a_5 的值為 。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "證明計算也有邊界連續紀錄上的數字對上了。證明計算也有邊界終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "ending_history",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "ending_history",
+      "type": "narrative",
+      "objective": "記住艾倫・圖靈留下的答案",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "證明計算也有邊界完成了。現場安靜下來，只有無限紙帶草圖還留著剛才的痕跡。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，今天不是你替我算完。是我們一起把它想通。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那道光退了……可是我還記得它的味道。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "因為答案不是光。答案會留在能被重做的步驟裡。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "——時間向前推去。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "圖靈在戰後持續研究電腦、人工智慧與形態發生，1954 年離世；後世才逐步還他應有的名字。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "眼前的劍橋研究室、紙帶模型桌與倫敦數學學會投稿室慢慢褪色。藍紫色的安靜重新包圍你們。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}，下次再有人快想通時，我們還會聽見。"
+        }
+      ],
+      "next": "ending_stats"
+    },
+    {
+      "id": "ending_stats",
+      "type": "ending",
+      "next": null,
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "【劇本結束】八上 × 艾倫・圖靈"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "這趟路的每一次重算，數字都記得。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "下次見，{{playerName}}！"
+        }
+      ]
+    }
+  ]
+}

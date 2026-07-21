@@ -1,0 +1,926 @@
+{
+  "id": "g7h1",
+  "grade": 7,
+  "half": 1,
+  "description": "同年段共用候選題；各劇本依當下研究場景重新安排槽位與完整改寫題面。",
+  "slots": [
+    {
+      "slot": 1,
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 指數記法與科學記號",
+      "knowledgePoint": "非負整數的次方（指數）",
+      "questionIds": [
+        396,
+        393,
+        395
+      ]
+    },
+    {
+      "slot": 2,
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的加減運算",
+      "knowledgePoint": "同異號數的加減法",
+      "questionIds": [
+        2198,
+        2196,
+        2200
+      ]
+    },
+    {
+      "slot": 3,
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 數與數線",
+      "knowledgePoint": "相反數",
+      "questionIds": [
+        2173,
+        2170,
+        2175
+      ]
+    },
+    {
+      "slot": 4,
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的乘除運算",
+      "knowledgePoint": "四則混合運算",
+      "questionIds": [
+        384,
+        386,
+        388
+      ]
+    },
+    {
+      "slot": 5,
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的加減運算",
+      "knowledgePoint": "去括號法則",
+      "questionIds": [
+        2216,
+        2218,
+        2214
+      ]
+    },
+    {
+      "slot": 6,
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 指數記法與科學記號",
+      "knowledgePoint": "同底數大小比較",
+      "questionIds": [
+        402,
+        407,
+        404
+      ]
+    },
+    {
+      "slot": 7,
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 數與數線",
+      "knowledgePoint": "絕對值",
+      "questionIds": [
+        2179,
+        2182,
+        2237
+      ]
+    },
+    {
+      "slot": 8,
+      "major": "因數分解與分數運算",
+      "chapterIncludes": "因數分解與分數運算 質因數分解",
+      "knowledgePoint": "質數與合數的定義",
+      "questionIds": [
+        422,
+        423,
+        419
+      ]
+    },
+    {
+      "slot": 9,
+      "major": "因數分解與分數運算",
+      "chapterIncludes": "因數分解與分數運算 公因數與公倍數",
+      "knowledgePoint": "最小公倍數",
+      "questionIds": [
+        452,
+        454,
+        455
+      ]
+    },
+    {
+      "slot": 10,
+      "major": "因數分解與分數運算",
+      "chapterIncludes": "因數分解與分數運算 公因數與公倍數",
+      "knowledgePoint": "最大公因數",
+      "questionIds": [
+        444,
+        446,
+        447
+      ]
+    },
+    {
+      "slot": 11,
+      "major": "二元一次聯立方程式",
+      "chapterIncludes": "二元一次聯立方程式 二元一次方程式",
+      "knowledgePoint": "二元一次方程式及其解的意義",
+      "questionIds": [
+        556,
+        554,
+        552
+      ]
+    },
+    {
+      "slot": 12,
+      "major": "二元一次聯立方程式",
+      "chapterIncludes": "二元一次聯立方程式 二元一次聯立方程式的應用",
+      "knowledgePoint": "情境問題的列式與求解檢驗",
+      "questionIds": [
+        580,
+        579,
+        581
+      ]
+    },
+    {
+      "slot": 13,
+      "major": "二元一次聯立方程式",
+      "chapterIncludes": "二元一次聯立方程式 解二元一次聯立方程式",
+      "knowledgePoint": "加減消去法",
+      "questionIds": [
+        571,
+        574,
+        572
+      ]
+    },
+    {
+      "slot": 14,
+      "major": "平面直角坐標系",
+      "chapterIncludes": "平面直角坐標系 直角坐標平面",
+      "knowledgePoint": "坐標平面上的橫軸與縱軸",
+      "questionIds": [
+        590,
+        587,
+        588
+      ]
+    },
+    {
+      "slot": 15,
+      "major": "平面直角坐標系",
+      "chapterIncludes": "平面直角坐標系 直角坐標平面",
+      "knowledgePoint": "象限與位置標定",
+      "questionIds": [
+        598,
+        595,
+        596
+      ]
+    }
+  ],
+  "library": [
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 指數記法與科學記號",
+      "knowledgePoint": "非負整數的次方（指數）",
+      "questionIds": [
+        396,
+        393,
+        395
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的加減運算",
+      "knowledgePoint": "同異號數的加減法",
+      "questionIds": [
+        2198,
+        2196,
+        2200
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 數與數線",
+      "knowledgePoint": "相反數",
+      "questionIds": [
+        2173,
+        2170,
+        2175
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的乘除運算",
+      "knowledgePoint": "四則混合運算",
+      "questionIds": [
+        384,
+        386,
+        388
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的加減運算",
+      "knowledgePoint": "去括號法則",
+      "questionIds": [
+        2216,
+        2218,
+        2214
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 指數記法與科學記號",
+      "knowledgePoint": "同底數大小比較",
+      "questionIds": [
+        402,
+        407,
+        404
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 數與數線",
+      "knowledgePoint": "絕對值",
+      "questionIds": [
+        2179,
+        2182,
+        2237
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的乘除運算",
+      "knowledgePoint": "乘法分配律",
+      "questionIds": [
+        2233,
+        2235,
+        2231
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的乘除運算",
+      "knowledgePoint": "正負數的乘除法則",
+      "questionIds": [
+        2225,
+        2227,
+        2223
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 指數記法與科學記號",
+      "knowledgePoint": "科學記號的意義與表示法",
+      "questionIds": [
+        411,
+        415,
+        413
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 數與數線",
+      "knowledgePoint": "比較大小",
+      "questionIds": [
+        2187,
+        2189,
+        2191
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的加減運算",
+      "knowledgePoint": "加法交換律與結合律",
+      "questionIds": [
+        2205,
+        2208,
+        2206
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 數與數線",
+      "knowledgePoint": "正負數的意義",
+      "questionIds": [
+        2156,
+        2157,
+        2152
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 數與數線",
+      "knowledgePoint": "數線三要素",
+      "questionIds": [
+        2161,
+        2162,
+        2164
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 數與數線",
+      "knowledgePoint": "相反數",
+      "questionIds": [
+        2172,
+        2171,
+        2174
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的乘除運算",
+      "knowledgePoint": "正負數的乘除法則",
+      "questionIds": [
+        2238,
+        2224,
+        2226
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 指數記法與科學記號",
+      "knowledgePoint": "非負整數的次方（指數）",
+      "questionIds": [
+        394,
+        397,
+        398
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的加減運算",
+      "knowledgePoint": "同異號數的加減法",
+      "questionIds": [
+        2197,
+        2199,
+        2201
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的乘除運算",
+      "knowledgePoint": "四則混合運算",
+      "questionIds": [
+        387,
+        385,
+        389
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 數與數線",
+      "knowledgePoint": "正負數的意義",
+      "questionIds": [
+        2154,
+        2153,
+        2155
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的加減運算",
+      "knowledgePoint": "加法交換律與結合律",
+      "questionIds": [
+        2209,
+        2207,
+        2210
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的乘除運算",
+      "knowledgePoint": "乘法分配律",
+      "questionIds": [
+        2236,
+        2232,
+        2234
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 指數記法與科學記號",
+      "knowledgePoint": "同底數大小比較",
+      "questionIds": [
+        406,
+        405,
+        401
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 指數記法與科學記號",
+      "knowledgePoint": "科學記號的意義與表示法",
+      "questionIds": [
+        412,
+        416,
+        408
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 數與數線",
+      "knowledgePoint": "絕對值",
+      "questionIds": [
+        2180,
+        2181,
+        2176
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 數與數線",
+      "knowledgePoint": "數線三要素",
+      "questionIds": [
+        2163,
+        2166,
+        2158
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的加減運算",
+      "knowledgePoint": "去括號法則",
+      "questionIds": [
+        2219,
+        2217,
+        2213
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 數與數線",
+      "knowledgePoint": "比較大小",
+      "questionIds": [
+        2190,
+        2185,
+        2184
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 數與數線",
+      "knowledgePoint": "相反數",
+      "questionIds": [
+        2167,
+        2169
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 指數記法與科學記號",
+      "knowledgePoint": "同底數大小比較",
+      "questionIds": [
+        399,
+        400
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 數與數線",
+      "knowledgePoint": "絕對值",
+      "questionIds": [
+        2178,
+        2177
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 數與數線",
+      "knowledgePoint": "數線三要素",
+      "questionIds": [
+        2160,
+        2159
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的乘除運算",
+      "knowledgePoint": "乘法分配律",
+      "questionIds": [
+        375,
+        378,
+        372
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的乘除運算",
+      "knowledgePoint": "四則混合運算",
+      "questionIds": [
+        383,
+        381,
+        382
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的加減運算",
+      "knowledgePoint": "加法交換律與結合律",
+      "questionIds": [
+        2204,
+        2202,
+        2203
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的加減運算",
+      "knowledgePoint": "同異號數的加減法",
+      "questionIds": [
+        2194,
+        2193,
+        2195
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 數與數線",
+      "knowledgePoint": "正負數的意義",
+      "questionIds": [
+        2148,
+        2149,
+        2150
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 指數記法與科學記號",
+      "knowledgePoint": "非負整數的次方（指數）",
+      "questionIds": [
+        390,
+        392,
+        391
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的乘除運算",
+      "knowledgePoint": "正負數的乘除法則",
+      "questionIds": [
+        2222,
+        2221,
+        2220
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的乘除運算",
+      "knowledgePoint": "乘法分配律",
+      "questionIds": [
+        2230,
+        380,
+        374
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的乘除運算",
+      "knowledgePoint": "乘法分配律",
+      "questionIds": [
+        376,
+        2228,
+        2229
+      ]
+    },
+    {
+      "major": "整數運算與科學記號",
+      "chapterIncludes": "整數運算與科學記號 整數的乘除運算",
+      "knowledgePoint": "乘法分配律",
+      "questionIds": [
+        373,
+        379,
+        377
+      ]
+    },
+    {
+      "major": "因數分解與分數運算",
+      "chapterIncludes": "因數分解與分數運算 質因數分解",
+      "knowledgePoint": "質數與合數的定義",
+      "questionIds": [
+        422,
+        423,
+        419
+      ]
+    },
+    {
+      "major": "因數分解與分數運算",
+      "chapterIncludes": "因數分解與分數運算 公因數與公倍數",
+      "knowledgePoint": "最小公倍數",
+      "questionIds": [
+        452,
+        454,
+        455
+      ]
+    },
+    {
+      "major": "因數分解與分數運算",
+      "chapterIncludes": "因數分解與分數運算 公因數與公倍數",
+      "knowledgePoint": "最大公因數",
+      "questionIds": [
+        444,
+        446,
+        447
+      ]
+    },
+    {
+      "major": "因數分解與分數運算",
+      "chapterIncludes": "因數分解與分數運算 質因數分解",
+      "knowledgePoint": "質因數分解與標準分解式",
+      "questionIds": [
+        429,
+        427,
+        2241
+      ]
+    },
+    {
+      "major": "因數分解與分數運算",
+      "chapterIncludes": "因數分解與分數運算 公因數與公倍數",
+      "knowledgePoint": "短除法",
+      "questionIds": [
+        435,
+        437,
+        436
+      ]
+    },
+    {
+      "major": "因數分解與分數運算",
+      "chapterIncludes": "因數分解與分數運算 公因數與公倍數",
+      "knowledgePoint": "互質",
+      "questionIds": [
+        460,
+        461,
+        457
+      ]
+    },
+    {
+      "major": "因數分解與分數運算",
+      "chapterIncludes": "因數分解與分數運算 質因數分解",
+      "knowledgePoint": "質數與合數的定義",
+      "questionIds": [
+        421,
+        420,
+        2240
+      ]
+    },
+    {
+      "major": "因數分解與分數運算",
+      "chapterIncludes": "因數分解與分數運算 質因數分解",
+      "knowledgePoint": "質因數分解與標準分解式",
+      "questionIds": [
+        428,
+        430,
+        431
+      ]
+    },
+    {
+      "major": "因數分解與分數運算",
+      "chapterIncludes": "因數分解與分數運算 公因數與公倍數",
+      "knowledgePoint": "短除法",
+      "questionIds": [
+        438,
+        440,
+        439
+      ]
+    },
+    {
+      "major": "因數分解與分數運算",
+      "chapterIncludes": "因數分解與分數運算 公因數與公倍數",
+      "knowledgePoint": "最大公因數",
+      "questionIds": [
+        445,
+        448,
+        441
+      ]
+    },
+    {
+      "major": "因數分解與分數運算",
+      "chapterIncludes": "因數分解與分數運算 公因數與公倍數",
+      "knowledgePoint": "最小公倍數",
+      "questionIds": [
+        453,
+        456,
+        449
+      ]
+    },
+    {
+      "major": "因數分解與分數運算",
+      "chapterIncludes": "因數分解與分數運算 公因數與公倍數",
+      "knowledgePoint": "互質",
+      "questionIds": [
+        459,
+        458
+      ]
+    },
+    {
+      "major": "因數分解與分數運算",
+      "chapterIncludes": "因數分解與分數運算 公因數與公倍數",
+      "knowledgePoint": "最小公倍數",
+      "questionIds": [
+        451,
+        450
+      ]
+    },
+    {
+      "major": "因數分解與分數運算",
+      "chapterIncludes": "因數分解與分數運算 公因數與公倍數",
+      "knowledgePoint": "最大公因數",
+      "questionIds": [
+        443,
+        442
+      ]
+    },
+    {
+      "major": "因數分解與分數運算",
+      "chapterIncludes": "因數分解與分數運算 質因數分解",
+      "knowledgePoint": "質數與合數的定義",
+      "questionIds": [
+        417,
+        2239
+      ]
+    },
+    {
+      "major": "因數分解與分數運算",
+      "chapterIncludes": "因數分解與分數運算 質因數分解",
+      "knowledgePoint": "質因數分解與標準分解式",
+      "questionIds": [
+        426,
+        424,
+        425
+      ]
+    },
+    {
+      "major": "因數分解與分數運算",
+      "chapterIncludes": "因數分解與分數運算 公因數與公倍數",
+      "knowledgePoint": "短除法",
+      "questionIds": [
+        432,
+        434,
+        433
+      ]
+    },
+    {
+      "major": "二元一次聯立方程式",
+      "chapterIncludes": "二元一次聯立方程式 二元一次方程式",
+      "knowledgePoint": "二元一次方程式及其解的意義",
+      "questionIds": [
+        556,
+        554,
+        552
+      ]
+    },
+    {
+      "major": "二元一次聯立方程式",
+      "chapterIncludes": "二元一次聯立方程式 二元一次聯立方程式的應用",
+      "knowledgePoint": "情境問題的列式與求解檢驗",
+      "questionIds": [
+        580,
+        579,
+        581
+      ]
+    },
+    {
+      "major": "二元一次聯立方程式",
+      "chapterIncludes": "二元一次聯立方程式 解二元一次聯立方程式",
+      "knowledgePoint": "加減消去法",
+      "questionIds": [
+        571,
+        574,
+        572
+      ]
+    },
+    {
+      "major": "二元一次聯立方程式",
+      "chapterIncludes": "二元一次聯立方程式 解二元一次聯立方程式",
+      "knowledgePoint": "代入消去法",
+      "questionIds": [
+        564,
+        562,
+        565
+      ]
+    },
+    {
+      "major": "二元一次聯立方程式",
+      "chapterIncludes": "二元一次聯立方程式 二元一次聯立方程式的應用",
+      "knowledgePoint": "情境問題的列式與求解檢驗",
+      "questionIds": [
+        582,
+        2252,
+        578
+      ]
+    },
+    {
+      "major": "二元一次聯立方程式",
+      "chapterIncludes": "二元一次聯立方程式 解二元一次聯立方程式",
+      "knowledgePoint": "加減消去法",
+      "questionIds": [
+        575,
+        570,
+        573
+      ]
+    },
+    {
+      "major": "二元一次聯立方程式",
+      "chapterIncludes": "二元一次聯立方程式 解二元一次聯立方程式",
+      "knowledgePoint": "代入消去法",
+      "questionIds": [
+        561,
+        566,
+        563
+      ]
+    },
+    {
+      "major": "二元一次聯立方程式",
+      "chapterIncludes": "二元一次聯立方程式 二元一次方程式",
+      "knowledgePoint": "二元一次方程式及其解的意義",
+      "questionIds": [
+        557,
+        555,
+        549
+      ]
+    },
+    {
+      "major": "二元一次聯立方程式",
+      "chapterIncludes": "二元一次聯立方程式 二元一次方程式",
+      "knowledgePoint": "二元一次方程式及其解的意義",
+      "questionIds": [
+        550,
+        551
+      ]
+    },
+    {
+      "major": "二元一次聯立方程式",
+      "chapterIncludes": "二元一次聯立方程式 解二元一次聯立方程式",
+      "knowledgePoint": "代入消去法",
+      "questionIds": [
+        558,
+        560,
+        559
+      ]
+    },
+    {
+      "major": "二元一次聯立方程式",
+      "chapterIncludes": "二元一次聯立方程式 二元一次聯立方程式的應用",
+      "knowledgePoint": "情境問題的列式與求解檢驗",
+      "questionIds": [
+        577,
+        576,
+        2251
+      ]
+    },
+    {
+      "major": "二元一次聯立方程式",
+      "chapterIncludes": "二元一次聯立方程式 解二元一次聯立方程式",
+      "knowledgePoint": "加減消去法",
+      "questionIds": [
+        569,
+        568,
+        567
+      ]
+    },
+    {
+      "major": "平面直角坐標系",
+      "chapterIncludes": "平面直角坐標系 直角坐標平面",
+      "knowledgePoint": "坐標平面上的橫軸與縱軸",
+      "questionIds": [
+        590,
+        587,
+        588
+      ]
+    },
+    {
+      "major": "平面直角坐標系",
+      "chapterIncludes": "平面直角坐標系 直角坐標平面",
+      "knowledgePoint": "象限與位置標定",
+      "questionIds": [
+        598,
+        595,
+        596
+      ]
+    },
+    {
+      "major": "平面直角坐標系",
+      "chapterIncludes": "平面直角坐標系 直角坐標平面",
+      "knowledgePoint": "坐標平面上的橫軸與縱軸",
+      "questionIds": [
+        591,
+        586,
+        589
+      ]
+    },
+    {
+      "major": "平面直角坐標系",
+      "chapterIncludes": "平面直角坐標系 直角坐標平面",
+      "knowledgePoint": "象限與位置標定",
+      "questionIds": [
+        597,
+        600,
+        592
+      ]
+    },
+    {
+      "major": "平面直角坐標系",
+      "chapterIncludes": "平面直角坐標系 直角坐標平面",
+      "knowledgePoint": "坐標平面上的橫軸與縱軸",
+      "questionIds": [
+        583,
+        585,
+        584
+      ]
+    }
+  ]
+}

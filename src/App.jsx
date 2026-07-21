@@ -1,672 +1,1044 @@
-import { useEffect, useRef, useState } from 'react'
-import confetti from 'canvas-confetti'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import MathText from './components/MathText.jsx'
+import { scriptList, scriptsById } from './data/scripts'
+import { adaptQuestion } from './lib/adaptQuestion'
 import {
-  Coins,
-  Flame,
-  Gem,
-  Shield,
-  Zap,
-  RefreshCw,
-  Delete,
-  Send,
-  PartyPopper,
-  XCircle,
-  Keyboard,
-} from 'lucide-react'
-import { QUESTION_BANK } from './data/questions'
-import MathText from './components/MathText'
+  generateHintAI,
+  pickCorrectFeedback,
+} from './lib/detour'
+import { classifyError } from './lib/errorProfile'
+import { generateEndingJournalAI, summarizeTrail } from './lib/journal'
+import { drawQuestion } from './lib/questionPool'
+import {
+  clearSave,
+  loadAllSaves,
+  loadSave,
+  saveGame,
+} from './lib/saveGame'
+import {
+  accuracyPercent,
+  checkAnswer,
+  filterLinesByChoices,
+  findNode,
+} from './lib/rpgUtils'
+import { fillPersona } from './lib/persona'
 
-const STORAGE_KEY = 'math-wager-wallet'
-const START_BALANCE = 1000
-const SKIP_FEE = 20
-const BAILOUT_THRESHOLD = 20
-const BAILOUT_AMOUNT = 500
+const SCRIPTS = scriptsById
+const MAX_VISIBLE = 3
+const TYPE_MS = 28
 
-const STAGE = {
-  STRATEGY: 'strategy',
-  ANSWER: 'answer',
-  RESULT: 'result',
+const GRADES = [
+  { grade: 7, half: 1, label: '七上' },
+  { grade: 7, half: 2, label: '七下' },
+  { grade: 8, half: 1, label: '八上' },
+  { grade: 8, half: 2, label: '八下' },
+  { grade: 9, half: 1, label: '九上' },
+  { grade: 9, half: 2, label: '九下' },
+]
+
+const MATHS = ['阿基米德', '伽利略', '牛頓', '高斯', '艾倫・圖靈']
+
+const SPEAKER_CLASS = {
+  narrator: 'spk-narrator',
+  NumNum: 'spk-numnum',
+  Numi: 'spk-numi',
+  Archimedes: 'spk-archimedes',
+  Mathematician: 'spk-mathematician',
+  King: 'spk-king',
+  Captain: 'spk-king',
+  player: 'spk-player',
 }
 
-function loadWallet() {
-  const raw = localStorage.getItem(STORAGE_KEY)
-  const n = Number(raw)
-  return Number.isFinite(n) ? n : START_BALANCE
+function speakerLabel(speaker, playerName, script) {
+  if (speaker === 'narrator') return null
+  if (speaker === 'player') return playerName || '你'
+  if (speaker === 'Mathematician') return script?.mathematician || '數學家'
+  if (speaker === 'Archimedes') return '阿基米德'
+  if (speaker === 'King') return '希倫王'
+  if (speaker === 'Captain') return '親衛隊長'
+  if (script?.speakerLabels?.[speaker]) return script.speakerLabels[speaker]
+  return speaker
 }
 
-function formatGold(n) {
-  return Math.round(n).toLocaleString('en-US')
+function speakerClass(speaker) {
+  if (SPEAKER_CLASS[speaker]) return SPEAKER_CLASS[speaker]
+  return speaker === 'narrator' ? 'spk-narrator' : 'spk-supporting'
 }
 
-/** streak 0 → x1.0, streak 3 → x1.5, soft-cap 3.0 */
-function getStreakMultiplier(streak) {
-  return Math.min(1 + (streak * 0.5) / 3, 3)
+function nodeLines(node, choiceHistory = {}) {
+  if (!node) return []
+  let lines = []
+  if (node.lines?.length) lines = node.lines
+  else if (node.pages?.length) lines = node.pages.flat()
+  return filterLinesByChoices(lines, choiceHistory)
 }
 
-function pickQuestion(excludeId) {
-  const pool =
-    QUESTION_BANK.length <= 1
-      ? QUESTION_BANK
-      : QUESTION_BANK.filter((q) => q.id !== excludeId)
-  return pool[Math.floor(Math.random() * pool.length)]
+function quizSetupLines(node, choiceHistory = {}) {
+  return filterLinesByChoices(node?.setup || [], choiceHistory)
 }
 
-function isChoiceQuestion(q) {
-  return q?.answerType === 'choice'
+// The featured mathematician warms up as the story advances.
+function mathematicianTrust(script, nodeId) {
+  if (!script?.nodes?.length || !nodeId) return 0
+  const idx = script.nodes.findIndex((n) => n.id === nodeId)
+  if (idx < 0) return 0
+  return idx / Math.max(1, script.nodes.length - 1)
 }
 
-function normalizeAnswer(value) {
-  return String(value).trim().replace(/^\+/, '').replace(/−/g, '-').replace(/－/g, '-')
+function LineView({ entry, playerName, age, script }) {
+  const label = speakerLabel(entry.speaker, playerName, script)
+  const cls = speakerClass(entry.speaker)
+  const shown = entry.full.slice(0, entry.shownLen)
+  const typing = entry.shownLen < entry.full.length
+  return (
+    <div className={`term-line ${cls} age-${age}${typing ? ' typing' : ''}`}>
+      {label ? <span className="term-prefix">{label}: </span> : null}
+      <MathText text={shown} className="math-text" />
+      {typing ? <span className="caret">▍</span> : null}
+    </div>
+  )
 }
 
-function parseNumeric(value) {
-  const v = normalizeAnswer(value)
-  if (!v) return null
-  const frac = v.match(/^([+-]?\d+(?:\.\d+)?)\s*\/\s*([+-]?\d+(?:\.\d+)?)$/)
-  if (frac) {
-    const a = Number(frac[1])
-    const b = Number(frac[2])
-    if (!Number.isFinite(a) || !Number.isFinite(b) || b === 0) return null
-    return a / b
+function emptyPlay() {
+  return {
+    nodeId: null,
+    usedQuestionIds: [],
+    correctCount: 0,
+    attemptCount: 0,
+    quiz: null,
+    trail: [], // per-anchor outcome for the ending journal
+    journal: null,
+    choiceHistory: {}, // { choiceNodeId: optionId }
+    objective: null,
+    awaitingChoice: false,
+    // typewriter
+    queue: [],
+    visible: [], // {speaker, full, shownLen}
+    afterQueue: null, // 'show-quiz' | 'show-choice' | { go: nodeId } | 'ending-stats'
+    inputLocked: false,
   }
-  const n = Number(v)
-  return Number.isFinite(n) ? n : null
-}
-
-function answersMatch(user, correct, answerType) {
-  if (answerType === 'choice') {
-    return normalizeAnswer(user).toUpperCase() === normalizeAnswer(correct).toUpperCase()
-  }
-  const u = normalizeAnswer(user)
-  const c = normalizeAnswer(correct)
-  if (u === c) return true
-  const un = parseNumeric(u)
-  const cn = parseNumeric(c)
-  if (un != null && cn != null) return Math.abs(un - cn) < 1e-9
-  return false
-}
-
-/** 允許數字、負號、小數點、分數斜線 */
-function sanitizeAnswerInput(value) {
-  let next = String(value).replace(/[^\d./-]/g, '')
-
-  const hasNeg = next.includes('-')
-  next = next.replace(/-/g, '')
-  if (hasNeg) next = `-${next}`
-
-  // only one slash
-  const slashParts = next.split('/')
-  if (slashParts.length > 2) {
-    next = `${slashParts[0]}/${slashParts.slice(1).join('')}`
-  }
-
-  // each side at most one dot
-  next = next
-    .split('/')
-    .map((part) => {
-      const bits = part.split('.')
-      if (bits.length <= 2) return part
-      return `${bits[0]}.${bits.slice(1).join('')}`
-    })
-    .join('/')
-
-  return next
-}
-
-function useCountUp(target, duration = 600) {
-  const [display, setDisplay] = useState(target)
-  const prev = useRef(target)
-
-  useEffect(() => {
-    const from = prev.current
-    const to = target
-    if (from === to) {
-      setDisplay(to)
-      return
-    }
-
-    const start = performance.now()
-    let raf
-
-    const tick = (now) => {
-      const t = Math.min((now - start) / duration, 1)
-      const eased = 1 - (1 - t) ** 3
-      setDisplay(Math.round(from + (to - from) * eased))
-      if (t < 1) raf = requestAnimationFrame(tick)
-      else prev.current = to
-    }
-
-    raf = requestAnimationFrame(tick)
-    return () => cancelAnimationFrame(raf)
-  }, [target, duration])
-
-  return display
-}
-
-function fireWinConfetti() {
-  const defaults = {
-    spread: 62,
-    ticks: 90,
-    gravity: 1.1,
-    colors: ['#fbbf24', '#f59e0b', '#22d3ee', '#a3e635', '#ffffff'],
-  }
-  confetti({ ...defaults, particleCount: 80, origin: { y: 0.65 } })
-  confetti({
-    ...defaults,
-    particleCount: 40,
-    angle: 60,
-    origin: { x: 0, y: 0.7 },
-  })
-  confetti({
-    ...defaults,
-    particleCount: 40,
-    angle: 120,
-    origin: { x: 1, y: 0.7 },
-  })
 }
 
 export default function App() {
-  const [wallet, setWallet] = useState(loadWallet)
-  const [streak, setStreak] = useState(0)
-  const [stage, setStage] = useState(STAGE.STRATEGY)
-  const [question, setQuestion] = useState(() => pickQuestion())
-  const [strategy, setStrategy] = useState(null) // 'safe' | 'bold'
+  const [phase, setPhase] = useState('title')
+  const [playerName, setPlayerName] = useState('')
+  const [nameDraft, setNameDraft] = useState('')
+  const [gradeSel, setGradeSel] = useState(null)
+  const [scriptId, setScriptId] = useState(null)
+  const [play, setPlay] = useState(emptyPlay)
   const [input, setInput] = useState('')
-  const [result, setResult] = useState(null)
-  const [shaking, setShaking] = useState(false)
-  const [bailoutOpen, setBailoutOpen] = useState(false)
-  const [goldPulse, setGoldPulse] = useState(false)
+  const [existingSave, setExistingSave] = useState(null)
+  const [savesByScript, setSavesByScript] = useState({})
+  const logRef = useRef(null)
+  const rootRef = useRef(null)
+  const playRef = useRef(play)
+  playRef.current = play
+  const submittingRef = useRef(false)
+  const journalReqRef = useRef(false)
 
-  const inputRef = useRef(null)
-  const submitRef = useRef(() => {})
-  const displayWallet = useCountUp(wallet)
-  const multiplier = getStreakMultiplier(streak)
-  const choiceMode = isChoiceQuestion(question)
+  function focusShell() {
+    // 答完後選項按鈕卸載會丟焦點，Enter 就沒人接
+    rootRef.current?.focus({ preventScroll: true })
+  }
+
+  const script = scriptId ? SCRIPTS[scriptId] : null
+  const node = script && play.nodeId ? findNode(script, play.nodeId) : null
 
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, String(wallet))
-  }, [wallet])
+    setExistingSave(loadSave())
+    setSavesByScript(loadAllSaves())
+  }, [])
 
   useEffect(() => {
-    if (wallet < BAILOUT_THRESHOLD && !bailoutOpen && stage !== STAGE.ANSWER) {
-      setBailoutOpen(true)
+    if (logRef.current) logRef.current.scrollTop = logRef.current.scrollHeight
+  }, [play.visible, play.quiz, phase])
+
+  // 進遊戲／答完題後把焦點抓回殼層，否則 Enter 無效
+  useEffect(() => {
+    if (phase !== 'play') return
+    const answeringNumber =
+      play.quiz?.awaitingAnswer &&
+      play.quiz?.revealed &&
+      play.quiz?.question?.answerType === 'number'
+    if (answeringNumber) return
+    focusShell()
+  }, [
+    phase,
+    play.nodeId,
+    play.quiz?.awaitingAnswer,
+    play.quiz?.revealed,
+    play.quiz?.questionId,
+    play.quiz?.question?.answerType,
+  ])
+
+  // 進到結局、對話播完 → 生成個人化冒險日誌（AI，失敗退回模板）
+  useEffect(() => {
+    if (phase !== 'ending') return
+    if (play.queue.length > 0) return
+    if (journalReqRef.current || play.journal !== null) return
+    journalReqRef.current = true
+    const ctx = {
+      playerName,
+      summary: summarizeTrail(play.trail),
+      correctCount: play.correctCount,
+      attemptCount: play.attemptCount,
+      script,
     }
-  }, [wallet, bailoutOpen, stage])
-
-  useEffect(() => {
-    if (stage === STAGE.ANSWER && !isChoiceQuestion(question)) {
-      const id = window.setTimeout(() => inputRef.current?.focus(), 50)
-      return () => window.clearTimeout(id)
+    let alive = true
+    generateEndingJournalAI(ctx).then((text) => {
+      if (alive) setPlay((p) => ({ ...p, journal: text }))
+    })
+    return () => {
+      alive = false
     }
-  }, [stage, question.id])
+  }, [
+    phase,
+    play.queue.length,
+    play.journal,
+    playerName,
+    play.trail,
+    play.correctCount,
+    play.attemptCount,
+    script,
+  ])
 
-  const applyWalletDelta = (delta) => {
-    setWallet((w) => Math.max(0, w + delta))
-    if (delta !== 0) {
-      setGoldPulse(true)
-      window.setTimeout(() => setGoldPulse(false), 700)
+  // typewriter tick
+  useEffect(() => {
+    if (phase !== 'play' && phase !== 'ending') return
+    const cur = play.visible[play.visible.length - 1]
+    if (!cur || cur.shownLen >= cur.full.length) return
+    const t = setTimeout(() => {
+      setPlay((p) => {
+        const visible = [...p.visible]
+        const last = { ...visible[visible.length - 1] }
+        if (!last || last.shownLen >= last.full.length) return p
+        last.shownLen = Math.min(last.full.length, last.shownLen + 1)
+        visible[visible.length - 1] = last
+        return { ...p, visible }
+      })
+    }, TYPE_MS)
+    return () => clearTimeout(t)
+  }, [phase, play.visible])
+
+  const availableScripts = useMemo(() => {
+    if (!gradeSel) return []
+    return scriptList.filter((s) => {
+      const full = SCRIPTS[s.id]
+      return full?.grade === gradeSel.grade && full?.half === gradeSel.half
+    })
+  }, [gradeSel])
+
+  function persist(next, sid = scriptId, name = playerName) {
+    if (!sid || !next.nodeId) return
+    const payload = saveGame({
+      scriptId: sid,
+      playerName: name,
+      nodeId: next.nodeId,
+      usedQuestionIds: next.usedQuestionIds,
+      correctCount: next.correctCount,
+      attemptCount: next.attemptCount,
+      trail: next.trail,
+      quiz: next.quiz,
+      choiceHistory: next.choiceHistory,
+      objective: next.objective,
+      // resume at node start of dialogue for simplicity
+      lineIndex: 0,
+    })
+    setExistingSave(payload)
+    setSavesByScript((current) => ({ ...current, [sid]: payload }))
+  }
+
+  function pushLines(base, lines, afterQueue = null) {
+    const trust = mathematicianTrust(script, base?.nodeId)
+    const filled = (lines || []).map((l) => ({
+      speaker: l.speaker,
+      full: fillPersona(l.text, l.speaker, playerName, {
+        mathematicianTrust: trust,
+        mathematicianSpeaker: script?.mathematicianSpeaker || 'Archimedes',
+      }),
+      shownLen: 0,
+      eurekaMoment: Boolean(l.eurekaMoment),
+    }))
+    const [first, ...rest] = filled
+    if (!first) {
+      return finishQueue({ ...base, queue: [], visible: base.visible, afterQueue })
+    }
+    return {
+      ...base,
+      queue: rest,
+      visible: trimVisible([...(base.visible || []), first]),
+      afterQueue,
+      inputLocked: false,
+      awaitingChoice: false,
     }
   }
 
-  const goNextQuestion = () => {
-    setQuestion(pickQuestion(question.id))
-    setStrategy(null)
-    setInput('')
-    setResult(null)
-    setStage(STAGE.STRATEGY)
+  function withObjective(base, node) {
+    if (!node?.objective) return base
+    return { ...base, objective: node.objective }
   }
 
-  useEffect(() => {
-    if (stage !== STAGE.RESULT || bailoutOpen) return
+  function trimVisible(list) {
+    return list.slice(-MAX_VISIBLE)
+  }
 
-    const onKeyDown = (e) => {
-      if (e.repeat) return
-      if (e.code !== 'Space' && e.key !== ' ') return
-      e.preventDefault()
-      goNextQuestion()
+  function finishQueue(state) {
+    const after = state.afterQueue
+    if (!after) return { ...state, afterQueue: null }
+
+    if (after === 'show-quiz') {
+      return {
+        ...state,
+        afterQueue: null,
+        inputLocked: false,
+        quiz: state.quiz
+          ? { ...state.quiz, revealed: true, awaitingAnswer: true }
+          : null,
+      }
     }
-
-    window.addEventListener('keydown', onKeyDown)
-    return () => window.removeEventListener('keydown', onKeyDown)
-  }, [stage, bailoutOpen, question.id])
-
-  const chooseSafe = () => {
-    setStrategy('safe')
-    setInput('')
-    setStage(STAGE.ANSWER)
+    if (after === 'show-choice') {
+      return {
+        ...state,
+        afterQueue: null,
+        awaitingChoice: true,
+        inputLocked: false,
+      }
+    }
+    if (after === 'ending-stats') {
+      setPhase('ending')
+      return { ...state, afterQueue: null }
+    }
+    if (after?.go) {
+      setTimeout(() => goToNode(after.go, state), 0)
+      return { ...state, afterQueue: null }
+    }
+    return { ...state, afterQueue: null }
   }
 
-  const chooseBold = () => {
-    setStrategy('bold')
-    setInput('')
-    setStage(STAGE.ANSWER)
+  function startNewGame(sid, name) {
+    const s = SCRIPTS[sid]
+    clearSave(sid)
+    setSavesByScript((current) => {
+      const next = { ...current }
+      delete next[sid]
+      return next
+    })
+    journalReqRef.current = false
+    setScriptId(sid)
+    setPlayerName(name)
+    const start = s.nodes[0]
+    let base = withObjective(
+      { ...emptyPlay(), nodeId: start.id },
+      start,
+    )
+    const after =
+      start.type === 'choice'
+        ? 'show-choice'
+        : start.type === 'ending'
+          ? 'ending-stats'
+          : null
+    const next = pushLines(base, nodeLines(start, base.choiceHistory), after)
+    setPlay(next)
+    setPhase('play')
+    persist(next, sid, name)
   }
 
-  const skipQuestion = () => {
-    if (wallet < SKIP_FEE) {
-      setBailoutOpen(true)
+  function continueGame(targetScriptId = scriptId || existingSave?.scriptId) {
+    const save = loadSave(targetScriptId)
+    if (!save || !SCRIPTS[save.scriptId]) return
+    const s = SCRIPTS[save.scriptId]
+    setScriptId(save.scriptId)
+    setPlayerName(save.playerName || '旅人')
+    setGradeSel({
+      grade: s.grade,
+      half: s.half,
+      label: s.gradeLabel,
+    })
+    const n = findNode(s, save.nodeId) || s.nodes[0]
+    let next = {
+      ...emptyPlay(),
+      nodeId: n.id,
+      usedQuestionIds: save.usedQuestionIds ?? [],
+      correctCount: save.correctCount ?? 0,
+      attemptCount: save.attemptCount ?? 0,
+      trail: save.trail ?? [],
+      quiz: save.quiz ?? null,
+      choiceHistory: save.choiceHistory ?? {},
+      objective: save.objective ?? n.objective ?? null,
+    }
+    next = withObjective(next, n)
+    journalReqRef.current = false
+    if (n.type === 'quiz' && save.quiz) {
+      next = pushLines(
+        next,
+        quizSetupLines(n, next.choiceHistory),
+        'show-quiz',
+      )
+      next.quiz = save.quiz
+    } else if (n.type === 'quiz') {
+      // redraw
+      setPlay(next)
+      setPhase('play')
+      setTimeout(() => beginQuiz(n, next), 0)
+      return
+    } else if (n.type === 'choice') {
+      next = pushLines(
+        next,
+        nodeLines(n, next.choiceHistory),
+        'show-choice',
+      )
+    } else {
+      next = pushLines(
+        next,
+        nodeLines(n, next.choiceHistory),
+        n.type === 'ending' ? 'ending-stats' : null,
+      )
+    }
+    setPlay(next)
+    setPhase(n.type === 'ending' ? 'ending' : 'play')
+  }
+
+  function goToNode(nodeId, base = playRef.current) {
+    const s = SCRIPTS[scriptId]
+    const target = findNode(s, nodeId)
+    if (!target) return
+
+    if (target.type === 'quiz') {
+      beginQuiz(target, withObjective({ ...base, visible: base.visible || [] }, target))
       return
     }
-    applyWalletDelta(-SKIP_FEE)
-    goNextQuestion()
-  }
 
-  const appendDigit = (d) => {
-    setInput((prev) => sanitizeAnswerInput(prev + d))
-    inputRef.current?.focus()
-  }
+    let state = withObjective(
+      {
+        ...base,
+        nodeId: target.id,
+        quiz: null,
+        queue: [],
+        awaitingChoice: false,
+      },
+      target,
+    )
 
-  const toggleNeg = () => {
-    setInput((prev) => {
-      if (!prev || prev === '-') return prev === '-' ? '' : '-'
-      return prev.startsWith('-') ? prev.slice(1) : `-${prev}`
-    })
-    inputRef.current?.focus()
-  }
-
-  const backspace = () => {
-    setInput((prev) => prev.slice(0, -1))
-    inputRef.current?.focus()
-  }
-
-  const submitAnswerWith = (value) => {
-    if (!value || value === '-' || value === '.' || value === '-.' || value === '/') return
-
-    const correct = answersMatch(value, question.answer, question.answerType)
-
-    let delta = 0
-    if (correct) {
-      const base =
-        strategy === 'bold' ? question.baseValue * 3 : question.baseValue
-      delta = Math.round(base * multiplier)
-      applyWalletDelta(delta)
-      setStreak((s) => s + 1)
-      fireWinConfetti()
-    } else {
-      if (strategy === 'bold') {
-        delta = -question.baseValue
-        applyWalletDelta(delta)
-      }
-      setStreak(0)
-      setShaking(true)
-      window.setTimeout(() => setShaking(false), 500)
+    if (target.type === 'choice') {
+      const next = pushLines(
+        state,
+        nodeLines(target, state.choiceHistory),
+        'show-choice',
+      )
+      setPlay(next)
+      persist(next)
+      return
     }
 
-    setResult({ correct, delta })
-    setStage(STAGE.RESULT)
+    const after = target.type === 'ending' ? 'ending-stats' : null
+    const next = pushLines(
+      state,
+      nodeLines(target, state.choiceHistory),
+      after,
+    )
+    setPlay(next)
+    persist(next)
   }
 
-  const submitAnswer = () => submitAnswerWith(input)
-  submitRef.current = submitAnswer
+  function beginQuiz(quizNode, base) {
+    const used = new Set(base.usedQuestionIds)
+    const q = drawQuestion(quizNode.pool, { excludeIds: used })
+    if (!q) {
+      const next = pushLines(
+        { ...base, nodeId: quizNode.id, quiz: null },
+        [{ speaker: 'NumNum', text: '這段先略過。' }],
+        { go: quizNode.onCorrect },
+      )
+      setPlay(next)
+      return
+    }
+    used.add(q.id)
+    const adapted = adaptQuestion(q, quizNode.sceneAdapt, { playerName })
+    const next = pushLines(
+      {
+        ...withObjective(base, quizNode),
+        nodeId: quizNode.id,
+        usedQuestionIds: [...used],
+        awaitingChoice: false,
+        quiz: {
+          questionId: q.id,
+          question: q,
+          adapted,
+          retryCount: 0,
+          detourCount: 0,
+          isDetour: false,
+          awaitingAnswer: false,
+          revealed: false,
+        },
+      },
+      quizSetupLines(quizNode, base.choiceHistory),
+      'show-quiz',
+    )
+    // mark awaiting when revealed
+    setPlay({
+      ...next,
+      quiz: { ...next.quiz, awaitingAnswer: false, revealed: false },
+    })
+    persist(next)
+  }
 
-  // choice keyboard A-D / Enter
-  useEffect(() => {
-    if (stage !== STAGE.ANSWER || !isChoiceQuestion(question) || bailoutOpen) return
+  function pickChoice(option) {
+    const n = findNode(script, play.nodeId)
+    if (!n || n.type !== 'choice' || !play.awaitingChoice) return
+    if (!option?.next) return
+    const history = {
+      ...(play.choiceHistory || {}),
+      [n.id]: option.id,
+    }
+    const label = fillPersona(option.label, 'player', playerName, {
+      mathematicianTrust: mathematicianTrust(script, play.nodeId),
+      mathematicianSpeaker: script?.mathematicianSpeaker || 'Archimedes',
+    })
+    const stamped = {
+      ...play,
+      choiceHistory: history,
+      awaitingChoice: false,
+      queue: [],
+      visible: trimVisible([
+        ...(play.visible || []),
+        {
+          speaker: 'player',
+          full: label,
+          shownLen: label.length,
+        },
+      ]),
+    }
+    persist(stamped)
+    setPlay(stamped)
+    queueMicrotask(() => goToNode(option.next, stamped))
+  }
 
-    const onKeyDown = (e) => {
-      const key = e.key.toUpperCase()
-      if (['A', 'B', 'C', 'D'].includes(key)) {
-        e.preventDefault()
-        setInput(key)
+  function onShowQuiz(state) {
+    return {
+      ...state,
+      quiz: state.quiz
+        ? { ...state.quiz, revealed: true, awaitingAnswer: true }
+        : null,
+      afterQueue: null,
+    }
+  }
+
+  function advance() {
+    setPlay((p) => {
+      if (p.awaitingChoice) return p
+
+      const cur = p.visible[p.visible.length - 1]
+      if (cur && cur.shownLen < cur.full.length) {
+        const visible = [...p.visible]
+        visible[visible.length - 1] = { ...cur, shownLen: cur.full.length }
+        return { ...p, visible }
+      }
+
+      if (p.queue.length > 0) {
+        const [nextLine, ...rest] = p.queue
+        return {
+          ...p,
+          queue: rest,
+          visible: trimVisible([...p.visible, { ...nextLine, shownLen: 0 }]),
+        }
+      }
+
+      if (p.afterQueue === 'show-quiz') {
+        return onShowQuiz(p)
+      }
+      if (p.afterQueue === 'show-choice') {
+        return {
+          ...p,
+          afterQueue: null,
+          awaitingChoice: true,
+        }
+      }
+      if (p.afterQueue === 'ending-stats') {
+        setPhase('ending')
+        return { ...p, afterQueue: null }
+      }
+      if (p.afterQueue?.go) {
+        const dest = p.afterQueue.go
+        const cleared = { ...p, afterQueue: null }
+        setTimeout(() => goToNode(dest, cleared), 0)
+        return cleared
+      }
+
+      const n = findNode(script, p.nodeId)
+      if (n && (n.type === 'narrative' || n.type === 'eureka') && n.next) {
+        const snap = { ...p, afterQueue: null }
+        setTimeout(() => goToNode(n.next, snap), 0)
+        return snap
+      }
+      if (n?.type === 'ending') {
+        setPhase('ending')
+      }
+      return p
+    })
+  }
+
+  async function submitAnswer(raw) {
+    if (!play.quiz?.awaitingAnswer || !node || node.type !== 'quiz') return
+    if (submittingRef.current) return
+    submittingRef.current = true
+    try {
+      const q = play.quiz.question
+      const ok = checkAnswer(q, raw)
+      const attemptCount = play.attemptCount + 1
+      const correctCount = play.correctCount + (ok ? 1 : 0)
+      setInput('')
+
+      if (ok) {
+        const feedback = pickCorrectFeedback(script, { playerName, node })
+        const entry = {
+          anchor: node.anchor,
+          scene: node.scene || play.quiz.adapted?.setting || '',
+          knowledgePoint: q.knowledgePoint || q.chapter || '',
+          passed: true,
+          firstTry: (play.quiz.retryCount || 0) === 0,
+          retries: play.quiz.retryCount || 0,
+          // keep old key for any leftover journal/save readers
+          detours: play.quiz.retryCount || 0,
+        }
+        const next = pushLines(
+          {
+            ...play,
+            attemptCount,
+            correctCount,
+            trail: [...play.trail, entry],
+            quiz: { ...play.quiz, awaitingAnswer: false, revealed: false },
+            queue: [],
+          },
+          feedback,
+          { go: node.onCorrect },
+        )
+        setPlay(next)
+        persist(next)
+        queueMicrotask(focusShell)
         return
       }
-      if (e.key === 'Enter') {
-        e.preventDefault()
-        submitRef.current()
-      }
+
+      // 錯了不換題：同題重答到對；AI／模板只給提示
+      const retryCount = (play.quiz.retryCount || play.quiz.detourCount || 0) + 1
+      setPlay((p) =>
+        p.quiz ? { ...p, quiz: { ...p.quiz, awaitingAnswer: false } } : p,
+      )
+
+      const errorProfile = classifyError(q, raw)
+      const questionText = play.quiz.adapted?.displayQuestion || q.question
+      const hintLines = await generateHintAI(script, {
+        playerName,
+        node,
+        errorProfile,
+        questionText,
+        sceneAdapt: node.sceneAdapt,
+        retryCount,
+      })
+
+      const base = playRef.current
+      const next = pushLines(
+        {
+          ...base,
+          attemptCount,
+          correctCount,
+          quiz: {
+            ...base.quiz,
+            retryCount,
+            detourCount: retryCount,
+            isDetour: false,
+            awaitingAnswer: false,
+            revealed: false,
+          },
+          queue: [],
+        },
+        hintLines,
+        'show-quiz',
+      )
+      setPlay(next)
+      persist(next)
+      queueMicrotask(focusShell)
+    } finally {
+      submittingRef.current = false
     }
-
-    window.addEventListener('keydown', onKeyDown)
-    return () => window.removeEventListener('keydown', onKeyDown)
-  }, [stage, question.id, bailoutOpen])
-
-  const claimBailout = () => {
-    applyWalletDelta(BAILOUT_AMOUNT)
-    setBailoutOpen(false)
   }
 
-  const canSubmit = choiceMode
-    ? Boolean(input)
-    : Boolean(input) &&
-      input !== '-' &&
-      input !== '.' &&
-      input !== '-.' &&
-      input !== '/'
+  function onKeyDown(e) {
+    if (phase !== 'play') return
+    if (e.key !== 'Enter') return
+    // 焦點在按鈕上時交給按鈕自己的 click，避免連跳兩次
+    if (e.target instanceof HTMLElement && e.target.closest('button')) return
+    e.preventDefault()
+    if (play.awaitingChoice) return
+    if (play.quiz?.awaitingAnswer && play.quiz.revealed) {
+      if (play.quiz.question.answerType === 'choice') return
+      if (input.trim()) submitAnswer(input)
+      return
+    }
+    advance()
+  }
 
-  const modeBadge =
-    strategy === 'bold'
-      ? {
-          label: `⚡ 爆擊模式中：答對 +$${formatGold(Math.round(question.baseValue * 3 * multiplier))} / 答錯 -$${formatGold(question.baseValue)}`,
-          className:
-            'border-amber-400/40 bg-amber-500/15 text-amber-300 shadow-[0_0_24px_rgba(251,191,36,0.2)]',
-        }
-      : {
-          label: `🛡️ 穩健模式中：答對 +$${formatGold(Math.round(question.baseValue * multiplier))} / 答錯 $0`,
-          className:
-            'border-emerald-400/40 bg-emerald-500/15 text-emerald-300 shadow-[0_0_24px_rgba(52,211,153,0.2)]',
-        }
+  const quizReady =
+    play.quiz?.revealed &&
+    play.quiz?.awaitingAnswer &&
+    play.queue.length === 0
 
-  const keys = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '-', '0', '/']
+  const choiceReady =
+    Boolean(play.awaitingChoice) &&
+    node?.type === 'choice' &&
+    play.queue.length === 0
+
+  const canAdvanceDialogue =
+    phase === 'play' &&
+    !play.awaitingChoice &&
+    !(quizReady && play.quiz?.question?.answerType === 'choice')
+  const currentLine = play.visible[play.visible.length - 1]
+  const eurekaActive = Boolean(currentLine?.eurekaMoment)
 
   return (
     <div
-      className={`flex h-svh flex-col overflow-hidden px-3 py-2 text-slate-100 ${shaking ? 'animate-shake' : ''}`}
+      className="rpg-root"
+      ref={rootRef}
+      onKeyDown={onKeyDown}
+      tabIndex={0}
     >
-      <div className="mx-auto flex h-full w-full max-w-lg min-h-0 flex-col gap-2">
-        {/* Top Bar */}
-        <header className="flex shrink-0 items-center justify-between gap-2">
-          <div className="flex min-w-0 items-center gap-2">
-            <h1 className="font-display shrink-0 text-sm font-extrabold tracking-[0.14em] text-cyan-300">
-              MATH WAGER
-            </h1>
-            <div
-              className={`flex items-center gap-1.5 rounded-lg border border-amber-500/30 bg-slate-900 px-2 py-1 ${
-                goldPulse ? 'animate-gold-pop' : ''
-              }`}
-            >
-              <Coins className="size-4 text-amber-400" />
-              <p className="font-display text-sm font-bold text-amber-400">
-                ${formatGold(displayWallet)}
-              </p>
-            </div>
+      <div className={`rpg-shell ${eurekaActive ? 'eureka-glow' : ''}`}>
+        {eurekaActive ? (
+          <div className="eureka-burst" aria-hidden="true">
+            <span className="eureka-ring ring-one" />
+            <span className="eureka-ring ring-two" />
+            <span className="eureka-word">EUREKA</span>
           </div>
+        ) : null}
+        {phase === 'title' && (
+          <section className="panel">
+            <h1 className="hero-title">NUMIP</h1>
+            <div className="btn-row">
+              <button type="button" className="btn primary" onClick={() => setPhase('name')}>
+                開始冒險
+              </button>
+              {existingSave ? (
+                <button
+                  type="button"
+                  className="btn"
+                  onClick={() => continueGame(existingSave.scriptId)}
+                >
+                  繼續進度
+                </button>
+              ) : null}
+            </div>
+          </section>
+        )}
 
-          <div className="flex items-center gap-1.5 rounded-lg border border-rose-500/30 bg-slate-900 px-2 py-1">
-            <Flame className="size-4 text-orange-400" />
-            <p className="font-display text-sm font-bold text-orange-300">
-              {streak}
-              <span className="ml-1 text-[11px] font-semibold text-slate-400">
-                x{multiplier.toFixed(1)}
-              </span>
+        {phase === 'name' && (
+          <section className="panel">
+            <h2>你的名字</h2>
+            <input
+              className="term-input"
+              value={nameDraft}
+              maxLength={12}
+              placeholder="輸入名字"
+              autoFocus
+              onChange={(e) => setNameDraft(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && nameDraft.trim()) {
+                  setPlayerName(nameDraft.trim())
+                  setPhase('grade')
+                }
+              }}
+            />
+            <div className="btn-row">
+              <button
+                type="button"
+                className="btn primary"
+                disabled={!nameDraft.trim()}
+                onClick={() => {
+                  setPlayerName(nameDraft.trim())
+                  setPhase('grade')
+                }}
+              >
+                下一步
+              </button>
+            </div>
+          </section>
+        )}
+
+        {phase === 'grade' && (
+          <section className="panel">
+            <h2>選擇年段</h2>
+            <div className="grid-3">
+              {GRADES.map((g) => {
+                const open = scriptList.some((s) => {
+                  const full = SCRIPTS[s.id]
+                  return full?.grade === g.grade && full?.half === g.half
+                })
+                return (
+                  <button
+                    key={g.label}
+                    type="button"
+                    className="btn chip"
+                    disabled={!open}
+                    onClick={() => {
+                      setGradeSel(g)
+                      setPhase('script')
+                    }}
+                  >
+                    {g.label}
+                    {!open ? '（即將開放）' : ''}
+                  </button>
+                )
+              })}
+            </div>
+          </section>
+        )}
+
+        {phase === 'resume' && (
+          <section className="panel">
+            <h2>發現存檔</h2>
+            <p className="muted">
+              {existingSave?.playerName} · {SCRIPTS[scriptId]?.title}
             </p>
-          </div>
-        </header>
-
-        {/* Question: height = content only (no flex-1 empty void) */}
-        <section className="shrink-0 rounded-xl border border-slate-700/80 bg-slate-900/90 p-3">
-          <div className="mb-1.5 flex flex-wrap items-center justify-between gap-1.5">
-            <div className="flex min-w-0 flex-wrap items-center gap-1">
-              <span className="max-w-[10rem] truncate rounded border border-cyan-500/30 bg-cyan-500/10 px-1.5 py-0.5 font-body text-[11px] font-semibold text-cyan-300">
-                {question.knowledgePoint}
-              </span>
-              <span className="rounded border border-slate-600 bg-slate-800 px-1.5 py-0.5 font-body text-[11px] font-semibold text-slate-300">
-                {question.difficulty}
-              </span>
-              <span className="rounded border border-violet-500/30 bg-violet-500/10 px-1.5 py-0.5 font-body text-[11px] font-semibold text-violet-300">
-                {choiceMode ? '選擇' : '數字'}
-              </span>
+            <div className="btn-row">
+              <button
+                type="button"
+                className="btn primary"
+                onClick={() => continueGame(scriptId)}
+              >
+                繼續進度
+              </button>
+              <button
+                type="button"
+                className="btn"
+                onClick={() => startNewGame(scriptId, playerName)}
+              >
+                新開一局
+              </button>
             </div>
-            <span className="inline-flex items-center gap-1 font-body text-xs font-semibold text-amber-400">
-              <Gem className="size-3.5" />${formatGold(question.baseValue)}
-            </span>
-          </div>
-          <div className="max-h-[38svh] overflow-y-auto font-body text-[15px] font-semibold leading-snug text-slate-50">
-            <MathText text={question.question} />
-          </div>
-        </section>
+          </section>
+        )}
 
-        {/* Controls sit right under the question */}
-        <div className="flex min-h-0 shrink-0 flex-col gap-1.5">
-          {/* Stage 1 */}
-          {stage === STAGE.STRATEGY && (
-            <section className="flex flex-col gap-1.5">
-              <button
-                type="button"
-                onClick={chooseSafe}
-                className="rounded-xl border border-emerald-500/40 bg-emerald-500/10 px-3 py-2 text-left transition active:scale-[0.99]"
-              >
-                <div className="flex items-center gap-1.5 font-display text-sm font-bold text-emerald-300">
-                  <Shield className="size-4" />
-                  穩健作答
-                </div>
-                <p className="font-body text-xs text-slate-300">
-                  +${formatGold(Math.round(question.baseValue * multiplier))} /
-                  錯 $0
-                </p>
-              </button>
-
-              <button
-                type="button"
-                onClick={chooseBold}
-                className="rounded-xl border border-amber-500/40 bg-amber-500/10 px-3 py-2 text-left transition active:scale-[0.99]"
-              >
-                <div className="flex items-center gap-1.5 font-display text-sm font-bold text-amber-300">
-                  <Zap className="size-4" />
-                  自信爆擊
-                </div>
-                <p className="font-body text-xs text-slate-300">
-                  +$
-                  {formatGold(
-                    Math.round(question.baseValue * 3 * multiplier),
-                  )}{' '}
-                  / 錯 -${formatGold(question.baseValue)}
-                </p>
-              </button>
-
-              <button
-                type="button"
-                onClick={skipQuestion}
-                className="rounded-xl border border-slate-600 bg-slate-800/80 px-3 py-2 text-left transition active:scale-[0.99]"
-              >
-                <div className="flex items-center gap-1.5 font-display text-sm font-bold text-slate-200">
-                  <RefreshCw className="size-4 text-cyan-300" />
-                  戰術換題 · ${SKIP_FEE}
-                </div>
-              </button>
-            </section>
-          )}
-
-          {/* Stage 2 */}
-          {stage === STAGE.ANSWER && (
-            <section className="flex flex-col gap-1.5">
-              <div
-                className={`rounded-lg border px-2 py-1 text-center font-body text-[11px] font-semibold leading-tight ${modeBadge.className}`}
-              >
-                {modeBadge.label}
-              </div>
-
-              {choiceMode ? (
-                <div className="grid grid-cols-2 gap-1.5">
-                  {(question.options || []).map((opt) => {
-                    const selected = input === opt.letter
-                    return (
-                      <button
-                        key={opt.letter}
-                        type="button"
-                        onClick={() => setInput(opt.letter)}
-                        className={`rounded-lg border p-2 text-left transition active:scale-[0.99] ${
-                          selected
-                            ? 'border-cyan-400 bg-cyan-500/20'
-                            : 'border-slate-700 bg-slate-800/80'
-                        }`}
-                      >
-                        <div className="flex items-start gap-1.5">
-                          <span className="font-display flex size-6 shrink-0 items-center justify-center rounded-md bg-slate-900 text-xs font-bold text-cyan-300">
-                            {opt.letter}
-                          </span>
-                          <span className="font-body line-clamp-2 text-xs font-semibold leading-snug text-slate-100">
-                            <MathText text={opt.text} />
-                          </span>
-                        </div>
-                      </button>
-                    )
-                  })}
-                </div>
-              ) : (
-                <>
-                  <div className="flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-950 px-2 py-1.5">
-                    <Keyboard className="size-3.5 shrink-0 text-slate-500" />
-                    <input
-                      ref={inputRef}
-                      type="text"
-                      inputMode="decimal"
-                      autoComplete="off"
-                      autoCorrect="off"
-                      spellCheck={false}
-                      value={input}
-                      onChange={(e) =>
-                        setInput(sanitizeAnswerInput(e.target.value))
+        {phase === 'script' && (
+          <section className="panel">
+            <h2>選擇劇本 · {gradeSel?.label}</h2>
+            <div className="grid-2">
+              {MATHS.map((m) => {
+                const short = m.replace('艾倫・', '')
+                const found = availableScripts.find(
+                  (s) =>
+                    s.mathematician === m ||
+                    String(s.mathematician).includes(short),
+                )
+                const sid = found?.id
+                const save = sid ? savesByScript[sid] : null
+                return (
+                  <button
+                    key={m}
+                    type="button"
+                    className="btn chip"
+                    disabled={!sid}
+                    onClick={() => {
+                      if (!sid) return
+                      if (save) {
+                        setScriptId(sid)
+                        setPhase('resume')
+                        return
                       }
-                      onKeyDown={(e) => {
-                        if (e.key === 'Enter') {
-                          e.preventDefault()
-                          submitAnswer()
+                      startNewGame(sid, playerName)
+                    }}
+                  >
+                    {m}
+                    {!sid ? '（即將開放）' : save ? '（有存檔）' : ''}
+                  </button>
+                )
+              })}
+            </div>
+            <button type="button" className="btn ghost" onClick={() => setPhase('grade')}>
+              返回年段
+            </button>
+          </section>
+        )}
+
+        {(phase === 'play' || phase === 'ending') && script && (
+          <section className="term-stage">
+            {play.objective ? (
+              <div className="objective-bar" aria-live="polite">
+                <span className="objective-label">目前目標</span>
+                <span className="objective-text">{play.objective}</span>
+              </div>
+            ) : null}
+            <div className="term-log" ref={logRef}>
+              <div className="term-log-inner">
+              {play.visible.map((entry, i) => {
+                const age = play.visible.length - 1 - i
+                return (
+                  <LineView
+                    key={`${entry.speaker}-${i}-${entry.full.slice(0, 12)}`}
+                    entry={entry}
+                    playerName={playerName}
+                    age={age}
+                    script={script}
+                  />
+                )
+              })}
+
+              {choiceReady && (
+                <div className="choice-block">
+                  {(node.choices || []).map((opt) => (
+                    <button
+                      key={opt.id}
+                      type="button"
+                      className="btn choice"
+                      onClick={() => pickChoice(opt)}
+                    >
+                      <MathText
+                        text={fillPersona(opt.label, 'player', playerName, {
+                          mathematicianTrust: mathematicianTrust(
+                            script,
+                            play.nodeId,
+                          ),
+                          mathematicianSpeaker:
+                            script?.mathematicianSpeaker || 'Archimedes',
+                        })}
+                        className="math-text"
+                      />
+                    </button>
+                  ))}
+                </div>
+              )}
+
+              {quizReady && (
+                <div className="quiz-block">
+                  {play.quiz.isDetour ? (
+                    <div className="tag">再試一次</div>
+                  ) : null}
+                  <div className="quiz-q">
+                    <MathText
+                      text={
+                        play.quiz.adapted?.displayQuestion ||
+                        play.quiz.question.question
+                      }
+                      className="math-text"
+                    />
+                  </div>
+                  {(play.quiz.adapted
+                    ? play.quiz.adapted.displayImage
+                    : play.quiz.question.image) && (
+                    <figure className="question-figure">
+                      <img
+                        src={
+                          play.quiz.adapted
+                            ? play.quiz.adapted.displayImage
+                            : play.quiz.question.image
                         }
+                        alt={
+                          (play.quiz.adapted
+                            ? play.quiz.adapted.displayImageAlt
+                            : play.quiz.question.imageAlt) || '題目附圖'
+                        }
+                      />
+                    </figure>
+                  )}
+                  {play.quiz.adapted?.displayOptions ? (
+                    <div className="choices">
+                      {play.quiz.adapted.displayOptions.map((opt) => (
+                        <button
+                          key={opt.letter}
+                          type="button"
+                          className="btn choice"
+                          onClick={() => submitAnswer(opt.letter)}
+                        >
+                          <span className="choice-letter">{opt.letter}.</span>{' '}
+                          <MathText text={opt.text} className="math-text" />
+                        </button>
+                      ))}
+                    </div>
+                  ) : null}
+                </div>
+              )}
+
+              {phase === 'ending' && play.queue.length === 0 && (
+                <div className="ending-stats">
+                  {play.journal === null ? (
+                    <p className="journal loading">……正在翻閱這一局的旅程……</p>
+                  ) : (
+                    <p className="journal">{play.journal}</p>
+                  )}
+                  <p>
+                    正確率：
+                    <strong>
+                      {accuracyPercent(play.correctCount, play.attemptCount)}%
+                    </strong>
+                    （{play.correctCount} / {play.attemptCount}）
+                  </p>
+                  <div className="btn-row">
+                    <button
+                      type="button"
+                      className="btn primary"
+                      onClick={() => {
+                        clearSave(scriptId)
+                        journalReqRef.current = false
+                        setPlay(emptyPlay())
+                        setPhase('title')
+                        setSavesByScript((current) => {
+                          const next = { ...current }
+                          delete next[scriptId]
+                          return next
+                        })
+                        setExistingSave(loadSave())
                       }}
-                      placeholder="答案…"
-                      className="w-full bg-transparent text-center font-display text-2xl font-bold tracking-wider text-cyan-200 caret-cyan-300 outline-none placeholder:text-slate-600"
-                      aria-label="答案輸入"
+                    >
+                      回到標題
+                    </button>
+                  </div>
+                </div>
+              )}
+              </div>
+            </div>
+
+            {phase === 'play' && (
+              <div className="term-prompt-bar">
+              <div className="term-prompt">
+                {choiceReady ? (
+                  <span className="muted">選擇一條路</span>
+                ) : quizReady && play.quiz.question.answerType === 'number' ? (
+                  <>
+                    <span className="prompt-mark">&gt;</span>
+                    <input
+                      className="term-input grow"
+                      value={input}
+                      placeholder="輸入答案後 Enter"
+                      autoFocus
+                      onChange={(e) => setInput(e.target.value)}
                     />
                     <button
                       type="button"
-                      onClick={backspace}
-                      className="flex size-8 shrink-0 items-center justify-center rounded-md border border-slate-700 bg-slate-800 text-slate-200"
-                      aria-label="Backspace"
+                      className="btn primary"
+                      disabled={!input.trim()}
+                      onClick={() => submitAnswer(input)}
                     >
-                      <Delete className="size-4" />
+                      提交
                     </button>
-                  </div>
-
-                  <div className="grid grid-cols-6 gap-1">
-                    {keys.map((key) => (
-                      <button
-                        key={key}
-                        type="button"
-                        onClick={() => {
-                          if (key === '-') toggleNeg()
-                          else appendDigit(key)
-                        }}
-                        className="flex h-9 items-center justify-center rounded-md border border-slate-700 bg-slate-800 font-display text-base font-bold text-slate-100 active:scale-95"
-                        aria-label={key === '-' ? 'Negative' : key}
-                      >
-                        {key}
-                      </button>
-                    ))}
-                  </div>
-                </>
-              )}
-
-              <button
-                type="button"
-                onClick={submitAnswer}
-                disabled={!canSubmit}
-                className="flex h-10 items-center justify-center gap-1.5 rounded-xl bg-cyan-500 font-display text-sm font-bold text-slate-950 transition hover:bg-cyan-400 disabled:cursor-not-allowed disabled:bg-slate-700 disabled:text-slate-400 active:scale-[0.99]"
-              >
-                <Send className="size-4" />
-                送出答案
-              </button>
-            </section>
-          )}
-
-          {/* Stage 3 */}
-          {stage === STAGE.RESULT && result && (
-            <section className="flex flex-col gap-1.5">
-              <div
-                className={`rounded-xl border px-3 py-3 text-center ${
-                  result.correct
-                    ? 'border-emerald-500/40 bg-emerald-500/10'
-                    : 'border-rose-500/40 bg-rose-500/10'
-                }`}
-              >
-                <div className="mb-1 flex justify-center">
-                  {result.correct ? (
-                    <PartyPopper className="size-7 text-emerald-400" />
-                  ) : (
-                    <XCircle className="size-7 text-rose-400" />
-                  )}
-                </div>
-
-                <p
-                  className={`font-display text-3xl font-extrabold tracking-wide ${
-                    result.correct ? 'text-emerald-400' : 'text-rose-500'
-                  }`}
-                >
-                  {result.delta >= 0 ? '+' : '-'}$
-                  {formatGold(Math.abs(result.delta))}
-                </p>
-
-                <p className="mt-0.5 font-body text-sm text-slate-300">
-                  {result.correct ? '開牌成功！' : '開牌失敗…'}
-                </p>
-
-                {!result.correct && (
-                  <div className="mt-2 rounded-lg border border-slate-700 bg-slate-950/70 px-2.5 py-2 text-left">
-                    <p className="font-body text-xs text-slate-400">正確答案</p>
-                    <p className="font-display text-lg font-bold text-cyan-300">
-                      {choiceMode ? (
-                        <>
-                          {question.answer}.{' '}
-                          <MathText
-                            text={
-                              question.options?.find(
-                                (o) => o.letter === question.answer,
-                              )?.text || ''
-                            }
-                          />
-                        </>
-                      ) : (
-                        <MathText text={String(question.answer)} />
-                      )}
-                    </p>
-                  </div>
+                  </>
+                ) : quizReady && play.quiz.question.answerType === 'choice' ? (
+                  <span className="muted">選 A–D</span>
+                ) : (
+                  <>
+                    <span className="prompt-mark">&gt;</span>
+                    <button
+                      type="button"
+                      className="btn primary grow"
+                      onClick={advance}
+                      disabled={!canAdvanceDialogue}
+                    >
+                      繼續 · Enter
+                    </button>
+                  </>
                 )}
               </div>
-
-              <button
-                type="button"
-                onClick={goNextQuestion}
-                className="flex h-10 items-center justify-center gap-1.5 rounded-xl bg-amber-500 font-display text-sm font-bold text-slate-950 transition hover:bg-amber-400 active:scale-[0.99]"
-              >
-                下一題 →
-                <span className="text-xs font-semibold text-slate-800/70">
-                  Space
-                </span>
-              </button>
-            </section>
-          )}
-        </div>
+              </div>
+            )}
+          </section>
+        )}
       </div>
-
-      {bailoutOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4 backdrop-blur-sm">
-          <div className="w-full max-w-sm rounded-2xl border border-amber-500/40 bg-slate-900 p-5 text-center">
-            <p className="font-display text-xl font-extrabold text-amber-400">
-              破產救濟
-            </p>
-            <p className="mt-2 font-body text-sm text-slate-300">
-              資產低於 ${BAILOUT_THRESHOLD}，發放{' '}
-              <span className="font-bold text-amber-400">
-                ${formatGold(BAILOUT_AMOUNT)}
-              </span>
-            </p>
-            <button
-              type="button"
-              onClick={claimBailout}
-              className="mt-4 w-full rounded-xl bg-amber-500 py-2.5 font-display text-sm font-bold text-slate-950"
-            >
-              領取救濟金
-            </button>
-          </div>
-        </div>
-      )}
-
-      <style>{`
-        @keyframes shake {
-          0%, 100% { transform: translateX(0); }
-          20% { transform: translateX(-4px); }
-          40% { transform: translateX(4px); }
-          60% { transform: translateX(-3px); }
-          80% { transform: translateX(3px); }
-        }
-        .animate-shake { animation: shake 0.4s ease-in-out; }
-
-        @keyframes gold-pop {
-          0% { transform: scale(1); }
-          40% { transform: scale(1.06); }
-          100% { transform: scale(1); }
-        }
-        .animate-gold-pop { animation: gold-pop 0.5s ease-out; }
-      `}</style>
     </div>
   )
 }

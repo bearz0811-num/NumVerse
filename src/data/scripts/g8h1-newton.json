@@ -1,0 +1,2404 @@
+{
+  "id": "g8h1-newton",
+  "grade": 8,
+  "half": 1,
+  "gradeLabel": "八上",
+  "mathematician": "牛頓",
+  "mathematicianSpeaker": "Mathematician",
+  "episode": "沒有彩邊的星光",
+  "setting": "劍橋金屬鏡工坊與皇家學會展示室",
+  "era": "1668 至 1672 年",
+  "acts": [
+    "確認折射鏡的色差",
+    "把光路折回短鏡筒",
+    "逐輪磨出金屬曲面",
+    "在星點下修正焦距",
+    "把小型反射鏡送往倫敦"
+  ],
+  "insights": [
+    "改用反射聚光能避開透鏡不同色光折射程度不同所造成的主要色差",
+    "鏡面曲率、元件距離與像點位置互相制約，調整任何一項都會改變整條光路"
+  ],
+  "props": [
+    "金屬主鏡",
+    "磨鏡盤",
+    "斜置小鏡",
+    "短鏡筒",
+    "星點測試表"
+  ],
+  "endingSummary": "牛頓約於 1668 年製成重要的實用小型反射望遠鏡，改良品於 1671 年送皇家學會檢視；他晚年主持皇家學會與造幣局，1727 年逝世。",
+  "legendNote": "反射望遠鏡的原理早於牛頓被提出；劇本聚焦牛頓製成實用原型，不宣稱他首創所有概念。",
+  "objectives": [
+    "把色差與過長鏡筒轉成明確的工程限制",
+    "利用幾何距離安排主鏡、斜鏡與目鏡",
+    "以數列及函數控制反覆研磨，避免修正過頭",
+    "完成可實際觀測並接受皇家學會檢驗的原型"
+  ],
+  "beats": [
+    {
+      "scene": "月緣的紫邊",
+      "problem": "折射望遠鏡把月面邊緣分成多色焦點，牛頓必須從輸入角度與像點函數找出失焦規律。",
+      "major": "函數及其圖形"
+    },
+    {
+      "scene": "穿不過門的鏡筒",
+      "problem": "加長焦距能減輕色差，鏡筒卻會超過房間對角線，必須用畢氏關係確認工程極限。",
+      "major": "平方根與畢氏定理"
+    },
+    {
+      "scene": "光路折返",
+      "problem": "主鏡、斜鏡與目鏡必須塞進短筒，斜向距離一旦算錯，光便撞上筒壁。",
+      "major": "平方根與畢氏定理"
+    },
+    {
+      "scene": "鏡面剖線",
+      "problem": "鏡面邊緣磨得太深，眾人要展開多項式近似，找出造成變形的重複項。",
+      "major": "乘法公式與多項式"
+    },
+    {
+      "scene": "研磨次序",
+      "problem": "每輪研磨量固定遞減，若無法從數列預估剩餘輪次，鏡面會在交付前來不及完成。",
+      "major": "數列與等差級數"
+    },
+    {
+      "scene": "合金鏡失去亮度",
+      "problem": "兩種金屬配比在冷卻後亮度與變形不同，必須比較整條函數趨勢而非單次最亮讀數。",
+      "major": "函數及其圖形"
+    },
+    {
+      "scene": "斜鏡擋光",
+      "problem": "斜鏡太大會遮住主鏡，太小又接不到光束，必須計算光錐截面的對角距離。",
+      "major": "平方根與畢氏定理"
+    },
+    {
+      "scene": "第一顆模糊星點",
+      "problem": "鏡中星光不再有彩邊卻拉成短線，眾人要從角度—像點函數判斷是準直還是曲面出錯。",
+      "major": "函數及其圖形"
+    },
+    {
+      "scene": "誤差式展開",
+      "problem": "鏡面偏差公式層層相乘，若不利用乘法公式整理，就找不到主導失焦的那一項。",
+      "major": "乘法公式與多項式"
+    },
+    {
+      "scene": "反射沒有分色",
+      "problem": "玩家比較兩條光路，牛頓必須確認不同顏色是否真的落在同一像點，而非亮度太低看不出彩邊。",
+      "major": "函數及其圖形"
+    },
+    {
+      "scene": "逐輪逼近焦點",
+      "problem": "修正量若忽大忽小就會越過最佳曲面，必須建立遞減數列讓誤差穩定收斂。",
+      "major": "數列與等差級數"
+    },
+    {
+      "scene": "屋頂星點測試",
+      "problem": "寒風使鏡筒偏移，眾人要由支架直角三角形算回真正指向，否則整夜資料都會錯位。",
+      "major": "平方根與畢氏定理"
+    },
+    {
+      "scene": "焦點會合",
+      "problem": "玩家補出斜鏡位置，牛頓修正主鏡剖面；兩套計算必須導向同一焦點才算完成。",
+      "major": "乘法公式與多項式"
+    },
+    {
+      "scene": "皇家學會的倍率表",
+      "problem": "檢驗者要求同時比較倍率、筒長與視野，必須用連續紀錄證明小鏡筒不是玩具。",
+      "major": "數列與等差級數"
+    },
+    {
+      "scene": "展示前最後一撞",
+      "problem": "搬運箱摔落使斜鏡偏移，開箱只剩片刻，眾人得依像點函數快速校回位置。",
+      "major": "函數及其圖形"
+    }
+  ],
+  "choices": [
+    {
+      "prompt": "折射鏡過長且色差仍在，要先改善哪個問題？",
+      "firstLabel": "再延長焦距",
+      "firstResult": "色差略減，鏡筒卻無法穩定架設，迫使牛頓回到反射方案。",
+      "secondLabel": "改畫反射光路",
+      "secondResult": "短筒方案成形，但金屬鏡面的製作風險立刻浮現。"
+    },
+    {
+      "prompt": "鏡面只差一點，是否加快研磨？",
+      "firstLabel": "維持遞減研磨",
+      "firstResult": "進度較慢，誤差卻持續收斂。",
+      "secondLabel": "先做一次大修正",
+      "secondResult": "焦點越過目標，你們只能用更細的遞減序列救回曲面。"
+    },
+    {
+      "prompt": "第一顆星點模糊，要先動哪個元件？",
+      "firstLabel": "先調斜鏡",
+      "firstResult": "像點回到中央，但邊緣失焦仍要求重測主鏡。",
+      "secondLabel": "先測主鏡",
+      "secondResult": "曲面誤差被找出，修正後仍需重新校準斜鏡。"
+    },
+    {
+      "prompt": "展示前只夠完成一組主要測試。",
+      "firstLabel": "測月面細節",
+      "firstResult": "檢驗者看見清楚輪廓，接著要求補做星點測試。",
+      "secondLabel": "測亮星像點",
+      "secondResult": "低色差更容易比較，月面則留到公開展示確認。"
+    },
+    {
+      "prompt": "向皇家學會介紹時，先強調什麼？",
+      "firstLabel": "短筒與低色差",
+      "firstResult": "工程價值清楚，但倍率仍接受現場量測。",
+      "secondLabel": "倍率與清晰度",
+      "secondResult": "觀測效果抓住目光，牛頓仍主動說明鏡面與視野限制。"
+    }
+  ],
+  "version": 1,
+  "title": "八上 × 牛頓",
+  "language": "zh-TW",
+  "companions": [
+    "NumNum",
+    "Numi"
+  ],
+  "journalTitle": "沒有彩邊的星光",
+  "notes": [
+    "玩家本人與 NumNum、Numi 一起冒險。",
+    "題目只從所選年段 questionBank 抽取。",
+    "題面依當下研究場景整段改寫；數字、算式、答案不變。",
+    "答錯保留同一題並給提示，直到答對。",
+    "Eureka 僅在玩家與數學家共同領悟關鍵知識時觸發。",
+    "反射望遠鏡的原理早於牛頓被提出；劇本聚焦牛頓製成實用原型，不宣稱他首創所有概念。"
+  ],
+  "detourTemplates": [
+    [
+      {
+        "speaker": "NumNum",
+        "text": "條件還在。慢一點，沿同一條路再走一次。"
+      }
+    ],
+    [
+      {
+        "speaker": "Numi",
+        "text": "別換題。眼前這件事還等著我們把它算開。"
+      }
+    ],
+    [
+      {
+        "speaker": "Mathematician",
+        "text": "我也沒放棄。重看剛才那一步。"
+      }
+    ]
+  ],
+  "correctFeedback": [
+    [
+      {
+        "speaker": "narrator",
+        "text": "數字對上，眼前的阻礙鬆開了一格。"
+      }
+    ]
+  ],
+  "nodes": [
+    {
+      "id": "opening",
+      "type": "narrative",
+      "objective": "把色差與過長鏡筒轉成明確的工程限制",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "數學世界的藍紫色安靜得像一張沒有折痕的紙。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那邊有一點光——很細，還在抖。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "不是 Eureka。只是有人卡在一個還沒想通的問題前。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "你們追著微光穿過薄紙般的界面。1668 至 1672 年，劍橋金屬鏡工坊與皇家學會展示室。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "牛頓站在金屬主鏡旁，手裡那一步已經停了很久。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "你們是誰？算了——如果看得懂數字，就過來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}也在！我們不是來旁觀的。"
+        }
+      ],
+      "next": "q01"
+    },
+    {
+      "id": "q01",
+      "type": "quiz",
+      "anchor": 1,
+      "scene": "月緣的紫邊",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "月緣的紫邊。折射望遠鏡把月面邊緣分成多色焦點，牛頓必須從輸入角度與像點函數找出失焦規律。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把確認折射鏡的色差坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "函數及其圖形",
+        "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+        "knowledgePoint": "函數值",
+        "questionIds": [
+          1005,
+          1007,
+          1009
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-newton-scene-01",
+        "setting": "劍橋金屬鏡工坊與皇家學會展示室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "確認折射鏡的色差坐標圖",
+          "金屬主鏡",
+          "磨鏡盤"
+        ],
+        "sceneNeed": "折射望遠鏡把月面邊緣分成多色焦點，牛頓必須從輸入角度與像點函數找出失焦規律。",
+        "rewrites": {
+          "1005": {
+            "question": "月緣的紫邊。牛頓在確認折射鏡的色差坐標圖上留下這組條件：已知一次函數 y = -3x + 5，當 x = -2 時，其函數值為何？",
+            "options": {
+              "A": "-1",
+              "B": "11",
+              "C": "-11",
+              "D": "1"
+            },
+            "preserveImage": false
+          },
+          "1007": {
+            "question": "確認折射鏡的色差坐標圖的紀錄停在這一行；下一步正等著它：已知一次函數 y = ax - 4 的圖形通過點 (2 , 6)。求當 x = -3 時，此函數的函數值為何？",
+            "preserveImage": false
+          },
+          "1009": {
+            "question": "現場只剩確認折射鏡的色差坐標圖上的這份計算還沒核對：已知兩個常數函數 y = f(x) 與 y = g(x)。若 f(10) + g(5) = 12，且 f(3) - 2g(8) = -6，則 f(20) × g(20) 的值為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "確認折射鏡的色差坐標圖上的數字對上了。確認折射鏡的色差終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_1",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "折射鏡過長且色差仍在，要先改善哪個問題？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查金屬主鏡。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選磨鏡盤。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "時間不夠。{{address}}，選一邊，我處理另一邊。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "再延長焦距",
+          "next": "choice_1_measure"
+        },
+        {
+          "id": "observe",
+          "label": "改畫反射光路",
+          "next": "choice_1_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_1_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "色差略減，鏡筒卻無法穩定架設，迫使牛頓回到反射方案。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "choice_1_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "短筒方案成形，但金屬鏡面的製作風險立刻浮現。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "q02",
+      "type": "quiz",
+      "anchor": 2,
+      "scene": "穿不過門的鏡筒",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "穿不過門的鏡筒。加長焦距能減輕色差，鏡筒卻會超過房間對角線，必須用畢氏關係確認工程極限。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把磨鏡盤上的條件逐項核對。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_1": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_1": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "平方根與畢氏定理",
+        "chapterIncludes": "平方根與畢氏定理 根式的運算",
+        "knowledgePoint": "根式的化簡",
+        "questionIds": [
+          2267,
+          832,
+          835
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-newton-scene-02",
+        "setting": "劍橋金屬鏡工坊與皇家學會展示室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "磨鏡盤",
+          "金屬主鏡",
+          "斜置小鏡"
+        ],
+        "sceneNeed": "加長焦距能減輕色差，鏡筒卻會超過房間對角線，必須用畢氏關係確認工程極限。",
+        "rewrites": {
+          "832": {
+            "question": "磨鏡盤的紀錄停在這一行；下一步正等著它：將 \\sqrt{180} 化為最簡根式，其結果為下列何者？",
+            "options": {
+              "A": "6\\sqrt{5}",
+              "B": "3\\sqrt{20}",
+              "C": "9\\sqrt{20}",
+              "D": "36\\sqrt{5}"
+            },
+            "preserveImage": false
+          },
+          "835": {
+            "question": "穿不過門的鏡筒。牛頓在磨鏡盤上留下這組條件：計算並化簡 \\sqrt{72} - \\frac{8}{\\sqrt{2}} + (\\sqrt{2} + 1)(\\sqrt{2} - 3) 的值。",
+            "preserveImage": false
+          },
+          "2267": {
+            "question": "磨鏡盤的紀錄停在這一行；下一步正等著它：化簡 \\sqrt{48} - \\sqrt{12} 的結果為下列何者？",
+            "options": {
+              "A": "2\\sqrt{3}",
+              "B": "6",
+              "C": "4\\sqrt{3}",
+              "D": "\\sqrt{36}"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "磨鏡盤上的數字對上了。確認折射鏡的色差終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q03",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q03",
+      "type": "quiz",
+      "anchor": 3,
+      "scene": "光路折返",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "光路折返。主鏡、斜鏡與目鏡必須塞進短筒，斜向距離一旦算錯，光便撞上筒壁。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用直角與距離核對斜置小鏡的實際長度。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "平方根與畢氏定理",
+        "chapterIncludes": "平方根與畢氏定理 平方根與近似值",
+        "knowledgePoint": "平方根的意義",
+        "questionIds": [
+          808,
+          810,
+          807
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-newton-scene-03",
+        "setting": "劍橋金屬鏡工坊與皇家學會展示室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "斜置小鏡",
+          "金屬主鏡",
+          "磨鏡盤"
+        ],
+        "sceneNeed": "主鏡、斜鏡與目鏡必須塞進短筒，斜向距離一旦算錯，光便撞上筒壁。",
+        "rewrites": {
+          "807": {
+            "question": "斜置小鏡的紀錄停在這一行；下一步正等著它：下列關於平方根的敘述，何者正確？\n(A) 16 的平方根是 4\n(B) \\sqrt{25} 的平方根是 \\pm 5\n(C) 0 的平方根只有一個，就是 0\n(D) 因為 -9 沒有平方根，所以 \\sqrt{-9} = -3",
+            "options": {
+              "A": "16 的平方根是 4",
+              "B": "\\sqrt{25} 的平方根是 \\pm 5",
+              "C": "0 的平方根只有一個，就是 0",
+              "D": "因為 -9 沒有平方根，所以 \\sqrt{-9} = -3"
+            },
+            "preserveImage": false
+          },
+          "808": {
+            "question": "牛頓把光路折返剛測到的數字推到你面前：若 3x - 5 的平方根是 \\pm 4 ，請求出 x 的值。",
+            "preserveImage": false
+          },
+          "810": {
+            "question": "光路折返。牛頓在斜置小鏡上留下這組條件：已知 x 為正整數，且 \\sqrt{20 - x} 也是一個正整數。請問滿足條件的 x 值中，最小的 x 值為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "斜置小鏡上的數字對上了。確認折射鏡的色差終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_2",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "確認折射鏡的色差告一段落，短鏡筒卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是把光路折回短鏡筒；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q04"
+    },
+    {
+      "id": "q04",
+      "type": "quiz",
+      "anchor": 4,
+      "scene": "鏡面剖線",
+      "objective": "利用幾何距離安排主鏡、斜鏡與目鏡",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "鏡面剖線。鏡面邊緣磨得太深，眾人要展開多項式近似，找出造成變形的重複項。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "整理短鏡筒上的代數式，讓重複結構現形。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "乘法公式與多項式",
+        "chapterIncludes": "乘法公式與多項式 乘法公式",
+        "knowledgePoint": "平方差公式",
+        "questionIds": [
+          757,
+          759,
+          755
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-newton-scene-04",
+        "setting": "劍橋金屬鏡工坊與皇家學會展示室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "短鏡筒",
+          "金屬主鏡",
+          "磨鏡盤"
+        ],
+        "sceneNeed": "鏡面邊緣磨得太深，眾人要展開多項式近似，找出造成變形的重複項。",
+        "rewrites": {
+          "755": {
+            "question": "鏡面剖線。牛頓在短鏡筒上留下這組條件：利用平方差公式判斷， 98 \\times 102 的值與下列哪一個算式的結果相同？",
+            "options": {
+              "A": "100^2 - 2^2",
+              "B": "100^2 + 2^2",
+              "C": "90^2 - 8^2",
+              "D": "100^2 - 4^2"
+            },
+            "preserveImage": false
+          },
+          "757": {
+            "question": "短鏡筒的紀錄停在這一行；下一步正等著它：若 2023^2 - 2022^2 = k ，則 k 的值為 _____。",
+            "preserveImage": false
+          },
+          "759": {
+            "question": "現場只剩短鏡筒上的這份計算還沒核對：請利用乘法公式，計算 (2+1)(2^2+1)(2^4+1)(2^8+1) - 2^{16} 的值。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "短鏡筒上的數字對上了。把光路折回短鏡筒終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_2",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "鏡面只差一點，是否加快研磨？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查斜置小鏡。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選短鏡筒。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "時間不夠。{{address}}，選一邊，我處理另一邊。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "維持遞減研磨",
+          "next": "choice_2_measure"
+        },
+        {
+          "id": "observe",
+          "label": "先做一次大修正",
+          "next": "choice_2_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_2_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "進度較慢，誤差卻持續收斂。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "choice_2_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "焦點越過目標，你們只能用更細的遞減序列救回曲面。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "q05",
+      "type": "quiz",
+      "anchor": 5,
+      "scene": "研磨次序",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "研磨次序。每輪研磨量固定遞減，若無法從數列預估剩餘輪次，鏡面會在交付前來不及完成。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "從把光路折回短鏡筒連續紀錄連續紀錄裡找出規律，推到尚未測量的一項。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_2": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_2": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "數列與等差級數",
+        "chapterIncludes": "數列與等差級數 等差數列",
+        "knowledgePoint": "一般項求法",
+        "questionIds": [
+          970,
+          967,
+          971
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-newton-scene-05",
+        "setting": "劍橋金屬鏡工坊與皇家學會展示室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "把光路折回短鏡筒連續紀錄",
+          "金屬主鏡",
+          "磨鏡盤"
+        ],
+        "sceneNeed": "每輪研磨量固定遞減，若無法從數列預估剩餘輪次，鏡面會在交付前來不及完成。",
+        "rewrites": {
+          "967": {
+            "question": "把光路折回短鏡筒連續紀錄的紀錄停在這一行；下一步正等著它：若等差數列的首項為 20 ，公差為 -3 ，則此數列從第幾項開始為負數？",
+            "options": {
+              "A": "第 7 項",
+              "B": "第 8 項",
+              "C": "第 9 項",
+              "D": "第 10 項"
+            },
+            "preserveImage": false
+          },
+          "970": {
+            "question": "研磨次序。牛頓在把光路折回短鏡筒連續紀錄上留下這組條件：已知一個等差數列的第 4 項為 17 ，第 10 項為 41 。請問此數列的第 20 項為多少？",
+            "preserveImage": false
+          },
+          "971": {
+            "question": "要讓研磨次序繼續，你得先解開把光路折回短鏡筒連續紀錄旁這一筆：已知等差數列的前六項依序為 a_1, a_2, a_3, a_4, a_5, a_6 。若 a_2 + a_5 = 18 ，且 a_3 = 7 。請問此等差數列的公差為何？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "把光路折回短鏡筒連續紀錄上的數字對上了。把光路折回短鏡筒終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q06",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q06",
+      "type": "quiz",
+      "anchor": 6,
+      "scene": "合金鏡失去亮度",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "合金鏡失去亮度。兩種金屬配比在冷卻後亮度與變形不同，必須比較整條函數趨勢而非單次最亮讀數。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把把光路折回短鏡筒坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "函數及其圖形",
+        "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+        "knowledgePoint": "函數的對應關係",
+        "questionIds": [
+          2282,
+          2284,
+          2285
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-newton-scene-06",
+        "setting": "劍橋金屬鏡工坊與皇家學會展示室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "把光路折回短鏡筒坐標圖",
+          "金屬主鏡",
+          "磨鏡盤"
+        ],
+        "sceneNeed": "兩種金屬配比在冷卻後亮度與變形不同，必須比較整條函數趨勢而非單次最亮讀數。",
+        "rewrites": {
+          "2282": {
+            "question": "把光路折回短鏡筒坐標圖的紀錄停在這一行；下一步正等著它：若 f(x) 是一個常數函數，且已知 f(2) + f(5) = 14 ，則 f(-3) 的值為\n_____。",
+            "preserveImage": false
+          },
+          "2284": {
+            "question": "現場只剩把光路折回短鏡筒坐標圖上的這份計算還沒核對：已知一次函數 f(x) = -3x + 8 ，若輸入一個數 a 後，得到的函數值為 -7 （即 f(a) = -7 ），則 a =\n_____。",
+            "preserveImage": false
+          },
+          "2285": {
+            "question": "合金鏡失去亮度。牛頓在把光路折回短鏡筒坐標圖上留下這組條件：判斷下列關於變數 x 與變數 y 的對應關係中，何者可以說明「 y 是 x 的函數」？",
+            "options": {
+              "A": "若 x 為某個正整數， y 為 x 的因數。",
+              "B": "若 x 為某個正整數， y 為 x 的平方根。",
+              "C": "若 x 為平年中某個月份的天數， y 為該月份的月份數字。",
+              "D": "若 x 為某個正整數， y 為 x 除以 3 所得到的餘數。"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "把光路折回短鏡筒坐標圖上的數字對上了。把光路折回短鏡筒終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q07",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q07",
+      "type": "quiz",
+      "anchor": 7,
+      "scene": "斜鏡擋光",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "斜鏡擋光。斜鏡太大會遮住主鏡，太小又接不到光束，必須計算光錐截面的對角距離。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用直角與距離核對磨鏡盤的實際長度。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "平方根與畢氏定理",
+        "chapterIncludes": "平方根與畢氏定理 平方根與近似值",
+        "knowledgePoint": "十分逼近法",
+        "questionIds": [
+          815,
+          817,
+          819
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-newton-scene-07",
+        "setting": "劍橋金屬鏡工坊與皇家學會展示室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "磨鏡盤",
+          "金屬主鏡",
+          "斜置小鏡"
+        ],
+        "sceneNeed": "斜鏡太大會遮住主鏡，太小又接不到光束，必須計算光錐截面的對角距離。",
+        "rewrites": {
+          "815": {
+            "question": "斜鏡擋光。牛頓在磨鏡盤上留下這組條件：已知 3.1^2 = 9.61 ， 3.2^2 = 10.24 ， 3.16^2 = 9.9856 ， 3.17^2 = 10.0489 ，求 \\sqrt{10} 化為小數後，其十分位數字為何？",
+            "options": {
+              "A": "0",
+              "B": "1",
+              "C": "2",
+              "D": "6"
+            },
+            "preserveImage": false
+          },
+          "817": {
+            "question": "磨鏡盤的紀錄停在這一行；下一步正等著它：已知 a 為正整數，且 a < \\sqrt{85} < a+1 。若要利用十分逼近法找出 \\sqrt{85} 的十分位數字 b ，請先寫出 a 的值，並利用已知 9.2^2 = 84.64 ， 9.3^2 = 86.49 ，求出 b 的值。最後請算出 a+b 的值為何？",
+            "preserveImage": false
+          },
+          "819": {
+            "question": "現場只剩磨鏡盤上的這份計算還沒核對：已知 \\sqrt{x} 為無理數，我們利用十分逼近法求 \\sqrt{x} 的近似值。若經計算得知 \\sqrt{x} 的整數部分為 8 ，且其十分位數字為 3 。已知 8.3^2 = 68.89 ， 8.4^2 = 70.56 。請問符合條件的正整數 x 共有 _____ 個。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "磨鏡盤上的數字對上了。逐輪磨出金屬曲面終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_3",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_3",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "第一顆星點模糊，要先動哪個元件？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查星點測試表。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選金屬主鏡。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "時間不夠。{{address}}，選一邊，我處理另一邊。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "先調斜鏡",
+          "next": "choice_3_measure"
+        },
+        {
+          "id": "observe",
+          "label": "先測主鏡",
+          "next": "choice_3_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_3_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "像點回到中央，但邊緣失焦仍要求重測主鏡。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "choice_3_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "曲面誤差被找出，修正後仍需重新校準斜鏡。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "q08",
+      "type": "quiz",
+      "anchor": 8,
+      "scene": "第一顆模糊星點",
+      "objective": "以數列及函數控制反覆研磨，避免修正過頭",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "第一顆模糊星點。鏡中星光不再有彩邊卻拉成短線，眾人要從角度—像點函數判斷是準直還是曲面出錯。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把逐輪磨出金屬曲面坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_3": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_3": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "函數及其圖形",
+        "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+        "knowledgePoint": "常數函數",
+        "questionIds": [
+          1014,
+          1016,
+          2287
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-newton-scene-08",
+        "setting": "劍橋金屬鏡工坊與皇家學會展示室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "逐輪磨出金屬曲面坐標圖",
+          "金屬主鏡",
+          "磨鏡盤"
+        ],
+        "sceneNeed": "鏡中星光不再有彩邊卻拉成短線，眾人要從角度—像點函數判斷是準直還是曲面出錯。",
+        "rewrites": {
+          "1014": {
+            "question": "現場只剩逐輪磨出金屬曲面坐標圖上的這份計算還沒核對：若函數 f(x) = -5 是一個常數函數，則當 x = 3 時，對應的函數值為何？",
+            "options": {
+              "A": "-15",
+              "B": "-5",
+              "C": "-2",
+              "D": "3"
+            },
+            "preserveImage": false
+          },
+          "1016": {
+            "question": "要讓第一顆模糊星點繼續，你得先解開逐輪磨出金屬曲面坐標圖旁這一筆：已知一次函數 y = ax + b 的圖形為一條平行 x 軸的直線，且此直線不通過第三象限與第四象限。則關於 a 與 b 的條件限制，下列敘述何者必然正確？",
+            "options": {
+              "A": "a = 0 且 b > 0",
+              "B": "a > 0 且 b = 0",
+              "C": "a = 0 且 b",
+              "D": "a 為任意數且 b > 0"
+            },
+            "preserveImage": false
+          },
+          "2287": {
+            "question": "逐輪磨出金屬曲面坐標圖的紀錄停在這一行；下一步正等著它：已知一次函數 y = ax + b 的圖形是一條平行 x 軸的直線，且該圖形通過點 (4, -5) 。關於此函數，下列敘述何者正確？",
+            "options": {
+              "A": "此直線的關係式為 x = 4 ，且它不是常數函數",
+              "B": "在此函數關係式中， a = -5 且 b = 0",
+              "C": "此為常數函數，且當 x = 2024 時，對應的函數值為 -5",
+              "D": "因為不同的 x 值都對應到相同的 y 值，所以 y 不是 x 的函數"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "逐輪磨出金屬曲面坐標圖上的數字對上了。逐輪磨出金屬曲面終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q09",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q09",
+      "type": "quiz",
+      "anchor": 9,
+      "scene": "誤差式展開",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "誤差式展開。鏡面偏差公式層層相乘，若不利用乘法公式整理，就找不到主導失焦的那一項。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "整理短鏡筒上的代數式，讓重複結構現形。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "乘法公式與多項式",
+        "chapterIncludes": "乘法公式與多項式 多項式的加法與減法",
+        "knowledgePoint": "多項式的定義與相關名詞",
+        "questionIds": [
+          767,
+          765,
+          764
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-newton-scene-09",
+        "setting": "劍橋金屬鏡工坊與皇家學會展示室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "短鏡筒",
+          "金屬主鏡",
+          "磨鏡盤"
+        ],
+        "sceneNeed": "鏡面偏差公式層層相乘，若不利用乘法公式整理，就找不到主導失焦的那一項。",
+        "rewrites": {
+          "764": {
+            "question": "現場只剩短鏡筒上的這份計算還沒核對：下列哪一個數學式子是 x 的多項式？",
+            "options": {
+              "A": "2x^2 + \\frac{1}{x} - 3",
+              "B": "|x| + 5",
+              "C": "4x^3 - 7x + 2",
+              "D": "\\sqrt{x} + x^2"
+            },
+            "preserveImage": false
+          },
+          "765": {
+            "question": "誤差式展開。牛頓在短鏡筒上留下這組條件：已知 (a-2)x^3 + (b+3)x^2 + cx + 5 是一個 x 的一次多項式，且一次項的係數為 4 。請問 a+b+c 的值為何？",
+            "preserveImage": false
+          },
+          "767": {
+            "question": "短鏡筒的紀錄停在這一行；下一步正等著它：若多項式 (m^2 - 4)x^2 + (m - 2)x + (m + 3) 是一個零次多項式，則 m 的值為何？ _____",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "短鏡筒上的數字對上了。逐輪磨出金屬曲面終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_1",
+      "type": "eureka",
+      "eurekaId": "g8h1-newton-insight-1",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "改用反射聚光能避開透鏡不同色光折射程度不同所造成的主要色差"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "transition_4"
+    },
+    {
+      "id": "transition_4",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "逐輪磨出金屬曲面告一段落，金屬主鏡卻送來新的壞消息。原先穩定的讀數突然偏了一格；這不是能略過的小差。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是在星點下修正焦距；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q10"
+    },
+    {
+      "id": "q10",
+      "type": "quiz",
+      "anchor": 10,
+      "scene": "反射沒有分色",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "反射沒有分色。玩家比較兩條光路，牛頓必須確認不同顏色是否真的落在同一像點，而非亮度太低看不出彩邊。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把在星點下修正焦距坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "函數及其圖形",
+        "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+        "knowledgePoint": "一次函數（線型函數）及其圖形",
+        "questionIds": [
+          1022,
+          1024,
+          1025
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-newton-scene-10",
+        "setting": "劍橋金屬鏡工坊與皇家學會展示室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "在星點下修正焦距坐標圖",
+          "金屬主鏡",
+          "磨鏡盤"
+        ],
+        "sceneNeed": "玩家比較兩條光路，牛頓必須確認不同顏色是否真的落在同一像點，而非亮度太低看不出彩邊。",
+        "rewrites": {
+          "1022": {
+            "question": "在星點下修正焦距坐標圖的紀錄停在這一行；下一步正等著它：下列各選項的關係式中，哪一個不是線型函數？",
+            "options": {
+              "A": "y = 5",
+              "B": "y = -3x + 2",
+              "C": "y = \\frac{1}{x} + 4",
+              "D": "y = \\frac{x}{2} - 1"
+            },
+            "preserveImage": false
+          },
+          "1024": {
+            "question": "現場只剩在星點下修正焦距坐標圖上的這份計算還沒核對：已知有兩個一次函數 y = 4x - 5 與 y = -2x + 7。若當 x = a 時，這兩個函數的函數值相等，則 a 的值為何？",
+            "options": {
+              "A": "\\frac{1}{3}",
+              "B": "2",
+              "C": "3",
+              "D": "6"
+            },
+            "preserveImage": false
+          },
+          "1025": {
+            "question": "反射沒有分色。牛頓在在星點下修正焦距坐標圖上留下這組條件：你家有一個大水箱，水箱內原有 120 公升的水。你打開水龍頭開始注水，每分鐘固定注入 15 公升的水。若注水時間為 x 分鐘，水箱內的水量為 y 公升。若你想要讓水箱內的水量達到 345 公升，請問需要注水多少分鐘？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "在星點下修正焦距坐標圖上的數字對上了。在星點下修正焦距終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_4",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_4",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "展示前只夠完成一組主要測試。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查磨鏡盤。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選斜置小鏡。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "時間不夠。{{address}}，選一邊，我處理另一邊。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "測月面細節",
+          "next": "choice_4_measure"
+        },
+        {
+          "id": "observe",
+          "label": "測亮星像點",
+          "next": "choice_4_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_4_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "檢驗者看見清楚輪廓，接著要求補做星點測試。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "choice_4_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "低色差更容易比較，月面則留到公開展示確認。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "q11",
+      "type": "quiz",
+      "anchor": 11,
+      "scene": "逐輪逼近焦點",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "逐輪逼近焦點。修正量若忽大忽小就會越過最佳曲面，必須建立遞減數列讓誤差穩定收斂。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "從在星點下修正焦距連續紀錄連續紀錄裡找出規律，推到尚未測量的一項。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_4": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_4": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "數列與等差級數",
+        "chapterIncludes": "數列與等差級數 等比數列",
+        "knowledgePoint": "等比數列的首項與公比",
+        "questionIds": [
+          2278,
+          990,
+          2279
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-newton-scene-11",
+        "setting": "劍橋金屬鏡工坊與皇家學會展示室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "在星點下修正焦距連續紀錄",
+          "金屬主鏡",
+          "磨鏡盤"
+        ],
+        "sceneNeed": "修正量若忽大忽小就會越過最佳曲面，必須建立遞減數列讓誤差穩定收斂。",
+        "rewrites": {
+          "990": {
+            "question": "逐輪逼近焦點。牛頓在在星點下修正焦距連續紀錄上留下這組條件：已知一數列為 3, -6, 12, -24, 48 。請問下列關於此數列的敘述，何者正確？",
+            "options": {
+              "A": "首項為 3 ，公差為 -3",
+              "B": "首項為 3 ，公比為 -2",
+              "C": "首項為 -6 ，公比為 -2",
+              "D": "首項為 3 ，公比為 2"
+            },
+            "preserveImage": false
+          },
+          "2278": {
+            "question": "牛頓把逐輪逼近焦點剛測到的數字推到你面前：判斷下列哪一個數列是首項為 2 、公比為 -2 的等比數列？",
+            "options": {
+              "A": "2, -4, 8, -16",
+              "B": "-2, -4, -6, -8",
+              "C": "2, 0, -2, -4",
+              "D": "2, -4, 8, 24"
+            },
+            "preserveImage": false
+          },
+          "2279": {
+            "question": "現場只剩在星點下修正焦距連續紀錄上的這份計算還沒核對：已知一等比數列的首項為 a （其中 a\neq 0 ），公比為 r 且 r < 0 。關於此數列的各項性質，下列敘述何者必然正確？",
+            "options": {
+              "A": "此數列的每一項皆為負數。",
+              "B": "若將此數列的每一項皆同乘以 -2 ，則新數列的公比會變成 -2r 。",
+              "C": "此數列的第 1 項與第 3 項之乘積必為正數。",
+              "D": "若將此數列的每一項皆平方，形成的新數列之公比仍為 r 。"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "在星點下修正焦距連續紀錄上的數字對上了。在星點下修正焦距終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q12",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q12",
+      "type": "quiz",
+      "anchor": 12,
+      "scene": "屋頂星點測試",
+      "objective": "完成可實際觀測並接受皇家學會檢驗的原型",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "屋頂星點測試。寒風使鏡筒偏移，眾人要由支架直角三角形算回真正指向，否則整夜資料都會錯位。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用直角與距離核對磨鏡盤的實際長度。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "平方根與畢氏定理",
+        "chapterIncludes": "平方根與畢氏定理 畢氏定理",
+        "knowledgePoint": "商高定理（勾股定理）的意義",
+        "questionIds": [
+          849,
+          847,
+          848
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-newton-scene-12",
+        "setting": "劍橋金屬鏡工坊與皇家學會展示室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "磨鏡盤",
+          "金屬主鏡",
+          "斜置小鏡"
+        ],
+        "sceneNeed": "寒風使鏡筒偏移，眾人要由支架直角三角形算回真正指向，否則整夜資料都會錯位。",
+        "rewrites": {
+          "847": {
+            "question": "磨鏡盤的紀錄停在這一行；下一步正等著它：在直角 \\triangle ABC 中，若三邊長滿足 BC^2 + AC^2 = AB^2 ，請問此三角形哪一個角是直角？",
+            "options": {
+              "A": "\\angle A",
+              "B": "\\angle B",
+              "C": "\\angle C",
+              "D": "無法判斷"
+            },
+            "preserveImage": false
+          },
+          "848": {
+            "question": "牛頓把屋頂星點測試剛測到的數字推到你面前：你在現場看到一個拼圖遊戲。拼圖板上有一個直角三角形，兩股分別緊連著面積為 9 和 16 的正方形。若要用一塊正方形木板剛好拼滿直角三角形的斜邊，這塊正方形木板的面積應該要是多少？",
+            "preserveImage": false
+          },
+          "849": {
+            "question": "現場只剩磨鏡盤上的這份計算還沒核對：已知一個直角三角形的兩邊長分別為 5 小格和 12 小格。若第三邊為此三角形的最長邊，請問第三邊的長度為多少小格？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "磨鏡盤上的數字對上了。在星點下修正焦距終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_5",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "在星點下修正焦距告一段落，磨鏡盤卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是把小型反射鏡送往倫敦；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q13"
+    },
+    {
+      "id": "q13",
+      "type": "quiz",
+      "anchor": 13,
+      "scene": "焦點會合",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "焦點會合。玩家補出斜鏡位置，牛頓修正主鏡剖面；兩套計算必須導向同一焦點才算完成。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "整理斜置小鏡上的代數式，讓重複結構現形。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "乘法公式與多項式",
+        "chapterIncludes": "乘法公式與多項式 多項式的乘法與除法",
+        "knowledgePoint": "多項式的乘法運算",
+        "questionIds": [
+          791,
+          2264,
+          793
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-newton-scene-13",
+        "setting": "劍橋金屬鏡工坊與皇家學會展示室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "斜置小鏡",
+          "金屬主鏡",
+          "磨鏡盤"
+        ],
+        "sceneNeed": "玩家補出斜鏡位置，牛頓修正主鏡剖面；兩套計算必須導向同一焦點才算完成。",
+        "rewrites": {
+          "791": {
+            "question": "要讓焦點會合繼續，你得先解開斜置小鏡旁這一筆：已知 (x^2 - ax + 3)(2x - 5) 的展開式中， x^2 項的係數是 -11 ，則 x 項的係數為何？",
+            "preserveImage": false
+          },
+          "793": {
+            "question": "牛頓把焦點會合剛測到的數字推到你面前：若兩個多項式相乘的結果為 (ax + 2)(3x - b) = 6x^2 - cx - 10 （其中 a, b, c 均為正整數），則 a+b+c 的值為 _____。",
+            "preserveImage": false
+          },
+          "2264": {
+            "question": "現場只剩斜置小鏡上的這份計算還沒核對：已知多項式 (x^2 + ax - 3)(3x - 2) 的展開式中， x^2 項的係數為 7 ，則此展開式中 x 項的係數為何？",
+            "options": {
+              "A": "-15",
+              "B": "-6",
+              "C": "3",
+              "D": "15"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "斜置小鏡上的數字對上了。把小型反射鏡送往倫敦終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_5",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "向皇家學會介紹時，先強調什麼？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查短鏡筒。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選星點測試表。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "時間不夠。{{address}}，選一邊，我處理另一邊。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "短筒與低色差",
+          "next": "choice_5_measure"
+        },
+        {
+          "id": "observe",
+          "label": "倍率與清晰度",
+          "next": "choice_5_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_5_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "工程價值清楚，但倍率仍接受現場量測。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "choice_5_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "觀測效果抓住目光，牛頓仍主動說明鏡面與視野限制。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "q14",
+      "type": "quiz",
+      "anchor": 14,
+      "scene": "皇家學會的倍率表",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "皇家學會的倍率表。檢驗者要求同時比較倍率、筒長與視野，必須用連續紀錄證明小鏡筒不是玩具。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "從把小型反射鏡送往倫敦連續紀錄連續紀錄裡找出規律，推到尚未測量的一項。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_5": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_5": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "數列與等差級數",
+        "chapterIncludes": "數列與等差級數 等差級數",
+        "knowledgePoint": "等差級數求和公式及其應用問題",
+        "questionIds": [
+          987,
+          984,
+          985
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-newton-scene-14",
+        "setting": "劍橋金屬鏡工坊與皇家學會展示室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "把小型反射鏡送往倫敦連續紀錄",
+          "金屬主鏡",
+          "磨鏡盤"
+        ],
+        "sceneNeed": "檢驗者要求同時比較倍率、筒長與視野，必須用連續紀錄證明小鏡筒不是玩具。",
+        "rewrites": {
+          "984": {
+            "question": "現場只剩把小型反射鏡送往倫敦連續紀錄上的這份計算還沒核對：已知一個等差級數共有 15 項，其首項為 5，第 15 項為 47，求此等差級數的和為多少？",
+            "options": {
+              "A": "390",
+              "B": "780",
+              "C": "364",
+              "D": "375"
+            },
+            "preserveImage": false
+          },
+          "985": {
+            "question": "皇家學會的倍率表。牛頓在把小型反射鏡送往倫敦連續紀錄上留下這組條件：你在現場擺套圈圈測點，你在架上第一排擺了 3 個樣品，第二排擺了 5 個樣品，第三排擺了 7 個樣品，依此類推。若你一共擺了 10 排，請問你總共準備了多少個樣品？_____",
+            "preserveImage": false
+          },
+          "987": {
+            "question": "把小型反射鏡送往倫敦連續紀錄的紀錄停在這一行；下一步正等著它：已知一等差數列的前 11 項和為 220，且第 2 項為 8。求此等差數列的第 10 項為多少？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "把小型反射鏡送往倫敦連續紀錄上的數字對上了。把小型反射鏡送往倫敦終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_2",
+      "type": "eureka",
+      "eurekaId": "g8h1-newton-insight-2",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "鏡面曲率、元件距離與像點位置互相制約，調整任何一項都會改變整條光路"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "q15"
+    },
+    {
+      "id": "q15",
+      "type": "quiz",
+      "anchor": 15,
+      "scene": "展示前最後一撞",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "展示前最後一撞。搬運箱摔落使斜鏡偏移，開箱只剩片刻，眾人得依像點函數快速校回位置。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把把小型反射鏡送往倫敦坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 1,
+        "major": "函數及其圖形",
+        "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+        "knowledgePoint": "函數值",
+        "questionIds": [
+          1006,
+          1010,
+          1008
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h1-newton-scene-15",
+        "setting": "劍橋金屬鏡工坊與皇家學會展示室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "把小型反射鏡送往倫敦坐標圖",
+          "金屬主鏡",
+          "磨鏡盤"
+        ],
+        "sceneNeed": "搬運箱摔落使斜鏡偏移，開箱只剩片刻，眾人得依像點函數快速校回位置。",
+        "rewrites": {
+          "1006": {
+            "question": "要讓展示前最後一撞繼續，你得先解開把小型反射鏡送往倫敦坐標圖旁這一筆：你去現場取用樣品，已知總花費 y（元）與取用的樣品數量 x（串）的關係為 y = 35x + 10（其中 10 枚為塑膠袋和竹籤的固定費用）。若你取用了 4 串烤肉，則你需要交付 _____ 元。",
+            "preserveImage": false
+          },
+          "1008": {
+            "question": "牛頓把展示前最後一撞剛測到的數字推到你面前：紀錄系統「快送」的運費計算方式為：基本費 30 枚，每增加 1 里程格加收 15 枚；另一家「好送」的運費計算方式為：基本費 50 枚，每增加 1 里程格加收 10 枚。若你家距離餐廳 x 里程格，且兩家紀錄系統的運費剛好相同，則 x 的值為何？（已知運費 y 與距離 x 的函數關係分別為 y = 15x + 30 與 y = 10x + 50）",
+            "options": {
+              "A": "2",
+              "B": "4",
+              "C": "5",
+              "D": "6"
+            },
+            "preserveImage": false
+          },
+          "1010": {
+            "question": "展示前最後一撞。牛頓在把小型反射鏡送往倫敦坐標圖上留下這組條件：你經營租車行，租借電動車的總費用 y（元）與租借時間 x（小時）為一次函數關係。已知租借 2 小時需花費 300 枚，租借 5 小時需花費 600 枚。若你帶了 800 枚去租車，且將錢全數用完，請問你可以租借這輛電動車幾小時？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "把小型反射鏡送往倫敦坐標圖上的數字對上了。把小型反射鏡送往倫敦終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "ending_history",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "ending_history",
+      "type": "narrative",
+      "objective": "記住牛頓留下的答案",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "把小型反射鏡送往倫敦完成了。現場安靜下來，只有金屬主鏡還留著剛才的痕跡。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，今天不是你替我算完。是我們一起把它想通。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那道光退了……可是我還記得它的味道。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "因為答案不是光。答案會留在能被重做的步驟裡。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "——時間向前推去。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "牛頓約於 1668 年製成重要的實用小型反射望遠鏡，改良品於 1671 年送皇家學會檢視；他晚年主持皇家學會與造幣局，1727 年逝世。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "眼前的劍橋金屬鏡工坊與皇家學會展示室慢慢褪色。藍紫色的安靜重新包圍你們。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}，下次再有人快想通時，我們還會聽見。"
+        }
+      ],
+      "next": "ending_stats"
+    },
+    {
+      "id": "ending_stats",
+      "type": "ending",
+      "next": null,
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "【劇本結束】八上 × 牛頓"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "這趟路的每一次重算，數字都記得。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "下次見，{{playerName}}！"
+        }
+      ]
+    }
+  ]
+}

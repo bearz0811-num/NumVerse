@@ -1,0 +1,2393 @@
+{
+  "id": "g9h1-galileo",
+  "grade": 9,
+  "half": 1,
+  "gradeLabel": "九上",
+  "mathematician": "伽利略",
+  "mathematicianSpeaker": "Mathematician",
+  "episode": "四顆不肯消失的星",
+  "setting": "帕多瓦住處屋頂觀測台與《星際信使》手稿桌",
+  "era": "1610 年 1 月至 3 月",
+  "acts": [
+    "木星旁的三點光",
+    "第四顆星",
+    "消失在圓盤後",
+    "背景恆星的質疑",
+    "送往印刷所的軌跡"
+  ],
+  "insights": [
+    "亮點的暫時消失可能是繞行至木星前後而被遮蔽，不代表它離開天空。",
+    "這些天體繞木星運行，表示天空不只存在單一運動中心。"
+  ],
+  "props": [
+    "改良望遠鏡",
+    "木星觀測簿",
+    "圓軌道紙盤",
+    "比例刻度尺",
+    "手稿印版"
+  ],
+  "endingSummary": "伽利略於 1610 年出版《星際信使》，公布木星四大衛星觀測並以美第奇家族命名；觀測重創一切天體只繞地球的簡單宇宙圖像。",
+  "legendNote": "木星衛星並未靠一次觀測完全證明日心說；劇情只能呈現它反駁單一運動中心，不能誇大為終局證明。",
+  "objectives": [
+    "連續記錄木星旁亮點的位置",
+    "排除背景恆星、鏡片污點與隨機誤差",
+    "利用圓與比例關係建立繞行模型",
+    "在截稿期限前形成可由他人檢驗的證據"
+  ],
+  "beats": [
+    {
+      "scene": "一月寒夜，木星旁排著三點微光，望遠鏡視野卻沒有固定尺標。",
+      "problem": "玩家要用比例線段把鏡中視距縮放到觀測紙；比例一旦失真，隔夜位置就無法比較。",
+      "major": "比例線段與相似形"
+    },
+    {
+      "scene": "第二夜亮點換到木星另一側，其中一點貼近明亮圓盤。",
+      "problem": "玩家必須用弦、半徑與圓內位置判斷它是否可能沿圓形路徑移動，否則伽利略會把換側當成新恆星。",
+      "major": "圓的性質"
+    },
+    {
+      "scene": "雲層快速壓過屋頂，只留下幾個可能打開的觀測空隙。",
+      "problem": "玩家要依過去開雲次數估算成功觀測機率，選擇是否立刻校準或等待；選錯時機會失去整夜資料。",
+      "major": "統計與機率"
+    },
+    {
+      "scene": "鏡中刻度與手稿版面尺寸不同，三點光幾乎擠在一起。",
+      "problem": "玩家要以相似形換算圖紙距離，在有限版面中保留相對位置，否則印版會把兩顆星併成一點。",
+      "major": "比例線段與相似形"
+    },
+    {
+      "scene": "第四顆亮點首次從木星強光旁露出，伽利略不敢立刻下結論。",
+      "problem": "玩家須整理多夜亮點數量與位置次數，判斷第四點是否反覆出現，而非一次性的觀測雜訊。",
+      "major": "統計與機率"
+    },
+    {
+      "scene": "伽利略嘗試描述亮點從一側移向另一側的局部軌跡。",
+      "problem": "玩家要由二次函數圖形判讀轉折與對稱，找出最接近木星圓盤的時刻，避免在錯誤夜晚宣稱它已消失。",
+      "major": "二次函數"
+    },
+    {
+      "scene": "NumNum 把木星畫成圓心，四顆亮點的投影落在同一直線附近。",
+      "problem": "玩家要利用直徑、弦與圓周位置解釋側視圓軌道為何看似直線往返，否則圓模型會被自己畫的資料推翻。",
+      "major": "圓的性質"
+    },
+    {
+      "scene": "鏡片上的黑點跟著視野出現，Numi 高喊發現第五顆星。",
+      "problem": "玩家須比較轉動鏡筒後黑點仍在同位置的條件機率，判斷它屬於天空還是鏡片污漬。",
+      "major": "統計與機率"
+    },
+    {
+      "scene": "一顆已追蹤數夜的亮點突然貼近木星後消失。",
+      "problem": "玩家要以圓的交會和遮蔽區域推算它可能位於木星前方或後方，決定是否繼續守到重新出現。",
+      "major": "圓的性質"
+    },
+    {
+      "scene": "連續觀測點形成來回曲線，截稿日期卻只剩數日。",
+      "problem": "玩家要讀取二次函數頂點、對稱軸與開口方向，預測下一次最遠離木星的位置供終測核對。",
+      "major": "二次函數"
+    },
+    {
+      "scene": "《星際信使》版面塞不下原尺寸觀測圖，印刷匠準備自行縮小。",
+      "problem": "玩家必須給出相似圖形的正確縮放比，確保四顆亮點與木星的相對距離不被排版改壞。",
+      "major": "比例線段與相似形"
+    },
+    {
+      "scene": "質疑者主張四點只是碰巧排在木星附近的背景恆星。",
+      "problem": "玩家要比較它們多夜隨木星共同移動的資料與隨機重合機率，形成能迫使對方回應的證據。",
+      "major": "統計與機率"
+    },
+    {
+      "scene": "圓軌道草圖與望遠鏡中的直線排列看似衝突，學徒拒絕抄圖。",
+      "problem": "玩家須運用圓、直徑與投影位置說明側視軌道及遮蔽，否則最後的模型無法進入手稿。",
+      "major": "圓的性質"
+    },
+    {
+      "scene": "截稿前重算軌跡時，一個觀測點遠離原本的二次曲線。",
+      "problem": "玩家要代入二次函數檢查該點，回查是否抄錯正負方向；若不處理，質疑者會抓住整頁矛盾。",
+      "major": "二次函數"
+    },
+    {
+      "scene": "黎明前，四顆亮點再次分列木星兩側，印刷所信使已在樓下等待。",
+      "problem": "玩家要用相似比例把當夜位置加入長期圖，確認它們與木星共同移動後仍維持各自週期，才能交出手稿。",
+      "major": "比例線段與相似形"
+    }
+  ],
+  "choices": [
+    {
+      "prompt": "雲層逼近，先觀測哪一項？",
+      "firstLabel": "先校準木星圓盤",
+      "firstResult": "可用時間縮短，但所有亮點取得一致比例基準。",
+      "secondLabel": "先記最外側亮點",
+      "secondResult": "玩家保住最易失去的位置，再用雲隙中的木星直徑補回尺度。"
+    },
+    {
+      "prompt": "第四顆亮點剛出現，要立刻宣布嗎？",
+      "firstLabel": "暫記為未知亮點",
+      "firstResult": "伽利略壓住興奮，靠後續統計確認它反覆出現。",
+      "secondLabel": "先回查舊觀測圖",
+      "secondResult": "玩家在木星強光旁找到先前漏記痕跡，仍決定等待更多夜證實。"
+    },
+    {
+      "prompt": "疑似第五顆星沒有移動，如何驗證？",
+      "firstLabel": "轉動鏡筒",
+      "firstResult": "黑點跟著鏡片轉動，立刻暴露為污漬。",
+      "secondLabel": "清潔鏡片再觀測",
+      "secondResult": "黑點消失，玩家保住四顆真實亮點的資料集。"
+    },
+    {
+      "prompt": "質疑者堅稱只是背景恆星，怎麼回應？",
+      "firstLabel": "展示連續位置圖",
+      "firstResult": "圖形呈現亮點伴隨木星移動，迫使質疑者解釋規律重合。",
+      "secondLabel": "計算隨機重合機率",
+      "secondResult": "數據顯示多夜重合極不尋常，再由位置圖補上直觀證據。"
+    },
+    {
+      "prompt": "異常點可能是抄錯，也可能是真變化，要刪除嗎？",
+      "firstLabel": "保留並回查原稿",
+      "firstResult": "玩家找到方向符號抄反，修正過程也被留在手稿註記中。",
+      "secondLabel": "隔夜優先補測",
+      "secondResult": "補測符合原曲線，眾人循差異查出舊稿的負號錯誤。"
+    }
+  ],
+  "version": 1,
+  "title": "九上 × 伽利略",
+  "language": "zh-TW",
+  "companions": [
+    "NumNum",
+    "Numi"
+  ],
+  "journalTitle": "四顆不肯消失的星",
+  "notes": [
+    "玩家本人與 NumNum、Numi 一起冒險。",
+    "題目只從所選年段 questionBank 抽取。",
+    "題面依當下研究場景整段改寫；數字、算式、答案不變。",
+    "答錯保留同一題並給提示，直到答對。",
+    "Eureka 僅在玩家與數學家共同領悟關鍵知識時觸發。",
+    "木星衛星並未靠一次觀測完全證明日心說；劇情只能呈現它反駁單一運動中心，不能誇大為終局證明。"
+  ],
+  "detourTemplates": [
+    [
+      {
+        "speaker": "NumNum",
+        "text": "條件還在。慢一點，沿同一條路再走一次。"
+      }
+    ],
+    [
+      {
+        "speaker": "Numi",
+        "text": "別換題。眼前這件事還等著我們把它算開。"
+      }
+    ],
+    [
+      {
+        "speaker": "Mathematician",
+        "text": "我也沒放棄。重看剛才那一步。"
+      }
+    ]
+  ],
+  "correctFeedback": [
+    [
+      {
+        "speaker": "narrator",
+        "text": "數字對上，眼前的阻礙鬆開了一格。"
+      }
+    ]
+  ],
+  "nodes": [
+    {
+      "id": "opening",
+      "type": "narrative",
+      "objective": "連續記錄木星旁亮點的位置",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "數學世界的藍紫色安靜得像一張沒有折痕的紙。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那邊有一點光——很細，還在抖。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "不是 Eureka。只是有人卡在一個還沒想通的問題前。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "你們追著微光穿過薄紙般的界面。1610 年 1 月至 3 月，帕多瓦住處屋頂觀測台與《星際信使》手稿桌。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "伽利略站在改良望遠鏡旁，手裡那一步已經停了很久。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "你們是誰？算了——如果看得懂數字，就過來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}也在！我們不是來旁觀的。"
+        }
+      ],
+      "next": "q01"
+    },
+    {
+      "id": "q01",
+      "type": "quiz",
+      "anchor": 1,
+      "scene": "一月寒夜，木星旁排著三點微光，望遠鏡視野卻沒有固定尺標。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "一月寒夜，木星旁排著三點微光，望遠鏡視野卻沒有固定尺標。。玩家要用比例線段把鏡中視距縮放到觀測紙；比例一旦失真，隔夜位置就無法比較。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用比例把木星旁的三點光幾何圖的縮放與實際尺寸接起來。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "比例線段與相似形",
+        "chapterIncludes": "比例線段與相似形 比例線段",
+        "knowledgePoint": "平行線截比例線段性質",
+        "questionIds": [
+          1147,
+          1151,
+          1149
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-galileo-scene-01",
+        "setting": "帕多瓦住處屋頂觀測台與《星際信使》手稿桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "木星旁的三點光幾何圖",
+          "改良望遠鏡",
+          "木星觀測簿"
+        ],
+        "sceneNeed": "玩家要用比例線段把鏡中視距縮放到觀測紙；比例一旦失真，隔夜位置就無法比較。",
+        "rewrites": {
+          "1147": {
+            "question": "木星旁的三點光幾何圖的紀錄停在這一行；下一步正等著它：在 \\triangle ABC 中， D 點在 AB 上， E 點在 AC 上，且 DE \\parallel BC 。若 AD = 6 ， DB = 4 ， AE = 9 ，求 EC 的長度？",
+            "options": {
+              "A": "4",
+              "B": "6",
+              "C": "8",
+              "D": "9"
+            },
+            "preserveImage": false
+          },
+          "1149": {
+            "question": "現場只剩木星旁的三點光幾何圖上的這份計算還沒核對：在 \\triangle ABC 中， D 、 E 兩點分別在 AB 、 AC 上，下列哪一個條件無法確定 DE \\parallel BC ？",
+            "options": {
+              "A": "AD : DB = AE : EC",
+              "B": "AD : AB = AE : AC",
+              "C": "AB : DB = AC : EC",
+              "D": "AD : AB = DE : BC"
+            },
+            "preserveImage": false
+          },
+          "1151": {
+            "question": "要讓一月寒夜，木星旁排著三點微光，望遠鏡視野卻沒有固定尺標。繼續，你得先解開木星旁的三點光幾何圖旁這一筆：已知直線 L_1 \\parallel L_2 \\parallel L_3 ，直線 M_1 被這三條平行線截出兩線段長度分別為 2x+1 與 x+2 ；同時直線 M_2 被截出的對應兩線段長度分別為 3x+4 與 2x+1 。若 x 為正數，求 x 的值。 _____",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "木星旁的三點光幾何圖上的數字對上了。木星旁的三點光終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_1",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "雲層逼近，先觀測哪一項？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查改良望遠鏡。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選木星觀測簿。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，你選先看哪一個；我們讓觀測回答。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "先校準木星圓盤",
+          "next": "choice_1_measure"
+        },
+        {
+          "id": "observe",
+          "label": "先記最外側亮點",
+          "next": "choice_1_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_1_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "可用時間縮短，但所有亮點取得一致比例基準。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "choice_1_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "玩家保住最易失去的位置，再用雲隙中的木星直徑補回尺度。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "q02",
+      "type": "quiz",
+      "anchor": 2,
+      "scene": "第二夜亮點換到木星另一側，其中一點貼近明亮圓盤。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "第二夜亮點換到木星另一側，其中一點貼近明亮圓盤。。玩家必須用弦、半徑與圓內位置判斷它是否可能沿圓形路徑移動，否則伽利略會把換側當成新恆星。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿木星旁的三點光幾何圖的圓弧、弦與切線追出隱藏關係。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_1": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_1": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "圓的性質",
+        "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+        "knowledgePoint": "圓的基本名詞（弦、弧、弓形）",
+        "questionIds": [
+          1209,
+          1211,
+          1213
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-galileo-scene-02",
+        "setting": "帕多瓦住處屋頂觀測台與《星際信使》手稿桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "木星旁的三點光幾何圖",
+          "改良望遠鏡",
+          "木星觀測簿"
+        ],
+        "sceneNeed": "玩家必須用弦、半徑與圓內位置判斷它是否可能沿圓形路徑移動，否則伽利略會把換側當成新恆星。",
+        "rewrites": {
+          "1209": {
+            "question": "現場只剩木星旁的三點光幾何圖上的這份計算還沒核對：下列關於圓的敘述，何者正確？",
+            "options": {
+              "A": "圓上最長的弦必通過圓心",
+              "B": "圓的任一條弦都會把圓分成兩個面積相等的弓形",
+              "C": "兩端點都在圓上的任意曲線，皆稱為圓的弦",
+              "D": "在同一個圓中，弦心距越長，對應的弦越長"
+            },
+            "preserveImage": false
+          },
+          "1211": {
+            "question": "要讓第二夜亮點換到木星另一側，其中一點貼近明亮圓盤。繼續，你得先解開木星旁的三點光幾何圖旁這一筆：已知圓 O 的半徑為 13，圓內有一條弦 \\overline{AB} ，且圓心 O 到弦 \\overline{AB} 的距離（即弦心距）為 5。請問弦 \\overline{AB} 的長度為多少？",
+            "preserveImage": false
+          },
+          "1213": {
+            "question": "伽利略把第二夜亮點換到木星另一側，其中一點貼近明亮圓盤。剛測到的數字推到你面前：已知圓 O 的半徑為 10，圓內有兩條平行弦 \\overline{AB} 與 \\overline{CD} ，且 \\overline{AB} = 16 ， \\overline{CD} = 12 。若圓心 O 與這兩條平行弦的相對位置未知，則這兩條平行弦之間的距離最大為_____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "木星旁的三點光幾何圖上的數字對上了。木星旁的三點光終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q03",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q03",
+      "type": "quiz",
+      "anchor": 3,
+      "scene": "雲層快速壓過屋頂，只留下幾個可能打開的觀測空隙。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "雲層快速壓過屋頂，只留下幾個可能打開的觀測空隙。。玩家要依過去開雲次數估算成功觀測機率，選擇是否立刻校準或等待；選錯時機會失去整夜資料。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把木星旁的三點光紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "統計與機率",
+        "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+        "knowledgePoint": "盒狀圖繪製與判讀",
+        "questionIds": [
+          357,
+          355,
+          359
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-galileo-scene-03",
+        "setting": "帕多瓦住處屋頂觀測台與《星際信使》手稿桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "木星旁的三點光紀錄表",
+          "改良望遠鏡",
+          "木星觀測簿"
+        ],
+        "sceneNeed": "玩家要依過去開雲次數估算成功觀測機率，選擇是否立刻校準或等待；選錯時機會失去整夜資料。",
+        "rewrites": {
+          "355": {
+            "question": "雲層快速壓過屋頂，只留下幾個可能打開的觀測空隙。。伽利略在木星旁的三點光紀錄表上留下這組條件：已知籃球隊 11 位球員的測量值（單位：公斤）由輕到重排列如下：65, 68, 70, 72, 75, 76, 78, 80, 82, 85, 90。求這組資料的四分位距（IQR）為多少公斤？",
+            "preserveImage": false
+          },
+          "357": {
+            "question": "木星旁的三點光紀錄表的紀錄停在這一行；下一步正等著它：已知一組資料的五數總括為：最小值 15、第一四分位數 22、中位數 28、第三四分位數 35、最大值 48。請計算這組資料的「全距」。",
+            "preserveImage": false
+          },
+          "359": {
+            "question": "現場只剩木星旁的三點光紀錄表上的這份計算還沒核對：有一組包含 8 個相異整數的資料，由小到大排列。已知這組資料的最小值為 10，第一四分位數為 14，中位數為 20，第三四分位數為 28，最大值為 35。請問這組資料中，第 4 小與第 5 小的數值相加的總和為多少？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "木星旁的三點光紀錄表上的數字對上了。木星旁的三點光終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_2",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "木星旁的三點光告一段落，比例刻度尺卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是第四顆星；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q04"
+    },
+    {
+      "id": "q04",
+      "type": "quiz",
+      "anchor": 4,
+      "scene": "鏡中刻度與手稿版面尺寸不同，三點光幾乎擠在一起。",
+      "objective": "排除背景恆星、鏡片污點與隨機誤差",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "鏡中刻度與手稿版面尺寸不同，三點光幾乎擠在一起。。玩家要以相似形換算圖紙距離，在有限版面中保留相對位置，否則印版會把兩顆星併成一點。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用比例把第四顆星幾何圖的縮放與實際尺寸接起來。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "比例線段與相似形",
+        "chapterIncludes": "比例線段與相似形 相似形",
+        "knowledgePoint": "多邊形相似意義",
+        "questionIds": [
+          1174,
+          1178,
+          1177
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-galileo-scene-04",
+        "setting": "帕多瓦住處屋頂觀測台與《星際信使》手稿桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "第四顆星幾何圖",
+          "改良望遠鏡",
+          "木星觀測簿"
+        ],
+        "sceneNeed": "玩家要以相似形換算圖紙距離，在有限版面中保留相對位置，否則印版會把兩顆星併成一點。",
+        "rewrites": {
+          "1174": {
+            "question": "現場只剩第四顆星幾何圖上的這份計算還沒核對：下列哪一組多邊形一定相似？",
+            "options": {
+              "A": "任意兩個等腰三角形",
+              "B": "任意兩個矩形",
+              "C": "任意兩個正六邊形",
+              "D": "任意兩個菱形"
+            },
+            "preserveImage": false
+          },
+          "1177": {
+            "question": "第四顆星幾何圖的紀錄停在這一行；下一步正等著它：已知四邊形 ABCD 相似於四邊形 PQRS ，且 A, B, C, D 的對應頂點分別為 P, Q, R, S 。若 \\angle A = 80^\\circ 、 \\angle B = 110^\\circ 、 \\angle R = 70^\\circ ，且 \\overline{AB} = 6 、 \\overline{BC} = 9 、 \\overline{PQ} = 8 。請問： \\overline{QR} 的長度與 \\angle S 的度數相加的總和為多少？",
+            "preserveImage": false
+          },
+          "1178": {
+            "question": "伽利略把鏡中刻度與手稿版面尺寸不同，三點光幾乎擠在一起。剛測到的數字推到你面前：已知 \\triangle ABC \\sim \\triangle DEF ，其中 A、B、C 的對應頂點分別為 D、E、F 。若 \\overline{AB} = x+2 、 \\overline{BC} = 2x+1 、 \\overline{AC} = 8 ，且已知對應邊 \\overline{DE} = 15 、 \\overline{EF} = 21 。請問 \\overline{DF} 的長度為 _____ 。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "第四顆星幾何圖上的數字對上了。第四顆星終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_2",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "第四顆亮點剛出現，要立刻宣布嗎？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查圓軌道紙盤。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選比例刻度尺。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，你選先看哪一個；我們讓觀測回答。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "暫記為未知亮點",
+          "next": "choice_2_measure"
+        },
+        {
+          "id": "observe",
+          "label": "先回查舊觀測圖",
+          "next": "choice_2_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_2_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "伽利略壓住興奮，靠後續統計確認它反覆出現。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "choice_2_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "玩家在木星強光旁找到先前漏記痕跡，仍決定等待更多夜證實。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "q05",
+      "type": "quiz",
+      "anchor": 5,
+      "scene": "第四顆亮點首次從木星強光旁露出，伽利略不敢立刻下結論。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "第四顆亮點首次從木星強光旁露出，伽利略不敢立刻下結論。。玩家須整理多夜亮點數量與位置次數，判斷第四點是否反覆出現，而非一次性的觀測雜訊。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把第四顆星紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_2": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_2": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "統計與機率",
+        "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+        "knowledgePoint": "盒狀圖繪製與判讀",
+        "questionIds": [
+          356,
+          353,
+          351
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-galileo-scene-05",
+        "setting": "帕多瓦住處屋頂觀測台與《星際信使》手稿桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "第四顆星紀錄表",
+          "改良望遠鏡",
+          "木星觀測簿"
+        ],
+        "sceneNeed": "玩家須整理多夜亮點數量與位置次數，判斷第四點是否反覆出現，而非一次性的觀測雜訊。",
+        "rewrites": {
+          "351": {
+            "question": "要讓第四顆亮點首次從木星強光旁露出，伽利略不敢立刻下結論。繼續，你得先解開第四顆星紀錄表旁這一筆：如圖所示為觀測組現場測量讀數的盒狀圖。請問該班數學讀數的「四分位距」為多少分？",
+            "options": {
+              "A": "70",
+              "B": "50",
+              "C": "30",
+              "D": "15"
+            },
+            "preserveImage": true,
+            "imageAlt": "第四顆星紀錄表的資料圖"
+          },
+          "353": {
+            "question": "伽利略把第四顆亮點首次從木星強光旁露出，伽利略不敢立刻下結論。剛測到的數字推到你面前：觀測組與乙班各有 40 筆紀錄，且各班內每位觀測值的數學讀數皆不相同。已知甲班讀數的第三四分位數為 80 分，乙班讀數的中位數為 80 分。請問下列敘述何者必然正確？",
+            "options": {
+              "A": "甲班讀數超過 80 分的筆數大於乙班讀數超過 80 分的筆數",
+              "B": "乙班讀數超過 80 分的筆數大於甲班讀數超過 80 分的筆數",
+              "C": "兩班讀數超過 80 分的筆數一樣多",
+              "D": "乙班讀數的全距一定比甲班大"
+            },
+            "preserveImage": false
+          },
+          "356": {
+            "question": "要讓第四顆亮點首次從木星強光旁露出，伽利略不敢立刻下結論。繼續，你得先解開第四顆星紀錄表旁這一筆：某國中九年一班共有 39 筆紀錄，現場每位觀測值的 1 分鐘跳繩次數皆不相同。若全班跳繩次數的盒狀圖顯示，第一四分位數為 45 次，中位數為 55 次，第三四分位數為 65 次。請問該班跳繩次數介於 45 次與 65 次之間（不包含 45 次與 65 次）的觀測值共有幾人？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "第四顆星紀錄表上的數字對上了。第四顆星終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q06",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q06",
+      "type": "quiz",
+      "anchor": 6,
+      "scene": "伽利略嘗試描述亮點從一側移向另一側的局部軌跡。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "伽利略嘗試描述亮點從一側移向另一側的局部軌跡。。玩家要由二次函數圖形判讀轉折與對稱，找出最接近木星圓盤的時刻，避免在錯誤夜晚宣稱它已消失。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把第四顆星坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "二次函數",
+        "chapterIncludes": "二次函數 二次函數的最大值或最小值",
+        "knowledgePoint": "極值求法",
+        "questionIds": [
+          1372,
+          1373,
+          1369
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-galileo-scene-06",
+        "setting": "帕多瓦住處屋頂觀測台與《星際信使》手稿桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "第四顆星坐標圖",
+          "改良望遠鏡",
+          "木星觀測簿"
+        ],
+        "sceneNeed": "玩家要由二次函數圖形判讀轉折與對稱，找出最接近木星圓盤的時刻，避免在錯誤夜晚宣稱它已消失。",
+        "rewrites": {
+          "1369": {
+            "question": "現場只剩第四顆星坐標圖上的這份計算還沒核對：給定二次函數 y = -3(x + 2)^2 + 7 ，下列關於此函數極值的敘述，何者正確？",
+            "options": {
+              "A": "當 x = 2 時，有最大值 7",
+              "B": "當 x = -2 時，有最大值 7",
+              "C": "當 x = 2 時，有最小值 7",
+              "D": "當 x = -2 時，有最小值 7"
+            },
+            "preserveImage": false
+          },
+          "1372": {
+            "question": "第四顆星坐標圖的紀錄停在這一行；下一步正等著它：請利用配方法求出二次函數 y = 3x^2 - 12x + 17 的最小值。",
+            "preserveImage": false
+          },
+          "1373": {
+            "question": "伽利略把伽利略嘗試描述亮點從一側移向另一側的局部軌跡。剛測到的數字推到你面前：已知一個二次函數的圖形開口向下，且圖形通過 (-1, 8) 與 (5, 8) 兩點。當 x = _____ 時，此函數會有最大值。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "第四顆星坐標圖上的數字對上了。第四顆星終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q07",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q07",
+      "type": "quiz",
+      "anchor": 7,
+      "scene": "NumNum 把木星畫成圓心，四顆亮點的投影落在同一直線附近。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "NumNum 把木星畫成圓心，四顆亮點的投影落在同一直線附近。。玩家要利用直徑、弦與圓周位置解釋側視圓軌道為何看似直線往返，否則圓模型會被自己畫的資料推翻。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿消失在圓盤後幾何圖的圓弧、弦與切線追出隱藏關係。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "圓的性質",
+        "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+        "knowledgePoint": "直線與圓的切線與割線",
+        "questionIds": [
+          1229,
+          1231,
+          1227
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-galileo-scene-07",
+        "setting": "帕多瓦住處屋頂觀測台與《星際信使》手稿桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "消失在圓盤後幾何圖",
+          "改良望遠鏡",
+          "木星觀測簿"
+        ],
+        "sceneNeed": "玩家要利用直徑、弦與圓周位置解釋側視圓軌道為何看似直線往返，否則圓模型會被自己畫的資料推翻。",
+        "rewrites": {
+          "1227": {
+            "question": "消失在圓盤後幾何圖的紀錄停在這一行；下一步正等著它：已知圓 O 的半徑為 7。若有四條筆直的直線 L1、L2、L3、L4，它們與圓心 O 的距離分別為 5、7、9、0，且這四條直線與圓 O 的交點個數分別為 a、b、c、d，則下列關於 a、b、c、d 的大小關係何者正確？",
+            "options": {
+              "A": "d > a > b > c",
+              "B": "a = d > b > c",
+              "C": "a = b > c > d",
+              "D": "d > b > a = c"
+            },
+            "preserveImage": false
+          },
+          "1229": {
+            "question": "現場只剩消失在圓盤後幾何圖上的這份計算還沒核對：在平面上有一圓 O，半徑為 8 小格。點 P 位於圓外，且點 P 到圓心 O 的距離為 17 小格。若自點 P 向圓 O 作一條切線，切點為 Q，求切線段 PQ 的長度為多少小格？",
+            "preserveImage": false
+          },
+          "1231": {
+            "question": "要讓NumNum 把木星畫成圓心，四顆亮點的投影落在同一直線附近。繼續，你得先解開消失在圓盤後幾何圖旁這一筆：已知圓 O 的半徑為 13 小格。在圓內有兩條平行的弦 AB 與 CD，其長度分別為 24 小格與 10 小格。若這兩條弦位於圓心 O 的異側，則這兩條平行弦之間的距離為多少小格？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "消失在圓盤後幾何圖上的數字對上了。消失在圓盤後終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_3",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_3",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "疑似第五顆星沒有移動，如何驗證？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查手稿印版。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選改良望遠鏡。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，你選先看哪一個；我們讓觀測回答。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "轉動鏡筒",
+          "next": "choice_3_measure"
+        },
+        {
+          "id": "observe",
+          "label": "清潔鏡片再觀測",
+          "next": "choice_3_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_3_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "黑點跟著鏡片轉動，立刻暴露為污漬。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "choice_3_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "黑點消失，玩家保住四顆真實亮點的資料集。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "q08",
+      "type": "quiz",
+      "anchor": 8,
+      "scene": "鏡片上的黑點跟著視野出現，Numi 高喊發現第五顆星。",
+      "objective": "利用圓與比例關係建立繞行模型",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "鏡片上的黑點跟著視野出現，Numi 高喊發現第五顆星。。玩家須比較轉動鏡筒後黑點仍在同位置的條件機率，判斷它屬於天空還是鏡片污漬。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把消失在圓盤後紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_3": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_3": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "統計與機率",
+        "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+        "knowledgePoint": "盒狀圖繪製與判讀",
+        "questionIds": [
+          358,
+          368,
+          366
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-galileo-scene-08",
+        "setting": "帕多瓦住處屋頂觀測台與《星際信使》手稿桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "消失在圓盤後紀錄表",
+          "改良望遠鏡",
+          "木星觀測簿"
+        ],
+        "sceneNeed": "玩家須比較轉動鏡筒後黑點仍在同位置的條件機率，判斷它屬於天空還是鏡片污漬。",
+        "rewrites": {
+          "358": {
+            "question": "伽利略把鏡片上的黑點跟著視野出現，Numi 高喊發現第五顆星。剛測到的數字推到你面前：阿偉紀錄了自己連續 20 天的每日讀書時間（單位：分鐘），並繪製成盒狀圖。圖中顯示最小值為 30，第一四分位數為 45，中位數為 60，第三四分位數為 90，最大值為 120。請計算這 20 天讀書時間的「全距」與「四分位距」相差多少分鐘？",
+            "preserveImage": true,
+            "imageAlt": "消失在圓盤後紀錄表的資料圖"
+          },
+          "366": {
+            "question": "要讓鏡片上的黑點跟著視野出現，Numi 高喊發現第五顆星。繼續，你得先解開消失在圓盤後紀錄表旁這一筆：你現場共有 39 名觀測值。某次現場舉辦英文單字測驗，讀數的盒狀圖如下。已知現場沒有人同分。若阿張的讀數為 75 分，則現場讀數比阿張低的觀測值共有 _____ 人。",
+            "preserveImage": true,
+            "imageAlt": "消失在圓盤後紀錄表的資料圖"
+          },
+          "368": {
+            "question": "伽利略把鏡片上的黑點跟著視野出現，Numi 高喊發現第五顆星。剛測到的數字推到你面前：下圖為觀測組 28 筆紀錄現場測量進球數的盒狀圖。請問該班進球數的四分位距為多少球？",
+            "preserveImage": true,
+            "imageAlt": "消失在圓盤後紀錄表的資料圖"
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "消失在圓盤後紀錄表上的數字對上了。消失在圓盤後終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q09",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q09",
+      "type": "quiz",
+      "anchor": 9,
+      "scene": "一顆已追蹤數夜的亮點突然貼近木星後消失。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "一顆已追蹤數夜的亮點突然貼近木星後消失。。玩家要以圓的交會和遮蔽區域推算它可能位於木星前方或後方，決定是否繼續守到重新出現。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿消失在圓盤後幾何圖的圓弧、弦與切線追出隱藏關係。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "圓的性質",
+        "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+        "knowledgePoint": "弦心距性質",
+        "questionIds": [
+          1238,
+          1236,
+          1237
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-galileo-scene-09",
+        "setting": "帕多瓦住處屋頂觀測台與《星際信使》手稿桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "消失在圓盤後幾何圖",
+          "改良望遠鏡",
+          "木星觀測簿"
+        ],
+        "sceneNeed": "玩家要以圓的交會和遮蔽區域推算它可能位於木星前方或後方，決定是否繼續守到重新出現。",
+        "rewrites": {
+          "1236": {
+            "question": "要讓一顆已追蹤數夜的亮點突然貼近木星後消失。繼續，你得先解開消失在圓盤後幾何圖旁這一筆：在圓 O 中，已知有兩弦 \\overline{AB} 與 \\overline{CD} ，且 \\overline{AB} = 8 、 \\overline{CD} = 6 。若 \\overline{AB} 的弦心距為 m ， \\overline{CD} 的弦心距為 n ，則下列敘述何者正確？",
+            "options": {
+              "A": "m > n",
+              "B": "m",
+              "C": "m = n",
+              "D": "條件不足，無法判斷"
+            },
+            "preserveImage": false
+          },
+          "1237": {
+            "question": "消失在圓盤後幾何圖的紀錄停在這一行；下一步正等著它：你在現場玩套圈圈，你發現地上畫了一個作為標記的大圓。圓內有兩條平行的直線軌道 \\overline{AB} 和 \\overline{CD} ，測得兩軌道長度分別為 16 小格與 12 小格，且圓心到 \\overline{AB} 軌道的垂直距離（弦心距）為 6 小格，求這個大圓的半徑為 _____ 小格。",
+            "preserveImage": false
+          },
+          "1238": {
+            "question": "伽利略把一顆已追蹤數夜的亮點突然貼近木星後消失。剛測到的數字推到你面前：圓 O 的半徑為 13 。若圓內有一弦 \\overline{AB} ，其弦心距為 5 ；另有一弦 \\overline{CD} ，其長度為 24 。求 \\overline{AB} 的長度與 \\overline{CD} 的弦心距之總和為多少？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "消失在圓盤後幾何圖上的數字對上了。消失在圓盤後終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_1",
+      "type": "eureka",
+      "eurekaId": "g9h1-galileo-insight-1",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "亮點的暫時消失可能是繞行至木星前後而被遮蔽，不代表它離開天空。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "transition_4"
+    },
+    {
+      "id": "transition_4",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "消失在圓盤後告一段落，改良望遠鏡卻送來新的壞消息。原先穩定的讀數突然偏了一格；這不是能略過的小差。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是背景恆星的質疑；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q10"
+    },
+    {
+      "id": "q10",
+      "type": "quiz",
+      "anchor": 10,
+      "scene": "連續觀測點形成來回曲線，截稿日期卻只剩數日。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "連續觀測點形成來回曲線，截稿日期卻只剩數日。。玩家要讀取二次函數頂點、對稱軸與開口方向，預測下一次最遠離木星的位置供終測核對。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把背景恆星的質疑坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "二次函數",
+        "chapterIncludes": "二次函數 二次函數及其圖形",
+        "knowledgePoint": "二次函數意義",
+        "questionIds": [
+          1331,
+          1328,
+          1329
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-galileo-scene-10",
+        "setting": "帕多瓦住處屋頂觀測台與《星際信使》手稿桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "背景恆星的質疑坐標圖",
+          "改良望遠鏡",
+          "木星觀測簿"
+        ],
+        "sceneNeed": "玩家要讀取二次函數頂點、對稱軸與開口方向，預測下一次最遠離木星的位置供終測核對。",
+        "rewrites": {
+          "1328": {
+            "question": "伽利略把連續觀測點形成來回曲線，截稿日期卻只剩數日。剛測到的數字推到你面前：下列哪一個關係式是 x 的二次函數？",
+            "options": {
+              "A": "y = 3x + 5",
+              "B": "y = 2x^2 - x + 1",
+              "C": "y = \\frac{1}{x^2} + 2",
+              "D": "y = x^3 - 2x^2"
+            },
+            "preserveImage": false
+          },
+          "1329": {
+            "question": "現場只剩背景恆星的質疑坐標圖上的這份計算還沒核對：若 y = (k - 2)x^3 + (k + 1)x^2 - 3x + 5 是 x 的二次函數，則 k 的值為何？",
+            "options": {
+              "A": "k = 2",
+              "B": "k = -1",
+              "C": "k\neq 2",
+              "D": "k\neq -1"
+            },
+            "preserveImage": false
+          },
+          "1331": {
+            "question": "要讓連續觀測點形成來回曲線，截稿日期卻只剩數日。繼續，你得先解開背景恆星的質疑坐標圖旁這一筆：若方程式 y = (a + 3)x^2 + 5x - 7 為 x 的二次函數，則 a 的限制條件為 a\neq _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "背景恆星的質疑坐標圖上的數字對上了。背景恆星的質疑終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_4",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_4",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "質疑者堅稱只是背景恆星，怎麼回應？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查木星觀測簿。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選圓軌道紙盤。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，你選先看哪一個；我們讓觀測回答。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "展示連續位置圖",
+          "next": "choice_4_measure"
+        },
+        {
+          "id": "observe",
+          "label": "計算隨機重合機率",
+          "next": "choice_4_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_4_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "圖形呈現亮點伴隨木星移動，迫使質疑者解釋規律重合。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "choice_4_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "數據顯示多夜重合極不尋常，再由位置圖補上直觀證據。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "q11",
+      "type": "quiz",
+      "anchor": 11,
+      "scene": "《星際信使》版面塞不下原尺寸觀測圖，印刷匠準備自行縮小。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "《星際信使》版面塞不下原尺寸觀測圖，印刷匠準備自行縮小。。玩家必須給出相似圖形的正確縮放比，確保四顆亮點與木星的相對距離不被排版改壞。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用比例把改良望遠鏡的縮放與實際尺寸接起來。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_4": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_4": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "比例線段與相似形",
+        "chapterIncludes": "比例線段與相似形 連比",
+        "knowledgePoint": "連比例式的記錄與推理運算",
+        "questionIds": [
+          1140,
+          1142,
+          1139
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-galileo-scene-11",
+        "setting": "帕多瓦住處屋頂觀測台與《星際信使》手稿桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "改良望遠鏡",
+          "木星觀測簿",
+          "圓軌道紙盤"
+        ],
+        "sceneNeed": "玩家必須給出相似圖形的正確縮放比，確保四顆亮點與木星的相對距離不被排版改壞。",
+        "rewrites": {
+          "1139": {
+            "question": "現場只剩改良望遠鏡上的這份計算還沒核對：你在現場調配特調果茶，使用的樣品、百香果汁、鳳梨汁的容量比是 5:2:3 。若這杯果茶中使用了 150 毫升的鳳梨汁，請問這杯果茶的總容量是 _____ 毫升。",
+            "preserveImage": false
+          },
+          "1140": {
+            "question": "《星際信使》版面塞不下原尺寸觀測圖，印刷匠準備自行縮小。。伽利略在改良望遠鏡上留下這組條件：若 x:y = 3:5 ， y:z = 4:3 ，且 2x + y - z = 58 ，求 y 的值。",
+            "preserveImage": false
+          },
+          "1142": {
+            "question": "改良望遠鏡的紀錄停在這一行；下一步正等著它：若 (x+y) : (y+z) : (z+x) = 4:5:7 ，且 x+y+z = 40 ，求 x 的值。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "改良望遠鏡上的數字對上了。背景恆星的質疑終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q12",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q12",
+      "type": "quiz",
+      "anchor": 12,
+      "scene": "質疑者主張四點只是碰巧排在木星附近的背景恆星。",
+      "objective": "在截稿期限前形成可由他人檢驗的證據",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "質疑者主張四點只是碰巧排在木星附近的背景恆星。。玩家要比較它們多夜隨木星共同移動的資料與隨機重合機率，形成能迫使對方回應的證據。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把背景恆星的質疑紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "統計與機率",
+        "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+        "knowledgePoint": "盒狀圖繪製與判讀",
+        "questionIds": [
+          365,
+          367,
+          370
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-galileo-scene-12",
+        "setting": "帕多瓦住處屋頂觀測台與《星際信使》手稿桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "背景恆星的質疑紀錄表",
+          "改良望遠鏡",
+          "木星觀測簿"
+        ],
+        "sceneNeed": "玩家要比較它們多夜隨木星共同移動的資料與隨機重合機率，形成能迫使對方回應的證據。",
+        "rewrites": {
+          "365": {
+            "question": "質疑者主張四點只是碰巧排在木星附近的背景恆星。。伽利略在背景恆星的質疑紀錄表上留下這組條件：你現場舉行兩次現場測量，下圖為兩次小考讀數的盒狀圖。請問關於這兩次小考讀數的敘述，下列何者正確？",
+            "options": {
+              "A": "第一次小考的中位數較大",
+              "B": "第二次小考的中位數較大",
+              "C": "第一次小考的全距較小",
+              "D": "第二次小考的四分位距較小"
+            },
+            "preserveImage": true,
+            "imageAlt": "背景恆星的質疑紀錄表的資料圖"
+          },
+          "367": {
+            "question": "背景恆星的質疑紀錄表的紀錄停在這一行；下一步正等著它：已知甲班有 32 人，乙班有 32 人。兩班某次自然考試讀數皆沒有人同分，其盒狀圖如下。已知甲班的第三四分位數為 80 分，乙班的中位數為 80 分。請問乙班讀數高於 80 分的筆數，比甲班讀數高於 80 分的筆數多幾人？",
+            "preserveImage": true,
+            "imageAlt": "背景恆星的質疑紀錄表的資料圖"
+          },
+          "370": {
+            "question": "質疑者主張四點只是碰巧排在木星附近的背景恆星。。伽利略在背景恆星的質疑紀錄表上留下這組條件：下圖為觀測組 40 筆紀錄測量值的盒狀圖。已知這 40 筆紀錄的測量值皆不相同，根據此圖，下列哪一個測量值區間的紀錄筆數最多？",
+            "options": {
+              "A": "40 \\sim 48 公斤",
+              "B": "48 \\sim 52 公斤",
+              "C": "52 \\sim 65 公斤",
+              "D": "以上三個區間的筆數一樣多"
+            },
+            "preserveImage": true,
+            "imageAlt": "背景恆星的質疑紀錄表的資料圖"
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "背景恆星的質疑紀錄表上的數字對上了。背景恆星的質疑終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_5",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "背景恆星的質疑告一段落，木星觀測簿卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是送往印刷所的軌跡；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q13"
+    },
+    {
+      "id": "q13",
+      "type": "quiz",
+      "anchor": 13,
+      "scene": "圓軌道草圖與望遠鏡中的直線排列看似衝突，學徒拒絕抄圖。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "圓軌道草圖與望遠鏡中的直線排列看似衝突，學徒拒絕抄圖。。玩家須運用圓、直徑與投影位置說明側視軌道及遮蔽，否則最後的模型無法進入手稿。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿送往印刷所的軌跡幾何圖的圓弧、弦與切線追出隱藏關係。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "圓的性質",
+        "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+        "knowledgePoint": "點與圓的位置",
+        "questionIds": [
+          1220,
+          1223,
+          1218
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-galileo-scene-13",
+        "setting": "帕多瓦住處屋頂觀測台與《星際信使》手稿桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "送往印刷所的軌跡幾何圖",
+          "改良望遠鏡",
+          "木星觀測簿"
+        ],
+        "sceneNeed": "玩家須運用圓、直徑與投影位置說明側視軌道及遮蔽，否則最後的模型無法進入手稿。",
+        "rewrites": {
+          "1218": {
+            "question": "伽利略把圓軌道草圖與望遠鏡中的直線排列看似衝突，學徒拒絕抄圖。剛測到的數字推到你面前：你在現場玩套圈圈遊戲。套圈圈的底座是一個圓形，半徑為 15 小格。你丟出一個套環，套環的落點 P 距離底座的圓心 12 小格。請問套環落點 P 相對於底座圓的位置為何？",
+            "options": {
+              "A": "在底座圓內部",
+              "B": "在底座圓上",
+              "C": "在底座圓外部",
+              "D": "無法判斷"
+            },
+            "preserveImage": false
+          },
+          "1220": {
+            "question": "圓軌道草圖與望遠鏡中的直線排列看似衝突，學徒拒絕抄圖。。伽利略在送往印刷所的軌跡幾何圖上留下這組條件：在直角三角形 ABC 中，已知 \\angle C = 90^ \\circ ，且 \\overline{AC} = 6 小格，\\overline{BC} = 8 小格。若以 C 為圓心，r 小格為半徑畫一個圓 C。已知點 A 落在圓 C 內部，且點 B 落在圓 C 外部。若 r 為整數，請計算 r 的值為多少？",
+            "preserveImage": false
+          },
+          "1223": {
+            "question": "伽利略把圓軌道草圖與望遠鏡中的直線排列看似衝突，學徒拒絕抄圖。剛測到的數字推到你面前：\\triangle ABC 中，已知 \\angle B = 50^ \\circ ， \\angle C = 70^ \\circ 。今分別以 B、C 兩點為圓心，\\overline{BC} 的長度為半徑畫兩個圓，分別稱為圓 B 與圓 C。關於點 A 的位置，下列敘述何者正確？",
+            "options": {
+              "A": "在圓 B 外部，在圓 C 內部",
+              "B": "在圓 B 外部，在圓 C 外部",
+              "C": "在圓 B 內部，在圓 C 內部",
+              "D": "在圓 B 內部，在圓 C 外部"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "送往印刷所的軌跡幾何圖上的數字對上了。送往印刷所的軌跡終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_5",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "異常點可能是抄錯，也可能是真變化，要刪除嗎？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查比例刻度尺。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選手稿印版。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，你選先看哪一個；我們讓觀測回答。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "保留並回查原稿",
+          "next": "choice_5_measure"
+        },
+        {
+          "id": "observe",
+          "label": "隔夜優先補測",
+          "next": "choice_5_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_5_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "玩家找到方向符號抄反，修正過程也被留在手稿註記中。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "choice_5_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "補測符合原曲線，眾人循差異查出舊稿的負號錯誤。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "q14",
+      "type": "quiz",
+      "anchor": 14,
+      "scene": "截稿前重算軌跡時，一個觀測點遠離原本的二次曲線。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "截稿前重算軌跡時，一個觀測點遠離原本的二次曲線。。玩家要代入二次函數檢查該點，回查是否抄錯正負方向；若不處理，質疑者會抓住整頁矛盾。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把送往印刷所的軌跡坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_5": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_5": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "二次函數",
+        "chapterIncludes": "二次函數 二次函數及其圖形",
+        "knowledgePoint": "頂點",
+        "questionIds": [
+          1356,
+          1352,
+          1354
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-galileo-scene-14",
+        "setting": "帕多瓦住處屋頂觀測台與《星際信使》手稿桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "送往印刷所的軌跡坐標圖",
+          "改良望遠鏡",
+          "木星觀測簿"
+        ],
+        "sceneNeed": "玩家要代入二次函數檢查該點，回查是否抄錯正負方向；若不處理，質疑者會抓住整頁矛盾。",
+        "rewrites": {
+          "1352": {
+            "question": "送往印刷所的軌跡坐標圖的紀錄停在這一行；下一步正等著它：已知下列四個二次函數，判斷哪一個圖形有最大值，且其頂點位於第二象限？",
+            "options": {
+              "A": "y = -2(x - 3)^2 + 5",
+              "B": "y = -3(x + 2)^2 + 4",
+              "C": "y = 4(x + 1)^2 - 2",
+              "D": "y = -(x + 4)^2 - 3"
+            },
+            "preserveImage": false
+          },
+          "1354": {
+            "question": "現場只剩送往印刷所的軌跡坐標圖上的這份計算還沒核對：若某二次函數的圖形通過點 (0, -5) 與 (4, -5) ，且此函數有最大值 3 ，則關於此二次函數圖形的敘述，下列何者正確？",
+            "options": {
+              "A": "此函數的圖形開口向上",
+              "B": "頂點坐標為 (3, 2)",
+              "C": "此函數的對稱軸為直線 x = 2",
+              "D": "此函數圖形與 y 軸的交點為 (0, 3)"
+            },
+            "preserveImage": false
+          },
+          "1356": {
+            "question": "要讓截稿前重算軌跡時，一個觀測點遠離原本的二次曲線。繼續，你得先解開送往印刷所的軌跡坐標圖旁這一筆：已知二次函數 y = x^2 - 6x + c 的圖形與 x 軸相交於兩點，且這兩點的距離為 8 。請問 c 的值為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "送往印刷所的軌跡坐標圖上的數字對上了。送往印刷所的軌跡終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_2",
+      "type": "eureka",
+      "eurekaId": "g9h1-galileo-insight-2",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "這些天體繞木星運行，表示天空不只存在單一運動中心。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "q15"
+    },
+    {
+      "id": "q15",
+      "type": "quiz",
+      "anchor": 15,
+      "scene": "黎明前，四顆亮點再次分列木星兩側，印刷所信使已在樓下等待。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "黎明前，四顆亮點再次分列木星兩側，印刷所信使已在樓下等待。。玩家要用相似比例把當夜位置加入長期圖，確認它們與木星共同移動後仍維持各自週期，才能交出手稿。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用比例把送往印刷所的軌跡幾何圖的縮放與實際尺寸接起來。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "比例線段與相似形",
+        "chapterIncludes": "比例線段與相似形 比例線段",
+        "knowledgePoint": "三角形兩邊中點連線性質",
+        "questionIds": [
+          1156,
+          1160,
+          1157
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-galileo-scene-15",
+        "setting": "帕多瓦住處屋頂觀測台與《星際信使》手稿桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "送往印刷所的軌跡幾何圖",
+          "改良望遠鏡",
+          "木星觀測簿"
+        ],
+        "sceneNeed": "玩家要用相似比例把當夜位置加入長期圖，確認它們與木星共同移動後仍維持各自週期，才能交出手稿。",
+        "rewrites": {
+          "1156": {
+            "question": "要讓黎明前，四顆亮點再次分列木星兩側，印刷所信使已在樓下等待。繼續，你得先解開送往印刷所的軌跡幾何圖旁這一筆：在 \\triangle ABC 中， D, E 分別為 AB, AC 的中點。若已知 AD=3 ， AE=4 ， DE=5 ，則 \\triangle ABC 的周長為何？",
+            "options": {
+              "A": "12",
+              "B": "24",
+              "C": "17",
+              "D": "48"
+            },
+            "preserveImage": false
+          },
+          "1157": {
+            "question": "送往印刷所的軌跡幾何圖的紀錄停在這一行；下一步正等著它：你在現場擺測點，你用三根竹竿搭成一個三角形的架子，這三根竹竿的長度分別是 120 小格、 160 小格和 200 小格。為了增加架子的穩定性，你想在兩根較短竹竿的「中點」之間，綁上一條水平的繩子。請問這條繩子的長度需要準備 _____ 小格。",
+            "preserveImage": false
+          },
+          "1160": {
+            "question": "黎明前，四顆亮點再次分列木星兩側，印刷所信使已在樓下等待。。伽利略在送往印刷所的軌跡幾何圖上留下這組條件：在 \\triangle ABC 中， D 為 AB 的中點。過 D 點作 BC 的平行線，交 AC 於 E 點。接著，在 BC 上取一點 F ，使得 BF : FC = 1 : 2 。若已知 DE = 2x + 3 ， FC = 5x - 3 ，求 x 的值。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "送往印刷所的軌跡幾何圖上的數字對上了。送往印刷所的軌跡終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "ending_history",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "ending_history",
+      "type": "narrative",
+      "objective": "記住伽利略留下的答案",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "送往印刷所的軌跡完成了。現場安靜下來，只有改良望遠鏡還留著剛才的痕跡。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，今天不是你替我算完。是我們一起把它想通。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那道光退了……可是我還記得它的味道。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "因為答案不是光。答案會留在能被重做的步驟裡。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "——時間向前推去。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "伽利略於 1610 年出版《星際信使》，公布木星四大衛星觀測並以美第奇家族命名；觀測重創一切天體只繞地球的簡單宇宙圖像。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "眼前的帕多瓦住處屋頂觀測台與《星際信使》手稿桌慢慢褪色。藍紫色的安靜重新包圍你們。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}，下次再有人快想通時，我們還會聽見。"
+        }
+      ],
+      "next": "ending_stats"
+    },
+    {
+      "id": "ending_stats",
+      "type": "ending",
+      "next": null,
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "【劇本結束】九上 × 伽利略"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "這趟路的每一次重算，數字都記得。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "下次見，{{playerName}}！"
+        }
+      ]
+    }
+  ]
+}

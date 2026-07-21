@@ -1,0 +1,2381 @@
+{
+  "id": "g9h2-galileo",
+  "grade": 9,
+  "half": 2,
+  "gradeLabel": "九下",
+  "mathematician": "伽利略",
+  "mathematicianSpeaker": "Mathematician",
+  "episode": "被封住的書頁",
+  "setting": "阿切特里「寶石莊」的書房、庭院與受監視的訪客通道",
+  "era": "1633–1638 年，伽利略軟禁並完成《兩門新科學》期間",
+  "acts": [
+    "泥地上的落點",
+    "會折斷的尺度",
+    "失去視線",
+    "監視下的副本",
+    "越過邊界的證明"
+  ],
+  "insights": [
+    "物體放大時，承重截面與重量並不以相同速度增加，因此大型結構不能只是小模型的等比例複製。",
+    "完整證明能讓不可見、不可觸及，甚至被阻止傳遞的規律仍由他人重新檢驗。"
+  ],
+  "props": [
+    "拋射軌跡圖",
+    "木梁縮尺模型",
+    "圓規圖版",
+    "口述校稿簿",
+    "海外手稿箱"
+  ],
+  "endingSummary": "《關於兩門新科學的論述與數學證明》於 1638 年在荷蘭萊頓出版；伽利略晚年完全失明，仍在阿切特里軟禁中工作，並於 1642 年去世。",
+  "legendNote": "「然而地球仍在轉動」缺乏可靠證據，不可作為受審後的確定史實台詞。",
+  "objectives": [
+    "在軟禁與視力惡化下整理早年運動實驗",
+    "以幾何證明拋射與材料強度問題",
+    "建立可由口述完成的圖稿校對流程",
+    "使完整手稿安全抵達海外出版者"
+  ],
+  "beats": [
+    {
+      "scene": "庭院泥地保留一串拋射痕跡，第一段方向貼近圓形炮口的邊緣。",
+      "problem": "玩家要利用半徑垂直切線的性質確認初始方向；方向畫錯，後續整條軌跡證明都會從錯誤前提開始。",
+      "major": "圓的性質"
+    },
+    {
+      "scene": "多次落點散在濕泥中，監視者只允許再做一次測試。",
+      "problem": "玩家須整理落點分布並估計下一發落入安全區的機率，決定是否值得冒險補測。",
+      "major": "統計與機率"
+    },
+    {
+      "scene": "書房裡畫著三種候選軌跡，抄寫員無法判斷哪條符合已知條件。",
+      "problem": "玩家要逐步證明並排除違反初始切線或落點條件的圖形；缺少任一步，抄寫員就拒絕定稿。",
+      "major": "推理證明與三角形的心"
+    },
+    {
+      "scene": "大小兩根形狀相同的木梁被架上砝碼，大梁反而先發出裂聲。",
+      "problem": "玩家要比較柱體截面、表面與體積隨尺度的變化，趕在模型斷裂前指出重量增長超過承重能力。",
+      "major": "立體幾何圖形"
+    },
+    {
+      "scene": "炮口圓與軌跡草線在圖上相接，接點被墨水暈開。",
+      "problem": "玩家須用圓心、半徑與切線關係重建唯一接點，否則手稿中的發射方向無法被讀者重畫。",
+      "major": "圓的性質"
+    },
+    {
+      "scene": "一陣側風讓某次射程遠離其他資料，伽利略懷疑舊實驗不可靠。",
+      "problem": "玩家要以統計分布辨認離群值並比較有風、無風條件，避免把外界干擾寫成運動定律。",
+      "major": "統計與機率"
+    },
+    {
+      "scene": "伽利略視力迅速衰退，玩家必須替他重畫缺了一角的三角形證明。",
+      "problem": "玩家要利用全等、相似或三角形中心關係補齊推理，任何只憑圖看似正確的步驟都無法通過口述校稿。",
+      "major": "推理證明與三角形的心"
+    },
+    {
+      "scene": "大型梁柱模型的長、寬、高都按相同比例放大，重量卻壓垮支架。",
+      "problem": "玩家要計算兩個立體的體積比與截面比，找出不能等比例放大的因果，否則下一個模型仍會折斷。",
+      "major": "立體幾何圖形"
+    },
+    {
+      "scene": "庭院牆面上的測量點沿一段圓弧分布，其中一點可能量錯。",
+      "problem": "玩家須比較弦、圓周角與圓心角關係找出不可能的位置，保住其餘舊資料的可信度。",
+      "major": "圓的性質"
+    },
+    {
+      "scene": "訪客送來不同尺寸的骨骼模型，質問為何巨型動物不能只是等比例放大。",
+      "problem": "玩家要比較立體體積與支撐截面的增長，具體說明尺寸增加如何讓重量更快壓上骨骼。",
+      "major": "立體幾何圖形"
+    },
+    {
+      "scene": "抄寫員發現手稿一段結論跳得太快，海外信使卻將在兩日內離開。",
+      "problem": "玩家必須找出推理缺口，補上三角形關係與前提；若只抄結論，整章可能在出版前被退回。",
+      "major": "推理證明與三角形的心"
+    },
+    {
+      "scene": "監視者突然檢查往來紙張，三條送稿路線只剩一次選擇。",
+      "problem": "玩家要依各路線過往成功率與條件機率評估完整副本送達的方案，失手就可能失去多年成果。",
+      "major": "統計與機率"
+    },
+    {
+      "scene": "伽利略完全失明後，只能口述圓心、弦與切線讓玩家重建圖版。",
+      "problem": "玩家須依圓的性質畫出符合全部口述條件的唯一圖形；任何含糊位置都會在印刷時變成錯圖。",
+      "major": "圓的性質"
+    },
+    {
+      "scene": "全書圖版裝箱前，展開圖上的一個面與體積標記互相矛盾。",
+      "problem": "玩家要由立體展開圖核對面數、邊長與體積，趕在封箱前找出被抄反的尺寸。",
+      "major": "立體幾何圖形"
+    },
+    {
+      "scene": "雨夜裡，信使已站在門外，最後一條核心證明仍缺少銜接。",
+      "problem": "玩家必須依前提、三角形關係與結論完成無缺步的推理鏈；只有能讓看不見圖稿的伽利略逐句核對，副本才能離開。",
+      "major": "推理證明與三角形的心"
+    }
+  ],
+  "choices": [
+    {
+      "prompt": "只剩一次庭院測試機會，要不要補射？",
+      "firstLabel": "依統計選安全設定補射",
+      "firstResult": "最後落點進入安全區，也補強了受風資料的判別。",
+      "secondLabel": "保留機會並整理舊資料",
+      "secondResult": "玩家不冒險發射，改以完整分布證明離群點來自側風。"
+    },
+    {
+      "prompt": "大型梁柱模型裂開，下一步先改哪裡？",
+      "firstLabel": "增加承重截面",
+      "firstResult": "新模型承受更久，截面與體積增長不同步的關係浮現。",
+      "secondLabel": "縮短跨距再比較",
+      "secondResult": "跨距影響先被控制，玩家隨後看清等比例放大本身仍造成重量危機。"
+    },
+    {
+      "prompt": "伽利略已難以看清圖稿，要如何繼續？",
+      "firstLabel": "由玩家描圖並逐點口述",
+      "firstResult": "伽利略憑條件檢查每一點，建立不依賴視線的校稿方式。",
+      "secondLabel": "由學生朗讀證明步驟",
+      "secondResult": "口述中的缺步立刻暴露，玩家再依幾何條件重建圖稿。"
+    },
+    {
+      "prompt": "完整手稿如何越過監視送往海外？",
+      "firstLabel": "製作兩份分路送出",
+      "firstResult": "工作量倍增，但至少一份抵達的機率顯著提高。",
+      "secondLabel": "交給最可信的單一路線",
+      "secondResult": "副本較不易因拆分而缺頁，玩家則準備摘要作為失敗備援。"
+    },
+    {
+      "prompt": "信使已到，最後證明還差一步。",
+      "firstLabel": "玩家補證，伽利略口述核對",
+      "firstResult": "兩人完成最後推理，暖黃光沿書頁亮起，完整副本及時封箱。",
+      "secondLabel": "先交已完成副本，再送補頁",
+      "secondResult": "信使先帶走主體；玩家與伽利略補完無缺步證明，趕在下一站前送上補頁。"
+    }
+  ],
+  "version": 1,
+  "title": "九下 × 伽利略",
+  "language": "zh-TW",
+  "companions": [
+    "NumNum",
+    "Numi"
+  ],
+  "journalTitle": "被封住的書頁",
+  "notes": [
+    "玩家本人與 NumNum、Numi 一起冒險。",
+    "題目只從所選年段 questionBank 抽取。",
+    "題面依當下研究場景整段改寫；數字、算式、答案不變。",
+    "答錯保留同一題並給提示，直到答對。",
+    "Eureka 僅在玩家與數學家共同領悟關鍵知識時觸發。",
+    "「然而地球仍在轉動」缺乏可靠證據，不可作為受審後的確定史實台詞。"
+  ],
+  "detourTemplates": [
+    [
+      {
+        "speaker": "NumNum",
+        "text": "條件還在。慢一點，沿同一條路再走一次。"
+      }
+    ],
+    [
+      {
+        "speaker": "Numi",
+        "text": "別換題。眼前這件事還等著我們把它算開。"
+      }
+    ],
+    [
+      {
+        "speaker": "Mathematician",
+        "text": "我也沒放棄。重看剛才那一步。"
+      }
+    ]
+  ],
+  "correctFeedback": [
+    [
+      {
+        "speaker": "narrator",
+        "text": "數字對上，眼前的阻礙鬆開了一格。"
+      }
+    ]
+  ],
+  "nodes": [
+    {
+      "id": "opening",
+      "type": "narrative",
+      "objective": "在軟禁與視力惡化下整理早年運動實驗",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "數學世界的藍紫色安靜得像一張沒有折痕的紙。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那邊有一點光——很細，還在抖。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "不是 Eureka。只是有人卡在一個還沒想通的問題前。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "你們追著微光穿過薄紙般的界面。1633–1638 年，伽利略軟禁並完成《兩門新科學》期間，阿切特里「寶石莊」的書房、庭院與受監視的訪客通道。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "伽利略站在拋射軌跡圖旁，手裡那一步已經停了很久。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "你們是誰？算了——如果看得懂數字，就過來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}也在！我們不是來旁觀的。"
+        }
+      ],
+      "next": "q01"
+    },
+    {
+      "id": "q01",
+      "type": "quiz",
+      "anchor": 1,
+      "scene": "庭院泥地保留一串拋射痕跡，第一段方向貼近圓形炮口的邊緣。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "庭院泥地保留一串拋射痕跡，第一段方向貼近圓形炮口的邊緣。。玩家要利用半徑垂直切線的性質確認初始方向；方向畫錯，後續整條軌跡證明都會從錯誤前提開始。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿泥地上的落點幾何圖的圓弧、弦與切線追出隱藏關係。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "圓的性質",
+        "chapterIncludes": "圓的性質 弧與圓周角",
+        "knowledgePoint": "圓心角",
+        "questionIds": [
+          346,
+          345,
+          343
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-galileo-scene-01",
+        "setting": "阿切特里「寶石莊」的書房、庭院與受監視的訪客通道",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "泥地上的落點幾何圖",
+          "拋射軌跡圖",
+          "木梁縮尺模型"
+        ],
+        "sceneNeed": "玩家要利用半徑垂直切線的性質確認初始方向；方向畫錯，後續整條軌跡證明都會從錯誤前提開始。",
+        "rewrites": {
+          "343": {
+            "question": "伽利略把庭院泥地保留一串拋射痕跡，第一段方向貼近圓形炮口的邊緣。剛測到的數字推到你面前：在半徑為 12 小格的圓 O 中，圓心角 \\angle AOB 為 75^{\\circ} 。求扇形 AOB 所對應的 \\overparen{AB} 弧長為何？（答案請保留 \\pi ）",
+            "preserveImage": false
+          },
+          "345": {
+            "question": "庭院泥地保留一串拋射痕跡，第一段方向貼近圓形炮口的邊緣。。伽利略在泥地上的落點幾何圖上留下這組條件：已知點 O 為銳角 \\triangle ABC 的外心，若 \\angle BAC = 55^{\\circ} ，則 \\angle BOC 的度數為 _____ 度。",
+            "preserveImage": false
+          },
+          "346": {
+            "question": "要讓庭院泥地保留一串拋射痕跡，第一段方向貼近圓形炮口的邊緣。繼續，你得先解開泥地上的落點幾何圖旁這一筆：一個直立圓錐的側面展開圖是一個半徑為 15 小格、圓心角為 216^{\\circ} 的扇形。則此圓錐的底面圓半徑為多少小格？",
+            "options": {
+              "A": "6",
+              "B": "8",
+              "C": "9",
+              "D": "12"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "泥地上的落點幾何圖上的數字對上了。泥地上的落點終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_1",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "只剩一次庭院測試機會，要不要補射？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查拋射軌跡圖。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選木梁縮尺模型。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，你選先看哪一個；我們讓觀測回答。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "依統計選安全設定補射",
+          "next": "choice_1_measure"
+        },
+        {
+          "id": "observe",
+          "label": "保留機會並整理舊資料",
+          "next": "choice_1_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_1_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "最後落點進入安全區，也補強了受風資料的判別。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "choice_1_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "玩家不冒險發射，改以完整分布證明離群點來自側風。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "q02",
+      "type": "quiz",
+      "anchor": 2,
+      "scene": "多次落點散在濕泥中，監視者只允許再做一次測試。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "多次落點散在濕泥中，監視者只允許再做一次測試。。玩家須整理落點分布並估計下一發落入安全區的機率，決定是否值得冒險補測。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把泥地上的落點紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_1": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_1": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "統計與機率",
+        "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+        "knowledgePoint": "全距",
+        "questionIds": [
+          1403,
+          1401,
+          1402
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-galileo-scene-02",
+        "setting": "阿切特里「寶石莊」的書房、庭院與受監視的訪客通道",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "泥地上的落點紀錄表",
+          "拋射軌跡圖",
+          "木梁縮尺模型"
+        ],
+        "sceneNeed": "玩家須整理落點分布並估計下一發落入安全區的機率，決定是否值得冒險補測。",
+        "rewrites": {
+          "1401": {
+            "question": "要讓多次落點散在濕泥中，監視者只允許再做一次測試。繼續，你得先解開泥地上的落點紀錄表旁這一筆：已知觀測組數學讀數的盒狀圖數據如下：最小值為 12 分，第一四分位數為 15 分，中位數為 20 分，第三四分位數為 26 分，最大值為 35 分。請問該班數學讀數的全距為多少分？",
+            "options": {
+              "A": "23",
+              "B": "11",
+              "C": "15",
+              "D": "9"
+            },
+            "preserveImage": false
+          },
+          "1402": {
+            "question": "泥地上的落點紀錄表的紀錄停在這一行；下一步正等著它：你記錄了現場連續七次測得的最高讀數（單位：刻度），數據如下：28, 30, 31, 26, 29, 32, 27。請問這七次讀數的全距為 _____ 度？",
+            "preserveImage": false
+          },
+          "1403": {
+            "question": "伽利略把多次落點散在濕泥中，監視者只允許再做一次測試。剛測到的數字推到你面前：有五個正整數資料分別為 10, 15, x , 22, 25。若已知這組資料的全距為 20，請問 x 的最大可能值為多少？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "泥地上的落點紀錄表上的數字對上了。泥地上的落點終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q03",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q03",
+      "type": "quiz",
+      "anchor": 3,
+      "scene": "書房裡畫著三種候選軌跡，抄寫員無法判斷哪條符合已知條件。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "書房裡畫著三種候選軌跡，抄寫員無法判斷哪條符合已知條件。。玩家要逐步證明並排除違反初始切線或落點條件的圖形；缺少任一步，抄寫員就拒絕定稿。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把圓規圖版上的條件逐項核對。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "推理證明與三角形的心",
+        "chapterIncludes": "推理證明與三角形的心 推理與證明",
+        "knowledgePoint": "代數推理（如奇偶數證明）",
+        "questionIds": [
+          1294,
+          1296,
+          1298
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-galileo-scene-03",
+        "setting": "阿切特里「寶石莊」的書房、庭院與受監視的訪客通道",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "圓規圖版",
+          "拋射軌跡圖",
+          "木梁縮尺模型"
+        ],
+        "sceneNeed": "玩家要逐步證明並排除違反初始切線或落點條件的圖形；缺少任一步，抄寫員就拒絕定稿。",
+        "rewrites": {
+          "1294": {
+            "question": "現場只剩圓規圖版上的這份計算還沒核對：若 m 為奇數、 n 為偶數，則下列何者必為偶數？",
+            "options": {
+              "A": "m+n",
+              "B": "3m+n",
+              "C": "mn",
+              "D": "m^2-n^2"
+            },
+            "preserveImage": false
+          },
+          "1296": {
+            "question": "要讓書房裡畫著三種候選軌跡，抄寫員無法判斷哪條符合已知條件。繼續，你得先解開圓規圖版旁這一筆：已知任意兩個連續正整數的平方差，必定等於此兩數之和。若有兩個連續正整數的平方差為 101，求此兩數中較大者。",
+            "preserveImage": false
+          },
+          "1298": {
+            "question": "伽利略把書房裡畫著三種候選軌跡，抄寫員無法判斷哪條符合已知條件。剛測到的數字推到你面前：若 x 與 y 皆為奇數，且 x > y 。如果將 x^2 - y^2 進行因式分解與代數推理，可以發現它必定是某個最大正整數 k 的倍數，請問 k 的整數值為 _____？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "圓規圖版上的數字對上了。泥地上的落點終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_2",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "泥地上的落點告一段落，口述校稿簿卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是會折斷的尺度；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q04"
+    },
+    {
+      "id": "q04",
+      "type": "quiz",
+      "anchor": 4,
+      "scene": "大小兩根形狀相同的木梁被架上砝碼，大梁反而先發出裂聲。",
+      "objective": "以幾何證明拋射與材料強度問題",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "大小兩根形狀相同的木梁被架上砝碼，大梁反而先發出裂聲。。玩家要比較柱體截面、表面與體積隨尺度的變化，趕在模型斷裂前指出重量增長超過承重能力。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "展開會折斷的尺度立體模型的立體結構，核對表面與內部容量。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "立體幾何圖形",
+        "chapterIncludes": "立體幾何圖形 柱體、錐體、空間中的線與平面",
+        "knowledgePoint": "空間中的垂直、平行與歪斜關係",
+        "questionIds": [
+          1436,
+          1440,
+          1438
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-galileo-scene-04",
+        "setting": "阿切特里「寶石莊」的書房、庭院與受監視的訪客通道",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "會折斷的尺度立體模型",
+          "拋射軌跡圖",
+          "木梁縮尺模型"
+        ],
+        "sceneNeed": "玩家要比較柱體截面、表面與體積隨尺度的變化，趕在模型斷裂前指出重量增長超過承重能力。",
+        "rewrites": {
+          "1436": {
+            "question": "要讓大小兩根形狀相同的木梁被架上砝碼，大梁反而先發出裂聲。繼續，你得先解開會折斷的尺度立體模型旁這一筆：在一個長方體中共有 12 條邊。若選定其中一條邊，則與這條邊「相交且垂直」的邊共有幾條？",
+            "options": {
+              "A": "2 條",
+              "B": "3 條",
+              "C": "4 條",
+              "D": "8 條"
+            },
+            "preserveImage": false
+          },
+          "1438": {
+            "question": "伽利略把大小兩根形狀相同的木梁被架上砝碼，大梁反而先發出裂聲。剛測到的數字推到你面前：一個正四面體（每個面都是正三角形的三角錐）共有 6 條邊。若選定其中一條邊為基準，則與此基準邊互為「歪斜」關係的邊共有 _____ 條。",
+            "preserveImage": false
+          },
+          "1440": {
+            "question": "大小兩根形狀相同的木梁被架上砝碼，大梁反而先發出裂聲。。伽利略在會折斷的尺度立體模型上留下這組條件：一個正四角錐的底面為邊長 10 小格的正方形，四個側面都是腰長為 13 小格的等腰三角形。求此正四角錐的表面積為多少平方小格？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "會折斷的尺度立體模型上的數字對上了。會折斷的尺度終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_2",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "大型梁柱模型裂開，下一步先改哪裡？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查圓規圖版。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選口述校稿簿。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，你選先看哪一個；我們讓觀測回答。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "增加承重截面",
+          "next": "choice_2_measure"
+        },
+        {
+          "id": "observe",
+          "label": "縮短跨距再比較",
+          "next": "choice_2_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_2_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "新模型承受更久，截面與體積增長不同步的關係浮現。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "choice_2_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "跨距影響先被控制，玩家隨後看清等比例放大本身仍造成重量危機。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "q05",
+      "type": "quiz",
+      "anchor": 5,
+      "scene": "炮口圓與軌跡草線在圖上相接，接點被墨水暈開。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "炮口圓與軌跡草線在圖上相接，接點被墨水暈開。。玩家須用圓心、半徑與切線關係重建唯一接點，否則手稿中的發射方向無法被讀者重畫。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿會折斷的尺度幾何圖的圓弧、弦與切線追出隱藏關係。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_2": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_2": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "圓的性質",
+        "chapterIncludes": "圓的性質 弧與圓周角",
+        "knowledgePoint": "圓內接四邊形性質",
+        "questionIds": [
+          1273,
+          1271,
+          1274
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-galileo-scene-05",
+        "setting": "阿切特里「寶石莊」的書房、庭院與受監視的訪客通道",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "會折斷的尺度幾何圖",
+          "拋射軌跡圖",
+          "木梁縮尺模型"
+        ],
+        "sceneNeed": "玩家須用圓心、半徑與切線關係重建唯一接點，否則手稿中的發射方向無法被讀者重畫。",
+        "rewrites": {
+          "1271": {
+            "question": "要讓炮口圓與軌跡草線在圖上相接，接點被墨水暈開。繼續，你得先解開會折斷的尺度幾何圖旁這一筆：已知四邊形 ABCD 是圓 O 的內接四邊形，點 O 在四邊形內部。若劣弧 \\overparen{BD} 所對應的圓心角 \\angle BOD = 130^\\circ ，且點 A 在優弧上，點 C 在劣弧上，則 \\angle C 的度數為何？",
+            "options": {
+              "A": "65^\\circ",
+              "B": "115^\\circ",
+              "C": "130^\\circ",
+              "D": "250^\\circ"
+            },
+            "preserveImage": false
+          },
+          "1273": {
+            "question": "伽利略把炮口圓與軌跡草線在圖上相接，接點被墨水暈開。剛測到的數字推到你面前：已知四邊形 ABCD 為圓內接四邊形。若 \\angle A 的度數為 (3x - 10)^\\circ ， \\angle C 的度數為 (2x + 40)^\\circ ，求出 \\angle A 的度數。",
+            "preserveImage": false
+          },
+          "1274": {
+            "question": "現場只剩會折斷的尺度幾何圖上的這份計算還沒核對：小李規劃一個圓形花園，花園邊界上設有四個觀景台 A, B, C, D 依序相連構成四邊形。已知步道 \\overline{BC} 與步道 \\overline{CD} 的長度相等。若測得從 A 觀景台看 B, C 的夾角 \\angle BAC = 40^\\circ ，從 B 觀景台看 A, D 的夾角 \\angle ABD = 35^\\circ 。請計算出 \\angle ABC 的度數。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "會折斷的尺度幾何圖上的數字對上了。會折斷的尺度終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q06",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q06",
+      "type": "quiz",
+      "anchor": 6,
+      "scene": "一陣側風讓某次射程遠離其他資料，伽利略懷疑舊實驗不可靠。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "一陣側風讓某次射程遠離其他資料，伽利略懷疑舊實驗不可靠。。玩家要以統計分布辨認離群值並比較有風、無風條件，避免把外界干擾寫成運動定律。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把會折斷的尺度紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "統計與機率",
+        "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+        "knowledgePoint": "四分位數",
+        "questionIds": [
+          1389,
+          1387,
+          1388
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-galileo-scene-06",
+        "setting": "阿切特里「寶石莊」的書房、庭院與受監視的訪客通道",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "會折斷的尺度紀錄表",
+          "拋射軌跡圖",
+          "木梁縮尺模型"
+        ],
+        "sceneNeed": "玩家要以統計分布辨認離群值並比較有風、無風條件，避免把外界干擾寫成運動定律。",
+        "rewrites": {
+          "1387": {
+            "question": "會折斷的尺度紀錄表的紀錄停在這一行；下一步正等著它：有一組數值資料共 11 筆，由小到大排列分別為：3、5、8、12、15、18、20、24、25、29、32。關於這組資料的敘述，下列何者錯誤？",
+            "options": {
+              "A": "第一四分位數為 8",
+              "B": "中位數為 18",
+              "C": "第三四分位數為 24",
+              "D": "四分位距為 17"
+            },
+            "preserveImage": false
+          },
+          "1388": {
+            "question": "伽利略把一陣側風讓某次射程遠離其你資料，伽利略懷疑舊實驗不可靠。剛測到的數字推到你面前：你為了寫報告，去現場調查了 8 家不同測點的樣品讀數（單位：刻度），結果分別為：85、70、90、80、100、75、95、85。請問這 8 家樣品讀數的第三四分位數為 _____ 元。",
+            "preserveImage": false
+          },
+          "1389": {
+            "question": "現場只剩會折斷的尺度紀錄表上的這份計算還沒核對：有一組由小到大排列的 10 筆整數資料：8、12、15、a、b、24、27、29、33、36。已知這組資料的眾數為 15，中位數為 22，求 a + b 的值為何？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "會折斷的尺度紀錄表上的數字對上了。會折斷的尺度終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q07",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q07",
+      "type": "quiz",
+      "anchor": 7,
+      "scene": "伽利略視力迅速衰退，玩家必須替他重畫缺了一角的三角形證明。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "伽利略視力迅速衰退，玩家必須替他重畫缺了一角的三角形證明。。玩家要利用全等、相似或三角形中心關係補齊推理，任何只憑圖看似正確的步驟都無法通過口述校稿。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿失去視線幾何圖的圓弧、弦與切線追出隱藏關係。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "推理證明與三角形的心",
+        "chapterIncludes": "推理證明與三角形的心 三角形的外心、內心與重心",
+        "knowledgePoint": "外心（中垂線交點與外接圓）",
+        "questionIds": [
+          1303,
+          1304,
+          2313
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-galileo-scene-07",
+        "setting": "阿切特里「寶石莊」的書房、庭院與受監視的訪客通道",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "失去視線幾何圖",
+          "拋射軌跡圖",
+          "木梁縮尺模型"
+        ],
+        "sceneNeed": "玩家要利用全等、相似或三角形中心關係補齊推理，任何只憑圖看似正確的步驟都無法通過口述校稿。",
+        "rewrites": {
+          "1303": {
+            "question": "伽利略把伽利略視力迅速衰退，玩家必須替你重畫缺了一角的三角形證明。剛測到的數字推到你面前：關於三角形的外接圓圓心（即外心）位置，下列敘述何者正確？",
+            "options": {
+              "A": "銳角三角形的外心必在三角形的內部",
+              "B": "直角三角形的外心必在三角形的外部",
+              "C": "鈍角三角形的外心必在三角形的邊上",
+              "D": "等腰三角形的外心必在三角形的內部"
+            },
+            "preserveImage": false
+          },
+          "1304": {
+            "question": "現場只剩失去視線幾何圖上的這份計算還沒核對：已知 O 點為 \\triangle ABC 的外心。若 \\triangle ABC 為鈍角三角形且 \\angle A = 110^\\circ ，則 \\angle BOC 為多少度？（請填入數字即可）_____",
+            "preserveImage": false
+          },
+          "2313": {
+            "question": "伽利略把伽利略視力迅速衰退，玩家必須替你重畫缺了一角的三角形證明。剛測到的數字推到你面前：已知 O 點為 \\triangle ABC 的外心。若 \\angle BOC = 130^\\circ ，且 \\angle A 為鈍角，則 \\angle A 的度數為何？",
+            "options": {
+              "A": "65^\\circ",
+              "B": "115^\\circ",
+              "C": "130^\\circ",
+              "D": "230^\\circ"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "失去視線幾何圖上的數字對上了。失去視線終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_3",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_3",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "伽利略已難以看清圖稿，要如何繼續？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查海外手稿箱。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選拋射軌跡圖。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，你選先看哪一個；我們讓觀測回答。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "由玩家描圖並逐點口述",
+          "next": "choice_3_measure"
+        },
+        {
+          "id": "observe",
+          "label": "由學生朗讀證明步驟",
+          "next": "choice_3_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_3_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "伽利略憑條件檢查每一點，建立不依賴視線的校稿方式。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "choice_3_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "口述中的缺步立刻暴露，玩家再依幾何條件重建圖稿。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "q08",
+      "type": "quiz",
+      "anchor": 8,
+      "scene": "大型梁柱模型的長、寬、高都按相同比例放大，重量卻壓垮支架。",
+      "objective": "建立可由口述完成的圖稿校對流程",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "大型梁柱模型的長、寬、高都按相同比例放大，重量卻壓垮支架。。玩家要計算兩個立體的體積比與截面比，找出不能等比例放大的因果，否則下一個模型仍會折斷。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "展開失去視線立體模型的立體結構，核對表面與內部容量。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_3": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_3": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "立體幾何圖形",
+        "chapterIncludes": "立體幾何圖形 柱體、錐體、空間中的線與平面",
+        "knowledgePoint": "角柱/圓柱/角錐/圓錐的展開圖與表面積",
+        "questionIds": [
+          1445,
+          1447,
+          2321
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-galileo-scene-08",
+        "setting": "阿切特里「寶石莊」的書房、庭院與受監視的訪客通道",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "失去視線立體模型",
+          "拋射軌跡圖",
+          "木梁縮尺模型"
+        ],
+        "sceneNeed": "玩家要計算兩個立體的體積比與截面比，找出不能等比例放大的因果，否則下一個模型仍會折斷。",
+        "rewrites": {
+          "1445": {
+            "question": "大型梁柱模型的長、寬、高都按相同比例放大，重量卻壓垮支架。。伽利略在失去視線立體模型上留下這組條件：已知一個直長方體（底面為正方形）的展開圖總面積為 150 平方小格。若該長方體底面正方形的邊長為 5 小格，則此長方體的高為 _____ 小格。",
+            "preserveImage": false
+          },
+          "1447": {
+            "question": "失去視線立體模型的紀錄停在這一行；下一步正等著它：有一個正四角錐，底面是邊長為 10 小格的正方形，側面的四個等腰三角形中，底邊上的高（即斜高）皆為 13 小格。則此正四角錐的表面積為 _____ 平方小格。",
+            "preserveImage": false
+          },
+          "2321": {
+            "question": "要讓大型梁柱模型的長、寬、高都按相同比例放大，重量卻壓垮支架。繼續，你得先解開失去視線立體模型旁這一筆：已知一直圓錐的側面展開圖為一個半徑 15 小格、圓心角為 216^\\circ 的扇形，則此直圓錐的表面積為多少平方小格？",
+            "options": {
+              "A": "135\\pi",
+              "B": "153\\pi",
+              "C": "216\\pi",
+              "D": "306\\pi"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "失去視線立體模型上的數字對上了。失去視線終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q09",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q09",
+      "type": "quiz",
+      "anchor": 9,
+      "scene": "庭院牆面上的測量點沿一段圓弧分布，其中一點可能量錯。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "庭院牆面上的測量點沿一段圓弧分布，其中一點可能量錯。。玩家須比較弦、圓周角與圓心角關係找出不可能的位置，保住其餘舊資料的可信度。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿失去視線幾何圖的圓弧、弦與切線追出隱藏關係。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "圓的性質",
+        "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+        "knowledgePoint": "切線段長性質",
+        "questionIds": [
+          1245,
+          1247,
+          1249
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-galileo-scene-09",
+        "setting": "阿切特里「寶石莊」的書房、庭院與受監視的訪客通道",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "失去視線幾何圖",
+          "拋射軌跡圖",
+          "木梁縮尺模型"
+        ],
+        "sceneNeed": "玩家須比較弦、圓周角與圓心角關係找出不可能的位置，保住其餘舊資料的可信度。",
+        "rewrites": {
+          "1245": {
+            "question": "庭院牆面上的測量點沿一段圓弧分布，其中一點可能量錯。。伽利略在失去視線幾何圖上留下這組條件：自圓外一點 P 向圓 O 作兩條切線，切點分別為 A 、 B 。若 \\overline{PA} = 3x - 5 ， \\overline{PB} = x + 7 ，則 x 的值為多少？",
+            "options": {
+              "A": "1",
+              "B": "3",
+              "C": "6",
+              "D": "12"
+            },
+            "preserveImage": false
+          },
+          "1247": {
+            "question": "失去視線幾何圖的紀錄停在這一行；下一步正等著它：\\triangle ABC 的三邊分別與圓 O 相切於 D 、 E 、 F 三點，且點 D 在 \\overline{AB} 上，點 E 在 \\overline{BC} 上，點 F 在 \\overline{AC} 上。已知 \\overline{AD} = 5 ， \\overline{BE} = 6 ， \\overline{CF} = 7 ，則 \\triangle ABC 的周長為多少？",
+            "preserveImage": false
+          },
+          "1249": {
+            "question": "現場只剩失去視線幾何圖上的這份計算還沒核對：在直角 \\triangle ABC 中， \\angle C = 90^\\circ 。已知 \\overline{AC} = 6 ， \\overline{BC} = 8 。若圓 O 為 \\triangle ABC 的內切圓，且圓 O 與 \\overline{AC} 、 \\overline{BC} 、 \\overline{AB} 分別相切於 D 、 E 、 F 三點，則圓 O 的半徑為 _____ 。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "失去視線幾何圖上的數字對上了。失去視線終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_1",
+      "type": "eureka",
+      "eurekaId": "g9h2-galileo-insight-1",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "物體放大時，承重截面與重量並不以相同速度增加，因此大型結構不能只是小模型的等比例複製。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "transition_4"
+    },
+    {
+      "id": "transition_4",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "失去視線告一段落，拋射軌跡圖卻送來新的壞消息。原先穩定的讀數突然偏了一格；這不是能略過的小差。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是監視下的副本；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q10"
+    },
+    {
+      "id": "q10",
+      "type": "quiz",
+      "anchor": 10,
+      "scene": "訪客送來不同尺寸的骨骼模型，質問為何巨型動物不能只是等比例放大。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "訪客送來不同尺寸的骨骼模型，質問為何巨型動物不能只是等比例放大。。玩家要比較立體體積與支撐截面的增長，具體說明尺寸增加如何讓重量更快壓上骨骼。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "展開監視下的副本立體模型的立體結構，核對表面與內部容量。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "立體幾何圖形",
+        "chapterIncludes": "立體幾何圖形 柱體、錐體、空間中的線與平面",
+        "knowledgePoint": "體積計算",
+        "questionIds": [
+          2323,
+          1452,
+          2325
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-galileo-scene-10",
+        "setting": "阿切特里「寶石莊」的書房、庭院與受監視的訪客通道",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "監視下的副本立體模型",
+          "拋射軌跡圖",
+          "木梁縮尺模型"
+        ],
+        "sceneNeed": "玩家要比較立體體積與支撐截面的增長，具體說明尺寸增加如何讓重量更快壓上骨骼。",
+        "rewrites": {
+          "1452": {
+            "question": "監視下的副本立體模型的紀錄停在這一行；下一步正等著它：有一個複合立體圖形，下方是一個底面為邊長 6 小格之正方形的長方體，高度為 4 小格；上方是一個底面與長方體上底面完全重合的四角錐。若此複合立體圖形的總體積為 216 立方小格，請問上方四角錐的高為多少小格？",
+            "preserveImage": false
+          },
+          "2323": {
+            "question": "伽利略把訪客送來不同尺寸的骨骼模型，質問為何巨型動物不能只是等比例放大。剛測到的數字推到你面前：一個直三角柱，其底面為直角三角形，已知該直角三角形的兩股長分別為 5 小格與 12 小格，且此三角柱的高為 10 小格。請問此直三角柱的體積為多少立方小格？",
+            "options": {
+              "A": "300",
+              "B": "600",
+              "C": "780",
+              "D": "325"
+            },
+            "preserveImage": false
+          },
+          "2325": {
+            "question": "訪客送來不同尺寸的骨骼模型，質問為何巨型動物不能只是等比例放大。。伽利略在監視下的副本立體模型上留下這組條件：你有一塊長 20 小格、寬 16 小格、高 12 小格的長方體實心木塊。你想要將這個木塊切削成一個體積最大的直圓柱。請問這個直圓柱的最大體積是多少立方小格？（答案請保留 \\pi ）",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "監視下的副本立體模型上的數字對上了。監視下的副本終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_4",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_4",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "完整手稿如何越過監視送往海外？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查木梁縮尺模型。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選圓規圖版。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，你選先看哪一個；我們讓觀測回答。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "製作兩份分路送出",
+          "next": "choice_4_measure"
+        },
+        {
+          "id": "observe",
+          "label": "交給最可信的單一路線",
+          "next": "choice_4_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_4_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "工作量倍增，但至少一份抵達的機率顯著提高。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "choice_4_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "副本較不易因拆分而缺頁，玩家則準備摘要作為失敗備援。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "q11",
+      "type": "quiz",
+      "anchor": 11,
+      "scene": "抄寫員發現手稿一段結論跳得太快，海外信使卻將在兩日內離開。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "抄寫員發現手稿一段結論跳得太快，海外信使卻將在兩日內離開。。玩家必須找出推理缺口，補上三角形關係與前提；若只抄結論，整章可能在出版前被退回。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "核對監視下的副本幾何圖上的幾何關係，每一道線都要有理由。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_4": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_4": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "推理證明與三角形的心",
+        "chapterIncludes": "推理證明與三角形的心 三角形的外心、內心與重心",
+        "knowledgePoint": "重心（中線交點與面積分割）的幾何意義與物理意義",
+        "questionIds": [
+          1319,
+          1322,
+          1321
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-galileo-scene-11",
+        "setting": "阿切特里「寶石莊」的書房、庭院與受監視的訪客通道",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "監視下的副本幾何圖",
+          "拋射軌跡圖",
+          "木梁縮尺模型"
+        ],
+        "sceneNeed": "玩家必須找出推理缺口，補上三角形關係與前提；若只抄結論，整章可能在出版前被退回。",
+        "rewrites": {
+          "1319": {
+            "question": "現場只剩監視下的副本幾何圖上的這份計算還沒核對：在 \\triangle ABC 中，若 G 為重心，中線 \\overline{AD} 長度為 12 ，則線段 \\overline{AG} 的長度為何？",
+            "options": {
+              "A": "4",
+              "B": "6",
+              "C": "8",
+              "D": "9"
+            },
+            "preserveImage": false
+          },
+          "1321": {
+            "question": "要讓抄寫員發現手稿一段結論跳得太快，海外信使卻將在兩日內離開。繼續，你得先解開監視下的副本幾何圖旁這一筆：在 \\triangle ABC 中， G 為 \\triangle ABC 的重心，中線 \\overline{AD} 交 \\overline{BC} 於 D 點。若再以 \\triangle GBC 為基礎， J 為 \\triangle GBC 的重心，且其重心所在的中線同樣交 \\overline{BC} 於 D 點。已知 \\overline{AG} = 24 ，求線段 \\overline{GJ} 的長度為何？",
+            "preserveImage": false
+          },
+          "1322": {
+            "question": "監視下的副本幾何圖的紀錄停在這一行；下一步正等著它：在 \\triangle PQR 中， G 為重心。若將 G 與三個頂點 P 、 Q 、 R 以及三邊中點相連，可將 \\triangle PQR 分割成 6 個小三角形。若其中一個小三角形的面積為 5 ，則 \\triangle PQR 的總面積為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "監視下的副本幾何圖上的數字對上了。監視下的副本終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q12",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q12",
+      "type": "quiz",
+      "anchor": 12,
+      "scene": "監視者突然檢查往來紙張，三條送稿路線只剩一次選擇。",
+      "objective": "使完整手稿安全抵達海外出版者",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "監視者突然檢查往來紙張，三條送稿路線只剩一次選擇。。玩家要依各路線過往成功率與條件機率評估完整副本送達的方案，失手就可能失去多年成果。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把監視下的副本紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "統計與機率",
+        "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+        "knowledgePoint": "四分位距",
+        "questionIds": [
+          1396,
+          1394,
+          1393
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-galileo-scene-12",
+        "setting": "阿切特里「寶石莊」的書房、庭院與受監視的訪客通道",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "監視下的副本紀錄表",
+          "拋射軌跡圖",
+          "木梁縮尺模型"
+        ],
+        "sceneNeed": "玩家要依各路線過往成功率與條件機率評估完整副本送達的方案，失手就可能失去多年成果。",
+        "rewrites": {
+          "1393": {
+            "question": "伽利略把監視者突然檢查往來紙張，三條送稿路線只剩一次選擇。剛測到的數字推到你面前：你非常喜歡去現場撈金魚，你連續 15 天記錄了自己每天撈到的金魚數量，資料由小到大排列如下：\n1, 3, 3, 4, 5, 6, 6, 8, 9, 10, 11, 12, 13, 14, 15。\n請計算這 15 天撈金魚數量的四分位距為多少隻？",
+            "preserveImage": false
+          },
+          "1394": {
+            "question": "現場只剩監視下的副本紀錄表上的這份計算還沒核對：有一組 10 筆的數值資料，已由小到大排列如下：\n3, 5, a , 8, 11, 14, 16, b , 20, 22\n已知這組資料的四分位距為 10，且這 10 筆資料的算術平均數為 12.5。請計算未知數 a 的值為 _____。",
+            "preserveImage": false
+          },
+          "1396": {
+            "question": "要讓監視者突然檢查往來紙張，三條送稿路線只剩一次選擇。繼續，你得先解開監視下的副本紀錄表旁這一筆：有五個正整數，由小到大排列分別為 a, b, c, d, e 。\n已知這五個數的中位數為 8，唯一的眾數為 12，全距為 9，算術平均數為 8.4。\n請計算這五筆資料的四分位距為何？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "監視下的副本紀錄表上的數字對上了。監視下的副本終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_5",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "監視下的副本告一段落，木梁縮尺模型卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是越過邊界的證明；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q13"
+    },
+    {
+      "id": "q13",
+      "type": "quiz",
+      "anchor": 13,
+      "scene": "伽利略完全失明後，只能口述圓心、弦與切線讓玩家重建圖版。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "伽利略完全失明後，只能口述圓心、弦與切線讓玩家重建圖版。。玩家須依圓的性質畫出符合全部口述條件的唯一圖形；任何含糊位置都會在印刷時變成錯圖。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿越過邊界的證明幾何圖的圓弧、弦與切線追出隱藏關係。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "圓的性質",
+        "chapterIncludes": "圓的性質 弧與圓周角",
+        "knowledgePoint": "圓周角與所對應弧的度數關係",
+        "questionIds": [
+          1264,
+          1262,
+          1267
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-galileo-scene-13",
+        "setting": "阿切特里「寶石莊」的書房、庭院與受監視的訪客通道",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "越過邊界的證明幾何圖",
+          "拋射軌跡圖",
+          "木梁縮尺模型"
+        ],
+        "sceneNeed": "玩家須依圓的性質畫出符合全部口述條件的唯一圖形；任何含糊位置都會在印刷時變成錯圖。",
+        "rewrites": {
+          "1262": {
+            "question": "越過邊界的證明幾何圖的紀錄停在這一行；下一步正等著它：已知圓 O 上有 A 、 B 、 C 三點，且 \\angle ABC 為圓周角。若 \\angle ABC = 55^\\circ ，則 \\angle ABC 所對的 \\frown{AC} 度數為何？",
+            "options": {
+              "A": "55^\\circ",
+              "B": "110^\\circ",
+              "C": "125^\\circ",
+              "D": "27.5^\\circ"
+            },
+            "preserveImage": false
+          },
+          "1264": {
+            "question": "現場只剩越過邊界的證明幾何圖上的這份計算還沒核對：四邊形 ABCD 為圓 O 的內接四邊形，點在圓上依逆時針順序排列。已知 \\frown{AB} = 80^\\circ 、 \\frown{BC} = 100^\\circ 、 \\frown{CD} = 120^\\circ ，請計算 \\angle A 的度數為何？",
+            "preserveImage": false
+          },
+          "1267": {
+            "question": "越過邊界的證明幾何圖的紀錄停在這一行；下一步正等著它：四邊形 ABCD 內接於圓 O ，且 A 、 B 、 C 、 D 四點在圓上依逆時針順序排列。已知線段 AD 為圓 O 的直徑。若 \\angle BDC = 35^\\circ 且 \\angle CAD = 20^\\circ ，則 \\angle ABC 的度數為何？",
+            "options": {
+              "A": "110^\\circ",
+              "B": "125^\\circ",
+              "C": "140^\\circ",
+              "D": "90^\\circ"
+            },
+            "preserveImage": true,
+            "imageAlt": "越過邊界的證明幾何圖的資料圖"
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "越過邊界的證明幾何圖上的數字對上了。越過邊界的證明終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_5",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "信使已到，最後證明還差一步。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查口述校稿簿。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選海外手稿箱。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，你選先看哪一個；我們讓觀測回答。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "玩家補證，伽利略口述核對",
+          "next": "choice_5_measure"
+        },
+        {
+          "id": "observe",
+          "label": "先交已完成副本，再送補頁",
+          "next": "choice_5_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_5_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "兩人完成最後推理，暖黃光沿書頁亮起，完整副本及時封箱。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "choice_5_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "信使先帶走主體；玩家與伽利略補完無缺步證明，趕在下一站前送上補頁。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "q14",
+      "type": "quiz",
+      "anchor": 14,
+      "scene": "全書圖版裝箱前，展開圖上的一個面與體積標記互相矛盾。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "全書圖版裝箱前，展開圖上的一個面與體積標記互相矛盾。。玩家要由立體展開圖核對面數、邊長與體積，趕在封箱前找出被抄反的尺寸。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "展開越過邊界的證明立體模型的立體結構，核對表面與內部容量。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_5": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_5": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "立體幾何圖形",
+        "chapterIncludes": "立體幾何圖形 柱體、錐體、空間中的線與平面",
+        "knowledgePoint": "角柱/圓柱/角錐/圓錐的展開圖與表面積",
+        "questionIds": [
+          1448,
+          1444,
+          1446
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-galileo-scene-14",
+        "setting": "阿切特里「寶石莊」的書房、庭院與受監視的訪客通道",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "越過邊界的證明立體模型",
+          "拋射軌跡圖",
+          "木梁縮尺模型"
+        ],
+        "sceneNeed": "玩家要由立體展開圖核對面數、邊長與體積，趕在封箱前找出被抄反的尺寸。",
+        "rewrites": {
+          "1444": {
+            "question": "現場只剩越過邊界的證明立體模型上的這份計算還沒核對：你利用紙板製作一個直圓錐，其側面展開圖是一個半徑為 10 小格、圓心角為 216^\\circ 的扇形。請問此直圓錐的底面圓半徑為多少小格？",
+            "options": {
+              "A": "6",
+              "B": "5",
+              "C": "12",
+              "D": "8"
+            },
+            "preserveImage": false
+          },
+          "1446": {
+            "question": "要讓全書圖版裝箱前，展開圖上的一個面與體積標記互相矛盾。繼續，你得先解開越過邊界的證明立體模型旁這一筆：你想在現場測點販售自製的手工餅乾，你設計了一款「直角三角柱」造型的紙盒。已知紙盒底面為一個直角三角形，其兩股長分別為 3 小格與 4 小格，且紙盒的高度（柱高）為 10 小格。若不計紙張重疊部分，製作一個這樣的紙盒需要多少平方小格的紙板？",
+            "preserveImage": false
+          },
+          "1448": {
+            "question": "伽利略把全書圖版裝箱前，展開圖上的一個面與體積標記互相矛盾。剛測到的數字推到你面前：有一個底面半徑為 r 、高為 h 的直圓柱，以及一個底面半徑同為 r 、高同為 h 的直圓錐（其中 r > 0 且 h > 0 ）。關於兩者總表面積的比較，下列敘述何者必然正確？",
+            "options": {
+              "A": "圓柱的表面積必然大於圓錐的表面積。",
+              "B": "圓錐的表面積必然大於圓柱的表面積。",
+              "C": "若 h 夠大，圓錐的表面積可能大於圓柱的表面積。",
+              "D": "若 r 夠大，兩者的表面積可能相等。"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "越過邊界的證明立體模型上的數字對上了。越過邊界的證明終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_2",
+      "type": "eureka",
+      "eurekaId": "g9h2-galileo-insight-2",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "完整證明能讓不可見、不可觸及，甚至被阻止傳遞的規律仍由他人重新檢驗。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "q15"
+    },
+    {
+      "id": "q15",
+      "type": "quiz",
+      "anchor": 15,
+      "scene": "雨夜裡，信使已站在門外，最後一條核心證明仍缺少銜接。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "雨夜裡，信使已站在門外，最後一條核心證明仍缺少銜接。。玩家必須依前提、三角形關係與結論完成無缺步的推理鏈；只有能讓看不見圖稿的伽利略逐句核對，副本才能離開。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把海外手稿箱上的條件逐項核對。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "推理證明與三角形的心",
+        "chapterIncludes": "推理證明與三角形的心 推理與證明",
+        "knowledgePoint": "輔助線的運用",
+        "questionIds": [
+          1289,
+          1288,
+          1286
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-galileo-scene-15",
+        "setting": "阿切特里「寶石莊」的書房、庭院與受監視的訪客通道",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "海外手稿箱",
+          "拋射軌跡圖",
+          "木梁縮尺模型"
+        ],
+        "sceneNeed": "玩家必須依前提、三角形關係與結論完成無缺步的推理鏈；只有能讓看不見圖稿的伽利略逐句核對，副本才能離開。",
+        "rewrites": {
+          "1286": {
+            "question": "要讓雨夜裡，信使已站在門外，最後一條核心證明仍缺少銜接。繼續，你得先解開海外手稿箱旁這一筆：等腰三角形 ABC 中，\\overline{AB} = \\overline{AC} = 13，\\overline{BC} = 10。若要利用畢氏定理求出 \\triangle ABC 的面積，下列哪一條輔助線最能直接幫助我們找到高？",
+            "options": {
+              "A": "作 \\overline{BC} 邊上的高 \\overline{AD}",
+              "B": "作 \\overline{AB} 邊上的中線",
+              "C": "作 \\angle B 的角平分線",
+              "D": "過 A 點作平行 \\overline{BC} 的直線"
+            },
+            "preserveImage": false
+          },
+          "1288": {
+            "question": "伽利略把雨夜裡，信使已站在門外，最後一條核心證明仍缺少銜接。剛測到的數字推到你面前：在 \\triangle ABC 中，已知 \\overline{AB} = \\overline{AC} = 20，\\overline{BC} = 24。若 O 為 \\triangle ABC 的外心，請作底邊上的高 \\overline{AD} 並連接 \\overline{OB} 作為輔助線，計算 \\triangle ABC 的外接圓半徑為多少？",
+            "preserveImage": false
+          },
+          "1289": {
+            "question": "現場只剩海外手稿箱上的這份計算還沒核對：在 \\triangle ABC 中， \\angle BAC = 90^ \\circ ，且 \\overline{AB} = 6、\\overline{AC} = 8。若取 \\overline{BC} 的中點 M，並連接 \\overline{AM} 作為輔助線，則 \\overline{AM} 的長度為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "海外手稿箱上的數字對上了。越過邊界的證明終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "ending_history",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "ending_history",
+      "type": "narrative",
+      "objective": "記住伽利略留下的答案",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "越過邊界的證明完成了。現場安靜下來，只有拋射軌跡圖還留著剛才的痕跡。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，今天不是你替我算完。是我們一起把它想通。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那道光退了……可是我還記得它的味道。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "因為答案不是光。答案會留在能被重做的步驟裡。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "——時間向前推去。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "《關於兩門新科學的論述與數學證明》於 1638 年在荷蘭萊頓出版；伽利略晚年完全失明，仍在阿切特里軟禁中工作，並於 1642 年去世。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "眼前的阿切特里「寶石莊」的書房、庭院與受監視的訪客通道慢慢褪色。藍紫色的安靜重新包圍你們。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}，下次再有人快想通時，我們還會聽見。"
+        }
+      ],
+      "next": "ending_stats"
+    },
+    {
+      "id": "ending_stats",
+      "type": "ending",
+      "next": null,
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "【劇本結束】九下 × 伽利略"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "這趟路的每一次重算，數字都記得。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "下次見，{{playerName}}！"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2392 @@
+{
+  "id": "g9h1-gauss",
+  "grade": 9,
+  "half": 1,
+  "gradeLabel": "九上",
+  "mathematician": "高斯",
+  "mathematicianSpeaker": "Mathematician",
+  "episode": "漢諾威三角網",
+  "setting": "漢諾威荒野、教堂塔樓、布羅肯山與哥廷根計算室",
+  "era": "1818 至 1832 年",
+  "acts": [
+    "量定第一條基線",
+    "跨過山谷布網",
+    "校正圓盤與高差",
+    "讓日光越過遠山",
+    "逼三角網閉合"
+  ],
+  "insights": [
+    "只要基線可靠、三角形彼此相扣，人不必走遍每一段距離也能測出整片國土。",
+    "測量不是尋找毫無誤差的一筆數據，而是讓多條路徑互相約束並揭露偏差。"
+  ],
+  "props": [
+    "經緯儀",
+    "基線測尺",
+    "日光反射儀",
+    "三角網地圖",
+    "角度誤差表"
+  ],
+  "endingSummary": "高斯自 1818 年起主持漢諾威大地測量，並發明以反射日光進行遠距定位的日光反射儀；測量工作推動了大地測量、誤差分析與曲面研究。高斯於 1855 年在哥廷根逝世。",
+  "legendNote": null,
+  "objectives": [
+    "以比例與相似形推算不可直接跨越的距離",
+    "利用圓幾何校正方向與角度刻度",
+    "從統計資料辨認偶然誤差與系統偏差",
+    "完成能閉合並可交付的漢諾威測量網"
+  ],
+  "beats": [
+    {
+      "scene": "泥濘荒野的第一條基線",
+      "problem": "基線只能分段量測，測尺又受坡度與溫度影響，玩家必須用比例換回水平真長。",
+      "major": "比例線段與相似形"
+    },
+    {
+      "scene": "三座教堂塔樓",
+      "problem": "高斯只掌握一條基線與兩組方向，要由相似三角形推算無法直接量到的塔距。",
+      "major": "比例線段與相似形"
+    },
+    {
+      "scene": "圓形經緯儀刻度盤",
+      "problem": "方向讀值跨過零度刻線，玩家要利用圓弧與圓心角算出真正轉角。",
+      "major": "圓的性質"
+    },
+    {
+      "scene": "山谷高度剖面",
+      "problem": "山谷輪廓近似二次函數，高斯要找出最低點，決定補給車能否通過。",
+      "major": "二次函數"
+    },
+    {
+      "scene": "第一批重複角度",
+      "problem": "同一測站的角度每次略有不同，玩家要比較中心與分散，不能只挑最順眼的一筆。",
+      "major": "統計與機率"
+    },
+    {
+      "scene": "被濃霧吞掉的塔尖",
+      "problem": "遠塔完全不可見，測量隊必須利用相似關係另設中繼站，否則整條三角鏈中斷。",
+      "major": "比例線段與相似形"
+    },
+    {
+      "scene": "偏心的經緯儀圓盤",
+      "problem": "刻度盤中心略有偏移，高斯要利用圓上相對讀值找出能抵消偏差的測法。",
+      "major": "圓的性質"
+    },
+    {
+      "scene": "暴風前的兩條測量路",
+      "problem": "山脊線較遠但穩定，谷地線較近卻常起霧，玩家要依成功機率決定行程。",
+      "major": "統計與機率"
+    },
+    {
+      "scene": "丘陵投下的拋物線陰影",
+      "problem": "反射儀要高過山脊才會被看見，必須由二次函數判斷最低架設高度。",
+      "major": "二次函數"
+    },
+    {
+      "scene": "日光反射儀原型",
+      "problem": "鏡面、太陽與遠站方向必須形成正確角度，高斯要用圓幾何控制反射方向。",
+      "major": "圓的性質"
+    },
+    {
+      "scene": "百里外突然亮起的光點",
+      "problem": "遠山訊號終於可見，玩家要以相似比例把觀測角換算成實際方位。",
+      "major": "比例線段與相似形"
+    },
+    {
+      "scene": "第一次無法閉合的三角網",
+      "problem": "繞行多站後終點偏離起點，高斯要依各站可信度分配誤差，而非把錯全推給最後一站。",
+      "major": "統計與機率"
+    },
+    {
+      "scene": "地球曲面留下的弧",
+      "problem": "測量範圍擴大後，直線模型開始偏離，高斯要用圓與弧判斷何時不能再把地面當平面。",
+      "major": "圓的性質"
+    },
+    {
+      "scene": "邊界測點的彎曲趨勢",
+      "problem": "國界測點落成一條二次曲線，玩家要找出交點與可行區域，避免地圖越界。",
+      "major": "二次函數"
+    },
+    {
+      "scene": "漢諾威全網閉合",
+      "problem": "所有站點、比例與誤差表必須互相吻合；最後偏差若超界，數年的地圖就不能交付。",
+      "major": "統計與機率"
+    }
+  ],
+  "choices": [
+    {
+      "prompt": "第一條基線遇上斜坡，要怎麼量？",
+      "firstLabel": "分段投影成水平距離",
+      "firstResult": "每一段都能和後續三角形共用，高斯保住整張網的尺度基準。",
+      "secondLabel": "沿坡量後統一換算",
+      "secondResult": "行進較快，但玩家必須逐段記錄坡度，最後才成功還原水平長度。"
+    },
+    {
+      "prompt": "霧遮住遠塔，測量隊要等還是改線？",
+      "firstLabel": "設置中繼站",
+      "firstResult": "新的相似三角形繞過視線障礙，測量鏈繼續向北延伸。",
+      "secondLabel": "等待一次放晴",
+      "secondResult": "時間幾乎耗盡，短暫天光提供一筆基準讀值，讓替代測站得以校正。"
+    },
+    {
+      "prompt": "暴風將至，走哪條測量線？",
+      "firstLabel": "穩定的山脊線",
+      "firstResult": "路程較長，但每個訊號站都保持可見，資料完整返回營地。",
+      "secondLabel": "較短的谷地線",
+      "secondResult": "隊伍搶得時間，卻遭遇濃霧；玩家用機率紀錄提前安排備援站。"
+    },
+    {
+      "prompt": "日光反射儀先改善哪一點？",
+      "firstLabel": "先固定反射方向",
+      "firstResult": "光點雖小卻穩定，高斯能從遠站持續讀取位置。",
+      "secondLabel": "先擴大鏡面亮度",
+      "secondResult": "遠山更容易看見訊號，但玩家隨即加上角度支架，阻止亮光四處漂移。"
+    },
+    {
+      "prompt": "三角網無法閉合，誤差該放在哪裡？",
+      "firstLabel": "按可信度分配",
+      "firstResult": "精密測站保留較高權重，整張網在容許範圍內閉合。",
+      "secondLabel": "重測偏差最大的三站",
+      "secondResult": "隊伍找到一座鬆動的儀器架，重測後剩餘誤差再依可信度分配。"
+    }
+  ],
+  "version": 1,
+  "title": "九上 × 高斯",
+  "language": "zh-TW",
+  "companions": [
+    "NumNum",
+    "Numi"
+  ],
+  "journalTitle": "漢諾威三角網",
+  "notes": [
+    "玩家本人與 NumNum、Numi 一起冒險。",
+    "題目只從所選年段 questionBank 抽取。",
+    "題面依當下研究場景整段改寫；數字、算式、答案不變。",
+    "答錯保留同一題並給提示，直到答對。",
+    "Eureka 僅在玩家與數學家共同領悟關鍵知識時觸發。"
+  ],
+  "detourTemplates": [
+    [
+      {
+        "speaker": "NumNum",
+        "text": "條件還在。慢一點，沿同一條路再走一次。"
+      }
+    ],
+    [
+      {
+        "speaker": "Numi",
+        "text": "別換題。眼前這件事還等著我們把它算開。"
+      }
+    ],
+    [
+      {
+        "speaker": "Mathematician",
+        "text": "我也沒放棄。重看剛才那一步。"
+      }
+    ]
+  ],
+  "correctFeedback": [
+    [
+      {
+        "speaker": "narrator",
+        "text": "數字對上，眼前的阻礙鬆開了一格。"
+      }
+    ]
+  ],
+  "nodes": [
+    {
+      "id": "opening",
+      "type": "narrative",
+      "objective": "以比例與相似形推算不可直接跨越的距離",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "數學世界的藍紫色安靜得像一張沒有折痕的紙。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那邊有一點光——很細，還在抖。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "不是 Eureka。只是有人卡在一個還沒想通的問題前。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "你們追著微光穿過薄紙般的界面。1818 至 1832 年，漢諾威荒野、教堂塔樓、布羅肯山與哥廷根計算室。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "高斯站在經緯儀旁，手裡那一步已經停了很久。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "你們是誰？算了——如果看得懂數字，就過來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}也在！我們不是來旁觀的。"
+        }
+      ],
+      "next": "q01"
+    },
+    {
+      "id": "q01",
+      "type": "quiz",
+      "anchor": 1,
+      "scene": "泥濘荒野的第一條基線",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "泥濘荒野的第一條基線。基線只能分段量測，測尺又受坡度與溫度影響，玩家必須用比例換回水平真長。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用比例把量定第一條基線幾何圖的縮放與實際尺寸接起來。先找結構。漫無目的地計算，只會把誤差藏深。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "比例線段與相似形",
+        "chapterIncludes": "比例線段與相似形 比例線段",
+        "knowledgePoint": "平行線截比例線段性質",
+        "questionIds": [
+          1147,
+          1151,
+          1149
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-gauss-scene-01",
+        "setting": "漢諾威荒野、教堂塔樓、布羅肯山與哥廷根計算室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "高斯"
+        ],
+        "props": [
+          "量定第一條基線幾何圖",
+          "經緯儀",
+          "基線測尺"
+        ],
+        "sceneNeed": "基線只能分段量測，測尺又受坡度與溫度影響，玩家必須用比例換回水平真長。",
+        "rewrites": {
+          "1147": {
+            "question": "量定第一條基線幾何圖的紀錄停在這一行；下一步正等著它：在 \\triangle ABC 中， D 點在 AB 上， E 點在 AC 上，且 DE \\parallel BC 。若 AD = 6 ， DB = 4 ， AE = 9 ，求 EC 的長度？",
+            "options": {
+              "A": "4",
+              "B": "6",
+              "C": "8",
+              "D": "9"
+            },
+            "preserveImage": false
+          },
+          "1149": {
+            "question": "現場只剩量定第一條基線幾何圖上的這份計算還沒核對：在 \\triangle ABC 中， D 、 E 兩點分別在 AB 、 AC 上，下列哪一個條件無法確定 DE \\parallel BC ？",
+            "options": {
+              "A": "AD : DB = AE : EC",
+              "B": "AD : AB = AE : AC",
+              "C": "AB : DB = AC : EC",
+              "D": "AD : AB = DE : BC"
+            },
+            "preserveImage": false
+          },
+          "1151": {
+            "question": "要讓泥濘荒野的第一條基線繼續，你得先解開量定第一條基線幾何圖旁這一筆：已知直線 L_1 \\parallel L_2 \\parallel L_3 ，直線 M_1 被這三條平行線截出兩線段長度分別為 2x+1 與 x+2 ；同時直線 M_2 被截出的對應兩線段長度分別為 3x+4 與 2x+1 。若 x 為正數，求 x 的值。 _____",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "量定第一條基線幾何圖上的數字對上了。量定第一條基線終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "很好。結果與結構彼此驗證。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_1",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "第一條基線遇上斜坡，要怎麼量？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查經緯儀。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選基線測尺。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，先處理最能縮小誤差的那一邊。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "分段投影成水平距離",
+          "next": "choice_1_measure"
+        },
+        {
+          "id": "observe",
+          "label": "沿坡量後統一換算",
+          "next": "choice_1_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_1_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "每一段都能和後續三角形共用，高斯保住整張網的尺度基準。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "choice_1_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "行進較快，但玩家必須逐段記錄坡度，最後才成功還原水平長度。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "q02",
+      "type": "quiz",
+      "anchor": 2,
+      "scene": "三座教堂塔樓",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "三座教堂塔樓。高斯只掌握一條基線與兩組方向，要由相似三角形推算無法直接量到的塔距。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用比例把量定第一條基線幾何圖的縮放與實際尺寸接起來。先找結構。漫無目的地計算，只會把誤差藏深。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_1": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_1": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "比例線段與相似形",
+        "chapterIncludes": "比例線段與相似形 相似形",
+        "knowledgePoint": "多邊形相似意義",
+        "questionIds": [
+          1174,
+          1178,
+          1177
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-gauss-scene-02",
+        "setting": "漢諾威荒野、教堂塔樓、布羅肯山與哥廷根計算室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "高斯"
+        ],
+        "props": [
+          "量定第一條基線幾何圖",
+          "經緯儀",
+          "基線測尺"
+        ],
+        "sceneNeed": "高斯只掌握一條基線與兩組方向，要由相似三角形推算無法直接量到的塔距。",
+        "rewrites": {
+          "1174": {
+            "question": "現場只剩量定第一條基線幾何圖上的這份計算還沒核對：下列哪一組多邊形一定相似？",
+            "options": {
+              "A": "任意兩個等腰三角形",
+              "B": "任意兩個矩形",
+              "C": "任意兩個正六邊形",
+              "D": "任意兩個菱形"
+            },
+            "preserveImage": false
+          },
+          "1177": {
+            "question": "量定第一條基線幾何圖的紀錄停在這一行；下一步正等著它：已知四邊形 ABCD 相似於四邊形 PQRS ，且 A, B, C, D 的對應頂點分別為 P, Q, R, S 。若 \\angle A = 80^\\circ 、 \\angle B = 110^\\circ 、 \\angle R = 70^\\circ ，且 \\overline{AB} = 6 、 \\overline{BC} = 9 、 \\overline{PQ} = 8 。請問： \\overline{QR} 的長度與 \\angle S 的度數相加的總和為多少？",
+            "preserveImage": false
+          },
+          "1178": {
+            "question": "高斯把三座教堂塔樓剛測到的數字推到你面前：已知 \\triangle ABC \\sim \\triangle DEF ，其中 A、B、C 的對應頂點分別為 D、E、F 。若 \\overline{AB} = x+2 、 \\overline{BC} = 2x+1 、 \\overline{AC} = 8 ，且已知對應邊 \\overline{DE} = 15 、 \\overline{EF} = 21 。請問 \\overline{DF} 的長度為 _____ 。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "量定第一條基線幾何圖上的數字對上了。量定第一條基線終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "很好。結果與結構彼此驗證。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q03",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q03",
+      "type": "quiz",
+      "anchor": 3,
+      "scene": "圓形經緯儀刻度盤",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "圓形經緯儀刻度盤。方向讀值跨過零度刻線，玩家要利用圓弧與圓心角算出真正轉角。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿量定第一條基線幾何圖的圓弧、弦與切線追出隱藏關係。先找結構。漫無目的地計算，只會把誤差藏深。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "圓的性質",
+        "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+        "knowledgePoint": "圓的基本名詞（弦、弧、弓形）",
+        "questionIds": [
+          1209,
+          1211,
+          1213
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-gauss-scene-03",
+        "setting": "漢諾威荒野、教堂塔樓、布羅肯山與哥廷根計算室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "高斯"
+        ],
+        "props": [
+          "量定第一條基線幾何圖",
+          "經緯儀",
+          "基線測尺"
+        ],
+        "sceneNeed": "方向讀值跨過零度刻線，玩家要利用圓弧與圓心角算出真正轉角。",
+        "rewrites": {
+          "1209": {
+            "question": "現場只剩量定第一條基線幾何圖上的這份計算還沒核對：下列關於圓的敘述，何者正確？",
+            "options": {
+              "A": "圓上最長的弦必通過圓心",
+              "B": "圓的任一條弦都會把圓分成兩個面積相等的弓形",
+              "C": "兩端點都在圓上的任意曲線，皆稱為圓的弦",
+              "D": "在同一個圓中，弦心距越長，對應的弦越長"
+            },
+            "preserveImage": false
+          },
+          "1211": {
+            "question": "要讓圓形經緯儀刻度盤繼續，你得先解開量定第一條基線幾何圖旁這一筆：已知圓 O 的半徑為 13，圓內有一條弦 \\overline{AB} ，且圓心 O 到弦 \\overline{AB} 的距離（即弦心距）為 5。請問弦 \\overline{AB} 的長度為多少？",
+            "preserveImage": false
+          },
+          "1213": {
+            "question": "高斯把圓形經緯儀刻度盤剛測到的數字推到你面前：已知圓 O 的半徑為 10，圓內有兩條平行弦 \\overline{AB} 與 \\overline{CD} ，且 \\overline{AB} = 16 ， \\overline{CD} = 12 。若圓心 O 與這兩條平行弦的相對位置未知，則這兩條平行弦之間的距離最大為_____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "量定第一條基線幾何圖上的數字對上了。量定第一條基線終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "很好。結果與結構彼此驗證。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_2",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "量定第一條基線告一段落，三角網地圖卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是跨過山谷布網；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q04"
+    },
+    {
+      "id": "q04",
+      "type": "quiz",
+      "anchor": 4,
+      "scene": "山谷高度剖面",
+      "objective": "利用圓幾何校正方向與角度刻度",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "山谷高度剖面。山谷輪廓近似二次函數，高斯要找出最低點，決定補給車能否通過。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把跨過山谷布網坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。先找結構。漫無目的地計算，只會把誤差藏深。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "二次函數",
+        "chapterIncludes": "二次函數 二次函數的最大值或最小值",
+        "knowledgePoint": "極值求法",
+        "questionIds": [
+          1372,
+          1373,
+          1369
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-gauss-scene-04",
+        "setting": "漢諾威荒野、教堂塔樓、布羅肯山與哥廷根計算室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "高斯"
+        ],
+        "props": [
+          "跨過山谷布網坐標圖",
+          "經緯儀",
+          "基線測尺"
+        ],
+        "sceneNeed": "山谷輪廓近似二次函數，高斯要找出最低點，決定補給車能否通過。",
+        "rewrites": {
+          "1369": {
+            "question": "現場只剩跨過山谷布網坐標圖上的這份計算還沒核對：給定二次函數 y = -3(x + 2)^2 + 7 ，下列關於此函數極值的敘述，何者正確？",
+            "options": {
+              "A": "當 x = 2 時，有最大值 7",
+              "B": "當 x = -2 時，有最大值 7",
+              "C": "當 x = 2 時，有最小值 7",
+              "D": "當 x = -2 時，有最小值 7"
+            },
+            "preserveImage": false
+          },
+          "1372": {
+            "question": "跨過山谷布網坐標圖的紀錄停在這一行；下一步正等著它：請利用配方法求出二次函數 y = 3x^2 - 12x + 17 的最小值。",
+            "preserveImage": false
+          },
+          "1373": {
+            "question": "高斯把山谷高度剖面剛測到的數字推到你面前：已知一個二次函數的圖形開口向下，且圖形通過 (-1, 8) 與 (5, 8) 兩點。當 x = _____ 時，此函數會有最大值。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "跨過山谷布網坐標圖上的數字對上了。跨過山谷布網終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "很好。結果與結構彼此驗證。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_2",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "霧遮住遠塔，測量隊要等還是改線？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查日光反射儀。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選三角網地圖。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，先處理最能縮小誤差的那一邊。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "設置中繼站",
+          "next": "choice_2_measure"
+        },
+        {
+          "id": "observe",
+          "label": "等待一次放晴",
+          "next": "choice_2_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_2_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "新的相似三角形繞過視線障礙，測量鏈繼續向北延伸。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "choice_2_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "時間幾乎耗盡，短暫天光提供一筆基準讀值，讓替代測站得以校正。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "q05",
+      "type": "quiz",
+      "anchor": 5,
+      "scene": "第一批重複角度",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "第一批重複角度。同一測站的角度每次略有不同，玩家要比較中心與分散，不能只挑最順眼的一筆。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把跨過山谷布網紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。先找結構。漫無目的地計算，只會把誤差藏深。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_2": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_2": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "統計與機率",
+        "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+        "knowledgePoint": "盒狀圖繪製與判讀",
+        "questionIds": [
+          357,
+          355,
+          359
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-gauss-scene-05",
+        "setting": "漢諾威荒野、教堂塔樓、布羅肯山與哥廷根計算室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "高斯"
+        ],
+        "props": [
+          "跨過山谷布網紀錄表",
+          "經緯儀",
+          "基線測尺"
+        ],
+        "sceneNeed": "同一測站的角度每次略有不同，玩家要比較中心與分散，不能只挑最順眼的一筆。",
+        "rewrites": {
+          "355": {
+            "question": "第一批重複角度。高斯在跨過山谷布網紀錄表上留下這組條件：已知籃球隊 11 位球員的測量值（單位：公斤）由輕到重排列如下：65, 68, 70, 72, 75, 76, 78, 80, 82, 85, 90。求這組資料的四分位距（IQR）為多少公斤？",
+            "preserveImage": false
+          },
+          "357": {
+            "question": "跨過山谷布網紀錄表的紀錄停在這一行；下一步正等著它：已知一組資料的五數總括為：最小值 15、第一四分位數 22、中位數 28、第三四分位數 35、最大值 48。請計算這組資料的「全距」。",
+            "preserveImage": false
+          },
+          "359": {
+            "question": "現場只剩跨過山谷布網紀錄表上的這份計算還沒核對：有一組包含 8 個相異整數的資料，由小到大排列。已知這組資料的最小值為 10，第一四分位數為 14，中位數為 20，第三四分位數為 28，最大值為 35。請問這組資料中，第 4 小與第 5 小的數值相加的總和為多少？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "跨過山谷布網紀錄表上的數字對上了。跨過山谷布網終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "很好。結果與結構彼此驗證。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q06",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q06",
+      "type": "quiz",
+      "anchor": 6,
+      "scene": "被濃霧吞掉的塔尖",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "被濃霧吞掉的塔尖。遠塔完全不可見，測量隊必須利用相似關係另設中繼站，否則整條三角鏈中斷。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用比例把經緯儀的縮放與實際尺寸接起來。先找結構。漫無目的地計算，只會把誤差藏深。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "比例線段與相似形",
+        "chapterIncludes": "比例線段與相似形 連比",
+        "knowledgePoint": "連比例式的記錄與推理運算",
+        "questionIds": [
+          1140,
+          1142,
+          1139
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-gauss-scene-06",
+        "setting": "漢諾威荒野、教堂塔樓、布羅肯山與哥廷根計算室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "高斯"
+        ],
+        "props": [
+          "經緯儀",
+          "基線測尺",
+          "日光反射儀"
+        ],
+        "sceneNeed": "遠塔完全不可見，測量隊必須利用相似關係另設中繼站，否則整條三角鏈中斷。",
+        "rewrites": {
+          "1139": {
+            "question": "現場只剩經緯儀上的這份計算還沒核對：你在現場調配特調果茶，使用的樣品、百香果汁、鳳梨汁的容量比是 5:2:3 。若這杯果茶中使用了 150 毫升的鳳梨汁，請問這杯果茶的總容量是 _____ 毫升。",
+            "preserveImage": false
+          },
+          "1140": {
+            "question": "被濃霧吞掉的塔尖。高斯在經緯儀上留下這組條件：若 x:y = 3:5 ， y:z = 4:3 ，且 2x + y - z = 58 ，求 y 的值。",
+            "preserveImage": false
+          },
+          "1142": {
+            "question": "經緯儀的紀錄停在這一行；下一步正等著它：若 (x+y) : (y+z) : (z+x) = 4:5:7 ，且 x+y+z = 40 ，求 x 的值。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "經緯儀上的數字對上了。跨過山谷布網終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "很好。結果與結構彼此驗證。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q07",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q07",
+      "type": "quiz",
+      "anchor": 7,
+      "scene": "偏心的經緯儀圓盤",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "偏心的經緯儀圓盤。刻度盤中心略有偏移，高斯要利用圓上相對讀值找出能抵消偏差的測法。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿校正圓盤與高差幾何圖的圓弧、弦與切線追出隱藏關係。先找結構。漫無目的地計算，只會把誤差藏深。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "圓的性質",
+        "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+        "knowledgePoint": "直線與圓的切線與割線",
+        "questionIds": [
+          1229,
+          1231,
+          1227
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-gauss-scene-07",
+        "setting": "漢諾威荒野、教堂塔樓、布羅肯山與哥廷根計算室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "高斯"
+        ],
+        "props": [
+          "校正圓盤與高差幾何圖",
+          "經緯儀",
+          "基線測尺"
+        ],
+        "sceneNeed": "刻度盤中心略有偏移，高斯要利用圓上相對讀值找出能抵消偏差的測法。",
+        "rewrites": {
+          "1227": {
+            "question": "校正圓盤與高差幾何圖的紀錄停在這一行；下一步正等著它：已知圓 O 的半徑為 7。若有四條筆直的直線 L1、L2、L3、L4，它們與圓心 O 的距離分別為 5、7、9、0，且這四條直線與圓 O 的交點個數分別為 a、b、c、d，則下列關於 a、b、c、d 的大小關係何者正確？",
+            "options": {
+              "A": "d > a > b > c",
+              "B": "a = d > b > c",
+              "C": "a = b > c > d",
+              "D": "d > b > a = c"
+            },
+            "preserveImage": false
+          },
+          "1229": {
+            "question": "現場只剩校正圓盤與高差幾何圖上的這份計算還沒核對：在平面上有一圓 O，半徑為 8 小格。點 P 位於圓外，且點 P 到圓心 O 的距離為 17 小格。若自點 P 向圓 O 作一條切線，切點為 Q，求切線段 PQ 的長度為多少小格？",
+            "preserveImage": false
+          },
+          "1231": {
+            "question": "要讓偏心的經緯儀圓盤繼續，你得先解開校正圓盤與高差幾何圖旁這一筆：已知圓 O 的半徑為 13 小格。在圓內有兩條平行的弦 AB 與 CD，其長度分別為 24 小格與 10 小格。若這兩條弦位於圓心 O 的異側，則這兩條平行弦之間的距離為多少小格？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "校正圓盤與高差幾何圖上的數字對上了。校正圓盤與高差終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "很好。結果與結構彼此驗證。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_3",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_3",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "暴風將至，走哪條測量線？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查角度誤差表。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選經緯儀。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，先處理最能縮小誤差的那一邊。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "穩定的山脊線",
+          "next": "choice_3_measure"
+        },
+        {
+          "id": "observe",
+          "label": "較短的谷地線",
+          "next": "choice_3_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_3_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "路程較長，但每個訊號站都保持可見，資料完整返回營地。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "choice_3_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "隊伍搶得時間，卻遭遇濃霧；玩家用機率紀錄提前安排備援站。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "q08",
+      "type": "quiz",
+      "anchor": 8,
+      "scene": "暴風前的兩條測量路",
+      "objective": "從統計資料辨認偶然誤差與系統偏差",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "暴風前的兩條測量路。山脊線較遠但穩定，谷地線較近卻常起霧，玩家要依成功機率決定行程。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把校正圓盤與高差紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。先找結構。漫無目的地計算，只會把誤差藏深。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_3": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_3": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "統計與機率",
+        "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+        "knowledgePoint": "盒狀圖繪製與判讀",
+        "questionIds": [
+          356,
+          353,
+          351
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-gauss-scene-08",
+        "setting": "漢諾威荒野、教堂塔樓、布羅肯山與哥廷根計算室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "高斯"
+        ],
+        "props": [
+          "校正圓盤與高差紀錄表",
+          "經緯儀",
+          "基線測尺"
+        ],
+        "sceneNeed": "山脊線較遠但穩定，谷地線較近卻常起霧，玩家要依成功機率決定行程。",
+        "rewrites": {
+          "351": {
+            "question": "要讓暴風前的兩條測量路繼續，你得先解開校正圓盤與高差紀錄表旁這一筆：如圖所示為觀測組現場測量讀數的盒狀圖。請問該班數學讀數的「四分位距」為多少分？",
+            "options": {
+              "A": "70",
+              "B": "50",
+              "C": "30",
+              "D": "15"
+            },
+            "preserveImage": true,
+            "imageAlt": "校正圓盤與高差紀錄表的資料圖"
+          },
+          "353": {
+            "question": "高斯把暴風前的兩條測量路剛測到的數字推到你面前：觀測組與乙班各有 40 筆紀錄，且各班內每位觀測值的數學讀數皆不相同。已知甲班讀數的第三四分位數為 80 分，乙班讀數的中位數為 80 分。請問下列敘述何者必然正確？",
+            "options": {
+              "A": "甲班讀數超過 80 分的筆數大於乙班讀數超過 80 分的筆數",
+              "B": "乙班讀數超過 80 分的筆數大於甲班讀數超過 80 分的筆數",
+              "C": "兩班讀數超過 80 分的筆數一樣多",
+              "D": "乙班讀數的全距一定比甲班大"
+            },
+            "preserveImage": false
+          },
+          "356": {
+            "question": "要讓暴風前的兩條測量路繼續，你得先解開校正圓盤與高差紀錄表旁這一筆：某國中九年一班共有 39 筆紀錄，現場每位觀測值的 1 分鐘跳繩次數皆不相同。若全班跳繩次數的盒狀圖顯示，第一四分位數為 45 次，中位數為 55 次，第三四分位數為 65 次。請問該班跳繩次數介於 45 次與 65 次之間（不包含 45 次與 65 次）的觀測值共有幾人？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "校正圓盤與高差紀錄表上的數字對上了。校正圓盤與高差終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "很好。結果與結構彼此驗證。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q09",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q09",
+      "type": "quiz",
+      "anchor": 9,
+      "scene": "丘陵投下的拋物線陰影",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "丘陵投下的拋物線陰影。反射儀要高過山脊才會被看見，必須由二次函數判斷最低架設高度。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把校正圓盤與高差坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。先找結構。漫無目的地計算，只會把誤差藏深。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "二次函數",
+        "chapterIncludes": "二次函數 二次函數及其圖形",
+        "knowledgePoint": "二次函數意義",
+        "questionIds": [
+          1331,
+          1328,
+          1329
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-gauss-scene-09",
+        "setting": "漢諾威荒野、教堂塔樓、布羅肯山與哥廷根計算室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "高斯"
+        ],
+        "props": [
+          "校正圓盤與高差坐標圖",
+          "經緯儀",
+          "基線測尺"
+        ],
+        "sceneNeed": "反射儀要高過山脊才會被看見，必須由二次函數判斷最低架設高度。",
+        "rewrites": {
+          "1328": {
+            "question": "高斯把丘陵投下的拋物線陰影剛測到的數字推到你面前：下列哪一個關係式是 x 的二次函數？",
+            "options": {
+              "A": "y = 3x + 5",
+              "B": "y = 2x^2 - x + 1",
+              "C": "y = \\frac{1}{x^2} + 2",
+              "D": "y = x^3 - 2x^2"
+            },
+            "preserveImage": false
+          },
+          "1329": {
+            "question": "現場只剩校正圓盤與高差坐標圖上的這份計算還沒核對：若 y = (k - 2)x^3 + (k + 1)x^2 - 3x + 5 是 x 的二次函數，則 k 的值為何？",
+            "options": {
+              "A": "k = 2",
+              "B": "k = -1",
+              "C": "k\neq 2",
+              "D": "k\neq -1"
+            },
+            "preserveImage": false
+          },
+          "1331": {
+            "question": "要讓丘陵投下的拋物線陰影繼續，你得先解開校正圓盤與高差坐標圖旁這一筆：若方程式 y = (a + 3)x^2 + 5x - 7 為 x 的二次函數，則 a 的限制條件為 a\neq _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "校正圓盤與高差坐標圖上的數字對上了。校正圓盤與高差終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "很好。結果與結構彼此驗證。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_1",
+      "type": "eureka",
+      "eurekaId": "g9h1-gauss-insight-1",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "只要基線可靠、三角形彼此相扣，人不必走遍每一段距離也能測出整片國土。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "transition_4"
+    },
+    {
+      "id": "transition_4",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "校正圓盤與高差告一段落，經緯儀卻送來新的壞消息。原先穩定的讀數突然偏了一格；這不是能略過的小差。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是讓日光越過遠山；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q10"
+    },
+    {
+      "id": "q10",
+      "type": "quiz",
+      "anchor": 10,
+      "scene": "日光反射儀原型",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "日光反射儀原型。鏡面、太陽與遠站方向必須形成正確角度，高斯要用圓幾何控制反射方向。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿讓日光越過遠山幾何圖的圓弧、弦與切線追出隱藏關係。先找結構。漫無目的地計算，只會把誤差藏深。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "圓的性質",
+        "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+        "knowledgePoint": "弦心距性質",
+        "questionIds": [
+          1238,
+          1236,
+          1237
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-gauss-scene-10",
+        "setting": "漢諾威荒野、教堂塔樓、布羅肯山與哥廷根計算室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "高斯"
+        ],
+        "props": [
+          "讓日光越過遠山幾何圖",
+          "經緯儀",
+          "基線測尺"
+        ],
+        "sceneNeed": "鏡面、太陽與遠站方向必須形成正確角度，高斯要用圓幾何控制反射方向。",
+        "rewrites": {
+          "1236": {
+            "question": "要讓日光反射儀原型繼續，你得先解開讓日光越過遠山幾何圖旁這一筆：在圓 O 中，已知有兩弦 \\overline{AB} 與 \\overline{CD} ，且 \\overline{AB} = 8 、 \\overline{CD} = 6 。若 \\overline{AB} 的弦心距為 m ， \\overline{CD} 的弦心距為 n ，則下列敘述何者正確？",
+            "options": {
+              "A": "m > n",
+              "B": "m",
+              "C": "m = n",
+              "D": "條件不足，無法判斷"
+            },
+            "preserveImage": false
+          },
+          "1237": {
+            "question": "讓日光越過遠山幾何圖的紀錄停在這一行；下一步正等著它：你在現場玩套圈圈，你發現地上畫了一個作為標記的大圓。圓內有兩條平行的直線軌道 \\overline{AB} 和 \\overline{CD} ，測得兩軌道長度分別為 16 小格與 12 小格，且圓心到 \\overline{AB} 軌道的垂直距離（弦心距）為 6 小格，求這個大圓的半徑為 _____ 小格。",
+            "preserveImage": false
+          },
+          "1238": {
+            "question": "高斯把日光反射儀原型剛測到的數字推到你面前：圓 O 的半徑為 13 。若圓內有一弦 \\overline{AB} ，其弦心距為 5 ；另有一弦 \\overline{CD} ，其長度為 24 。求 \\overline{AB} 的長度與 \\overline{CD} 的弦心距之總和為多少？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "讓日光越過遠山幾何圖上的數字對上了。讓日光越過遠山終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "很好。結果與結構彼此驗證。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_4",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_4",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "日光反射儀先改善哪一點？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查基線測尺。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選日光反射儀。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，先處理最能縮小誤差的那一邊。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "先固定反射方向",
+          "next": "choice_4_measure"
+        },
+        {
+          "id": "observe",
+          "label": "先擴大鏡面亮度",
+          "next": "choice_4_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_4_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "光點雖小卻穩定，高斯能從遠站持續讀取位置。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "choice_4_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "遠山更容易看見訊號，但玩家隨即加上角度支架，阻止亮光四處漂移。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "q11",
+      "type": "quiz",
+      "anchor": 11,
+      "scene": "百里外突然亮起的光點",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "百里外突然亮起的光點。遠山訊號終於可見，玩家要以相似比例把觀測角換算成實際方位。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用比例把讓日光越過遠山幾何圖的縮放與實際尺寸接起來。先找結構。漫無目的地計算，只會把誤差藏深。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_4": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_4": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "比例線段與相似形",
+        "chapterIncludes": "比例線段與相似形 比例線段",
+        "knowledgePoint": "三角形兩邊中點連線性質",
+        "questionIds": [
+          1156,
+          1160,
+          1157
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-gauss-scene-11",
+        "setting": "漢諾威荒野、教堂塔樓、布羅肯山與哥廷根計算室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "高斯"
+        ],
+        "props": [
+          "讓日光越過遠山幾何圖",
+          "經緯儀",
+          "基線測尺"
+        ],
+        "sceneNeed": "遠山訊號終於可見，玩家要以相似比例把觀測角換算成實際方位。",
+        "rewrites": {
+          "1156": {
+            "question": "要讓百里外突然亮起的光點繼續，你得先解開讓日光越過遠山幾何圖旁這一筆：在 \\triangle ABC 中， D, E 分別為 AB, AC 的中點。若已知 AD=3 ， AE=4 ， DE=5 ，則 \\triangle ABC 的周長為何？",
+            "options": {
+              "A": "12",
+              "B": "24",
+              "C": "17",
+              "D": "48"
+            },
+            "preserveImage": false
+          },
+          "1157": {
+            "question": "讓日光越過遠山幾何圖的紀錄停在這一行；下一步正等著它：你在現場擺測點，你用三根竹竿搭成一個三角形的架子，這三根竹竿的長度分別是 120 小格、 160 小格和 200 小格。為了增加架子的穩定性，你想在兩根較短竹竿的「中點」之間，綁上一條水平的繩子。請問這條繩子的長度需要準備 _____ 小格。",
+            "preserveImage": false
+          },
+          "1160": {
+            "question": "百里外突然亮起的光點。高斯在讓日光越過遠山幾何圖上留下這組條件：在 \\triangle ABC 中， D 為 AB 的中點。過 D 點作 BC 的平行線，交 AC 於 E 點。接著，在 BC 上取一點 F ，使得 BF : FC = 1 : 2 。若已知 DE = 2x + 3 ， FC = 5x - 3 ，求 x 的值。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "讓日光越過遠山幾何圖上的數字對上了。讓日光越過遠山終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "很好。結果與結構彼此驗證。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q12",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q12",
+      "type": "quiz",
+      "anchor": 12,
+      "scene": "第一次無法閉合的三角網",
+      "objective": "完成能閉合並可交付的漢諾威測量網",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "第一次無法閉合的三角網。繞行多站後終點偏離起點，高斯要依各站可信度分配誤差，而非把錯全推給最後一站。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把讓日光越過遠山紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。先找結構。漫無目的地計算，只會把誤差藏深。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "統計與機率",
+        "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+        "knowledgePoint": "盒狀圖繪製與判讀",
+        "questionIds": [
+          358,
+          368,
+          366
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-gauss-scene-12",
+        "setting": "漢諾威荒野、教堂塔樓、布羅肯山與哥廷根計算室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "高斯"
+        ],
+        "props": [
+          "讓日光越過遠山紀錄表",
+          "經緯儀",
+          "基線測尺"
+        ],
+        "sceneNeed": "繞行多站後終點偏離起點，高斯要依各站可信度分配誤差，而非把錯全推給最後一站。",
+        "rewrites": {
+          "358": {
+            "question": "高斯把第一次無法閉合的三角網剛測到的數字推到你面前：阿偉紀錄了自己連續 20 天的每日讀書時間（單位：分鐘），並繪製成盒狀圖。圖中顯示最小值為 30，第一四分位數為 45，中位數為 60，第三四分位數為 90，最大值為 120。請計算這 20 天讀書時間的「全距」與「四分位距」相差多少分鐘？",
+            "preserveImage": true,
+            "imageAlt": "讓日光越過遠山紀錄表的資料圖"
+          },
+          "366": {
+            "question": "要讓第一次無法閉合的三角網繼續，你得先解開讓日光越過遠山紀錄表旁這一筆：你現場共有 39 名觀測值。某次現場舉辦英文單字測驗，讀數的盒狀圖如下。已知現場沒有人同分。若阿張的讀數為 75 分，則現場讀數比阿張低的觀測值共有 _____ 人。",
+            "preserveImage": true,
+            "imageAlt": "讓日光越過遠山紀錄表的資料圖"
+          },
+          "368": {
+            "question": "高斯把第一次無法閉合的三角網剛測到的數字推到你面前：下圖為觀測組 28 筆紀錄現場測量進球數的盒狀圖。請問該班進球數的四分位距為多少球？",
+            "preserveImage": true,
+            "imageAlt": "讓日光越過遠山紀錄表的資料圖"
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "讓日光越過遠山紀錄表上的數字對上了。讓日光越過遠山終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "很好。結果與結構彼此驗證。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_5",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "讓日光越過遠山告一段落，基線測尺卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是逼三角網閉合；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q13"
+    },
+    {
+      "id": "q13",
+      "type": "quiz",
+      "anchor": 13,
+      "scene": "地球曲面留下的弧",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "地球曲面留下的弧。測量範圍擴大後，直線模型開始偏離，高斯要用圓與弧判斷何時不能再把地面當平面。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿逼三角網閉合幾何圖的圓弧、弦與切線追出隱藏關係。先找結構。漫無目的地計算，只會把誤差藏深。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "圓的性質",
+        "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+        "knowledgePoint": "點與圓的位置",
+        "questionIds": [
+          1220,
+          1223,
+          1218
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-gauss-scene-13",
+        "setting": "漢諾威荒野、教堂塔樓、布羅肯山與哥廷根計算室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "高斯"
+        ],
+        "props": [
+          "逼三角網閉合幾何圖",
+          "經緯儀",
+          "基線測尺"
+        ],
+        "sceneNeed": "測量範圍擴大後，直線模型開始偏離，高斯要用圓與弧判斷何時不能再把地面當平面。",
+        "rewrites": {
+          "1218": {
+            "question": "高斯把地球曲面留下的弧剛測到的數字推到你面前：你在現場玩套圈圈遊戲。套圈圈的底座是一個圓形，半徑為 15 小格。你丟出一個套環，套環的落點 P 距離底座的圓心 12 小格。請問套環落點 P 相對於底座圓的位置為何？",
+            "options": {
+              "A": "在底座圓內部",
+              "B": "在底座圓上",
+              "C": "在底座圓外部",
+              "D": "無法判斷"
+            },
+            "preserveImage": false
+          },
+          "1220": {
+            "question": "地球曲面留下的弧。高斯在逼三角網閉合幾何圖上留下這組條件：在直角三角形 ABC 中，已知 \\angle C = 90^ \\circ ，且 \\overline{AC} = 6 小格，\\overline{BC} = 8 小格。若以 C 為圓心，r 小格為半徑畫一個圓 C。已知點 A 落在圓 C 內部，且點 B 落在圓 C 外部。若 r 為整數，請計算 r 的值為多少？",
+            "preserveImage": false
+          },
+          "1223": {
+            "question": "高斯把地球曲面留下的弧剛測到的數字推到你面前：\\triangle ABC 中，已知 \\angle B = 50^ \\circ ， \\angle C = 70^ \\circ 。今分別以 B、C 兩點為圓心，\\overline{BC} 的長度為半徑畫兩個圓，分別稱為圓 B 與圓 C。關於點 A 的位置，下列敘述何者正確？",
+            "options": {
+              "A": "在圓 B 外部，在圓 C 內部",
+              "B": "在圓 B 外部，在圓 C 外部",
+              "C": "在圓 B 內部，在圓 C 內部",
+              "D": "在圓 B 內部，在圓 C 外部"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "逼三角網閉合幾何圖上的數字對上了。逼三角網閉合終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "很好。結果與結構彼此驗證。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_5",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "三角網無法閉合，誤差該放在哪裡？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查三角網地圖。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選角度誤差表。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，先處理最能縮小誤差的那一邊。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "按可信度分配",
+          "next": "choice_5_measure"
+        },
+        {
+          "id": "observe",
+          "label": "重測偏差最大的三站",
+          "next": "choice_5_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_5_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "精密測站保留較高權重，整張網在容許範圍內閉合。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "choice_5_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "隊伍找到一座鬆動的儀器架，重測後剩餘誤差再依可信度分配。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "q14",
+      "type": "quiz",
+      "anchor": 14,
+      "scene": "邊界測點的彎曲趨勢",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "邊界測點的彎曲趨勢。國界測點落成一條二次曲線，玩家要找出交點與可行區域，避免地圖越界。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把逼三角網閉合坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。先找結構。漫無目的地計算，只會把誤差藏深。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_5": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_5": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "二次函數",
+        "chapterIncludes": "二次函數 二次函數及其圖形",
+        "knowledgePoint": "頂點",
+        "questionIds": [
+          1356,
+          1352,
+          1354
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-gauss-scene-14",
+        "setting": "漢諾威荒野、教堂塔樓、布羅肯山與哥廷根計算室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "高斯"
+        ],
+        "props": [
+          "逼三角網閉合坐標圖",
+          "經緯儀",
+          "基線測尺"
+        ],
+        "sceneNeed": "國界測點落成一條二次曲線，玩家要找出交點與可行區域，避免地圖越界。",
+        "rewrites": {
+          "1352": {
+            "question": "逼三角網閉合坐標圖的紀錄停在這一行；下一步正等著它：已知下列四個二次函數，判斷哪一個圖形有最大值，且其頂點位於第二象限？",
+            "options": {
+              "A": "y = -2(x - 3)^2 + 5",
+              "B": "y = -3(x + 2)^2 + 4",
+              "C": "y = 4(x + 1)^2 - 2",
+              "D": "y = -(x + 4)^2 - 3"
+            },
+            "preserveImage": false
+          },
+          "1354": {
+            "question": "現場只剩逼三角網閉合坐標圖上的這份計算還沒核對：若某二次函數的圖形通過點 (0, -5) 與 (4, -5) ，且此函數有最大值 3 ，則關於此二次函數圖形的敘述，下列何者正確？",
+            "options": {
+              "A": "此函數的圖形開口向上",
+              "B": "頂點坐標為 (3, 2)",
+              "C": "此函數的對稱軸為直線 x = 2",
+              "D": "此函數圖形與 y 軸的交點為 (0, 3)"
+            },
+            "preserveImage": false
+          },
+          "1356": {
+            "question": "要讓邊界測點的彎曲趨勢繼續，你得先解開逼三角網閉合坐標圖旁這一筆：已知二次函數 y = x^2 - 6x + c 的圖形與 x 軸相交於兩點，且這兩點的距離為 8 。請問 c 的值為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "逼三角網閉合坐標圖上的數字對上了。逼三角網閉合終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "很好。結果與結構彼此驗證。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_2",
+      "type": "eureka",
+      "eurekaId": "g9h1-gauss-insight-2",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "測量不是尋找毫無誤差的一筆數據，而是讓多條路徑互相約束並揭露偏差。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "q15"
+    },
+    {
+      "id": "q15",
+      "type": "quiz",
+      "anchor": 15,
+      "scene": "漢諾威全網閉合",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "漢諾威全網閉合。所有站點、比例與誤差表必須互相吻合；最後偏差若超界，數年的地圖就不能交付。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把逼三角網閉合紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。先找結構。漫無目的地計算，只會把誤差藏深。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "統計與機率",
+        "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+        "knowledgePoint": "盒狀圖繪製與判讀",
+        "questionIds": [
+          365,
+          367,
+          370
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-gauss-scene-15",
+        "setting": "漢諾威荒野、教堂塔樓、布羅肯山與哥廷根計算室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "高斯"
+        ],
+        "props": [
+          "逼三角網閉合紀錄表",
+          "經緯儀",
+          "基線測尺"
+        ],
+        "sceneNeed": "所有站點、比例與誤差表必須互相吻合；最後偏差若超界，數年的地圖就不能交付。",
+        "rewrites": {
+          "365": {
+            "question": "漢諾威全網閉合。高斯在逼三角網閉合紀錄表上留下這組條件：你現場舉行兩次現場測量，下圖為兩次小考讀數的盒狀圖。請問關於這兩次小考讀數的敘述，下列何者正確？",
+            "options": {
+              "A": "第一次小考的中位數較大",
+              "B": "第二次小考的中位數較大",
+              "C": "第一次小考的全距較小",
+              "D": "第二次小考的四分位距較小"
+            },
+            "preserveImage": true,
+            "imageAlt": "逼三角網閉合紀錄表的資料圖"
+          },
+          "367": {
+            "question": "逼三角網閉合紀錄表的紀錄停在這一行；下一步正等著它：已知甲班有 32 人，乙班有 32 人。兩班某次自然考試讀數皆沒有人同分，其盒狀圖如下。已知甲班的第三四分位數為 80 分，乙班的中位數為 80 分。請問乙班讀數高於 80 分的筆數，比甲班讀數高於 80 分的筆數多幾人？",
+            "preserveImage": true,
+            "imageAlt": "逼三角網閉合紀錄表的資料圖"
+          },
+          "370": {
+            "question": "漢諾威全網閉合。高斯在逼三角網閉合紀錄表上留下這組條件：下圖為觀測組 40 筆紀錄測量值的盒狀圖。已知這 40 筆紀錄的測量值皆不相同，根據此圖，下列哪一個測量值區間的紀錄筆數最多？",
+            "options": {
+              "A": "40 \\sim 48 公斤",
+              "B": "48 \\sim 52 公斤",
+              "C": "52 \\sim 65 公斤",
+              "D": "以上三個區間的筆數一樣多"
+            },
+            "preserveImage": true,
+            "imageAlt": "逼三角網閉合紀錄表的資料圖"
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "逼三角網閉合紀錄表上的數字對上了。逼三角網閉合終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "很好。結果與結構彼此驗證。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "ending_history",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "ending_history",
+      "type": "narrative",
+      "objective": "記住高斯留下的答案",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "逼三角網閉合完成了。現場安靜下來，只有經緯儀還留著剛才的痕跡。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，今天不是你替我算完。是我們一起把它想通。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那道光退了……可是我還記得它的味道。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "因為答案不是光。答案會留在能被重做的步驟裡。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "——時間向前推去。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "高斯自 1818 年起主持漢諾威大地測量，並發明以反射日光進行遠距定位的日光反射儀；測量工作推動了大地測量、誤差分析與曲面研究。高斯於 1855 年在哥廷根逝世。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "眼前的漢諾威荒野、教堂塔樓、布羅肯山與哥廷根計算室慢慢褪色。藍紫色的安靜重新包圍你們。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}，下次再有人快想通時，我們還會聽見。"
+        }
+      ],
+      "next": "ending_stats"
+    },
+    {
+      "id": "ending_stats",
+      "type": "ending",
+      "next": null,
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "【劇本結束】九上 × 高斯"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "這趟路的每一次重算，數字都記得。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "下次見，{{playerName}}！"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,836 @@
+{
+  "id": "g8h1",
+  "grade": 8,
+  "half": 1,
+  "description": "同年段共用候選題；各劇本依當下研究場景重新安排槽位與完整改寫題面。",
+  "slots": [
+    {
+      "slot": 1,
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等差數列",
+      "knowledgePoint": "一般項求法",
+      "questionIds": [
+        970,
+        967,
+        971
+      ]
+    },
+    {
+      "slot": 2,
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等比數列",
+      "knowledgePoint": "等比數列的首項與公比",
+      "questionIds": [
+        2278,
+        990,
+        2279
+      ]
+    },
+    {
+      "slot": 3,
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等差級數",
+      "knowledgePoint": "等差級數求和公式及其應用問題",
+      "questionIds": [
+        987,
+        984,
+        985
+      ]
+    },
+    {
+      "slot": 4,
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等差數列",
+      "knowledgePoint": "數列的規律性",
+      "questionIds": [
+        951,
+        953,
+        952
+      ]
+    },
+    {
+      "slot": 5,
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 乘法公式",
+      "knowledgePoint": "平方差公式",
+      "questionIds": [
+        757,
+        759,
+        755
+      ]
+    },
+    {
+      "slot": 6,
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 多項式的加法與減法",
+      "knowledgePoint": "多項式的定義與相關名詞",
+      "questionIds": [
+        767,
+        765,
+        764
+      ]
+    },
+    {
+      "slot": 7,
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 多項式的乘法與除法",
+      "knowledgePoint": "多項式的乘法運算",
+      "questionIds": [
+        791,
+        2264,
+        793
+      ]
+    },
+    {
+      "slot": 8,
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 多項式的乘法與除法",
+      "knowledgePoint": "被除式為二次之多項式的除法",
+      "questionIds": [
+        800,
+        801,
+        798
+      ]
+    },
+    {
+      "slot": 9,
+      "major": "平方根與畢氏定理",
+      "chapterIncludes": "平方根與畢氏定理 根式的運算",
+      "knowledgePoint": "根式的化簡",
+      "questionIds": [
+        2267,
+        832,
+        835
+      ]
+    },
+    {
+      "slot": 10,
+      "major": "平方根與畢氏定理",
+      "chapterIncludes": "平方根與畢氏定理 平方根與近似值",
+      "knowledgePoint": "平方根的意義",
+      "questionIds": [
+        808,
+        810,
+        807
+      ]
+    },
+    {
+      "slot": 11,
+      "major": "平方根與畢氏定理",
+      "chapterIncludes": "平方根與畢氏定理 平方根與近似值",
+      "knowledgePoint": "十分逼近法",
+      "questionIds": [
+        815,
+        817,
+        819
+      ]
+    },
+    {
+      "slot": 12,
+      "major": "平方根與畢氏定理",
+      "chapterIncludes": "平方根與畢氏定理 畢氏定理",
+      "knowledgePoint": "商高定理（勾股定理）的意義",
+      "questionIds": [
+        849,
+        847,
+        848
+      ]
+    },
+    {
+      "slot": 13,
+      "major": "函數及其圖形",
+      "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+      "knowledgePoint": "函數值",
+      "questionIds": [
+        1005,
+        1007,
+        1009
+      ]
+    },
+    {
+      "slot": 14,
+      "major": "函數及其圖形",
+      "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+      "knowledgePoint": "函數的對應關係",
+      "questionIds": [
+        2282,
+        2284,
+        2285
+      ]
+    },
+    {
+      "slot": 15,
+      "major": "函數及其圖形",
+      "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+      "knowledgePoint": "常數函數",
+      "questionIds": [
+        1014,
+        1016,
+        2287
+      ]
+    }
+  ],
+  "library": [
+    {
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等差數列",
+      "knowledgePoint": "一般項求法",
+      "questionIds": [
+        970,
+        967,
+        971
+      ]
+    },
+    {
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等比數列",
+      "knowledgePoint": "等比數列的首項與公比",
+      "questionIds": [
+        2278,
+        990,
+        2279
+      ]
+    },
+    {
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等差級數",
+      "knowledgePoint": "等差級數求和公式及其應用問題",
+      "questionIds": [
+        987,
+        984,
+        985
+      ]
+    },
+    {
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等差數列",
+      "knowledgePoint": "數列的規律性",
+      "questionIds": [
+        951,
+        953,
+        952
+      ]
+    },
+    {
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等差數列",
+      "knowledgePoint": "等差數列首項與公差",
+      "questionIds": [
+        959,
+        962,
+        961
+      ]
+    },
+    {
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等比數列",
+      "knowledgePoint": "一般項計算",
+      "questionIds": [
+        995,
+        997,
+        994
+      ]
+    },
+    {
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等差數列",
+      "knowledgePoint": "等差中項",
+      "questionIds": [
+        979,
+        977,
+        976
+      ]
+    },
+    {
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等差數列",
+      "knowledgePoint": "數列的規律性",
+      "questionIds": [
+        955,
+        950,
+        954
+      ]
+    },
+    {
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等差數列",
+      "knowledgePoint": "等差數列首項與公差",
+      "questionIds": [
+        960,
+        963,
+        2275
+      ]
+    },
+    {
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等差數列",
+      "knowledgePoint": "一般項求法",
+      "questionIds": [
+        968,
+        972,
+        969
+      ]
+    },
+    {
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等差級數",
+      "knowledgePoint": "等差級數求和公式及其應用問題",
+      "questionIds": [
+        986,
+        2277,
+        988
+      ]
+    },
+    {
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等差數列",
+      "knowledgePoint": "等差中項",
+      "questionIds": [
+        978,
+        980,
+        2276
+      ]
+    },
+    {
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等比數列",
+      "knowledgePoint": "一般項計算",
+      "questionIds": [
+        996,
+        998,
+        2280
+      ]
+    },
+    {
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等比數列",
+      "knowledgePoint": "等比數列的首項與公比",
+      "questionIds": [
+        991,
+        989
+      ]
+    },
+    {
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等比數列",
+      "knowledgePoint": "一般項計算",
+      "questionIds": [
+        992,
+        993
+      ]
+    },
+    {
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等差數列",
+      "knowledgePoint": "數列的規律性",
+      "questionIds": [
+        947,
+        949
+      ]
+    },
+    {
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等差數列",
+      "knowledgePoint": "一般項求法",
+      "questionIds": [
+        966,
+        964,
+        965
+      ]
+    },
+    {
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等差數列",
+      "knowledgePoint": "等差數列首項與公差",
+      "questionIds": [
+        958,
+        956,
+        957
+      ]
+    },
+    {
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等差數列",
+      "knowledgePoint": "等差中項",
+      "questionIds": [
+        973,
+        975,
+        974
+      ]
+    },
+    {
+      "major": "數列與等差級數",
+      "chapterIncludes": "數列與等差級數 等差級數",
+      "knowledgePoint": "等差級數求和公式及其應用問題",
+      "questionIds": [
+        981,
+        982,
+        983
+      ]
+    },
+    {
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 乘法公式",
+      "knowledgePoint": "平方差公式",
+      "questionIds": [
+        757,
+        759,
+        755
+      ]
+    },
+    {
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 多項式的加法與減法",
+      "knowledgePoint": "多項式的定義與相關名詞",
+      "questionIds": [
+        767,
+        765,
+        764
+      ]
+    },
+    {
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 多項式的乘法與除法",
+      "knowledgePoint": "多項式的乘法運算",
+      "questionIds": [
+        791,
+        2264,
+        793
+      ]
+    },
+    {
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 多項式的乘法與除法",
+      "knowledgePoint": "被除式為二次之多項式的除法",
+      "questionIds": [
+        800,
+        801,
+        798
+      ]
+    },
+    {
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 乘法公式",
+      "knowledgePoint": "和的平方公式",
+      "questionIds": [
+        742,
+        743,
+        740
+      ]
+    },
+    {
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 乘法公式",
+      "knowledgePoint": "差的平方公式",
+      "questionIds": [
+        750,
+        2261,
+        748
+      ]
+    },
+    {
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 多項式的加法與減法",
+      "knowledgePoint": "多項式的加減直式與橫式運算",
+      "questionIds": [
+        781,
+        785,
+        784
+      ]
+    },
+    {
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 多項式的加法與減法",
+      "knowledgePoint": "降冪與升冪排列",
+      "questionIds": [
+        772,
+        777,
+        769
+      ]
+    },
+    {
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 多項式的乘法與除法",
+      "knowledgePoint": "被除式為二次之多項式的除法",
+      "questionIds": [
+        803,
+        799,
+        802
+      ]
+    },
+    {
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 乘法公式",
+      "knowledgePoint": "和的平方公式",
+      "questionIds": [
+        739,
+        744,
+        741
+      ]
+    },
+    {
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 乘法公式",
+      "knowledgePoint": "平方差公式",
+      "questionIds": [
+        756,
+        760,
+        758
+      ]
+    },
+    {
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 乘法公式",
+      "knowledgePoint": "差的平方公式",
+      "questionIds": [
+        749,
+        2262,
+        751
+      ]
+    },
+    {
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 多項式的加法與減法",
+      "knowledgePoint": "多項式的定義與相關名詞",
+      "questionIds": [
+        2263,
+        766,
+        768
+      ]
+    },
+    {
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 多項式的乘法與除法",
+      "knowledgePoint": "多項式的乘法運算",
+      "questionIds": [
+        792,
+        787,
+        789
+      ]
+    },
+    {
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 多項式的乘法與除法",
+      "knowledgePoint": "被除式為二次之多項式的除法",
+      "questionIds": [
+        797,
+        795
+      ]
+    },
+    {
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 乘法公式",
+      "knowledgePoint": "差的平方公式",
+      "questionIds": [
+        745,
+        746
+      ]
+    },
+    {
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 多項式的加法與減法",
+      "knowledgePoint": "多項式的定義與相關名詞",
+      "questionIds": [
+        763,
+        761,
+        762
+      ]
+    },
+    {
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 乘法公式",
+      "knowledgePoint": "平方差公式",
+      "questionIds": [
+        754,
+        753,
+        752
+      ]
+    },
+    {
+      "major": "乘法公式與多項式",
+      "chapterIncludes": "乘法公式與多項式 乘法公式",
+      "knowledgePoint": "和的平方公式",
+      "questionIds": [
+        738,
+        737,
+        736
+      ]
+    },
+    {
+      "major": "平方根與畢氏定理",
+      "chapterIncludes": "平方根與畢氏定理 根式的運算",
+      "knowledgePoint": "根式的化簡",
+      "questionIds": [
+        2267,
+        832,
+        835
+      ]
+    },
+    {
+      "major": "平方根與畢氏定理",
+      "chapterIncludes": "平方根與畢氏定理 平方根與近似值",
+      "knowledgePoint": "平方根的意義",
+      "questionIds": [
+        808,
+        810,
+        807
+      ]
+    },
+    {
+      "major": "平方根與畢氏定理",
+      "chapterIncludes": "平方根與畢氏定理 平方根與近似值",
+      "knowledgePoint": "十分逼近法",
+      "questionIds": [
+        815,
+        817,
+        819
+      ]
+    },
+    {
+      "major": "平方根與畢氏定理",
+      "chapterIncludes": "平方根與畢氏定理 畢氏定理",
+      "knowledgePoint": "商高定理（勾股定理）的意義",
+      "questionIds": [
+        849,
+        847,
+        848
+      ]
+    },
+    {
+      "major": "平方根與畢氏定理",
+      "chapterIncludes": "平方根與畢氏定理 根式的運算",
+      "knowledgePoint": "根式的四則運算",
+      "questionIds": [
+        2269,
+        839,
+        840
+      ]
+    },
+    {
+      "major": "平方根與畢氏定理",
+      "chapterIncludes": "平方根與畢氏定理 平方根與近似值",
+      "knowledgePoint": "利用計算機求近似值",
+      "questionIds": [
+        826,
+        828,
+        827
+      ]
+    },
+    {
+      "major": "平方根與畢氏定理",
+      "chapterIncludes": "平方根與畢氏定理 畢氏定理",
+      "knowledgePoint": "直角三角形邊長計算與幾何問題應用",
+      "questionIds": [
+        855,
+        853,
+        854
+      ]
+    },
+    {
+      "major": "平方根與畢氏定理",
+      "chapterIncludes": "平方根與畢氏定理 平方根與近似值",
+      "knowledgePoint": "平方根的意義",
+      "questionIds": [
+        811,
+        2265,
+        809
+      ]
+    },
+    {
+      "major": "平方根與畢氏定理",
+      "chapterIncludes": "平方根與畢氏定理 平方根與近似值",
+      "knowledgePoint": "利用計算機求近似值",
+      "questionIds": [
+        824,
+        823,
+        825
+      ]
+    },
+    {
+      "major": "平方根與畢氏定理",
+      "chapterIncludes": "平方根與畢氏定理 根式的運算",
+      "knowledgePoint": "根式的四則運算",
+      "questionIds": [
+        842,
+        836
+      ]
+    },
+    {
+      "major": "平方根與畢氏定理",
+      "chapterIncludes": "平方根與畢氏定理 平方根與近似值",
+      "knowledgePoint": "十分逼近法",
+      "questionIds": [
+        816,
+        818,
+        820
+      ]
+    },
+    {
+      "major": "平方根與畢氏定理",
+      "chapterIncludes": "平方根與畢氏定理 畢氏定理",
+      "knowledgePoint": "商高定理（勾股定理）的意義",
+      "questionIds": [
+        850,
+        852,
+        844
+      ]
+    },
+    {
+      "major": "平方根與畢氏定理",
+      "chapterIncludes": "平方根與畢氏定理 根式的運算",
+      "knowledgePoint": "根式的化簡",
+      "questionIds": [
+        829,
+        831
+      ]
+    },
+    {
+      "major": "平方根與畢氏定理",
+      "chapterIncludes": "平方根與畢氏定理 平方根與近似值",
+      "knowledgePoint": "平方根的意義",
+      "questionIds": [
+        805,
+        804
+      ]
+    },
+    {
+      "major": "平方根與畢氏定理",
+      "chapterIncludes": "平方根與畢氏定理 平方根與近似值",
+      "knowledgePoint": "十分逼近法",
+      "questionIds": [
+        812,
+        814,
+        813
+      ]
+    },
+    {
+      "major": "平方根與畢氏定理",
+      "chapterIncludes": "平方根與畢氏定理 平方根與近似值",
+      "knowledgePoint": "利用計算機求近似值",
+      "questionIds": [
+        822,
+        821,
+        2266
+      ]
+    },
+    {
+      "major": "函數及其圖形",
+      "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+      "knowledgePoint": "函數值",
+      "questionIds": [
+        1005,
+        1007,
+        1009
+      ]
+    },
+    {
+      "major": "函數及其圖形",
+      "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+      "knowledgePoint": "函數的對應關係",
+      "questionIds": [
+        2282,
+        2284,
+        2285
+      ]
+    },
+    {
+      "major": "函數及其圖形",
+      "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+      "knowledgePoint": "常數函數",
+      "questionIds": [
+        1014,
+        1016,
+        2287
+      ]
+    },
+    {
+      "major": "函數及其圖形",
+      "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+      "knowledgePoint": "一次函數（線型函數）及其圖形",
+      "questionIds": [
+        1022,
+        1024,
+        1025
+      ]
+    },
+    {
+      "major": "函數及其圖形",
+      "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+      "knowledgePoint": "函數值",
+      "questionIds": [
+        1006,
+        1010,
+        1008
+      ]
+    },
+    {
+      "major": "函數及其圖形",
+      "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+      "knowledgePoint": "函數的對應關係",
+      "questionIds": [
+        2283,
+        2281,
+        2286
+      ]
+    },
+    {
+      "major": "函數及其圖形",
+      "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+      "knowledgePoint": "常數函數",
+      "questionIds": [
+        1015,
+        1017,
+        1018
+      ]
+    },
+    {
+      "major": "函數及其圖形",
+      "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+      "knowledgePoint": "一次函數（線型函數）及其圖形",
+      "questionIds": [
+        1027,
+        1023,
+        1019
+      ]
+    },
+    {
+      "major": "函數及其圖形",
+      "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+      "knowledgePoint": "一次函數（線型函數）及其圖形",
+      "questionIds": [
+        1021,
+        1020
+      ]
+    },
+    {
+      "major": "函數及其圖形",
+      "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+      "knowledgePoint": "函數值",
+      "questionIds": [
+        1003,
+        1004,
+        1002
+      ]
+    },
+    {
+      "major": "函數及其圖形",
+      "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+      "knowledgePoint": "常數函數",
+      "questionIds": [
+        1013,
+        1011,
+        1012
+      ]
+    },
+    {
+      "major": "函數及其圖形",
+      "chapterIncludes": "函數及其圖形 一次函數及函數圖形與應用",
+      "knowledgePoint": "函數的對應關係",
+      "questionIds": [
+        1000,
+        999,
+        1001
+      ]
+    }
+  ]
+}

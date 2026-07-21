@@ -1,0 +1,2365 @@
+{
+  "id": "g7h2-galileo",
+  "grade": 7,
+  "half": 2,
+  "gradeLabel": "七下",
+  "mathematician": "伽利略",
+  "mathematicianSpeaker": "Mathematician",
+  "episode": "黃銅刻線的審判",
+  "setting": "帕多瓦住處工坊、威尼斯軍械庫與潟湖砲台",
+  "era": "1597–1606 年，伽利略教授並改良幾何與軍用比例規期間",
+  "acts": [
+    "沒有刻度的尺臂",
+    "火藥與比例線",
+    "仿製品的偏角",
+    "公開質疑",
+    "潟湖終測"
+  ],
+  "insights": [
+    "同一組比例關係能藉由尺臂張角保存，快速換算不同規格。",
+    "儀器的力量不是代替思考，而是把可靠關係保存成可重複操作。"
+  ],
+  "props": [
+    "黃銅比例規",
+    "活動轉軸",
+    "炮彈樣品",
+    "火藥量杯",
+    "砲台坐標圖"
+  ],
+  "endingSummary": "比例規成為伽利略教學與收入的重要來源，他於 1606 年出版操作說明；這項工作建立在當時持續發展的比例計算傳統上。",
+  "legendNote": "不可宣稱伽利略憑空發明所有比例計算器具；同時代已有相關儀器，他的重要貢獻是改良、系統化與教學應用。",
+  "objectives": [
+    "完成可供實際操作的比例規刻度",
+    "以方程、比例與幾何驗證各種換算",
+    "整理測試資料並訂出安全誤差界線",
+    "在公開質疑與限時測試中證明儀器可靠"
+  ],
+  "beats": [
+    {
+      "scene": "黃銅匠把兩條未刻度尺臂放上工坊桌，並要求日落前結清工錢。",
+      "problem": "材料費、加工費與已付訂金只剩一個未知數，玩家必須列一元一次方程式算出尾款，否則黃銅匠不肯留下尺臂。",
+      "major": "一元一次方程式"
+    },
+    {
+      "scene": "第一批炮彈直徑不同，軍械官卻要求共用一條重量刻線。",
+      "problem": "玩家要依直徑與標準重量的比例換算各規格位置；比例一旦刻錯，砲手會按錯誤重量裝填火藥。",
+      "major": "比例"
+    },
+    {
+      "scene": "轉軸附近只剩狹窄區域能刻字，刻線太密會被磨掉。",
+      "problem": "玩家必須建立間距的上下限不等式，找出能容納全部刻度又可辨讀的尺臂長度。",
+      "major": "一元一次不等式"
+    },
+    {
+      "scene": "比例規張開後形成兩個相接三角形，學徒卻把對應邊標反。",
+      "problem": "玩家要辨認角、線段與對稱關係，把標記移回正確位置，否則兩側刻度會朝相反方向增長。",
+      "major": "生活中的幾何圖形"
+    },
+    {
+      "scene": "工坊帳冊被油漬遮去一筆單價，總支出卻必須在送貨前核對。",
+      "problem": "玩家須由購買數量、其餘費用與總額解出未知單價，避免伽利略因帳目不清失去下一批黃銅。",
+      "major": "一元一次方程式"
+    },
+    {
+      "scene": "軍械庫要求將一小杯標準火藥配方放大到不同炮彈規格。",
+      "problem": "玩家要按固定比例調整各成分，任何一項錯配都會讓下一輪實射不是過弱就是超出安全量。",
+      "major": "比例"
+    },
+    {
+      "scene": "軍械官限制尺臂重量，黃銅匠則警告厚度不足會彎折。",
+      "problem": "玩家必須解出同時高於強度下限、低於重量上限的厚度範圍，才能讓製作繼續。",
+      "major": "一元一次不等式"
+    },
+    {
+      "scene": "潟湖砲台平面圖攤開，炮位、城牆與靶船都以格線標示。",
+      "problem": "玩家要把三個位置寫成正確坐標並判讀相對方向，否則測試砲口會朝向封鎖水道。",
+      "major": "平面直角坐標系"
+    },
+    {
+      "scene": "第一輪射程數據貼滿牆面，其中一組突然遠離其他結果。",
+      "problem": "玩家必須整理統計圖並比較資料分布，判斷極端值來自儀器、裝填還是陣風，否則軍械官將中止測試。",
+      "major": "統計圖表與資料分析"
+    },
+    {
+      "scene": "市面仿製品的細刻度與原件無法對齊，對手趁機指控設計錯誤。",
+      "problem": "玩家要將尺臂分段數做因數分解並約分刻度比例，查明仿製者用了不能整分的格數。",
+      "major": "因數分解與分數運算"
+    },
+    {
+      "scene": "仿製比例規一張開就偏向左側，圓弧刻線也隨之錯位。",
+      "problem": "玩家必須從三角形、對稱軸與轉軸圓形位置判斷偏角來源，趕在公開演示前找出鬆動的軸釘。",
+      "major": "生活中的幾何圖形"
+    },
+    {
+      "scene": "終測前，軍械官臨時換成更大規格的炮彈。",
+      "problem": "玩家要沿同一比例線換算新刻度，不重做整支尺；若無法及時完成，伽利略將被視為只能應付預設題目。",
+      "major": "比例"
+    },
+    {
+      "scene": "第二輪數據仍有一次偏遠，圍觀者開始高喊儀器不可信。",
+      "problem": "玩家要把兩輪結果放進同一統計圖，利用趨勢與離群資料追查那次未鎖緊的轉軸。",
+      "major": "統計圖表與資料分析"
+    },
+    {
+      "scene": "對手要求伽利略明寫儀器在哪些條件下才有效。",
+      "problem": "玩家必須用一元一次不等式表示安全裝量與可讀刻度範圍；條件若含糊，現場任何成功都會被說成巧合。",
+      "major": "一元一次不等式"
+    },
+    {
+      "scene": "潮水推動靶船離開原位，終測只剩一次發射機會。",
+      "problem": "玩家要由新舊坐標算出位移，據此選用正確比例刻度；算錯方向就會讓唯一一發落入空水面。",
+      "major": "平面直角坐標系"
+    }
+  ],
+  "choices": [
+    {
+      "prompt": "第一條刻度要先服務哪種需求？",
+      "firstLabel": "先做炮彈換算",
+      "firstResult": "軍械官立即提供測試資源，但工坊必須承受更嚴格的安全限制。",
+      "secondLabel": "先做通用比例骨架",
+      "secondResult": "進度稍慢，卻能直接把同一套關係延伸到炮彈刻度。"
+    },
+    {
+      "prompt": "火藥比例已算好，要直接使用最大裝量嗎？",
+      "firstLabel": "從中等裝量開始",
+      "firstResult": "首輪射程較短，但完整資料讓安全上限得以可靠推算。",
+      "secondLabel": "分成兩級同步測試",
+      "secondResult": "材料消耗較多，玩家卻迅速看出比例刻線是否一致。"
+    },
+    {
+      "prompt": "仿製品失準，先檢查刻度還是轉軸？",
+      "firstLabel": "重算刻度分段",
+      "firstResult": "玩家先查出仿製者分格錯誤，接著由殘餘偏差找到鬆軸。",
+      "secondLabel": "拆開活動轉軸",
+      "secondResult": "鬆動立刻暴露，之後的分數檢查又證明仿製刻線同樣有錯。"
+    },
+    {
+      "prompt": "公開數據裡有離群值，要如何回應？",
+      "firstLabel": "連同條件完整公布",
+      "firstResult": "質疑聲暫時變大，但轉軸未鎖緊的因果紀錄使測試更可信。",
+      "secondLabel": "當場再做一次對照",
+      "secondResult": "眾人承受額外壓力，新的對照結果卻讓離群原因無法再被否認。"
+    },
+    {
+      "prompt": "靶船偏移後，只夠選一次設定。",
+      "firstLabel": "先重標靶船坐標",
+      "firstResult": "玩家多花片刻確認方向，再依比例規完成精準設定。",
+      "secondLabel": "由原坐標直接算位移",
+      "secondResult": "計算更快但不能出錯，伽利略依玩家結果一次鎖定新刻度。"
+    }
+  ],
+  "version": 1,
+  "title": "七下 × 伽利略",
+  "language": "zh-TW",
+  "companions": [
+    "NumNum",
+    "Numi"
+  ],
+  "journalTitle": "黃銅刻線的審判",
+  "notes": [
+    "玩家本人與 NumNum、Numi 一起冒險。",
+    "題目只從所選年段 questionBank 抽取。",
+    "題面依當下研究場景整段改寫；數字、算式、答案不變。",
+    "答錯保留同一題並給提示，直到答對。",
+    "Eureka 僅在玩家與數學家共同領悟關鍵知識時觸發。",
+    "不可宣稱伽利略憑空發明所有比例計算器具；同時代已有相關儀器，他的重要貢獻是改良、系統化與教學應用。"
+  ],
+  "detourTemplates": [
+    [
+      {
+        "speaker": "NumNum",
+        "text": "條件還在。慢一點，沿同一條路再走一次。"
+      }
+    ],
+    [
+      {
+        "speaker": "Numi",
+        "text": "別換題。眼前這件事還等著我們把它算開。"
+      }
+    ],
+    [
+      {
+        "speaker": "Mathematician",
+        "text": "我也沒放棄。重看剛才那一步。"
+      }
+    ]
+  ],
+  "correctFeedback": [
+    [
+      {
+        "speaker": "narrator",
+        "text": "數字對上，眼前的阻礙鬆開了一格。"
+      }
+    ]
+  ],
+  "nodes": [
+    {
+      "id": "opening",
+      "type": "narrative",
+      "objective": "完成可供實際操作的比例規刻度",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "數學世界的藍紫色安靜得像一張沒有折痕的紙。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那邊有一點光——很細，還在抖。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "不是 Eureka。只是有人卡在一個還沒想通的問題前。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "你們追著微光穿過薄紙般的界面。1597–1606 年，伽利略教授並改良幾何與軍用比例規期間，帕多瓦住處工坊、威尼斯軍械庫與潟湖砲台。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "伽利略站在黃銅比例規旁，手裡那一步已經停了很久。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "你們是誰？算了——如果看得懂數字，就過來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}也在！我們不是來旁觀的。"
+        }
+      ],
+      "next": "q01"
+    },
+    {
+      "id": "q01",
+      "type": "quiz",
+      "anchor": 1,
+      "scene": "黃銅匠把兩條未刻度尺臂放上工坊桌，並要求日落前結清工錢。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "黃銅匠把兩條未刻度尺臂放上工坊桌，並要求日落前結清工錢。。材料費、加工費與已付訂金只剩一個未知數，玩家必須列一元一次方程式算出尾款，否則黃銅匠不肯留下尺臂。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把黃銅比例規裡未知的量列成條件，解出唯一可行的配置。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "一元一次方程式",
+        "chapterIncludes": "一元一次方程式 一元一次方程式的列式與求解",
+        "knowledgePoint": "等量公理",
+        "questionIds": [
+          521,
+          523,
+          519
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-galileo-scene-01",
+        "setting": "帕多瓦住處工坊、威尼斯軍械庫與潟湖砲台",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "黃銅比例規",
+          "活動轉軸",
+          "炮彈樣品"
+        ],
+        "sceneNeed": "材料費、加工費與已付訂金只剩一個未知數，玩家必須列一元一次方程式算出尾款，否則黃銅匠不肯留下尺臂。",
+        "rewrites": {
+          "519": {
+            "question": "現場只剩黃銅比例規上的這份計算還沒核對：根據等量公理，將方程式 \\frac{x-2}{3} = 4 進行化簡，下列哪一個步驟是正確的？",
+            "options": {
+              "A": "等號兩邊同乘以 3，得到 x - 2 = 12",
+              "B": "等號兩邊同乘以 3，得到 x - 2 = 4",
+              "C": "等號兩邊同加上 2，得到 \\\\frac{x}{3} = 6",
+              "D": "等號左邊減去 2，得到 \\\\frac{x}{3} = 2"
+            },
+            "preserveImage": false
+          },
+          "521": {
+            "question": "要讓黃銅匠把兩條未刻度尺臂放上工坊桌，並要求日落前結清工錢。繼續，你得先解開黃銅比例規旁這一筆：解方程式 \\frac{2x-1}{3} - \\frac{x+5}{4} = 1，求出 x 的值。",
+            "preserveImage": false
+          },
+          "523": {
+            "question": "伽利略把黃銅匠把兩條未刻度尺臂放上工坊桌，並要求日落前結清工錢。剛測到的數字推到你面前：已知方程式 2x - 3 = 7 與 ax + 4 = 19 有相同的解，則 a 的值為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "黃銅比例規上的數字對上了。沒有刻度的尺臂終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_1",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "第一條刻度要先服務哪種需求？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查黃銅比例規。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選活動轉軸。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，你選先看哪一個；我們讓觀測回答。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "先做炮彈換算",
+          "next": "choice_1_measure"
+        },
+        {
+          "id": "observe",
+          "label": "先做通用比例骨架",
+          "next": "choice_1_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_1_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "軍械官立即提供測試資源，但工坊必須承受更嚴格的安全限制。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "choice_1_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "進度稍慢，卻能直接把同一套關係延伸到炮彈刻度。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "q02",
+      "type": "quiz",
+      "anchor": 2,
+      "scene": "第一批炮彈直徑不同，軍械官卻要求共用一條重量刻線。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "第一批炮彈直徑不同，軍械官卻要求共用一條重量刻線。。玩家要依直徑與標準重量的比例換算各規格位置；比例一旦刻錯，砲手會按錯誤重量裝填火藥。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把活動轉軸上的條件逐項核對。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_1": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_1": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "比例",
+        "chapterIncludes": "比例 正比與反比",
+        "knowledgePoint": "反比關係的意義與判別",
+        "questionIds": [
+          659,
+          660,
+          656
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-galileo-scene-02",
+        "setting": "帕多瓦住處工坊、威尼斯軍械庫與潟湖砲台",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "活動轉軸",
+          "黃銅比例規",
+          "炮彈樣品"
+        ],
+        "sceneNeed": "玩家要依直徑與標準重量的比例換算各規格位置；比例一旦刻錯，砲手會按錯誤重量裝填火藥。",
+        "rewrites": {
+          "656": {
+            "question": "要讓第一批炮彈直徑不同，軍械官卻要求共用一條重量刻線。繼續，你得先解開活動轉軸旁這一筆：判斷下列四組 x 與 y 的對應關係，哪一組表示 y 與 x 成反比？",
+            "options": {
+              "A": "當 x 的值增加， y 的值跟著減少，且 x 與 y 的和固定為 10。",
+              "B": "當 x 的值增加， y 的值跟著增加，且 x 與 y 的差固定為 5。",
+              "C": "當 x 的值增加， y 的值跟著增加，且 y 與 x 的比值固定為 3。",
+              "D": "當 x 的值增加， y 的值跟著減少，且 x 與 y 的乘積固定為 12。"
+            },
+            "preserveImage": false
+          },
+          "659": {
+            "question": "現場只剩活動轉軸上的這份計算還沒核對：已知 y 與 x 成反比，且 z 與 y 成正比。當 x = 2 時， y = 6 且 z = 18 。若 x = 4 ，則 z = _____。",
+            "preserveImage": false
+          },
+          "660": {
+            "question": "第一批炮彈直徑不同，軍械官卻要求共用一條重量刻線。。伽利略在活動轉軸上留下這組條件：有一項鋪路工程，若由 12 名工人每天工作，需 15 天才能完工。假設每名工人的工作效率相同，且工筆數量與完工天數成反比。工程開工前，因為天氣原因要求必須提前至 9 天完工。請問需要再「增加」多少名工人才能如期完工？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "活動轉軸上的數字對上了。沒有刻度的尺臂終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q03",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q03",
+      "type": "quiz",
+      "anchor": 3,
+      "scene": "轉軸附近只剩狹窄區域能刻字，刻線太密會被磨掉。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "轉軸附近只剩狹窄區域能刻字，刻線太密會被磨掉。。玩家必須建立間距的上下限不等式，找出能容納全部刻度又可辨讀的尺臂長度。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "替炮彈樣品找出不能越過的上下界。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "一元一次不等式",
+        "chapterIncludes": "一元一次不等式 一元一次不等式及其解",
+        "knowledgePoint": "不等號的意義",
+        "questionIds": [
+          664,
+          668,
+          667
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-galileo-scene-03",
+        "setting": "帕多瓦住處工坊、威尼斯軍械庫與潟湖砲台",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "炮彈樣品",
+          "黃銅比例規",
+          "活動轉軸"
+        ],
+        "sceneNeed": "玩家必須建立間距的上下限不等式，找出能容納全部刻度又可辨讀的尺臂長度。",
+        "rewrites": {
+          "664": {
+            "question": "現場只剩炮彈樣品上的這份計算還沒核對：下列哪一個不等式可以表示「 x 不大於 5 」？",
+            "options": {
+              "A": "x > 5",
+              "B": "x \\ge 5",
+              "C": "x",
+              "D": "x \\le 5"
+            },
+            "preserveImage": false
+          },
+          "667": {
+            "question": "炮彈樣品的紀錄停在這一行；下一步正等著它：你在練習一元一次不等式。你需要找出一個整數 x ，滿足條件：「 x 的 3 倍減 5，不小於 x 的 2 倍加 1」。請問滿足此條件的最小整數 x 為多少？",
+            "preserveImage": false
+          },
+          "668": {
+            "question": "伽利略把轉軸附近只剩狹窄區域能刻字，刻線太密會被磨掉。剛測到的數字推到你面前：已知數線上有一點 P 代表的數為 x 。若 x 滿足兩個條件：\n(甲) x 不小於 -3\n(乙) P 點到原點的距離不到 5\n請問滿足上述條件的所有整數 x 共有多少個？",
+            "options": {
+              "A": "7",
+              "B": "8",
+              "C": "9",
+              "D": "10"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "炮彈樣品上的數字對上了。沒有刻度的尺臂終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_2",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "沒有刻度的尺臂告一段落，火藥量杯卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是火藥與比例線；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q04"
+    },
+    {
+      "id": "q04",
+      "type": "quiz",
+      "anchor": 4,
+      "scene": "比例規張開後形成兩個相接三角形，學徒卻把對應邊標反。",
+      "objective": "以方程、比例與幾何驗證各種換算",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "比例規張開後形成兩個相接三角形，學徒卻把對應邊標反。。玩家要辨認角、線段與對稱關係，把標記移回正確位置，否則兩側刻度會朝相反方向增長。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把火藥與比例線幾何圖上的條件逐項核對。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "生活中的幾何圖形",
+        "chapterIncludes": "生活中的幾何圖形 幾何圖形、線對稱與三視圖",
+        "knowledgePoint": "線對稱圖形的性質",
+        "questionIds": [
+          721,
+          724,
+          723
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-galileo-scene-04",
+        "setting": "帕多瓦住處工坊、威尼斯軍械庫與潟湖砲台",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "火藥與比例線幾何圖",
+          "黃銅比例規",
+          "活動轉軸"
+        ],
+        "sceneNeed": "玩家要辨認角、線段與對稱關係，把標記移回正確位置，否則兩側刻度會朝相反方向增長。",
+        "rewrites": {
+          "721": {
+            "question": "要讓比例規張開後形成兩個相接三角形，學徒卻把對應邊標反。繼續，你得先解開火藥與比例線幾何圖旁這一筆：在英文字母中，許多大寫字母都可以視為線對稱圖形。請問下列哪一個大寫英文字母不具有線對稱性質？",
+            "options": {
+              "A": "A",
+              "B": "M",
+              "C": "H",
+              "D": "N"
+            },
+            "preserveImage": false
+          },
+          "723": {
+            "question": "伽利略把比例規張開後形成兩個相接三角形，學徒卻把對應邊標反。剛測到的數字推到你面前：你拿了一張正方形的色紙，先將色紙「由下往上」對摺一次，再「由左往右」對摺一次，形成一個較小的正方形。接著，你用打孔機在目前摺好的小正方形「正中央」打出一個圓形的洞。當你將這張色紙完全展開恢復成原來的大正方形後，色紙上總共會出現幾個圓形的洞？",
+            "options": {
+              "A": "1",
+              "B": "2",
+              "C": "4",
+              "D": "8"
+            },
+            "preserveImage": false
+          },
+          "724": {
+            "question": "現場只剩火藥與比例線幾何圖上的這份計算還沒核對：在坐標平面上，有一線對稱圖形，其對稱軸為水平線 y = 2 。若該圖形上有一點 A 的坐標為 (3, 5) ，且點 A 對於對稱軸 y = 2 的對稱點為 B ，求點 B 的 y 坐標為何？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "火藥與比例線幾何圖上的數字對上了。火藥與比例線終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_2",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "火藥比例已算好，要直接使用最大裝量嗎？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查炮彈樣品。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選火藥量杯。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，你選先看哪一個；我們讓觀測回答。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "從中等裝量開始",
+          "next": "choice_2_measure"
+        },
+        {
+          "id": "observe",
+          "label": "分成兩級同步測試",
+          "next": "choice_2_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_2_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "首輪射程較短，但完整資料讓安全上限得以可靠推算。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "choice_2_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "材料消耗較多，玩家卻迅速看出比例刻線是否一致。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "q05",
+      "type": "quiz",
+      "anchor": 5,
+      "scene": "工坊帳冊被油漬遮去一筆單價，總支出卻必須在送貨前核對。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "工坊帳冊被油漬遮去一筆單價，總支出卻必須在送貨前核對。。玩家須由購買數量、其餘費用與總額解出未知單價，避免伽利略因帳目不清失去下一批黃銅。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把砲台坐標圖裡未知的量列成條件，解出唯一可行的配置。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_2": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_2": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "一元一次方程式",
+        "chapterIncludes": "一元一次方程式 一元一次方程式的應用",
+        "knowledgePoint": "將生活情境轉化為一元一次方程式",
+        "questionIds": [
+          540,
+          537,
+          539
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-galileo-scene-05",
+        "setting": "帕多瓦住處工坊、威尼斯軍械庫與潟湖砲台",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "砲台坐標圖",
+          "黃銅比例規",
+          "活動轉軸"
+        ],
+        "sceneNeed": "玩家須由購買數量、其餘費用與總額解出未知單價，避免伽利略因帳目不清失去下一批黃銅。",
+        "rewrites": {
+          "537": {
+            "question": "砲台坐標圖的紀錄停在這一行；下一步正等著它：你問同行者今年幾歲，同行者說：「我的年齡與你的年齡相差 25 歲，且 5 年後，我的年齡剛好是你的 2 倍。」請問你今年幾歲？",
+            "preserveImage": false
+          },
+          "539": {
+            "question": "現場只剩砲台坐標圖上的這份計算還沒核對：你每天先騎測試車去快速通道站，再轉搭快速通道前往測點。已知騎測試車的平均時速為 12 里程格，快速通道的平均時速為 60 里程格。若從起點到現場的總路程為 24 里程格，且你每天前往測點所花的時間（不計等待時間）剛好是 0.6 小時，請問你從起點騎測試車到快速通道站的距離是多少里程格？",
+            "preserveImage": false
+          },
+          "540": {
+            "question": "工坊帳冊被油漬遮去一筆單價，總支出卻必須在送貨前核對。。伽利略在砲台坐標圖上留下這組條件：有一個二位數，其十位數字與個位數字的和為 11。若將其十位數字與個位數字對調，所得到的新數比原數大 27，則原數為 _____ 。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "砲台坐標圖上的數字對上了。火藥與比例線終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q06",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q06",
+      "type": "quiz",
+      "anchor": 6,
+      "scene": "軍械庫要求將一小杯標準火藥配方放大到不同炮彈規格。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "軍械庫要求將一小杯標準火藥配方放大到不同炮彈規格。。玩家要按固定比例調整各成分，任何一項錯配都會讓下一輪實射不是過弱就是超出安全量。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用比例把黃銅比例規的縮放與實際尺寸接起來。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "比例",
+        "chapterIncludes": "比例 比例式",
+        "knowledgePoint": "比例式的運算性質",
+        "questionIds": [
+          641,
+          643,
+          642
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-galileo-scene-06",
+        "setting": "帕多瓦住處工坊、威尼斯軍械庫與潟湖砲台",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "黃銅比例規",
+          "活動轉軸",
+          "炮彈樣品"
+        ],
+        "sceneNeed": "玩家要按固定比例調整各成分，任何一項錯配都會讓下一輪實射不是過弱就是超出安全量。",
+        "rewrites": {
+          "641": {
+            "question": "要讓軍械庫要求將一小杯標準火藥配方放大到不同炮彈規格。繼續，你得先解開黃銅比例規旁這一筆：已知 (3x-y)：(x+y) = 3：2 ，求 (2x-y)：(x+2y) 的比值。請以最簡分數表示。",
+            "preserveImage": false
+          },
+          "642": {
+            "question": "黃銅比例規的紀錄停在這一行；下一步正等著它：你在現場取用了相同單價的樣品與樣品，且結帳時兩種麵包的總花費比為 5：3 。已知你取用樣品花了 150 枚，請問你取用樣品花了多少枚？",
+            "preserveImage": false
+          },
+          "643": {
+            "question": "伽利略把軍械庫要求將一小杯標準火藥配方放大到不同炮彈規格。剛測到的數字推到你面前：已知 x 、 y 皆不為 0 ，且滿足比例式 3x：2y = 4：5 。若 x+y = 46 ，則 x-y 的值為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "黃銅比例規上的數字對上了。火藥與比例線終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q07",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q07",
+      "type": "quiz",
+      "anchor": 7,
+      "scene": "軍械官限制尺臂重量，黃銅匠則警告厚度不足會彎折。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "軍械官限制尺臂重量，黃銅匠則警告厚度不足會彎折。。玩家必須解出同時高於強度下限、低於重量上限的厚度範圍，才能讓製作繼續。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "替活動轉軸找出不能越過的上下界。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "一元一次不等式",
+        "chapterIncludes": "一元一次不等式 解一元一次不等式及其應用",
+        "knowledgePoint": "情境應用問題",
+        "questionIds": [
+          693,
+          692,
+          690
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-galileo-scene-07",
+        "setting": "帕多瓦住處工坊、威尼斯軍械庫與潟湖砲台",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "活動轉軸",
+          "黃銅比例規",
+          "炮彈樣品"
+        ],
+        "sceneNeed": "玩家必須解出同時高於強度下限、低於重量上限的厚度範圍，才能讓製作繼續。",
+        "rewrites": {
+          "690": {
+            "question": "軍械官限制尺臂重量，黃銅匠則警告厚度不足會彎折。。伽利略在活動轉軸上留下這組條件：你取用了一箱蘋果共有 x 顆，你吃了 3 顆後，剩下的蘋果數量「不到」 10 顆。下列哪一個不等式可以正確表示這個情境？",
+            "options": {
+              "A": "x - 3",
+              "B": "x - 3 \\le 10",
+              "C": "x - 3 > 10",
+              "D": "x - 3 \\ge 10"
+            },
+            "preserveImage": false
+          },
+          "692": {
+            "question": "活動轉軸的紀錄停在這一行；下一步正等著它：你想取用一輛售價 4000 枚的測試車，你目前已經存了 1200 枚。如果你接下來每週固定存下 250 枚，至少需要存滿 _____ 週，才能夠取用這輛測試車。",
+            "preserveImage": false
+          },
+          "693": {
+            "question": "伽利略把軍械官限制尺臂重量，黃銅匠則警告厚度不足會彎折。剛測到的數字推到你面前：已知一個長方形的長為 2x-3 小格，寬為 5 小格。若這個長方形的周長大於 20 小格且小於或等於 40 小格，請求出符合條件的整數 x 之「最大值」為何？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "活動轉軸上的數字對上了。仿製品的偏角終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_3",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_3",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "仿製品失準，先檢查刻度還是轉軸？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查砲台坐標圖。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選黃銅比例規。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，你選先看哪一個；我們讓觀測回答。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "重算刻度分段",
+          "next": "choice_3_measure"
+        },
+        {
+          "id": "observe",
+          "label": "拆開活動轉軸",
+          "next": "choice_3_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_3_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "玩家先查出仿製者分格錯誤，接著由殘餘偏差找到鬆軸。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "choice_3_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "鬆動立刻暴露，之後的分數檢查又證明仿製刻線同樣有錯。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "q08",
+      "type": "quiz",
+      "anchor": 8,
+      "scene": "潟湖砲台平面圖攤開，炮位、城牆與靶船都以格線標示。",
+      "objective": "整理測試資料並訂出安全誤差界線",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "潟湖砲台平面圖攤開，炮位、城牆與靶船都以格線標示。。玩家要把三個位置寫成正確坐標並判讀相對方向，否則測試砲口會朝向封鎖水道。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把仿製品的偏角幾何圖裡未知的量列成條件，解出唯一可行的配置。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_3": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_3": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "平面直角坐標系",
+        "chapterIncludes": "平面直角坐標系 二元一次方程式的圖形",
+        "knowledgePoint": "圖形交點與聯立方程式解的幾何意義",
+        "questionIds": [
+          617,
+          615,
+          613
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-galileo-scene-08",
+        "setting": "帕多瓦住處工坊、威尼斯軍械庫與潟湖砲台",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "仿製品的偏角幾何圖",
+          "黃銅比例規",
+          "活動轉軸"
+        ],
+        "sceneNeed": "玩家要把三個位置寫成正確坐標並判讀相對方向，否則測試砲口會朝向封鎖水道。",
+        "rewrites": {
+          "613": {
+            "question": "伽利略把潟湖砲台平面圖測點開，炮位、城牆與靶船都以格線標示。剛測到的數字推到你面前：在坐標平面上，直線 L_1 的方程式為 x+y=5 ，直線 L_2 的方程式為 x-y=1 。若 L_1 與 L_2 交於點 P ，求點 P 的坐標。",
+            "options": {
+              "A": "(3, 2)",
+              "B": "(2, 3)",
+              "C": "(4, 1)",
+              "D": "(-3, -2)"
+            },
+            "preserveImage": false
+          },
+          "615": {
+            "question": "潟湖砲台平面圖測點開，炮位、城牆與靶船都以格線標示。。伽利略在仿製品的偏角幾何圖上留下這組條件：坐標平面上，直線 L_1: 3x - y = 6 與直線 L_2: x + 2y = 9 相交於 A 點。若 L_1 交 x 軸於 B 點， L_2 交 x 軸於 C 點。求三角形 ABC 的面積為何？",
+            "preserveImage": false
+          },
+          "617": {
+            "question": "仿製品的偏角幾何圖的紀錄停在這一行；下一步正等著它：已知三直線 L_1: x + 2y = 5 ， L_2: 3x - y = 1 與 L_3: ax + y = 6 交於同一點。求常數 a 的值為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "仿製品的偏角幾何圖上的數字對上了。仿製品的偏角終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q09",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q09",
+      "type": "quiz",
+      "anchor": 9,
+      "scene": "第一輪射程數據貼滿牆面，其中一組突然遠離其他結果。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "第一輪射程數據貼滿牆面，其中一組突然遠離其他結果。。玩家必須整理統計圖並比較資料分布，判斷極端值來自儀器、裝填還是陣風，否則軍械官將中止測試。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把仿製品的偏角紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "統計圖表與資料分析",
+        "chapterIncludes": "統計圖表與資料分析 統計圖表與平均數、中位數、眾數",
+        "knowledgePoint": "平均數、中位數與眾數的計算與意義",
+        "questionIds": [
+          707,
+          709,
+          711
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-galileo-scene-09",
+        "setting": "帕多瓦住處工坊、威尼斯軍械庫與潟湖砲台",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "仿製品的偏角紀錄表",
+          "黃銅比例規",
+          "活動轉軸"
+        ],
+        "sceneNeed": "玩家必須整理統計圖並比較資料分布，判斷極端值來自儀器、裝填還是陣風，否則軍械官將中止測試。",
+        "rewrites": {
+          "707": {
+            "question": "仿製品的偏角紀錄表的紀錄停在這一行；下一步正等著它：仿製品的偏角紀錄表上的一組資料為 12、7、15、8、20、5、9。則這組資料的中位數為何？",
+            "options": {
+              "A": "8",
+              "B": "9",
+              "C": "11",
+              "D": "12"
+            },
+            "preserveImage": false
+          },
+          "709": {
+            "question": "現場只剩仿製品的偏角紀錄表上的這份計算還沒核對：已知有 5 筆資料分別為 4、7、 x 、10、12。若這 5 筆資料的平均數是 8，請計算這組資料的「中位數」為何？",
+            "preserveImage": false
+          },
+          "711": {
+            "question": "要讓第一輪射程數據貼滿牆面，其中一組突然遠離其你結果。繼續，你得先解開仿製品的偏角紀錄表旁這一筆：有 6 筆正整數資料，由小到大排列為 3, a, b, c, 10, 10 。已知這組資料的「唯一眾數」是 10，且中位數是 7。則這 6 筆資料的平均數最大可能為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "仿製品的偏角紀錄表上的數字對上了。仿製品的偏角終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_1",
+      "type": "eureka",
+      "eurekaId": "g7h2-galileo-insight-1",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "同一組比例關係能藉由尺臂張角保存，快速換算不同規格。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "transition_4"
+    },
+    {
+      "id": "transition_4",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "仿製品的偏角告一段落，黃銅比例規卻送來新的壞消息。原先穩定的讀數突然偏了一格；這不是能略過的小差。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是公開質疑；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q10"
+    },
+    {
+      "id": "q10",
+      "type": "quiz",
+      "anchor": 10,
+      "scene": "市面仿製品的細刻度與原件無法對齊，對手趁機指控設計錯誤。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "市面仿製品的細刻度與原件無法對齊，對手趁機指控設計錯誤。。玩家要將尺臂分段數做因數分解並約分刻度比例，查明仿製者用了不能整分的格數。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把砲台坐標圖上過大或過小的量縮成能核對的記號。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "因數分解與分數運算",
+        "chapterIncludes": "因數分解與分數運算 指數律",
+        "knowledgePoint": "同底數的指數乘除運算規律",
+        "questionIds": [
+          495,
+          497,
+          493
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-galileo-scene-10",
+        "setting": "帕多瓦住處工坊、威尼斯軍械庫與潟湖砲台",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "砲台坐標圖",
+          "黃銅比例規",
+          "活動轉軸"
+        ],
+        "sceneNeed": "玩家要將尺臂分段數做因數分解並約分刻度比例，查明仿製者用了不能整分的格數。",
+        "rewrites": {
+          "493": {
+            "question": "伽利略把市面仿製品的細刻度與原件無法對齊，對手趁機指控設計錯誤。剛測到的數字推到你面前：判斷下列關於同底數指數運算的敘述，何者正確？",
+            "options": {
+              "A": "5^3 \\times 5^4 = 5^{12}",
+              "B": "2^8 \\div 2^2 = 2^4",
+              "C": "(-3)^5 \\times (-3)^2 = (-3)^7",
+              "D": "7^5 \\div 7^5 = 0"
+            },
+            "preserveImage": false
+          },
+          "495": {
+            "question": "市面仿製品的細刻度與原件無法對齊，對手趁機指控設計錯誤。。伽利略在砲台坐標圖上留下這組條件：請計算出算式 3^8 \\times 3^4 \\div 3^{10} 的結果為多少？",
+            "preserveImage": false
+          },
+          "497": {
+            "question": "砲台坐標圖的紀錄停在這一行；下一步正等著它：若 8^2 \\times 2^5 \\div 4^3 = 2^{\\square} ，請問 \\square 應填入哪個數字？\n答：_____",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "砲台坐標圖上的數字對上了。公開質疑終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_4",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_4",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "公開數據裡有離群值，要如何回應？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查活動轉軸。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選炮彈樣品。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，你選先看哪一個；我們讓觀測回答。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "連同條件完整公布",
+          "next": "choice_4_measure"
+        },
+        {
+          "id": "observe",
+          "label": "當場再做一次對照",
+          "next": "choice_4_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_4_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "質疑聲暫時變大，但轉軸未鎖緊的因果紀錄使測試更可信。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "choice_4_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "眾人承受額外壓力，新的對照結果卻讓離群原因無法再被否認。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "q11",
+      "type": "quiz",
+      "anchor": 11,
+      "scene": "仿製比例規一張開就偏向左側，圓弧刻線也隨之錯位。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "仿製比例規一張開就偏向左側，圓弧刻線也隨之錯位。。玩家必須從三角形、對稱軸與轉軸圓形位置判斷偏角來源，趕在公開演示前找出鬆動的軸釘。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把公開質疑立體模型上的條件逐項核對。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_4": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_4": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "生活中的幾何圖形",
+        "chapterIncludes": "生活中的幾何圖形 幾何圖形、線對稱與三視圖",
+        "knowledgePoint": "立體圖形的三視圖",
+        "questionIds": [
+          731,
+          733,
+          735
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-galileo-scene-11",
+        "setting": "帕多瓦住處工坊、威尼斯軍械庫與潟湖砲台",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "公開質疑立體模型",
+          "黃銅比例規",
+          "活動轉軸"
+        ],
+        "sceneNeed": "玩家必須從三角形、對稱軸與轉軸圓形位置判斷偏角來源，趕在公開演示前找出鬆動的軸釘。",
+        "rewrites": {
+          "731": {
+            "question": "要讓仿製比例規一張開就偏向左側，圓弧刻線也隨之錯位。繼續，你得先解開公開質疑立體模型旁這一筆：一個立體圖形由多個大小相同的正方體積木在桌面上堆疊而成。已知我們從正上方看這個立體圖形（即上視圖），看到的是由 4 個小正方形組成的形狀。請問這個立體圖形的最底層（直接接觸桌面那層）有 _____ 個正方體積木？",
+            "preserveImage": false
+          },
+          "733": {
+            "question": "伽利略把仿製比例規一張開就偏向左側，圓弧刻線也隨之錯位。剛測到的數字推到你面前：某立體圖形由若干個相同的正方體積木堆疊而成，已知其上視圖為一個 2 \\times 2 的田字形（共 4 個小正方形），前視圖是一個長方形，由左至右共 2 直行，且最高皆為 3 個正方形（共 6 個小正方形）。請問這個立體圖形「最少」需要幾個正方體積木？",
+            "options": {
+              "A": "6",
+              "B": "8",
+              "C": "10",
+              "D": "12"
+            },
+            "preserveImage": false
+          },
+          "735": {
+            "question": "仿製比例規一張開就偏向左側，圓弧刻線也隨之錯位。。伽利略在公開質疑立體模型上留下這組條件：在桌面上使用大小相同的正方體積木堆疊成一個立體圖形。已知其上視圖是由 5 個小正方形排成一個「十」字形（即一個中心位置，以及其前後左右相鄰的四個位置）。\n前視圖是從正前方看，共看到 5 個正方形面，從左至右共 3 個直行，這三行對應的高度依序為 2、2、1 個正方形。\n右視圖是從正右方看，共看到 4 個正方形面，從前至後共 3 個直行，這三行對應的高度依序為 1、2、1 個正方形。\n請問這個立體圖形總共使用了幾個正方體積木？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "公開質疑立體模型上的數字對上了。公開質疑終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q12",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q12",
+      "type": "quiz",
+      "anchor": 12,
+      "scene": "終測前，軍械官臨時換成更大規格的炮彈。",
+      "objective": "在公開質疑與限時測試中證明儀器可靠",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "終測前，軍械官臨時換成更大規格的炮彈。。玩家要沿同一比例線換算新刻度，不重做整支尺；若無法及時完成，伽利略將被視為只能應付預設題目。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把活動轉軸上的條件逐項核對。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "比例",
+        "chapterIncludes": "比例 正比與反比",
+        "knowledgePoint": "正比關係的意義與判別",
+        "questionIds": [
+          651,
+          649,
+          648
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-galileo-scene-12",
+        "setting": "帕多瓦住處工坊、威尼斯軍械庫與潟湖砲台",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "活動轉軸",
+          "黃銅比例規",
+          "炮彈樣品"
+        ],
+        "sceneNeed": "玩家要沿同一比例線換算新刻度，不重做整支尺；若無法及時完成，伽利略將被視為只能應付預設題目。",
+        "rewrites": {
+          "648": {
+            "question": "伽利略把終測前，軍械官臨時換成更大規格的炮彈。剛測到的數字推到你面前：你在現場測點取用樣品，老闆標示著樣品的總價錢 y 枚與取用數量 x 顆成正比。若你取用 10 顆樣品需要 30 枚，則你取用 25 顆樣品需要交付 _____ 元。",
+            "preserveImage": false
+          },
+          "649": {
+            "question": "現場只剩活動轉軸上的這份計算還沒核對：已知 y 與 x 成正比，且當 x = -4 時， y = 10 。求當 y = -15 時， x 的值為多少？",
+            "preserveImage": false
+          },
+          "651": {
+            "question": "要讓終測前，軍械官臨時換成更大規格的炮彈。繼續，你得先解開活動轉軸旁這一筆：已知 (y-2) 與 (2x+1) 成正比。當 x=1 時， y=11 。求當 x=4 時， y 的值為多少？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "活動轉軸上的數字對上了。公開質疑終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_5",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "公開質疑告一段落，活動轉軸卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是潟湖終測；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q13"
+    },
+    {
+      "id": "q13",
+      "type": "quiz",
+      "anchor": 13,
+      "scene": "第二輪數據仍有一次偏遠，圍觀者開始高喊儀器不可信。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "第二輪數據仍有一次偏遠，圍觀者開始高喊儀器不可信。。玩家要把兩輪結果放進同一統計圖，利用趨勢與離群資料追查那次未鎖緊的轉軸。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把潟湖終測紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "統計圖表與資料分析",
+        "chapterIncludes": "統計圖表與資料分析 統計圖表與平均數、中位數、眾數",
+        "knowledgePoint": "直方圖、長條圖、折線圖、圓形圖的繪製與報讀",
+        "questionIds": [
+          697,
+          700,
+          699
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-galileo-scene-13",
+        "setting": "帕多瓦住處工坊、威尼斯軍械庫與潟湖砲台",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "潟湖終測紀錄表",
+          "黃銅比例規",
+          "活動轉軸"
+        ],
+        "sceneNeed": "玩家要把兩輪結果放進同一統計圖，利用趨勢與離群資料追查那次未鎖緊的轉軸。",
+        "rewrites": {
+          "697": {
+            "question": "潟湖終測紀錄表的紀錄停在這一行；下一步正等著它：下圖為觀測組 40 筆紀錄現場測量讀數的次數分配直方圖。根據圖中資訊，若將全班讀數由低至高排列，中位數會落在哪一組？該組的次數為 _____ 人。",
+            "preserveImage": true,
+            "imageAlt": "潟湖終測紀錄表的資料圖"
+          },
+          "699": {
+            "question": "現場只剩潟湖終測紀錄表上的這份計算還沒核對：你統計現場同行者最喜歡的運動項目，並繪製成圓形圖如附圖。已知全班共有 40 人，且每人只選擇一項最喜歡的運動。請問喜歡羽球的同行者共有多少人？",
+            "options": {
+              "A": "12 人",
+              "B": "16 人",
+              "C": "30 人",
+              "D": "108 人"
+            },
+            "preserveImage": true,
+            "imageAlt": "潟湖終測紀錄表的資料圖"
+          },
+          "700": {
+            "question": "第二輪數據仍有一次偏遠，圍觀者開始高喊儀器不可信。。伽利略在潟湖終測紀錄表上留下這組條件：你記錄了你家附近現場某知名樣品店一週（星期一到星期日）的每日賣出杯數，並繪製成折線圖如附圖。根據折線圖，該店這一週內，賣出杯數最多與最少的日子，相差了多少杯？",
+            "preserveImage": true,
+            "imageAlt": "潟湖終測紀錄表的資料圖"
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "潟湖終測紀錄表上的數字對上了。潟湖終測終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_5",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "靶船偏移後，只夠選一次設定。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查火藥量杯。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選砲台坐標圖。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，你選先看哪一個；我們讓觀測回答。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "先重標靶船坐標",
+          "next": "choice_5_measure"
+        },
+        {
+          "id": "observe",
+          "label": "由原坐標直接算位移",
+          "next": "choice_5_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_5_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "玩家多花片刻確認方向，再依比例規完成精準設定。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "choice_5_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "計算更快但不能出錯，伽利略依玩家結果一次鎖定新刻度。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "q14",
+      "type": "quiz",
+      "anchor": 14,
+      "scene": "對手要求伽利略明寫儀器在哪些條件下才有效。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "對手要求伽利略明寫儀器在哪些條件下才有效。。玩家必須用一元一次不等式表示安全裝量與可讀刻度範圍；條件若含糊，現場任何成功都會被說成巧合。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "替火藥量杯找出不能越過的上下界。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_5": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_5": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "一元一次不等式",
+        "chapterIncludes": "一元一次不等式 解一元一次不等式及其應用",
+        "knowledgePoint": "不等式的運算規則",
+        "questionIds": [
+          685,
+          682,
+          681
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-galileo-scene-14",
+        "setting": "帕多瓦住處工坊、威尼斯軍械庫與潟湖砲台",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "火藥量杯",
+          "黃銅比例規",
+          "活動轉軸"
+        ],
+        "sceneNeed": "玩家必須用一元一次不等式表示安全裝量與可讀刻度範圍；條件若含糊，現場任何成功都會被說成巧合。",
+        "rewrites": {
+          "681": {
+            "question": "要讓對手要求伽利略明寫儀器在哪些條件下才有效。繼續，你得先解開火藥量杯旁這一筆：求解一元一次不等式 -3x + 5 \\ge 14 ，下列何者為 x 的範圍？",
+            "options": {
+              "A": "x \\ge -3",
+              "B": "x \\le -3",
+              "C": "x \\ge 3",
+              "D": "x \\le 3"
+            },
+            "preserveImage": false
+          },
+          "682": {
+            "question": "火藥量杯的紀錄停在這一行；下一步正等著它：你帶了 200 枚去現場取用樣品，已知每杯樣品 45 枚，且現場不提供賒帳。請問你最多可以取用 _____ 杯樣品。",
+            "preserveImage": false
+          },
+          "685": {
+            "question": "對手要求伽利略明寫儀器在哪些條件下才有效。。伽利略在火藥量杯上留下這組條件：已知一元一次不等式 ax + 5 \\ge 2x - 3 化簡後的解為 x \\le 4 ，則常數 a 的值為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "火藥量杯上的數字對上了。潟湖終測終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_2",
+      "type": "eureka",
+      "eurekaId": "g7h2-galileo-insight-2",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "儀器的力量不是代替思考，而是把可靠關係保存成可重複操作。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "q15"
+    },
+    {
+      "id": "q15",
+      "type": "quiz",
+      "anchor": 15,
+      "scene": "潮水推動靶船離開原位，終測只剩一次發射機會。",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "潮水推動靶船離開原位，終測只剩一次發射機會。。玩家要由新舊坐標算出位移，據此選用正確比例刻度；算錯方向就會讓唯一一發落入空水面。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把潟湖終測坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。先別信我。量過、算過，再決定眼睛看見的是什麼。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "平面直角坐標系",
+        "chapterIncludes": "平面直角坐標系 二元一次方程式的圖形",
+        "knowledgePoint": "在坐標平面上描繪直線圖形",
+        "questionIds": [
+          607,
+          608,
+          604
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-galileo-scene-15",
+        "setting": "帕多瓦住處工坊、威尼斯軍械庫與潟湖砲台",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "伽利略"
+        ],
+        "props": [
+          "潟湖終測坐標圖",
+          "黃銅比例規",
+          "活動轉軸"
+        ],
+        "sceneNeed": "玩家要由新舊坐標算出位移，據此選用正確比例刻度；算錯方向就會讓唯一一發落入空水面。",
+        "rewrites": {
+          "604": {
+            "question": "現場只剩潟湖終測坐標圖上的這份計算還沒核對：在坐標平面上，二元一次方程式 y = -3 的圖形是下列哪一種？",
+            "options": {
+              "A": "與 x 軸平行的直線",
+              "B": "與 y 軸平行的直線",
+              "C": "通過原點的斜直線",
+              "D": "與兩坐標軸皆不平行的斜直線"
+            },
+            "preserveImage": false
+          },
+          "607": {
+            "question": "潟湖終測坐標圖的紀錄停在這一行；下一步正等著它：在坐標平面上，有一條直線方程式為 4x + 3y = 12 。求此直線圖形與 x 軸、 y 軸所圍成的三角形面積為多少？",
+            "preserveImage": false
+          },
+          "608": {
+            "question": "伽利略把潮水推動靶船離開原位，終測只剩一次發射機會。剛測到的數字推到你面前：已知直線 L 的方程式為 ax + by = c ，其中 a > 0 、 b 0 。請判斷這條直線 L 不會通過第 _____ 象限。（請填寫阿拉伯數字：1、2、3 或 4）",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "潟湖終測坐標圖上的數字對上了。潟湖終測終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "記下來。能重做的結果，才有資格走進論辯。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "ending_history",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "ending_history",
+      "type": "narrative",
+      "objective": "記住伽利略留下的答案",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "潟湖終測完成了。現場安靜下來，只有黃銅比例規還留著剛才的痕跡。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，今天不是你替我算完。是我們一起把它想通。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那道光退了……可是我還記得它的味道。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "因為答案不是光。答案會留在能被重做的步驟裡。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "——時間向前推去。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "比例規成為伽利略教學與收入的重要來源，他於 1606 年出版操作說明；這項工作建立在當時持續發展的比例計算傳統上。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "眼前的帕多瓦住處工坊、威尼斯軍械庫與潟湖砲台慢慢褪色。藍紫色的安靜重新包圍你們。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}，下次再有人快想通時，我們還會聽見。"
+        }
+      ],
+      "next": "ending_stats"
+    },
+    {
+      "id": "ending_stats",
+      "type": "ending",
+      "next": null,
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "【劇本結束】七下 × 伽利略"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "這趟路的每一次重算，數字都記得。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "下次見，{{playerName}}！"
+        }
+      ]
+    }
+  ]
+}

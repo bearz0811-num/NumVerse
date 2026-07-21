@@ -1,0 +1,2387 @@
+{
+  "id": "g9h1-turing",
+  "grade": 9,
+  "half": 1,
+  "gradeLabel": "九上",
+  "mathematician": "艾倫・圖靈",
+  "mathematicianSpeaker": "Mathematician",
+  "episode": "不確定中的協作",
+  "setting": "布萊切利園 Hut 8 的分析室、排程室與跨組會議桌",
+  "era": "1939 至 1942 年",
+  "acts": [
+    "把混雜紀錄分送各組",
+    "以機率排序抽象假設",
+    "安排人工與機器複核",
+    "調整有限資源與門檻",
+    "建立能持續修正的流程"
+  ],
+  "insights": [
+    "效率不是跳過驗證，而是讓驗證出現在最有價值的位置",
+    "不確定不代表任意，機率與可追溯流程能讓決策持續修正"
+  ],
+  "props": [
+    "匿名候選表",
+    "圓形排程盤",
+    "機率記錄板",
+    "跨組流程圖",
+    "複核報告"
+  ],
+  "endingSummary": "圖靈在戰後持續研究電腦、人工智慧與形態發生，1954 年離世；後世才逐步還他應有的名字。",
+  "legendNote": "本冊只呈現布萊切利園的組織決策、資源調度與抽象數學推理；不重建可操作的密碼、攔截或攻擊流程。戰時成果屬大型跨專業團隊，並非圖靈一人完成。",
+  "objectives": [
+    "在資訊不完整時用機率排序抽象假設",
+    "建立人工分析、機器檢查與人工複核的組織流程",
+    "用相似、函數與圓形排程圖配置有限資源",
+    "讓每項團隊決策都可追溯、可複核、可修正"
+  ],
+  "beats": [
+    {
+      "scene": "封閉園區的比例地圖",
+      "problem": "新進紀錄被送錯小屋，玩家要依相似圖與實際距離重建安全的內部分流路線。",
+      "major": "比例線段與相似形"
+    },
+    {
+      "scene": "來源不一的匿名報表",
+      "problem": "各組採樣基準不同，圖靈要求先統一統計尺度，否則任何比較都可能誤導排程。",
+      "major": "統計與機率"
+    },
+    {
+      "scene": "假設堆積到桌緣",
+      "problem": "候選量超過團隊負荷，玩家要依抽象證據的條件機率排序，而不是憑直覺選擇。",
+      "major": "統計與機率"
+    },
+    {
+      "scene": "投入愈多卻開始塞車",
+      "problem": "人力投入與等待時間呈二次函數變化，必須找出再加人反而拖慢流程的轉折點。",
+      "major": "二次函數"
+    },
+    {
+      "scene": "只剩一圈的排程盤",
+      "problem": "多組共享有限時段，玩家要按圓心角切分排程，並保留突發複核空間。",
+      "major": "圓的性質"
+    },
+    {
+      "scene": "縮小但不失真的流程圖",
+      "problem": "跨組會議桌放不下完整圖稿，必須用相似比例縮放，同時保住每個決策節點。",
+      "major": "比例線段與相似形"
+    },
+    {
+      "scene": "低機率不是零",
+      "problem": "團隊想直接刪去一組低機率假設，玩家要計算補事件，證明仍需留下最低限度複核。",
+      "major": "統計與機率"
+    },
+    {
+      "scene": "人工判斷與重複檢查的交界",
+      "problem": "流程在交接處反覆卡住，必須以二次函數比較不同分工下的總等待成本。",
+      "major": "二次函數"
+    },
+    {
+      "scene": "速度不再以省略驗證換取",
+      "problem": "玩家與圖靈重排流程，讓機器處理重複規則、團隊保留脈絡判斷，每個結果仍須通過複核。",
+      "major": "比例線段與相似形"
+    },
+    {
+      "scene": "誤報塞滿回報箱",
+      "problem": "門檻過低造成誤報激增，玩家要比較樣本統計，在漏判與誤判間找出可追蹤平衡。",
+      "major": "統計與機率"
+    },
+    {
+      "scene": "跨組人力突然減半",
+      "problem": "夜班人手不足，必須用比例線段重新分配工作量，又不能讓任一複核鏈斷裂。",
+      "major": "比例線段與相似形"
+    },
+    {
+      "scene": "第二輪複核的門檻曲線",
+      "problem": "等待成本逼近上限，圖靈要從二次函數圖找出啟動額外複核最合理的區間。",
+      "major": "二次函數"
+    },
+    {
+      "scene": "環狀回報圖上的缺角",
+      "problem": "一個時段的紀錄缺失，玩家要用弧與圓周角關係還原排程位置，而非猜測內容。",
+      "major": "圓的性質"
+    },
+    {
+      "scene": "決策可以在新證據下改變",
+      "problem": "新報表推翻原排序，玩家與圖靈共同依統計證據修正決策，並完整保留修改理由。",
+      "major": "二次函數"
+    },
+    {
+      "scene": "跨越五個小組的證據鏈",
+      "problem": "期限前只剩一次總核對，玩家要用相似流程圖確認每項判斷都有來源、複核與負責小組。",
+      "major": "比例線段與相似形"
+    }
+  ],
+  "choices": [
+    {
+      "prompt": "候選太多，先檢查哪一批？",
+      "firstLabel": "先查機率較高者",
+      "firstResult": "最可能的假設先進入複核，但低機率項仍保留最低檢查。",
+      "secondLabel": "先查成本較低者",
+      "secondResult": "團隊快速排除一批候選，再依機率重排剩餘工作。"
+    },
+    {
+      "prompt": "有限時段如何切分？",
+      "firstLabel": "採固定輪班",
+      "firstResult": "每組都有穩定時段，突發工作由預留區吸收。",
+      "secondLabel": "依待驗證量調整",
+      "secondResult": "積壓較多的小組取得較大弧段，但必須每輪重算。"
+    },
+    {
+      "prompt": "哪種工作先交由機器協助？",
+      "firstLabel": "重複規則檢查",
+      "firstResult": "大量一致步驟被迅速處理，脈絡判斷仍交回團隊。",
+      "secondLabel": "匿名候選排序",
+      "secondResult": "機器先整理順序，人工再確認排序依據沒有偏差。"
+    },
+    {
+      "prompt": "誤報突然增加，先調哪裡？",
+      "firstLabel": "暫調複核門檻",
+      "firstResult": "回報量下降，團隊同步監看是否造成漏判。",
+      "secondLabel": "增加抽樣複核",
+      "secondResult": "成本升高，但足以判斷問題來自資料或門檻。"
+    },
+    {
+      "prompt": "成果如何留下完整紀錄？",
+      "firstLabel": "先列各組貢獻",
+      "firstResult": "每個環節的責任與協作被清楚保存。",
+      "secondLabel": "先列完整證據鏈",
+      "secondResult": "每次修改都有來源，團隊貢獻再逐項接回鏈上。"
+    }
+  ],
+  "version": 1,
+  "title": "九上 × 艾倫・圖靈",
+  "language": "zh-TW",
+  "companions": [
+    "NumNum",
+    "Numi"
+  ],
+  "journalTitle": "不確定中的協作",
+  "notes": [
+    "玩家本人與 NumNum、Numi 一起冒險。",
+    "題目只從所選年段 questionBank 抽取。",
+    "題面依當下研究場景整段改寫；數字、算式、答案不變。",
+    "答錯保留同一題並給提示，直到答對。",
+    "Eureka 僅在玩家與數學家共同領悟關鍵知識時觸發。",
+    "本冊只呈現布萊切利園的組織決策、資源調度與抽象數學推理；不重建可操作的密碼、攔截或攻擊流程。戰時成果屬大型跨專業團隊，並非圖靈一人完成。"
+  ],
+  "detourTemplates": [
+    [
+      {
+        "speaker": "NumNum",
+        "text": "條件還在。慢一點，沿同一條路再走一次。"
+      }
+    ],
+    [
+      {
+        "speaker": "Numi",
+        "text": "別換題。眼前這件事還等著我們把它算開。"
+      }
+    ],
+    [
+      {
+        "speaker": "Mathematician",
+        "text": "我也沒放棄。重看剛才那一步。"
+      }
+    ]
+  ],
+  "correctFeedback": [
+    [
+      {
+        "speaker": "narrator",
+        "text": "數字對上，眼前的阻礙鬆開了一格。"
+      }
+    ]
+  ],
+  "nodes": [
+    {
+      "id": "opening",
+      "type": "narrative",
+      "objective": "在資訊不完整時用機率排序抽象假設",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "數學世界的藍紫色安靜得像一張沒有折痕的紙。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那邊有一點光——很細，還在抖。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "不是 Eureka。只是有人卡在一個還沒想通的問題前。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "你們追著微光穿過薄紙般的界面。1939 至 1942 年，布萊切利園 Hut 8 的分析室、排程室與跨組會議桌。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "艾倫・圖靈站在匿名候選表旁，手裡那一步已經停了很久。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "你們是誰？算了——如果看得懂數字，就過來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}也在！我們不是來旁觀的。"
+        }
+      ],
+      "next": "q01"
+    },
+    {
+      "id": "q01",
+      "type": "quiz",
+      "anchor": 1,
+      "scene": "封閉園區的比例地圖",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "封閉園區的比例地圖。新進紀錄被送錯小屋，玩家要依相似圖與實際距離重建安全的內部分流路線。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用比例把把混雜紀錄分送各組幾何圖的縮放與實際尺寸接起來。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "比例線段與相似形",
+        "chapterIncludes": "比例線段與相似形 比例線段",
+        "knowledgePoint": "平行線截比例線段性質",
+        "questionIds": [
+          1147,
+          1151,
+          1149
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-turing-scene-01",
+        "setting": "布萊切利園 Hut 8 的分析室、排程室與跨組會議桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "把混雜紀錄分送各組幾何圖",
+          "匿名候選表",
+          "圓形排程盤"
+        ],
+        "sceneNeed": "新進紀錄被送錯小屋，玩家要依相似圖與實際距離重建安全的內部分流路線。",
+        "rewrites": {
+          "1147": {
+            "question": "把混雜紀錄分送各組幾何圖的紀錄停在這一行；下一步正等著它：在 \\triangle ABC 中， D 點在 AB 上， E 點在 AC 上，且 DE \\parallel BC 。若 AD = 6 ， DB = 4 ， AE = 9 ，求 EC 的長度？",
+            "options": {
+              "A": "4",
+              "B": "6",
+              "C": "8",
+              "D": "9"
+            },
+            "preserveImage": false
+          },
+          "1149": {
+            "question": "現場只剩把混雜紀錄分送各組幾何圖上的這份計算還沒核對：在 \\triangle ABC 中， D 、 E 兩點分別在 AB 、 AC 上，下列哪一個條件無法確定 DE \\parallel BC ？",
+            "options": {
+              "A": "AD : DB = AE : EC",
+              "B": "AD : AB = AE : AC",
+              "C": "AB : DB = AC : EC",
+              "D": "AD : AB = DE : BC"
+            },
+            "preserveImage": false
+          },
+          "1151": {
+            "question": "要讓封閉園區的比例地圖繼續，你得先解開把混雜紀錄分送各組幾何圖旁這一筆：已知直線 L_1 \\parallel L_2 \\parallel L_3 ，直線 M_1 被這三條平行線截出兩線段長度分別為 2x+1 與 x+2 ；同時直線 M_2 被截出的對應兩線段長度分別為 3x+4 與 2x+1 。若 x 為正數，求 x 的值。 _____",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "把混雜紀錄分送各組幾何圖上的數字對上了。把混雜紀錄分送各組終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_1",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "候選太多，先檢查哪一批？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查匿名候選表。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選圓形排程盤。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "先查機率較高者",
+          "next": "choice_1_measure"
+        },
+        {
+          "id": "observe",
+          "label": "先查成本較低者",
+          "next": "choice_1_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_1_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "最可能的假設先進入複核，但低機率項仍保留最低檢查。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "choice_1_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "團隊快速排除一批候選，再依機率重排剩餘工作。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "q02",
+      "type": "quiz",
+      "anchor": 2,
+      "scene": "來源不一的匿名報表",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "來源不一的匿名報表。各組採樣基準不同，圖靈要求先統一統計尺度，否則任何比較都可能誤導排程。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把把混雜紀錄分送各組紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_1": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_1": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "統計與機率",
+        "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+        "knowledgePoint": "盒狀圖繪製與判讀",
+        "questionIds": [
+          357,
+          355,
+          359
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-turing-scene-02",
+        "setting": "布萊切利園 Hut 8 的分析室、排程室與跨組會議桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "把混雜紀錄分送各組紀錄表",
+          "匿名候選表",
+          "圓形排程盤"
+        ],
+        "sceneNeed": "各組採樣基準不同，圖靈要求先統一統計尺度，否則任何比較都可能誤導排程。",
+        "rewrites": {
+          "355": {
+            "question": "來源不一的匿名報表。艾倫・圖靈在把混雜紀錄分送各組紀錄表上留下這組條件：已知籃球隊 11 位球員的測量值（單位：公斤）由輕到重排列如下：65, 68, 70, 72, 75, 76, 78, 80, 82, 85, 90。求這組資料的四分位距（IQR）為多少公斤？",
+            "preserveImage": false
+          },
+          "357": {
+            "question": "把混雜紀錄分送各組紀錄表的紀錄停在這一行；下一步正等著它：已知一組資料的五數總括為：最小值 15、第一四分位數 22、中位數 28、第三四分位數 35、最大值 48。請計算這組資料的「全距」。",
+            "preserveImage": false
+          },
+          "359": {
+            "question": "現場只剩把混雜紀錄分送各組紀錄表上的這份計算還沒核對：有一組包含 8 個相異整數的資料，由小到大排列。已知這組資料的最小值為 10，第一四分位數為 14，中位數為 20，第三四分位數為 28，最大值為 35。請問這組資料中，第 4 小與第 5 小的數值相加的總和為多少？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "把混雜紀錄分送各組紀錄表上的數字對上了。把混雜紀錄分送各組終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q03",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q03",
+      "type": "quiz",
+      "anchor": 3,
+      "scene": "假設堆積到桌緣",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "假設堆積到桌緣。候選量超過團隊負荷，玩家要依抽象證據的條件機率排序，而不是憑直覺選擇。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把把混雜紀錄分送各組紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "統計與機率",
+        "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+        "knowledgePoint": "盒狀圖繪製與判讀",
+        "questionIds": [
+          356,
+          353,
+          351
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-turing-scene-03",
+        "setting": "布萊切利園 Hut 8 的分析室、排程室與跨組會議桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "把混雜紀錄分送各組紀錄表",
+          "匿名候選表",
+          "圓形排程盤"
+        ],
+        "sceneNeed": "候選量超過團隊負荷，玩家要依抽象證據的條件機率排序，而不是憑直覺選擇。",
+        "rewrites": {
+          "351": {
+            "question": "要讓假設堆積到桌緣繼續，你得先解開把混雜紀錄分送各組紀錄表旁這一筆：如圖所示為觀測組現場測量讀數的盒狀圖。請問該班數學讀數的「四分位距」為多少分？",
+            "options": {
+              "A": "70",
+              "B": "50",
+              "C": "30",
+              "D": "15"
+            },
+            "preserveImage": true,
+            "imageAlt": "把混雜紀錄分送各組紀錄表的資料圖"
+          },
+          "353": {
+            "question": "艾倫・圖靈把假設堆積到桌緣剛測到的數字推到你面前：觀測組與乙班各有 40 筆紀錄，且各班內每位觀測值的數學讀數皆不相同。已知甲班讀數的第三四分位數為 80 分，乙班讀數的中位數為 80 分。請問下列敘述何者必然正確？",
+            "options": {
+              "A": "甲班讀數超過 80 分的筆數大於乙班讀數超過 80 分的筆數",
+              "B": "乙班讀數超過 80 分的筆數大於甲班讀數超過 80 分的筆數",
+              "C": "兩班讀數超過 80 分的筆數一樣多",
+              "D": "乙班讀數的全距一定比甲班大"
+            },
+            "preserveImage": false
+          },
+          "356": {
+            "question": "要讓假設堆積到桌緣繼續，你得先解開把混雜紀錄分送各組紀錄表旁這一筆：某國中九年一班共有 39 筆紀錄，現場每位觀測值的 1 分鐘跳繩次數皆不相同。若全班跳繩次數的盒狀圖顯示，第一四分位數為 45 次，中位數為 55 次，第三四分位數為 65 次。請問該班跳繩次數介於 45 次與 65 次之間（不包含 45 次與 65 次）的觀測值共有幾人？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "把混雜紀錄分送各組紀錄表上的數字對上了。把混雜紀錄分送各組終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_2",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "把混雜紀錄分送各組告一段落，跨組流程圖卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是以機率排序抽象假設；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q04"
+    },
+    {
+      "id": "q04",
+      "type": "quiz",
+      "anchor": 4,
+      "scene": "投入愈多卻開始塞車",
+      "objective": "建立人工分析、機器檢查與人工複核的組織流程",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "投入愈多卻開始塞車。人力投入與等待時間呈二次函數變化，必須找出再加人反而拖慢流程的轉折點。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把以機率排序抽象假設坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "二次函數",
+        "chapterIncludes": "二次函數 二次函數的最大值或最小值",
+        "knowledgePoint": "極值求法",
+        "questionIds": [
+          1372,
+          1373,
+          1369
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-turing-scene-04",
+        "setting": "布萊切利園 Hut 8 的分析室、排程室與跨組會議桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "以機率排序抽象假設坐標圖",
+          "匿名候選表",
+          "圓形排程盤"
+        ],
+        "sceneNeed": "人力投入與等待時間呈二次函數變化，必須找出再加人反而拖慢流程的轉折點。",
+        "rewrites": {
+          "1369": {
+            "question": "現場只剩以機率排序抽象假設坐標圖上的這份計算還沒核對：給定二次函數 y = -3(x + 2)^2 + 7 ，下列關於此函數極值的敘述，何者正確？",
+            "options": {
+              "A": "當 x = 2 時，有最大值 7",
+              "B": "當 x = -2 時，有最大值 7",
+              "C": "當 x = 2 時，有最小值 7",
+              "D": "當 x = -2 時，有最小值 7"
+            },
+            "preserveImage": false
+          },
+          "1372": {
+            "question": "以機率排序抽象假設坐標圖的紀錄停在這一行；下一步正等著它：請利用配方法求出二次函數 y = 3x^2 - 12x + 17 的最小值。",
+            "preserveImage": false
+          },
+          "1373": {
+            "question": "艾倫・圖靈把投入愈多卻開始塞車剛測到的數字推到你面前：已知一個二次函數的圖形開口向下，且圖形通過 (-1, 8) 與 (5, 8) 兩點。當 x = _____ 時，此函數會有最大值。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "以機率排序抽象假設坐標圖上的數字對上了。以機率排序抽象假設終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_2",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "有限時段如何切分？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查機率記錄板。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選跨組流程圖。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "採固定輪班",
+          "next": "choice_2_measure"
+        },
+        {
+          "id": "observe",
+          "label": "依待驗證量調整",
+          "next": "choice_2_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_2_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "每組都有穩定時段，突發工作由預留區吸收。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "choice_2_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "積壓較多的小組取得較大弧段，但必須每輪重算。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "q05",
+      "type": "quiz",
+      "anchor": 5,
+      "scene": "只剩一圈的排程盤",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "只剩一圈的排程盤。多組共享有限時段，玩家要按圓心角切分排程，並保留突發複核空間。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿以機率排序抽象假設幾何圖的圓弧、弦與切線追出隱藏關係。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_2": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_2": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "圓的性質",
+        "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+        "knowledgePoint": "圓的基本名詞（弦、弧、弓形）",
+        "questionIds": [
+          1209,
+          1211,
+          1213
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-turing-scene-05",
+        "setting": "布萊切利園 Hut 8 的分析室、排程室與跨組會議桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "以機率排序抽象假設幾何圖",
+          "匿名候選表",
+          "圓形排程盤"
+        ],
+        "sceneNeed": "多組共享有限時段，玩家要按圓心角切分排程，並保留突發複核空間。",
+        "rewrites": {
+          "1209": {
+            "question": "現場只剩以機率排序抽象假設幾何圖上的這份計算還沒核對：下列關於圓的敘述，何者正確？",
+            "options": {
+              "A": "圓上最長的弦必通過圓心",
+              "B": "圓的任一條弦都會把圓分成兩個面積相等的弓形",
+              "C": "兩端點都在圓上的任意曲線，皆稱為圓的弦",
+              "D": "在同一個圓中，弦心距越長，對應的弦越長"
+            },
+            "preserveImage": false
+          },
+          "1211": {
+            "question": "要讓只剩一圈的排程盤繼續，你得先解開以機率排序抽象假設幾何圖旁這一筆：已知圓 O 的半徑為 13，圓內有一條弦 \\overline{AB} ，且圓心 O 到弦 \\overline{AB} 的距離（即弦心距）為 5。請問弦 \\overline{AB} 的長度為多少？",
+            "preserveImage": false
+          },
+          "1213": {
+            "question": "艾倫・圖靈把只剩一圈的排程盤剛測到的數字推到你面前：已知圓 O 的半徑為 10，圓內有兩條平行弦 \\overline{AB} 與 \\overline{CD} ，且 \\overline{AB} = 16 ， \\overline{CD} = 12 。若圓心 O 與這兩條平行弦的相對位置未知，則這兩條平行弦之間的距離最大為_____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "以機率排序抽象假設幾何圖上的數字對上了。以機率排序抽象假設終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q06",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q06",
+      "type": "quiz",
+      "anchor": 6,
+      "scene": "縮小但不失真的流程圖",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "縮小但不失真的流程圖。跨組會議桌放不下完整圖稿，必須用相似比例縮放，同時保住每個決策節點。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用比例把以機率排序抽象假設幾何圖的縮放與實際尺寸接起來。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "比例線段與相似形",
+        "chapterIncludes": "比例線段與相似形 相似形",
+        "knowledgePoint": "多邊形相似意義",
+        "questionIds": [
+          1174,
+          1178,
+          1177
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-turing-scene-06",
+        "setting": "布萊切利園 Hut 8 的分析室、排程室與跨組會議桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "以機率排序抽象假設幾何圖",
+          "匿名候選表",
+          "圓形排程盤"
+        ],
+        "sceneNeed": "跨組會議桌放不下完整圖稿，必須用相似比例縮放，同時保住每個決策節點。",
+        "rewrites": {
+          "1174": {
+            "question": "現場只剩以機率排序抽象假設幾何圖上的這份計算還沒核對：下列哪一組多邊形一定相似？",
+            "options": {
+              "A": "任意兩個等腰三角形",
+              "B": "任意兩個矩形",
+              "C": "任意兩個正六邊形",
+              "D": "任意兩個菱形"
+            },
+            "preserveImage": false
+          },
+          "1177": {
+            "question": "以機率排序抽象假設幾何圖的紀錄停在這一行；下一步正等著它：已知四邊形 ABCD 相似於四邊形 PQRS ，且 A, B, C, D 的對應頂點分別為 P, Q, R, S 。若 \\angle A = 80^\\circ 、 \\angle B = 110^\\circ 、 \\angle R = 70^\\circ ，且 \\overline{AB} = 6 、 \\overline{BC} = 9 、 \\overline{PQ} = 8 。請問： \\overline{QR} 的長度與 \\angle S 的度數相加的總和為多少？",
+            "preserveImage": false
+          },
+          "1178": {
+            "question": "艾倫・圖靈把縮小但不失真的流程圖剛測到的數字推到你面前：已知 \\triangle ABC \\sim \\triangle DEF ，其中 A、B、C 的對應頂點分別為 D、E、F 。若 \\overline{AB} = x+2 、 \\overline{BC} = 2x+1 、 \\overline{AC} = 8 ，且已知對應邊 \\overline{DE} = 15 、 \\overline{EF} = 21 。請問 \\overline{DF} 的長度為 _____ 。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "以機率排序抽象假設幾何圖上的數字對上了。以機率排序抽象假設終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q07",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q07",
+      "type": "quiz",
+      "anchor": 7,
+      "scene": "低機率不是零",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "低機率不是零。團隊想直接刪去一組低機率假設，玩家要計算補事件，證明仍需留下最低限度複核。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把安排人工與機器複核紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "統計與機率",
+        "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+        "knowledgePoint": "盒狀圖繪製與判讀",
+        "questionIds": [
+          358,
+          368,
+          366
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-turing-scene-07",
+        "setting": "布萊切利園 Hut 8 的分析室、排程室與跨組會議桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "安排人工與機器複核紀錄表",
+          "匿名候選表",
+          "圓形排程盤"
+        ],
+        "sceneNeed": "團隊想直接刪去一組低機率假設，玩家要計算補事件，證明仍需留下最低限度複核。",
+        "rewrites": {
+          "358": {
+            "question": "艾倫・圖靈把低機率不是零剛測到的數字推到你面前：阿偉紀錄了自己連續 20 天的每日讀書時間（單位：分鐘），並繪製成盒狀圖。圖中顯示最小值為 30，第一四分位數為 45，中位數為 60，第三四分位數為 90，最大值為 120。請計算這 20 天讀書時間的「全距」與「四分位距」相差多少分鐘？",
+            "preserveImage": true,
+            "imageAlt": "安排人工與機器複核紀錄表的資料圖"
+          },
+          "366": {
+            "question": "要讓低機率不是零繼續，你得先解開安排人工與機器複核紀錄表旁這一筆：你現場共有 39 名觀測值。某次現場舉辦英文單字測驗，讀數的盒狀圖如下。已知現場沒有人同分。若阿張的讀數為 75 分，則現場讀數比阿張低的觀測值共有 _____ 人。",
+            "preserveImage": true,
+            "imageAlt": "安排人工與機器複核紀錄表的資料圖"
+          },
+          "368": {
+            "question": "艾倫・圖靈把低機率不是零剛測到的數字推到你面前：下圖為觀測組 28 筆紀錄現場測量進球數的盒狀圖。請問該班進球數的四分位距為多少球？",
+            "preserveImage": true,
+            "imageAlt": "安排人工與機器複核紀錄表的資料圖"
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "安排人工與機器複核紀錄表上的數字對上了。安排人工與機器複核終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_3",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_3",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "哪種工作先交由機器協助？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查複核報告。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選匿名候選表。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "重複規則檢查",
+          "next": "choice_3_measure"
+        },
+        {
+          "id": "observe",
+          "label": "匿名候選排序",
+          "next": "choice_3_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_3_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "大量一致步驟被迅速處理，脈絡判斷仍交回團隊。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "choice_3_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "機器先整理順序，人工再確認排序依據沒有偏差。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "q08",
+      "type": "quiz",
+      "anchor": 8,
+      "scene": "人工判斷與重複檢查的交界",
+      "objective": "用相似、函數與圓形排程圖配置有限資源",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "人工判斷與重複檢查的交界。流程在交接處反覆卡住，必須以二次函數比較不同分工下的總等待成本。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把安排人工與機器複核坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_3": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_3": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "二次函數",
+        "chapterIncludes": "二次函數 二次函數及其圖形",
+        "knowledgePoint": "二次函數意義",
+        "questionIds": [
+          1331,
+          1328,
+          1329
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-turing-scene-08",
+        "setting": "布萊切利園 Hut 8 的分析室、排程室與跨組會議桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "安排人工與機器複核坐標圖",
+          "匿名候選表",
+          "圓形排程盤"
+        ],
+        "sceneNeed": "流程在交接處反覆卡住，必須以二次函數比較不同分工下的總等待成本。",
+        "rewrites": {
+          "1328": {
+            "question": "艾倫・圖靈把人工判斷與重複檢查的交界剛測到的數字推到你面前：下列哪一個關係式是 x 的二次函數？",
+            "options": {
+              "A": "y = 3x + 5",
+              "B": "y = 2x^2 - x + 1",
+              "C": "y = \\frac{1}{x^2} + 2",
+              "D": "y = x^3 - 2x^2"
+            },
+            "preserveImage": false
+          },
+          "1329": {
+            "question": "現場只剩安排人工與機器複核坐標圖上的這份計算還沒核對：若 y = (k - 2)x^3 + (k + 1)x^2 - 3x + 5 是 x 的二次函數，則 k 的值為何？",
+            "options": {
+              "A": "k = 2",
+              "B": "k = -1",
+              "C": "k\neq 2",
+              "D": "k\neq -1"
+            },
+            "preserveImage": false
+          },
+          "1331": {
+            "question": "要讓人工判斷與重複檢查的交界繼續，你得先解開安排人工與機器複核坐標圖旁這一筆：若方程式 y = (a + 3)x^2 + 5x - 7 為 x 的二次函數，則 a 的限制條件為 a\neq _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "安排人工與機器複核坐標圖上的數字對上了。安排人工與機器複核終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q09",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q09",
+      "type": "quiz",
+      "anchor": 9,
+      "scene": "速度不再以省略驗證換取",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "速度不再以省略驗證換取。玩家與圖靈重排流程，讓機器處理重複規則、團隊保留脈絡判斷，每個結果仍須通過複核。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用比例把跨組流程圖的縮放與實際尺寸接起來。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "比例線段與相似形",
+        "chapterIncludes": "比例線段與相似形 連比",
+        "knowledgePoint": "連比例式的記錄與推理運算",
+        "questionIds": [
+          1140,
+          1142,
+          1139
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-turing-scene-09",
+        "setting": "布萊切利園 Hut 8 的分析室、排程室與跨組會議桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "跨組流程圖",
+          "匿名候選表",
+          "圓形排程盤"
+        ],
+        "sceneNeed": "玩家與圖靈重排流程，讓機器處理重複規則、團隊保留脈絡判斷，每個結果仍須通過複核。",
+        "rewrites": {
+          "1139": {
+            "question": "現場只剩跨組流程圖上的這份計算還沒核對：你在現場調配特調果茶，使用的樣品、百香果汁、鳳梨汁的容量比是 5:2:3 。若這杯果茶中使用了 150 毫升的鳳梨汁，請問這杯果茶的總容量是 _____ 毫升。",
+            "preserveImage": false
+          },
+          "1140": {
+            "question": "速度不再以省略驗證換取。艾倫・圖靈在跨組流程圖上留下這組條件：若 x:y = 3:5 ， y:z = 4:3 ，且 2x + y - z = 58 ，求 y 的值。",
+            "preserveImage": false
+          },
+          "1142": {
+            "question": "跨組流程圖的紀錄停在這一行；下一步正等著它：若 (x+y) : (y+z) : (z+x) = 4:5:7 ，且 x+y+z = 40 ，求 x 的值。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "跨組流程圖上的數字對上了。安排人工與機器複核終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_1",
+      "type": "eureka",
+      "eurekaId": "g9h1-turing-insight-1",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "效率不是跳過驗證，而是讓驗證出現在最有價值的位置"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "transition_4"
+    },
+    {
+      "id": "transition_4",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "安排人工與機器複核告一段落，匿名候選表卻送來新的壞消息。原先穩定的讀數突然偏了一格；這不是能略過的小差。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是調整有限資源與門檻；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q10"
+    },
+    {
+      "id": "q10",
+      "type": "quiz",
+      "anchor": 10,
+      "scene": "誤報塞滿回報箱",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "誤報塞滿回報箱。門檻過低造成誤報激增，玩家要比較樣本統計，在漏判與誤判間找出可追蹤平衡。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把調整有限資源與門檻紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "統計與機率",
+        "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+        "knowledgePoint": "盒狀圖繪製與判讀",
+        "questionIds": [
+          365,
+          367,
+          370
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-turing-scene-10",
+        "setting": "布萊切利園 Hut 8 的分析室、排程室與跨組會議桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "調整有限資源與門檻紀錄表",
+          "匿名候選表",
+          "圓形排程盤"
+        ],
+        "sceneNeed": "門檻過低造成誤報激增，玩家要比較樣本統計，在漏判與誤判間找出可追蹤平衡。",
+        "rewrites": {
+          "365": {
+            "question": "誤報塞滿回報箱。艾倫・圖靈在調整有限資源與門檻紀錄表上留下這組條件：你現場舉行兩次現場測量，下圖為兩次小考讀數的盒狀圖。請問關於這兩次小考讀數的敘述，下列何者正確？",
+            "options": {
+              "A": "第一次小考的中位數較大",
+              "B": "第二次小考的中位數較大",
+              "C": "第一次小考的全距較小",
+              "D": "第二次小考的四分位距較小"
+            },
+            "preserveImage": true,
+            "imageAlt": "調整有限資源與門檻紀錄表的資料圖"
+          },
+          "367": {
+            "question": "調整有限資源與門檻紀錄表的紀錄停在這一行；下一步正等著它：已知甲班有 32 人，乙班有 32 人。兩班某次自然考試讀數皆沒有人同分，其盒狀圖如下。已知甲班的第三四分位數為 80 分，乙班的中位數為 80 分。請問乙班讀數高於 80 分的筆數，比甲班讀數高於 80 分的筆數多幾人？",
+            "preserveImage": true,
+            "imageAlt": "調整有限資源與門檻紀錄表的資料圖"
+          },
+          "370": {
+            "question": "誤報塞滿回報箱。艾倫・圖靈在調整有限資源與門檻紀錄表上留下這組條件：下圖為觀測組 40 筆紀錄測量值的盒狀圖。已知這 40 筆紀錄的測量值皆不相同，根據此圖，下列哪一個測量值區間的紀錄筆數最多？",
+            "options": {
+              "A": "40 \\sim 48 公斤",
+              "B": "48 \\sim 52 公斤",
+              "C": "52 \\sim 65 公斤",
+              "D": "以上三個區間的筆數一樣多"
+            },
+            "preserveImage": true,
+            "imageAlt": "調整有限資源與門檻紀錄表的資料圖"
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "調整有限資源與門檻紀錄表上的數字對上了。調整有限資源與門檻終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_4",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_4",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "誤報突然增加，先調哪裡？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查圓形排程盤。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選機率記錄板。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "暫調複核門檻",
+          "next": "choice_4_measure"
+        },
+        {
+          "id": "observe",
+          "label": "增加抽樣複核",
+          "next": "choice_4_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_4_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "回報量下降，團隊同步監看是否造成漏判。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "choice_4_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "成本升高，但足以判斷問題來自資料或門檻。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "q11",
+      "type": "quiz",
+      "anchor": 11,
+      "scene": "跨組人力突然減半",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "跨組人力突然減半。夜班人手不足，必須用比例線段重新分配工作量，又不能讓任一複核鏈斷裂。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用比例把調整有限資源與門檻幾何圖的縮放與實際尺寸接起來。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_4": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_4": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "比例線段與相似形",
+        "chapterIncludes": "比例線段與相似形 比例線段",
+        "knowledgePoint": "三角形兩邊中點連線性質",
+        "questionIds": [
+          1156,
+          1160,
+          1157
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-turing-scene-11",
+        "setting": "布萊切利園 Hut 8 的分析室、排程室與跨組會議桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "調整有限資源與門檻幾何圖",
+          "匿名候選表",
+          "圓形排程盤"
+        ],
+        "sceneNeed": "夜班人手不足，必須用比例線段重新分配工作量，又不能讓任一複核鏈斷裂。",
+        "rewrites": {
+          "1156": {
+            "question": "要讓跨組人力突然減半繼續，你得先解開調整有限資源與門檻幾何圖旁這一筆：在 \\triangle ABC 中， D, E 分別為 AB, AC 的中點。若已知 AD=3 ， AE=4 ， DE=5 ，則 \\triangle ABC 的周長為何？",
+            "options": {
+              "A": "12",
+              "B": "24",
+              "C": "17",
+              "D": "48"
+            },
+            "preserveImage": false
+          },
+          "1157": {
+            "question": "調整有限資源與門檻幾何圖的紀錄停在這一行；下一步正等著它：你在現場擺測點，你用三根竹竿搭成一個三角形的架子，這三根竹竿的長度分別是 120 小格、 160 小格和 200 小格。為了增加架子的穩定性，你想在兩根較短竹竿的「中點」之間，綁上一條水平的繩子。請問這條繩子的長度需要準備 _____ 小格。",
+            "preserveImage": false
+          },
+          "1160": {
+            "question": "跨組人力突然減半。艾倫・圖靈在調整有限資源與門檻幾何圖上留下這組條件：在 \\triangle ABC 中， D 為 AB 的中點。過 D 點作 BC 的平行線，交 AC 於 E 點。接著，在 BC 上取一點 F ，使得 BF : FC = 1 : 2 。若已知 DE = 2x + 3 ， FC = 5x - 3 ，求 x 的值。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "調整有限資源與門檻幾何圖上的數字對上了。調整有限資源與門檻終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q12",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q12",
+      "type": "quiz",
+      "anchor": 12,
+      "scene": "第二輪複核的門檻曲線",
+      "objective": "讓每項團隊決策都可追溯、可複核、可修正",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "第二輪複核的門檻曲線。等待成本逼近上限，圖靈要從二次函數圖找出啟動額外複核最合理的區間。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把調整有限資源與門檻坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "二次函數",
+        "chapterIncludes": "二次函數 二次函數及其圖形",
+        "knowledgePoint": "頂點",
+        "questionIds": [
+          1356,
+          1352,
+          1354
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-turing-scene-12",
+        "setting": "布萊切利園 Hut 8 的分析室、排程室與跨組會議桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "調整有限資源與門檻坐標圖",
+          "匿名候選表",
+          "圓形排程盤"
+        ],
+        "sceneNeed": "等待成本逼近上限，圖靈要從二次函數圖找出啟動額外複核最合理的區間。",
+        "rewrites": {
+          "1352": {
+            "question": "調整有限資源與門檻坐標圖的紀錄停在這一行；下一步正等著它：已知下列四個二次函數，判斷哪一個圖形有最大值，且其頂點位於第二象限？",
+            "options": {
+              "A": "y = -2(x - 3)^2 + 5",
+              "B": "y = -3(x + 2)^2 + 4",
+              "C": "y = 4(x + 1)^2 - 2",
+              "D": "y = -(x + 4)^2 - 3"
+            },
+            "preserveImage": false
+          },
+          "1354": {
+            "question": "現場只剩調整有限資源與門檻坐標圖上的這份計算還沒核對：若某二次函數的圖形通過點 (0, -5) 與 (4, -5) ，且此函數有最大值 3 ，則關於此二次函數圖形的敘述，下列何者正確？",
+            "options": {
+              "A": "此函數的圖形開口向上",
+              "B": "頂點坐標為 (3, 2)",
+              "C": "此函數的對稱軸為直線 x = 2",
+              "D": "此函數圖形與 y 軸的交點為 (0, 3)"
+            },
+            "preserveImage": false
+          },
+          "1356": {
+            "question": "要讓第二輪複核的門檻曲線繼續，你得先解開調整有限資源與門檻坐標圖旁這一筆：已知二次函數 y = x^2 - 6x + c 的圖形與 x 軸相交於兩點，且這兩點的距離為 8 。請問 c 的值為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "調整有限資源與門檻坐標圖上的數字對上了。調整有限資源與門檻終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_5",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "調整有限資源與門檻告一段落，圓形排程盤卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是建立能持續修正的流程；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q13"
+    },
+    {
+      "id": "q13",
+      "type": "quiz",
+      "anchor": 13,
+      "scene": "環狀回報圖上的缺角",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "環狀回報圖上的缺角。一個時段的紀錄缺失，玩家要用弧與圓周角關係還原排程位置，而非猜測內容。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿建立能持續修正的流程幾何圖的圓弧、弦與切線追出隱藏關係。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "圓的性質",
+        "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+        "knowledgePoint": "直線與圓的切線與割線",
+        "questionIds": [
+          1229,
+          1231,
+          1227
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-turing-scene-13",
+        "setting": "布萊切利園 Hut 8 的分析室、排程室與跨組會議桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "建立能持續修正的流程幾何圖",
+          "匿名候選表",
+          "圓形排程盤"
+        ],
+        "sceneNeed": "一個時段的紀錄缺失，玩家要用弧與圓周角關係還原排程位置，而非猜測內容。",
+        "rewrites": {
+          "1227": {
+            "question": "建立能持續修正的流程幾何圖的紀錄停在這一行；下一步正等著它：已知圓 O 的半徑為 7。若有四條筆直的直線 L1、L2、L3、L4，它們與圓心 O 的距離分別為 5、7、9、0，且這四條直線與圓 O 的交點個數分別為 a、b、c、d，則下列關於 a、b、c、d 的大小關係何者正確？",
+            "options": {
+              "A": "d > a > b > c",
+              "B": "a = d > b > c",
+              "C": "a = b > c > d",
+              "D": "d > b > a = c"
+            },
+            "preserveImage": false
+          },
+          "1229": {
+            "question": "現場只剩建立能持續修正的流程幾何圖上的這份計算還沒核對：在平面上有一圓 O，半徑為 8 小格。點 P 位於圓外，且點 P 到圓心 O 的距離為 17 小格。若自點 P 向圓 O 作一條切線，切點為 Q，求切線段 PQ 的長度為多少小格？",
+            "preserveImage": false
+          },
+          "1231": {
+            "question": "要讓環狀回報圖上的缺角繼續，你得先解開建立能持續修正的流程幾何圖旁這一筆：已知圓 O 的半徑為 13 小格。在圓內有兩條平行的弦 AB 與 CD，其長度分別為 24 小格與 10 小格。若這兩條弦位於圓心 O 的異側，則這兩條平行弦之間的距離為多少小格？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "建立能持續修正的流程幾何圖上的數字對上了。建立能持續修正的流程終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_5",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "成果如何留下完整紀錄？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查跨組流程圖。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選複核報告。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "先列各組貢獻",
+          "next": "choice_5_measure"
+        },
+        {
+          "id": "observe",
+          "label": "先列完整證據鏈",
+          "next": "choice_5_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_5_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "每個環節的責任與協作被清楚保存。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "choice_5_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "每次修改都有來源，團隊貢獻再逐項接回鏈上。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "q14",
+      "type": "quiz",
+      "anchor": 14,
+      "scene": "決策可以在新證據下改變",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "決策可以在新證據下改變。新報表推翻原排序，玩家與圖靈共同依統計證據修正決策，並完整保留修改理由。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把建立能持續修正的流程坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_5": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_5": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "二次函數",
+        "chapterIncludes": "二次函數 二次函數的最大值或最小值",
+        "knowledgePoint": "平移規律（y=a(x-h)^2+k）",
+        "questionIds": [
+          1364,
+          1365,
+          1361
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-turing-scene-14",
+        "setting": "布萊切利園 Hut 8 的分析室、排程室與跨組會議桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "建立能持續修正的流程坐標圖",
+          "匿名候選表",
+          "圓形排程盤"
+        ],
+        "sceneNeed": "新報表推翻原排序，玩家與圖靈共同依統計證據修正決策，並完整保留修改理由。",
+        "rewrites": {
+          "1361": {
+            "question": "要讓決策可以在新證據下改變繼續，你得先解開建立能持續修正的流程坐標圖旁這一筆：將二次函數 y = 2(x - 3)^2 + 5 的圖形向左平移 4 單位，向下平移 2 單位後，得到的新二次函數為何？",
+            "options": {
+              "A": "y = 2(x - 7)^2 + 3",
+              "B": "y = 2(x + 1)^2 + 3",
+              "C": "y = 2(x - 7)^2 + 7",
+              "D": "y = 2(x + 1)^2 + 7"
+            },
+            "preserveImage": false
+          },
+          "1364": {
+            "question": "現場只剩建立能持續修正的流程坐標圖上的這份計算還沒核對：已知二次函數 y = -(x - 4)^2 + k 的圖形向左平移 3 單位，向上平移 2 單位後，新的拋物線與 x 軸恰好交於一點。求 k 的值為何？",
+            "preserveImage": false
+          },
+          "1365": {
+            "question": "決策可以在新證據下改變。艾倫・圖靈在建立能持續修正的流程坐標圖上留下這組條件：坐標平面上，二次函數 y = 2x^2 的圖形經過平移後，其頂點落在直線 y = -x + 3 上，且平移後的二次函數圖形會通過點 (1, 5) 。若平移後的二次函數為 y = 2(x - h)^2 + k ，且 h 為整數，則 k = _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "建立能持續修正的流程坐標圖上的數字對上了。建立能持續修正的流程終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_2",
+      "type": "eureka",
+      "eurekaId": "g9h1-turing-insight-2",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "不確定不代表任意，機率與可追溯流程能讓決策持續修正"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "q15"
+    },
+    {
+      "id": "q15",
+      "type": "quiz",
+      "anchor": 15,
+      "scene": "跨越五個小組的證據鏈",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "跨越五個小組的證據鏈。期限前只剩一次總核對，玩家要用相似流程圖確認每項判斷都有來源、複核與負責小組。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用比例把建立能持續修正的流程幾何圖的縮放與實際尺寸接起來。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "比例線段與相似形",
+        "chapterIncludes": "比例線段與相似形 相似形",
+        "knowledgePoint": "平面圖形縮放",
+        "questionIds": [
+          1170,
+          1166,
+          1169
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-turing-scene-15",
+        "setting": "布萊切利園 Hut 8 的分析室、排程室與跨組會議桌",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "建立能持續修正的流程幾何圖",
+          "匿名候選表",
+          "圓形排程盤"
+        ],
+        "sceneNeed": "期限前只剩一次總核對，玩家要用相似流程圖確認每項判斷都有來源、複核與負責小組。",
+        "rewrites": {
+          "1166": {
+            "question": "要讓跨越五個小組的證據鏈繼續，你得先解開建立能持續修正的流程幾何圖旁這一筆：你在測繪板上查看現場地圖，地圖上標示「你樣品測點」與「你樣品測點」的直線距離原本是 3 小格。當你將地圖按比例放大，以原本的 4 倍縮放後，圖板上這兩個測點的直線距離會變成 _____ 小格。",
+            "preserveImage": false
+          },
+          "1169": {
+            "question": "現場只剩建立能持續修正的流程幾何圖上的這份計算還沒核對：在坐標平面上，你將 \\triangle ABC 先以原點 O 為縮放中心，放大為原本的 3 倍得到 \\triangle A_1B_1C_1 ，接著再以點 A_1 為縮放中心，將 \\triangle A_1B_1C_1 縮小為其原本的 \\frac{1}{2} 倍得到 \\triangle A_2B_2C_2 。若 \\triangle ABC 的周長為 10 ，則 \\triangle A_2B_2C_2 的周長為何？",
+            "preserveImage": false
+          },
+          "1170": {
+            "question": "跨越五個小組的證據鏈。艾倫・圖靈在建立能持續修正的流程幾何圖上留下這組條件：已知 \\triangle ABC 的面積為 10 平方小格。將 \\triangle ABC 經過縮放操作後得到 \\triangle A'B'C' ，若 \\triangle A'B'C' 的面積為 40 平方小格，則下列關於此縮放結果的敘述，何者必然正確？",
+            "options": {
+              "A": "此縮放的縮放倍率必定為 4 倍",
+              "B": "\\triangle A'B'C' 的每個內角度數都是 \\triangle ABC 對應內角的 2 倍",
+              "C": "\\triangle A'B'C' 的周長是 \\triangle ABC 周長的 2 倍",
+              "D": "\\triangle A'B'C' 在平面上必定能完全覆蓋住 \\triangle ABC"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "建立能持續修正的流程幾何圖上的數字對上了。建立能持續修正的流程終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "ending_history",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "ending_history",
+      "type": "narrative",
+      "objective": "記住艾倫・圖靈留下的答案",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "建立能持續修正的流程完成了。現場安靜下來，只有匿名候選表還留著剛才的痕跡。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，今天不是你替我算完。是我們一起把它想通。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那道光退了……可是我還記得它的味道。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "因為答案不是光。答案會留在能被重做的步驟裡。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "——時間向前推去。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "圖靈在戰後持續研究電腦、人工智慧與形態發生，1954 年離世；後世才逐步還他應有的名字。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "眼前的布萊切利園 Hut 8 的分析室、排程室與跨組會議桌慢慢褪色。藍紫色的安靜重新包圍你們。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}，下次再有人快想通時，我們還會聽見。"
+        }
+      ],
+      "next": "ending_stats"
+    },
+    {
+      "id": "ending_stats",
+      "type": "ending",
+      "next": null,
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "【劇本結束】九上 × 艾倫・圖靈"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "這趟路的每一次重算，數字都記得。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "下次見，{{playerName}}！"
+        }
+      ]
+    }
+  ]
+}

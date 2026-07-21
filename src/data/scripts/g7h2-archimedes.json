@@ -1,0 +1,2383 @@
+{
+  "id": "g7h2-archimedes",
+  "grade": 7,
+  "half": 2,
+  "gradeLabel": "七下",
+  "mathematician": "阿基米德",
+  "mathematicianSpeaker": "Mathematician",
+  "episode": "逆水而上的螺旋",
+  "setting": "敘拉古港外的低窪農田、灌溉渠與木工棚",
+  "era": "約西元前 3 世紀中葉",
+  "acts": [
+    "辨明乾濕失衡",
+    "造出螺旋水道",
+    "修正漏水空轉",
+    "迎戰暴雨漲水",
+    "讓清水越過堤岸"
+  ],
+  "insights": [
+    "斜置螺旋旋轉時，水會被困在連續的小空間裡逐格升高",
+    "抽水效率來自裝水、密封、傾角與持續轉動的平衡，不是盲目加速"
+  ],
+  "props": [
+    "木製螺旋筒",
+    "水位木牌",
+    "透明水槽",
+    "踏板轉軸",
+    "灌溉分水圖"
+  ],
+  "endingSummary": "螺旋汲水器救回農田。多年後敘拉古城破，阿基米德在專注沙地幾何時遭羅馬士兵殺害；他的機械研究與數學著作跨越兩千多年。",
+  "legendNote": "阿基米德螺旋的發明地與細節缺乏直接同時代記錄，劇本以「測試與改良」呈現，不宣稱唯一發明。",
+  "objectives": [
+    "找出低田積水、高田缺水同時發生的原因",
+    "用比例與方程式決定螺旋筒尺寸和轉速",
+    "根據實測資料修正漏水與人力負荷",
+    "在下一場暴雨前完成能持續抽水的裝置"
+  ],
+  "beats": [
+    {
+      "scene": "暴雨後的兩塊田",
+      "problem": "低田幼苗泡在水裡，高田水槽卻已見底；玩家得從各時辰水位圖找出水往哪裡失衡。",
+      "major": "統計圖表與資料分析"
+    },
+    {
+      "scene": "海潮逼近警戒線",
+      "problem": "直挖排水渠會在漲潮時倒灌，必須算出安全開渠的水位範圍，否則整片田將灌進鹹水。",
+      "major": "一元一次不等式"
+    },
+    {
+      "scene": "乾渠盡頭的高差",
+      "problem": "高田比取水口高，阿基米德要玩家依測得距離與高度比例判斷現有水車為何抬不到水。",
+      "major": "比例"
+    },
+    {
+      "scene": "空心木筒裡的線",
+      "problem": "工匠看不懂阿基米德的螺旋草圖，玩家要從側視圖與剖面圖指出葉片如何穿過木筒。",
+      "major": "生活中的幾何圖形"
+    },
+    {
+      "scene": "第一支模型只吐出幾滴水",
+      "problem": "模型每轉一圈的進水與漏水量已量出，必須用分數運算算清真正送到出口的水量。",
+      "major": "因數分解與分數運算"
+    },
+    {
+      "scene": "Numi 轉得太快",
+      "problem": "轉速加倍後出水量反而下降，玩家得比較多組轉速與流量的比例，找出開始空轉的位置。",
+      "major": "比例"
+    },
+    {
+      "scene": "透明水槽中的水格",
+      "problem": "玩家傾斜模型，和阿基米德同時看見水被葉片一格格困住；現在要依筒長算出水格數量。",
+      "major": "一元一次方程式"
+    },
+    {
+      "scene": "工匠開出的最後報價",
+      "problem": "木料、銅箍和樹脂總價超過預算，必須列方程式解出還能保住揚程的最大筒長。",
+      "major": "一元一次方程式"
+    },
+    {
+      "scene": "踏板輪值卡死轉軸",
+      "problem": "兩組工人的休息週期不同，交接一錯轉軸就會停，玩家要用公倍數排出同步輪值點。",
+      "major": "因數分解與分數運算"
+    },
+    {
+      "scene": "第二場暴雨壓上海堤",
+      "problem": "低田水位持續上升，玩家必須解出最遲啟動時間的不等式，錯過就會淹過幼苗根部。",
+      "major": "一元一次不等式"
+    },
+    {
+      "scene": "長筒重得踩不動",
+      "problem": "增加筒長後單組工人撐不住，得用人數與工作時間的反比重新分配踏板。",
+      "major": "比例"
+    },
+    {
+      "scene": "穩定流量浮上圖紙",
+      "problem": "玩家把傾角、轉速與出水紀錄畫在同一張圖，和阿基米德找出不空轉又不斷流的區間。",
+      "major": "統計圖表與資料分析"
+    },
+    {
+      "scene": "三條支渠同時爭水",
+      "problem": "主渠水量要按田地面積分給三區，任何一區少分都會枯死，必須完成分數四則分配。",
+      "major": "因數分解與分數運算"
+    },
+    {
+      "scene": "高田水槽即將溢流",
+      "problem": "水槽已有初始水量且持續流入，玩家要列一元一次方程式算出關閉螺旋的時刻。",
+      "major": "一元一次方程式"
+    },
+    {
+      "scene": "留給下一位工匠的圖",
+      "problem": "天亮前必須把筒身、螺旋與支架整理成可施工的三視圖，否則損壞後沒人能重造。",
+      "major": "生活中的幾何圖形"
+    }
+  ],
+  "choices": [
+    {
+      "prompt": "第一步先排低田積水，還是追查高田斷水？",
+      "firstLabel": "先挖排水溝",
+      "firstResult": "海潮立刻從溝口倒灌，眾人用實際水位證明直渠不可行。",
+      "secondLabel": "沿乾渠往上查",
+      "secondResult": "玩家找到無法跨越的高差，確定必須主動把水抬升。"
+    },
+    {
+      "prompt": "模型漏水時，要先加速旋轉，還是先封住接縫？",
+      "firstLabel": "加速旋轉",
+      "firstResult": "水花四濺卻沒有增加出口流量，還讓木筒鬆開一圈。",
+      "secondLabel": "封住接縫",
+      "secondResult": "漏水減少，但過快轉速仍讓水格來不及裝滿。"
+    },
+    {
+      "prompt": "預算不足，要縮短木筒，還是減少銅箍？",
+      "firstLabel": "縮短木筒",
+      "firstResult": "單筒揚程不夠，阿基米德改畫兩段串接並重算成本。",
+      "secondLabel": "減少銅箍",
+      "secondResult": "筒長保住了，接縫卻滲水，玩家被迫重算安全間距。"
+    },
+    {
+      "prompt": "暴雨已到，要讓少數人高速踩，還是增加輪值？",
+      "firstLabel": "少數人高速踩",
+      "firstResult": "踏板短暫飛快，工人很快失速，平均流量反而下降。",
+      "secondLabel": "增加穩定輪值",
+      "secondResult": "速度不快卻從不中斷，低田水位開始穩定下降。"
+    },
+    {
+      "prompt": "最後一批水先救最乾的田，還是立刻平均分流？",
+      "firstLabel": "先救最乾的田",
+      "firstResult": "危急田區先止渴，玩家再按面積訂出後續補水比例。",
+      "secondLabel": "平均分流",
+      "secondResult": "末端流量小到進不了田，眾人改按距離損耗調整比例。"
+    }
+  ],
+  "version": 1,
+  "title": "七下 × 阿基米德",
+  "language": "zh-TW",
+  "companions": [
+    "NumNum",
+    "Numi"
+  ],
+  "journalTitle": "逆水而上的螺旋",
+  "notes": [
+    "玩家本人與 NumNum、Numi 一起冒險。",
+    "題目只從所選年段 questionBank 抽取。",
+    "題面依當下研究場景整段改寫；數字、算式、答案不變。",
+    "答錯保留同一題並給提示，直到答對。",
+    "Eureka 僅在玩家與數學家共同領悟關鍵知識時觸發。",
+    "阿基米德螺旋的發明地與細節缺乏直接同時代記錄，劇本以「測試與改良」呈現，不宣稱唯一發明。"
+  ],
+  "detourTemplates": [
+    [
+      {
+        "speaker": "NumNum",
+        "text": "條件還在。慢一點，沿同一條路再走一次。"
+      }
+    ],
+    [
+      {
+        "speaker": "Numi",
+        "text": "別換題。眼前這件事還等著我們把它算開。"
+      }
+    ],
+    [
+      {
+        "speaker": "Mathematician",
+        "text": "我也沒放棄。重看剛才那一步。"
+      }
+    ]
+  ],
+  "correctFeedback": [
+    [
+      {
+        "speaker": "narrator",
+        "text": "數字對上，眼前的阻礙鬆開了一格。"
+      }
+    ]
+  ],
+  "nodes": [
+    {
+      "id": "opening",
+      "type": "narrative",
+      "objective": "找出低田積水、高田缺水同時發生的原因",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "數學世界的藍紫色安靜得像一張沒有折痕的紙。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那邊有一點光——很細，還在抖。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "不是 Eureka。只是有人卡在一個還沒想通的問題前。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "你們追著微光穿過薄紙般的界面。約西元前 3 世紀中葉，敘拉古港外的低窪農田、灌溉渠與木工棚。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "阿基米德站在木製螺旋筒旁，手裡那一步已經停了很久。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "你們是誰？算了——如果看得懂數字，就過來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}也在！我們不是來旁觀的。"
+        }
+      ],
+      "next": "q01"
+    },
+    {
+      "id": "q01",
+      "type": "quiz",
+      "anchor": 1,
+      "scene": "暴雨後的兩塊田",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "暴雨後的兩塊田。低田幼苗泡在水裡，高田水槽卻已見底；玩家得從各時辰水位圖找出水往哪裡失衡。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把辨明乾濕失衡紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "統計圖表與資料分析",
+        "chapterIncludes": "統計圖表與資料分析 統計圖表與平均數、中位數、眾數",
+        "knowledgePoint": "平均數、中位數與眾數的計算與意義",
+        "questionIds": [
+          707,
+          709,
+          711
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-archimedes-scene-01",
+        "setting": "敘拉古港外的低窪農田、灌溉渠與木工棚",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "辨明乾濕失衡紀錄表",
+          "木製螺旋筒",
+          "水位木牌"
+        ],
+        "sceneNeed": "低田幼苗泡在水裡，高田水槽卻已見底；玩家得從各時辰水位圖找出水往哪裡失衡。",
+        "rewrites": {
+          "707": {
+            "question": "辨明乾濕失衡紀錄表的紀錄停在這一行；下一步正等著它：辨明乾濕失衡紀錄表上的一組資料為 12、7、15、8、20、5、9。則這組資料的中位數為何？",
+            "options": {
+              "A": "8",
+              "B": "9",
+              "C": "11",
+              "D": "12"
+            },
+            "preserveImage": false
+          },
+          "709": {
+            "question": "現場只剩辨明乾濕失衡紀錄表上的這份計算還沒核對：已知有 5 筆資料分別為 4、7、 x 、10、12。若這 5 筆資料的平均數是 8，請計算這組資料的「中位數」為何？",
+            "preserveImage": false
+          },
+          "711": {
+            "question": "要讓暴雨後的兩塊田繼續，你得先解開辨明乾濕失衡紀錄表旁這一筆：有 6 筆正整數資料，由小到大排列為 3, a, b, c, 10, 10 。已知這組資料的「唯一眾數」是 10，且中位數是 7。則這 6 筆資料的平均數最大可能為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "辨明乾濕失衡紀錄表上的數字對上了。辨明乾濕失衡終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_1",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "第一步先排低田積水，還是追查高田斷水？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查木製螺旋筒。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選水位木牌。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "兩邊都重要。{{address}}，替我砍出第一條路。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "先挖排水溝",
+          "next": "choice_1_measure"
+        },
+        {
+          "id": "observe",
+          "label": "沿乾渠往上查",
+          "next": "choice_1_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_1_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "海潮立刻從溝口倒灌，眾人用實際水位證明直渠不可行。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "choice_1_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "玩家找到無法跨越的高差，確定必須主動把水抬升。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "q02",
+      "type": "quiz",
+      "anchor": 2,
+      "scene": "海潮逼近警戒線",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "海潮逼近警戒線。直挖排水渠會在漲潮時倒灌，必須算出安全開渠的水位範圍，否則整片田將灌進鹹水。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "替水位木牌找出不能越過的上下界。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_1": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_1": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "一元一次不等式",
+        "chapterIncludes": "一元一次不等式 一元一次不等式及其解",
+        "knowledgePoint": "不等號的意義",
+        "questionIds": [
+          664,
+          668,
+          667
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-archimedes-scene-02",
+        "setting": "敘拉古港外的低窪農田、灌溉渠與木工棚",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "水位木牌",
+          "木製螺旋筒",
+          "透明水槽"
+        ],
+        "sceneNeed": "直挖排水渠會在漲潮時倒灌，必須算出安全開渠的水位範圍，否則整片田將灌進鹹水。",
+        "rewrites": {
+          "664": {
+            "question": "現場只剩水位木牌上的這份計算還沒核對：下列哪一個不等式可以表示「 x 不大於 5 」？",
+            "options": {
+              "A": "x > 5",
+              "B": "x \\ge 5",
+              "C": "x",
+              "D": "x \\le 5"
+            },
+            "preserveImage": false
+          },
+          "667": {
+            "question": "水位木牌的紀錄停在這一行；下一步正等著它：你在練習一元一次不等式。你需要找出一個整數 x ，滿足條件：「 x 的 3 倍減 5，不小於 x 的 2 倍加 1」。請問滿足此條件的最小整數 x 為多少？",
+            "preserveImage": false
+          },
+          "668": {
+            "question": "阿基米德把海潮逼近警戒線剛測到的數字推到你面前：已知數線上有一點 P 代表的數為 x 。若 x 滿足兩個條件：\n(甲) x 不小於 -3\n(乙) P 點到原點的距離不到 5\n請問滿足上述條件的所有整數 x 共有多少個？",
+            "options": {
+              "A": "7",
+              "B": "8",
+              "C": "9",
+              "D": "10"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "水位木牌上的數字對上了。辨明乾濕失衡終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q03",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q03",
+      "type": "quiz",
+      "anchor": 3,
+      "scene": "乾渠盡頭的高差",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "乾渠盡頭的高差。高田比取水口高，阿基米德要玩家依測得距離與高度比例判斷現有水車為何抬不到水。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把透明水槽上的條件逐項核對。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "比例",
+        "chapterIncludes": "比例 正比與反比",
+        "knowledgePoint": "反比關係的意義與判別",
+        "questionIds": [
+          659,
+          660,
+          656
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-archimedes-scene-03",
+        "setting": "敘拉古港外的低窪農田、灌溉渠與木工棚",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "透明水槽",
+          "木製螺旋筒",
+          "水位木牌"
+        ],
+        "sceneNeed": "高田比取水口高，阿基米德要玩家依測得距離與高度比例判斷現有水車為何抬不到水。",
+        "rewrites": {
+          "656": {
+            "question": "要讓乾渠盡頭的高差繼續，你得先解開透明水槽旁這一筆：判斷下列四組 x 與 y 的對應關係，哪一組表示 y 與 x 成反比？",
+            "options": {
+              "A": "當 x 的值增加， y 的值跟著減少，且 x 與 y 的和固定為 10。",
+              "B": "當 x 的值增加， y 的值跟著增加，且 x 與 y 的差固定為 5。",
+              "C": "當 x 的值增加， y 的值跟著增加，且 y 與 x 的比值固定為 3。",
+              "D": "當 x 的值增加， y 的值跟著減少，且 x 與 y 的乘積固定為 12。"
+            },
+            "preserveImage": false
+          },
+          "659": {
+            "question": "現場只剩透明水槽上的這份計算還沒核對：已知 y 與 x 成反比，且 z 與 y 成正比。當 x = 2 時， y = 6 且 z = 18 。若 x = 4 ，則 z = _____。",
+            "preserveImage": false
+          },
+          "660": {
+            "question": "乾渠盡頭的高差。阿基米德在透明水槽上留下這組條件：有一項鋪路工程，若由 12 名工人每天工作，需 15 天才能完工。假設每名工人的工作效率相同，且工筆數量與完工天數成反比。工程開工前，因為天氣原因要求必須提前至 9 天完工。請問需要再「增加」多少名工人才能如期完工？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "透明水槽上的數字對上了。辨明乾濕失衡終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_2",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "辨明乾濕失衡告一段落，踏板轉軸卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是造出螺旋水道；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q04"
+    },
+    {
+      "id": "q04",
+      "type": "quiz",
+      "anchor": 4,
+      "scene": "空心木筒裡的線",
+      "objective": "用比例與方程式決定螺旋筒尺寸和轉速",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "空心木筒裡的線。工匠看不懂阿基米德的螺旋草圖，玩家要從側視圖與剖面圖指出葉片如何穿過木筒。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把造出螺旋水道幾何圖上的條件逐項核對。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "生活中的幾何圖形",
+        "chapterIncludes": "生活中的幾何圖形 幾何圖形、線對稱與三視圖",
+        "knowledgePoint": "線對稱圖形的性質",
+        "questionIds": [
+          721,
+          724,
+          723
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-archimedes-scene-04",
+        "setting": "敘拉古港外的低窪農田、灌溉渠與木工棚",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "造出螺旋水道幾何圖",
+          "木製螺旋筒",
+          "水位木牌"
+        ],
+        "sceneNeed": "工匠看不懂阿基米德的螺旋草圖，玩家要從側視圖與剖面圖指出葉片如何穿過木筒。",
+        "rewrites": {
+          "721": {
+            "question": "要讓空心木筒裡的線繼續，你得先解開造出螺旋水道幾何圖旁這一筆：在英文字母中，許多大寫字母都可以視為線對稱圖形。請問下列哪一個大寫英文字母不具有線對稱性質？",
+            "options": {
+              "A": "A",
+              "B": "M",
+              "C": "H",
+              "D": "N"
+            },
+            "preserveImage": false
+          },
+          "723": {
+            "question": "阿基米德把空心木筒裡的線剛測到的數字推到你面前：你拿了一張正方形的色紙，先將色紙「由下往上」對摺一次，再「由左往右」對摺一次，形成一個較小的正方形。接著，你用打孔機在目前摺好的小正方形「正中央」打出一個圓形的洞。當你將這張色紙完全展開恢復成原來的大正方形後，色紙上總共會出現幾個圓形的洞？",
+            "options": {
+              "A": "1",
+              "B": "2",
+              "C": "4",
+              "D": "8"
+            },
+            "preserveImage": false
+          },
+          "724": {
+            "question": "現場只剩造出螺旋水道幾何圖上的這份計算還沒核對：在坐標平面上，有一線對稱圖形，其對稱軸為水平線 y = 2 。若該圖形上有一點 A 的坐標為 (3, 5) ，且點 A 對於對稱軸 y = 2 的對稱點為 B ，求點 B 的 y 坐標為何？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "造出螺旋水道幾何圖上的數字對上了。造出螺旋水道終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_2",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "模型漏水時，要先加速旋轉，還是先封住接縫？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查透明水槽。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選踏板轉軸。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "兩邊都重要。{{address}}，替我砍出第一條路。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "加速旋轉",
+          "next": "choice_2_measure"
+        },
+        {
+          "id": "observe",
+          "label": "封住接縫",
+          "next": "choice_2_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_2_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "水花四濺卻沒有增加出口流量，還讓木筒鬆開一圈。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "choice_2_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "漏水減少，但過快轉速仍讓水格來不及裝滿。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "q05",
+      "type": "quiz",
+      "anchor": 5,
+      "scene": "第一支模型只吐出幾滴水",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "第一支模型只吐出幾滴水。模型每轉一圈的進水與漏水量已量出，必須用分數運算算清真正送到出口的水量。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把灌溉分水圖上過大或過小的量縮成能核對的記號。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_2": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_2": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "因數分解與分數運算",
+        "chapterIncludes": "因數分解與分數運算 指數律",
+        "knowledgePoint": "同底數的指數乘除運算規律",
+        "questionIds": [
+          495,
+          497,
+          493
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-archimedes-scene-05",
+        "setting": "敘拉古港外的低窪農田、灌溉渠與木工棚",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "灌溉分水圖",
+          "木製螺旋筒",
+          "水位木牌"
+        ],
+        "sceneNeed": "模型每轉一圈的進水與漏水量已量出，必須用分數運算算清真正送到出口的水量。",
+        "rewrites": {
+          "493": {
+            "question": "阿基米德把第一支模型只吐出幾滴水剛測到的數字推到你面前：判斷下列關於同底數指數運算的敘述，何者正確？",
+            "options": {
+              "A": "5^3 \\times 5^4 = 5^{12}",
+              "B": "2^8 \\div 2^2 = 2^4",
+              "C": "(-3)^5 \\times (-3)^2 = (-3)^7",
+              "D": "7^5 \\div 7^5 = 0"
+            },
+            "preserveImage": false
+          },
+          "495": {
+            "question": "第一支模型只吐出幾滴水。阿基米德在灌溉分水圖上留下這組條件：請計算出算式 3^8 \\times 3^4 \\div 3^{10} 的結果為多少？",
+            "preserveImage": false
+          },
+          "497": {
+            "question": "灌溉分水圖的紀錄停在這一行；下一步正等著它：若 8^2 \\times 2^5 \\div 4^3 = 2^{\\square} ，請問 \\square 應填入哪個數字？\n答：_____",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "灌溉分水圖上的數字對上了。造出螺旋水道終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q06",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q06",
+      "type": "quiz",
+      "anchor": 6,
+      "scene": "Numi 轉得太快",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "Numi 轉得太快。轉速加倍後出水量反而下降，玩家得比較多組轉速與流量的比例，找出開始空轉的位置。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用比例把木製螺旋筒的縮放與實際尺寸接起來。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "比例",
+        "chapterIncludes": "比例 比例式",
+        "knowledgePoint": "比例式的運算性質",
+        "questionIds": [
+          641,
+          643,
+          642
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-archimedes-scene-06",
+        "setting": "敘拉古港外的低窪農田、灌溉渠與木工棚",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "木製螺旋筒",
+          "水位木牌",
+          "透明水槽"
+        ],
+        "sceneNeed": "轉速加倍後出水量反而下降，玩家得比較多組轉速與流量的比例，找出開始空轉的位置。",
+        "rewrites": {
+          "641": {
+            "question": "要讓Numi 轉得太快繼續，你得先解開木製螺旋筒旁這一筆：已知 (3x-y)：(x+y) = 3：2 ，求 (2x-y)：(x+2y) 的比值。請以最簡分數表示。",
+            "preserveImage": false
+          },
+          "642": {
+            "question": "木製螺旋筒的紀錄停在這一行；下一步正等著它：你在現場取用了相同單價的樣品與樣品，且結帳時兩種麵包的總花費比為 5：3 。已知你取用樣品花了 150 枚，請問你取用樣品花了多少枚？",
+            "preserveImage": false
+          },
+          "643": {
+            "question": "阿基米德把Numi 轉得太快剛測到的數字推到你面前：已知 x 、 y 皆不為 0 ，且滿足比例式 3x：2y = 4：5 。若 x+y = 46 ，則 x-y 的值為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "木製螺旋筒上的數字對上了。造出螺旋水道終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q07",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q07",
+      "type": "quiz",
+      "anchor": 7,
+      "scene": "透明水槽中的水格",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "透明水槽中的水格。玩家傾斜模型，和阿基米德同時看見水被葉片一格格困住；現在要依筒長算出水格數量。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把水位木牌裡未知的量列成條件，解出唯一可行的配置。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "一元一次方程式",
+        "chapterIncludes": "一元一次方程式 一元一次方程式的列式與求解",
+        "knowledgePoint": "等量公理",
+        "questionIds": [
+          521,
+          523,
+          519
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-archimedes-scene-07",
+        "setting": "敘拉古港外的低窪農田、灌溉渠與木工棚",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "水位木牌",
+          "木製螺旋筒",
+          "透明水槽"
+        ],
+        "sceneNeed": "玩家傾斜模型，和阿基米德同時看見水被葉片一格格困住；現在要依筒長算出水格數量。",
+        "rewrites": {
+          "519": {
+            "question": "現場只剩水位木牌上的這份計算還沒核對：根據等量公理，將方程式 \\frac{x-2}{3} = 4 進行化簡，下列哪一個步驟是正確的？",
+            "options": {
+              "A": "等號兩邊同乘以 3，得到 x - 2 = 12",
+              "B": "等號兩邊同乘以 3，得到 x - 2 = 4",
+              "C": "等號兩邊同加上 2，得到 \\\\frac{x}{3} = 6",
+              "D": "等號左邊減去 2，得到 \\\\frac{x}{3} = 2"
+            },
+            "preserveImage": false
+          },
+          "521": {
+            "question": "要讓透明水槽中的水格繼續，你得先解開水位木牌旁這一筆：解方程式 \\frac{2x-1}{3} - \\frac{x+5}{4} = 1，求出 x 的值。",
+            "preserveImage": false
+          },
+          "523": {
+            "question": "阿基米德把透明水槽中的水格剛測到的數字推到你面前：已知方程式 2x - 3 = 7 與 ax + 4 = 19 有相同的解，則 a 的值為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "水位木牌上的數字對上了。修正漏水空轉終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_3",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_3",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "預算不足，要縮短木筒，還是減少銅箍？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查灌溉分水圖。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選木製螺旋筒。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "兩邊都重要。{{address}}，替我砍出第一條路。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "縮短木筒",
+          "next": "choice_3_measure"
+        },
+        {
+          "id": "observe",
+          "label": "減少銅箍",
+          "next": "choice_3_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_3_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "單筒揚程不夠，阿基米德改畫兩段串接並重算成本。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "choice_3_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "筒長保住了，接縫卻滲水，玩家被迫重算安全間距。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "q08",
+      "type": "quiz",
+      "anchor": 8,
+      "scene": "工匠開出的最後報價",
+      "objective": "根據實測資料修正漏水與人力負荷",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "工匠開出的最後報價。木料、銅箍和樹脂總價超過預算，必須列方程式解出還能保住揚程的最大筒長。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把透明水槽裡未知的量列成條件，解出唯一可行的配置。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_3": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_3": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "一元一次方程式",
+        "chapterIncludes": "一元一次方程式 一元一次方程式的應用",
+        "knowledgePoint": "將生活情境轉化為一元一次方程式",
+        "questionIds": [
+          540,
+          537,
+          539
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-archimedes-scene-08",
+        "setting": "敘拉古港外的低窪農田、灌溉渠與木工棚",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "透明水槽",
+          "木製螺旋筒",
+          "水位木牌"
+        ],
+        "sceneNeed": "木料、銅箍和樹脂總價超過預算，必須列方程式解出還能保住揚程的最大筒長。",
+        "rewrites": {
+          "537": {
+            "question": "透明水槽的紀錄停在這一行；下一步正等著它：你問同行者今年幾歲，同行者說：「我的年齡與你的年齡相差 25 歲，且 5 年後，我的年齡剛好是你的 2 倍。」請問你今年幾歲？",
+            "preserveImage": false
+          },
+          "539": {
+            "question": "現場只剩透明水槽上的這份計算還沒核對：你每天先騎測試車去快速通道站，再轉搭快速通道前往測點。已知騎測試車的平均時速為 12 里程格，快速通道的平均時速為 60 里程格。若從起點到現場的總路程為 24 里程格，且你每天前往測點所花的時間（不計等待時間）剛好是 0.6 小時，請問你從起點騎測試車到快速通道站的距離是多少里程格？",
+            "preserveImage": false
+          },
+          "540": {
+            "question": "工匠開出的最後報價。阿基米德在透明水槽上留下這組條件：有一個二位數，其十位數字與個位數字的和為 11。若將其十位數字與個位數字對調，所得到的新數比原數大 27，則原數為 _____ 。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "透明水槽上的數字對上了。修正漏水空轉終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q09",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q09",
+      "type": "quiz",
+      "anchor": 9,
+      "scene": "踏板輪值卡死轉軸",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "踏板輪值卡死轉軸。兩組工人的休息週期不同，交接一錯轉軸就會停，玩家要用公倍數排出同步輪值點。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "拆開修正漏水空轉分組表的數量結構，找出能整齊分組的方式。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "因數分解與分數運算",
+        "chapterIncludes": "因數分解與分數運算 公因數與公倍數",
+        "knowledgePoint": "互質",
+        "questionIds": [
+          462,
+          464,
+          463
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-archimedes-scene-09",
+        "setting": "敘拉古港外的低窪農田、灌溉渠與木工棚",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "修正漏水空轉分組表",
+          "木製螺旋筒",
+          "水位木牌"
+        ],
+        "sceneNeed": "兩組工人的休息週期不同，交接一錯轉軸就會停，玩家要用公倍數排出同步輪值點。",
+        "rewrites": {
+          "462": {
+            "question": "修正漏水空轉分組表的紀錄停在這一行；下一步正等著它：請找出大於或等於 10 ，且小於或等於 20 的所有正整數中，與 12 互質的數字，並計算出這些數字的總和。",
+            "preserveImage": false
+          },
+          "463": {
+            "question": "阿基米德把踏板輪值卡死轉軸剛測到的數字推到你面前：某紀錄系統的參與者密碼設定規則為「四位數字，且前兩位數字所組成的二位數必須與後兩位數字所組成的二位數互質」。例如：前兩位是 14 ，後兩位是 15 ，因 14 和 15 的最大公因數為 1 ，符合規則。你想用以下四組數字當作密碼，哪一組符合紀錄系統規定？",
+            "options": {
+              "A": "2639",
+              "B": "2435",
+              "C": "2754",
+              "D": "3451"
+            },
+            "preserveImage": false
+          },
+          "464": {
+            "question": "現場只剩修正漏水空轉分組表上的這份計算還沒核對：已知一個二位數 x ，其十位數字為 4 。若 x 與 24 互質，且 x 與 35 也互質，請找出所有符合條件的 x 值，並求出這些值的總和為多少？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "修正漏水空轉分組表上的數字對上了。修正漏水空轉終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_1",
+      "type": "eureka",
+      "eurekaId": "g7h2-archimedes-insight-1",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "斜置螺旋旋轉時，水會被困在連續的小空間裡逐格升高"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "transition_4"
+    },
+    {
+      "id": "transition_4",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "修正漏水空轉告一段落，木製螺旋筒卻送來新的壞消息。原先穩定的讀數突然偏了一格；這不是能略過的小差。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是迎戰暴雨漲水；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q10"
+    },
+    {
+      "id": "q10",
+      "type": "quiz",
+      "anchor": 10,
+      "scene": "第二場暴雨壓上海堤",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "第二場暴雨壓上海堤。低田水位持續上升，玩家必須解出最遲啟動時間的不等式，錯過就會淹過幼苗根部。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "替灌溉分水圖找出不能越過的上下界。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "一元一次不等式",
+        "chapterIncludes": "一元一次不等式 解一元一次不等式及其應用",
+        "knowledgePoint": "情境應用問題",
+        "questionIds": [
+          693,
+          692,
+          690
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-archimedes-scene-10",
+        "setting": "敘拉古港外的低窪農田、灌溉渠與木工棚",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "灌溉分水圖",
+          "木製螺旋筒",
+          "水位木牌"
+        ],
+        "sceneNeed": "低田水位持續上升，玩家必須解出最遲啟動時間的不等式，錯過就會淹過幼苗根部。",
+        "rewrites": {
+          "690": {
+            "question": "第二場暴雨壓上海堤。阿基米德在灌溉分水圖上留下這組條件：你取用了一箱蘋果共有 x 顆，你吃了 3 顆後，剩下的蘋果數量「不到」 10 顆。下列哪一個不等式可以正確表示這個情境？",
+            "options": {
+              "A": "x - 3",
+              "B": "x - 3 \\le 10",
+              "C": "x - 3 > 10",
+              "D": "x - 3 \\ge 10"
+            },
+            "preserveImage": false
+          },
+          "692": {
+            "question": "灌溉分水圖的紀錄停在這一行；下一步正等著它：你想取用一輛售價 4000 枚的測試車，你目前已經存了 1200 枚。如果你接下來每週固定存下 250 枚，至少需要存滿 _____ 週，才能夠取用這輛測試車。",
+            "preserveImage": false
+          },
+          "693": {
+            "question": "阿基米德把第二場暴雨壓上海堤剛測到的數字推到你面前：已知一個長方形的長為 2x-3 小格，寬為 5 小格。若這個長方形的周長大於 20 小格且小於或等於 40 小格，請求出符合條件的整數 x 之「最大值」為何？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "灌溉分水圖上的數字對上了。迎戰暴雨漲水終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_4",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_4",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "暴雨已到，要讓少數人高速踩，還是增加輪值？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查水位木牌。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選透明水槽。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "兩邊都重要。{{address}}，替我砍出第一條路。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "少數人高速踩",
+          "next": "choice_4_measure"
+        },
+        {
+          "id": "observe",
+          "label": "增加穩定輪值",
+          "next": "choice_4_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_4_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "踏板短暫飛快，工人很快失速，平均流量反而下降。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "choice_4_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "速度不快卻從不中斷，低田水位開始穩定下降。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "q11",
+      "type": "quiz",
+      "anchor": 11,
+      "scene": "長筒重得踩不動",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "長筒重得踩不動。增加筒長後單組工人撐不住，得用人數與工作時間的反比重新分配踏板。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把木製螺旋筒上的條件逐項核對。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_4": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_4": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "比例",
+        "chapterIncludes": "比例 正比與反比",
+        "knowledgePoint": "正比關係的意義與判別",
+        "questionIds": [
+          651,
+          649,
+          648
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-archimedes-scene-11",
+        "setting": "敘拉古港外的低窪農田、灌溉渠與木工棚",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "木製螺旋筒",
+          "水位木牌",
+          "透明水槽"
+        ],
+        "sceneNeed": "增加筒長後單組工人撐不住，得用人數與工作時間的反比重新分配踏板。",
+        "rewrites": {
+          "648": {
+            "question": "阿基米德把長筒重得踩不動剛測到的數字推到你面前：你在現場測點取用樣品，老闆標示著樣品的總價錢 y 枚與取用數量 x 顆成正比。若你取用 10 顆樣品需要 30 枚，則你取用 25 顆樣品需要交付 _____ 元。",
+            "preserveImage": false
+          },
+          "649": {
+            "question": "現場只剩木製螺旋筒上的這份計算還沒核對：已知 y 與 x 成正比，且當 x = -4 時， y = 10 。求當 y = -15 時， x 的值為多少？",
+            "preserveImage": false
+          },
+          "651": {
+            "question": "要讓長筒重得踩不動繼續，你得先解開木製螺旋筒旁這一筆：已知 (y-2) 與 (2x+1) 成正比。當 x=1 時， y=11 。求當 x=4 時， y 的值為多少？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "木製螺旋筒上的數字對上了。迎戰暴雨漲水終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q12",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q12",
+      "type": "quiz",
+      "anchor": 12,
+      "scene": "穩定流量浮上圖紙",
+      "objective": "在下一場暴雨前完成能持續抽水的裝置",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "穩定流量浮上圖紙。玩家把傾角、轉速與出水紀錄畫在同一張圖，和阿基米德找出不空轉又不斷流的區間。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把迎戰暴雨漲水紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "統計圖表與資料分析",
+        "chapterIncludes": "統計圖表與資料分析 統計圖表與平均數、中位數、眾數",
+        "knowledgePoint": "直方圖、長條圖、折線圖、圓形圖的繪製與報讀",
+        "questionIds": [
+          697,
+          700,
+          699
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-archimedes-scene-12",
+        "setting": "敘拉古港外的低窪農田、灌溉渠與木工棚",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "迎戰暴雨漲水紀錄表",
+          "木製螺旋筒",
+          "水位木牌"
+        ],
+        "sceneNeed": "玩家把傾角、轉速與出水紀錄畫在同一張圖，和阿基米德找出不空轉又不斷流的區間。",
+        "rewrites": {
+          "697": {
+            "question": "迎戰暴雨漲水紀錄表的紀錄停在這一行；下一步正等著它：下圖為觀測組 40 筆紀錄現場測量讀數的次數分配直方圖。根據圖中資訊，若將全班讀數由低至高排列，中位數會落在哪一組？該組的次數為 _____ 人。",
+            "preserveImage": true,
+            "imageAlt": "迎戰暴雨漲水紀錄表的資料圖"
+          },
+          "699": {
+            "question": "現場只剩迎戰暴雨漲水紀錄表上的這份計算還沒核對：你統計現場同行者最喜歡的運動項目，並繪製成圓形圖如附圖。已知全班共有 40 人，且每人只選擇一項最喜歡的運動。請問喜歡羽球的同行者共有多少人？",
+            "options": {
+              "A": "12 人",
+              "B": "16 人",
+              "C": "30 人",
+              "D": "108 人"
+            },
+            "preserveImage": true,
+            "imageAlt": "迎戰暴雨漲水紀錄表的資料圖"
+          },
+          "700": {
+            "question": "穩定流量浮上圖紙。阿基米德在迎戰暴雨漲水紀錄表上留下這組條件：你記錄了你家附近現場某知名樣品店一週（星期一到星期日）的每日賣出杯數，並繪製成折線圖如附圖。根據折線圖，該店這一週內，賣出杯數最多與最少的日子，相差了多少杯？",
+            "preserveImage": true,
+            "imageAlt": "迎戰暴雨漲水紀錄表的資料圖"
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "迎戰暴雨漲水紀錄表上的數字對上了。迎戰暴雨漲水終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_5",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "迎戰暴雨漲水告一段落，水位木牌卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是讓清水越過堤岸；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q13"
+    },
+    {
+      "id": "q13",
+      "type": "quiz",
+      "anchor": 13,
+      "scene": "三條支渠同時爭水",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "三條支渠同時爭水。主渠水量要按田地面積分給三區，任何一區少分都會枯死，必須完成分數四則分配。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "核對透明水槽的份量，不能讓任何一份在換算時消失。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "因數分解與分數運算",
+        "chapterIncludes": "因數分解與分數運算 分數的四則運算",
+        "knowledgePoint": "分數的乘除與四則混合運算",
+        "questionIds": [
+          485,
+          487,
+          484
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-archimedes-scene-13",
+        "setting": "敘拉古港外的低窪農田、灌溉渠與木工棚",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "透明水槽",
+          "木製螺旋筒",
+          "水位木牌"
+        ],
+        "sceneNeed": "主渠水量要按田地面積分給三區，任何一區少分都會枯死，必須完成分數四則分配。",
+        "rewrites": {
+          "484": {
+            "question": "現場只剩透明水槽上的這份計算還沒核對：你在現場擺測點賣古早味紅茶。今晚你準備了一大桶容量為 \\frac{15}{2} 公升的紅茶，若你將紅茶每 \\frac{3}{4} 公升裝成一杯販售，請問這桶紅茶最多可以裝成幾杯？",
+            "options": {
+              "A": "10",
+              "B": "8",
+              "C": "\\frac{45}{8}",
+              "D": "\\frac{5}{2}"
+            },
+            "preserveImage": false
+          },
+          "485": {
+            "question": "三條支渠同時爭水。阿基米德在透明水槽上留下這組條件：計算算式 (-\\frac{5}{6}) \\times (-\\frac{9}{10}) \\div (-\\frac{3}{4}) 的值為 _____。",
+            "preserveImage": false
+          },
+          "487": {
+            "question": "透明水槽的紀錄停在這一行；下一步正等著它：算式 \\frac{7}{9} \\times (-\\frac{3}{14}) - \\frac{5}{6} \\div (-\\frac{10}{3}) 之值為何？",
+            "options": {
+              "A": "\\frac{1}{12}",
+              "B": "-\\frac{5}{12}",
+              "C": "\\frac{5}{12}",
+              "D": "-\\frac{1}{12}"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "透明水槽上的數字對上了。讓清水越過堤岸終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_5",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "最後一批水先救最乾的田，還是立刻平均分流？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查踏板轉軸。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選灌溉分水圖。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "兩邊都重要。{{address}}，替我砍出第一條路。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "先救最乾的田",
+          "next": "choice_5_measure"
+        },
+        {
+          "id": "observe",
+          "label": "平均分流",
+          "next": "choice_5_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_5_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "危急田區先止渴，玩家再按面積訂出後續補水比例。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "choice_5_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "末端流量小到進不了田，眾人改按距離損耗調整比例。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "q14",
+      "type": "quiz",
+      "anchor": 14,
+      "scene": "高田水槽即將溢流",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "高田水槽即將溢流。水槽已有初始水量且持續流入，玩家要列一元一次方程式算出關閉螺旋的時刻。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把踏板轉軸上的條件逐項核對。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_5": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_5": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "一元一次方程式",
+        "chapterIncludes": "一元一次方程式 以符號列式與運算",
+        "knowledgePoint": "一次式的化簡與同類項合併",
+        "questionIds": [
+          513,
+          511,
+          515
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-archimedes-scene-14",
+        "setting": "敘拉古港外的低窪農田、灌溉渠與木工棚",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "踏板轉軸",
+          "木製螺旋筒",
+          "水位木牌"
+        ],
+        "sceneNeed": "水槽已有初始水量且持續流入，玩家要列一元一次方程式算出關閉螺旋的時刻。",
+        "rewrites": {
+          "511": {
+            "question": "要讓高田水槽即將溢流繼續，你得先解開踏板轉軸旁這一筆：化簡一元一次式 3(2x - 4) - (x + 5) 可得下列哪個選項？",
+            "options": {
+              "A": "5x - 17",
+              "B": "5x - 7",
+              "C": "7x - 17",
+              "D": "5x + 7"
+            },
+            "preserveImage": false
+          },
+          "513": {
+            "question": "阿基米德把高田水槽即將溢流剛測到的數字推到你面前：下列何者為 \\frac{2x - 3}{4} - \\frac{x - 5}{3} 化簡的結果？",
+            "options": {
+              "A": "\\frac{2x + 11}{12}",
+              "B": "\\frac{2x - 29}{12}",
+              "C": "\\frac{2x + 11}{7}",
+              "D": "2x + 11"
+            },
+            "preserveImage": false
+          },
+          "515": {
+            "question": "高田水槽即將溢流。阿基米德在踏板轉軸上留下這組條件：你在化簡一次式 -2[3x - \\frac{1}{2} (4x + 6)] + 5(x - 2) 時，計算過程如下： 第一步：-2[3x - 2x + 3] + 5(x - 2) 第二步：-2[x + 3] + 5x - 10 第三步：-2x - 6 + 5x - 10 第四步：3x - 16。請問你從哪一個步驟開始發生第一個錯誤？正確的化簡結果應為何？",
+            "options": {
+              "A": "第一步，正確結果應為 3x - 4",
+              "B": "第一步，正確結果應為 3x - 16",
+              "C": "第三步，正確結果應為 3x - 4",
+              "D": "第三步，正確結果應為 3x - 16"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "踏板轉軸上的數字對上了。讓清水越過堤岸終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_2",
+      "type": "eureka",
+      "eurekaId": "g7h2-archimedes-insight-2",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "抽水效率來自裝水、密封、傾角與持續轉動的平衡，不是盲目加速"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "q15"
+    },
+    {
+      "id": "q15",
+      "type": "quiz",
+      "anchor": 15,
+      "scene": "留給下一位工匠的圖",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "留給下一位工匠的圖。天亮前必須把筒身、螺旋與支架整理成可施工的三視圖，否則損壞後沒人能重造。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把讓清水越過堤岸立體模型上的條件逐項核對。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 2,
+        "major": "生活中的幾何圖形",
+        "chapterIncludes": "生活中的幾何圖形 幾何圖形、線對稱與三視圖",
+        "knowledgePoint": "立體圖形的三視圖",
+        "questionIds": [
+          731,
+          733,
+          735
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h2-archimedes-scene-15",
+        "setting": "敘拉古港外的低窪農田、灌溉渠與木工棚",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "讓清水越過堤岸立體模型",
+          "木製螺旋筒",
+          "水位木牌"
+        ],
+        "sceneNeed": "天亮前必須把筒身、螺旋與支架整理成可施工的三視圖，否則損壞後沒人能重造。",
+        "rewrites": {
+          "731": {
+            "question": "要讓留給下一位工匠的圖繼續，你得先解開讓清水越過堤岸立體模型旁這一筆：一個立體圖形由多個大小相同的正方體積木在桌面上堆疊而成。已知我們從正上方看這個立體圖形（即上視圖），看到的是由 4 個小正方形組成的形狀。請問這個立體圖形的最底層（直接接觸桌面那層）有 _____ 個正方體積木？",
+            "preserveImage": false
+          },
+          "733": {
+            "question": "阿基米德把留給下一位工匠的圖剛測到的數字推到你面前：某立體圖形由若干個相同的正方體積木堆疊而成，已知其上視圖為一個 2 \\times 2 的田字形（共 4 個小正方形），前視圖是一個長方形，由左至右共 2 直行，且最高皆為 3 個正方形（共 6 個小正方形）。請問這個立體圖形「最少」需要幾個正方體積木？",
+            "options": {
+              "A": "6",
+              "B": "8",
+              "C": "10",
+              "D": "12"
+            },
+            "preserveImage": false
+          },
+          "735": {
+            "question": "留給下一位工匠的圖。阿基米德在讓清水越過堤岸立體模型上留下這組條件：在桌面上使用大小相同的正方體積木堆疊成一個立體圖形。已知其上視圖是由 5 個小正方形排成一個「十」字形（即一個中心位置，以及其前後左右相鄰的四個位置）。\n前視圖是從正前方看，共看到 5 個正方形面，從左至右共 3 個直行，這三行對應的高度依序為 2、2、1 個正方形。\n右視圖是從正右方看，共看到 4 個正方形面，從前至後共 3 個直行，這三行對應的高度依序為 1、2、1 個正方形。\n請問這個立體圖形總共使用了幾個正方體積木？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "讓清水越過堤岸立體模型上的數字對上了。讓清水越過堤岸終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "ending_history",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "ending_history",
+      "type": "narrative",
+      "objective": "記住阿基米德留下的答案",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "讓清水越過堤岸完成了。現場安靜下來，只有木製螺旋筒還留著剛才的痕跡。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，今天不是你替我算完。是我們一起把它想通。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那道光退了……可是我還記得它的味道。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "因為答案不是光。答案會留在能被重做的步驟裡。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "——時間向前推去。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "螺旋汲水器救回農田。多年後敘拉古城破，阿基米德在專注沙地幾何時遭羅馬士兵殺害；他的機械研究與數學著作跨越兩千多年。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "眼前的敘拉古港外的低窪農田、灌溉渠與木工棚慢慢褪色。藍紫色的安靜重新包圍你們。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}，下次再有人快想通時，我們還會聽見。"
+        }
+      ],
+      "next": "ending_stats"
+    },
+    {
+      "id": "ending_stats",
+      "type": "ending",
+      "next": null,
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "【劇本結束】七下 × 阿基米德"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "這趟路的每一次重算，數字都記得。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "下次見，{{playerName}}！"
+        }
+      ]
+    }
+  ]
+}

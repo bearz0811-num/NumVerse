@@ -1,0 +1,2373 @@
+{
+  "id": "g8h2-turing",
+  "grade": 8,
+  "half": 2,
+  "gradeLabel": "八下",
+  "mathematician": "艾倫・圖靈",
+  "mathematicianSpeaker": "Mathematician",
+  "episode": "證明之外的階梯",
+  "setting": "普林斯頓的邏輯討論室、圖書館與博士口試會場",
+  "era": "1936 至 1938 年",
+  "acts": [
+    "在丘奇的黑板前立下公理",
+    "找出形式系統的邊界",
+    "搭起序數邏輯的階梯",
+    "讓兩條證明互相驗證",
+    "完成博士論文並返英"
+  ],
+  "insights": [
+    "擴充一套規則不是推翻它，而是精確承認它的邊界",
+    "任何證明都站在前提上，嚴密始於把前提說清楚"
+  ],
+  "props": [
+    "公理卡",
+    "尺規",
+    "序數階梯圖",
+    "口試黑板",
+    "返英船票"
+  ],
+  "endingSummary": "圖靈在戰後持續研究電腦、人工智慧與形態發生，1954 年離世；後世才逐步還他應有的名字。",
+  "legendNote": null,
+  "objectives": [
+    "分辨前提、推演規則、結論與反例",
+    "用幾何作圖與代數分解驗證形式步驟",
+    "理解擴充形式系統必須明示新增前提",
+    "完成序數邏輯博士論文與口試"
+  ],
+  "beats": [
+    {
+      "scene": "丘奇黑板上的第一條推論",
+      "problem": "三角形證明少了一步，玩家要從已知邊角條件補出合法理由，否則整條論證不能成立。",
+      "major": "三角形的性質與尺規作圖"
+    },
+    {
+      "scene": "只准使用尺規的挑戰",
+      "problem": "圖靈必須在有限合法操作內完成作圖；任何偷加刻度的捷徑都會使結果失效。",
+      "major": "三角形的性質與尺規作圖"
+    },
+    {
+      "scene": "平行線間失蹤的角",
+      "problem": "兩條推演路徑給出不同角度，玩家要依平行線性質找出錯誤步驟。",
+      "major": "平行與四邊形"
+    },
+    {
+      "scene": "方程式分出的兩條路",
+      "problem": "博士草稿中的一元二次方程式有兩個解，必須逐一檢查，不能因偏好而丟掉其中一個。",
+      "major": "一元二次方程式"
+    },
+    {
+      "scene": "拆開複雜命題的因式",
+      "problem": "一長串代數條件遮住成立關鍵，玩家要因式分解，找出使整式為零的所有情況。",
+      "major": "因式分解"
+    },
+    {
+      "scene": "反例卡堆出的統計表",
+      "problem": "數十個成功例子看似足夠，圖靈卻要求從圖表中確認它們仍不能取代一般證明。",
+      "major": "統計資料處理與圖表"
+    },
+    {
+      "scene": "四邊形公理的地基",
+      "problem": "只給部分平行與等長條件，玩家要判斷哪些結論必然成立，哪些只是圖畫看起來像。",
+      "major": "平行與四邊形"
+    },
+    {
+      "scene": "現有系統無法抵達的命題",
+      "problem": "所有合法尺規步驟都已試過，玩家必須分辨是尚未找到證明，還是前提根本不足。",
+      "major": "三角形的性質與尺規作圖"
+    },
+    {
+      "scene": "在舊系統之上加一階",
+      "problem": "玩家與圖靈加入一條明示的新前提，原本無法推演的命題終於可達，卻也留下新的邊界。",
+      "major": "平行與四邊形"
+    },
+    {
+      "scene": "序數階梯的資料圖",
+      "problem": "多層形式系統的結果混在一起，必須用統計圖表整理每一層新增與仍未解決的命題。",
+      "major": "統計資料處理與圖表"
+    },
+    {
+      "scene": "公式解與分解法的交叉口",
+      "problem": "兩種方法得到的解數不同，玩家要回到一元二次方程式逐項比對，找出遺漏。",
+      "major": "一元二次方程式"
+    },
+    {
+      "scene": "圖書館斜廊的精確距離",
+      "problem": "兩份關鍵文獻分處直角廊道兩端，玩家用畢氏定理算出傳遞線的最短長度。",
+      "major": "平方根與畢氏定理"
+    },
+    {
+      "scene": "口試桌上的缺失條件",
+      "problem": "委員故意拿走一項三角形條件，圖靈必須證明結論不再唯一，而不是硬湊答案。",
+      "major": "三角形的性質與尺規作圖"
+    },
+    {
+      "scene": "證明從哪裡開始",
+      "problem": "玩家與圖靈把論文中的每條結論反向分解到前提，終於看清嚴密來自完整標示依賴。",
+      "major": "因式分解"
+    },
+    {
+      "scene": "口試後的兩個解",
+      "problem": "返英安排形成一元二次條件，兩個數學解中只有一個符合時間與費用限制，必須完成檢核。",
+      "major": "一元二次方程式"
+    }
+  ],
+  "choices": [
+    {
+      "prompt": "尺規作圖卡住，先查哪裡？",
+      "firstLabel": "核對允許操作",
+      "firstResult": "一個偷用了刻度的步驟被抓出，證明回到合法軌道。",
+      "secondLabel": "重讀已知條件",
+      "secondResult": "被忽略的等長條件打開新的作圖路線。"
+    },
+    {
+      "prompt": "大量例子都成功，可以直接下結論嗎？",
+      "firstLabel": "先尋找反例",
+      "firstResult": "一個邊界案例迫使原命題縮小範圍。",
+      "secondLabel": "先尋找一般證明",
+      "secondResult": "例子被保留作線索，但不再冒充證明。"
+    },
+    {
+      "prompt": "系統碰到邊界，下一步怎麼走？",
+      "firstLabel": "檢查前提是否不足",
+      "firstResult": "你們指出缺少的條件，沒有假裝舊系統已經完成任務。",
+      "secondLabel": "提出明示的新規則",
+      "secondResult": "新階層被建立，適用範圍與代價一併寫下。"
+    },
+    {
+      "prompt": "兩條解法結果不同，先信哪一條？",
+      "firstLabel": "逐步對照推導",
+      "firstResult": "分解法漏掉的零因子被找回。",
+      "secondLabel": "把所有解代回原式",
+      "secondResult": "不合條件的根被排除，差異來源隨即定位。"
+    },
+    {
+      "prompt": "博士畢業後的邀請如何選？",
+      "firstLabel": "先整理美國研究成果",
+      "firstResult": "圖靈完成交接，仍按史實準備返英。",
+      "secondLabel": "立即規劃返英",
+      "secondResult": "返程路線先被鎖定，再於離校前完成交接。"
+    }
+  ],
+  "version": 1,
+  "title": "八下 × 艾倫・圖靈",
+  "language": "zh-TW",
+  "companions": [
+    "NumNum",
+    "Numi"
+  ],
+  "journalTitle": "證明之外的階梯",
+  "notes": [
+    "玩家本人與 NumNum、Numi 一起冒險。",
+    "題目只從所選年段 questionBank 抽取。",
+    "題面依當下研究場景整段改寫；數字、算式、答案不變。",
+    "答錯保留同一題並給提示，直到答對。",
+    "Eureka 僅在玩家與數學家共同領悟關鍵知識時觸發。"
+  ],
+  "detourTemplates": [
+    [
+      {
+        "speaker": "NumNum",
+        "text": "條件還在。慢一點，沿同一條路再走一次。"
+      }
+    ],
+    [
+      {
+        "speaker": "Numi",
+        "text": "別換題。眼前這件事還等著我們把它算開。"
+      }
+    ],
+    [
+      {
+        "speaker": "Mathematician",
+        "text": "我也沒放棄。重看剛才那一步。"
+      }
+    ]
+  ],
+  "correctFeedback": [
+    [
+      {
+        "speaker": "narrator",
+        "text": "數字對上，眼前的阻礙鬆開了一格。"
+      }
+    ]
+  ],
+  "nodes": [
+    {
+      "id": "opening",
+      "type": "narrative",
+      "objective": "分辨前提、推演規則、結論與反例",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "數學世界的藍紫色安靜得像一張沒有折痕的紙。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那邊有一點光——很細，還在抖。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "不是 Eureka。只是有人卡在一個還沒想通的問題前。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "你們追著微光穿過薄紙般的界面。1936 至 1938 年，普林斯頓的邏輯討論室、圖書館與博士口試會場。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "艾倫・圖靈站在公理卡旁，手裡那一步已經停了很久。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "你們是誰？算了——如果看得懂數字，就過來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}也在！我們不是來旁觀的。"
+        }
+      ],
+      "next": "q01"
+    },
+    {
+      "id": "q01",
+      "type": "quiz",
+      "anchor": 1,
+      "scene": "丘奇黑板上的第一條推論",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "丘奇黑板上的第一條推論。三角形證明少了一步，玩家要從已知邊角條件補出合法理由，否則整條論證不能成立。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "核對在丘奇的黑板前立下公理幾何圖上的幾何關係，每一道線都要有理由。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "三角形的性質與尺規作圖",
+        "chapterIncludes": "三角形的性質與尺規作圖 內角與外角",
+        "knowledgePoint": "三角形與多邊形的內角和、外角和",
+        "questionIds": [
+          1033,
+          1031,
+          2288
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-turing-scene-01",
+        "setting": "普林斯頓的邏輯討論室、圖書館與博士口試會場",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "在丘奇的黑板前立下公理幾何圖",
+          "公理卡",
+          "尺規"
+        ],
+        "sceneNeed": "三角形證明少了一步，玩家要從已知邊角條件補出合法理由，否則整條論證不能成立。",
+        "rewrites": {
+          "1031": {
+            "question": "要讓丘奇黑板上的第一條推論繼續，你得先解開在丘奇的黑板前立下公理幾何圖旁這一筆：已知正 n 邊形的內角和為 1080^{\\circ} ，試問 n 為多少？",
+            "options": {
+              "A": "6",
+              "B": "8",
+              "C": "10",
+              "D": "12"
+            },
+            "preserveImage": false
+          },
+          "1033": {
+            "question": "艾倫・圖靈把丘奇黑板上的第一條推論剛測到的數字推到你面前：已知一個正多邊形的每一個內角是其每一個外角的 4 倍，求此正多邊形的邊數。",
+            "preserveImage": false
+          },
+          "2288": {
+            "question": "艾倫・圖靈把丘奇黑板上的第一條推論剛測到的數字推到你面前：已知一個正多邊形，其一個內角的度數比它一個外角度數的 4 倍多 30^\\circ 。請問此正多邊形的邊數為何？",
+            "options": {
+              "A": "10",
+              "B": "12",
+              "C": "15",
+              "D": "18"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "在丘奇的黑板前立下公理幾何圖上的數字對上了。在丘奇的黑板前立下公理終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_1",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "尺規作圖卡住，先查哪裡？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查公理卡。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選尺規。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "核對允許操作",
+          "next": "choice_1_measure"
+        },
+        {
+          "id": "observe",
+          "label": "重讀已知條件",
+          "next": "choice_1_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_1_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "一個偷用了刻度的步驟被抓出，證明回到合法軌道。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "choice_1_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "被忽略的等長條件打開新的作圖路線。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "q02",
+      "type": "quiz",
+      "anchor": 2,
+      "scene": "只准使用尺規的挑戰",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "只准使用尺規的挑戰。圖靈必須在有限合法操作內完成作圖；任何偷加刻度的捷徑都會使結果失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "核對在丘奇的黑板前立下公理幾何圖上的幾何關係，每一道線都要有理由。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_1": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_1": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "三角形的性質與尺規作圖",
+        "chapterIncludes": "三角形的性質與尺規作圖 三角形的邊角關係",
+        "knowledgePoint": "三角形兩邊之和大於第三邊",
+        "questionIds": [
+          1086,
+          1089,
+          2298
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-turing-scene-02",
+        "setting": "普林斯頓的邏輯討論室、圖書館與博士口試會場",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "在丘奇的黑板前立下公理幾何圖",
+          "公理卡",
+          "尺規"
+        ],
+        "sceneNeed": "圖靈必須在有限合法操作內完成作圖；任何偷加刻度的捷徑都會使結果失效。",
+        "rewrites": {
+          "1086": {
+            "question": "要讓只准使用尺規的挑戰繼續，你得先解開在丘奇的黑板前立下公理幾何圖旁這一筆：一個三角形的兩邊長分別是7小格和12小格。如果第三邊的長度也是整數小格，請問這個三角形的周長最大是幾小格？",
+            "preserveImage": false
+          },
+          "1089": {
+            "question": "現場只剩在丘奇的黑板前立下公理幾何圖上的這份計算還沒核對：已知一個三角形的三邊長分別為 2x+1、3x-2 與 12。若 x 必須為整數，則滿足條件的 x 值中，最大值與最小值的和為多少？",
+            "preserveImage": false
+          },
+          "2298": {
+            "question": "艾倫・圖靈把只准使用尺規的挑戰剛測到的數字推到你面前：已知一個三角形的三邊長分別為 8 小格、 15 小格與 x 小格，其中 x 為整數。請問此三角形的最大周長為多少小格？",
+            "options": {
+              "A": "22",
+              "B": "45",
+              "C": "46",
+              "D": "23"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "在丘奇的黑板前立下公理幾何圖上的數字對上了。在丘奇的黑板前立下公理終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q03",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q03",
+      "type": "quiz",
+      "anchor": 3,
+      "scene": "平行線間失蹤的角",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "平行線間失蹤的角。兩條推演路徑給出不同角度，玩家要依平行線性質找出錯誤步驟。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "核對在丘奇的黑板前立下公理幾何圖上的幾何關係，每一道線都要有理由。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "平行與四邊形",
+        "chapterIncludes": "平行與四邊形 平行四邊形",
+        "knowledgePoint": "平行四邊形的定義",
+        "questionIds": [
+          1117,
+          1116,
+          1113
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-turing-scene-03",
+        "setting": "普林斯頓的邏輯討論室、圖書館與博士口試會場",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "在丘奇的黑板前立下公理幾何圖",
+          "公理卡",
+          "尺規"
+        ],
+        "sceneNeed": "兩條推演路徑給出不同角度，玩家要依平行線性質找出錯誤步驟。",
+        "rewrites": {
+          "1113": {
+            "question": "艾倫・圖靈把平行線間失蹤的角剛測到的數字推到你面前：在四邊形 ABCD 中，下列哪一個條件組合必定能推導出 ABCD 為平行四邊形？",
+            "options": {
+              "A": "AB 平行 CD，且 AD = BC",
+              "B": "AB = BC，且 CD = DA",
+              "C": "AB 平行 CD，且 AD 平行 BC",
+              "D": "角A = 角B，且 角C = 角D"
+            },
+            "preserveImage": false
+          },
+          "1116": {
+            "question": "要讓平行線間失蹤的角繼續，你得先解開在丘奇的黑板前立下公理幾何圖旁這一筆：已知四邊形 ABCD 為平行四邊形，若 角A = (3x + 10)^{ \\circ }，且同側內角 角B = (2x - 30)^{ \\circ }，請問 角C 的度數為多少？",
+            "preserveImage": false
+          },
+          "1117": {
+            "question": "在丘奇的黑板前立下公理幾何圖的紀錄停在這一行；下一步正等著它：已知平行四邊形 ABCD 的周長為 40 小格。若邊長 AB 比邊長 BC 長 4 小格，請問邊長 AB 的長度為 _____ 小格。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "在丘奇的黑板前立下公理幾何圖上的數字對上了。在丘奇的黑板前立下公理終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_2",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "在丘奇的黑板前立下公理告一段落，口試黑板卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是找出形式系統的邊界；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q04"
+    },
+    {
+      "id": "q04",
+      "type": "quiz",
+      "anchor": 4,
+      "scene": "方程式分出的兩條路",
+      "objective": "用幾何作圖與代數分解驗證形式步驟",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "方程式分出的兩條路。博士草稿中的一元二次方程式有兩個解，必須逐一檢查，不能因偏好而丟掉其中一個。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "找出口試黑板形成的曲線、轉折與可行解。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "一元二次方程式",
+        "chapterIncludes": "一元二次方程式 配方法與一元二次方程式的公式解",
+        "knowledgePoint": "配完全平方式",
+        "questionIds": [
+          910,
+          906,
+          907
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-turing-scene-04",
+        "setting": "普林斯頓的邏輯討論室、圖書館與博士口試會場",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "口試黑板",
+          "公理卡",
+          "尺規"
+        ],
+        "sceneNeed": "博士草稿中的一元二次方程式有兩個解，必須逐一檢查，不能因偏好而丟掉其中一個。",
+        "rewrites": {
+          "906": {
+            "question": "要讓方程式分出的兩條路繼續，你得先解開口試黑板旁這一筆：若想將多項式 x^2 - 14x + k 變成一個完全平方式，則常數 k 的值為何？",
+            "options": {
+              "A": "-7",
+              "B": "14",
+              "C": "-49",
+              "D": "49"
+            },
+            "preserveImage": false
+          },
+          "907": {
+            "question": "口試黑板的紀錄停在這一行；下一步正等著它：你正在規劃一塊試驗區，你現有的一塊長方形土地面積可以用算式 x^2 + 10x 平方格來表示。為了解決灌溉的便利性，你打算擴大這塊土地，使其形狀變成一個正方形，且邊長為 x+5 長度格。請問你還需要增加 _____ 平方格的土地面積？",
+            "preserveImage": false
+          },
+          "910": {
+            "question": "方程式分出的兩條路。艾倫・圖靈在口試黑板上留下這組條件：若多項式 4x^2 - 12x + (2k-1) 是一個完全平方式，則 k = _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "口試黑板上的數字對上了。找出形式系統的邊界終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_2",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "大量例子都成功，可以直接下結論嗎？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查序數階梯圖。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選口試黑板。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "先尋找反例",
+          "next": "choice_2_measure"
+        },
+        {
+          "id": "observe",
+          "label": "先尋找一般證明",
+          "next": "choice_2_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_2_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "一個邊界案例迫使原命題縮小範圍。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "choice_2_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "例子被保留作線索，但不再冒充證明。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "q05",
+      "type": "quiz",
+      "anchor": 5,
+      "scene": "拆開複雜命題的因式",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "拆開複雜命題的因式。一長串代數條件遮住成立關鍵，玩家要因式分解，找出使整式為零的所有情況。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "整理返英船票上的代數式，讓重複結構現形。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_2": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_2": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "因式分解",
+        "chapterIncludes": "因式分解 利用十字交乘法因式分解",
+        "knowledgePoint": "綜合運用各方法進行因式分解",
+        "questionIds": [
+          890,
+          889,
+          894
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-turing-scene-05",
+        "setting": "普林斯頓的邏輯討論室、圖書館與博士口試會場",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "返英船票",
+          "公理卡",
+          "尺規"
+        ],
+        "sceneNeed": "一長串代數條件遮住成立關鍵，玩家要因式分解，找出使整式為零的所有情況。",
+        "rewrites": {
+          "889": {
+            "question": "現場只剩返英船票上的這份計算還沒核對：請將多項式 2x^2 - 12x + 18 進行因式分解，其結果為下列何者？",
+            "options": {
+              "A": "2(x - 3)^2",
+              "B": "2(x + 3)^2",
+              "C": "(2x - 3)^2",
+              "D": "2(x^2 - 6x + 9)"
+            },
+            "preserveImage": false
+          },
+          "890": {
+            "question": "拆開複雜命題的因式。艾倫・圖靈在返英船票上留下這組條件：若多項式 3x^2 + 15x - 42 可以因式分解為 3(x + a)(x + b) 的形式，其中 a, b 為整數且 a > b ，則 a - b = _____？",
+            "preserveImage": false
+          },
+          "894": {
+            "question": "現場只剩返英船票上的這份計算還沒核對：若 x = 103 ，請利用因式分解的技巧，計算多項式 (2x-1)(x+3) - (x+3)^2 + x^2 - 9 的值為多少？（提示：請先將多項式進行因式分解，再代入數值計算）",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "返英船票上的數字對上了。找出形式系統的邊界終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q06",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q06",
+      "type": "quiz",
+      "anchor": 6,
+      "scene": "反例卡堆出的統計表",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "反例卡堆出的統計表。數十個成功例子看似足夠，圖靈卻要求從圖表中確認它們仍不能取代一般證明。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把公理卡上的條件逐項核對。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "統計資料處理與圖表",
+        "chapterIncludes": "統計資料處理與圖表 相對與累積次數分配圖表",
+        "knowledgePoint": "相對次數、累積次數、累積相對次數分配折線圖的繪製與判讀",
+        "questionIds": [
+          943,
+          945,
+          942
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-turing-scene-06",
+        "setting": "普林斯頓的邏輯討論室、圖書館與博士口試會場",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "公理卡",
+          "尺規",
+          "序數階梯圖"
+        ],
+        "sceneNeed": "數十個成功例子看似足夠，圖靈卻要求從圖表中確認它們仍不能取代一般證明。",
+        "rewrites": {
+          "942": {
+            "question": "公理卡的紀錄停在這一行；下一步正等著它：附圖為觀測組 40 筆紀錄現場測量的累積次數分配折線圖。請問讀數介於 70 分到 80 分之間（含 70 分，不含 80 分）的觀測值共有 _____ 人。",
+            "preserveImage": true,
+            "imageAlt": "公理卡的資料圖"
+          },
+          "943": {
+            "question": "艾倫・圖靈把反例卡堆出的統計表剛測到的數字推到你面前：紀錄系統記錄了今日共 200 筆訂單的送達時間，並繪製成累積相對次數分配折線圖。請問送達時間在 30 到 40 分鐘之間的訂單共有多少筆？",
+            "preserveImage": true,
+            "imageAlt": "公理卡的資料圖"
+          },
+          "945": {
+            "question": "反例卡堆出的統計表。艾倫・圖靈在公理卡上留下這組條件：附圖為觀測組觀測值週末閱讀時間的累積相對次數分配折線圖。已知閱讀時間在 6 到 8 小時區間的觀測值共有 18 人，請問該班總共有 _____ 人。",
+            "preserveImage": true,
+            "imageAlt": "公理卡的資料圖"
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "公理卡上的數字對上了。找出形式系統的邊界終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q07",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q07",
+      "type": "quiz",
+      "anchor": 7,
+      "scene": "四邊形公理的地基",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "四邊形公理的地基。只給部分平行與等長條件，玩家要判斷哪些結論必然成立，哪些只是圖畫看起來像。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "核對搭起序數邏輯的階梯幾何圖上的幾何關係，每一道線都要有理由。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "平行與四邊形",
+        "chapterIncludes": "平行與四邊形 特殊的四邊形",
+        "knowledgePoint": "長方形、菱形、正方形、箏形與梯形（含等腰梯形）的幾何性質與對角線特徵",
+        "questionIds": [
+          1130,
+          1134,
+          1133
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-turing-scene-07",
+        "setting": "普林斯頓的邏輯討論室、圖書館與博士口試會場",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "搭起序數邏輯的階梯幾何圖",
+          "公理卡",
+          "尺規"
+        ],
+        "sceneNeed": "只給部分平行與等長條件，玩家要判斷哪些結論必然成立，哪些只是圖畫看起來像。",
+        "rewrites": {
+          "1130": {
+            "question": "四邊形公理的地基。艾倫・圖靈在搭起序數邏輯的階梯幾何圖上留下這組條件：已知正方形的對角線長度為 10，則其面積為何？",
+            "options": {
+              "A": "50",
+              "B": "100",
+              "C": "25",
+              "D": "20"
+            },
+            "preserveImage": false
+          },
+          "1133": {
+            "question": "艾倫・圖靈把四邊形公理的地基剛測到的數字推到你面前：已知一箏形 ABCD 中，對角線 \\overline{AC} 與 \\overline{BD} 交於 O 點，且 \\overline{AC} 垂直平分 \\overline{BD} 。若 \\overline{BD} = 24 ， \\overline{OA} = 5 ， \\overline{OC} = 16 ，則此箏形的周長為 _____ 。",
+            "preserveImage": false
+          },
+          "1134": {
+            "question": "現場只剩搭起序數邏輯的階梯幾何圖上的這份計算還沒核對：一等腰梯形 ABCD 中，上底 \\overline{AD} 平行下底 \\overline{BC} ，已知 \\overline{AB} = \\overline{CD} = 10 ，且上底 \\overline{AD} = 6 ，下底 \\overline{BC} = 18 。求此等腰梯形的高為多少？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "搭起序數邏輯的階梯幾何圖上的數字對上了。搭起序數邏輯的階梯終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_3",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_3",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "系統碰到邊界，下一步怎麼走？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查返英船票。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選公理卡。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "檢查前提是否不足",
+          "next": "choice_3_measure"
+        },
+        {
+          "id": "observe",
+          "label": "提出明示的新規則",
+          "next": "choice_3_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_3_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "你們指出缺少的條件，沒有假裝舊系統已經完成任務。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "choice_3_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "新階層被建立，適用範圍與代價一併寫下。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "q08",
+      "type": "quiz",
+      "anchor": 8,
+      "scene": "現有系統無法抵達的命題",
+      "objective": "理解擴充形式系統必須明示新增前提",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "現有系統無法抵達的命題。所有合法尺規步驟都已試過，玩家必須分辨是尚未找到證明，還是前提根本不足。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "核對搭起序數邏輯的階梯幾何圖上的幾何關係，每一道線都要有理由。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_3": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_3": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "三角形的性質與尺規作圖",
+        "chapterIncludes": "三角形的性質與尺規作圖 全等三角形的應用",
+        "knowledgePoint": "角平分線性質的推理證明",
+        "questionIds": [
+          2292,
+          2295,
+          2296
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-turing-scene-08",
+        "setting": "普林斯頓的邏輯討論室、圖書館與博士口試會場",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "搭起序數邏輯的階梯幾何圖",
+          "公理卡",
+          "尺規"
+        ],
+        "sceneNeed": "所有合法尺規步驟都已試過，玩家必須分辨是尚未找到證明，還是前提根本不足。",
+        "rewrites": {
+          "2292": {
+            "question": "搭起序數邏輯的階梯幾何圖的紀錄停在這一行；下一步正等著它：在 \\triangle ABC 中， AD 為 \\angle BAC 的角平分線， D 點在 BC 上。若 D 點到 AB 的垂直距離為 5 小格，則 D 點到 AC 的垂直距離為多少小格？",
+            "options": {
+              "A": "3",
+              "B": "4",
+              "C": "5",
+              "D": "6"
+            },
+            "preserveImage": false
+          },
+          "2295": {
+            "question": "現有系統無法抵達的命題。艾倫・圖靈在搭起序數邏輯的階梯幾何圖上留下這組條件：在 \\triangle ABC 中， AD 平分 \\angle BAC ，且 D 點在 BC 上。已知 AB=8 小格， AC=12 小格，若 D 點到 AB 邊的垂直距離為 3 小格，求 \\triangle ADC 的面積為多少平方小格？",
+            "preserveImage": false
+          },
+          "2296": {
+            "question": "要讓現有系統無法抵達的命題繼續，你得先解開搭起序數邏輯的階梯幾何圖旁這一筆：在 \\triangle ABC 中， D 為 BC 邊上一點。已知作 DE \\perp AB 於 E 點， DF \\perp AC 於 F 點，且測量發現 DE = DF 。若已知 \\angle B = 40^\\circ ， \\angle C = 60^\\circ ，則 \\angle BAD 的度數為 _____ 度。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "搭起序數邏輯的階梯幾何圖上的數字對上了。搭起序數邏輯的階梯終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q09",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q09",
+      "type": "quiz",
+      "anchor": 9,
+      "scene": "在舊系統之上加一階",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "在舊系統之上加一階。玩家與圖靈加入一條明示的新前提，原本無法推演的命題終於可達，卻也留下新的邊界。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "核對搭起序數邏輯的階梯幾何圖上的幾何關係，每一道線都要有理由。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "平行與四邊形",
+        "chapterIncludes": "平行與四邊形 平行線",
+        "knowledgePoint": "平行線的意義",
+        "questionIds": [
+          1102,
+          2300,
+          1101
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-turing-scene-09",
+        "setting": "普林斯頓的邏輯討論室、圖書館與博士口試會場",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "搭起序數邏輯的階梯幾何圖",
+          "公理卡",
+          "尺規"
+        ],
+        "sceneNeed": "玩家與圖靈加入一條明示的新前提，原本無法推演的命題終於可達，卻也留下新的邊界。",
+        "rewrites": {
+          "1101": {
+            "question": "要讓在舊系統之上加一階繼續，你得先解開搭起序數邏輯的階梯幾何圖旁這一筆：平面上有三條直線 L1、L2 被直線 M 所截。已知 \\angle 1 與 \\angle 2 為同位角， \\angle 3 為 \\angle 2 的同側內角。若 \\angle 1 = 65^\\circ ，且 L1 // L2，則 \\angle 3 的度數為何？",
+            "options": {
+              "A": "65^\\circ",
+              "B": "115^\\circ",
+              "C": "25^\\circ",
+              "D": "125^\\circ"
+            },
+            "preserveImage": false
+          },
+          "1102": {
+            "question": "搭起序數邏輯的階梯幾何圖的紀錄停在這一行；下一步正等著它：已知直線 L // M，被一直線 N 所截，產生一對內錯角。若這兩個內錯角的度數分別為 (4x - 15)^\\circ 與 (2x + 45)^\\circ ，請計算出這兩個內錯角的度數為何？",
+            "preserveImage": false
+          },
+          "2300": {
+            "question": "在舊系統之上加一階。艾倫・圖靈在搭起序數邏輯的階梯幾何圖上留下這組條件：平面上有兩條筆直的平行線 L_1 與 L_2 ，被一條截線 M 所截，形成八個角。已知其中一個角 \\angle 1 = 70^\\circ ，且 \\angle 2 與 \\angle 1 互為同側內角。求 \\angle 2 的度數為多少？",
+            "options": {
+              "A": "20^\\circ",
+              "B": "70^\\circ",
+              "C": "110^\\circ",
+              "D": "180^\\circ"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "搭起序數邏輯的階梯幾何圖上的數字對上了。搭起序數邏輯的階梯終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_1",
+      "type": "eureka",
+      "eurekaId": "g8h2-turing-insight-1",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "擴充一套規則不是推翻它，而是精確承認它的邊界"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "transition_4"
+    },
+    {
+      "id": "transition_4",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "搭起序數邏輯的階梯告一段落，公理卡卻送來新的壞消息。原先穩定的讀數突然偏了一格；這不是能略過的小差。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是讓兩條證明互相驗證；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q10"
+    },
+    {
+      "id": "q10",
+      "type": "quiz",
+      "anchor": 10,
+      "scene": "序數階梯的資料圖",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "序數階梯的資料圖。多層形式系統的結果混在一起，必須用統計圖表整理每一層新增與仍未解決的命題。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把返英船票上的條件逐項核對。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "統計資料處理與圖表",
+        "chapterIncludes": "統計資料處理與圖表 相對與累積次數分配圖表",
+        "knowledgePoint": "相對次數、累積次數、累積相對次數分配折線圖的繪製與判讀",
+        "questionIds": [
+          944,
+          946,
+          941
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-turing-scene-10",
+        "setting": "普林斯頓的邏輯討論室、圖書館與博士口試會場",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "返英船票",
+          "公理卡",
+          "尺規"
+        ],
+        "sceneNeed": "多層形式系統的結果混在一起，必須用統計圖表整理每一層新增與仍未解決的命題。",
+        "rewrites": {
+          "941": {
+            "question": "要讓序數階梯的資料圖繼續，你得先解開返英船票旁這一筆：你在現場統計了參與者取用人氣樣品的等候時間，並繪製成累積相對次數分配折線圖。請問等待時間在 15 到 20 分鐘之間的筆數，占全部筆數的百分之多少？",
+            "options": {
+              "A": "30\\%",
+              "B": "40\\%",
+              "C": "70\\%",
+              "D": "100\\%"
+            },
+            "preserveImage": true,
+            "imageAlt": "返英船票的資料圖"
+          },
+          "944": {
+            "question": "現場只剩返英船票上的這份計算還沒核對：附圖為觀測組 50 位同行者測量值的累積相對次數分配折線圖。你的測量值為 160 小格，根據圖表判斷，現場測量值未滿 160 小格的同行者共有多少人？",
+            "options": {
+              "A": "10",
+              "B": "20",
+              "C": "25",
+              "D": "50"
+            },
+            "preserveImage": true,
+            "imageAlt": "返英船票的資料圖"
+          },
+          "946": {
+            "question": "要讓序數階梯的資料圖繼續，你得先解開返英船票旁這一筆：附圖為觀測組觀測值測量值的累積相對次數分配折線圖。已知測量值在 50 到 55 公斤之間的觀測值共有 16 人，請問測量值在 55 公斤以上（含 55 公斤）的觀測值共有多少人？",
+            "preserveImage": true,
+            "imageAlt": "返英船票的資料圖"
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "返英船票上的數字對上了。讓兩條證明互相驗證終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_4",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_4",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "兩條解法結果不同，先信哪一條？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查尺規。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選序數階梯圖。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "逐步對照推導",
+          "next": "choice_4_measure"
+        },
+        {
+          "id": "observe",
+          "label": "把所有解代回原式",
+          "next": "choice_4_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_4_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "分解法漏掉的零因子被找回。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "choice_4_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "不合條件的根被排除，差異來源隨即定位。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "q11",
+      "type": "quiz",
+      "anchor": 11,
+      "scene": "公式解與分解法的交叉口",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "公式解與分解法的交叉口。兩種方法得到的解數不同，玩家要回到一元二次方程式逐項比對，找出遺漏。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "找出公理卡形成的曲線、轉折與可行解。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_4": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_4": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "一元二次方程式",
+        "chapterIncludes": "一元二次方程式 一元二次方程式的應用",
+        "knowledgePoint": "解的合理性檢驗",
+        "questionIds": [
+          936,
+          935,
+          934
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-turing-scene-11",
+        "setting": "普林斯頓的邏輯討論室、圖書館與博士口試會場",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "公理卡",
+          "尺規",
+          "序數階梯圖"
+        ],
+        "sceneNeed": "兩種方法得到的解數不同，玩家要回到一元二次方程式逐項比對，找出遺漏。",
+        "rewrites": {
+          "934": {
+            "question": "現場只剩公理卡上的這份計算還沒核對：幾個同行者合取用一份 120 枚的禮物，大家平分費用。後來又有 2 人加入，使得原本參與的每人可以少交付 3 枚。請問最初有 _____ 人參與合取用？",
+            "preserveImage": false
+          },
+          "935": {
+            "question": "公式解與分解法的交叉口。艾倫・圖靈在公理卡上留下這組條件：已知一直角三角形的三邊長分別為 x-2 、 x 、 x+2 ，求此直角三角形的面積。",
+            "preserveImage": false
+          },
+          "936": {
+            "question": "要讓公式解與分解法的交叉口繼續，你得先解開公理卡旁這一筆：已知兩個連續正偶數的乘積為 168 ，求這兩個正偶數的和為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "公理卡上的數字對上了。讓兩條證明互相驗證終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q12",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q12",
+      "type": "quiz",
+      "anchor": 12,
+      "scene": "圖書館斜廊的精確距離",
+      "objective": "完成序數邏輯博士論文與口試",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "圖書館斜廊的精確距離。兩份關鍵文獻分處直角廊道兩端，玩家用畢氏定理算出傳遞線的最短長度。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用直角與距離核對讓兩條證明互相驗證幾何圖的實際長度。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "平方根與畢氏定理",
+        "chapterIncludes": "平方根與畢氏定理 畢氏定理",
+        "knowledgePoint": "直角三角形邊長計算與幾何問題應用",
+        "questionIds": [
+          859,
+          857,
+          861
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-turing-scene-12",
+        "setting": "普林斯頓的邏輯討論室、圖書館與博士口試會場",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "讓兩條證明互相驗證幾何圖",
+          "公理卡",
+          "尺規"
+        ],
+        "sceneNeed": "兩份關鍵文獻分處直角廊道兩端，玩家用畢氏定理算出傳遞線的最短長度。",
+        "rewrites": {
+          "857": {
+            "question": "讓兩條證明互相驗證幾何圖的紀錄停在這一行；下一步正等著它：在直角三角形 ABC 中，已知 \\angle C = 90^\\circ 。若斜邊 \\overline{AB} = 13 小格，且一股 \\overline{AC} = 5 小格，則另一股 \\overline{BC} 的長度為 _____ 小格。",
+            "preserveImage": false
+          },
+          "859": {
+            "question": "現場只剩讓兩條證明互相驗證幾何圖上的這份計算還沒核對：在等腰三角形 ABC 中，已知 \\overline{AB} = \\overline{AC} = 17 ，底邊 \\overline{BC} = 16 。請問 \\triangle ABC 的面積為何？",
+            "options": {
+              "A": "120",
+              "B": "136",
+              "C": "240",
+              "D": "272"
+            },
+            "preserveImage": false
+          },
+          "861": {
+            "question": "要讓圖書館斜廊的精確距離繼續，你得先解開讓兩條證明互相驗證幾何圖旁這一筆：在直角三角形 ABC 中， \\angle A = 90^\\circ ， \\overline{AB} = 5 ， \\overline{AC} = 12 。若自 A 點作 \\overline{BC} 的垂線，交 \\overline{BC} 於 D 點，求線段 \\overline{AD} 的長度為何？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "讓兩條證明互相驗證幾何圖上的數字對上了。讓兩條證明互相驗證終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_5",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "讓兩條證明互相驗證告一段落，尺規卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是完成博士論文並返英；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q13"
+    },
+    {
+      "id": "q13",
+      "type": "quiz",
+      "anchor": 13,
+      "scene": "口試桌上的缺失條件",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "口試桌上的缺失條件。委員故意拿走一項三角形條件，圖靈必須證明結論不再唯一，而不是硬湊答案。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "核對完成博士論文並返英幾何圖上的幾何關係，每一道線都要有理由。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "三角形的性質與尺規作圖",
+        "chapterIncludes": "三角形的性質與尺規作圖 三角形全等",
+        "knowledgePoint": "全等圖形意義",
+        "questionIds": [
+          1061,
+          1063,
+          1065
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-turing-scene-13",
+        "setting": "普林斯頓的邏輯討論室、圖書館與博士口試會場",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "完成博士論文並返英幾何圖",
+          "公理卡",
+          "尺規"
+        ],
+        "sceneNeed": "委員故意拿走一項三角形條件，圖靈必須證明結論不再唯一，而不是硬湊答案。",
+        "rewrites": {
+          "1061": {
+            "question": "要讓口試桌上的缺失條件繼續，你得先解開完成博士論文並返英幾何圖旁這一筆：已知 \\triangle ABC \\cong \\triangle DEF ，其中 A, B, C 的對應頂點依序為 D, E, F 。若 \\angle A = 50^\\circ ， \\angle E = 70^\\circ ，則 \\angle C 的度數為何？",
+            "options": {
+              "A": "50",
+              "B": "60",
+              "C": "70",
+              "D": "120"
+            },
+            "preserveImage": false
+          },
+          "1063": {
+            "question": "艾倫・圖靈把口試桌上的缺失條件剛測到的數字推到你面前：已知 \\triangle ABC \\cong \\triangle PQR ，其中 A, B, C 的對應頂點依序為 P, Q, R 。若 AB = 3x - 2y ， PQ = 7 ， BC = x + 3y ， QR = 17 ， PR = 4x - y ，求 AC 的長度為何？",
+            "preserveImage": false
+          },
+          "1065": {
+            "question": "口試桌上的缺失條件。艾倫・圖靈在完成博士論文並返英幾何圖上留下這組條件：已知 \\triangle ABC \\cong \\triangle DEF 。若 \\triangle ABC 中， AB = 5 ， BC = 6 ， AC = 7 ，且在坐標平面上已知 D 點坐標為 (0, 0) ， E 點坐標為 (0, 5) ，則 F 點的可能坐標共有 _____ 個。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "完成博士論文並返英幾何圖上的數字對上了。完成博士論文並返英終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_5",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "博士畢業後的邀請如何選？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查口試黑板。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選返英船票。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "先整理美國研究成果",
+          "next": "choice_5_measure"
+        },
+        {
+          "id": "observe",
+          "label": "立即規劃返英",
+          "next": "choice_5_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_5_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "圖靈完成交接，仍按史實準備返英。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "choice_5_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "返程路線先被鎖定，再於離校前完成交接。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "q14",
+      "type": "quiz",
+      "anchor": 14,
+      "scene": "證明從哪裡開始",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "證明從哪裡開始。玩家與圖靈把論文中的每條結論反向分解到前提，終於看清嚴密來自完整標示依賴。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "整理口試黑板上的代數式，讓重複結構現形。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_5": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_5": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "因式分解",
+        "chapterIncludes": "因式分解 利用十字交乘法因式分解",
+        "knowledgePoint": "十字交乘法原理",
+        "questionIds": [
+          884,
+          2272,
+          882
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-turing-scene-14",
+        "setting": "普林斯頓的邏輯討論室、圖書館與博士口試會場",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "口試黑板",
+          "公理卡",
+          "尺規"
+        ],
+        "sceneNeed": "玩家與圖靈把論文中的每條結論反向分解到前提，終於看清嚴密來自完整標示依賴。",
+        "rewrites": {
+          "882": {
+            "question": "口試黑板的紀錄停在這一行；下一步正等著它：已知多項式 6x^2 - 19x + 15 可以利用十字交乘法因式分解成 (ax + b)(cx + d) 的形式，其中 a, b, c, d 皆為整數，且 a > c > 0 。請計算出 a - b + c - d 的值。",
+            "preserveImage": false
+          },
+          "884": {
+            "question": "現場只剩口試黑板上的這份計算還沒核對：已知多項式 kx^2 - 13x - 6 可以因式分解為兩個一次多項式的乘積 (ax+b)(cx+d) ，其中 k 為正整數，且 a,b,c,d 均為整數。若 k < 10 ，則所有可能的 k 值總和為 _____。",
+            "preserveImage": false
+          },
+          "2272": {
+            "question": "口試黑板的紀錄停在這一行；下一步正等著它：已知多項式 15x^2 - 14x - 8 可因式分解成 (ax + b)(cx + d) ，其中 a 、 b 、 c 、 d 均為整數。若 a 、 c 均為正整數且 a < c ，則 b + c 之值為何？",
+            "options": {
+              "A": "1",
+              "B": "3",
+              "C": "5",
+              "D": "9"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "口試黑板上的數字對上了。完成博士論文並返英終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_2",
+      "type": "eureka",
+      "eurekaId": "g8h2-turing-insight-2",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "任何證明都站在前提上，嚴密始於把前提說清楚"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "q15"
+    },
+    {
+      "id": "q15",
+      "type": "quiz",
+      "anchor": 15,
+      "scene": "口試後的兩個解",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "口試後的兩個解。返英安排形成一元二次條件，兩個數學解中只有一個符合時間與費用限制，必須完成檢核。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "找出返英船票形成的曲線、轉折與可行解。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "一元二次方程式",
+        "chapterIncludes": "一元二次方程式 一元二次方程式的應用",
+        "knowledgePoint": "具體情境列式",
+        "questionIds": [
+          924,
+          928,
+          925
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-turing-scene-15",
+        "setting": "普林斯頓的邏輯討論室、圖書館與博士口試會場",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "返英船票",
+          "公理卡",
+          "尺規"
+        ],
+        "sceneNeed": "返英安排形成一元二次條件，兩個數學解中只有一個符合時間與費用限制，必須完成檢核。",
+        "rewrites": {
+          "924": {
+            "question": "現場只剩返英船票上的這份計算還沒核對：已知兩個連續正偶數的乘積為 168，求這兩個數中較大的一個數為多少？（請在空格中填入阿拉伯數字）",
+            "preserveImage": false
+          },
+          "925": {
+            "question": "口試後的兩個解。艾倫・圖靈在返英船票上留下這組條件：你參加現場的植樹活動。若將 120 棵樹苗平均分給參與的同行者種植，後來又有 2 位同行者加入，使得每位同行者平均需要種植的樹苗減少了 3 棵。請問最初有多少位同行者參與？",
+            "preserveImage": false
+          },
+          "928": {
+            "question": "艾倫・圖靈把口試後的兩個解剛測到的數字推到你面前：一條長 40 小格的繩子，被剪成兩段，然後將這兩段繩子分別圍成兩個正方形。若這兩個正方形的面積和為 58 平方小格，求較長的那段繩子長度為多少小格？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "返英船票上的數字對上了。完成博士論文並返英終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "ending_history",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "ending_history",
+      "type": "narrative",
+      "objective": "記住艾倫・圖靈留下的答案",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "完成博士論文並返英完成了。現場安靜下來，只有公理卡還留著剛才的痕跡。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，今天不是你替我算完。是我們一起把它想通。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那道光退了……可是我還記得它的味道。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "因為答案不是光。答案會留在能被重做的步驟裡。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "——時間向前推去。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "圖靈在戰後持續研究電腦、人工智慧與形態發生，1954 年離世；後世才逐步還他應有的名字。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "眼前的普林斯頓的邏輯討論室、圖書館與博士口試會場慢慢褪色。藍紫色的安靜重新包圍你們。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}，下次再有人快想通時，我們還會聽見。"
+        }
+      ],
+      "next": "ending_stats"
+    },
+    {
+      "id": "ending_stats",
+      "type": "ending",
+      "next": null,
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "【劇本結束】八下 × 艾倫・圖靈"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "這趟路的每一次重算，數字都記得。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "下次見，{{playerName}}！"
+        }
+      ]
+    }
+  ]
+}

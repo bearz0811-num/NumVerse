@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import base64
 import html as html_lib
 import json
 import re
@@ -11,6 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "src" / "data" / "questionBank.json"
+IMAGE_DIR = ROOT / "public" / "question-images"
 
 FILES = [
     ("七年級-第一部分.html", 7, 1),
@@ -162,6 +164,31 @@ def parse_meta(meta: str):
     return knowledge, chapter
 
 
+def extract_image(block: str, qid: int) -> str | None:
+    match = re.search(
+        r'<div class="card-image">\s*'
+        r'<img[^>]*\bsrc="data:image/([a-zA-Z0-9.+-]+);base64,([^"]+)"',
+        block,
+    )
+    if not match:
+        return None
+
+    image_type, encoded = match.groups()
+    extension = "jpg" if image_type in {"jpeg", "jpg"} else image_type
+    if extension not in {"png", "jpg", "webp", "gif"}:
+        return None
+
+    try:
+        image_bytes = base64.b64decode(encoded, validate=True)
+    except (ValueError, base64.binascii.Error):
+        return None
+
+    IMAGE_DIR.mkdir(parents=True, exist_ok=True)
+    filename = f"{qid}.{extension}"
+    (IMAGE_DIR / filename).write_bytes(image_bytes)
+    return f"/question-images/{filename}"
+
+
 def main():
     stats = Counter()
     questions = []
@@ -231,6 +258,11 @@ def main():
             }
             if options is not None:
                 item["options"] = options
+            image = extract_image(block, uid)
+            if image:
+                item["image"] = image
+                item["imageAlt"] = "題目附圖"
+                stats["with_image"] += 1
             questions.append(item)
 
     questions.sort(key=lambda x: x["id"])
@@ -249,6 +281,7 @@ def main():
             "skippedChoiceBad": stats["skip_choice_bad"],
             "skippedEmptyCore": stats["skip_empty_core"],
             "duplicateIds": stats["dup_id"],
+            "withImage": stats["with_image"],
         },
         "questions": questions,
     }

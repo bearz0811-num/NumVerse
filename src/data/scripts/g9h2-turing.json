@@ -1,0 +1,2380 @@
+{
+  "id": "g9h2-turing",
+  "grade": 9,
+  "half": 2,
+  "gradeLabel": "九下",
+  "mathematician": "艾倫・圖靈",
+  "mathematicianSpeaker": "Mathematician",
+  "episode": "斑紋如何長出來",
+  "setting": "曼徹斯特大學計算實驗室、溫室與形態發生研究室",
+  "era": "1948 至 1952 年",
+  "acts": [
+    "把葉片與獸紋記成幾何",
+    "比較隨機斑點與穩定模式",
+    "讓局部規則在空間擴散",
+    "用計算模型接受自然檢驗",
+    "完成形態發生論文"
+  ],
+  "insights": [
+    "秩序未必需要中央指揮，局部規則也能使整體圖樣自行形成",
+    "計算模型不是自然的替身，而是能被自然反駁的觀察工具"
+  ],
+  "props": [
+    "葉片標本",
+    "斑紋照片",
+    "球面格網",
+    "模擬統計表",
+    "方程式手稿"
+  ],
+  "endingSummary": "圖靈在戰後持續研究電腦、人工智慧與形態發生，1954 年離世；後世才逐步還他應有的名字。",
+  "legendNote": "反應—擴散模型是形態發生的數學研究框架；劇本使用抽象濃度與格網，不提供化學物質製備或實驗操作配方。",
+  "objectives": [
+    "用圓形、立體與三角形中心描述生物形態",
+    "以機率和統計區分隨機波動與可重現圖樣",
+    "檢查局部互動是否足以推導整體結構",
+    "完成形態發生模型並標出模型的能力與限制"
+  ],
+  "beats": [
+    {
+      "scene": "雨中三角路線的交會點",
+      "problem": "三條採樣路線必須在最合理位置會合，玩家要依三角形重心條件找到標本交接點。",
+      "major": "推理證明與三角形的心"
+    },
+    {
+      "scene": "花瓣圍成的圓",
+      "problem": "花瓣間距不一，圖靈要以圓心角與弧長判斷排列是否存在固定週期。",
+      "major": "圓的性質"
+    },
+    {
+      "scene": "標本盒的立體展開",
+      "problem": "珍貴標本必須封存，玩家要從展開圖選出能折成指定盒形且不重疊的紙板。",
+      "major": "立體幾何圖形"
+    },
+    {
+      "scene": "照片上的隨機斑點",
+      "problem": "兩組斑點肉眼看來相似，必須比較次數分布與機率，才能判斷是否只是偶然。",
+      "major": "統計與機率"
+    },
+    {
+      "scene": "兩種抽象濃度的紀錄",
+      "problem": "兩組模擬資料波動劇烈，玩家要用統計量判斷哪一組開始形成穩定空間差異。",
+      "major": "統計與機率"
+    },
+    {
+      "scene": "球面格網的截面",
+      "problem": "平面圖樣搬到球面後變形，必須從立體截面判斷哪些距離與區域不再相等。",
+      "major": "立體幾何圖形"
+    },
+    {
+      "scene": "四種三角形中心",
+      "problem": "圖靈需要一個到三邊等距的位置，玩家必須在內心、外心、重心與垂心中選出符合條件者。",
+      "major": "推理證明與三角形的心"
+    },
+    {
+      "scene": "斑點從鄰格向外擴張",
+      "problem": "相鄰格網的統計資料互相影響，玩家要判斷下一輪最可能出現變化的區域。",
+      "major": "統計與機率"
+    },
+    {
+      "scene": "沒有指揮者的圖樣",
+      "problem": "玩家與圖靈逐格執行相同局部規則，原本均勻的格網竟自行長出穩定斑紋。",
+      "major": "推理證明與三角形的心"
+    },
+    {
+      "scene": "環狀斑紋的弦與弧",
+      "problem": "環形圖樣有一段偏離週期，必須用弦、弧與圓周角找出異常位置。",
+      "major": "圓的性質"
+    },
+    {
+      "scene": "圖樣爬上立體表面",
+      "problem": "同一格網分別包覆柱、錐與球，玩家要判斷接縫與表面積如何改變斑紋密度。",
+      "major": "立體幾何圖形"
+    },
+    {
+      "scene": "模擬表與真實標本對照",
+      "problem": "模型結果只在部分區間吻合，玩家要以機率與統計拒絕誇大的「完全一致」結論。",
+      "major": "統計與機率"
+    },
+    {
+      "scene": "從局部假設到整體結論",
+      "problem": "推理鏈缺少一個必要條件，必須用三角形中心的唯一性概念指出哪一步不能直接推出。",
+      "major": "推理證明與三角形的心"
+    },
+    {
+      "scene": "計算成為自然的顯微鏡",
+      "problem": "新標本反駁舊參數，玩家與圖靈共同修正模型，領悟可被資料推翻正是模型的力量。",
+      "major": "圓的性質"
+    },
+    {
+      "scene": "寄出前的立體證據圖",
+      "problem": "論文最後一圖必須同時呈現球面、柱面與截面結果，玩家要核對所有立體對應後才能付印。",
+      "major": "立體幾何圖形"
+    }
+  ],
+  "choices": [
+    {
+      "prompt": "花瓣標本先記錄哪一組特徵？",
+      "firstLabel": "先記角度與弧",
+      "firstResult": "環狀週期迅速顯現，數量資料隨後補上。",
+      "secondLabel": "先記數量與間距",
+      "secondResult": "統計基準先建立，再以圓形關係定位偏差。"
+    },
+    {
+      "prompt": "怎麼判斷斑點不是巧合？",
+      "firstLabel": "增加樣本數",
+      "firstResult": "偶然波動被稀釋，重複圖樣逐漸清楚。",
+      "secondLabel": "比較隨機基準",
+      "secondResult": "現有圖樣與隨機分布拉開差距，再由新樣本確認。"
+    },
+    {
+      "prompt": "格網需要哪一種中心？",
+      "firstLabel": "依等距條件選擇",
+      "firstResult": "內心成為到三邊等距的唯一候選。",
+      "secondLabel": "依對稱條件逐一證明",
+      "secondResult": "四種中心被逐項排除，最後得到相同位置。"
+    },
+    {
+      "prompt": "平面模型如何搬上立體？",
+      "firstLabel": "先研究截面",
+      "firstResult": "每一層的變化先被掌握，再組成立體圖樣。",
+      "secondLabel": "先研究表面展開",
+      "secondResult": "接縫與變形先被標出，截面隨後用來驗證。"
+    },
+    {
+      "prompt": "論文結尾先強調什麼？",
+      "firstLabel": "模型能解釋之處",
+      "firstResult": "核心成果清楚站穩，再接上不能涵蓋的現象。",
+      "secondLabel": "模型尚未解釋之處",
+      "secondResult": "限制先被誠實標出，已獲支持的結論因此更可信。"
+    }
+  ],
+  "version": 1,
+  "title": "九下 × 艾倫・圖靈",
+  "language": "zh-TW",
+  "companions": [
+    "NumNum",
+    "Numi"
+  ],
+  "journalTitle": "斑紋如何長出來",
+  "notes": [
+    "玩家本人與 NumNum、Numi 一起冒險。",
+    "題目只從所選年段 questionBank 抽取。",
+    "題面依當下研究場景整段改寫；數字、算式、答案不變。",
+    "答錯保留同一題並給提示，直到答對。",
+    "Eureka 僅在玩家與數學家共同領悟關鍵知識時觸發。",
+    "反應—擴散模型是形態發生的數學研究框架；劇本使用抽象濃度與格網，不提供化學物質製備或實驗操作配方。"
+  ],
+  "detourTemplates": [
+    [
+      {
+        "speaker": "NumNum",
+        "text": "條件還在。慢一點，沿同一條路再走一次。"
+      }
+    ],
+    [
+      {
+        "speaker": "Numi",
+        "text": "別換題。眼前這件事還等著我們把它算開。"
+      }
+    ],
+    [
+      {
+        "speaker": "Mathematician",
+        "text": "我也沒放棄。重看剛才那一步。"
+      }
+    ]
+  ],
+  "correctFeedback": [
+    [
+      {
+        "speaker": "narrator",
+        "text": "數字對上，眼前的阻礙鬆開了一格。"
+      }
+    ]
+  ],
+  "nodes": [
+    {
+      "id": "opening",
+      "type": "narrative",
+      "objective": "用圓形、立體與三角形中心描述生物形態",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "數學世界的藍紫色安靜得像一張沒有折痕的紙。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那邊有一點光——很細，還在抖。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "不是 Eureka。只是有人卡在一個還沒想通的問題前。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "你們追著微光穿過薄紙般的界面。1948 至 1952 年，曼徹斯特大學計算實驗室、溫室與形態發生研究室。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "艾倫・圖靈站在葉片標本旁，手裡那一步已經停了很久。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "你們是誰？算了——如果看得懂數字，就過來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}也在！我們不是來旁觀的。"
+        }
+      ],
+      "next": "q01"
+    },
+    {
+      "id": "q01",
+      "type": "quiz",
+      "anchor": 1,
+      "scene": "雨中三角路線的交會點",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "雨中三角路線的交會點。三條採樣路線必須在最合理位置會合，玩家要依三角形重心條件找到標本交接點。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把葉片標本上的條件逐項核對。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "推理證明與三角形的心",
+        "chapterIncludes": "推理證明與三角形的心 推理與證明",
+        "knowledgePoint": "代數推理（如奇偶數證明）",
+        "questionIds": [
+          1294,
+          1296,
+          1298
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-turing-scene-01",
+        "setting": "曼徹斯特大學計算實驗室、溫室與形態發生研究室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "葉片標本",
+          "斑紋照片",
+          "球面格網"
+        ],
+        "sceneNeed": "三條採樣路線必須在最合理位置會合，玩家要依三角形重心條件找到標本交接點。",
+        "rewrites": {
+          "1294": {
+            "question": "現場只剩葉片標本上的這份計算還沒核對：若 m 為奇數、 n 為偶數，則下列何者必為偶數？",
+            "options": {
+              "A": "m+n",
+              "B": "3m+n",
+              "C": "mn",
+              "D": "m^2-n^2"
+            },
+            "preserveImage": false
+          },
+          "1296": {
+            "question": "要讓雨中三角路線的交會點繼續，你得先解開葉片標本旁這一筆：已知任意兩個連續正整數的平方差，必定等於此兩數之和。若有兩個連續正整數的平方差為 101，求此兩數中較大者。",
+            "preserveImage": false
+          },
+          "1298": {
+            "question": "艾倫・圖靈把雨中三角路線的交會點剛測到的數字推到你面前：若 x 與 y 皆為奇數，且 x > y 。如果將 x^2 - y^2 進行因式分解與代數推理，可以發現它必定是某個最大正整數 k 的倍數，請問 k 的整數值為 _____？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "葉片標本上的數字對上了。把葉片與獸紋記成幾何終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_1",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "花瓣標本先記錄哪一組特徵？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查葉片標本。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選斑紋照片。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "先記角度與弧",
+          "next": "choice_1_measure"
+        },
+        {
+          "id": "observe",
+          "label": "先記數量與間距",
+          "next": "choice_1_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_1_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "環狀週期迅速顯現，數量資料隨後補上。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "choice_1_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "統計基準先建立，再以圓形關係定位偏差。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "q02",
+      "type": "quiz",
+      "anchor": 2,
+      "scene": "花瓣圍成的圓",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "花瓣圍成的圓。花瓣間距不一，圖靈要以圓心角與弧長判斷排列是否存在固定週期。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿把葉片與獸紋記成幾何幾何圖的圓弧、弦與切線追出隱藏關係。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_1": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_1": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "圓的性質",
+        "chapterIncludes": "圓的性質 弧與圓周角",
+        "knowledgePoint": "圓心角",
+        "questionIds": [
+          346,
+          345,
+          343
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-turing-scene-02",
+        "setting": "曼徹斯特大學計算實驗室、溫室與形態發生研究室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "把葉片與獸紋記成幾何幾何圖",
+          "葉片標本",
+          "斑紋照片"
+        ],
+        "sceneNeed": "花瓣間距不一，圖靈要以圓心角與弧長判斷排列是否存在固定週期。",
+        "rewrites": {
+          "343": {
+            "question": "艾倫・圖靈把花瓣圍成的圓剛測到的數字推到你面前：在半徑為 12 小格的圓 O 中，圓心角 \\angle AOB 為 75^{\\circ} 。求扇形 AOB 所對應的 \\overparen{AB} 弧長為何？（答案請保留 \\pi ）",
+            "preserveImage": false
+          },
+          "345": {
+            "question": "花瓣圍成的圓。艾倫・圖靈在把葉片與獸紋記成幾何幾何圖上留下這組條件：已知點 O 為銳角 \\triangle ABC 的外心，若 \\angle BAC = 55^{\\circ} ，則 \\angle BOC 的度數為 _____ 度。",
+            "preserveImage": false
+          },
+          "346": {
+            "question": "要讓花瓣圍成的圓繼續，你得先解開把葉片與獸紋記成幾何幾何圖旁這一筆：一個直立圓錐的側面展開圖是一個半徑為 15 小格、圓心角為 216^{\\circ} 的扇形。則此圓錐的底面圓半徑為多少小格？",
+            "options": {
+              "A": "6",
+              "B": "8",
+              "C": "9",
+              "D": "12"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "把葉片與獸紋記成幾何幾何圖上的數字對上了。把葉片與獸紋記成幾何終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q03",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q03",
+      "type": "quiz",
+      "anchor": 3,
+      "scene": "標本盒的立體展開",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "標本盒的立體展開。珍貴標本必須封存，玩家要從展開圖選出能折成指定盒形且不重疊的紙板。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "展開把葉片與獸紋記成幾何立體模型的立體結構，核對表面與內部容量。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "立體幾何圖形",
+        "chapterIncludes": "立體幾何圖形 柱體、錐體、空間中的線與平面",
+        "knowledgePoint": "空間中的垂直、平行與歪斜關係",
+        "questionIds": [
+          1436,
+          1440,
+          1438
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-turing-scene-03",
+        "setting": "曼徹斯特大學計算實驗室、溫室與形態發生研究室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "把葉片與獸紋記成幾何立體模型",
+          "葉片標本",
+          "斑紋照片"
+        ],
+        "sceneNeed": "珍貴標本必須封存，玩家要從展開圖選出能折成指定盒形且不重疊的紙板。",
+        "rewrites": {
+          "1436": {
+            "question": "要讓標本盒的立體展開繼續，你得先解開把葉片與獸紋記成幾何立體模型旁這一筆：在一個長方體中共有 12 條邊。若選定其中一條邊，則與這條邊「相交且垂直」的邊共有幾條？",
+            "options": {
+              "A": "2 條",
+              "B": "3 條",
+              "C": "4 條",
+              "D": "8 條"
+            },
+            "preserveImage": false
+          },
+          "1438": {
+            "question": "艾倫・圖靈把標本盒的立體展開剛測到的數字推到你面前：一個正四面體（每個面都是正三角形的三角錐）共有 6 條邊。若選定其中一條邊為基準，則與此基準邊互為「歪斜」關係的邊共有 _____ 條。",
+            "preserveImage": false
+          },
+          "1440": {
+            "question": "標本盒的立體展開。艾倫・圖靈在把葉片與獸紋記成幾何立體模型上留下這組條件：一個正四角錐的底面為邊長 10 小格的正方形，四個側面都是腰長為 13 小格的等腰三角形。求此正四角錐的表面積為多少平方小格？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "把葉片與獸紋記成幾何立體模型上的數字對上了。把葉片與獸紋記成幾何終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_2",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "把葉片與獸紋記成幾何告一段落，模擬統計表卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是比較隨機斑點與穩定模式；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q04"
+    },
+    {
+      "id": "q04",
+      "type": "quiz",
+      "anchor": 4,
+      "scene": "照片上的隨機斑點",
+      "objective": "以機率和統計區分隨機波動與可重現圖樣",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "照片上的隨機斑點。兩組斑點肉眼看來相似，必須比較次數分布與機率，才能判斷是否只是偶然。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把比較隨機斑點與穩定模式紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "統計與機率",
+        "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+        "knowledgePoint": "全距",
+        "questionIds": [
+          1403,
+          1401,
+          1402
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-turing-scene-04",
+        "setting": "曼徹斯特大學計算實驗室、溫室與形態發生研究室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "比較隨機斑點與穩定模式紀錄表",
+          "葉片標本",
+          "斑紋照片"
+        ],
+        "sceneNeed": "兩組斑點肉眼看來相似，必須比較次數分布與機率，才能判斷是否只是偶然。",
+        "rewrites": {
+          "1401": {
+            "question": "要讓照片上的隨機斑點繼續，你得先解開比較隨機斑點與穩定模式紀錄表旁這一筆：已知觀測組數學讀數的盒狀圖數據如下：最小值為 12 分，第一四分位數為 15 分，中位數為 20 分，第三四分位數為 26 分，最大值為 35 分。請問該班數學讀數的全距為多少分？",
+            "options": {
+              "A": "23",
+              "B": "11",
+              "C": "15",
+              "D": "9"
+            },
+            "preserveImage": false
+          },
+          "1402": {
+            "question": "比較隨機斑點與穩定模式紀錄表的紀錄停在這一行；下一步正等著它：你記錄了現場連續七次測得的最高讀數（單位：刻度），數據如下：28, 30, 31, 26, 29, 32, 27。請問這七次讀數的全距為 _____ 度？",
+            "preserveImage": false
+          },
+          "1403": {
+            "question": "艾倫・圖靈把照片上的隨機斑點剛測到的數字推到你面前：有五個正整數資料分別為 10, 15, x , 22, 25。若已知這組資料的全距為 20，請問 x 的最大可能值為多少？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "比較隨機斑點與穩定模式紀錄表上的數字對上了。比較隨機斑點與穩定模式終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_2",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "怎麼判斷斑點不是巧合？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查球面格網。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選模擬統計表。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "增加樣本數",
+          "next": "choice_2_measure"
+        },
+        {
+          "id": "observe",
+          "label": "比較隨機基準",
+          "next": "choice_2_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_2_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "偶然波動被稀釋，重複圖樣逐漸清楚。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "choice_2_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "現有圖樣與隨機分布拉開差距，再由新樣本確認。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "q05",
+      "type": "quiz",
+      "anchor": 5,
+      "scene": "兩種抽象濃度的紀錄",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "兩種抽象濃度的紀錄。兩組模擬資料波動劇烈，玩家要用統計量判斷哪一組開始形成穩定空間差異。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把比較隨機斑點與穩定模式紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_2": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_2": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "統計與機率",
+        "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+        "knowledgePoint": "四分位數",
+        "questionIds": [
+          1389,
+          1387,
+          1388
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-turing-scene-05",
+        "setting": "曼徹斯特大學計算實驗室、溫室與形態發生研究室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "比較隨機斑點與穩定模式紀錄表",
+          "葉片標本",
+          "斑紋照片"
+        ],
+        "sceneNeed": "兩組模擬資料波動劇烈，玩家要用統計量判斷哪一組開始形成穩定空間差異。",
+        "rewrites": {
+          "1387": {
+            "question": "比較隨機斑點與穩定模式紀錄表的紀錄停在這一行；下一步正等著它：有一組數值資料共 11 筆，由小到大排列分別為：3、5、8、12、15、18、20、24、25、29、32。關於這組資料的敘述，下列何者錯誤？",
+            "options": {
+              "A": "第一四分位數為 8",
+              "B": "中位數為 18",
+              "C": "第三四分位數為 24",
+              "D": "四分位距為 17"
+            },
+            "preserveImage": false
+          },
+          "1388": {
+            "question": "艾倫・圖靈把兩種抽象濃度的紀錄剛測到的數字推到你面前：你為了寫報告，去現場調查了 8 家不同測點的樣品讀數（單位：刻度），結果分別為：85、70、90、80、100、75、95、85。請問這 8 家樣品讀數的第三四分位數為 _____ 元。",
+            "preserveImage": false
+          },
+          "1389": {
+            "question": "現場只剩比較隨機斑點與穩定模式紀錄表上的這份計算還沒核對：有一組由小到大排列的 10 筆整數資料：8、12、15、a、b、24、27、29、33、36。已知這組資料的眾數為 15，中位數為 22，求 a + b 的值為何？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "比較隨機斑點與穩定模式紀錄表上的數字對上了。比較隨機斑點與穩定模式終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q06",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q06",
+      "type": "quiz",
+      "anchor": 6,
+      "scene": "球面格網的截面",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "球面格網的截面。平面圖樣搬到球面後變形，必須從立體截面判斷哪些距離與區域不再相等。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "展開比較隨機斑點與穩定模式立體模型的立體結構，核對表面與內部容量。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "立體幾何圖形",
+        "chapterIncludes": "立體幾何圖形 柱體、錐體、空間中的線與平面",
+        "knowledgePoint": "角柱/圓柱/角錐/圓錐的展開圖與表面積",
+        "questionIds": [
+          1445,
+          1447,
+          2321
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-turing-scene-06",
+        "setting": "曼徹斯特大學計算實驗室、溫室與形態發生研究室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "比較隨機斑點與穩定模式立體模型",
+          "葉片標本",
+          "斑紋照片"
+        ],
+        "sceneNeed": "平面圖樣搬到球面後變形，必須從立體截面判斷哪些距離與區域不再相等。",
+        "rewrites": {
+          "1445": {
+            "question": "球面格網的截面。艾倫・圖靈在比較隨機斑點與穩定模式立體模型上留下這組條件：已知一個直長方體（底面為正方形）的展開圖總面積為 150 平方小格。若該長方體底面正方形的邊長為 5 小格，則此長方體的高為 _____ 小格。",
+            "preserveImage": false
+          },
+          "1447": {
+            "question": "比較隨機斑點與穩定模式立體模型的紀錄停在這一行；下一步正等著它：有一個正四角錐，底面是邊長為 10 小格的正方形，側面的四個等腰三角形中，底邊上的高（即斜高）皆為 13 小格。則此正四角錐的表面積為 _____ 平方小格。",
+            "preserveImage": false
+          },
+          "2321": {
+            "question": "要讓球面格網的截面繼續，你得先解開比較隨機斑點與穩定模式立體模型旁這一筆：已知一直圓錐的側面展開圖為一個半徑 15 小格、圓心角為 216^\\circ 的扇形，則此直圓錐的表面積為多少平方小格？",
+            "options": {
+              "A": "135\\pi",
+              "B": "153\\pi",
+              "C": "216\\pi",
+              "D": "306\\pi"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "比較隨機斑點與穩定模式立體模型上的數字對上了。比較隨機斑點與穩定模式終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q07",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q07",
+      "type": "quiz",
+      "anchor": 7,
+      "scene": "四種三角形中心",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "四種三角形中心。圖靈需要一個到三邊等距的位置，玩家必須在內心、外心、重心與垂心中選出符合條件者。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿讓局部規則在空間擴散幾何圖的圓弧、弦與切線追出隱藏關係。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "推理證明與三角形的心",
+        "chapterIncludes": "推理證明與三角形的心 三角形的外心、內心與重心",
+        "knowledgePoint": "外心（中垂線交點與外接圓）",
+        "questionIds": [
+          1303,
+          1304,
+          2313
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-turing-scene-07",
+        "setting": "曼徹斯特大學計算實驗室、溫室與形態發生研究室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "讓局部規則在空間擴散幾何圖",
+          "葉片標本",
+          "斑紋照片"
+        ],
+        "sceneNeed": "圖靈需要一個到三邊等距的位置，玩家必須在內心、外心、重心與垂心中選出符合條件者。",
+        "rewrites": {
+          "1303": {
+            "question": "艾倫・圖靈把四種三角形中心剛測到的數字推到你面前：關於三角形的外接圓圓心（即外心）位置，下列敘述何者正確？",
+            "options": {
+              "A": "銳角三角形的外心必在三角形的內部",
+              "B": "直角三角形的外心必在三角形的外部",
+              "C": "鈍角三角形的外心必在三角形的邊上",
+              "D": "等腰三角形的外心必在三角形的內部"
+            },
+            "preserveImage": false
+          },
+          "1304": {
+            "question": "現場只剩讓局部規則在空間擴散幾何圖上的這份計算還沒核對：已知 O 點為 \\triangle ABC 的外心。若 \\triangle ABC 為鈍角三角形且 \\angle A = 110^\\circ ，則 \\angle BOC 為多少度？（請填入數字即可）_____",
+            "preserveImage": false
+          },
+          "2313": {
+            "question": "艾倫・圖靈把四種三角形中心剛測到的數字推到你面前：已知 O 點為 \\triangle ABC 的外心。若 \\angle BOC = 130^\\circ ，且 \\angle A 為鈍角，則 \\angle A 的度數為何？",
+            "options": {
+              "A": "65^\\circ",
+              "B": "115^\\circ",
+              "C": "130^\\circ",
+              "D": "230^\\circ"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "讓局部規則在空間擴散幾何圖上的數字對上了。讓局部規則在空間擴散終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_3",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_3",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "格網需要哪一種中心？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查方程式手稿。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選葉片標本。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "依等距條件選擇",
+          "next": "choice_3_measure"
+        },
+        {
+          "id": "observe",
+          "label": "依對稱條件逐一證明",
+          "next": "choice_3_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_3_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "內心成為到三邊等距的唯一候選。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "choice_3_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "四種中心被逐項排除，最後得到相同位置。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "q08",
+      "type": "quiz",
+      "anchor": 8,
+      "scene": "斑點從鄰格向外擴張",
+      "objective": "檢查局部互動是否足以推導整體結構",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "斑點從鄰格向外擴張。相鄰格網的統計資料互相影響，玩家要判斷下一輪最可能出現變化的區域。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把讓局部規則在空間擴散紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_3": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_3": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "統計與機率",
+        "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+        "knowledgePoint": "四分位距",
+        "questionIds": [
+          1396,
+          1394,
+          1393
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-turing-scene-08",
+        "setting": "曼徹斯特大學計算實驗室、溫室與形態發生研究室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "讓局部規則在空間擴散紀錄表",
+          "葉片標本",
+          "斑紋照片"
+        ],
+        "sceneNeed": "相鄰格網的統計資料互相影響，玩家要判斷下一輪最可能出現變化的區域。",
+        "rewrites": {
+          "1393": {
+            "question": "艾倫・圖靈把斑點從鄰格向外擴張剛測到的數字推到你面前：你非常喜歡去現場撈金魚，你連續 15 天記錄了自己每天撈到的金魚數量，資料由小到大排列如下：\n1, 3, 3, 4, 5, 6, 6, 8, 9, 10, 11, 12, 13, 14, 15。\n請計算這 15 天撈金魚數量的四分位距為多少隻？",
+            "preserveImage": false
+          },
+          "1394": {
+            "question": "現場只剩讓局部規則在空間擴散紀錄表上的這份計算還沒核對：有一組 10 筆的數值資料，已由小到大排列如下：\n3, 5, a , 8, 11, 14, 16, b , 20, 22\n已知這組資料的四分位距為 10，且這 10 筆資料的算術平均數為 12.5。請計算未知數 a 的值為 _____。",
+            "preserveImage": false
+          },
+          "1396": {
+            "question": "要讓斑點從鄰格向外擴張繼續，你得先解開讓局部規則在空間擴散紀錄表旁這一筆：有五個正整數，由小到大排列分別為 a, b, c, d, e 。\n已知這五個數的中位數為 8，唯一的眾數為 12，全距為 9，算術平均數為 8.4。\n請計算這五筆資料的四分位距為何？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "讓局部規則在空間擴散紀錄表上的數字對上了。讓局部規則在空間擴散終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q09",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q09",
+      "type": "quiz",
+      "anchor": 9,
+      "scene": "沒有指揮者的圖樣",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "沒有指揮者的圖樣。玩家與圖靈逐格執行相同局部規則，原本均勻的格網竟自行長出穩定斑紋。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "核對讓局部規則在空間擴散幾何圖上的幾何關係，每一道線都要有理由。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "推理證明與三角形的心",
+        "chapterIncludes": "推理證明與三角形的心 三角形的外心、內心與重心",
+        "knowledgePoint": "重心（中線交點與面積分割）的幾何意義與物理意義",
+        "questionIds": [
+          1319,
+          1322,
+          1321
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-turing-scene-09",
+        "setting": "曼徹斯特大學計算實驗室、溫室與形態發生研究室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "讓局部規則在空間擴散幾何圖",
+          "葉片標本",
+          "斑紋照片"
+        ],
+        "sceneNeed": "玩家與圖靈逐格執行相同局部規則，原本均勻的格網竟自行長出穩定斑紋。",
+        "rewrites": {
+          "1319": {
+            "question": "現場只剩讓局部規則在空間擴散幾何圖上的這份計算還沒核對：在 \\triangle ABC 中，若 G 為重心，中線 \\overline{AD} 長度為 12 ，則線段 \\overline{AG} 的長度為何？",
+            "options": {
+              "A": "4",
+              "B": "6",
+              "C": "8",
+              "D": "9"
+            },
+            "preserveImage": false
+          },
+          "1321": {
+            "question": "要讓沒有指揮者的圖樣繼續，你得先解開讓局部規則在空間擴散幾何圖旁這一筆：在 \\triangle ABC 中， G 為 \\triangle ABC 的重心，中線 \\overline{AD} 交 \\overline{BC} 於 D 點。若再以 \\triangle GBC 為基礎， J 為 \\triangle GBC 的重心，且其重心所在的中線同樣交 \\overline{BC} 於 D 點。已知 \\overline{AG} = 24 ，求線段 \\overline{GJ} 的長度為何？",
+            "preserveImage": false
+          },
+          "1322": {
+            "question": "讓局部規則在空間擴散幾何圖的紀錄停在這一行；下一步正等著它：在 \\triangle PQR 中， G 為重心。若將 G 與三個頂點 P 、 Q 、 R 以及三邊中點相連，可將 \\triangle PQR 分割成 6 個小三角形。若其中一個小三角形的面積為 5 ，則 \\triangle PQR 的總面積為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "讓局部規則在空間擴散幾何圖上的數字對上了。讓局部規則在空間擴散終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_1",
+      "type": "eureka",
+      "eurekaId": "g9h2-turing-insight-1",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "秩序未必需要中央指揮，局部規則也能使整體圖樣自行形成"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "transition_4"
+    },
+    {
+      "id": "transition_4",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "讓局部規則在空間擴散告一段落，葉片標本卻送來新的壞消息。原先穩定的讀數突然偏了一格；這不是能略過的小差。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是用計算模型接受自然檢驗；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q10"
+    },
+    {
+      "id": "q10",
+      "type": "quiz",
+      "anchor": 10,
+      "scene": "環狀斑紋的弦與弧",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "環狀斑紋的弦與弧。環形圖樣有一段偏離週期，必須用弦、弧與圓周角找出異常位置。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿用計算模型接受自然檢驗幾何圖的圓弧、弦與切線追出隱藏關係。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "圓的性質",
+        "chapterIncludes": "圓的性質 弧與圓周角",
+        "knowledgePoint": "圓內接四邊形性質",
+        "questionIds": [
+          1273,
+          1271,
+          1274
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-turing-scene-10",
+        "setting": "曼徹斯特大學計算實驗室、溫室與形態發生研究室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "用計算模型接受自然檢驗幾何圖",
+          "葉片標本",
+          "斑紋照片"
+        ],
+        "sceneNeed": "環形圖樣有一段偏離週期，必須用弦、弧與圓周角找出異常位置。",
+        "rewrites": {
+          "1271": {
+            "question": "要讓環狀斑紋的弦與弧繼續，你得先解開用計算模型接受自然檢驗幾何圖旁這一筆：已知四邊形 ABCD 是圓 O 的內接四邊形，點 O 在四邊形內部。若劣弧 \\overparen{BD} 所對應的圓心角 \\angle BOD = 130^\\circ ，且點 A 在優弧上，點 C 在劣弧上，則 \\angle C 的度數為何？",
+            "options": {
+              "A": "65^\\circ",
+              "B": "115^\\circ",
+              "C": "130^\\circ",
+              "D": "250^\\circ"
+            },
+            "preserveImage": false
+          },
+          "1273": {
+            "question": "艾倫・圖靈把環狀斑紋的弦與弧剛測到的數字推到你面前：已知四邊形 ABCD 為圓內接四邊形。若 \\angle A 的度數為 (3x - 10)^\\circ ， \\angle C 的度數為 (2x + 40)^\\circ ，求出 \\angle A 的度數。",
+            "preserveImage": false
+          },
+          "1274": {
+            "question": "現場只剩用計算模型接受自然檢驗幾何圖上的這份計算還沒核對：小李規劃一個圓形花園，花園邊界上設有四個觀景台 A, B, C, D 依序相連構成四邊形。已知步道 \\overline{BC} 與步道 \\overline{CD} 的長度相等。若測得從 A 觀景台看 B, C 的夾角 \\angle BAC = 40^\\circ ，從 B 觀景台看 A, D 的夾角 \\angle ABD = 35^\\circ 。請計算出 \\angle ABC 的度數。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "用計算模型接受自然檢驗幾何圖上的數字對上了。用計算模型接受自然檢驗終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_4",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_4",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "平面模型如何搬上立體？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查斑紋照片。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選球面格網。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "先研究截面",
+          "next": "choice_4_measure"
+        },
+        {
+          "id": "observe",
+          "label": "先研究表面展開",
+          "next": "choice_4_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_4_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "每一層的變化先被掌握，再組成立體圖樣。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "choice_4_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "接縫與變形先被標出，截面隨後用來驗證。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "q11",
+      "type": "quiz",
+      "anchor": 11,
+      "scene": "圖樣爬上立體表面",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "圖樣爬上立體表面。同一格網分別包覆柱、錐與球，玩家要判斷接縫與表面積如何改變斑紋密度。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "展開用計算模型接受自然檢驗立體模型的立體結構，核對表面與內部容量。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_4": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_4": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "立體幾何圖形",
+        "chapterIncludes": "立體幾何圖形 柱體、錐體、空間中的線與平面",
+        "knowledgePoint": "體積計算",
+        "questionIds": [
+          2323,
+          1452,
+          2325
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-turing-scene-11",
+        "setting": "曼徹斯特大學計算實驗室、溫室與形態發生研究室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "用計算模型接受自然檢驗立體模型",
+          "葉片標本",
+          "斑紋照片"
+        ],
+        "sceneNeed": "同一格網分別包覆柱、錐與球，玩家要判斷接縫與表面積如何改變斑紋密度。",
+        "rewrites": {
+          "1452": {
+            "question": "用計算模型接受自然檢驗立體模型的紀錄停在這一行；下一步正等著它：有一個複合立體圖形，下方是一個底面為邊長 6 小格之正方形的長方體，高度為 4 小格；上方是一個底面與長方體上底面完全重合的四角錐。若此複合立體圖形的總體積為 216 立方小格，請問上方四角錐的高為多少小格？",
+            "preserveImage": false
+          },
+          "2323": {
+            "question": "艾倫・圖靈把圖樣爬上立體表面剛測到的數字推到你面前：一個直三角柱，其底面為直角三角形，已知該直角三角形的兩股長分別為 5 小格與 12 小格，且此三角柱的高為 10 小格。請問此直三角柱的體積為多少立方小格？",
+            "options": {
+              "A": "300",
+              "B": "600",
+              "C": "780",
+              "D": "325"
+            },
+            "preserveImage": false
+          },
+          "2325": {
+            "question": "圖樣爬上立體表面。艾倫・圖靈在用計算模型接受自然檢驗立體模型上留下這組條件：你有一塊長 20 小格、寬 16 小格、高 12 小格的長方體實心木塊。你想要將這個木塊切削成一個體積最大的直圓柱。請問這個直圓柱的最大體積是多少立方小格？（答案請保留 \\pi ）",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "用計算模型接受自然檢驗立體模型上的數字對上了。用計算模型接受自然檢驗終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q12",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q12",
+      "type": "quiz",
+      "anchor": 12,
+      "scene": "模擬表與真實標本對照",
+      "objective": "完成形態發生模型並標出模型的能力與限制",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "模擬表與真實標本對照。模型結果只在部分區間吻合，玩家要以機率與統計拒絕誇大的「完全一致」結論。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把用計算模型接受自然檢驗紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "統計與機率",
+        "chapterIncludes": "統計與機率 機率",
+        "knowledgePoint": "古典機率計算",
+        "questionIds": [
+          1427,
+          1431,
+          1430
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-turing-scene-12",
+        "setting": "曼徹斯特大學計算實驗室、溫室與形態發生研究室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "用計算模型接受自然檢驗紀錄表",
+          "葉片標本",
+          "斑紋照片"
+        ],
+        "sceneNeed": "模型結果只在部分區間吻合，玩家要以機率與統計拒絕誇大的「完全一致」結論。",
+        "rewrites": {
+          "1427": {
+            "question": "用計算模型接受自然檢驗紀錄表的紀錄停在這一行；下一步正等著它：投擲一顆公正的骰子一次，觀察出現的點數。請問出現的點數為質數的機率為何？",
+            "options": {
+              "A": "\\frac{1}{2}",
+              "B": "\\frac{1}{3}",
+              "C": "\\frac{1}{6}",
+              "D": "\\frac{2}{3}"
+            },
+            "preserveImage": false
+          },
+          "1430": {
+            "question": "模擬表與真實標本對照。艾倫・圖靈在用計算模型接受自然檢驗紀錄表上留下這組條件：現場推出抽獎活動，摸彩箱中有標示數字 1、2、3、4 的四顆彩球。你以每次抽出一顆且「取後不放回」的方式，先後抽出兩顆彩球，組成一個二位數，第一次抽出的數字為十位數，第二次抽出的數字為個位數。若每種結果發生的機會都相同，則你抽出的二位數是 3 的倍數的機率為何？",
+            "options": {
+              "A": "\\frac{1}{3}",
+              "B": "\\frac{1}{4}",
+              "C": "\\frac{1}{6}",
+              "D": "\\frac{5}{16}"
+            },
+            "preserveImage": false
+          },
+          "1431": {
+            "question": "要讓模擬表與真實標本對照繼續，你得先解開用計算模型接受自然檢驗紀錄表旁這一筆：甲袋中有 2 顆紅球和 x 顆白球，乙袋中有 3 顆紅球和 1 顆白球。已知同時從甲袋和乙袋中各隨機抽出一球，兩球皆為紅球的機率為 \\frac{1}{4} 。請問甲袋中白球的數量 x 是多少？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "用計算模型接受自然檢驗紀錄表上的數字對上了。用計算模型接受自然檢驗終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_5",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "用計算模型接受自然檢驗告一段落，斑紋照片卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是完成形態發生論文；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q13"
+    },
+    {
+      "id": "q13",
+      "type": "quiz",
+      "anchor": 13,
+      "scene": "從局部假設到整體結論",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "從局部假設到整體結論。推理鏈缺少一個必要條件，必須用三角形中心的唯一性概念指出哪一步不能直接推出。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把球面格網上的條件逐項核對。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "推理證明與三角形的心",
+        "chapterIncludes": "推理證明與三角形的心 推理與證明",
+        "knowledgePoint": "輔助線的運用",
+        "questionIds": [
+          1289,
+          1288,
+          1286
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-turing-scene-13",
+        "setting": "曼徹斯特大學計算實驗室、溫室與形態發生研究室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "球面格網",
+          "葉片標本",
+          "斑紋照片"
+        ],
+        "sceneNeed": "推理鏈缺少一個必要條件，必須用三角形中心的唯一性概念指出哪一步不能直接推出。",
+        "rewrites": {
+          "1286": {
+            "question": "要讓從局部假設到整體結論繼續，你得先解開球面格網旁這一筆：等腰三角形 ABC 中，\\overline{AB} = \\overline{AC} = 13，\\overline{BC} = 10。若要利用畢氏定理求出 \\triangle ABC 的面積，下列哪一條輔助線最能直接幫助我們找到高？",
+            "options": {
+              "A": "作 \\overline{BC} 邊上的高 \\overline{AD}",
+              "B": "作 \\overline{AB} 邊上的中線",
+              "C": "作 \\angle B 的角平分線",
+              "D": "過 A 點作平行 \\overline{BC} 的直線"
+            },
+            "preserveImage": false
+          },
+          "1288": {
+            "question": "艾倫・圖靈把從局部假設到整體結論剛測到的數字推到你面前：在 \\triangle ABC 中，已知 \\overline{AB} = \\overline{AC} = 20，\\overline{BC} = 24。若 O 為 \\triangle ABC 的外心，請作底邊上的高 \\overline{AD} 並連接 \\overline{OB} 作為輔助線，計算 \\triangle ABC 的外接圓半徑為多少？",
+            "preserveImage": false
+          },
+          "1289": {
+            "question": "現場只剩球面格網上的這份計算還沒核對：在 \\triangle ABC 中， \\angle BAC = 90^ \\circ ，且 \\overline{AB} = 6、\\overline{AC} = 8。若取 \\overline{BC} 的中點 M，並連接 \\overline{AM} 作為輔助線，則 \\overline{AM} 的長度為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "球面格網上的數字對上了。完成形態發生論文終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_5",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "論文結尾先強調什麼？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查模擬統計表。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選方程式手稿。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "模型能解釋之處",
+          "next": "choice_5_measure"
+        },
+        {
+          "id": "observe",
+          "label": "模型尚未解釋之處",
+          "next": "choice_5_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_5_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "核心成果清楚站穩，再接上不能涵蓋的現象。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "choice_5_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "限制先被誠實標出，已獲支持的結論因此更可信。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "q14",
+      "type": "quiz",
+      "anchor": 14,
+      "scene": "計算成為自然的顯微鏡",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "計算成為自然的顯微鏡。新標本反駁舊參數，玩家與圖靈共同修正模型，領悟可被資料推翻正是模型的力量。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿完成形態發生論文幾何圖的圓弧、弦與切線追出隱藏關係。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_5": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_5": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "圓的性質",
+        "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+        "knowledgePoint": "切線段長性質",
+        "questionIds": [
+          1245,
+          1247,
+          1249
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-turing-scene-14",
+        "setting": "曼徹斯特大學計算實驗室、溫室與形態發生研究室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "完成形態發生論文幾何圖",
+          "葉片標本",
+          "斑紋照片"
+        ],
+        "sceneNeed": "新標本反駁舊參數，玩家與圖靈共同修正模型，領悟可被資料推翻正是模型的力量。",
+        "rewrites": {
+          "1245": {
+            "question": "計算成為自然的顯微鏡。艾倫・圖靈在完成形態發生論文幾何圖上留下這組條件：自圓外一點 P 向圓 O 作兩條切線，切點分別為 A 、 B 。若 \\overline{PA} = 3x - 5 ， \\overline{PB} = x + 7 ，則 x 的值為多少？",
+            "options": {
+              "A": "1",
+              "B": "3",
+              "C": "6",
+              "D": "12"
+            },
+            "preserveImage": false
+          },
+          "1247": {
+            "question": "完成形態發生論文幾何圖的紀錄停在這一行；下一步正等著它：\\triangle ABC 的三邊分別與圓 O 相切於 D 、 E 、 F 三點，且點 D 在 \\overline{AB} 上，點 E 在 \\overline{BC} 上，點 F 在 \\overline{AC} 上。已知 \\overline{AD} = 5 ， \\overline{BE} = 6 ， \\overline{CF} = 7 ，則 \\triangle ABC 的周長為多少？",
+            "preserveImage": false
+          },
+          "1249": {
+            "question": "現場只剩完成形態發生論文幾何圖上的這份計算還沒核對：在直角 \\triangle ABC 中， \\angle C = 90^\\circ 。已知 \\overline{AC} = 6 ， \\overline{BC} = 8 。若圓 O 為 \\triangle ABC 的內切圓，且圓 O 與 \\overline{AC} 、 \\overline{BC} 、 \\overline{AB} 分別相切於 D 、 E 、 F 三點，則圓 O 的半徑為 _____ 。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "完成形態發生論文幾何圖上的數字對上了。完成形態發生論文終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_2",
+      "type": "eureka",
+      "eurekaId": "g9h2-turing-insight-2",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "計算模型不是自然的替身，而是能被自然反駁的觀察工具"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "q15"
+    },
+    {
+      "id": "q15",
+      "type": "quiz",
+      "anchor": 15,
+      "scene": "寄出前的立體證據圖",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "寄出前的立體證據圖。論文最後一圖必須同時呈現球面、柱面與截面結果，玩家要核對所有立體對應後才能付印。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "展開完成形態發生論文立體模型的立體結構，核對表面與內部容量。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 2,
+        "major": "立體幾何圖形",
+        "chapterIncludes": "立體幾何圖形 柱體、錐體、空間中的線與平面",
+        "knowledgePoint": "角柱/圓柱/角錐/圓錐的展開圖與表面積",
+        "questionIds": [
+          1448,
+          1444,
+          1446
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h2-turing-scene-15",
+        "setting": "曼徹斯特大學計算實驗室、溫室與形態發生研究室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "完成形態發生論文立體模型",
+          "葉片標本",
+          "斑紋照片"
+        ],
+        "sceneNeed": "論文最後一圖必須同時呈現球面、柱面與截面結果，玩家要核對所有立體對應後才能付印。",
+        "rewrites": {
+          "1444": {
+            "question": "現場只剩完成形態發生論文立體模型上的這份計算還沒核對：你利用紙板製作一個直圓錐，其側面展開圖是一個半徑為 10 小格、圓心角為 216^\\circ 的扇形。請問此直圓錐的底面圓半徑為多少小格？",
+            "options": {
+              "A": "6",
+              "B": "5",
+              "C": "12",
+              "D": "8"
+            },
+            "preserveImage": false
+          },
+          "1446": {
+            "question": "要讓寄出前的立體證據圖繼續，你得先解開完成形態發生論文立體模型旁這一筆：你想在現場測點販售自製的手工餅乾，你設計了一款「直角三角柱」造型的紙盒。已知紙盒底面為一個直角三角形，其兩股長分別為 3 小格與 4 小格，且紙盒的高度（柱高）為 10 小格。若不計紙張重疊部分，製作一個這樣的紙盒需要多少平方小格的紙板？",
+            "preserveImage": false
+          },
+          "1448": {
+            "question": "艾倫・圖靈把寄出前的立體證據圖剛測到的數字推到你面前：有一個底面半徑為 r 、高為 h 的直圓柱，以及一個底面半徑同為 r 、高同為 h 的直圓錐（其中 r > 0 且 h > 0 ）。關於兩者總表面積的比較，下列敘述何者必然正確？",
+            "options": {
+              "A": "圓柱的表面積必然大於圓錐的表面積。",
+              "B": "圓錐的表面積必然大於圓柱的表面積。",
+              "C": "若 h 夠大，圓錐的表面積可能大於圓柱的表面積。",
+              "D": "若 r 夠大，兩者的表面積可能相等。"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "完成形態發生論文立體模型上的數字對上了。完成形態發生論文終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "ending_history",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "ending_history",
+      "type": "narrative",
+      "objective": "記住艾倫・圖靈留下的答案",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "完成形態發生論文完成了。現場安靜下來，只有葉片標本還留著剛才的痕跡。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，今天不是你替我算完。是我們一起把它想通。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那道光退了……可是我還記得它的味道。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "因為答案不是光。答案會留在能被重做的步驟裡。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "——時間向前推去。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "圖靈在戰後持續研究電腦、人工智慧與形態發生，1954 年離世；後世才逐步還他應有的名字。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "眼前的曼徹斯特大學計算實驗室、溫室與形態發生研究室慢慢褪色。藍紫色的安靜重新包圍你們。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}，下次再有人快想通時，我們還會聽見。"
+        }
+      ],
+      "next": "ending_stats"
+    },
+    {
+      "id": "ending_stats",
+      "type": "ending",
+      "next": null,
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "【劇本結束】九下 × 艾倫・圖靈"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "這趟路的每一次重算，數字都記得。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "下次見，{{playerName}}！"
+        }
+      ]
+    }
+  ]
+}

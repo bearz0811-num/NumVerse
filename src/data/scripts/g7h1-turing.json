@@ -1,0 +1,2368 @@
+{
+  "id": "g7h1-turing",
+  "grade": 7,
+  "half": 1,
+  "gradeLabel": "七上",
+  "mathematician": "艾倫・圖靈",
+  "mathematicianSpeaker": "Mathematician",
+  "episode": "規則還沒有機器",
+  "setting": "舍伯恩學校、通學道路與少年圖靈的自然觀察室",
+  "era": "1926 至 1931 年",
+  "acts": [
+    "穿過暴雨趕往舍伯恩",
+    "與莫康整理自然觀察",
+    "把觀察拆成可重做步驟",
+    "在失去後保存共同研究",
+    "留下機器能否思考的問題"
+  ],
+  "insights": [
+    "方法若能被精確重做，方法本身就是能傳遞的知識",
+    "人的生命有限，但清楚寫下的規律仍能繼續被理解"
+  ],
+  "props": [
+    "里程表",
+    "顯微鏡",
+    "樣本分裝盒",
+    "方格座標紙",
+    "莫康的觀察筆記"
+  ],
+  "endingSummary": "圖靈在戰後持續研究電腦、人工智慧與形態發生，1954 年離世；後世才逐步還他應有的名字。",
+  "legendNote": null,
+  "objectives": [
+    "統一方向、尺度與符號，完成少年圖靈的通學紀錄",
+    "將零散自然觀察整理成可重複檢驗的規則",
+    "用方程式與座標找出不同紀錄之間的共同結構",
+    "完成莫康未竟的觀察表，讓共同思想得以延續"
+  ],
+  "beats": [
+    {
+      "scene": "暴雨中的接駁時刻",
+      "problem": "火車提前、接駁車延誤，圖靈必須用正負數算出還剩多少時間，否則校門將在他抵達前關閉。",
+      "major": "整數運算與科學記號"
+    },
+    {
+      "scene": "獨行六十英里的路標",
+      "problem": "強風吹倒數面路標，玩家要依東西方向的有號里程還原圖靈目前位置與剩餘路程。",
+      "major": "整數運算與科學記號"
+    },
+    {
+      "scene": "顯微鏡下的微小尺度",
+      "problem": "兩種細胞紀錄使用不同數量級，必須改寫成科學記號才能判斷哪一種更小。",
+      "major": "整數運算與科學記號"
+    },
+    {
+      "scene": "莫康的樣本分裝盒",
+      "problem": "兩批種子數量不同，盒子即將用完，必須找出不留餘數且每盒同量的最大分裝方式。",
+      "major": "因數分解與分數運算"
+    },
+    {
+      "scene": "被切碎的觀察夜",
+      "problem": "雲層只留下數段觀星空檔，玩家要合併分數時間，確認紀錄是否足以支持下一輪比較。",
+      "major": "因數分解與分數運算"
+    },
+    {
+      "scene": "再次同時亮起的指示燈",
+      "problem": "兩套觀察裝置按不同週期亮燈，必須算出何時再次同步，否則唯一的共同讀值會被錯過。",
+      "major": "整數運算與科學記號"
+    },
+    {
+      "scene": "兩本頁數不明的筆記",
+      "problem": "只知道兩本筆記的總頁數與頁數差，圖靈要列出兩個未知數，找回各自缺少的頁數。",
+      "major": "二元一次聯立方程式"
+    },
+    {
+      "scene": "兩次實驗的共同條件",
+      "problem": "兩輪培養各留下總量與差量，玩家必須聯立條件，解出兩種樣本原本的數量。",
+      "major": "二元一次聯立方程式"
+    },
+    {
+      "scene": "人人都能重做的消去步驟",
+      "problem": "答案雖已出現，圖靈卻要求把消去未知數的每一步寫清楚，讓沒看過實驗的人也能得到同一結果。",
+      "major": "二元一次聯立方程式"
+    },
+    {
+      "scene": "校園方格圖上的原點",
+      "problem": "濃霧遮住道路，玩家要以校門為原點標出宿舍、教室與實驗室所在象限。",
+      "major": "平面直角坐標系"
+    },
+    {
+      "scene": "被施工圍起的捷徑",
+      "problem": "原路突然封閉，必須根據座標變化比較兩條替代路線，趕在實驗開始前抵達。",
+      "major": "平面直角坐標系"
+    },
+    {
+      "scene": "遺失在另一象限的觀測點",
+      "problem": "一筆星點座標被雨水抹去，只剩對稱與象限線索，玩家要還原唯一可能的位置。",
+      "major": "平面直角坐標系"
+    },
+    {
+      "scene": "莫康未完成的資料欄",
+      "problem": "兩欄觀察值互相制約，必須列出聯立方程式補完最後一列，才能確認他生前看見的規律。",
+      "major": "二元一次聯立方程式"
+    },
+    {
+      "scene": "跨越缺席的座標曲線",
+      "problem": "玩家與圖靈把莫康的散落數據標上座標；當規律完整浮現，兩人共同明白思想能由紀錄延續。",
+      "major": "平面直角坐標系"
+    },
+    {
+      "scene": "筆記末頁的巨大數",
+      "problem": "圖靈用科學記號整理最後一批尺度懸殊的資料，並在末頁寫下「所有思考都能化成有限步驟嗎？」",
+      "major": "整數運算與科學記號"
+    }
+  ],
+  "choices": [
+    {
+      "prompt": "暴雨抹亂里程紀錄，先救哪一部分？",
+      "firstLabel": "先統一方向正負",
+      "firstResult": "東西向的紀錄立刻對齊，錯置路標只剩一處。",
+      "secondLabel": "先估算剩餘路程",
+      "secondResult": "你們先抓住時間上限，再回頭逐段校正方向。"
+    },
+    {
+      "prompt": "觀星空檔不足，怎麼分配？",
+      "firstLabel": "平均切成數段",
+      "firstResult": "每次觀察長度一致，方便直接比較。",
+      "secondLabel": "依現象週期切分",
+      "secondResult": "關鍵變化被完整保留，但分數時間必須重新核對。"
+    },
+    {
+      "prompt": "兩個未知量纏在一起，先走哪條路？",
+      "firstLabel": "消去其中一項",
+      "firstResult": "重複的量被抵消，剩下的未知數清楚浮現。",
+      "secondLabel": "代入已知關係",
+      "secondResult": "一條條件被折進另一條，兩條路得到同一組答案。"
+    },
+    {
+      "prompt": "失落的星點該從哪裡追？",
+      "firstLabel": "逐一排除象限",
+      "firstResult": "不符合正負條件的位置依序被劃掉。",
+      "secondLabel": "從對稱點反推",
+      "secondResult": "鏡像關係直接把搜尋縮到唯一座標。"
+    },
+    {
+      "prompt": "莫康的筆記要如何留下？",
+      "firstLabel": "保留原序並加索引",
+      "firstResult": "他的思路原貌被保留，讀者也能迅速追到證據。",
+      "secondLabel": "依規律重新分類",
+      "secondResult": "跨頁資料彼此接合，未完成的模式終於現形。"
+    }
+  ],
+  "version": 1,
+  "title": "七上 × 艾倫・圖靈",
+  "language": "zh-TW",
+  "companions": [
+    "NumNum",
+    "Numi"
+  ],
+  "journalTitle": "規則還沒有機器",
+  "notes": [
+    "玩家本人與 NumNum、Numi 一起冒險。",
+    "題目只從所選年段 questionBank 抽取。",
+    "題面依當下研究場景整段改寫；數字、算式、答案不變。",
+    "答錯保留同一題並給提示，直到答對。",
+    "Eureka 僅在玩家與數學家共同領悟關鍵知識時觸發。"
+  ],
+  "detourTemplates": [
+    [
+      {
+        "speaker": "NumNum",
+        "text": "條件還在。慢一點，沿同一條路再走一次。"
+      }
+    ],
+    [
+      {
+        "speaker": "Numi",
+        "text": "別換題。眼前這件事還等著我們把它算開。"
+      }
+    ],
+    [
+      {
+        "speaker": "Mathematician",
+        "text": "我也沒放棄。重看剛才那一步。"
+      }
+    ]
+  ],
+  "correctFeedback": [
+    [
+      {
+        "speaker": "narrator",
+        "text": "數字對上，眼前的阻礙鬆開了一格。"
+      }
+    ]
+  ],
+  "nodes": [
+    {
+      "id": "opening",
+      "type": "narrative",
+      "objective": "統一方向、尺度與符號，完成少年圖靈的通學紀錄",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "數學世界的藍紫色安靜得像一張沒有折痕的紙。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那邊有一點光——很細，還在抖。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "不是 Eureka。只是有人卡在一個還沒想通的問題前。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "你們追著微光穿過薄紙般的界面。1926 至 1931 年，舍伯恩學校、通學道路與少年圖靈的自然觀察室。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "艾倫・圖靈站在里程表旁，手裡那一步已經停了很久。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "你們是誰？算了——如果看得懂數字，就過來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}也在！我們不是來旁觀的。"
+        }
+      ],
+      "next": "q01"
+    },
+    {
+      "id": "q01",
+      "type": "quiz",
+      "anchor": 1,
+      "scene": "暴雨中的接駁時刻",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "暴雨中的接駁時刻。火車提前、接駁車延誤，圖靈必須用正負數算出還剩多少時間，否則校門將在他抵達前關閉。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把里程表上過大或過小的量縮成能核對的記號。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 1,
+        "major": "整數運算與科學記號",
+        "chapterIncludes": "整數運算與科學記號 指數記法與科學記號",
+        "knowledgePoint": "非負整數的次方（指數）",
+        "questionIds": [
+          396,
+          393,
+          395
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h1-turing-scene-01",
+        "setting": "舍伯恩學校、通學道路與少年圖靈的自然觀察室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "里程表",
+          "顯微鏡",
+          "樣本分裝盒"
+        ],
+        "sceneNeed": "火車提前、接駁車延誤，圖靈必須用正負數算出還剩多少時間，否則校門將在他抵達前關閉。",
+        "rewrites": {
+          "393": {
+            "question": "艾倫・圖靈把暴雨中的接駁時刻剛測到的數字推到你面前：下列哪個算式的計算結果為正數？",
+            "options": {
+              "A": "-2^4",
+              "B": "(-2)^3",
+              "C": "-(-2)^2",
+              "D": "(-2)^4"
+            },
+            "preserveImage": false
+          },
+          "395": {
+            "question": "暴雨中的接駁時刻。艾倫・圖靈在里程表上留下這組條件：計算 (-1)^5 \\times 2^3 - (-3)^2 + (-2)^4 的值為多少？",
+            "preserveImage": false
+          },
+          "396": {
+            "question": "要讓暴雨中的接駁時刻繼續，你得先解開里程表旁這一筆：若 7^8 是 7^5 的 k 倍，請計算出 k 的值為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "里程表上的數字對上了。穿過暴雨趕往舍伯恩終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_1",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "暴雨抹亂里程紀錄，先救哪一部分？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查里程表。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選顯微鏡。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "先統一方向正負",
+          "next": "choice_1_measure"
+        },
+        {
+          "id": "observe",
+          "label": "先估算剩餘路程",
+          "next": "choice_1_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_1_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "東西向的紀錄立刻對齊，錯置路標只剩一處。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "choice_1_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "你們先抓住時間上限，再回頭逐段校正方向。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "q02",
+      "type": "quiz",
+      "anchor": 2,
+      "scene": "獨行六十英里的路標",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "獨行六十英里的路標。強風吹倒數面路標，玩家要依東西方向的有號里程還原圖靈目前位置與剩餘路程。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "以顯微鏡為基準，把方向、差量與順序記清楚。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_1": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_1": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 1,
+        "major": "整數運算與科學記號",
+        "chapterIncludes": "整數運算與科學記號 整數的加減運算",
+        "knowledgePoint": "同異號數的加減法",
+        "questionIds": [
+          2198,
+          2196,
+          2200
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h1-turing-scene-02",
+        "setting": "舍伯恩學校、通學道路與少年圖靈的自然觀察室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "顯微鏡",
+          "里程表",
+          "樣本分裝盒"
+        ],
+        "sceneNeed": "強風吹倒數面路標，玩家要依東西方向的有號里程還原圖靈目前位置與剩餘路程。",
+        "rewrites": {
+          "2196": {
+            "question": "要讓獨行六十英里的路標繼續，你得先解開顯微鏡旁這一筆：計算 25 + (-38) - (-15) 的值為下列何者？",
+            "options": {
+              "A": "2",
+              "B": "-28",
+              "C": "78",
+              "D": "48"
+            },
+            "preserveImage": false
+          },
+          "2198": {
+            "question": "艾倫・圖靈把獨行六十英里的路標剛測到的數字推到你面前：計算 (-137) + 256 - (163 - 144) = _____。",
+            "preserveImage": false
+          },
+          "2200": {
+            "question": "獨行六十英里的路標。艾倫・圖靈在顯微鏡上留下這組條件：已知 a 的相反數為 7 ，且 |b| = 5 ，則 a - b 的最大可能值為多少？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "顯微鏡上的數字對上了。穿過暴雨趕往舍伯恩終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q03",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q03",
+      "type": "quiz",
+      "anchor": 3,
+      "scene": "顯微鏡下的微小尺度",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "顯微鏡下的微小尺度。兩種細胞紀錄使用不同數量級，必須改寫成科學記號才能判斷哪一種更小。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "以樣本分裝盒為基準，把方向、差量與順序記清楚。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 1,
+        "major": "整數運算與科學記號",
+        "chapterIncludes": "整數運算與科學記號 數與數線",
+        "knowledgePoint": "相反數",
+        "questionIds": [
+          2173,
+          2170,
+          2175
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h1-turing-scene-03",
+        "setting": "舍伯恩學校、通學道路與少年圖靈的自然觀察室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "樣本分裝盒",
+          "里程表",
+          "顯微鏡"
+        ],
+        "sceneNeed": "兩種細胞紀錄使用不同數量級，必須改寫成科學記號才能判斷哪一種更小。",
+        "rewrites": {
+          "2170": {
+            "question": "顯微鏡下的微小尺度。艾倫・圖靈在樣本分裝盒上留下這組條件：計算 -( -7 ) 的相反數加上 |-5| 的值為何？",
+            "options": {
+              "A": "2",
+              "B": "-2",
+              "C": "12",
+              "D": "-12"
+            },
+            "preserveImage": false
+          },
+          "2173": {
+            "question": "艾倫・圖靈把顯微鏡下的微小尺度剛測到的數字推到你面前：求出 -[-(-8)] 的相反數，並減去 |-12| ，其計算結果為何？",
+            "preserveImage": false
+          },
+          "2175": {
+            "question": "顯微鏡下的微小尺度。艾倫・圖靈在樣本分裝盒上留下這組條件：若 x 為整數，且已知 x 的相反數的絕對值等於 15 ，且 -(-x) 小於 0 。請問 x + 10 的相反數為何？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "樣本分裝盒上的數字對上了。穿過暴雨趕往舍伯恩終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_2",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "穿過暴雨趕往舍伯恩告一段落，方格座標紙卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是與莫康整理自然觀察；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q04"
+    },
+    {
+      "id": "q04",
+      "type": "quiz",
+      "anchor": 4,
+      "scene": "莫康的樣本分裝盒",
+      "objective": "將零散自然觀察整理成可重複檢驗的規則",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "莫康的樣本分裝盒。兩批種子數量不同，盒子即將用完，必須找出不留餘數且每盒同量的最大分裝方式。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "拆開與莫康整理自然觀察分組表的數量結構，找出能整齊分組的方式。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 1,
+        "major": "因數分解與分數運算",
+        "chapterIncludes": "因數分解與分數運算 質因數分解",
+        "knowledgePoint": "質數與合數的定義",
+        "questionIds": [
+          422,
+          423,
+          419
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h1-turing-scene-04",
+        "setting": "舍伯恩學校、通學道路與少年圖靈的自然觀察室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "與莫康整理自然觀察分組表",
+          "里程表",
+          "顯微鏡"
+        ],
+        "sceneNeed": "兩批種子數量不同，盒子即將用完，必須找出不留餘數且每盒同量的最大分裝方式。",
+        "rewrites": {
+          "419": {
+            "question": "現場只剩與莫康整理自然觀察分組表上的這份計算還沒核對：關於質數與合數的定義，下列敘述何者正確？",
+            "options": {
+              "A": "所有的奇數都是質數。",
+              "B": "所有的偶數都是合數。",
+              "C": "1 既不是質數也不是合數。",
+              "D": "兩個相異質數相乘的結果仍是質數。"
+            },
+            "preserveImage": false
+          },
+          "422": {
+            "question": "與莫康整理自然觀察分組表的紀錄停在這一行；下一步正等著它：若 a 、 b 皆為質數，且 a+b=31 ，請問 a \\times b 的值為多少？",
+            "preserveImage": false
+          },
+          "423": {
+            "question": "艾倫・圖靈把莫康的樣本分裝盒剛測到的數字推到你面前：已知 p 為質數，且 p+4 與 p+14 也都是質數。如果 p 是一個小於 10 的正整數，請問 p 的值為何？_____",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "與莫康整理自然觀察分組表上的數字對上了。與莫康整理自然觀察終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_2",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "觀星空檔不足，怎麼分配？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查樣本分裝盒。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選方格座標紙。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "平均切成數段",
+          "next": "choice_2_measure"
+        },
+        {
+          "id": "observe",
+          "label": "依現象週期切分",
+          "next": "choice_2_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_2_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "每次觀察長度一致，方便直接比較。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "choice_2_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "關鍵變化被完整保留，但分數時間必須重新核對。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "q05",
+      "type": "quiz",
+      "anchor": 5,
+      "scene": "被切碎的觀察夜",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "被切碎的觀察夜。雲層只留下數段觀星空檔，玩家要合併分數時間，確認紀錄是否足以支持下一輪比較。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "拆開與莫康整理自然觀察分組表的數量結構，找出能整齊分組的方式。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_2": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_2": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 1,
+        "major": "因數分解與分數運算",
+        "chapterIncludes": "因數分解與分數運算 公因數與公倍數",
+        "knowledgePoint": "最小公倍數",
+        "questionIds": [
+          452,
+          454,
+          455
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h1-turing-scene-05",
+        "setting": "舍伯恩學校、通學道路與少年圖靈的自然觀察室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "與莫康整理自然觀察分組表",
+          "里程表",
+          "顯微鏡"
+        ],
+        "sceneNeed": "雲層只留下數段觀星空檔，玩家要合併分數時間，確認紀錄是否足以支持下一輪比較。",
+        "rewrites": {
+          "452": {
+            "question": "與莫康整理自然觀察分組表的紀錄停在這一行；下一步正等著它：求 28 與 42 的最小公倍數為何？",
+            "options": {
+              "A": "14",
+              "B": "84",
+              "C": "196",
+              "D": "1176"
+            },
+            "preserveImage": false
+          },
+          "454": {
+            "question": "現場只剩與莫康整理自然觀察分組表上的這份計算還沒核對：已知 a 、 b 均為大於 10 的正整數，且 a 、 b 的最大公因數為 6 ，最小公倍數為 72 。若 a < b ，求 a+b 的值。",
+            "preserveImage": false
+          },
+          "455": {
+            "question": "被切碎的觀察夜。艾倫・圖靈在與莫康整理自然觀察分組表上留下這組條件：已知 x 為正整數，且 100 < x < 200 。若將 x 除以 6 餘 5 ， x 除以 8 餘 7 ， x 除以 9 餘 8 ，求 x 的值為何？",
+            "options": {
+              "A": "143",
+              "B": "145",
+              "C": "151",
+              "D": "215"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "與莫康整理自然觀察分組表上的數字對上了。與莫康整理自然觀察終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q06",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q06",
+      "type": "quiz",
+      "anchor": 6,
+      "scene": "再次同時亮起的指示燈",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "再次同時亮起的指示燈。兩套觀察裝置按不同週期亮燈，必須算出何時再次同步，否則唯一的共同讀值會被錯過。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "以里程表為基準，把方向、差量與順序記清楚。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 1,
+        "major": "整數運算與科學記號",
+        "chapterIncludes": "整數運算與科學記號 整數的乘除運算",
+        "knowledgePoint": "四則混合運算",
+        "questionIds": [
+          384,
+          386,
+          388
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h1-turing-scene-06",
+        "setting": "舍伯恩學校、通學道路與少年圖靈的自然觀察室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "里程表",
+          "顯微鏡",
+          "樣本分裝盒"
+        ],
+        "sceneNeed": "兩套觀察裝置按不同週期亮燈，必須算出何時再次同步，否則唯一的共同讀值會被錯過。",
+        "rewrites": {
+          "384": {
+            "question": "現場只剩里程表上的這份計算還沒核對：計算 (-45) \\times 12 + (-45) \\times 88 的值為多少？",
+            "preserveImage": false
+          },
+          "386": {
+            "question": "要讓再次同時亮起的指示燈繼續，你得先解開里程表旁這一筆：計算 (-12) \\div 3 - (-5) \\times (-4) + 6 的值為多少？",
+            "preserveImage": false
+          },
+          "388": {
+            "question": "艾倫・圖靈把再次同時亮起的指示燈剛測到的數字推到你面前：計算 (-8) \\times [ (-2) \\times (-5) - 3 \\times (-4) ] \\div (-11) 的值為多少？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "里程表上的數字對上了。與莫康整理自然觀察終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q07",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q07",
+      "type": "quiz",
+      "anchor": 7,
+      "scene": "兩本頁數不明的筆記",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "兩本頁數不明的筆記。只知道兩本筆記的總頁數與頁數差，圖靈要列出兩個未知數，找回各自缺少的頁數。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把顯微鏡裡未知的量列成條件，解出唯一可行的配置。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 1,
+        "major": "二元一次聯立方程式",
+        "chapterIncludes": "二元一次聯立方程式 二元一次方程式",
+        "knowledgePoint": "二元一次方程式及其解的意義",
+        "questionIds": [
+          556,
+          554,
+          552
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h1-turing-scene-07",
+        "setting": "舍伯恩學校、通學道路與少年圖靈的自然觀察室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "顯微鏡",
+          "里程表",
+          "樣本分裝盒"
+        ],
+        "sceneNeed": "只知道兩本筆記的總頁數與頁數差，圖靈要列出兩個未知數，找回各自缺少的頁數。",
+        "rewrites": {
+          "552": {
+            "question": "顯微鏡的紀錄停在這一行；下一步正等著它：判斷 x = 2, y = -1 是下列哪一個二元一次方程式的解？",
+            "options": {
+              "A": "3x + y = 5",
+              "B": "2x - y = 3",
+              "C": "x + 2y = 4",
+              "D": "x - 3y = 1"
+            },
+            "preserveImage": false
+          },
+          "554": {
+            "question": "現場只剩顯微鏡上的這份計算還沒核對：已知 x = 3, y = -2 是二元一次方程式 ax + 4y = 10 的解，求 a 的值。",
+            "preserveImage": false
+          },
+          "556": {
+            "question": "要讓兩本頁數不明的筆記繼續，你得先解開顯微鏡旁這一筆：若 x 、 y 皆為正整數，則二元一次方程式 2x + 3y = 18 共有 _____ 組解。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "顯微鏡上的數字對上了。把觀察拆成可重做步驟終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_3",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_3",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "兩個未知量纏在一起，先走哪條路？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查莫康的觀察筆記。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選里程表。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "消去其中一項",
+          "next": "choice_3_measure"
+        },
+        {
+          "id": "observe",
+          "label": "代入已知關係",
+          "next": "choice_3_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_3_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "重複的量被抵消，剩下的未知數清楚浮現。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "choice_3_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "一條條件被折進另一條，兩條路得到同一組答案。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "q08",
+      "type": "quiz",
+      "anchor": 8,
+      "scene": "兩次實驗的共同條件",
+      "objective": "用方程式與座標找出不同紀錄之間的共同結構",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "兩次實驗的共同條件。兩輪培養各留下總量與差量，玩家必須聯立條件，解出兩種樣本原本的數量。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把樣本分裝盒裡未知的量列成條件，解出唯一可行的配置。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_3": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_3": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 1,
+        "major": "二元一次聯立方程式",
+        "chapterIncludes": "二元一次聯立方程式 二元一次聯立方程式的應用",
+        "knowledgePoint": "情境問題的列式與求解檢驗",
+        "questionIds": [
+          580,
+          579,
+          581
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h1-turing-scene-08",
+        "setting": "舍伯恩學校、通學道路與少年圖靈的自然觀察室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "樣本分裝盒",
+          "里程表",
+          "顯微鏡"
+        ],
+        "sceneNeed": "兩輪培養各留下總量與差量，玩家必須聯立條件，解出兩種樣本原本的數量。",
+        "rewrites": {
+          "579": {
+            "question": "現場只剩樣本分裝盒上的這份計算還沒核對：你去現場取用樣品與樣品，已知樣品每杯 40 枚，樣品每杯 50 枚。你總共取用了 10 杯樣品請同行者，交付了 440 枚。請問你取用了 _____ 杯樣品。",
+            "preserveImage": false
+          },
+          "580": {
+            "question": "兩次實驗的共同條件。艾倫・圖靈在樣本分裝盒上留下這組條件：這次試驗的記錄片分為甲類記錄與乙類記錄。已知 3 張甲類記錄與 2 張乙類記錄共 1200 枚；2 張甲類記錄與 4 張乙類記錄共 1200 枚。請問 1 張甲類記錄加上 1 張乙類記錄共是多少枚？",
+            "preserveImage": false
+          },
+          "581": {
+            "question": "要讓兩次實驗的共同條件繼續，你得先解開樣本分裝盒旁這一筆：你有 10 塊錢與 50 塊錢硬幣共 20 枚，總金額為 k 枚。若將 10 塊錢與 50 塊錢硬幣的數量互換，總金額會比原來多 160 枚。請問原本你有 _____ 枚 50 塊錢硬幣。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "樣本分裝盒上的數字對上了。把觀察拆成可重做步驟終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q09",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q09",
+      "type": "quiz",
+      "anchor": 9,
+      "scene": "人人都能重做的消去步驟",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "人人都能重做的消去步驟。答案雖已出現，圖靈卻要求把消去未知數的每一步寫清楚，讓沒看過實驗的人也能得到同一結果。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把方格座標紙裡未知的量列成條件，解出唯一可行的配置。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 1,
+        "major": "二元一次聯立方程式",
+        "chapterIncludes": "二元一次聯立方程式 解二元一次聯立方程式",
+        "knowledgePoint": "加減消去法",
+        "questionIds": [
+          571,
+          574,
+          572
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h1-turing-scene-09",
+        "setting": "舍伯恩學校、通學道路與少年圖靈的自然觀察室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "方格座標紙",
+          "里程表",
+          "顯微鏡"
+        ],
+        "sceneNeed": "答案雖已出現，圖靈卻要求把消去未知數的每一步寫清楚，讓沒看過實驗的人也能得到同一結果。",
+        "rewrites": {
+          "571": {
+            "question": "要讓人人都能重做的消去步驟繼續，你得先解開方格座標紙旁這一筆：你去現場取用樣品，你發現同一家測點的讀數固定。已知取用 2 份樣品和 3 杯樣品總共要 230 枚；如果取用 2 份樣品和 1 杯樣品總共要 170 枚。請問 1 杯樣品是 _____ 元。",
+            "preserveImage": false
+          },
+          "572": {
+            "question": "方格座標紙的紀錄停在這一行；下一步正等著它：請利用加減消去法解二元一次聯立方程式 \\begin{cases} 4x - 3y = 10 \\dots (1) \\\\ 5x + 2y = 24 \\dots (2) \\end{cases} ，並求出 x + y 的值。",
+            "preserveImage": false
+          },
+          "574": {
+            "question": "現場只剩方格座標紙上的這份計算還沒核對：已知二元一次聯立方程式 \\begin{cases} ax + by = 5 \\\\ bx - ay = 5 \\end{cases} 的解為 x = 3, y = -1 ，請問 a + b 的值為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "方格座標紙上的數字對上了。把觀察拆成可重做步驟終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_1",
+      "type": "eureka",
+      "eurekaId": "g7h1-turing-insight-1",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "方法若能被精確重做，方法本身就是能傳遞的知識"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "transition_4"
+    },
+    {
+      "id": "transition_4",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "把觀察拆成可重做步驟告一段落，里程表卻送來新的壞消息。原先穩定的讀數突然偏了一格；這不是能略過的小差。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是在失去後保存共同研究；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q10"
+    },
+    {
+      "id": "q10",
+      "type": "quiz",
+      "anchor": 10,
+      "scene": "校園方格圖上的原點",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "校園方格圖上的原點。濃霧遮住道路，玩家要以校門為原點標出宿舍、教室與實驗室所在象限。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把在失去後保存共同研究坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 1,
+        "major": "平面直角坐標系",
+        "chapterIncludes": "平面直角坐標系 直角坐標平面",
+        "knowledgePoint": "坐標平面上的橫軸與縱軸",
+        "questionIds": [
+          590,
+          587,
+          588
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h1-turing-scene-10",
+        "setting": "舍伯恩學校、通學道路與少年圖靈的自然觀察室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "在失去後保存共同研究坐標圖",
+          "里程表",
+          "顯微鏡"
+        ],
+        "sceneNeed": "濃霧遮住道路，玩家要以校門為原點標出宿舍、教室與實驗室所在象限。",
+        "rewrites": {
+          "587": {
+            "question": "在失去後保存共同研究坐標圖的紀錄停在這一行；下一步正等著它：坐標平面上有一點 A(-6, 8) ，請算出 A 點到 x 軸的距離加上 A 點到 y 軸的距離，總和為 _____ 單位長。",
+            "preserveImage": false
+          },
+          "588": {
+            "question": "艾倫・圖靈把校園方格圖上的原點剛測到的數字推到你面前：在坐標平面上，有一點 P(a, b) 。將 P 點向左平移 5 個單位，再向上平移 3 個單位後，到達新的位置 Q(-2, 4) 。請問 a + b 的值是多少？",
+            "preserveImage": false
+          },
+          "590": {
+            "question": "校園方格圖上的原點。艾倫・圖靈在在失去後保存共同研究坐標圖上留下這組條件：若坐標平面上一點 M(3k - 6, 2k + 5) 位於 y 軸上，則 M 點到 x 軸的距離為 _____ 單位長。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "在失去後保存共同研究坐標圖上的數字對上了。在失去後保存共同研究終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_4",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_4",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "失落的星點該從哪裡追？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查顯微鏡。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選樣本分裝盒。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "逐一排除象限",
+          "next": "choice_4_measure"
+        },
+        {
+          "id": "observe",
+          "label": "從對稱點反推",
+          "next": "choice_4_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_4_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "不符合正負條件的位置依序被劃掉。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "choice_4_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "鏡像關係直接把搜尋縮到唯一座標。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "q11",
+      "type": "quiz",
+      "anchor": 11,
+      "scene": "被施工圍起的捷徑",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "被施工圍起的捷徑。原路突然封閉，必須根據座標變化比較兩條替代路線，趕在實驗開始前抵達。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把在失去後保存共同研究坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_4": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_4": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 1,
+        "major": "平面直角坐標系",
+        "chapterIncludes": "平面直角坐標系 直角坐標平面",
+        "knowledgePoint": "象限與位置標定",
+        "questionIds": [
+          598,
+          595,
+          596
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h1-turing-scene-11",
+        "setting": "舍伯恩學校、通學道路與少年圖靈的自然觀察室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "在失去後保存共同研究坐標圖",
+          "里程表",
+          "顯微鏡"
+        ],
+        "sceneNeed": "原路突然封閉，必須根據座標變化比較兩條替代路線，趕在實驗開始前抵達。",
+        "rewrites": {
+          "595": {
+            "question": "被施工圍起的捷徑。艾倫・圖靈在在失去後保存共同研究坐標圖上留下這組條件：坐標平面上，有一點 P(-3, 5) ，請問點 P 位在哪一個象限？",
+            "options": {
+              "A": "第一象限",
+              "B": "第二象限",
+              "C": "第三象限",
+              "D": "第四象限"
+            },
+            "preserveImage": false
+          },
+          "596": {
+            "question": "要讓被施工圍起的捷徑繼續，你得先解開在失去後保存共同研究坐標圖旁這一筆：現場的中心點為噴水池 (0,0) 。規定向東為 x 軸正向，向北為 y 軸正向，每單位長為 1 長度格。你從噴水池出發，向東走 3 長度格，再向南走 2 長度格到達測點 A 。若你要從測點 A 出發，向西走 5 長度格，再向北走 4 長度格到達測點 B 。請問測點 B 的 x 坐標為 _____。",
+            "preserveImage": false
+          },
+          "598": {
+            "question": "艾倫・圖靈把被施工圍起的捷徑剛測到的數字推到你面前：已知坐標平面上一點 A(2k-8, -k+5) 位於 y 軸上，求點 A 與 x 軸的距離為多少？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "在失去後保存共同研究坐標圖上的數字對上了。在失去後保存共同研究終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q12",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q12",
+      "type": "quiz",
+      "anchor": 12,
+      "scene": "遺失在另一象限的觀測點",
+      "objective": "完成莫康未竟的觀察表，讓共同思想得以延續",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "遺失在另一象限的觀測點。一筆星點座標被雨水抹去，只剩對稱與象限線索，玩家要還原唯一可能的位置。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把在失去後保存共同研究坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 1,
+        "major": "平面直角坐標系",
+        "chapterIncludes": "平面直角坐標系 直角坐標平面",
+        "knowledgePoint": "坐標平面上的橫軸與縱軸",
+        "questionIds": [
+          591,
+          586,
+          589
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h1-turing-scene-12",
+        "setting": "舍伯恩學校、通學道路與少年圖靈的自然觀察室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "在失去後保存共同研究坐標圖",
+          "里程表",
+          "顯微鏡"
+        ],
+        "sceneNeed": "一筆星點座標被雨水抹去，只剩對稱與象限線索，玩家要還原唯一可能的位置。",
+        "rewrites": {
+          "586": {
+            "question": "要讓遺失在另一象限的觀測點繼續，你得先解開在失去後保存共同研究坐標圖旁這一筆：你在現場逛街，你將入口處設為坐標平面的原點 (0, 0) 。已知「香腸測點」在入口的正東方 30 長度格處，「樣品測點」在香腸測點的正南方 20 長度格處。若每 10 長度格為 1 個單位長，且向東為 x 軸正向，向北為 y 軸正向，則樣品測點在坐標平面上的位置為何？",
+            "options": {
+              "A": "(3, -2)",
+              "B": "(30, -20)",
+              "C": "(-2, 3)",
+              "D": "(-3, 2)"
+            },
+            "preserveImage": false
+          },
+          "589": {
+            "question": "現場只剩在失去後保存共同研究坐標圖上的這份計算還沒核對：你在畫現場的平面圖，你以校門口為原點 (0, 0) 。已知圖書館在校門口的西方 4 單位處，活動中心在圖書館的北方 5 單位處。若你想從活動中心走到坐標為 (2, 2) 的辦公室，你應該如何移動？",
+            "options": {
+              "A": "向東走 6 單位，向南走 3 單位",
+              "B": "向東走 6 單位，向北走 3 單位",
+              "C": "向西走 2 單位，向南走 3 單位",
+              "D": "向西走 6 單位，向南走 3 單位"
+            },
+            "preserveImage": false
+          },
+          "591": {
+            "question": "要讓遺失在另一象限的觀測點繼續，你得先解開在失去後保存共同研究坐標圖旁這一筆：你的測繪板地圖上，快速通道站 A 的坐標為 (-3, 4) 。你從站 A 出發，向東騎測試車 8 里程格（地圖上 1 單位代表 1 里程格），再向南騎 10 里程格抵達朋友家 B 。若有一間樣品店 C 恰好在朋友家 B 到 x 軸的垂足上，請問樣品店 C 點的橫坐標與縱坐標相加的總和為多少？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "在失去後保存共同研究坐標圖上的數字對上了。在失去後保存共同研究終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_5",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "在失去後保存共同研究告一段落，顯微鏡卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是留下機器能否思考的問題；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q13"
+    },
+    {
+      "id": "q13",
+      "type": "quiz",
+      "anchor": 13,
+      "scene": "莫康未完成的資料欄",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "莫康未完成的資料欄。兩欄觀察值互相制約，必須列出聯立方程式補完最後一列，才能確認他生前看見的規律。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把樣本分裝盒裡未知的量列成條件，解出唯一可行的配置。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 1,
+        "major": "二元一次聯立方程式",
+        "chapterIncludes": "二元一次聯立方程式 解二元一次聯立方程式",
+        "knowledgePoint": "代入消去法",
+        "questionIds": [
+          564,
+          562,
+          565
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h1-turing-scene-13",
+        "setting": "舍伯恩學校、通學道路與少年圖靈的自然觀察室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "樣本分裝盒",
+          "里程表",
+          "顯微鏡"
+        ],
+        "sceneNeed": "兩欄觀察值互相制約，必須列出聯立方程式補完最後一列，才能確認他生前看見的規律。",
+        "rewrites": {
+          "562": {
+            "question": "樣本分裝盒的紀錄停在這一行；下一步正等著它：你去文具店取用筆，已知原子筆的單價是鉛筆的 3 倍。你取用了 2 支原子筆和 4 支鉛筆，總共花了 100 枚。若假設鉛筆一支 x 枚，原子筆一支 y 枚，可列出聯立方程式：\n\\begin{cases} y = 3x \\\\ 2y + 4x = 100 \\end{cases}\n請利用代入消去法，求出鉛筆一支為 _____ 元。",
+            "preserveImage": false
+          },
+          "564": {
+            "question": "現場只剩樣本分裝盒上的這份計算還沒核對：請以「代入消去法」解二元一次聯立方程式：\n\\begin{cases} 3x - y = 5 \\\\ 2x + 3y = 18 \\end{cases}\n求出解 (x, y) 後，計算出 x + y 的值。",
+            "preserveImage": false
+          },
+          "565": {
+            "question": "莫康未完成的資料欄。艾倫・圖靈在樣本分裝盒上留下這組條件：你解二元一次聯立方程式 \\begin{cases} ax + by = 5 \\\\ 2x - y = 3 \\end{cases} ，你將第二式移項得到 y = 2x - 3 ，代入第一式後，整理得到一元一次方程式 10x = 20 。請問下列關於 a 與 b 的敘述，何者正確？",
+            "options": {
+              "A": "a = 5",
+              "B": "b = 0",
+              "C": "a + b = 5",
+              "D": "a - b = 5"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "樣本分裝盒上的數字對上了。留下機器能否思考的問題終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_5",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "莫康的筆記要如何留下？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查方格座標紙。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選莫康的觀察筆記。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，選一條規則。我們看它會把狀態帶去哪裡。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "保留原序並加索引",
+          "next": "choice_5_measure"
+        },
+        {
+          "id": "observe",
+          "label": "依規律重新分類",
+          "next": "choice_5_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_5_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "他的思路原貌被保留，讀者也能迅速追到證據。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "choice_5_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "跨頁資料彼此接合，未完成的模式終於現形。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "q14",
+      "type": "quiz",
+      "anchor": 14,
+      "scene": "跨越缺席的座標曲線",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "跨越缺席的座標曲線。玩家與圖靈把莫康的散落數據標上座標；當規律完整浮現，兩人共同明白思想能由紀錄延續。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把留下機器能否思考的問題坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_5": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_5": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 1,
+        "major": "平面直角坐標系",
+        "chapterIncludes": "平面直角坐標系 直角坐標平面",
+        "knowledgePoint": "象限與位置標定",
+        "questionIds": [
+          597,
+          600,
+          592
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h1-turing-scene-14",
+        "setting": "舍伯恩學校、通學道路與少年圖靈的自然觀察室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "留下機器能否思考的問題坐標圖",
+          "里程表",
+          "顯微鏡"
+        ],
+        "sceneNeed": "玩家與圖靈把莫康的散落數據標上座標；當規律完整浮現，兩人共同明白思想能由紀錄延續。",
+        "rewrites": {
+          "592": {
+            "question": "留下機器能否思考的問題坐標圖的紀錄停在這一行；下一步正等著它：在直角坐標平面上，有一點 A(-4, 3)。根據象限的定義，請問點 A 位在哪一象限內？",
+            "options": {
+              "A": "第一象限",
+              "B": "第二象限",
+              "C": "第三象限",
+              "D": "第四象限"
+            },
+            "preserveImage": true,
+            "imageAlt": "留下機器能否思考的問題坐標圖的資料圖"
+          },
+          "597": {
+            "question": "留下機器能否思考的問題坐標圖的紀錄停在這一行；下一步正等著它：在一款尋寶遊戲的地圖中，設定向東為 x 軸正向，向北為 y 軸正向。已知寶藏 T(a, b) 位在第三象限。如果你從寶藏 T 出發，向東移動 5 個單位，向北移動 2 個單位到達營地 C ，而且發現營地 C 位在第一象限。請問下列關於 a 與 b 的敘述，何者正確？",
+            "options": {
+              "A": "a > -5 且 b > -2",
+              "B": "a",
+              "C": "a > -5 且 b",
+              "D": "a -2"
+            },
+            "preserveImage": false
+          },
+          "600": {
+            "question": "跨越缺席的座標曲線。艾倫・圖靈在留下機器能否思考的問題坐標圖上留下這組條件：在紀錄系統的地圖上，向東為 x 軸正向，向北為 y 軸正向，每單位長為 1 里程格。記錄員你目前位置在 A(-2, 1) 。紀錄系統規定，你只能接「位於你目前位置東南方」且「沿著平行坐標軸的街道移動，總甲類距離不超過 5 里程格」的訂單。已知有四個客戶的所在地分別如下，請問你可以接哪一個客戶的訂單？",
+            "options": {
+              "A": "客戶甲： (1, -2)",
+              "B": "客戶乙： (0, 2)",
+              "C": "客戶丙： (-1, -1)",
+              "D": "客戶丁： (-4, -1)"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "留下機器能否思考的問題坐標圖上的數字對上了。留下機器能否思考的問題終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_2",
+      "type": "eureka",
+      "eurekaId": "g7h1-turing-insight-2",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "人的生命有限，但清楚寫下的規律仍能繼續被理解"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "q15"
+    },
+    {
+      "id": "q15",
+      "type": "quiz",
+      "anchor": 15,
+      "scene": "筆記末頁的巨大數",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "筆記末頁的巨大數。圖靈用科學記號整理最後一批尺度懸殊的資料，並在末頁寫下「所有思考都能化成有限步驟嗎？」"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "以莫康的觀察筆記為基準，把方向、差量與順序記清楚。把你的做法說成步驟。說不清楚的地方，正是問題藏身處。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 7,
+        "half": 1,
+        "major": "整數運算與科學記號",
+        "chapterIncludes": "整數運算與科學記號 整數的加減運算",
+        "knowledgePoint": "去括號法則",
+        "questionIds": [
+          2216,
+          2218,
+          2214
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g7h1-turing-scene-15",
+        "setting": "舍伯恩學校、通學道路與少年圖靈的自然觀察室",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "艾倫・圖靈"
+        ],
+        "props": [
+          "莫康的觀察筆記",
+          "里程表",
+          "顯微鏡"
+        ],
+        "sceneNeed": "圖靈用科學記號整理最後一批尺度懸殊的資料，並在末頁寫下「所有思考都能化成有限步驟嗎？」",
+        "rewrites": {
+          "2214": {
+            "question": "現場只剩莫康的觀察筆記上的這份計算還沒核對：下列哪一個等式是正確的？",
+            "options": {
+              "A": "5 - (3 - 2) = 5 - 3 - 2",
+              "B": "7 + (-4 + 1) = 7 - 4 + 1",
+              "C": "-(6 - 8) = -6 - 8",
+              "D": "9 - (-2 - 5) = 9 + 2 - 5"
+            },
+            "preserveImage": false
+          },
+          "2216": {
+            "question": "要讓筆記末頁的巨大數繼續，你得先解開莫康的觀察筆記旁這一筆：請計算 (-150) + 278 - (278 - 120) 的值為何？",
+            "preserveImage": false
+          },
+          "2218": {
+            "question": "艾倫・圖靈把筆記末頁的巨大數剛測到的數字推到你面前：若 A = 145 - [(-85) - (245 - 385)] ，請計算 A 的值為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "莫康的觀察筆記上的數字對上了。留下機器能否思考的問題終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "這一步能被另一個人重做。保留它。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "ending_history",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "ending_history",
+      "type": "narrative",
+      "objective": "記住艾倫・圖靈留下的答案",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "留下機器能否思考的問題完成了。現場安靜下來，只有里程表還留著剛才的痕跡。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，今天不是你替我算完。是我們一起把它想通。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那道光退了……可是我還記得它的味道。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "因為答案不是光。答案會留在能被重做的步驟裡。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "——時間向前推去。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "圖靈在戰後持續研究電腦、人工智慧與形態發生，1954 年離世；後世才逐步還他應有的名字。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "眼前的舍伯恩學校、通學道路與少年圖靈的自然觀察室慢慢褪色。藍紫色的安靜重新包圍你們。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}，下次再有人快想通時，我們還會聽見。"
+        }
+      ],
+      "next": "ending_stats"
+    },
+    {
+      "id": "ending_stats",
+      "type": "ending",
+      "next": null,
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "【劇本結束】七上 × 艾倫・圖靈"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "這趟路的每一次重算，數字都記得。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "下次見，{{playerName}}！"
+        }
+      ]
+    }
+  ]
+}

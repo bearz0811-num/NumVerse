@@ -1,5 +1,5 @@
 {
-  "name": "math-game",
+  "name": "numip-rpg",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate:scripts": "node scripts/build_pool_manifests.mjs && node scripts/generate_scripts.mjs",
+    "validate:scripts": "node scripts/validate_scripts.mjs"
   },
   "dependencies": {
     "canvas-confetti": "^1.9.4",

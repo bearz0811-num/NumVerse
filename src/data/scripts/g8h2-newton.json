@@ -1,0 +1,2400 @@
+{
+  "id": "g8h2-newton",
+  "grade": 8,
+  "half": 2,
+  "gradeLabel": "八下",
+  "mathematician": "牛頓",
+  "mathematicianSpeaker": "Mathematician",
+  "episode": "把月亮留在軌道上",
+  "setting": "劍橋書房、哈雷的來信桌與皇家學會印刷間",
+  "era": "1684 至 1687 年",
+  "acts": [
+    "重建遺失的軌道證明",
+    "把慣性與向心偏折接起來",
+    "用反平方關係檢驗行星資料",
+    "撐過優先權與出版危機",
+    "讓《自然哲學的數學原理》付梓"
+  ],
+  "insights": [
+    "軌道可理解為物體持續沿切線前進，同時不斷朝中心偏折",
+    "地面落體與天體運行能由同一套力與運動規律描述"
+  ],
+  "props": [
+    "哈雷來信",
+    "橢圓軌道圖",
+    "碰撞木車",
+    "行星觀測表",
+    "印刷校樣"
+  ],
+  "endingSummary": "哈雷促成並資助《自然哲學的數學原理》於 1687 年出版，牛頓與虎克的優先權爭議並未消失；牛頓晚年主持皇家學會與造幣局，1727 年逝世。",
+  "legendNote": "蘋果故事來自牛頓晚年相關轉述；本劇本不把它寫成萬有引力理論瞬間完成的史實。",
+  "objectives": [
+    "從哈雷的提問重建反平方吸引力與軌道形狀的關係",
+    "以幾何證明連接慣性位移、向心偏折與等時掃掠",
+    "用觀測資料檢查模型，而非把不吻合值直接刪除",
+    "在資金與優先權衝突下完成《原理》書稿"
+  ],
+  "beats": [
+    {
+      "scene": "哈雷敲門",
+      "problem": "哈雷追問反平方吸引力會形成何種軌道，牛頓聲稱算過卻找不到舊稿，只能在承諾期限內重建。",
+      "major": "一元二次方程式"
+    },
+    {
+      "scene": "橢圓焦點失落",
+      "problem": "舊圖缺少焦點位置，必須靠三角形性質與尺規作圖重建軌道骨架。",
+      "major": "三角形的性質與尺規作圖"
+    },
+    {
+      "scene": "沒有力的下一步",
+      "problem": "物體若不受力應沿切線前進，眾人要用直角距離算出下一刻原本會到哪裡。",
+      "major": "平方根與畢氏定理"
+    },
+    {
+      "scene": "等時掃過的三角形",
+      "problem": "軌道被切成多個小三角形，若相同時間掃過的面積不等，整套向心假設就站不住。",
+      "major": "三角形的性質與尺規作圖"
+    },
+    {
+      "scene": "行星資料偏了一列",
+      "problem": "一批觀測與模型有系統差距，出版期限逼近，仍得用統計圖表分清抄寫錯誤與真正偏差。",
+      "major": "統計資料處理與圖表"
+    },
+    {
+      "scene": "距離加倍",
+      "problem": "吸引效果隨距離改變，玩家要用平行線與四邊形合成把不同位置的作用力接到同一張圖上，否則遠行星會脫離預測。",
+      "major": "平行與四邊形"
+    },
+    {
+      "scene": "軌道式拆解",
+      "problem": "書稿中的二次關係無法直接判讀，必須因式分解找出可能交點與退化情況。",
+      "major": "因式分解"
+    },
+    {
+      "scene": "兩個根的陷阱",
+      "problem": "方程式給出兩個位置，其中一個落在觀測時段之外；若選錯，後續整章都會自洽地錯下去。",
+      "major": "一元二次方程式"
+    },
+    {
+      "scene": "兩股作用合成",
+      "problem": "碰撞木車同時受兩個方向作用，必須用平行四邊形合成，否則第三定律的示範會撞翻印刷架。",
+      "major": "平行與四邊形"
+    },
+    {
+      "scene": "無數次小偏折",
+      "problem": "玩家把每段切線位移與向心偏折接起，牛頓必須證明細分後的折線會逼近同一條軌道。",
+      "major": "三角形的性質與尺規作圖"
+    },
+    {
+      "scene": "地表與月球",
+      "problem": "眾人比較地表落體與月球偏離切線的尺度，必須用相似三角形把兩段偏折接到同一幾何骨架，不能拿果園傳說代替計算。",
+      "major": "三角形的性質與尺規作圖",
+      "aside": [
+        {
+          "speaker": "Numi",
+          "text": "等等——我聽過你們的版本：蘋果砸到頭上，「砰」，整套理論就閃出來了。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "那是後來才傳開的故事。想通靠的是把地面落體和月球偏折接到同一張圖上，不是水果。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "……別聽蘋果。把這兩個尺度排好。"
+        }
+      ]
+    },
+    {
+      "scene": "同一套規律",
+      "problem": "玩家追問天上是否另有規則，牛頓要讓地面與月球資料同時滿足同一個二次關係。",
+      "major": "一元二次方程式"
+    },
+    {
+      "scene": "虎克的優先權來信",
+      "problem": "虎克主張早已提出關鍵想法，書稿必須區分概念線索、觀測證據與完整幾何證明。",
+      "major": "統計資料處理與圖表"
+    },
+    {
+      "scene": "皇家學會沒有錢",
+      "problem": "印刷費突然落空，哈雷願意出資，但書稿得立即刪除重複推導並保住必要因式。",
+      "major": "因式分解"
+    },
+    {
+      "scene": "最後一張校樣",
+      "problem": "印刷機已開動，眾人要核對平行線、四邊形合力圖與跨頁標號，錯圖將整批重印。",
+      "major": "平行與四邊形"
+    }
+  ],
+  "choices": [
+    {
+      "prompt": "舊證明找不到，哈雷仍在等答案。",
+      "firstLabel": "先翻找舊稿",
+      "firstResult": "找到零散圖形卻缺關鍵步驟，牛頓以它們作索引重新推導。",
+      "secondLabel": "立即重建證明",
+      "secondResult": "新推導很快成形，之後再用舊稿核對是否遺漏。"
+    },
+    {
+      "prompt": "行星資料有一列明顯偏離模型。",
+      "firstLabel": "先查抄寫來源",
+      "firstResult": "找出一處轉錄錯誤，但其餘偏差仍被保留分析。",
+      "secondLabel": "先畫誤差分布",
+      "secondResult": "系統偏差顯現，回查原稿後確認其中也混有轉錄錯誤。"
+    },
+    {
+      "prompt": "二次式給出兩個可用根，先相信哪一個？",
+      "firstLabel": "先看代數條件",
+      "firstResult": "排除超出時間範圍的根，再用圖形核對。",
+      "secondLabel": "先看軌道圖",
+      "secondResult": "圖形指出可行交點，再代回方程式驗證。"
+    },
+    {
+      "prompt": "虎克來信要求承認其貢獻，交稿也已逼近。",
+      "firstLabel": "先整理引用",
+      "firstResult": "書稿保留必要脈絡，爭議仍無法因此平息。",
+      "secondLabel": "先完成證明",
+      "secondResult": "數學主線保住了，牛頓仍得在定稿前處理貢獻說明。"
+    },
+    {
+      "prompt": "皇家學會無力支付全書印刷費。",
+      "firstLabel": "縮成短篇論文",
+      "firstResult": "關鍵章節彼此失去支撐，哈雷改提議由自己承擔出版費。",
+      "secondLabel": "接受哈雷資助",
+      "secondResult": "全書得以付梓，但你們必須連夜完成最後校樣。"
+    }
+  ],
+  "version": 1,
+  "title": "八下 × 牛頓",
+  "language": "zh-TW",
+  "companions": [
+    "NumNum",
+    "Numi"
+  ],
+  "journalTitle": "把月亮留在軌道上",
+  "notes": [
+    "玩家本人與 NumNum、Numi 一起冒險。",
+    "題目只從所選年段 questionBank 抽取。",
+    "題面依當下研究場景整段改寫；數字、算式、答案不變。",
+    "答錯保留同一題並給提示，直到答對。",
+    "Eureka 僅在玩家與數學家共同領悟關鍵知識時觸發。",
+    "蘋果故事來自牛頓晚年相關轉述；本劇本不把它寫成萬有引力理論瞬間完成的史實。"
+  ],
+  "detourTemplates": [
+    [
+      {
+        "speaker": "NumNum",
+        "text": "條件還在。慢一點，沿同一條路再走一次。"
+      }
+    ],
+    [
+      {
+        "speaker": "Numi",
+        "text": "別換題。眼前這件事還等著我們把它算開。"
+      }
+    ],
+    [
+      {
+        "speaker": "Mathematician",
+        "text": "我也沒放棄。重看剛才那一步。"
+      }
+    ]
+  ],
+  "correctFeedback": [
+    [
+      {
+        "speaker": "narrator",
+        "text": "數字對上，眼前的阻礙鬆開了一格。"
+      }
+    ]
+  ],
+  "nodes": [
+    {
+      "id": "opening",
+      "type": "narrative",
+      "objective": "從哈雷的提問重建反平方吸引力與軌道形狀的關係",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "數學世界的藍紫色安靜得像一張沒有折痕的紙。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那邊有一點光——很細，還在抖。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "不是 Eureka。只是有人卡在一個還沒想通的問題前。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "你們追著微光穿過薄紙般的界面。1684 至 1687 年，劍橋書房、哈雷的來信桌與皇家學會印刷間。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "牛頓站在哈雷來信旁，手裡那一步已經停了很久。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "你們是誰？算了——如果看得懂數字，就過來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}也在！我們不是來旁觀的。"
+        }
+      ],
+      "next": "q01"
+    },
+    {
+      "id": "q01",
+      "type": "quiz",
+      "anchor": 1,
+      "scene": "哈雷敲門",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "哈雷敲門。哈雷追問反平方吸引力會形成何種軌道，牛頓聲稱算過卻找不到舊稿，只能在承諾期限內重建。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "找出哈雷來信形成的曲線、轉折與可行解。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "一元二次方程式",
+        "chapterIncludes": "一元二次方程式 配方法與一元二次方程式的公式解",
+        "knowledgePoint": "配完全平方式",
+        "questionIds": [
+          910,
+          906,
+          907
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-newton-scene-01",
+        "setting": "劍橋書房、哈雷的來信桌與皇家學會印刷間",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "哈雷來信",
+          "橢圓軌道圖",
+          "碰撞木車"
+        ],
+        "sceneNeed": "哈雷追問反平方吸引力會形成何種軌道，牛頓聲稱算過卻找不到舊稿，只能在承諾期限內重建。",
+        "rewrites": {
+          "906": {
+            "question": "要讓哈雷敲門繼續，你得先解開哈雷來信旁這一筆：若想將多項式 x^2 - 14x + k 變成一個完全平方式，則常數 k 的值為何？",
+            "options": {
+              "A": "-7",
+              "B": "14",
+              "C": "-49",
+              "D": "49"
+            },
+            "preserveImage": false
+          },
+          "907": {
+            "question": "哈雷來信的紀錄停在這一行；下一步正等著它：你正在規劃一塊試驗區，你現有的一塊長方形土地面積可以用算式 x^2 + 10x 平方格來表示。為了解決灌溉的便利性，你打算擴大這塊土地，使其形狀變成一個正方形，且邊長為 x+5 長度格。請問你還需要增加 _____ 平方格的土地面積？",
+            "preserveImage": false
+          },
+          "910": {
+            "question": "哈雷敲門。牛頓在哈雷來信上留下這組條件：若多項式 4x^2 - 12x + (2k-1) 是一個完全平方式，則 k = _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "哈雷來信上的數字對上了。重建遺失的軌道證明終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_1",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "舊證明找不到，哈雷仍在等答案。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查哈雷來信。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選橢圓軌道圖。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "時間不夠。{{address}}，選一邊，我處理另一邊。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "先翻找舊稿",
+          "next": "choice_1_measure"
+        },
+        {
+          "id": "observe",
+          "label": "立即重建證明",
+          "next": "choice_1_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_1_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "找到零散圖形卻缺關鍵步驟，牛頓以它們作索引重新推導。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "choice_1_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "新推導很快成形，之後再用舊稿核對是否遺漏。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "q02",
+      "type": "quiz",
+      "anchor": 2,
+      "scene": "橢圓焦點失落",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "橢圓焦點失落。舊圖缺少焦點位置，必須靠三角形性質與尺規作圖重建軌道骨架。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "核對重建遺失的軌道證明幾何圖上的幾何關係，每一道線都要有理由。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_1": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_1": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "三角形的性質與尺規作圖",
+        "chapterIncludes": "三角形的性質與尺規作圖 內角與外角",
+        "knowledgePoint": "三角形與多邊形的內角和、外角和",
+        "questionIds": [
+          1033,
+          1031,
+          2288
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-newton-scene-02",
+        "setting": "劍橋書房、哈雷的來信桌與皇家學會印刷間",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "重建遺失的軌道證明幾何圖",
+          "哈雷來信",
+          "橢圓軌道圖"
+        ],
+        "sceneNeed": "舊圖缺少焦點位置，必須靠三角形性質與尺規作圖重建軌道骨架。",
+        "rewrites": {
+          "1031": {
+            "question": "要讓橢圓焦點失落繼續，你得先解開重建遺失的軌道證明幾何圖旁這一筆：已知正 n 邊形的內角和為 1080^{\\circ} ，試問 n 為多少？",
+            "options": {
+              "A": "6",
+              "B": "8",
+              "C": "10",
+              "D": "12"
+            },
+            "preserveImage": false
+          },
+          "1033": {
+            "question": "牛頓把橢圓焦點失落剛測到的數字推到你面前：已知一個正多邊形的每一個內角是其每一個外角的 4 倍，求此正多邊形的邊數。",
+            "preserveImage": false
+          },
+          "2288": {
+            "question": "牛頓把橢圓焦點失落剛測到的數字推到你面前：已知一個正多邊形，其一個內角的度數比它一個外角度數的 4 倍多 30^\\circ 。請問此正多邊形的邊數為何？",
+            "options": {
+              "A": "10",
+              "B": "12",
+              "C": "15",
+              "D": "18"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "重建遺失的軌道證明幾何圖上的數字對上了。重建遺失的軌道證明終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q03",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q03",
+      "type": "quiz",
+      "anchor": 3,
+      "scene": "沒有力的下一步",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "沒有力的下一步。物體若不受力應沿切線前進，眾人要用直角距離算出下一刻原本會到哪裡。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用直角與距離核對重建遺失的軌道證明幾何圖的實際長度。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "平方根與畢氏定理",
+        "chapterIncludes": "平方根與畢氏定理 畢氏定理",
+        "knowledgePoint": "直角三角形邊長計算與幾何問題應用",
+        "questionIds": [
+          859,
+          857,
+          861
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-newton-scene-03",
+        "setting": "劍橋書房、哈雷的來信桌與皇家學會印刷間",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "重建遺失的軌道證明幾何圖",
+          "哈雷來信",
+          "橢圓軌道圖"
+        ],
+        "sceneNeed": "物體若不受力應沿切線前進，眾人要用直角距離算出下一刻原本會到哪裡。",
+        "rewrites": {
+          "857": {
+            "question": "重建遺失的軌道證明幾何圖的紀錄停在這一行；下一步正等著它：在直角三角形 ABC 中，已知 \\angle C = 90^\\circ 。若斜邊 \\overline{AB} = 13 小格，且一股 \\overline{AC} = 5 小格，則另一股 \\overline{BC} 的長度為 _____ 小格。",
+            "preserveImage": false
+          },
+          "859": {
+            "question": "現場只剩重建遺失的軌道證明幾何圖上的這份計算還沒核對：在等腰三角形 ABC 中，已知 \\overline{AB} = \\overline{AC} = 17 ，底邊 \\overline{BC} = 16 。請問 \\triangle ABC 的面積為何？",
+            "options": {
+              "A": "120",
+              "B": "136",
+              "C": "240",
+              "D": "272"
+            },
+            "preserveImage": false
+          },
+          "861": {
+            "question": "要讓沒有力的下一步繼續，你得先解開重建遺失的軌道證明幾何圖旁這一筆：在直角三角形 ABC 中， \\angle A = 90^\\circ ， \\overline{AB} = 5 ， \\overline{AC} = 12 。若自 A 點作 \\overline{BC} 的垂線，交 \\overline{BC} 於 D 點，求線段 \\overline{AD} 的長度為何？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "重建遺失的軌道證明幾何圖上的數字對上了。重建遺失的軌道證明終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_2",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "重建遺失的軌道證明告一段落，行星觀測表卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是把慣性與向心偏折接起來；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q04"
+    },
+    {
+      "id": "q04",
+      "type": "quiz",
+      "anchor": 4,
+      "scene": "等時掃過的三角形",
+      "objective": "以幾何證明連接慣性位移、向心偏折與等時掃掠",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "等時掃過的三角形。軌道被切成多個小三角形，若相同時間掃過的面積不等，整套向心假設就站不住。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "核對把慣性與向心偏折接起來幾何圖上的幾何關係，每一道線都要有理由。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "三角形的性質與尺規作圖",
+        "chapterIncludes": "三角形的性質與尺規作圖 三角形的邊角關係",
+        "knowledgePoint": "三角形兩邊之和大於第三邊",
+        "questionIds": [
+          1086,
+          1089,
+          2298
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-newton-scene-04",
+        "setting": "劍橋書房、哈雷的來信桌與皇家學會印刷間",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "把慣性與向心偏折接起來幾何圖",
+          "哈雷來信",
+          "橢圓軌道圖"
+        ],
+        "sceneNeed": "軌道被切成多個小三角形，若相同時間掃過的面積不等，整套向心假設就站不住。",
+        "rewrites": {
+          "1086": {
+            "question": "要讓等時掃過的三角形繼續，你得先解開把慣性與向心偏折接起來幾何圖旁這一筆：一個三角形的兩邊長分別是7小格和12小格。如果第三邊的長度也是整數小格，請問這個三角形的周長最大是幾小格？",
+            "preserveImage": false
+          },
+          "1089": {
+            "question": "現場只剩把慣性與向心偏折接起來幾何圖上的這份計算還沒核對：已知一個三角形的三邊長分別為 2x+1、3x-2 與 12。若 x 必須為整數，則滿足條件的 x 值中，最大值與最小值的和為多少？",
+            "preserveImage": false
+          },
+          "2298": {
+            "question": "牛頓把等時掃過的三角形剛測到的數字推到你面前：已知一個三角形的三邊長分別為 8 小格、 15 小格與 x 小格，其中 x 為整數。請問此三角形的最大周長為多少小格？",
+            "options": {
+              "A": "22",
+              "B": "45",
+              "C": "46",
+              "D": "23"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "把慣性與向心偏折接起來幾何圖上的數字對上了。把慣性與向心偏折接起來終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_2",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "行星資料有一列明顯偏離模型。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查碰撞木車。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選行星觀測表。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "時間不夠。{{address}}，選一邊，我處理另一邊。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "先查抄寫來源",
+          "next": "choice_2_measure"
+        },
+        {
+          "id": "observe",
+          "label": "先畫誤差分布",
+          "next": "choice_2_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_2_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "找出一處轉錄錯誤，但其餘偏差仍被保留分析。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "choice_2_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "系統偏差顯現，回查原稿後確認其中也混有轉錄錯誤。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "q05",
+      "type": "quiz",
+      "anchor": 5,
+      "scene": "行星資料偏了一列",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "行星資料偏了一列。一批觀測與模型有系統差距，出版期限逼近，仍得用統計圖表分清抄寫錯誤與真正偏差。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把印刷校樣上的條件逐項核對。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_2": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_2": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "統計資料處理與圖表",
+        "chapterIncludes": "統計資料處理與圖表 相對與累積次數分配圖表",
+        "knowledgePoint": "相對次數、累積次數、累積相對次數分配折線圖的繪製與判讀",
+        "questionIds": [
+          943,
+          945,
+          942
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-newton-scene-05",
+        "setting": "劍橋書房、哈雷的來信桌與皇家學會印刷間",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "印刷校樣",
+          "哈雷來信",
+          "橢圓軌道圖"
+        ],
+        "sceneNeed": "一批觀測與模型有系統差距，出版期限逼近，仍得用統計圖表分清抄寫錯誤與真正偏差。",
+        "rewrites": {
+          "942": {
+            "question": "印刷校樣的紀錄停在這一行；下一步正等著它：附圖為觀測組 40 筆紀錄現場測量的累積次數分配折線圖。請問讀數介於 70 分到 80 分之間（含 70 分，不含 80 分）的觀測值共有 _____ 人。",
+            "preserveImage": true,
+            "imageAlt": "印刷校樣的資料圖"
+          },
+          "943": {
+            "question": "牛頓把行星資料偏了一列剛測到的數字推到你面前：紀錄系統記錄了今日共 200 筆訂單的送達時間，並繪製成累積相對次數分配折線圖。請問送達時間在 30 到 40 分鐘之間的訂單共有多少筆？",
+            "preserveImage": true,
+            "imageAlt": "印刷校樣的資料圖"
+          },
+          "945": {
+            "question": "行星資料偏了一列。牛頓在印刷校樣上留下這組條件：附圖為觀測組觀測值週末閱讀時間的累積相對次數分配折線圖。已知閱讀時間在 6 到 8 小時區間的觀測值共有 18 人，請問該班總共有 _____ 人。",
+            "preserveImage": true,
+            "imageAlt": "印刷校樣的資料圖"
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "印刷校樣上的數字對上了。把慣性與向心偏折接起來終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q06",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q06",
+      "type": "quiz",
+      "anchor": 6,
+      "scene": "距離加倍",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "距離加倍。吸引效果隨距離改變，玩家要用平行線與四邊形合成把不同位置的作用力接到同一張圖上，否則遠行星會脫離預測。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "核對把慣性與向心偏折接起來幾何圖上的幾何關係，每一道線都要有理由。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "平行與四邊形",
+        "chapterIncludes": "平行與四邊形 平行四邊形",
+        "knowledgePoint": "平行四邊形的定義",
+        "questionIds": [
+          1117,
+          1116,
+          1113
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-newton-scene-06",
+        "setting": "劍橋書房、哈雷的來信桌與皇家學會印刷間",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "把慣性與向心偏折接起來幾何圖",
+          "哈雷來信",
+          "橢圓軌道圖"
+        ],
+        "sceneNeed": "吸引效果隨距離改變，玩家要用平行線與四邊形合成把不同位置的作用力接到同一張圖上，否則遠行星會脫離預測。",
+        "rewrites": {
+          "1113": {
+            "question": "牛頓把距離加倍剛測到的數字推到你面前：在四邊形 ABCD 中，下列哪一個條件組合必定能推導出 ABCD 為平行四邊形？",
+            "options": {
+              "A": "AB 平行 CD，且 AD = BC",
+              "B": "AB = BC，且 CD = DA",
+              "C": "AB 平行 CD，且 AD 平行 BC",
+              "D": "角A = 角B，且 角C = 角D"
+            },
+            "preserveImage": false
+          },
+          "1116": {
+            "question": "要讓距離加倍繼續，你得先解開把慣性與向心偏折接起來幾何圖旁這一筆：已知四邊形 ABCD 為平行四邊形，若 角A = (3x + 10)^{ \\circ }，且同側內角 角B = (2x - 30)^{ \\circ }，請問 角C 的度數為多少？",
+            "preserveImage": false
+          },
+          "1117": {
+            "question": "把慣性與向心偏折接起來幾何圖的紀錄停在這一行；下一步正等著它：已知平行四邊形 ABCD 的周長為 40 小格。若邊長 AB 比邊長 BC 長 4 小格，請問邊長 AB 的長度為 _____ 小格。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "把慣性與向心偏折接起來幾何圖上的數字對上了。把慣性與向心偏折接起來終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q07",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q07",
+      "type": "quiz",
+      "anchor": 7,
+      "scene": "軌道式拆解",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "軌道式拆解。書稿中的二次關係無法直接判讀，必須因式分解找出可能交點與退化情況。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "整理橢圓軌道圖上的代數式，讓重複結構現形。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "因式分解",
+        "chapterIncludes": "因式分解 利用十字交乘法因式分解",
+        "knowledgePoint": "綜合運用各方法進行因式分解",
+        "questionIds": [
+          890,
+          889,
+          894
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-newton-scene-07",
+        "setting": "劍橋書房、哈雷的來信桌與皇家學會印刷間",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "橢圓軌道圖",
+          "哈雷來信",
+          "碰撞木車"
+        ],
+        "sceneNeed": "書稿中的二次關係無法直接判讀，必須因式分解找出可能交點與退化情況。",
+        "rewrites": {
+          "889": {
+            "question": "現場只剩橢圓軌道圖上的這份計算還沒核對：請將多項式 2x^2 - 12x + 18 進行因式分解，其結果為下列何者？",
+            "options": {
+              "A": "2(x - 3)^2",
+              "B": "2(x + 3)^2",
+              "C": "(2x - 3)^2",
+              "D": "2(x^2 - 6x + 9)"
+            },
+            "preserveImage": false
+          },
+          "890": {
+            "question": "軌道式拆解。牛頓在橢圓軌道圖上留下這組條件：若多項式 3x^2 + 15x - 42 可以因式分解為 3(x + a)(x + b) 的形式，其中 a, b 為整數且 a > b ，則 a - b = _____？",
+            "preserveImage": false
+          },
+          "894": {
+            "question": "現場只剩橢圓軌道圖上的這份計算還沒核對：若 x = 103 ，請利用因式分解的技巧，計算多項式 (2x-1)(x+3) - (x+3)^2 + x^2 - 9 的值為多少？（提示：請先將多項式進行因式分解，再代入數值計算）",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "橢圓軌道圖上的數字對上了。用反平方關係檢驗行星資料終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_3",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_3",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "二次式給出兩個可用根，先相信哪一個？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查印刷校樣。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選哈雷來信。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "時間不夠。{{address}}，選一邊，我處理另一邊。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "先看代數條件",
+          "next": "choice_3_measure"
+        },
+        {
+          "id": "observe",
+          "label": "先看軌道圖",
+          "next": "choice_3_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_3_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "排除超出時間範圍的根，再用圖形核對。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "choice_3_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "圖形指出可行交點，再代回方程式驗證。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "q08",
+      "type": "quiz",
+      "anchor": 8,
+      "scene": "兩個根的陷阱",
+      "objective": "用觀測資料檢查模型，而非把不吻合值直接刪除",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "兩個根的陷阱。方程式給出兩個位置，其中一個落在觀測時段之外；若選錯，後續整章都會自洽地錯下去。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "找出碰撞木車形成的曲線、轉折與可行解。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_3": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_3": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "一元二次方程式",
+        "chapterIncludes": "一元二次方程式 一元二次方程式的應用",
+        "knowledgePoint": "解的合理性檢驗",
+        "questionIds": [
+          936,
+          935,
+          934
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-newton-scene-08",
+        "setting": "劍橋書房、哈雷的來信桌與皇家學會印刷間",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "碰撞木車",
+          "哈雷來信",
+          "橢圓軌道圖"
+        ],
+        "sceneNeed": "方程式給出兩個位置，其中一個落在觀測時段之外；若選錯，後續整章都會自洽地錯下去。",
+        "rewrites": {
+          "934": {
+            "question": "現場只剩碰撞木車上的這份計算還沒核對：幾個同行者合取用一份 120 枚的禮物，大家平分費用。後來又有 2 人加入，使得原本參與的每人可以少交付 3 枚。請問最初有 _____ 人參與合取用？",
+            "preserveImage": false
+          },
+          "935": {
+            "question": "兩個根的陷阱。牛頓在碰撞木車上留下這組條件：已知一直角三角形的三邊長分別為 x-2 、 x 、 x+2 ，求此直角三角形的面積。",
+            "preserveImage": false
+          },
+          "936": {
+            "question": "要讓兩個根的陷阱繼續，你得先解開碰撞木車旁這一筆：已知兩個連續正偶數的乘積為 168 ，求這兩個正偶數的和為 _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "碰撞木車上的數字對上了。用反平方關係檢驗行星資料終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q09",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q09",
+      "type": "quiz",
+      "anchor": 9,
+      "scene": "兩股作用合成",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "兩股作用合成。碰撞木車同時受兩個方向作用，必須用平行四邊形合成，否則第三定律的示範會撞翻印刷架。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "核對用反平方關係檢驗行星資料幾何圖上的幾何關係，每一道線都要有理由。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "平行與四邊形",
+        "chapterIncludes": "平行與四邊形 特殊的四邊形",
+        "knowledgePoint": "長方形、菱形、正方形、箏形與梯形（含等腰梯形）的幾何性質與對角線特徵",
+        "questionIds": [
+          1130,
+          1134,
+          1133
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-newton-scene-09",
+        "setting": "劍橋書房、哈雷的來信桌與皇家學會印刷間",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "用反平方關係檢驗行星資料幾何圖",
+          "哈雷來信",
+          "橢圓軌道圖"
+        ],
+        "sceneNeed": "碰撞木車同時受兩個方向作用，必須用平行四邊形合成，否則第三定律的示範會撞翻印刷架。",
+        "rewrites": {
+          "1130": {
+            "question": "兩股作用合成。牛頓在用反平方關係檢驗行星資料幾何圖上留下這組條件：已知正方形的對角線長度為 10，則其面積為何？",
+            "options": {
+              "A": "50",
+              "B": "100",
+              "C": "25",
+              "D": "20"
+            },
+            "preserveImage": false
+          },
+          "1133": {
+            "question": "牛頓把兩股作用合成剛測到的數字推到你面前：已知一箏形 ABCD 中，對角線 \\overline{AC} 與 \\overline{BD} 交於 O 點，且 \\overline{AC} 垂直平分 \\overline{BD} 。若 \\overline{BD} = 24 ， \\overline{OA} = 5 ， \\overline{OC} = 16 ，則此箏形的周長為 _____ 。",
+            "preserveImage": false
+          },
+          "1134": {
+            "question": "現場只剩用反平方關係檢驗行星資料幾何圖上的這份計算還沒核對：一等腰梯形 ABCD 中，上底 \\overline{AD} 平行下底 \\overline{BC} ，已知 \\overline{AB} = \\overline{CD} = 10 ，且上底 \\overline{AD} = 6 ，下底 \\overline{BC} = 18 。求此等腰梯形的高為多少？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "用反平方關係檢驗行星資料幾何圖上的數字對上了。用反平方關係檢驗行星資料終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_1",
+      "type": "eureka",
+      "eurekaId": "g8h2-newton-insight-1",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "軌道可理解為物體持續沿切線前進，同時不斷朝中心偏折"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "transition_4"
+    },
+    {
+      "id": "transition_4",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "用反平方關係檢驗行星資料告一段落，哈雷來信卻送來新的壞消息。原先穩定的讀數突然偏了一格；這不是能略過的小差。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是撐過優先權與出版危機；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q10"
+    },
+    {
+      "id": "q10",
+      "type": "quiz",
+      "anchor": 10,
+      "scene": "無數次小偏折",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "無數次小偏折。玩家把每段切線位移與向心偏折接起，牛頓必須證明細分後的折線會逼近同一條軌道。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "核對撐過優先權與出版危機幾何圖上的幾何關係，每一道線都要有理由。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "三角形的性質與尺規作圖",
+        "chapterIncludes": "三角形的性質與尺規作圖 全等三角形的應用",
+        "knowledgePoint": "角平分線性質的推理證明",
+        "questionIds": [
+          2292,
+          2295,
+          2296
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-newton-scene-10",
+        "setting": "劍橋書房、哈雷的來信桌與皇家學會印刷間",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "撐過優先權與出版危機幾何圖",
+          "哈雷來信",
+          "橢圓軌道圖"
+        ],
+        "sceneNeed": "玩家把每段切線位移與向心偏折接起，牛頓必須證明細分後的折線會逼近同一條軌道。",
+        "rewrites": {
+          "2292": {
+            "question": "撐過優先權與出版危機幾何圖的紀錄停在這一行；下一步正等著它：在 \\triangle ABC 中， AD 為 \\angle BAC 的角平分線， D 點在 BC 上。若 D 點到 AB 的垂直距離為 5 小格，則 D 點到 AC 的垂直距離為多少小格？",
+            "options": {
+              "A": "3",
+              "B": "4",
+              "C": "5",
+              "D": "6"
+            },
+            "preserveImage": false
+          },
+          "2295": {
+            "question": "無數次小偏折。牛頓在撐過優先權與出版危機幾何圖上留下這組條件：在 \\triangle ABC 中， AD 平分 \\angle BAC ，且 D 點在 BC 上。已知 AB=8 小格， AC=12 小格，若 D 點到 AB 邊的垂直距離為 3 小格，求 \\triangle ADC 的面積為多少平方小格？",
+            "preserveImage": false
+          },
+          "2296": {
+            "question": "要讓無數次小偏折繼續，你得先解開撐過優先權與出版危機幾何圖旁這一筆：在 \\triangle ABC 中， D 為 BC 邊上一點。已知作 DE \\perp AB 於 E 點， DF \\perp AC 於 F 點，且測量發現 DE = DF 。若已知 \\angle B = 40^\\circ ， \\angle C = 60^\\circ ，則 \\angle BAD 的度數為 _____ 度。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "撐過優先權與出版危機幾何圖上的數字對上了。撐過優先權與出版危機終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_4",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_4",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "虎克來信要求承認其貢獻，交稿也已逼近。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查橢圓軌道圖。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選碰撞木車。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "時間不夠。{{address}}，選一邊，我處理另一邊。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "先整理引用",
+          "next": "choice_4_measure"
+        },
+        {
+          "id": "observe",
+          "label": "先完成證明",
+          "next": "choice_4_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_4_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "書稿保留必要脈絡，爭議仍無法因此平息。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "choice_4_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "數學主線保住了，牛頓仍得在定稿前處理貢獻說明。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "q11",
+      "type": "quiz",
+      "anchor": 11,
+      "scene": "地表與月球",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "地表與月球。眾人比較地表落體與月球偏離切線的尺度，必須用相似三角形把兩段偏折接到同一幾何骨架，不能拿果園傳說代替計算。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "等等——我聽過你們的版本：蘋果砸到頭上，「砰」，整套理論就閃出來了。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "那是後來才傳開的故事。想通靠的是把地面落體和月球偏折接到同一張圖上，不是水果。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "……別聽蘋果。把這兩個尺度排好。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "核對撐過優先權與出版危機幾何圖上的幾何關係，每一道線都要有理由。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_4": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_4": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "三角形的性質與尺規作圖",
+        "chapterIncludes": "三角形的性質與尺規作圖 三角形全等",
+        "knowledgePoint": "全等圖形意義",
+        "questionIds": [
+          1061,
+          1063,
+          1065
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-newton-scene-11",
+        "setting": "劍橋書房、哈雷的來信桌與皇家學會印刷間",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "撐過優先權與出版危機幾何圖",
+          "哈雷來信",
+          "橢圓軌道圖"
+        ],
+        "sceneNeed": "眾人比較地表落體與月球偏離切線的尺度，必須用相似三角形把兩段偏折接到同一幾何骨架，不能拿果園傳說代替計算。",
+        "rewrites": {
+          "1061": {
+            "question": "要讓地表與月球繼續，你得先解開撐過優先權與出版危機幾何圖旁這一筆：已知 \\triangle ABC \\cong \\triangle DEF ，其中 A, B, C 的對應頂點依序為 D, E, F 。若 \\angle A = 50^\\circ ， \\angle E = 70^\\circ ，則 \\angle C 的度數為何？",
+            "options": {
+              "A": "50",
+              "B": "60",
+              "C": "70",
+              "D": "120"
+            },
+            "preserveImage": false
+          },
+          "1063": {
+            "question": "牛頓把地表與月球剛測到的數字推到你面前：已知 \\triangle ABC \\cong \\triangle PQR ，其中 A, B, C 的對應頂點依序為 P, Q, R 。若 AB = 3x - 2y ， PQ = 7 ， BC = x + 3y ， QR = 17 ， PR = 4x - y ，求 AC 的長度為何？",
+            "preserveImage": false
+          },
+          "1065": {
+            "question": "地表與月球。牛頓在撐過優先權與出版危機幾何圖上留下這組條件：已知 \\triangle ABC \\cong \\triangle DEF 。若 \\triangle ABC 中， AB = 5 ， BC = 6 ， AC = 7 ，且在坐標平面上已知 D 點坐標為 (0, 0) ， E 點坐標為 (0, 5) ，則 F 點的可能坐標共有 _____ 個。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "撐過優先權與出版危機幾何圖上的數字對上了。撐過優先權與出版危機終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q12",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q12",
+      "type": "quiz",
+      "anchor": 12,
+      "scene": "同一套規律",
+      "objective": "在資金與優先權衝突下完成《原理》書稿",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "同一套規律。玩家追問天上是否另有規則，牛頓要讓地面與月球資料同時滿足同一個二次關係。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "找出橢圓軌道圖形成的曲線、轉折與可行解。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "一元二次方程式",
+        "chapterIncludes": "一元二次方程式 一元二次方程式的應用",
+        "knowledgePoint": "具體情境列式",
+        "questionIds": [
+          924,
+          928,
+          925
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-newton-scene-12",
+        "setting": "劍橋書房、哈雷的來信桌與皇家學會印刷間",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "橢圓軌道圖",
+          "哈雷來信",
+          "碰撞木車"
+        ],
+        "sceneNeed": "玩家追問天上是否另有規則，牛頓要讓地面與月球資料同時滿足同一個二次關係。",
+        "rewrites": {
+          "924": {
+            "question": "現場只剩橢圓軌道圖上的這份計算還沒核對：已知兩個連續正偶數的乘積為 168，求這兩個數中較大的一個數為多少？（請在空格中填入阿拉伯數字）",
+            "preserveImage": false
+          },
+          "925": {
+            "question": "同一套規律。牛頓在橢圓軌道圖上留下這組條件：你參加現場的植樹活動。若將 120 棵樹苗平均分給參與的同行者種植，後來又有 2 位同行者加入，使得每位同行者平均需要種植的樹苗減少了 3 棵。請問最初有多少位同行者參與？",
+            "preserveImage": false
+          },
+          "928": {
+            "question": "牛頓把同一套規律剛測到的數字推到你面前：一條長 40 小格的繩子，被剪成兩段，然後將這兩段繩子分別圍成兩個正方形。若這兩個正方形的面積和為 58 平方小格，求較長的那段繩子長度為多少小格？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "橢圓軌道圖上的數字對上了。撐過優先權與出版危機終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_5",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "撐過優先權與出版危機告一段落，橢圓軌道圖卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是讓《自然哲學的數學原理》付梓；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q13"
+    },
+    {
+      "id": "q13",
+      "type": "quiz",
+      "anchor": 13,
+      "scene": "虎克的優先權來信",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "虎克的優先權來信。虎克主張早已提出關鍵想法，書稿必須區分概念線索、觀測證據與完整幾何證明。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把碰撞木車上的條件逐項核對。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "統計資料處理與圖表",
+        "chapterIncludes": "統計資料處理與圖表 相對與累積次數分配圖表",
+        "knowledgePoint": "相對次數、累積次數、累積相對次數分配折線圖的繪製與判讀",
+        "questionIds": [
+          944,
+          946,
+          941
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-newton-scene-13",
+        "setting": "劍橋書房、哈雷的來信桌與皇家學會印刷間",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "碰撞木車",
+          "哈雷來信",
+          "橢圓軌道圖"
+        ],
+        "sceneNeed": "虎克主張早已提出關鍵想法，書稿必須區分概念線索、觀測證據與完整幾何證明。",
+        "rewrites": {
+          "941": {
+            "question": "要讓虎克的優先權來信繼續，你得先解開碰撞木車旁這一筆：你在現場統計了參與者取用人氣樣品的等候時間，並繪製成累積相對次數分配折線圖。請問等待時間在 15 到 20 分鐘之間的筆數，占全部筆數的百分之多少？",
+            "options": {
+              "A": "30\\%",
+              "B": "40\\%",
+              "C": "70\\%",
+              "D": "100\\%"
+            },
+            "preserveImage": true,
+            "imageAlt": "碰撞木車的資料圖"
+          },
+          "944": {
+            "question": "現場只剩碰撞木車上的這份計算還沒核對：附圖為觀測組 50 位同行者測量值的累積相對次數分配折線圖。你的測量值為 160 小格，根據圖表判斷，現場測量值未滿 160 小格的同行者共有多少人？",
+            "options": {
+              "A": "10",
+              "B": "20",
+              "C": "25",
+              "D": "50"
+            },
+            "preserveImage": true,
+            "imageAlt": "碰撞木車的資料圖"
+          },
+          "946": {
+            "question": "要讓虎克的優先權來信繼續，你得先解開碰撞木車旁這一筆：附圖為觀測組觀測值測量值的累積相對次數分配折線圖。已知測量值在 50 到 55 公斤之間的觀測值共有 16 人，請問測量值在 55 公斤以上（含 55 公斤）的觀測值共有多少人？",
+            "preserveImage": true,
+            "imageAlt": "碰撞木車的資料圖"
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "碰撞木車上的數字對上了。讓《自然哲學的數學原理》付梓終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_5",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "皇家學會無力支付全書印刷費。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查行星觀測表。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選印刷校樣。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "時間不夠。{{address}}，選一邊，我處理另一邊。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "縮成短篇論文",
+          "next": "choice_5_measure"
+        },
+        {
+          "id": "observe",
+          "label": "接受哈雷資助",
+          "next": "choice_5_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_5_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "關鍵章節彼此失去支撐，哈雷改提議由自己承擔出版費。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "choice_5_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "全書得以付梓，但你們必須連夜完成最後校樣。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "q14",
+      "type": "quiz",
+      "anchor": 14,
+      "scene": "皇家學會沒有錢",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "皇家學會沒有錢。印刷費突然落空，哈雷願意出資，但書稿得立即刪除重複推導並保住必要因式。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "整理行星觀測表上的代數式，讓重複結構現形。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_5": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_5": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "因式分解",
+        "chapterIncludes": "因式分解 利用十字交乘法因式分解",
+        "knowledgePoint": "十字交乘法原理",
+        "questionIds": [
+          884,
+          2272,
+          882
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-newton-scene-14",
+        "setting": "劍橋書房、哈雷的來信桌與皇家學會印刷間",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "行星觀測表",
+          "哈雷來信",
+          "橢圓軌道圖"
+        ],
+        "sceneNeed": "印刷費突然落空，哈雷願意出資，但書稿得立即刪除重複推導並保住必要因式。",
+        "rewrites": {
+          "882": {
+            "question": "行星觀測表的紀錄停在這一行；下一步正等著它：已知多項式 6x^2 - 19x + 15 可以利用十字交乘法因式分解成 (ax + b)(cx + d) 的形式，其中 a, b, c, d 皆為整數，且 a > c > 0 。請計算出 a - b + c - d 的值。",
+            "preserveImage": false
+          },
+          "884": {
+            "question": "現場只剩行星觀測表上的這份計算還沒核對：已知多項式 kx^2 - 13x - 6 可以因式分解為兩個一次多項式的乘積 (ax+b)(cx+d) ，其中 k 為正整數，且 a,b,c,d 均為整數。若 k < 10 ，則所有可能的 k 值總和為 _____。",
+            "preserveImage": false
+          },
+          "2272": {
+            "question": "行星觀測表的紀錄停在這一行；下一步正等著它：已知多項式 15x^2 - 14x - 8 可因式分解成 (ax + b)(cx + d) ，其中 a 、 b 、 c 、 d 均為整數。若 a 、 c 均為正整數且 a < c ，則 b + c 之值為何？",
+            "options": {
+              "A": "1",
+              "B": "3",
+              "C": "5",
+              "D": "9"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "行星觀測表上的數字對上了。讓《自然哲學的數學原理》付梓終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_2",
+      "type": "eureka",
+      "eurekaId": "g8h2-newton-insight-2",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "地面落體與天體運行能由同一套力與運動規律描述"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "q15"
+    },
+    {
+      "id": "q15",
+      "type": "quiz",
+      "anchor": 15,
+      "scene": "最後一張校樣",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "最後一張校樣。印刷機已開動，眾人要核對平行線、四邊形合力圖與跨頁標號，錯圖將整批重印。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "核對讓《自然哲學的數學原理》付梓幾何圖上的幾何關係，每一道線都要有理由。別猜原因。把量與量之間的關係寫下來。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 8,
+        "half": 2,
+        "major": "平行與四邊形",
+        "chapterIncludes": "平行與四邊形 平行線",
+        "knowledgePoint": "平行線的意義",
+        "questionIds": [
+          1102,
+          2300,
+          1101
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g8h2-newton-scene-15",
+        "setting": "劍橋書房、哈雷的來信桌與皇家學會印刷間",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "牛頓"
+        ],
+        "props": [
+          "讓《自然哲學的數學原理》付梓幾何圖",
+          "哈雷來信",
+          "橢圓軌道圖"
+        ],
+        "sceneNeed": "印刷機已開動，眾人要核對平行線、四邊形合力圖與跨頁標號，錯圖將整批重印。",
+        "rewrites": {
+          "1101": {
+            "question": "要讓最後一張校樣繼續，你得先解開讓《自然哲學的數學原理》付梓幾何圖旁這一筆：平面上有三條直線 L1、L2 被直線 M 所截。已知 \\angle 1 與 \\angle 2 為同位角， \\angle 3 為 \\angle 2 的同側內角。若 \\angle 1 = 65^\\circ ，且 L1 // L2，則 \\angle 3 的度數為何？",
+            "options": {
+              "A": "65^\\circ",
+              "B": "115^\\circ",
+              "C": "25^\\circ",
+              "D": "125^\\circ"
+            },
+            "preserveImage": false
+          },
+          "1102": {
+            "question": "讓《自然哲學的數學原理》付梓幾何圖的紀錄停在這一行；下一步正等著它：已知直線 L // M，被一直線 N 所截，產生一對內錯角。若這兩個內錯角的度數分別為 (4x - 15)^\\circ 與 (2x + 45)^\\circ ，請計算出這兩個內錯角的度數為何？",
+            "preserveImage": false
+          },
+          "2300": {
+            "question": "最後一張校樣。牛頓在讓《自然哲學的數學原理》付梓幾何圖上留下這組條件：平面上有兩條筆直的平行線 L_1 與 L_2 ，被一條截線 M 所截，形成八個角。已知其中一個角 \\angle 1 = 70^\\circ ，且 \\angle 2 與 \\angle 1 互為同側內角。求 \\angle 2 的度數為多少？",
+            "options": {
+              "A": "20^\\circ",
+              "B": "70^\\circ",
+              "C": "110^\\circ",
+              "D": "180^\\circ"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "讓《自然哲學的數學原理》付梓幾何圖上的數字對上了。讓《自然哲學的數學原理》付梓終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "吻合。這條關係可以留下。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "ending_history",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "ending_history",
+      "type": "narrative",
+      "objective": "記住牛頓留下的答案",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "讓《自然哲學的數學原理》付梓完成了。現場安靜下來，只有哈雷來信還留著剛才的痕跡。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，今天不是你替我算完。是我們一起把它想通。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那道光退了……可是我還記得它的味道。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "因為答案不是光。答案會留在能被重做的步驟裡。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "——時間向前推去。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "哈雷促成並資助《自然哲學的數學原理》於 1687 年出版，牛頓與虎克的優先權爭議並未消失；牛頓晚年主持皇家學會與造幣局，1727 年逝世。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "眼前的劍橋書房、哈雷的來信桌與皇家學會印刷間慢慢褪色。藍紫色的安靜重新包圍你們。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}，下次再有人快想通時，我們還會聽見。"
+        }
+      ],
+      "next": "ending_stats"
+    },
+    {
+      "id": "ending_stats",
+      "type": "ending",
+      "next": null,
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "【劇本結束】八下 × 牛頓"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "這趟路的每一次重算，數字都記得。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "下次見，{{playerName}}！"
+        }
+      ]
+    }
+  ]
+}

@@ -145,7 +145,7 @@ function tokenize(text) {
     let tex = part.value
     if (withOperands.length && withOperands[withOperands.length - 1].type === 'text') {
       const prev = withOperands[withOperands.length - 1]
-      const m = prev.value.match(/(.*?)([+\-]?\d+(?:\.\d+)?|(?:\([^)]+\)))\s*$/)
+      const m = prev.value.match(/(.*?)([+-]?\d+(?:\.\d+)?|(?:\([^)]+\)))\s*$/)
       if (m && /\\(?:times|div|pm|cdot|leq|geq|neq|approx)/.test(tex)) {
         withOperands[withOperands.length - 1] = { type: 'text', value: m[1] }
         if (!withOperands[withOperands.length - 1].value) withOperands.pop()
@@ -154,7 +154,7 @@ function tokenize(text) {
     }
     if (i + 1 < merged.length && merged[i + 1].type === 'text') {
       const next = merged[i + 1]
-      const m = next.value.match(/^\s*([+\-]?\d+(?:\.\d+)?|(?:\([^)]+\)))(.*)$/)
+      const m = next.value.match(/^\s*([+-]?\d+(?:\.\d+)?|(?:\([^)]+\)))(.*)$/)
       if (m && /\\(?:times|div|pm|cdot|leq|geq|neq|approx)/.test(tex)) {
         tex = `${tex} ${m[1]}`
         merged[i + 1] = { type: 'text', value: m[2] }

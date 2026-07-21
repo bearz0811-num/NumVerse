@@ -1,0 +1,2387 @@
+{
+  "id": "g9h1-archimedes",
+  "grade": 9,
+  "half": 1,
+  "gradeLabel": "九上",
+  "mathematician": "阿基米德",
+  "mathematicianSpeaker": "Mathematician",
+  "episode": "圓周之間：逼近 π 的兩道邊界",
+  "setting": "敘拉古幾何工坊與九十六邊形沙盤",
+  "era": "約西元前 3 世紀中葉",
+  "acts": [
+    "用六邊形包圍圓",
+    "連續倍增邊數",
+    "壓住根式誤差",
+    "追上九十六邊",
+    "把圓周率夾在邊界內"
+  ],
+  "insights": [
+    "多邊形邊數越多，內外周長便從兩側逼近同一個圓周",
+    "精確值暫時算不到，仍能用可靠上下界把它牢牢夾住"
+  ],
+  "props": [
+    "大圓沙盤",
+    "內接多邊形板",
+    "外切繩框",
+    "根式近似表",
+    "九十六邊形草圖"
+  ],
+  "endingSummary": "阿基米德把圓周率限制在兩個分數之間，沒有假裝得到最後小數。多年後敘拉古陷落，他在沙地作圖時遇害；圓與球的研究成為其長久遺產。",
+  "legendNote": null,
+  "objectives": [
+    "建立圓的內接與外切多邊形邊界",
+    "以相似形逐次倍增邊數",
+    "控制平方根近似造成的累積誤差",
+    "證明圓周率落在兩個可計算數之間"
+  ],
+  "beats": [
+    {
+      "scene": "繩尺量圓每次都不同",
+      "problem": "工匠三次量同一圓周得到不同結果，玩家要用四分位數判斷哪筆讀數受繩索鬆動影響。",
+      "major": "統計與機率"
+    },
+    {
+      "scene": "六邊形先站進圓裡",
+      "problem": "玩家要用圓心、半徑與弦的關係求內接正六邊形周長，建立不會超過圓周的下界。",
+      "major": "圓的性質"
+    },
+    {
+      "scene": "外切六邊形拉住圓",
+      "problem": "切線位置一偏就不再是上界，必須利用半徑垂直切線確認六個接點。",
+      "major": "圓的性質"
+    },
+    {
+      "scene": "十二邊形不是重畫一遍",
+      "problem": "阿基米德要把每段圓弧再分半，玩家得用相似三角形推出新邊長比例。",
+      "major": "比例線段與相似形"
+    },
+    {
+      "scene": "根式開始堆滿蠟板",
+      "problem": "倍增邊數後出現連續平方根，玩家必須用比例線段整理，避免每一層都從頭量。",
+      "major": "比例線段與相似形"
+    },
+    {
+      "scene": "近似值選錯方向",
+      "problem": "下界若把根式估大就可能穿過真值，玩家要依函數圖判斷每個近似應向上還是向下取。",
+      "major": "二次函數"
+    },
+    {
+      "scene": "兩道邊界第一次靠近",
+      "problem": "內外多邊形周長已算出，玩家要用連比比較它們與直徑，和阿基米德看見圓周率被夾在中間。",
+      "major": "比例線段與相似形"
+    },
+    {
+      "scene": "二十四邊形擠出沙盤",
+      "problem": "新頂點太密，玩家須由相似形計算位置，否則一個偏點會讓後續四十八邊全歪。",
+      "major": "比例線段與相似形"
+    },
+    {
+      "scene": "近似誤差逐層累積",
+      "problem": "每次開平方都留下誤差，必須用二次函數的圖形比較誤差在倍增後是否仍守住邊界。",
+      "major": "二次函數"
+    },
+    {
+      "scene": "四十八邊形的一條切線鬆了",
+      "problem": "外切繩框有一邊離圓過遠，玩家要用點、直線與圓的位置關係找出失效切線。",
+      "major": "圓的性質"
+    },
+    {
+      "scene": "抄寫員交換了上下界",
+      "problem": "兩列近似值次序顛倒，玩家要從相似比例判斷哪列必須永遠小於圓周、哪列必須大於。",
+      "major": "比例線段與相似形"
+    },
+    {
+      "scene": "九十六邊幾乎看成圓",
+      "problem": "玩家與阿基米德要證明「看起來像」不夠，必須算出內外周長差已縮到指定範圍。",
+      "major": "圓的性質"
+    },
+    {
+      "scene": "工匠要求只報一個數",
+      "problem": "工匠想取中間值省事，但玩家得用統計誤差觀念說明單一近似會隱藏保證範圍。",
+      "major": "統計與機率"
+    },
+    {
+      "scene": "最後分數卡在兩側",
+      "problem": "必須用連比與相似形推導把九十六邊形周長換成相對直徑的上下界。",
+      "major": "比例線段與相似形"
+    },
+    {
+      "scene": "圓沒有被算完，卻無處可逃",
+      "problem": "送稿前玩家要沿圓周、弦與切線重查每個不等方向，任何一處反轉都會使夾逼失效。",
+      "major": "圓的性質"
+    }
+  ],
+  "choices": [
+    {
+      "prompt": "繩尺數據不一致，要再量一次還是改用多邊形？",
+      "firstLabel": "再量一次",
+      "firstResult": "第四個數仍不同，眾人確認軟繩無法提供可證明的邊界。",
+      "secondLabel": "改用多邊形",
+      "secondResult": "直邊可計算且能明確分出內外，研究正式轉向夾逼。"
+    },
+    {
+      "prompt": "倍增邊數時要重畫全圖，還是從舊邊作相似推導？",
+      "firstLabel": "重畫全圖",
+      "firstResult": "新圖很快累積偏點，玩家只好回到六邊形基準。",
+      "secondLabel": "從舊邊推導",
+      "secondResult": "每次倍增都繼承上一層比例，誤差來源也能追蹤。"
+    },
+    {
+      "prompt": "根式除不盡，要取較近小數還是保住界線方向？",
+      "firstLabel": "取最近小數",
+      "firstResult": "數字漂亮，卻有一項越過真值，整條邊界失去保證。",
+      "secondLabel": "保住界線方向",
+      "secondResult": "近似略鬆，但上下界在每一步都仍然成立。"
+    },
+    {
+      "prompt": "外切繩鬆了一邊，要局部修補還是重驗六個接點？",
+      "firstLabel": "局部拉緊",
+      "firstResult": "鄰邊角度跟著偏移，玩家發現問題不只一處。",
+      "secondLabel": "重驗所有接點",
+      "secondResult": "耗時較久，但找出最初那條不垂直的半徑。"
+    },
+    {
+      "prompt": "結論要報一個中間值，還是保留兩個分數邊界？",
+      "firstLabel": "報中間值",
+      "firstResult": "工匠方便使用，卻說不出誤差究竟多大。",
+      "secondLabel": "保留上下界",
+      "secondResult": "答案較不討喜，但每個人都知道真值絕不會越界。"
+    }
+  ],
+  "version": 1,
+  "title": "九上 × 阿基米德",
+  "language": "zh-TW",
+  "companions": [
+    "NumNum",
+    "Numi"
+  ],
+  "journalTitle": "圓周之間",
+  "notes": [
+    "玩家本人與 NumNum、Numi 一起冒險。",
+    "題目只從所選年段 questionBank 抽取。",
+    "題面依當下研究場景整段改寫；數字、算式、答案不變。",
+    "答錯保留同一題並給提示，直到答對。",
+    "Eureka 僅在玩家與數學家共同領悟關鍵知識時觸發。"
+  ],
+  "detourTemplates": [
+    [
+      {
+        "speaker": "NumNum",
+        "text": "條件還在。慢一點，沿同一條路再走一次。"
+      }
+    ],
+    [
+      {
+        "speaker": "Numi",
+        "text": "別換題。眼前這件事還等著我們把它算開。"
+      }
+    ],
+    [
+      {
+        "speaker": "Mathematician",
+        "text": "我也沒放棄。重看剛才那一步。"
+      }
+    ]
+  ],
+  "correctFeedback": [
+    [
+      {
+        "speaker": "narrator",
+        "text": "數字對上，眼前的阻礙鬆開了一格。"
+      }
+    ]
+  ],
+  "nodes": [
+    {
+      "id": "opening",
+      "type": "narrative",
+      "objective": "建立圓的內接與外切多邊形邊界",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "數學世界的藍紫色安靜得像一張沒有折痕的紙。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那邊有一點光——很細，還在抖。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "不是 Eureka。只是有人卡在一個還沒想通的問題前。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "你們追著微光穿過薄紙般的界面。約西元前 3 世紀中葉，敘拉古幾何工坊與九十六邊形沙盤。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "阿基米德站在大圓沙盤旁，手裡那一步已經停了很久。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "你們是誰？算了——如果看得懂數字，就過來。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}也在！我們不是來旁觀的。"
+        }
+      ],
+      "next": "q01"
+    },
+    {
+      "id": "q01",
+      "type": "quiz",
+      "anchor": 1,
+      "scene": "繩尺量圓每次都不同",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "繩尺量圓每次都不同。工匠三次量同一圓周得到不同結果，玩家要用四分位數判斷哪筆讀數受繩索鬆動影響。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把用六邊形包圍圓紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "統計與機率",
+        "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+        "knowledgePoint": "盒狀圖繪製與判讀",
+        "questionIds": [
+          357,
+          355,
+          359
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-archimedes-scene-01",
+        "setting": "敘拉古幾何工坊與九十六邊形沙盤",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "用六邊形包圍圓紀錄表",
+          "大圓沙盤",
+          "內接多邊形板"
+        ],
+        "sceneNeed": "工匠三次量同一圓周得到不同結果，玩家要用四分位數判斷哪筆讀數受繩索鬆動影響。",
+        "rewrites": {
+          "355": {
+            "question": "繩尺量圓每次都不同。阿基米德在用六邊形包圍圓紀錄表上留下這組條件：已知籃球隊 11 位球員的測量值（單位：公斤）由輕到重排列如下：65, 68, 70, 72, 75, 76, 78, 80, 82, 85, 90。求這組資料的四分位距（IQR）為多少公斤？",
+            "preserveImage": false
+          },
+          "357": {
+            "question": "用六邊形包圍圓紀錄表的紀錄停在這一行；下一步正等著它：已知一組資料的五數總括為：最小值 15、第一四分位數 22、中位數 28、第三四分位數 35、最大值 48。請計算這組資料的「全距」。",
+            "preserveImage": false
+          },
+          "359": {
+            "question": "現場只剩用六邊形包圍圓紀錄表上的這份計算還沒核對：有一組包含 8 個相異整數的資料，由小到大排列。已知這組資料的最小值為 10，第一四分位數為 14，中位數為 20，第三四分位數為 28，最大值為 35。請問這組資料中，第 4 小與第 5 小的數值相加的總和為多少？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "用六邊形包圍圓紀錄表上的數字對上了。用六邊形包圍圓終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_1",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "繩尺數據不一致，要再量一次還是改用多邊形？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查大圓沙盤。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選內接多邊形板。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "兩邊都重要。{{address}}，替我砍出第一條路。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "再量一次",
+          "next": "choice_1_measure"
+        },
+        {
+          "id": "observe",
+          "label": "改用多邊形",
+          "next": "choice_1_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_1_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "第四個數仍不同，眾人確認軟繩無法提供可證明的邊界。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "choice_1_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "直邊可計算且能明確分出內外，研究正式轉向夾逼。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q02"
+    },
+    {
+      "id": "q02",
+      "type": "quiz",
+      "anchor": 2,
+      "scene": "六邊形先站進圓裡",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "六邊形先站進圓裡。玩家要用圓心、半徑與弦的關係求內接正六邊形周長，建立不會超過圓周的下界。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿用六邊形包圍圓幾何圖的圓弧、弦與切線追出隱藏關係。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_1": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_1": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "圓的性質",
+        "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+        "knowledgePoint": "圓的基本名詞（弦、弧、弓形）",
+        "questionIds": [
+          1209,
+          1211,
+          1213
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-archimedes-scene-02",
+        "setting": "敘拉古幾何工坊與九十六邊形沙盤",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "用六邊形包圍圓幾何圖",
+          "大圓沙盤",
+          "內接多邊形板"
+        ],
+        "sceneNeed": "玩家要用圓心、半徑與弦的關係求內接正六邊形周長，建立不會超過圓周的下界。",
+        "rewrites": {
+          "1209": {
+            "question": "現場只剩用六邊形包圍圓幾何圖上的這份計算還沒核對：下列關於圓的敘述，何者正確？",
+            "options": {
+              "A": "圓上最長的弦必通過圓心",
+              "B": "圓的任一條弦都會把圓分成兩個面積相等的弓形",
+              "C": "兩端點都在圓上的任意曲線，皆稱為圓的弦",
+              "D": "在同一個圓中，弦心距越長，對應的弦越長"
+            },
+            "preserveImage": false
+          },
+          "1211": {
+            "question": "要讓六邊形先站進圓裡繼續，你得先解開用六邊形包圍圓幾何圖旁這一筆：已知圓 O 的半徑為 13，圓內有一條弦 \\overline{AB} ，且圓心 O 到弦 \\overline{AB} 的距離（即弦心距）為 5。請問弦 \\overline{AB} 的長度為多少？",
+            "preserveImage": false
+          },
+          "1213": {
+            "question": "阿基米德把六邊形先站進圓裡剛測到的數字推到你面前：已知圓 O 的半徑為 10，圓內有兩條平行弦 \\overline{AB} 與 \\overline{CD} ，且 \\overline{AB} = 16 ， \\overline{CD} = 12 。若圓心 O 與這兩條平行弦的相對位置未知，則這兩條平行弦之間的距離最大為_____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "用六邊形包圍圓幾何圖上的數字對上了。用六邊形包圍圓終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q03",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q03",
+      "type": "quiz",
+      "anchor": 3,
+      "scene": "外切六邊形拉住圓",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "外切六邊形拉住圓。切線位置一偏就不再是上界，必須利用半徑垂直切線確認六個接點。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿用六邊形包圍圓幾何圖的圓弧、弦與切線追出隱藏關係。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "圓的性質",
+        "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+        "knowledgePoint": "直線與圓的切線與割線",
+        "questionIds": [
+          1229,
+          1231,
+          1227
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-archimedes-scene-03",
+        "setting": "敘拉古幾何工坊與九十六邊形沙盤",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "用六邊形包圍圓幾何圖",
+          "大圓沙盤",
+          "內接多邊形板"
+        ],
+        "sceneNeed": "切線位置一偏就不再是上界，必須利用半徑垂直切線確認六個接點。",
+        "rewrites": {
+          "1227": {
+            "question": "用六邊形包圍圓幾何圖的紀錄停在這一行；下一步正等著它：已知圓 O 的半徑為 7。若有四條筆直的直線 L1、L2、L3、L4，它們與圓心 O 的距離分別為 5、7、9、0，且這四條直線與圓 O 的交點個數分別為 a、b、c、d，則下列關於 a、b、c、d 的大小關係何者正確？",
+            "options": {
+              "A": "d > a > b > c",
+              "B": "a = d > b > c",
+              "C": "a = b > c > d",
+              "D": "d > b > a = c"
+            },
+            "preserveImage": false
+          },
+          "1229": {
+            "question": "現場只剩用六邊形包圍圓幾何圖上的這份計算還沒核對：在平面上有一圓 O，半徑為 8 小格。點 P 位於圓外，且點 P 到圓心 O 的距離為 17 小格。若自點 P 向圓 O 作一條切線，切點為 Q，求切線段 PQ 的長度為多少小格？",
+            "preserveImage": false
+          },
+          "1231": {
+            "question": "要讓外切六邊形拉住圓繼續，你得先解開用六邊形包圍圓幾何圖旁這一筆：已知圓 O 的半徑為 13 小格。在圓內有兩條平行的弦 AB 與 CD，其長度分別為 24 小格與 10 小格。若這兩條弦位於圓心 O 的異側，則這兩條平行弦之間的距離為多少小格？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "用六邊形包圍圓幾何圖上的數字對上了。用六邊形包圍圓終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_2",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "用六邊形包圍圓告一段落，根式近似表卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是連續倍增邊數；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q04"
+    },
+    {
+      "id": "q04",
+      "type": "quiz",
+      "anchor": 4,
+      "scene": "十二邊形不是重畫一遍",
+      "objective": "以相似形逐次倍增邊數",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "十二邊形不是重畫一遍。阿基米德要把每段圓弧再分半，玩家得用相似三角形推出新邊長比例。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用比例把連續倍增邊數幾何圖的縮放與實際尺寸接起來。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "比例線段與相似形",
+        "chapterIncludes": "比例線段與相似形 比例線段",
+        "knowledgePoint": "平行線截比例線段性質",
+        "questionIds": [
+          1147,
+          1151,
+          1149
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-archimedes-scene-04",
+        "setting": "敘拉古幾何工坊與九十六邊形沙盤",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "連續倍增邊數幾何圖",
+          "大圓沙盤",
+          "內接多邊形板"
+        ],
+        "sceneNeed": "阿基米德要把每段圓弧再分半，玩家得用相似三角形推出新邊長比例。",
+        "rewrites": {
+          "1147": {
+            "question": "連續倍增邊數幾何圖的紀錄停在這一行；下一步正等著它：在 \\triangle ABC 中， D 點在 AB 上， E 點在 AC 上，且 DE \\parallel BC 。若 AD = 6 ， DB = 4 ， AE = 9 ，求 EC 的長度？",
+            "options": {
+              "A": "4",
+              "B": "6",
+              "C": "8",
+              "D": "9"
+            },
+            "preserveImage": false
+          },
+          "1149": {
+            "question": "現場只剩連續倍增邊數幾何圖上的這份計算還沒核對：在 \\triangle ABC 中， D 、 E 兩點分別在 AB 、 AC 上，下列哪一個條件無法確定 DE \\parallel BC ？",
+            "options": {
+              "A": "AD : DB = AE : EC",
+              "B": "AD : AB = AE : AC",
+              "C": "AB : DB = AC : EC",
+              "D": "AD : AB = DE : BC"
+            },
+            "preserveImage": false
+          },
+          "1151": {
+            "question": "要讓十二邊形不是重畫一遍繼續，你得先解開連續倍增邊數幾何圖旁這一筆：已知直線 L_1 \\parallel L_2 \\parallel L_3 ，直線 M_1 被這三條平行線截出兩線段長度分別為 2x+1 與 x+2 ；同時直線 M_2 被截出的對應兩線段長度分別為 3x+4 與 2x+1 。若 x 為正數，求 x 的值。 _____",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "連續倍增邊數幾何圖上的數字對上了。連續倍增邊數終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_2",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "倍增邊數時要重畫全圖，還是從舊邊作相似推導？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查外切繩框。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選根式近似表。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "兩邊都重要。{{address}}，替我砍出第一條路。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "重畫全圖",
+          "next": "choice_2_measure"
+        },
+        {
+          "id": "observe",
+          "label": "從舊邊推導",
+          "next": "choice_2_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_2_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "新圖很快累積偏點，玩家只好回到六邊形基準。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "choice_2_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "每次倍增都繼承上一層比例，誤差來源也能追蹤。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q05"
+    },
+    {
+      "id": "q05",
+      "type": "quiz",
+      "anchor": 5,
+      "scene": "根式開始堆滿蠟板",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "根式開始堆滿蠟板。倍增邊數後出現連續平方根，玩家必須用比例線段整理，避免每一層都從頭量。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用比例把連續倍增邊數幾何圖的縮放與實際尺寸接起來。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_2": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_2": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "比例線段與相似形",
+        "chapterIncludes": "比例線段與相似形 相似形",
+        "knowledgePoint": "多邊形相似意義",
+        "questionIds": [
+          1174,
+          1178,
+          1177
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-archimedes-scene-05",
+        "setting": "敘拉古幾何工坊與九十六邊形沙盤",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "連續倍增邊數幾何圖",
+          "大圓沙盤",
+          "內接多邊形板"
+        ],
+        "sceneNeed": "倍增邊數後出現連續平方根，玩家必須用比例線段整理，避免每一層都從頭量。",
+        "rewrites": {
+          "1174": {
+            "question": "現場只剩連續倍增邊數幾何圖上的這份計算還沒核對：下列哪一組多邊形一定相似？",
+            "options": {
+              "A": "任意兩個等腰三角形",
+              "B": "任意兩個矩形",
+              "C": "任意兩個正六邊形",
+              "D": "任意兩個菱形"
+            },
+            "preserveImage": false
+          },
+          "1177": {
+            "question": "連續倍增邊數幾何圖的紀錄停在這一行；下一步正等著它：已知四邊形 ABCD 相似於四邊形 PQRS ，且 A, B, C, D 的對應頂點分別為 P, Q, R, S 。若 \\angle A = 80^\\circ 、 \\angle B = 110^\\circ 、 \\angle R = 70^\\circ ，且 \\overline{AB} = 6 、 \\overline{BC} = 9 、 \\overline{PQ} = 8 。請問： \\overline{QR} 的長度與 \\angle S 的度數相加的總和為多少？",
+            "preserveImage": false
+          },
+          "1178": {
+            "question": "阿基米德把根式開始堆滿蠟板剛測到的數字推到你面前：已知 \\triangle ABC \\sim \\triangle DEF ，其中 A、B、C 的對應頂點分別為 D、E、F 。若 \\overline{AB} = x+2 、 \\overline{BC} = 2x+1 、 \\overline{AC} = 8 ，且已知對應邊 \\overline{DE} = 15 、 \\overline{EF} = 21 。請問 \\overline{DF} 的長度為 _____ 。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "連續倍增邊數幾何圖上的數字對上了。連續倍增邊數終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q06",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q06",
+      "type": "quiz",
+      "anchor": 6,
+      "scene": "近似值選錯方向",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "近似值選錯方向。下界若把根式估大就可能穿過真值，玩家要依函數圖判斷每個近似應向上還是向下取。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把連續倍增邊數坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "二次函數",
+        "chapterIncludes": "二次函數 二次函數的最大值或最小值",
+        "knowledgePoint": "極值求法",
+        "questionIds": [
+          1372,
+          1373,
+          1369
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-archimedes-scene-06",
+        "setting": "敘拉古幾何工坊與九十六邊形沙盤",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "連續倍增邊數坐標圖",
+          "大圓沙盤",
+          "內接多邊形板"
+        ],
+        "sceneNeed": "下界若把根式估大就可能穿過真值，玩家要依函數圖判斷每個近似應向上還是向下取。",
+        "rewrites": {
+          "1369": {
+            "question": "現場只剩連續倍增邊數坐標圖上的這份計算還沒核對：給定二次函數 y = -3(x + 2)^2 + 7 ，下列關於此函數極值的敘述，何者正確？",
+            "options": {
+              "A": "當 x = 2 時，有最大值 7",
+              "B": "當 x = -2 時，有最大值 7",
+              "C": "當 x = 2 時，有最小值 7",
+              "D": "當 x = -2 時，有最小值 7"
+            },
+            "preserveImage": false
+          },
+          "1372": {
+            "question": "連續倍增邊數坐標圖的紀錄停在這一行；下一步正等著它：請利用配方法求出二次函數 y = 3x^2 - 12x + 17 的最小值。",
+            "preserveImage": false
+          },
+          "1373": {
+            "question": "阿基米德把近似值選錯方向剛測到的數字推到你面前：已知一個二次函數的圖形開口向下，且圖形通過 (-1, 8) 與 (5, 8) 兩點。當 x = _____ 時，此函數會有最大值。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "連續倍增邊數坐標圖上的數字對上了。連續倍增邊數終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q07",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q07",
+      "type": "quiz",
+      "anchor": 7,
+      "scene": "兩道邊界第一次靠近",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "兩道邊界第一次靠近。內外多邊形周長已算出，玩家要用連比比較它們與直徑，和阿基米德看見圓周率被夾在中間。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用比例把內接多邊形板的縮放與實際尺寸接起來。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "比例線段與相似形",
+        "chapterIncludes": "比例線段與相似形 連比",
+        "knowledgePoint": "連比例式的記錄與推理運算",
+        "questionIds": [
+          1140,
+          1142,
+          1139
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-archimedes-scene-07",
+        "setting": "敘拉古幾何工坊與九十六邊形沙盤",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "內接多邊形板",
+          "大圓沙盤",
+          "外切繩框"
+        ],
+        "sceneNeed": "內外多邊形周長已算出，玩家要用連比比較它們與直徑，和阿基米德看見圓周率被夾在中間。",
+        "rewrites": {
+          "1139": {
+            "question": "現場只剩內接多邊形板上的這份計算還沒核對：你在現場調配特調果茶，使用的樣品、百香果汁、鳳梨汁的容量比是 5:2:3 。若這杯果茶中使用了 150 毫升的鳳梨汁，請問這杯果茶的總容量是 _____ 毫升。",
+            "preserveImage": false
+          },
+          "1140": {
+            "question": "兩道邊界第一次靠近。阿基米德在內接多邊形板上留下這組條件：若 x:y = 3:5 ， y:z = 4:3 ，且 2x + y - z = 58 ，求 y 的值。",
+            "preserveImage": false
+          },
+          "1142": {
+            "question": "內接多邊形板的紀錄停在這一行；下一步正等著它：若 (x+y) : (y+z) : (z+x) = 4:5:7 ，且 x+y+z = 40 ，求 x 的值。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "內接多邊形板上的數字對上了。壓住根式誤差終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_3",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_3",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "根式除不盡，要取較近小數還是保住界線方向？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查九十六邊形草圖。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選大圓沙盤。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "兩邊都重要。{{address}}，替我砍出第一條路。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "取最近小數",
+          "next": "choice_3_measure"
+        },
+        {
+          "id": "observe",
+          "label": "保住界線方向",
+          "next": "choice_3_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_3_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "數字漂亮，卻有一項越過真值，整條邊界失去保證。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "choice_3_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "近似略鬆，但上下界在每一步都仍然成立。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q08"
+    },
+    {
+      "id": "q08",
+      "type": "quiz",
+      "anchor": 8,
+      "scene": "二十四邊形擠出沙盤",
+      "objective": "控制平方根近似造成的累積誤差",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "二十四邊形擠出沙盤。新頂點太密，玩家須由相似形計算位置，否則一個偏點會讓後續四十八邊全歪。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用比例把壓住根式誤差幾何圖的縮放與實際尺寸接起來。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_3": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_3": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "比例線段與相似形",
+        "chapterIncludes": "比例線段與相似形 比例線段",
+        "knowledgePoint": "三角形兩邊中點連線性質",
+        "questionIds": [
+          1156,
+          1160,
+          1157
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-archimedes-scene-08",
+        "setting": "敘拉古幾何工坊與九十六邊形沙盤",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "壓住根式誤差幾何圖",
+          "大圓沙盤",
+          "內接多邊形板"
+        ],
+        "sceneNeed": "新頂點太密，玩家須由相似形計算位置，否則一個偏點會讓後續四十八邊全歪。",
+        "rewrites": {
+          "1156": {
+            "question": "要讓二十四邊形擠出沙盤繼續，你得先解開壓住根式誤差幾何圖旁這一筆：在 \\triangle ABC 中， D, E 分別為 AB, AC 的中點。若已知 AD=3 ， AE=4 ， DE=5 ，則 \\triangle ABC 的周長為何？",
+            "options": {
+              "A": "12",
+              "B": "24",
+              "C": "17",
+              "D": "48"
+            },
+            "preserveImage": false
+          },
+          "1157": {
+            "question": "壓住根式誤差幾何圖的紀錄停在這一行；下一步正等著它：你在現場擺測點，你用三根竹竿搭成一個三角形的架子，這三根竹竿的長度分別是 120 小格、 160 小格和 200 小格。為了增加架子的穩定性，你想在兩根較短竹竿的「中點」之間，綁上一條水平的繩子。請問這條繩子的長度需要準備 _____ 小格。",
+            "preserveImage": false
+          },
+          "1160": {
+            "question": "二十四邊形擠出沙盤。阿基米德在壓住根式誤差幾何圖上留下這組條件：在 \\triangle ABC 中， D 為 AB 的中點。過 D 點作 BC 的平行線，交 AC 於 E 點。接著，在 BC 上取一點 F ，使得 BF : FC = 1 : 2 。若已知 DE = 2x + 3 ， FC = 5x - 3 ，求 x 的值。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "壓住根式誤差幾何圖上的數字對上了。壓住根式誤差終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q09",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q09",
+      "type": "quiz",
+      "anchor": 9,
+      "scene": "近似誤差逐層累積",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "近似誤差逐層累積。每次開平方都留下誤差，必須用二次函數的圖形比較誤差在倍增後是否仍守住邊界。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把壓住根式誤差坐標圖的位置與變化標上坐標，追蹤下一步會落在哪裡。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "二次函數",
+        "chapterIncludes": "二次函數 二次函數及其圖形",
+        "knowledgePoint": "二次函數意義",
+        "questionIds": [
+          1331,
+          1328,
+          1329
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-archimedes-scene-09",
+        "setting": "敘拉古幾何工坊與九十六邊形沙盤",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "壓住根式誤差坐標圖",
+          "大圓沙盤",
+          "內接多邊形板"
+        ],
+        "sceneNeed": "每次開平方都留下誤差，必須用二次函數的圖形比較誤差在倍增後是否仍守住邊界。",
+        "rewrites": {
+          "1328": {
+            "question": "阿基米德把近似誤差逐層累積剛測到的數字推到你面前：下列哪一個關係式是 x 的二次函數？",
+            "options": {
+              "A": "y = 3x + 5",
+              "B": "y = 2x^2 - x + 1",
+              "C": "y = \\frac{1}{x^2} + 2",
+              "D": "y = x^3 - 2x^2"
+            },
+            "preserveImage": false
+          },
+          "1329": {
+            "question": "現場只剩壓住根式誤差坐標圖上的這份計算還沒核對：若 y = (k - 2)x^3 + (k + 1)x^2 - 3x + 5 是 x 的二次函數，則 k 的值為何？",
+            "options": {
+              "A": "k = 2",
+              "B": "k = -1",
+              "C": "k\neq 2",
+              "D": "k\neq -1"
+            },
+            "preserveImage": false
+          },
+          "1331": {
+            "question": "要讓近似誤差逐層累積繼續，你得先解開壓住根式誤差坐標圖旁這一筆：若方程式 y = (a + 3)x^2 + 5x - 7 為 x 的二次函數，則 a 的限制條件為 a\neq _____。",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "壓住根式誤差坐標圖上的數字對上了。壓住根式誤差終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_1",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_1",
+      "type": "eureka",
+      "eurekaId": "g9h1-archimedes-insight-1",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "多邊形邊數越多，內外周長便從兩側逼近同一個圓周"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "transition_4"
+    },
+    {
+      "id": "transition_4",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "壓住根式誤差告一段落，大圓沙盤卻送來新的壞消息。原先穩定的讀數突然偏了一格；這不是能略過的小差。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是追上九十六邊；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q10"
+    },
+    {
+      "id": "q10",
+      "type": "quiz",
+      "anchor": 10,
+      "scene": "四十八邊形的一條切線鬆了",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "四十八邊形的一條切線鬆了。外切繩框有一邊離圓過遠，玩家要用點、直線與圓的位置關係找出失效切線。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿追上九十六邊幾何圖的圓弧、弦與切線追出隱藏關係。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "快，但不要猜。讓答案真的推動眼前這件事。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "圓的性質",
+        "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+        "knowledgePoint": "弦心距性質",
+        "questionIds": [
+          1238,
+          1236,
+          1237
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-archimedes-scene-10",
+        "setting": "敘拉古幾何工坊與九十六邊形沙盤",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "追上九十六邊幾何圖",
+          "大圓沙盤",
+          "內接多邊形板"
+        ],
+        "sceneNeed": "外切繩框有一邊離圓過遠，玩家要用點、直線與圓的位置關係找出失效切線。",
+        "rewrites": {
+          "1236": {
+            "question": "要讓四十八邊形的一條切線鬆了繼續，你得先解開追上九十六邊幾何圖旁這一筆：在圓 O 中，已知有兩弦 \\overline{AB} 與 \\overline{CD} ，且 \\overline{AB} = 8 、 \\overline{CD} = 6 。若 \\overline{AB} 的弦心距為 m ， \\overline{CD} 的弦心距為 n ，則下列敘述何者正確？",
+            "options": {
+              "A": "m > n",
+              "B": "m",
+              "C": "m = n",
+              "D": "條件不足，無法判斷"
+            },
+            "preserveImage": false
+          },
+          "1237": {
+            "question": "追上九十六邊幾何圖的紀錄停在這一行；下一步正等著它：你在現場玩套圈圈，你發現地上畫了一個作為標記的大圓。圓內有兩條平行的直線軌道 \\overline{AB} 和 \\overline{CD} ，測得兩軌道長度分別為 16 小格與 12 小格，且圓心到 \\overline{AB} 軌道的垂直距離（弦心距）為 6 小格，求這個大圓的半徑為 _____ 小格。",
+            "preserveImage": false
+          },
+          "1238": {
+            "question": "阿基米德把四十八邊形的一條切線鬆了剛測到的數字推到你面前：圓 O 的半徑為 13 。若圓內有一弦 \\overline{AB} ，其弦心距為 5 ；另有一弦 \\overline{CD} ，其長度為 24 。求 \\overline{AB} 的長度與 \\overline{CD} 的弦心距之總和為多少？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "追上九十六邊幾何圖上的數字對上了。追上九十六邊終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_4",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_4",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "外切繩鬆了一邊，要局部修補還是重驗六個接點？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查內接多邊形板。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選外切繩框。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "兩邊都重要。{{address}}，替我砍出第一條路。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "局部拉緊",
+          "next": "choice_4_measure"
+        },
+        {
+          "id": "observe",
+          "label": "重驗所有接點",
+          "next": "choice_4_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_4_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "鄰邊角度跟著偏移，玩家發現問題不只一處。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "choice_4_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "耗時較久，但找出最初那條不垂直的半徑。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q11"
+    },
+    {
+      "id": "q11",
+      "type": "quiz",
+      "anchor": 11,
+      "scene": "抄寫員交換了上下界",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "抄寫員交換了上下界。兩列近似值次序顛倒，玩家要從相似比例判斷哪列必須永遠小於圓周、哪列必須大於。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用比例把追上九十六邊幾何圖的縮放與實際尺寸接起來。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "別被場面催快。先找基準，再動數字。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_4": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_4": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "比例線段與相似形",
+        "chapterIncludes": "比例線段與相似形 相似形",
+        "knowledgePoint": "平面圖形縮放",
+        "questionIds": [
+          1170,
+          1166,
+          1169
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-archimedes-scene-11",
+        "setting": "敘拉古幾何工坊與九十六邊形沙盤",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "追上九十六邊幾何圖",
+          "大圓沙盤",
+          "內接多邊形板"
+        ],
+        "sceneNeed": "兩列近似值次序顛倒，玩家要從相似比例判斷哪列必須永遠小於圓周、哪列必須大於。",
+        "rewrites": {
+          "1166": {
+            "question": "要讓抄寫員交換了上下界繼續，你得先解開追上九十六邊幾何圖旁這一筆：你在測繪板上查看現場地圖，地圖上標示「你樣品測點」與「你樣品測點」的直線距離原本是 3 小格。當你將地圖按比例放大，以原本的 4 倍縮放後，圖板上這兩個測點的直線距離會變成 _____ 小格。",
+            "preserveImage": false
+          },
+          "1169": {
+            "question": "現場只剩追上九十六邊幾何圖上的這份計算還沒核對：在坐標平面上，你將 \\triangle ABC 先以原點 O 為縮放中心，放大為原本的 3 倍得到 \\triangle A_1B_1C_1 ，接著再以點 A_1 為縮放中心，將 \\triangle A_1B_1C_1 縮小為其原本的 \\frac{1}{2} 倍得到 \\triangle A_2B_2C_2 。若 \\triangle ABC 的周長為 10 ，則 \\triangle A_2B_2C_2 的周長為何？",
+            "preserveImage": false
+          },
+          "1170": {
+            "question": "抄寫員交換了上下界。阿基米德在追上九十六邊幾何圖上留下這組條件：已知 \\triangle ABC 的面積為 10 平方小格。將 \\triangle ABC 經過縮放操作後得到 \\triangle A'B'C' ，若 \\triangle A'B'C' 的面積為 40 平方小格，則下列關於此縮放結果的敘述，何者必然正確？",
+            "options": {
+              "A": "此縮放的縮放倍率必定為 4 倍",
+              "B": "\\triangle A'B'C' 的每個內角度數都是 \\triangle ABC 對應內角的 2 倍",
+              "C": "\\triangle A'B'C' 的周長是 \\triangle ABC 周長的 2 倍",
+              "D": "\\triangle A'B'C' 在平面上必定能完全覆蓋住 \\triangle ABC"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "追上九十六邊幾何圖上的數字對上了。追上九十六邊終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "q12",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "q12",
+      "type": "quiz",
+      "anchor": 12,
+      "scene": "九十六邊幾乎看成圓",
+      "objective": "證明圓周率落在兩個可計算數之間",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "九十六邊幾乎看成圓。玩家與阿基米德要證明「看起來像」不夠，必須算出內外周長差已縮到指定範圍。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿追上九十六邊幾何圖的圓弧、弦與切線追出隱藏關係。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "它又開始變了——別慌，照你剛才排好的順序來。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "圓的性質",
+        "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+        "knowledgePoint": "點與圓的位置",
+        "questionIds": [
+          1220,
+          1223,
+          1218
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-archimedes-scene-12",
+        "setting": "敘拉古幾何工坊與九十六邊形沙盤",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "追上九十六邊幾何圖",
+          "大圓沙盤",
+          "內接多邊形板"
+        ],
+        "sceneNeed": "玩家與阿基米德要證明「看起來像」不夠，必須算出內外周長差已縮到指定範圍。",
+        "rewrites": {
+          "1218": {
+            "question": "阿基米德把九十六邊幾乎看成圓剛測到的數字推到你面前：你在現場玩套圈圈遊戲。套圈圈的底座是一個圓形，半徑為 15 小格。你丟出一個套環，套環的落點 P 距離底座的圓心 12 小格。請問套環落點 P 相對於底座圓的位置為何？",
+            "options": {
+              "A": "在底座圓內部",
+              "B": "在底座圓上",
+              "C": "在底座圓外部",
+              "D": "無法判斷"
+            },
+            "preserveImage": false
+          },
+          "1220": {
+            "question": "九十六邊幾乎看成圓。阿基米德在追上九十六邊幾何圖上留下這組條件：在直角三角形 ABC 中，已知 \\angle C = 90^ \\circ ，且 \\overline{AC} = 6 小格，\\overline{BC} = 8 小格。若以 C 為圓心，r 小格為半徑畫一個圓 C。已知點 A 落在圓 C 內部，且點 B 落在圓 C 外部。若 r 為整數，請計算 r 的值為多少？",
+            "preserveImage": false
+          },
+          "1223": {
+            "question": "阿基米德把九十六邊幾乎看成圓剛測到的數字推到你面前：\\triangle ABC 中，已知 \\angle B = 50^ \\circ ， \\angle C = 70^ \\circ 。今分別以 B、C 兩點為圓心，\\overline{BC} 的長度為半徑畫兩個圓，分別稱為圓 B 與圓 C。關於點 A 的位置，下列敘述何者正確？",
+            "options": {
+              "A": "在圓 B 外部，在圓 C 內部",
+              "B": "在圓 B 外部，在圓 C 外部",
+              "C": "在圓 B 內部，在圓 C 內部",
+              "D": "在圓 B 內部，在圓 C 外部"
+            },
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "追上九十六邊幾何圖上的數字對上了。追上九十六邊終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "transition_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "transition_5",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "追上九十六邊告一段落，內接多邊形板卻送來新的壞消息。風向、光線與人的耐心同時在變。再拖，剛才的證據就會失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "我們還不能停。下一步是把圓周率夾在邊界內；剛才算出的結果，正好是唯一能帶過去的東西。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那就帶著它走。這次我不先衝——至少等你們把方向說完。"
+        }
+      ],
+      "next": "q13"
+    },
+    {
+      "id": "q13",
+      "type": "quiz",
+      "anchor": 13,
+      "scene": "工匠要求只報一個數",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "工匠要求只報一個數。工匠想取中間值省事，但玩家得用統計誤差觀念說明單一近似會隱藏保證範圍。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "把把圓周率夾在邊界內紀錄表的多次紀錄排開，分清偶然波動與真正趨勢。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先把條件排穩。方向一亂，後面的結果全會跟著偏。"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "統計與機率",
+        "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+        "knowledgePoint": "盒狀圖繪製與判讀",
+        "questionIds": [
+          356,
+          353,
+          351
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-archimedes-scene-13",
+        "setting": "敘拉古幾何工坊與九十六邊形沙盤",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "把圓周率夾在邊界內紀錄表",
+          "大圓沙盤",
+          "內接多邊形板"
+        ],
+        "sceneNeed": "工匠想取中間值省事，但玩家得用統計誤差觀念說明單一近似會隱藏保證範圍。",
+        "rewrites": {
+          "351": {
+            "question": "要讓工匠要求只報一個數繼續，你得先解開把圓周率夾在邊界內紀錄表旁這一筆：如圖所示為觀測組現場測量讀數的盒狀圖。請問該班數學讀數的「四分位距」為多少分？",
+            "options": {
+              "A": "70",
+              "B": "50",
+              "C": "30",
+              "D": "15"
+            },
+            "preserveImage": true,
+            "imageAlt": "把圓周率夾在邊界內紀錄表的資料圖"
+          },
+          "353": {
+            "question": "阿基米德把工匠要求只報一個數剛測到的數字推到你面前：觀測組與乙班各有 40 筆紀錄，且各班內每位觀測值的數學讀數皆不相同。已知甲班讀數的第三四分位數為 80 分，乙班讀數的中位數為 80 分。請問下列敘述何者必然正確？",
+            "options": {
+              "A": "甲班讀數超過 80 分的筆數大於乙班讀數超過 80 分的筆數",
+              "B": "乙班讀數超過 80 分的筆數大於甲班讀數超過 80 分的筆數",
+              "C": "兩班讀數超過 80 分的筆數一樣多",
+              "D": "乙班讀數的全距一定比甲班大"
+            },
+            "preserveImage": false
+          },
+          "356": {
+            "question": "要讓工匠要求只報一個數繼續，你得先解開把圓周率夾在邊界內紀錄表旁這一筆：某國中九年一班共有 39 筆紀錄，現場每位觀測值的 1 分鐘跳繩次數皆不相同。若全班跳繩次數的盒狀圖顯示，第一四分位數為 45 次，中位數為 55 次，第三四分位數為 65 次。請問該班跳繩次數介於 45 次與 65 次之間（不包含 45 次與 65 次）的觀測值共有幾人？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "把圓周率夾在邊界內紀錄表上的數字對上了。把圓周率夾在邊界內終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "choice_5",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "choice_5",
+      "type": "choice",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "結論要報一個中間值，還是保留兩個分數邊界？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "先查根式近似表。基準不穩，後面每一步都會歪。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我選九十六邊形草圖。現場正在變，再慢就看不到了。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "兩邊都重要。{{address}}，替我砍出第一條路。"
+        }
+      ],
+      "choices": [
+        {
+          "id": "measure",
+          "label": "報中間值",
+          "next": "choice_5_measure"
+        },
+        {
+          "id": "observe",
+          "label": "保留上下界",
+          "next": "choice_5_observe"
+        }
+      ]
+    },
+    {
+      "id": "choice_5_measure",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "工匠方便使用，卻說不出誤差究竟多大。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "好。現在至少知道，接下來的差不是量具自己造成的。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "choice_5_observe",
+      "type": "narrative",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "答案較不討喜，但每個人都知道真值絕不會越界。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "抓到了。把這筆帶回去，和原來的條件一起算。"
+        }
+      ],
+      "next": "q14"
+    },
+    {
+      "id": "q14",
+      "type": "quiz",
+      "anchor": 14,
+      "scene": "最後分數卡在兩側",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "最後分數卡在兩側。必須用連比與相似形推導把九十六邊形周長換成相對直徑的上下界。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "用比例把把圓周率夾在邊界內幾何圖的縮放與實際尺寸接起來。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "我先壓住現場，你把這一筆算到底！"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "剛才先核過的基準在這裡派上用場了。",
+          "whenChoice": {
+            "choice_5": "measure"
+          }
+        },
+        {
+          "speaker": "Numi",
+          "text": "剛才搶下的現場紀錄還熱著。就用這一筆。",
+          "whenChoice": {
+            "choice_5": "observe"
+          }
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "比例線段與相似形",
+        "chapterIncludes": "比例線段與相似形 相似形",
+        "knowledgePoint": "三角形的相似判定（AA、SAS、SSS）",
+        "questionIds": [
+          1184,
+          1185,
+          1183
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-archimedes-scene-14",
+        "setting": "敘拉古幾何工坊與九十六邊形沙盤",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "把圓周率夾在邊界內幾何圖",
+          "大圓沙盤",
+          "內接多邊形板"
+        ],
+        "sceneNeed": "必須用連比與相似形推導把九十六邊形周長換成相對直徑的上下界。",
+        "rewrites": {
+          "1183": {
+            "question": "阿基米德把最後分數卡在兩側剛測到的數字推到你面前：你在桌上用三根吸管排成一個三角形，長度分別為 6 小格、 8 小格、 10 小格。你想在另一張桌子上用相同的比例放大，排出一個相似的三角形。如果你選擇的最短吸管長度是 15 小格，請問你選擇的最長吸管長度應該是多少小格？",
+            "preserveImage": false
+          },
+          "1184": {
+            "question": "現場只剩把圓周率夾在邊界內幾何圖上的這份計算還沒核對：關於兩三角形 \\triangle ABC 與 \\triangle DEF 的相似判定，下列敘述何者必然正確？",
+            "options": {
+              "A": "若 \\angle A = \\angle D ，且 \\frac{\\overline{AB}}{\\overline{DE}} = \\frac{\\overline{BC}}{\\overline{EF}} ，則兩三角形必相似。",
+              "B": "若 \\angle A = \\angle D ，且 \\frac{\\overline{AB}}{\\overline{DF}} = \\frac{\\overline{AC}}{\\overline{DE}} ，則兩三角形必相似。",
+              "C": "若 \\frac{\\overline{AB}}{\\overline{DE}} = \\frac{\\overline{BC}}{\\overline{EF}} = \\frac{\\overline{AC}}{\\overline{DF}} ，則兩三角形的面積比為 \\overline{AB} : \\overline{DE} 。",
+              "D": "若 \\angle A = \\angle D = 90^\\circ ，且 \\overline{AB} = \\overline{DE} ，則兩三角形必相似。"
+            },
+            "preserveImage": false
+          },
+          "1185": {
+            "question": "最後分數卡在兩側。阿基米德在把圓周率夾在邊界內幾何圖上留下這組條件：你晚上散步經過現場的某個路燈下。已知路燈的高度為 5 長度格，你的測量值為 1.7 長度格。當你走到距離路燈底部 6.6 長度格的 A 點時，你的影子長度會是多少長度格？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "把圓周率夾在邊界內幾何圖上的數字對上了。把圓周率夾在邊界內終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "成了，下一步！"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "eureka_2",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "eureka_2",
+      "type": "eureka",
+      "eurekaId": "g9h1-archimedes-insight-2",
+      "lines": [
+        {
+          "speaker": "Mathematician",
+          "text": "等等。剛才你算出的結果，正好把我漏掉的那一段補上了。"
+        },
+        {
+          "speaker": "player",
+          "text": "精確值暫時算不到，仍能用可靠上下界把它牢牢夾住"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "對。你看見的和我一樣——我們一起想通了。Eureka！",
+          "eurekaMoment": true
+        },
+        {
+          "speaker": "narrator",
+          "text": "暖黃從你們之間猛然亮起，不像門，也不像火。那個剛被理解的念頭，第一次有了重量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "這次是兩個人的……甜得發亮。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "記住它。光退了，推理還會留下。"
+        }
+      ],
+      "next": "q15"
+    },
+    {
+      "id": "q15",
+      "type": "quiz",
+      "anchor": 15,
+      "scene": "圓沒有被算完，卻無處可逃",
+      "setup": [
+        {
+          "speaker": "narrator",
+          "text": "圓沒有被算完，卻無處可逃。送稿前玩家要沿圓周、弦與切線重查每個不等方向，任何一處反轉都會使夾逼失效。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "沿把圓周率夾在邊界內幾何圖的圓弧、弦與切線追出隱藏關係。別只看。把手伸進問題裡，數字才會動。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "把已知與未知分開。眼前真正缺的是哪一個量？"
+        }
+      ],
+      "pool": {
+        "grade": 9,
+        "half": 1,
+        "major": "圓的性質",
+        "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+        "knowledgePoint": "直線與圓的切線與割線",
+        "questionIds": [
+          1230,
+          1232,
+          1224
+        ]
+      },
+      "sceneAdapt": {
+        "sceneId": "g9h1-archimedes-scene-15",
+        "setting": "敘拉古幾何工坊與九十六邊形沙盤",
+        "cast": [
+          "玩家",
+          "NumNum",
+          "Numi",
+          "阿基米德"
+        ],
+        "props": [
+          "把圓周率夾在邊界內幾何圖",
+          "大圓沙盤",
+          "內接多邊形板"
+        ],
+        "sceneNeed": "送稿前玩家要沿圓周、弦與切線重查每個不等方向，任何一處反轉都會使夾逼失效。",
+        "rewrites": {
+          "1224": {
+            "question": "現場只剩把圓周率夾在邊界內幾何圖上的這份計算還沒核對：已知圓 O 的半徑為 8 ，其圓心到四條直線 L_1 、 L_2 、 L_3 、 L_4 的距離分別為 5 、 8 、 10 、 12 。請問這四條直線與圓 O 的交點個數總和為多少？",
+            "options": {
+              "A": "2",
+              "B": "3",
+              "C": "4",
+              "D": "5"
+            },
+            "preserveImage": true,
+            "imageAlt": "把圓周率夾在邊界內幾何圖的資料圖"
+          },
+          "1230": {
+            "question": "圓沒有被算完，卻無處可逃。阿基米德在把圓周率夾在邊界內幾何圖上留下這組條件：你居住的城鎮有一座圓形的自然保護區，其半徑為 5 里程格。有一條筆直的高速公路穿越這個保護區的邊緣，已知這條公路距離保護區中心最近的距離為 3 里程格。請問這條高速公路位於保護區內的長度為多少里程格？",
+            "options": {
+              "A": "4",
+              "B": "6",
+              "C": "8",
+              "D": "10"
+            },
+            "preserveImage": false
+          },
+          "1232": {
+            "question": "把圓周率夾在邊界內幾何圖的紀錄停在這一行；下一步正等著它：某個紀錄系統舉辦無人機送貨測試。測試場地有一個圓形的禁飛區，半徑為 5 里程格。記錄員你站在一條筆直的公路上，這條公路剛好與圓形禁飛區相切於 T 點。你目前所在位置到禁飛區中心的直線距離為 13 里程格。若無人機沿著公路從你的位置直線飛往相切點 T 送貨，請問無人機飛行的距離是多少里程格？",
+            "preserveImage": false
+          }
+        }
+      },
+      "successVariants": [
+        [
+          {
+            "speaker": "narrator",
+            "text": "把圓周率夾在邊界內幾何圖上的數字對上了。把圓周率夾在邊界內終於能往前推。"
+          }
+        ],
+        [
+          {
+            "speaker": "Mathematician",
+            "text": "好。它肯動了——趁現在追下去。"
+          }
+        ],
+        [
+          {
+            "speaker": "NumNum",
+            "text": "條件吻合。"
+          }
+        ]
+      ],
+      "detourVariants": [
+        [
+          {
+            "speaker": "NumNum",
+            "text": "有一個條件沒對上。從基準再走一次。"
+          }
+        ],
+        [
+          {
+            "speaker": "Numi",
+            "text": "先別放掉這題。眼前這一步還需要它。"
+          }
+        ]
+      ],
+      "onCorrect": "ending_history",
+      "onWrong": "retry-same-question"
+    },
+    {
+      "id": "ending_history",
+      "type": "narrative",
+      "objective": "記住阿基米德留下的答案",
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "把圓周率夾在邊界內完成了。現場安靜下來，只有大圓沙盤還留著剛才的痕跡。"
+        },
+        {
+          "speaker": "Mathematician",
+          "text": "{{address}}，今天不是你替我算完。是我們一起把它想通。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "那道光退了……可是我還記得它的味道。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "因為答案不是光。答案會留在能被重做的步驟裡。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "——時間向前推去。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "阿基米德把圓周率限制在兩個分數之間，沒有假裝得到最後小數。多年後敘拉古陷落，他在沙地作圖時遇害；圓與球的研究成為其長久遺產。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "眼前的敘拉古幾何工坊與九十六邊形沙盤慢慢褪色。藍紫色的安靜重新包圍你們。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}，下次再有人快想通時，我們還會聽見。"
+        }
+      ],
+      "next": "ending_stats"
+    },
+    {
+      "id": "ending_stats",
+      "type": "ending",
+      "next": null,
+      "lines": [
+        {
+          "speaker": "narrator",
+          "text": "【劇本結束】九上 × 阿基米德"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "這趟路的每一次重算，數字都記得。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "下次見，{{playerName}}！"
+        }
+      ]
+    }
+  ]
+}

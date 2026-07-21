@@ -1,0 +1,748 @@
+{
+  "id": "g9h1",
+  "grade": 9,
+  "half": 1,
+  "description": "同年段共用候選題；各劇本依當下研究場景重新安排槽位與完整改寫題面。",
+  "slots": [
+    {
+      "slot": 1,
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 比例線段",
+      "knowledgePoint": "平行線截比例線段性質",
+      "questionIds": [
+        1147,
+        1151,
+        1149
+      ]
+    },
+    {
+      "slot": 2,
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 相似形",
+      "knowledgePoint": "多邊形相似意義",
+      "questionIds": [
+        1174,
+        1178,
+        1177
+      ]
+    },
+    {
+      "slot": 3,
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 連比",
+      "knowledgePoint": "連比例式的記錄與推理運算",
+      "questionIds": [
+        1140,
+        1142,
+        1139
+      ]
+    },
+    {
+      "slot": 4,
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 比例線段",
+      "knowledgePoint": "三角形兩邊中點連線性質",
+      "questionIds": [
+        1156,
+        1160,
+        1157
+      ]
+    },
+    {
+      "slot": 5,
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 相似形",
+      "knowledgePoint": "平面圖形縮放",
+      "questionIds": [
+        1170,
+        1166,
+        1169
+      ]
+    },
+    {
+      "slot": 6,
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 相似形",
+      "knowledgePoint": "三角形的相似判定（AA、SAS、SSS）",
+      "questionIds": [
+        1184,
+        1185,
+        1183
+      ]
+    },
+    {
+      "slot": 7,
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數的最大值或最小值",
+      "knowledgePoint": "極值求法",
+      "questionIds": [
+        1372,
+        1373,
+        1369
+      ]
+    },
+    {
+      "slot": 8,
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數及其圖形",
+      "knowledgePoint": "二次函數意義",
+      "questionIds": [
+        1331,
+        1328,
+        1329
+      ]
+    },
+    {
+      "slot": 9,
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數及其圖形",
+      "knowledgePoint": "頂點",
+      "questionIds": [
+        1356,
+        1352,
+        1354
+      ]
+    },
+    {
+      "slot": 10,
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數的最大值或最小值",
+      "knowledgePoint": "平移規律（y=a(x-h)^2+k）",
+      "questionIds": [
+        1364,
+        1365,
+        1361
+      ]
+    },
+    {
+      "slot": 11,
+      "major": "圓的性質",
+      "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+      "knowledgePoint": "圓的基本名詞（弦、弧、弓形）",
+      "questionIds": [
+        1209,
+        1211,
+        1213
+      ]
+    },
+    {
+      "slot": 12,
+      "major": "圓的性質",
+      "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+      "knowledgePoint": "直線與圓的切線與割線",
+      "questionIds": [
+        1229,
+        1231,
+        1227
+      ]
+    },
+    {
+      "slot": 13,
+      "major": "圓的性質",
+      "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+      "knowledgePoint": "弦心距性質",
+      "questionIds": [
+        1238,
+        1236,
+        1237
+      ]
+    },
+    {
+      "slot": 14,
+      "major": "統計與機率",
+      "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+      "knowledgePoint": "盒狀圖繪製與判讀",
+      "questionIds": [
+        357,
+        355,
+        359
+      ]
+    },
+    {
+      "slot": 15,
+      "major": "統計與機率",
+      "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+      "knowledgePoint": "盒狀圖繪製與判讀",
+      "questionIds": [
+        356,
+        353,
+        351
+      ]
+    }
+  ],
+  "library": [
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 比例線段",
+      "knowledgePoint": "平行線截比例線段性質",
+      "questionIds": [
+        1147,
+        1151,
+        1149
+      ]
+    },
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 相似形",
+      "knowledgePoint": "多邊形相似意義",
+      "questionIds": [
+        1174,
+        1178,
+        1177
+      ]
+    },
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 連比",
+      "knowledgePoint": "連比例式的記錄與推理運算",
+      "questionIds": [
+        1140,
+        1142,
+        1139
+      ]
+    },
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 比例線段",
+      "knowledgePoint": "三角形兩邊中點連線性質",
+      "questionIds": [
+        1156,
+        1160,
+        1157
+      ]
+    },
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 相似形",
+      "knowledgePoint": "平面圖形縮放",
+      "questionIds": [
+        1170,
+        1166,
+        1169
+      ]
+    },
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 相似形",
+      "knowledgePoint": "三角形的相似判定（AA、SAS、SSS）",
+      "questionIds": [
+        1184,
+        1185,
+        1183
+      ]
+    },
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 相似形的應用",
+      "knowledgePoint": "應用問題求解",
+      "questionIds": [
+        1201,
+        1205,
+        1204
+      ]
+    },
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 相似形的應用",
+      "knowledgePoint": "相似三角形對應高/面積比的關係",
+      "questionIds": [
+        1194,
+        1192,
+        1191
+      ]
+    },
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 連比",
+      "knowledgePoint": "連比例式的記錄與推理運算",
+      "questionIds": [
+        1143,
+        1141,
+        2306
+      ]
+    },
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 比例線段",
+      "knowledgePoint": "平行線截比例線段性質",
+      "questionIds": [
+        1150,
+        1148,
+        1152
+      ]
+    },
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 相似形",
+      "knowledgePoint": "多邊形相似意義",
+      "questionIds": [
+        1175,
+        1176,
+        1171
+      ]
+    },
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 比例線段",
+      "knowledgePoint": "三角形兩邊中點連線性質",
+      "questionIds": [
+        1159,
+        1161,
+        1158
+      ]
+    },
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 相似形",
+      "knowledgePoint": "平面圖形縮放",
+      "questionIds": [
+        1168,
+        1167,
+        1164
+      ]
+    },
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 相似形",
+      "knowledgePoint": "三角形的相似判定（AA、SAS、SSS）",
+      "questionIds": [
+        1182,
+        1186,
+        2307
+      ]
+    },
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 相似形的應用",
+      "knowledgePoint": "相似三角形對應高/面積比的關係",
+      "questionIds": [
+        1190,
+        1195,
+        1188
+      ]
+    },
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 相似形的應用",
+      "knowledgePoint": "應用問題求解",
+      "questionIds": [
+        1200,
+        1199,
+        1197
+      ]
+    },
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 連比",
+      "knowledgePoint": "連比例式的記錄與推理運算",
+      "questionIds": [
+        1136,
+        1138,
+        1137
+      ]
+    },
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 比例線段",
+      "knowledgePoint": "三角形兩邊中點連線性質",
+      "questionIds": [
+        1153,
+        1155,
+        1154
+      ]
+    },
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 比例線段",
+      "knowledgePoint": "平行線截比例線段性質",
+      "questionIds": [
+        1144,
+        1146,
+        1145
+      ]
+    },
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 相似形",
+      "knowledgePoint": "平面圖形縮放",
+      "questionIds": [
+        1165,
+        1162,
+        1163
+      ]
+    },
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 相似形的應用",
+      "knowledgePoint": "應用問題求解",
+      "questionIds": [
+        1202,
+        1198,
+        1203
+      ]
+    },
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 相似形的應用",
+      "knowledgePoint": "相似三角形對應高/面積比的關係",
+      "questionIds": [
+        1189,
+        1196,
+        1193
+      ]
+    },
+    {
+      "major": "比例線段與相似形",
+      "chapterIncludes": "比例線段與相似形 相似形",
+      "knowledgePoint": "三角形的相似判定（AA、SAS、SSS）",
+      "questionIds": [
+        1181,
+        1180,
+        1187
+      ]
+    },
+    {
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數的最大值或最小值",
+      "knowledgePoint": "極值求法",
+      "questionIds": [
+        1372,
+        1373,
+        1369
+      ]
+    },
+    {
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數及其圖形",
+      "knowledgePoint": "二次函數意義",
+      "questionIds": [
+        1331,
+        1328,
+        1329
+      ]
+    },
+    {
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數及其圖形",
+      "knowledgePoint": "頂點",
+      "questionIds": [
+        1356,
+        1352,
+        1354
+      ]
+    },
+    {
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數的最大值或最小值",
+      "knowledgePoint": "平移規律（y=a(x-h)^2+k）",
+      "questionIds": [
+        1364,
+        1365,
+        1361
+      ]
+    },
+    {
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數的最大值或最小值",
+      "knowledgePoint": "拋物線與生活實例應用",
+      "questionIds": [
+        1380,
+        1383,
+        1382
+      ]
+    },
+    {
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數及其圖形",
+      "knowledgePoint": "對稱軸",
+      "questionIds": [
+        1348,
+        1346,
+        1345
+      ]
+    },
+    {
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數及其圖形",
+      "knowledgePoint": "拋物線開口方向與大小",
+      "questionIds": [
+        1340,
+        1337,
+        1339
+      ]
+    },
+    {
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數及其圖形",
+      "knowledgePoint": "頂點",
+      "questionIds": [
+        1355,
+        1357,
+        1353
+      ]
+    },
+    {
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數及其圖形",
+      "knowledgePoint": "二次函數意義",
+      "questionIds": [
+        1332,
+        1330,
+        1333
+      ]
+    },
+    {
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數的最大值或最小值",
+      "knowledgePoint": "極值求法",
+      "questionIds": [
+        1371,
+        1374,
+        1370
+      ]
+    },
+    {
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數的最大值或最小值",
+      "knowledgePoint": "平移規律（y=a(x-h)^2+k）",
+      "questionIds": [
+        1362,
+        1363,
+        1366
+      ]
+    },
+    {
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數的最大值或最小值",
+      "knowledgePoint": "拋物線與生活實例應用",
+      "questionIds": [
+        1378,
+        1377,
+        1376
+      ]
+    },
+    {
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數及其圖形",
+      "knowledgePoint": "對稱軸",
+      "questionIds": [
+        2316,
+        1347,
+        2315
+      ]
+    },
+    {
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數及其圖形",
+      "knowledgePoint": "拋物線開口方向與大小",
+      "questionIds": [
+        1334,
+        1336
+      ]
+    },
+    {
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數的最大值或最小值",
+      "knowledgePoint": "極值求法",
+      "questionIds": [
+        1368,
+        1367
+      ]
+    },
+    {
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數及其圖形",
+      "knowledgePoint": "對稱軸",
+      "questionIds": [
+        1343,
+        1344
+      ]
+    },
+    {
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數的最大值或最小值",
+      "knowledgePoint": "平移規律（y=a(x-h)^2+k）",
+      "questionIds": [
+        1358,
+        1359
+      ]
+    },
+    {
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數及其圖形",
+      "knowledgePoint": "頂點",
+      "questionIds": [
+        1349,
+        1351,
+        1350
+      ]
+    },
+    {
+      "major": "二次函數",
+      "chapterIncludes": "二次函數 二次函數及其圖形",
+      "knowledgePoint": "二次函數意義",
+      "questionIds": [
+        1327,
+        1325,
+        1326
+      ]
+    },
+    {
+      "major": "圓的性質",
+      "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+      "knowledgePoint": "圓的基本名詞（弦、弧、弓形）",
+      "questionIds": [
+        1209,
+        1211,
+        1213
+      ]
+    },
+    {
+      "major": "圓的性質",
+      "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+      "knowledgePoint": "直線與圓的切線與割線",
+      "questionIds": [
+        1229,
+        1231,
+        1227
+      ]
+    },
+    {
+      "major": "圓的性質",
+      "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+      "knowledgePoint": "弦心距性質",
+      "questionIds": [
+        1238,
+        1236,
+        1237
+      ]
+    },
+    {
+      "major": "圓的性質",
+      "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+      "knowledgePoint": "點與圓的位置",
+      "questionIds": [
+        1220,
+        1223,
+        1218
+      ]
+    },
+    {
+      "major": "圓的性質",
+      "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+      "knowledgePoint": "直線與圓的切線與割線",
+      "questionIds": [
+        1230,
+        1232,
+        1224
+      ]
+    },
+    {
+      "major": "圓的性質",
+      "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+      "knowledgePoint": "點與圓的位置",
+      "questionIds": [
+        1222,
+        1221,
+        1217
+      ]
+    },
+    {
+      "major": "圓的性質",
+      "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+      "knowledgePoint": "弦心距性質",
+      "questionIds": [
+        1239,
+        1241,
+        1235
+      ]
+    },
+    {
+      "major": "圓的性質",
+      "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+      "knowledgePoint": "圓的基本名詞（弦、弧、弓形）",
+      "questionIds": [
+        1214,
+        1212,
+        1208
+      ]
+    },
+    {
+      "major": "圓的性質",
+      "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+      "knowledgePoint": "直線與圓的切線與割線",
+      "questionIds": [
+        1226,
+        1225
+      ]
+    },
+    {
+      "major": "圓的性質",
+      "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+      "knowledgePoint": "圓的基本名詞（弦、弧、弓形）",
+      "questionIds": [
+        1206,
+        1207
+      ]
+    },
+    {
+      "major": "圓的性質",
+      "chapterIncludes": "圓的性質 圓形及點、直線與圓之間的關係",
+      "knowledgePoint": "弦心距性質",
+      "questionIds": [
+        1233,
+        1234
+      ]
+    },
+    {
+      "major": "統計與機率",
+      "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+      "knowledgePoint": "盒狀圖繪製與判讀",
+      "questionIds": [
+        357,
+        355,
+        359
+      ]
+    },
+    {
+      "major": "統計與機率",
+      "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+      "knowledgePoint": "盒狀圖繪製與判讀",
+      "questionIds": [
+        356,
+        353,
+        351
+      ]
+    },
+    {
+      "major": "統計與機率",
+      "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+      "knowledgePoint": "盒狀圖繪製與判讀",
+      "questionIds": [
+        358,
+        368,
+        366
+      ]
+    },
+    {
+      "major": "統計與機率",
+      "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+      "knowledgePoint": "盒狀圖繪製與判讀",
+      "questionIds": [
+        365,
+        367,
+        370
+      ]
+    },
+    {
+      "major": "統計與機率",
+      "chapterIncludes": "統計與機率 統計數據的分布（四分位數與盒狀圖）",
+      "knowledgePoint": "盒狀圖繪製與判讀",
+      "questionIds": [
+        352,
+        354,
+        369
+      ]
+    }
+  ]
+}

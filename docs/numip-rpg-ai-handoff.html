@@ -1,0 +1,871 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <title>Numip RPG 產品與技術交接文件</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 16mm 17mm 18mm;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: #182036;
+        background: white;
+        font-family:
+          "PingFang TC", "Noto Sans TC", "Heiti TC", Arial, sans-serif;
+        font-size: 10.5pt;
+        line-height: 1.62;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #253a73;
+        line-height: 1.25;
+        page-break-after: avoid;
+      }
+
+      h1 {
+        margin: 0 0 8mm;
+        font-size: 28pt;
+        letter-spacing: 0.04em;
+      }
+
+      h2 {
+        margin: 8mm 0 3mm;
+        padding-bottom: 1.5mm;
+        border-bottom: 1px solid #b9c3dc;
+        font-size: 18pt;
+      }
+
+      h3 {
+        margin: 5mm 0 2mm;
+        font-size: 13pt;
+      }
+
+      p {
+        margin: 0 0 3mm;
+      }
+
+      ul,
+      ol {
+        margin: 1.5mm 0 4mm;
+        padding-left: 6mm;
+      }
+
+      li {
+        margin: 1mm 0;
+      }
+
+      code,
+      pre {
+        font-family: "SFMono-Regular", Menlo, Consolas, monospace;
+      }
+
+      code {
+        padding: 0.2mm 1mm;
+        border-radius: 2px;
+        background: #eef1f8;
+        color: #283c72;
+        font-size: 9pt;
+      }
+
+      pre {
+        margin: 3mm 0 5mm;
+        padding: 4mm;
+        border-left: 3px solid #586eae;
+        background: #f3f5fa;
+        white-space: pre-wrap;
+        overflow-wrap: anywhere;
+        font-size: 8.5pt;
+        line-height: 1.45;
+        page-break-inside: avoid;
+      }
+
+      table {
+        width: 100%;
+        margin: 3mm 0 6mm;
+        border-collapse: collapse;
+        font-size: 9pt;
+      }
+
+      th,
+      td {
+        padding: 2mm 2.5mm;
+        border: 1px solid #ccd3e3;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        background: #e8ecf5;
+        color: #253a73;
+        font-weight: 700;
+      }
+
+      tr {
+        page-break-inside: avoid;
+      }
+
+      .cover {
+        min-height: 245mm;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        page-break-after: always;
+      }
+
+      .cover .eyebrow {
+        margin-bottom: 4mm;
+        color: #6b7698;
+        font-size: 11pt;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      .cover .subtitle {
+        max-width: 145mm;
+        color: #556078;
+        font-size: 15pt;
+        line-height: 1.55;
+      }
+
+      .cover .meta {
+        margin-top: 18mm;
+        padding-top: 5mm;
+        border-top: 1px solid #ccd3e3;
+        color: #68728b;
+        font-size: 9.5pt;
+      }
+
+      .summary {
+        padding: 5mm;
+        border: 1px solid #9eacd0;
+        background: #f2f4fa;
+        page-break-inside: avoid;
+      }
+
+      .warning {
+        padding: 4mm;
+        border-left: 4px solid #b27a23;
+        background: #fbf6e9;
+        page-break-inside: avoid;
+      }
+
+      .decision {
+        color: #315b45;
+        font-weight: 700;
+      }
+
+      .pending {
+        color: #8a5a20;
+        font-weight: 700;
+      }
+
+      .page-break {
+        page-break-before: always;
+      }
+
+      .small {
+        color: #667089;
+        font-size: 8.5pt;
+      }
+
+      .flow {
+        padding: 4mm;
+        border: 1px solid #ccd3e3;
+        background: #f8f9fc;
+        font-family: "SFMono-Regular", Menlo, Consolas, monospace;
+        font-size: 8.6pt;
+        line-height: 1.55;
+        white-space: pre-wrap;
+        page-break-inside: avoid;
+      }
+
+      .toc a {
+        color: #253a73;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="cover">
+      <div class="eyebrow">AI Conversation &amp; Product Handoff</div>
+      <h1>Numip RPG<br />產品與技術交接文件</h1>
+      <p class="subtitle">
+        將原 Math Wager 重構為「數感宇宙」純文字冒險 RPG
+        的完整決策、功能規格、敘事規則、程式架構與目前實作狀態。
+      </p>
+      <div class="meta">
+        <p><strong>專案路徑：</strong><code>/Users/bear/Projects/math game</code></p>
+        <p><strong>文件日期：</strong>2026-07-21</p>
+        <p><strong>目前階段：</strong>第一本樣板「七上 × 阿基米德」開發與打磨中</p>
+        <p><strong>主要用途：</strong>讓後續 AI 或開發者不需重問背景即可接手</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>0. 給下一個 AI 的接手指令</h2>
+      <div class="summary">
+        <ol>
+          <li>一律使用繁體中文與使用者溝通、撰寫劇本。</li>
+          <li>
+            目前只打磨第一本「七上 × 阿基米德」。使用者確認前，
+            <strong>禁止批次產出其餘 29 本</strong>。
+          </li>
+          <li>
+            不確定時詢問，不要自行改動 IP、Eureka、史實結局或答題規則。
+          </li>
+          <li>
+            使用者偏好直接、具體、可執行的程式碼與結論，不要抽象口號。
+          </li>
+          <li>
+            專案目前有未提交修改。先讀實際檔案與 <code>git diff</code>，
+            不要假設 README 是最新規格。
+          </li>
+          <li>
+            題面不能靠「加一段場景前綴」或大量關鍵字替換假裝融入劇情；
+            必須回答「為何角色現在需要算這題，答案如何推動場景」。
+          </li>
+        </ol>
+      </div>
+
+      <div class="warning" style="margin-top: 5mm">
+        <strong>目前最重要的事：</strong>
+        先請使用者實玩並確認錨點 1–3 的新題面與打字機節奏；
+        再用相同品質標準改寫錨點 4–15。不要先擴充 29 本。
+      </div>
+
+      <h2>1. 一頁摘要</h2>
+      <ul>
+        <li>
+          <strong>產品：</strong>Numip RPG，數感宇宙 IP
+          下的純文字數學冒險；原下注、錢包、連勝、破產救濟等 Math Wager
+          機制全部移除。
+        </li>
+        <li>
+          <strong>進入流程：</strong>輸入名字 → 選年段 → 選數學家劇本 →
+          玩家本人與 NumNum、Numi 一起冒險。
+        </li>
+        <li>
+          <strong>內容矩陣：</strong>5 位數學家 × 6 個國中年段 = 30
+          本；目前只做第一本「七上 × 阿基米德」。
+        </li>
+        <li>
+          <strong>單局：</strong>固定史實主線與結局，穿插 15
+          個抽題錨點；題目從對應年段題庫抽取，同局不重複。
+        </li>
+        <li>
+          <strong>答錯：</strong>進入短繞路並抽同知識點、相近難度題；
+          最多 2 道類似題，之後強制接回主線。
+        </li>
+        <li>
+          <strong>正確率：</strong>答對題數 ÷
+          實際作答題數，主線題與繞路題全部計入。
+        </li>
+        <li>
+          <strong>介面：</strong>全螢幕、溫暖藍紫終端機感、一次一句打字機；
+          Enter 可補完／推進，保留最近 3 句並淡出舊句。
+        </li>
+        <li>
+          <strong>資料：</strong>1156 題本機題庫；劇本 JSON
+          資料驅動；本機 localStorage 單一存檔。
+        </li>
+      </ul>
+
+      <h2>2. 產品定位與非目標</h2>
+      <h3>產品定位</h3>
+      <p>
+        讓國中數學題不再像與故事無關的插題，而是成為歷史場景中的實際行動。
+        玩家不是旁觀者，也不是固定姐弟角色；玩家以自己輸入的名字進入劇本，
+        與 NumNum、Numi 共同經歷數學家的關鍵人生片段。
+      </p>
+
+      <h3>目前非目標</h3>
+      <ul>
+        <li>不保留任何下注、錢包、倍率或 streak 玩法。</li>
+        <li>MVP 不登入、不建立帳號、不做雲端存檔。</li>
+        <li>不讓 AI 即興生成數學題或答案；題目只能來自既有題庫。</li>
+        <li>不做可改變史實終點的多結局。</li>
+        <li>尚未開始產出其餘 29 本劇本。</li>
+      </ul>
+    </section>
+
+    <section class="page-break">
+      <h2>3. 數感宇宙 IP：不可擅改的核心</h2>
+      <h3>世界觀</h3>
+      <ul>
+        <li>
+          現實不存在完美直線、完美幾何與完美長度；完美只存在平行的「數學世界」。
+        </li>
+        <li>數學世界乾淨、藍紫、極安靜；人間場景使用暖色形成對比。</li>
+        <li>
+          人類經過漫長思考真正「想通」時，會爆發暖黃色能量
+          <strong>Eureka</strong>，能穿越時空召喚數學世界的存在。
+        </li>
+        <li>Eureka 對 NumNum、Numi 像甜點與能量食物。</li>
+      </ul>
+
+      <h3>角色</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>角色</th>
+            <th>固定設定</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>玩家</td>
+            <td>使用者輸入名字後本人進入劇本，不是旁觀者。</td>
+          </tr>
+          <tr>
+            <td>NumNum</td>
+            <td>愛思考與秩序，常整理數字；謹慎，語氣簡短。</td>
+          </tr>
+          <tr>
+            <td>Numi</td>
+            <td>行動派、衝動、愛追黃金螺旋，常撞亂 NumNum 的數列。</td>
+          </tr>
+          <tr>
+            <td>πmi</td>
+            <td>
+              NumNum 在數學世界打造的思考機器。屬於起源故事，但目前第一本冒險的固定同伴仍是
+              NumNum + Numi，不是 πmi。
+            </td>
+          </tr>
+          <tr>
+            <td>歷史人物</td>
+            <td>阿基米德、伽利略、牛頓、高斯、艾倫・圖靈。</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Eureka 規則</h3>
+      <ul>
+        <li class="decision">
+          只有使用者或數學家真正理解／學會某個知識的瞬間才出現。
+        </li>
+        <li>進入劇本不靠 Eureka，而是被遠方微光與細聲吸引。</li>
+        <li>一般答對只有場景文字回饋，不閃光、不喊 Eureka。</li>
+        <li>
+          第一本文案只在大節點觸發：浴缸浮力、槓桿原理；若節點綁題，
+          必須答對／通過後才觸發。
+        </li>
+      </ul>
+
+      <h2>4. 內容矩陣與課程範圍</h2>
+      <p>
+        5 位數學家（阿基米德、伽利略、牛頓、高斯、艾倫・圖靈）搭配
+        6 個年段（七上、七下、八上、八下、九上、九下），總計 30 本。
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>年段</th>
+            <th>題數</th>
+            <th>題庫大單元</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>七上</td>
+            <td>224</td>
+            <td>整數運算與科學記號；因數分解與分數運算；二元一次聯立方程式；平面直角坐標系</td>
+          </tr>
+          <tr>
+            <td>七下</td>
+            <td>200</td>
+            <td>一元一次方程式；比例；一元一次不等式；因數分解與分數運算；生活中的幾何圖形；統計圖表與資料分析；平面直角坐標系</td>
+          </tr>
+          <tr>
+            <td>八上</td>
+            <td>194</td>
+            <td>數列與等差級數；乘法公式與多項式；平方根與畢氏定理；函數及其圖形</td>
+          </tr>
+          <tr>
+            <td>八下</td>
+            <td>202</td>
+            <td>三角形的性質與尺規作圖；平行與四邊形；一元二次方程式；因式分解；統計資料處理與圖表；平方根與畢氏定理</td>
+          </tr>
+          <tr>
+            <td>九上</td>
+            <td>170</td>
+            <td>比例線段與相似形；二次函數；圓的性質；統計與機率</td>
+          </tr>
+          <tr>
+            <td>九下</td>
+            <td>166</td>
+            <td>圓的性質；統計與機率；推理證明與三角形的心；立體幾何圖形</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="small">
+        跨冊單元以每題自身的 <code>grade</code> / <code>half</code>
+        為準。實際題庫檔案目前共 1156 題。
+      </p>
+    </section>
+
+    <section class="page-break">
+      <h2>5. 玩家流程與狀態機</h2>
+      <div class="flow">title
+  → name（輸入玩家名）
+  → grade（七上／七下／八上／八下／九上／九下）
+  → script（選數學家）
+  → resume（若該劇本有存檔）
+  → play
+  → ending（顯示正確率）</div>
+
+      <h3>主線節點</h3>
+      <div class="flow">narrative / eureka
+  → 打字機逐句播放
+  → Enter 推進
+  → next 節點
+
+quiz
+  → 播放 setup 台詞
+  → 抽題並做場景改寫
+  → 顯示題幹與選項／數字輸入
+  → 正確：場景回饋 → onCorrect
+  → 錯誤：繞路台詞 → 同知識點相近難度題
+  → 類似題最多 2 道 → 超過後強制接回 onCorrect</div>
+
+      <h3>答題規則</h3>
+      <ul>
+        <li>每本固定 15 個抽題錨點，不綁死單一題目。</li>
+        <li>同一局排除已抽過的 <code>questionId</code>。</li>
+        <li>
+          類似題優先同知識點、相近難度；題型可以在選擇與填答間變化。
+        </li>
+        <li>答錯不改變結局，只增加路程。</li>
+        <li>
+          正確率 =
+          <code>correctCount / attemptCount</code>，所有實際作答都計入。
+        </li>
+      </ul>
+
+      <h2>6. 打字機與互動規格</h2>
+      <ul>
+        <li>一次顯示一句，逐字出現；目前速度 <code>TYPE_MS = 28</code>。</li>
+        <li>打字中按 Enter：立即補完整句。</li>
+        <li>句子已完整時按 Enter：顯示下一句或進入下一節點。</li>
+        <li>畫面最多保留最近 3 句；舊句依序降到 52%、28% 透明度。</li>
+        <li>答題前的 setup 也走同一隊列，播完才揭露題目。</li>
+        <li>
+          選擇題點選後，焦點會抓回遊戲殼層；這是為了修復「答完後按 Enter
+          沒反應」。
+        </li>
+        <li>選擇題可點 A–D；填答題在輸入列輸入後按 Enter 或提交。</li>
+      </ul>
+
+      <h2>7. 題面劇情化：已鎖定原則</h2>
+      <ul>
+        <li>整段情境要換成當下劇本場景，不只加旁白。</li>
+        <li>數字、算式、未知數、選項字母與正確答案不得改變。</li>
+        <li>原本是文字題也要整段重寫；選項文字同步改成劇本語彙。</li>
+        <li>純算式可保留數學核心，但提問原因必須屬於當下行動。</li>
+        <li>
+          禁止「【場景】」「照板上的紀錄算」等外掛標籤；題面本身就是劇情。
+        </li>
+        <li>
+          MVP 由人工模板／精選題面負責，保留
+          <code>adaptQuestionAI()</code> 接口；AI 失敗時回原題。
+        </li>
+      </ul>
+
+      <h3>目前錨點 1–3 的實作方式</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>錨點</th>
+            <th>場景</th>
+            <th>精選題 ID</th>
+            <th>改寫重點</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>石階標高</td>
+            <td>2149, 2150, 2156, 2157</td>
+            <td>港面、石階、瞭望塔、蓄水池的正負基準。</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>王冠差重</td>
+            <td>2193, 2194, 2196</td>
+            <td>金冠、金塊、托盤與砝碼板的正負差重。</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>工坊天平</td>
+            <td>2211, 2213, 2214, 2216, 2218</td>
+            <td>木樑秤、括號拆解與最後讀數。</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        <code>questionPool.js</code> 已支援 <code>questionIds</code>
+        白名單，因此主題不適合的題目不會被抽到；繞路題也遵守同一白名單。
+      </p>
+    </section>
+
+    <section class="page-break">
+      <h2>8. 第一本文案：七上 × 阿基米德</h2>
+      <p>
+        每本聚焦一段關鍵人生／發明片段，不做濃縮一生紀錄片，但仍收在固定史實結局。
+        第一本文案從敘拉古、王冠與浮力，推進至多年後的城防與死亡。
+      </p>
+
+      <h3>30 個節點與 15 個題目錨點</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>節點</th>
+            <th>類型</th>
+            <th>場景／作用</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>open_math_world</td><td>narrative</td><td>數學世界、微光、抵達敘拉古</td></tr>
+          <tr><td>2</td><td>q01</td><td>quiz</td><td>1：石階標高</td></tr>
+          <tr><td>3</td><td>meet_archimedes</td><td>narrative</td><td>結識阿基米德、王冠疑雲</td></tr>
+          <tr><td>4</td><td>q02</td><td>quiz</td><td>2：王冠差重</td></tr>
+          <tr><td>5</td><td>to_workshop</td><td>narrative</td><td>前往工坊</td></tr>
+          <tr><td>6</td><td>q03</td><td>quiz</td><td>3：工坊天平</td></tr>
+          <tr><td>7–8</td><td>market_rush → q04</td><td>narrative / quiz</td><td>4：市集買材料</td></tr>
+          <tr><td>9–10</td><td>q05_setup → q05</td><td>narrative / quiz</td><td>5：分配律現場</td></tr>
+          <tr><td>11–12</td><td>bath_eve → q06</td><td>narrative / quiz</td><td>6：浴室前夜</td></tr>
+          <tr><td>13–14</td><td>q07 → eureka_bath</td><td>quiz / eureka</td><td>7：浴缸浮力真正 Eureka</td></tr>
+          <tr><td>15–16</td><td>q08 → king_convinced</td><td>quiz / narrative</td><td>8：驗冠</td></tr>
+          <tr><td>17–18</td><td>q09 → years_later</td><td>quiz / narrative</td><td>9：戰備物資；多年後轉場</td></tr>
+          <tr><td>19–20</td><td>q10 → eureka_lever</td><td>quiz / eureka</td><td>10：槓桿宣言真正 Eureka</td></tr>
+          <tr><td>21–22</td><td>q11 → wall_map</td><td>quiz / narrative</td><td>11：防衛會議</td></tr>
+          <tr><td>23</td><td>q12</td><td>quiz</td><td>12：城牆座標</td></tr>
+          <tr><td>24–25</td><td>q13 → siege_eve</td><td>quiz / narrative</td><td>13：象限警報</td></tr>
+          <tr><td>26–27</td><td>q14 → last_circles</td><td>quiz / narrative</td><td>14：城破前夕</td></tr>
+          <tr><td>28–30</td><td>q15 → ending_death → ending_stats</td><td>quiz / narrative / ending</td><td>15：最後一刻；克制死亡；道別與結算</td></tr>
+        </tbody>
+      </table>
+
+      <h3>結局濃度</h3>
+      <p>
+        已鎖定為稍長收尾：城破 → 遇害（克制、點到為止）→
+        「他已成希臘最了不起的數學家」時間淡出 → 道別 →
+        顯示正確率。任何答題分支都不可更改這個史實終點。
+      </p>
+    </section>
+
+    <section class="page-break">
+      <h2>9. 技術架構</h2>
+      <h3>技術棧</h3>
+      <ul>
+        <li>React 19 + React DOM</li>
+        <li>Vite 8</li>
+        <li>Tailwind CSS 4（目前大量樣式直接寫在 <code>index.css</code>）</li>
+        <li>KaTeX 0.18，用於題目中的 TeX 數學式</li>
+        <li>oxlint</li>
+      </ul>
+
+      <h3>主要檔案</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>路徑</th>
+            <th>責任</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>src/App.jsx</code></td>
+            <td>整個 MVP 的 phase、遊戲狀態、打字機、節點推進、答題、存檔與畫面渲染。</td>
+          </tr>
+          <tr>
+            <td><code>src/data/questionBank.json</code></td>
+            <td>1156 題本機題庫；欄位包含 id、grade、half、chapter、knowledgePoint、difficulty、question、answer、answerType、options。</td>
+          </tr>
+          <tr>
+            <td><code>src/data/scripts/g7h1-archimedes.json</code></td>
+            <td>第一本完整主線、30 節點、15 錨點、題池、setup、Eureka、回饋與固定結局。</td>
+          </tr>
+          <tr>
+            <td><code>src/data/scripts/index.js</code></td>
+            <td>載入並列出可玩的劇本；目前只有一冊。</td>
+          </tr>
+          <tr>
+            <td><code>src/lib/questionPool.js</code></td>
+            <td>依 grade / half / chapter / knowledgePoint / questionIds 過濾、隨機抽題、排除重複、抽相似題。</td>
+          </tr>
+          <tr>
+            <td><code>src/lib/adaptQuestion.js</code></td>
+            <td>題面場景改寫。前三錨點使用 sceneId + questionId 的人工精選映射；保留 AI 接口。</td>
+          </tr>
+          <tr>
+            <td><code>src/lib/detour.js</code></td>
+            <td>每錨點優先的成功／繞路／強制繼續回饋，否則退回全劇本模板。</td>
+          </tr>
+          <tr>
+            <td><code>src/lib/saveGame.js</code></td>
+            <td>以 <code>numip-rpg-save-v1</code> 存取 localStorage。</td>
+          </tr>
+          <tr>
+            <td><code>src/lib/rpgUtils.js</code></td>
+            <td>玩家名替換、答案正規化與比對、找節點、正確率。</td>
+          </tr>
+          <tr>
+            <td><code>src/components/MathText.jsx</code></td>
+            <td>將中文題幹中的 TeX 片段切分並以 KaTeX 內嵌渲染。</td>
+          </tr>
+          <tr>
+            <td><code>src/index.css</code></td>
+            <td>全螢幕藍紫終端機感、角色色彩、打字游標、淡出、題目與輸入列。</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>App 內部遊戲狀態</h3>
+      <pre>{
+  nodeId,
+  usedQuestionIds,
+  correctCount,
+  attemptCount,
+  quiz,
+  queue,          // 尚未播放的台詞
+  visible,        // 最近三句：speaker / full / shownLen
+  afterQueue,     // show-quiz | ending-stats | { go: nodeId }
+  inputLocked
+}</pre>
+
+      <h3>Quiz 狀態</h3>
+      <pre>{
+  questionId,
+  question,       // 原始題庫題目
+  adapted,        // displayQuestion / displayOptions / rawQuestion
+  detourCount,
+  isDetour,
+  awaitingAnswer,
+  revealed
+}</pre>
+
+      <h3>劇本節點 schema</h3>
+      <pre>// narrative / eureka
+{
+  id, type, lines: [{ speaker, text }], next
+}
+
+// quiz
+{
+  id, type: "quiz", anchor, scene,
+  setup: [{ speaker, text }],
+  pool: {
+    grade, half, chapterIncludes,
+    knowledgePoint?, questionIds?
+  },
+  sceneAdapt: { sceneId, setting, cast, props },
+  successVariants, detourVariants,
+  forceContinueVariants?,
+  onCorrect
+}</pre>
+    </section>
+
+    <section class="page-break">
+      <h2>10. 存檔模型</h2>
+      <ul>
+        <li>MVP 純 localStorage，無登入。</li>
+        <li>每個劇本設計上只有一個最新存檔；目前實作實際上是全站單一 key。</li>
+        <li>每過節點或答完題自動寫入。</li>
+        <li>新開一局才播放「微光吸引」開場；讀檔從存下的節點重播。</li>
+        <li>存下玩家名、劇本 ID、節點、已用題 ID、答對數、作答數與 quiz。</li>
+      </ul>
+      <pre>localStorage key: numip-rpg-save-v1
+{
+  version: 1,
+  scriptId,
+  playerName,
+  nodeId,
+  pageIndex,
+  usedQuestionIds,
+  correctCount,
+  attemptCount,
+  quiz,
+  updatedAt
+}</pre>
+
+      <div class="warning">
+        <strong>注意：</strong><code>App.persist()</code> 傳入
+        <code>lineIndex</code>，但 <code>saveGame()</code> 儲存的是
+        <code>pageIndex</code>。目前讀檔本來就簡化為「從節點開頭重播」，
+        因此不會精準恢復到句中；若要精準續播，需統一欄位並版本遷移。
+      </div>
+
+      <h2>11. 目前 UI／視覺決策</h2>
+      <ul>
+        <li>整個遊戲殼全螢幕，不再是置中的小卡片。</li>
+        <li>進入遊戲後沒有上方標題區。</li>
+        <li>左上「NUMIP RPG／數感宇宙・文字冒險」已從所有畫面移除。</li>
+        <li>首頁仍保留置中的大型 NUMIP 標誌。</li>
+        <li>首頁標語「追微光。想通的時候，才會有 Eureka。」已刪除。</li>
+        <li>題目不顯示「1 / 15」進度；答錯時仍可顯示「再試一次」。</li>
+        <li>對話欄最大寬 960px，垂直置中；字級使用響應式 clamp，桌面最高約 1.9rem。</li>
+        <li>角色前綴用不同顏色：NumNum 藍、Numi 橘、阿基米德米色、玩家綠。</li>
+        <li>Eureka 節點使用全畫面暖黃內光，不是每題答對都觸發。</li>
+      </ul>
+
+      <h2>12. 已完成、未完成、已知風險</h2>
+      <h3>已完成</h3>
+      <ul>
+        <li>原 Math Wager 主介面與玩法已替換為文字 RPG。</li>
+        <li>名字、年段、劇本選擇與存檔／讀檔流程。</li>
+        <li>第一本 30 節點、15 題錨點、固定結局。</li>
+        <li>抽題、同局排重、繞路、最多 2 道類似題、正確率。</li>
+        <li>打字機、最近 3 句淡出、Enter 補完／推進。</li>
+        <li>全螢幕與大字版面；移除 header、標語與題數進度。</li>
+        <li>錨點 1–3 精選題池與逐題劇情改寫。</li>
+        <li>目前 production build 可通過。</li>
+      </ul>
+
+      <h3>尚未完成</h3>
+      <ul>
+        <li class="pending">使用者尚未正式確認錨點 1–3 的新題面品質。</li>
+        <li class="pending">錨點 4–15 尚未依同一標準完整精修。</li>
+        <li>其餘 29 本尚未製作，且現在不應製作。</li>
+        <li><code>adaptQuestionAI()</code> 與 AI detour 仍是空接口。</li>
+        <li>GitHub repo 與 Vercel 專案／網域尚未實際改名為 numip-rpg。</li>
+        <li>README 仍描述舊 MATH WAGER，明顯過期。</li>
+        <li>尚無自動化測試；目前靠 build、lint 與瀏覽器煙霧測試。</li>
+      </ul>
+
+      <h3>已知技術債與風險</h3>
+      <ul>
+        <li>
+          <strong>單體 App：</strong><code>App.jsx</code>
+          同時負責狀態機、打字機、題目與 UI；擴充 30 本前應拆 hook／reducer。
+        </li>
+        <li>
+          <strong>存檔欄位：</strong><code>lineIndex</code> /
+          <code>pageIndex</code> 不一致，且目前只有單一全站 key。
+        </li>
+        <li>
+          <strong>文字品質：</strong>錨點 4–15
+          仍可能有硬貼劇情、泛用回饋與 AI 感。
+        </li>
+        <li>
+          <strong>題庫 bundle：</strong>1156 題直接打包進前端，build
+          chunk 約 1.26 MB；日後可依年段切檔／動態載入。
+        </li>
+        <li>
+          <strong>依賴清理：</strong><code>canvas-confetti</code>、
+          <code>lucide-react</code> 可能是舊版殘留，應確認是否仍使用。
+        </li>
+        <li>
+          <strong>lint：</strong>目前 3 個 warning：MathText 兩個
+          <code>no-useless-escape</code>，App 一個
+          <code>react-hooks/exhaustive-deps</code>。
+        </li>
+        <li>
+          <strong>歷史殘留：</strong>遠端仍為
+          <code>math_wager.git</code>，README 與部分檔案命名可能仍反映舊產品。
+        </li>
+      </ul>
+    </section>
+
+    <section class="page-break">
+      <h2>13. 建議下一步（依優先順序）</h2>
+      <ol>
+        <li>
+          <strong>讓使用者實玩錨點 1–3：</strong>
+          收集題面自然度、節奏、字級與回饋意見；先不要擴大範圍。
+        </li>
+        <li>
+          <strong>修正前三錨點細節：</strong>
+          若數字雖正確但場景尺度不自然，應更換精選題或重寫情境，
+          不可只做文字替換。
+        </li>
+        <li>
+          <strong>精修錨點 4–15：</strong>
+          每個錨點先定義「角色目的 → 題目動作 → 答案造成的場景結果」，
+          再建立精選題 ID 與逐題改寫。
+        </li>
+        <li>
+          <strong>補測試：</strong>
+          先針對 questionPool、checkAnswer、detour 上限、accuracy、存檔恢復、
+          Enter 推進建立單元／互動測試。
+        </li>
+        <li>
+          <strong>重構 App：</strong>
+          將遊戲狀態改為 reducer／狀態機，抽出
+          <code>useTypewriter</code>、<code>useGameSave</code> 與 Quiz 元件。
+        </li>
+        <li>
+          <strong>清理舊專案：</strong>
+          更新 README、移除未使用依賴與資產、修 lint warning。
+        </li>
+        <li>
+          <strong>確認第一本後才擴充：</strong>
+          建立劇本 schema validator 與腳手架，再生產其餘 29 本。
+        </li>
+        <li>
+          <strong>最後處理命名部署：</strong>
+          GitHub repo 改為 <code>numip-rpg</code>，Vercel
+          專案與網域同步更新。
+        </li>
+      </ol>
+
+      <h2>14. 驗收清單</h2>
+      <h3>劇情與 IP</h3>
+      <ul>
+        <li>玩家本人與 NumNum、Numi 同行。</li>
+        <li>開場靠微光／細聲，不靠 Eureka 傳送。</li>
+        <li>一般答對無 Eureka；只有真正理解的大節點觸發。</li>
+        <li>王冠段到城破段有清楚「多年後」轉場。</li>
+        <li>所有分支都回到固定史實結局。</li>
+      </ul>
+
+      <h3>題目</h3>
+      <ul>
+        <li>題目來自正確年段／冊別。</li>
+        <li>數字、算式、未知數、選項字母、答案未改。</li>
+        <li>題面本身成立為當下場景，不靠標籤或前綴。</li>
+        <li>同局不重複；繞路題不是剛答錯的原題。</li>
+        <li>最多 2 道類似題後強制接回主線。</li>
+      </ul>
+
+      <h3>操作</h3>
+      <ul>
+        <li>打字中 Enter 補完；打完 Enter 下一句。</li>
+        <li>答完選擇題後 Enter 仍可推進。</li>
+        <li>手機與桌面皆全螢幕且字級可讀。</li>
+        <li>遊戲中無 header、無題數進度。</li>
+        <li>中斷後可從存檔節點繼續，統計不遺失。</li>
+      </ul>
+
+      <h2>15. 本機操作與目前版本資訊</h2>
+      <pre>cd "/Users/bear/Projects/math game"
+npm install
+npm run dev       # 通常 http://127.0.0.1:5173/
+npm run lint
+npm run build
+npm run preview</pre>
+      <ul>
+        <li>package name：<code>numip-rpg</code></li>
+        <li>目前 Git branch：<code>main</code></li>
+        <li>目前 remote：<code>https://github.com/bearz0811-num/math_wager.git</code></li>
+        <li>截至文件產出時，有多個未提交修改與新增檔案。</li>
+      </ul>
+
+      <div class="warning">
+        <strong>交接結論：</strong>
+        這不是「寫完 30 本」的階段，而是「把第一本的互動語言與題目融合標準打磨正確」的階段。
+        後續工作的品質基準應來自使用者對前三錨點的實玩確認。
+      </div>
+    </section>
+  </body>
+</html>
