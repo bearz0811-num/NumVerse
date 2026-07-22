@@ -177,16 +177,6 @@ function extractGrantedBuff(text) {
   return m ? m[1].trim() : null
 }
 
-function flagsAreActive(flags) {
-  return Object.values(flags || {}).some((v) => Number(v) !== 0)
-}
-
-function nodeTouchesPhilosophy(node) {
-  if (!node) return false
-  if (node.type === 'philosophy' || node.type === 'ending') return true
-  return (node.options || []).some((o) => o.flags && Object.keys(o.flags).length)
-}
-
 /** 姐弟解題抉擇時：往前找最近的題面（problem）一起顯示；答題後劇情分歧不掛題 */
 function findLinkedQuestion(chapter, nodeIndex) {
   if (!chapter?.nodes) return null
@@ -198,17 +188,6 @@ function findLinkedQuestion(chapter, nodeIndex) {
     if (n.type === 'quiz') return null
   }
   return null
-}
-
-function FlagStrip({ flags }) {
-  return (
-    <div className="nv-flags">
-      哲學軸向：[決定論↔自由意志 {flags.determinism_vs_freewill}｜柏拉圖主義↔建構主義{' '}
-      {flags.platonism_vs_constructivism}｜實用↔美學 {flags.utility_vs_aesthetics}｜冷酷邏輯↔人文同理{' '}
-      {flags.coldlogic_vs_empathy}]
-      <span className="nv-muted">（正值偏左軸，負值偏右軸）</span>
-    </div>
-  )
 }
 
 /** 終端機風格外框（避免中英混排把 ASCII 框撐歪） */
@@ -888,7 +867,7 @@ export default function App() {
 
           <div className="nv-chapter-card">
             <div className="nv-chapter-card-title">
-              【第{selected.chapterIndex || '—'}章：{selected.title}篇】
+              【{selected.title}篇】
             </div>
             {selected.subtitle ? (
               <div className="nv-chapter-card-stats">{selected.subtitle}</div>
@@ -1326,9 +1305,6 @@ export default function App() {
           ) : null}
         </div>
 
-        {nodeTouchesPhilosophy(node) ? (
-          <FlagStrip flags={save.philosophy_flags} />
-        ) : null}
         <button
           type="button"
           className="nv-btn ghost"

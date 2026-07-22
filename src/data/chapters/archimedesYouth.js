@@ -695,7 +695,7 @@ export const archimedesYouth = {
         },
         {
           speaker: 'SYS',
-          text: '★ 達成結局【理性的冷酷神殿】！獲得【Eureka 幣 × 1】！哲學軸向已寫入終端，準備返回台北。',
+          text: '★ 達成結局【理性的冷酷神殿】！獲得【Eureka 幣 × 1】！',
         },
       ],
     },
@@ -719,7 +719,7 @@ export const archimedesYouth = {
         },
         {
           speaker: 'SYS',
-          text: '★ 達成結局【溫暖的理性之光】！獲得【Eureka 幣 × 1】！哲學軸向已寫入終端，準備返回台北。',
+          text: '★ 達成結局【溫暖的理性之光】！獲得【Eureka 幣 × 1】！',
         },
       ],
     },
