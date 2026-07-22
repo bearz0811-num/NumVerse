@@ -7,10 +7,10 @@
   "gradeLabel": "七上",
   "mathematician": "阿基米德",
   "mathematicianSpeaker": "Archimedes",
-  "episode": "敘拉古：王冠、Eureka、防衛與最後一刻",
+  "episode": "敘拉古：王冠與第一次 Eureka",
   "setting": "敘拉古",
   "journalTitle": "敘拉古",
-  "endingSummary": "敘拉古城破，阿基米德遇害；他留下的浮力、槓桿與幾何研究跨越兩千多年",
+  "endingSummary": "王冠摻假查明、浴缸浮力 Eureka 與工坊槓桿原理皆已想通；阿基米德還會繼續想下去——更大的考驗，是另一段故事",
   "language": "zh-TW",
   "companions": [
     "NumNum",
@@ -22,10 +22,9 @@
   "notes": [
     "進入不靠 Eureka，靠微光／細聲吸引",
     "真正 Eureka 僅大節點：浴缸浮力、槓桿原理（答對／通過後引爆）",
-    "王冠段與城破段之間用「多年後」旁白銜接",
-    "結局：遇害（克制）→ 他已成希臘最了不起的數學家 → 道別／結算",
+    "本冊只寫王冠與和平時期工坊；圍城／遇害在其他年段劇本（如九下×阿基米德）",
     "choice 節點：短支線後匯回主線；whenChoice 控制後續回聲台詞",
-    "objective 四段任務鏈：查明王冠 → 排水驗證 → 守城 → 最後一筆"
+    "objective 四段任務鏈：查明王冠 → 排水驗證 → 弄懂槓桿 → 道別"
   ],
   "detourTemplates": [
     [
@@ -1171,109 +1170,113 @@
     {
       "id": "king_convinced",
       "type": "narrative",
-      "next": "choice_supply",
+      "next": "choice_workshop",
+      "objective": "弄懂槓桿",
       "lines": [
         {
           "speaker": "narrator",
-          "text": "私庫裡，純金原封不動；一旁還囤著繩索、銅片，和成捆的麻袋布。"
-        },
-        {
-          "speaker": "Archimedes",
-          "text": "純金一克都沒少。旁邊這些繩索和銅片，正好送去軍庫。"
+          "text": "私庫裡，純金原封不動。希倫王親自來核對。"
         },
         {
           "speaker": "King",
-          "text": "金匠贓物全部沒收。金屬和繩索併入軍庫——今晚連同舊庫存，一起重分給新編的守備隊。"
-        },
-        {
-          "speaker": "narrator",
-          "text": "傍晚，軍庫門口擠成一團。沒收來的繩索銅片，和原本的糧袋、盾牌堆成小山，隊長們為了怎麼分幾乎吵起來。"
-        },
-        {
-          "speaker": "Captain",
-          "text": "誰分到什麼、哪隊哪天巡邏——再這樣亂下去，城還沒守，我們自己先打起來了！"
+          "text": "阿基米德——還有你們。王冠的事，你們辦得很漂亮。"
         },
         {
           "speaker": "Archimedes",
-          "text": "先數清楚。搶著分，只會分得更亂。"
-        }
-      ],
-      "objective": "協助敘拉古守城"
-    },
-    {
-      "id": "choice_supply",
-      "type": "choice",
-      "objective": "協助敘拉古守城",
-      "lines": [
-        {
-          "speaker": "Captain",
-          "text": "軍庫門口快打起來了！你說——先數清楚東西，還是先把隊伍排開？"
+          "text": "是排水告訴我們的。不是我一個人想通。"
         },
         {
-          "speaker": "NumNum",
-          "text": "沒數清楚就分，只會分得更亂。"
+          "speaker": "King",
+          "text": "金匠的手腳已查清。這座城欠你們一個安靜的下午。"
+        },
+        {
+          "speaker": "Archimedes",
+          "text": "國王，請先回宮。我想帶 {{address}}、NumNum、Numi 回工坊——有件事，關於「力與距離」。"
         },
         {
           "speaker": "Numi",
-          "text": "可是他們現在已經在搶了……先站好隊，會不會比較快？"
+          "text": "力與距離？比王冠還好玩嗎？"
+        },
+        {
+          "speaker": "Archimedes",
+          "text": "不同種好玩。走。器材還散在地上。"
+        }
+      ]
+    },
+    {
+      "id": "choice_workshop",
+      "type": "choice",
+      "objective": "弄懂槓桿",
+      "lines": [
+        {
+          "speaker": "Archimedes",
+          "text": "工坊剛被我們翻過一遍。槓桿示範之前——你要先把器材數清楚，還是先把工作臺排開？"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "沒數清楚就排，只會排得更亂。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "可是臺面空出來，搬東西比較快啊！"
         }
       ],
       "choices": [
         {
           "id": "count",
-          "label": "先清點物資",
-          "next": "branch_supply_count"
+          "label": "先清點器材",
+          "next": "branch_workshop_count"
         },
         {
-          "id": "ranks",
-          "label": "先安排行伍",
-          "next": "branch_supply_ranks"
+          "id": "bench",
+          "label": "先排開工作臺",
+          "next": "branch_workshop_bench"
         }
       ]
     },
     {
-      "id": "branch_supply_count",
+      "id": "branch_workshop_count",
       "type": "narrative",
+      "next": "q09",
       "lines": [
         {
           "speaker": "narrator",
-          "text": "你蹲在糧袋與繩捆之間，一袋一袋點。喧嘩漸漸被數字壓住。"
+          "text": "你蹲在砝碼箱與木臂零件之間，一件一件點。喧嘩漸漸被數字壓住。"
         },
         {
           "speaker": "Archimedes",
-          "text": "好。數字出來了，才談怎麼分。"
+          "text": "好。數字出來了，才談怎麼分給各組實驗。"
         }
-      ],
-      "next": "q09"
+      ]
     },
     {
-      "id": "branch_supply_ranks",
+      "id": "branch_workshop_bench",
       "type": "narrative",
+      "next": "q09",
       "lines": [
         {
           "speaker": "narrator",
-          "text": "你拉高聲音，叫各隊站到指定位置。推擠慢了下來。"
+          "text": "你把長桌、沙盤與掛鉤依序推到位。腳步有了空隙。"
         },
         {
-          "speaker": "Captain",
-          "text": "……行。站好了。現在可以談怎麼分。"
+          "speaker": "Archimedes",
+          "text": "……行。臺面空了。現在可以談怎麼分。"
         },
         {
           "speaker": "NumNum",
-          "text": "站好了還不夠——件數還是要整除。"
+          "text": "空了還不夠——件數還是要整除。"
         }
-      ],
-      "next": "q09"
+      ]
     },
     {
       "id": "q09",
       "type": "quiz",
       "anchor": 9,
-      "scene": "分戰備物資",
+      "scene": "分實驗器材",
       "setup": [
         {
-          "speaker": "Captain",
-          "text": "每隊分到的要一樣，也不能剩；輪值也得對齊——否則總有人覺得自己吃虧。"
+          "speaker": "Archimedes",
+          "text": "砝碼、繩圈、木楔要均勻分給幾組學徒，也不能剩；輪用掛鉤的時段也得對齊。"
         },
         {
           "speaker": "NumNum",
@@ -1285,20 +1288,20 @@
         },
         {
           "speaker": "Archimedes",
-          "text": "{{address}}，你來。算清楚了，他們才肯安靜下來。"
+          "text": "{{address}}，你來。算清楚了，我們才好開始槓桿。"
         },
         {
-          "speaker": "Captain",
+          "speaker": "Archimedes",
           "text": "你先清點，這批數字才站得住。",
           "whenChoice": {
-            "choice_supply": "count"
+            "choice_workshop": "count"
           }
         },
         {
-          "speaker": "Captain",
-          "text": "行伍先排好——分東西才不會又吵起來。",
+          "speaker": "Archimedes",
+          "text": "工作臺先排好——分器材才不會又擠成一團。",
           "whenChoice": {
-            "choice_supply": "ranks"
+            "choice_workshop": "bench"
           }
         }
       ],
@@ -1314,34 +1317,34 @@
         ]
       },
       "sceneAdapt": {
-        "setting": "敘拉古軍庫／廣場",
+        "setting": "敘拉古工坊",
         "cast": [
-          "希倫王",
           "阿基米德",
           "玩家",
           "NumNum",
           "Numi"
         ],
         "props": [
-          "糧袋",
-          "繩捆",
-          "盾牌分組"
+          "砝碼",
+          "繩圈",
+          "木楔",
+          "掛鉤"
         ],
-        "sceneId": "supply_split"
+        "sceneId": "workshop_split"
       },
-      "onCorrect": "years_later",
+      "onCorrect": "lever_prep",
       "onWrong": "detour",
       "successVariants": [
         [
           {
             "speaker": "narrator",
-            "text": "戰備分組，終於排好了。"
+            "text": "實驗分組，終於排好了。"
           }
         ],
         [
           {
-            "speaker": "King",
-            "text": "好。拿去用。"
+            "speaker": "Archimedes",
+            "text": "好。可以談力了。"
           }
         ],
         [
@@ -1367,41 +1370,41 @@
       ]
     },
     {
-      "id": "years_later",
+      "id": "lever_prep",
       "type": "narrative",
       "next": "choice_lever",
+      "objective": "弄懂槓桿",
       "lines": [
         {
           "speaker": "narrator",
-          "text": "——多年後。"
-        },
-        {
-          "speaker": "narrator",
-          "text": "海風更鹹，城牆更高。阿基米德的鬍鬚白了，眼神卻比從前更亮。"
-        },
-        {
-          "speaker": "Numi",
-          "text": "咦……時間怎麼跳這麼快？"
-        },
-        {
-          "speaker": "NumNum",
-          "text": "故事有時會這樣跳。我們只會留在他最需要我們的那些片段裡。"
+          "text": "午後陽光斜進工坊。一根長木臂架在支點上，兩端掛著可換的配重。"
         },
         {
           "speaker": "Archimedes",
-          "text": "羅馬的船來了。我有話想說——關於槓桿。"
+          "text": "王冠靠排水。現在我想讓你們看見另一件事——很小的力，也能撬動很大的質量。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "真的假的？我也可以撬地球嗎？"
+        },
+        {
+          "speaker": "Archimedes",
+          "text": "給我一個支點，我就能撬動地球。——先從這根臂開始。"
+        },
+        {
+          "speaker": "NumNum",
+          "text": "力，和距離。別急著喊。"
         }
-      ],
-      "objective": "協助敘拉古守城"
+      ]
     },
     {
       "id": "choice_lever",
       "type": "choice",
-      "objective": "協助敘拉古守城",
+      "objective": "弄懂槓桿",
       "lines": [
         {
           "speaker": "Archimedes",
-          "text": "投石機就在眼前。你要先處理配重，還是先量這條長臂到支點的距離？"
+          "text": "槓桿就在眼前。你要先處理配重，還是先量這條長臂到支點的距離？"
         },
         {
           "speaker": "Numi",
@@ -1428,6 +1431,7 @@
     {
       "id": "branch_lever_weights",
       "type": "narrative",
+      "next": "q10",
       "lines": [
         {
           "speaker": "narrator",
@@ -1437,12 +1441,12 @@
           "speaker": "Archimedes",
           "text": "感覺到了？質量一變，力矩就跟著變。接下來把它寫成數線。"
         }
-      ],
-      "next": "q10"
+      ]
     },
     {
       "id": "branch_lever_reach",
       "type": "narrative",
+      "next": "q10",
       "lines": [
         {
           "speaker": "narrator",
@@ -1452,20 +1456,19 @@
           "speaker": "Archimedes",
           "text": "左負右正。距離用絕對值——你量的，就是等一下要用的。"
         }
-      ],
-      "next": "q10"
+      ]
     },
     {
       "id": "q10",
       "type": "quiz",
       "anchor": 10,
-      "scene": "投石機槓桿",
+      "scene": "工坊槓桿",
       "eureka": true,
       "eurekaId": "lever",
       "setup": [
         {
           "speaker": "narrator",
-          "text": "羅馬戰艦的鐵頭衝角撞擊城牆。阿基米德站在巨型投石機旁，指向長長的木製槓桿臂。"
+          "text": "木臂靜靜架著。阿基米德指向支點，又指向兩側可掛砝碼的缺口。"
         },
         {
           "speaker": "Archimedes",
@@ -1473,7 +1476,7 @@
         },
         {
           "speaker": "Archimedes",
-          "text": "{{address}}，支點設為數線原點 0：左方配重記負，右方彈射籃記正。距離看絕對值，左右看正負。"
+          "text": "{{address}}，支點設為數線原點 0：左方配重記負，右方負載記正。距離看絕對值，左右看正負。"
         },
         {
           "speaker": "NumNum",
@@ -1507,7 +1510,7 @@
       },
       "sceneAdapt": {
         "sceneId": "lever_equation",
-        "setting": "敘拉古城牆巨型投石機",
+        "setting": "敘拉古工坊槓桿臺",
         "cast": [
           "阿基米德",
           "玩家",
@@ -1518,7 +1521,7 @@
           "槓桿臂",
           "支點",
           "配重",
-          "彈射籃"
+          "負載"
         ]
       },
       "onCorrect": "eureka_lever",
@@ -1539,7 +1542,7 @@
         [
           {
             "speaker": "Numi",
-            "text": "這樣就能打了！"
+            "text": "木臂自己動了一下！"
           }
         ]
       ],
@@ -1605,15 +1608,15 @@
       "id": "q11",
       "type": "quiz",
       "anchor": 11,
-      "scene": "投石機防衛會議",
+      "scene": "工坊聯立配比",
       "setup": [
         {
           "speaker": "narrator",
-          "text": "議事廳裡，投石機的彈藥配重和防禦兵力，必須同時對上兩項戰術條件。"
+          "text": "槓桿演示之後，阿基米德要同時調兩種材料：支點墊片的厚度，與配重箱的填充。"
         },
         {
           "speaker": "Archimedes",
-          "text": "配重不能少，兵力也不能少。兩個未知，得用兩條式子一起解。"
+          "text": "墊片不能少，配重也不能少。兩個未知，得用兩條式子一起解。"
         },
         {
           "speaker": "NumNum",
@@ -1632,28 +1635,27 @@
         ]
       },
       "sceneAdapt": {
-        "setting": "敘拉古議事廳",
+        "setting": "敘拉古工坊",
         "cast": [
           "阿基米德",
-          "將領",
           "玩家",
           "NumNum",
           "Numi"
         ],
         "props": [
-          "沙盤",
-          "投石機配重表",
-          "兵力標籤"
+          "墊片紀錄",
+          "配重箱",
+          "木炭算式"
         ],
-        "sceneId": "defense_council"
+        "sceneId": "workshop_systems"
       },
-      "onCorrect": "wall_map",
+      "onCorrect": "harbor_map",
       "onWrong": "detour",
       "successVariants": [
         [
           {
             "speaker": "narrator",
-            "text": "配重和兵力，同時對上了。"
+            "text": "墊片和配重，同時對上了。"
           }
         ],
         [
@@ -1665,7 +1667,7 @@
         [
           {
             "speaker": "NumNum",
-            "text": "決策可以下了。"
+            "text": "可以出工坊走走了。"
           }
         ]
       ],
@@ -1685,13 +1687,13 @@
       ]
     },
     {
-      "id": "wall_map",
+      "id": "harbor_map",
       "type": "narrative",
       "next": "q12",
       "lines": [
         {
           "speaker": "narrator",
-          "text": "城牆上，阿基米德展開防衛圖，一筆筆標出城門、投石機和瞭望塔。"
+          "text": "你們走到港邊坡地。阿基米德在板子上畫出碼頭、燈塔與工坊相對位置。"
         },
         {
           "speaker": "Numi",
@@ -1703,7 +1705,7 @@
         },
         {
           "speaker": "Archimedes",
-          "text": "羅馬船在靠近。標錯位置，石頭就會砸進海里。"
+          "text": "我想把今天的實驗器材送回港邊倉庫。標錯位置，箱子就會送錯碼頭。"
         }
       ]
     },
@@ -1711,19 +1713,19 @@
       "id": "q12",
       "type": "quiz",
       "anchor": 12,
-      "scene": "城牆座標",
+      "scene": "港邊倉庫座標",
       "setup": [
         {
           "speaker": "narrator",
-          "text": "簡圖攤在石垛上，海風把紙角吹得啪啪響。"
-        },
-        {
-          "speaker": "Captain",
-          "text": "投石機要對準哪一格？報錯，整排彈藥就廢了！"
+          "text": "簡圖攤在石階上，海風把紙角吹得啪啪響。"
         },
         {
           "speaker": "Archimedes",
-          "text": "{{playerName}}，把位置標對。錯一格，石頭就飛歪。"
+          "text": "器材箱要送到哪一格？報錯，整排就搬錯碼頭。"
+        },
+        {
+          "speaker": "Archimedes",
+          "text": "{{playerName}}，把位置標對。"
         },
         {
           "speaker": "NumNum",
@@ -1742,7 +1744,7 @@
         ]
       },
       "sceneAdapt": {
-        "setting": "敘拉古城牆",
+        "setting": "敘拉古港邊坡地",
         "cast": [
           "阿基米德",
           "玩家",
@@ -1751,10 +1753,10 @@
         ],
         "props": [
           "簡圖",
-          "城門標點",
-          "投石機"
+          "碼頭標點",
+          "器材箱"
         ],
-        "sceneId": "wall_coords"
+        "sceneId": "harbor_coords"
       },
       "onCorrect": "q13",
       "onWrong": "detour",
@@ -1762,13 +1764,13 @@
         [
           {
             "speaker": "narrator",
-            "text": "城牆上的標點落定，投石機轉向那一格。"
+            "text": "港邊上的標點落定，搬運路線對上那一格。"
           }
         ],
         [
           {
             "speaker": "Archimedes",
-            "text": "好。這一發，至少不會砸空。"
+            "text": "好。這一趟，至少不會送錯碼頭。"
           }
         ],
         [
@@ -1797,11 +1799,11 @@
       "id": "q13",
       "type": "quiz",
       "anchor": 13,
-      "scene": "象限警報",
+      "scene": "港灣象限",
       "setup": [
         {
           "speaker": "Numi",
-          "text": "敵艦進外圍了——在第幾象限？！"
+          "text": "那艘漁船——在第幾象限？！"
         },
         {
           "speaker": "NumNum",
@@ -1809,7 +1811,7 @@
         },
         {
           "speaker": "Archimedes",
-          "text": "{{playerName}}，報象限，還有它離軸線多遠。"
+          "text": "{{playerName}}，報象限，還有它離軸線多遠。我要把今天的筆記標在同一張圖上。"
         }
       ],
       "pool": {
@@ -1825,7 +1827,7 @@
         ]
       },
       "sceneAdapt": {
-        "setting": "敘拉古城牆觀測處",
+        "setting": "敘拉古港灣觀測處",
         "cast": [
           "Numi",
           "NumNum",
@@ -1834,17 +1836,17 @@
         ],
         "props": [
           "觀測簡圖",
-          "敵艦方向"
+          "漁船方向"
         ],
-        "sceneId": "quadrant_alert"
+        "sceneId": "harbor_quadrant"
       },
-      "onCorrect": "siege_eve",
+      "onCorrect": "harbor_noon",
       "onWrong": "detour",
       "successVariants": [
         [
           {
             "speaker": "narrator",
-            "text": "敵方方位，報對了。"
+            "text": "漁船方位，報對了。"
           }
         ],
         [
@@ -1876,42 +1878,42 @@
       ]
     },
     {
-      "id": "siege_eve",
+      "id": "harbor_noon",
       "type": "narrative",
       "next": "q14",
+      "objective": "弄懂槓桿",
       "lines": [
         {
           "speaker": "narrator",
-          "text": "夜更深了。外圍防線失守，補給庫只剩最後幾列數字，安靜得刺耳。"
+          "text": "正午的港灣很吵，也很亮。阿基米德卻把兩本帳攤開——工坊耗材與港邊倉儲。"
         },
         {
           "speaker": "Archimedes",
-          "text": "別猜還能撐幾天了。兩類物資、兩個條件——先把還能怎麼配，算到紙上。"
+          "text": "兩類物料、兩個條件。我想在離開港口前，把下一批進貨配清楚。"
         },
         {
           "speaker": "NumNum",
-          "text": "一起解。配置對了，才知道下一步還有沒有路。"
+          "text": "一起解。配置對了，他才放心回去繼續想。"
         },
         {
           "speaker": "Numi",
-          "text": "火把快燒完了……帳還在抖。"
+          "text": "海風把帳吹得啪啪響……我按住這邊！"
         }
-      ],
-      "objective": "陪阿基米德完成最後一筆"
+      ]
     },
     {
       "id": "q14",
       "type": "quiz",
       "anchor": 14,
-      "scene": "最後補給配置",
+      "scene": "港邊進貨配置",
       "setup": [
         {
           "speaker": "narrator",
-          "text": "糧冊與火把清冊並排。外面城牆傳來一下、一下的撞擊聲。"
+          "text": "耗材冊與倉儲清冊並排。遠處有商船靠岸的號子聲。"
         },
         {
           "speaker": "Archimedes",
-          "text": "{{playerName}}，依條件把最後一批物資配出來。"
+          "text": "{{playerName}}，依條件把這批進貨配出來。"
         },
         {
           "speaker": "NumNum",
@@ -1934,7 +1936,7 @@
         ]
       },
       "sceneAdapt": {
-        "setting": "敘拉古夜牆／補給庫",
+        "setting": "敘拉古港邊帳棚",
         "cast": [
           "阿基米德",
           "玩家",
@@ -1942,31 +1944,31 @@
           "Numi"
         ],
         "props": [
-          "糧冊",
-          "火把",
+          "耗材冊",
+          "倉儲清冊",
           "聯立條件"
         ],
-        "sceneId": "siege_supply"
+        "sceneId": "harbor_supply"
       },
-      "onCorrect": "last_circles",
+      "onCorrect": "farewell_eve",
       "onWrong": "detour",
       "successVariants": [
         [
           {
             "speaker": "narrator",
-            "text": "最後一批補給，配置出來了——少得刺眼。"
+            "text": "進貨配置出來了。帳頁安靜下來。"
           }
         ],
         [
           {
             "speaker": "Archimedes",
-            "text": "算式已經到頭了……城，擋不住了。"
+            "text": "夠了。回工坊——我還有幾道圓想畫完。"
           }
         ],
         [
           {
-            "speaker": "Archimedes",
-            "text": "但沙地上那道題，我還差最後一步。"
+            "speaker": "NumNum",
+            "text": "條件對上了。"
           }
         ]
       ],
@@ -1980,109 +1982,113 @@
         [
           {
             "speaker": "Numi",
-            "text": "火把晃到帳了……抱歉。"
+            "text": "風吹到帳了……抱歉。"
           }
         ]
       ]
     },
     {
-      "id": "last_circles",
+      "id": "farewell_eve",
       "type": "narrative",
-      "next": "choice_last",
+      "next": "choice_farewell",
+      "objective": "道別",
       "lines": [
         {
           "speaker": "narrator",
-          "text": "城破的聲音從遠處傳過來。阿基米德卻仍蹲在沙地上，畫著圓、軸線，和幾個不肯停的標點。"
+          "text": "傍晚，工坊沙地上又出現圓與軸線。阿基米德蹲著，像捨不得把今天收走。"
         },
         {
           "speaker": "Archimedes",
-          "text": "別吵。我還沒算完——"
-        },
-        {
-          "speaker": "Numi",
-          "text": "士兵……很近了。"
+          "text": "你們……好像不能久留。"
         },
         {
           "speaker": "NumNum",
-          "text": "{{playerName}}，最後一題。算完，我們陪他走到這段故事的盡頭。"
+          "text": "微光把我們帶來。它亮完了，我們就得回去。"
+        },
+        {
+          "speaker": "Numi",
+          "text": "{{playerName}}……還能再陪他算一題嗎？"
+        },
+        {
+          "speaker": "Archimedes",
+          "text": "請。最後一筆，我想畫得乾淨一點。"
         }
-      ],
-      "objective": "陪阿基米德完成最後一筆"
+      ]
     },
     {
-      "id": "choice_last",
+      "id": "choice_farewell",
       "type": "choice",
-      "objective": "陪阿基米德完成最後一筆",
+      "objective": "道別",
       "lines": [
         {
           "speaker": "narrator",
-          "text": "腳步聲更近了。阿基米德仍盯著沙地。"
+          "text": "海風變涼。阿基米德仍盯著沙地。"
         },
         {
           "speaker": "Numi",
-          "text": "{{playerName}}……你要留在這裡，還是先去門口看士兵多近？"
+          "text": "{{playerName}}……你要留在沙地旁，還是先去門口看看回程的光？"
         },
         {
           "speaker": "NumNum",
-          "text": "兩條都危險。但這題，必須有人陪他算完。"
+          "text": "兩條都行。但這題，必須有人陪他算完。"
         }
       ],
       "choices": [
         {
           "id": "stay",
           "label": "留下陪阿基米德",
-          "next": "branch_last_stay"
+          "next": "branch_farewell_stay"
         },
         {
-          "id": "scout",
-          "label": "先去確認士兵距離",
-          "next": "branch_last_scout"
+          "id": "glow",
+          "label": "先去確認回程微光",
+          "next": "branch_farewell_glow"
         }
       ]
     },
     {
-      "id": "branch_last_stay",
+      "id": "branch_farewell_stay",
       "type": "narrative",
+      "next": "q15",
       "lines": [
         {
           "speaker": "narrator",
-          "text": "你蹲到沙地旁。海風裡混著金屬碰撞聲，你沒有抬頭。"
+          "text": "你蹲到沙地旁。潮聲很遠，你沒有抬頭。"
         },
         {
           "speaker": "Archimedes",
           "text": "……好。最後一筆，一起看。"
         }
-      ],
-      "next": "q15"
+      ]
     },
     {
-      "id": "branch_last_scout",
+      "id": "branch_farewell_glow",
       "type": "narrative",
+      "next": "q15",
       "lines": [
         {
           "speaker": "narrator",
-          "text": "你衝到院門口，數了兩息，又奔回來。"
+          "text": "你走到院門口。遠方數學世界的藍紫仍在，細得像一線。"
         },
         {
           "speaker": "Numi",
-          "text": "很近了——一條巷子。"
+          "text": "還在——但越來越淡。"
         },
         {
           "speaker": "NumNum",
           "text": "那更快。蹲下，把最後一筆校完。"
         }
-      ],
-      "next": "q15"
+      ]
     },
     {
       "id": "q15",
       "type": "quiz",
       "anchor": 15,
-      "scene": "沙地上的最後一筆",
+      "scene": "沙地上的收束",
       "setup": [
         {
           "speaker": "narrator",
-          "text": "沙地上的圓還完整。阿基米德沿著兩條垂直軸線，標出最後幾個位置。腳步聲越來越近，把安靜一寸寸踩碎。"
+          "text": "沙地上的圓還完整。阿基米德沿著兩條垂直軸線，標出最後幾個位置。風很輕，像捨不得打斷。"
         },
         {
           "speaker": "NumNum",
@@ -2092,14 +2098,14 @@
           "speaker": "NumNum",
           "text": "你沒走。那最後一筆，我們陪他校完。",
           "whenChoice": {
-            "choice_last": "stay"
+            "choice_farewell": "stay"
           }
         },
         {
           "speaker": "Numi",
-          "text": "士兵比剛才更近了——你去看過，我信你。",
+          "text": "回程的光你去看過——我信你。現在把它畫完。",
           "whenChoice": {
-            "choice_last": "scout"
+            "choice_farewell": "glow"
           }
         }
       ],
@@ -2115,7 +2121,7 @@
         ]
       },
       "sceneAdapt": {
-        "setting": "敘拉古宅院沙地",
+        "setting": "敘拉古工坊沙地",
         "cast": [
           "阿基米德",
           "玩家",
@@ -2125,11 +2131,11 @@
         "props": [
           "沙地圓",
           "坐標軸",
-          "逼近的腳步"
+          "午後餘暉"
         ],
-        "sceneId": "last_sand"
+        "sceneId": "farewell_sand"
       },
-      "onCorrect": "ending_death",
+      "onCorrect": "farewell",
       "onWrong": "detour",
       "successVariants": [
         [
@@ -2146,8 +2152,8 @@
         ],
         [
           {
-            "speaker": "Numi",
-            "text": "……腳步很近了。"
+            "speaker": "Archimedes",
+            "text": "乾淨。夠了。"
           }
         ]
       ],
@@ -2161,51 +2167,36 @@
         [
           {
             "speaker": "Archimedes",
-            "text": "別吵。再看沙地上這一點。"
+            "text": "別急。再看沙地上這一點。"
           }
         ]
       ]
     },
     {
-      "id": "ending_death",
+      "id": "farewell",
       "type": "narrative",
       "next": "ending_stats",
+      "objective": "道別",
       "lines": [
         {
-          "speaker": "narrator",
-          "text": "羅馬士兵闖進院子。"
-        },
-        {
           "speaker": "Archimedes",
-          "text": "別踩我的圓——"
-        },
-        {
-          "speaker": "narrator",
-          "text": "話沒說完。思考被打斷。這一刻，什麼光都沒有。"
+          "text": "謝謝你們。王冠、排水、力與距離——我還會繼續想下去。"
         },
         {
           "speaker": "Numi",
-          "text": "……光，沒有亮起來。"
+          "text": "你要保重喔。不要只顧著算，忘了吃飯。"
         },
         {
-          "speaker": "NumNum",
-          "text": "……他沒能想完。"
-        },
-        {
-          "speaker": "narrator",
-          "text": "——後來的人會說："
-        },
-        {
-          "speaker": "narrator",
-          "text": "阿基米德，已成為希臘最了不起的數學家之一。"
-        },
-        {
-          "speaker": "narrator",
-          "text": "他留下的浮力原理、槓桿研究，以及對圓與螺旋的探索，後來跨越了兩千多年。"
+          "speaker": "Archimedes",
+          "text": "……我會記得。大概。"
         },
         {
           "speaker": "NumNum",
           "text": "{{playerName}}，我們該走了。"
+        },
+        {
+          "speaker": "narrator",
+          "text": "很久以後，這座城會迎來更大的考驗——但那是另一段故事。"
         },
         {
           "speaker": "Numi",

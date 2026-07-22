@@ -8,6 +8,8 @@ import 'katex/dist/katex.min.css'
  */
 const MATH_PATTERN = new RegExp(
   [
+    String.raw`\\dfrac\{[^{}]+\}\{[^{}]+\}`,
+    String.raw`\\tfrac\{[^{}]+\}\{[^{}]+\}`,
     String.raw`\\frac\{[^{}]+\}\{[^{}]+\}`,
     String.raw`\\sqrt\{[^{}]+\}`,
     String.raw`\\overparen\{[^{}]+\}`,
@@ -59,52 +61,80 @@ function tokenize(text) {
   if (!text) return []
   const src = String(text)
 
-  // 1) Pull out full \begin...\end environments first (must not be shredded)
-  const envSpans = []
-  ENV_BLOCK.lastIndex = 0
-  for (const match of src.matchAll(ENV_BLOCK)) {
-    envSpans.push({
-      start: match.index ?? 0,
-      end: (match.index ?? 0) + match[0].length,
-      value: match[0],
-    })
-  }
-
-  const segments = [] // {type:'text'|'math'|'env', value}
-  let cursor = 0
-  for (const env of envSpans) {
-    if (env.start > cursor) {
-      segments.push({ type: 'chunk', value: src.slice(cursor, env.start) })
+  // 0) Pull $...$ inline math first
+  const dollarSplit = []
+  {
+    let last = 0
+    const re = /\$([^$\n]+)\$/g
+    for (const match of src.matchAll(re)) {
+      const start = match.index ?? 0
+      if (start > last) {
+        dollarSplit.push({ type: 'raw', value: src.slice(last, start) })
+      }
+      dollarSplit.push({ type: 'math', value: match[1].trim(), display: false })
+      last = start + match[0].length
     }
-    segments.push({ type: 'env', value: env.value })
-    cursor = env.end
-  }
-  if (cursor < src.length) {
-    segments.push({ type: 'chunk', value: src.slice(cursor) })
+    if (last < src.length) {
+      dollarSplit.push({ type: 'raw', value: src.slice(last) })
+    }
+    if (!dollarSplit.length) {
+      dollarSplit.push({ type: 'raw', value: src })
+    }
   }
 
-  // 2) Tokenize remaining prose chunks with inline math pattern
   const parts = []
-  for (const seg of segments) {
-    if (seg.type === 'env') {
-      // inline display keeps cases compact enough for one-screen UI
-      parts.push({ type: 'math', value: seg.value, display: false })
+  for (const piece of dollarSplit) {
+    if (piece.type === 'math') {
+      parts.push(piece)
       continue
     }
 
-    const chunk = seg.value
-    let last = 0
-    MATH_PATTERN.lastIndex = 0
-    for (const match of chunk.matchAll(MATH_PATTERN)) {
-      const start = match.index ?? 0
-      if (start > last) {
-        parts.push({ type: 'text', value: chunk.slice(last, start) })
-      }
-      parts.push({ type: 'math', value: match[0].trim(), display: false })
-      last = start + match[0].length
+    const chunkSrc = piece.value
+    // 1) Pull out full \begin...\end environments first (must not be shredded)
+    const envSpans = []
+    ENV_BLOCK.lastIndex = 0
+    for (const match of chunkSrc.matchAll(ENV_BLOCK)) {
+      envSpans.push({
+        start: match.index ?? 0,
+        end: (match.index ?? 0) + match[0].length,
+        value: match[0],
+      })
     }
-    if (last < chunk.length) {
-      parts.push({ type: 'text', value: chunk.slice(last) })
+
+    const segments = []
+    let cursor = 0
+    for (const env of envSpans) {
+      if (env.start > cursor) {
+        segments.push({ type: 'chunk', value: chunkSrc.slice(cursor, env.start) })
+      }
+      segments.push({ type: 'env', value: env.value })
+      cursor = env.end
+    }
+    if (cursor < chunkSrc.length) {
+      segments.push({ type: 'chunk', value: chunkSrc.slice(cursor) })
+    }
+
+    // 2) Tokenize remaining prose chunks with inline math pattern
+    for (const seg of segments) {
+      if (seg.type === 'env') {
+        parts.push({ type: 'math', value: seg.value, display: false })
+        continue
+      }
+
+      const chunk = seg.value
+      let last = 0
+      MATH_PATTERN.lastIndex = 0
+      for (const match of chunk.matchAll(MATH_PATTERN)) {
+        const start = match.index ?? 0
+        if (start > last) {
+          parts.push({ type: 'text', value: chunk.slice(last, start) })
+        }
+        parts.push({ type: 'math', value: match[0].trim(), display: false })
+        last = start + match[0].length
+      }
+      if (last < chunk.length) {
+        parts.push({ type: 'text', value: chunk.slice(last) })
+      }
     }
   }
 
@@ -187,5 +217,20 @@ export default function MathText({ text, className = '' }) {
         )
       })}
     </span>
+  )
+}
+
+/** 整段算式（題目 math 欄）用 display 模式一次渲染，避免被拆爛 */
+export function MathBlock({ tex, className = '' }) {
+  const html = useMemo(() => renderKatex(String(tex || ''), true), [tex])
+  if (!tex) return null
+  if (!html) {
+    return <div className={`nv-math-fallback ${className}`.trim()}>{tex}</div>
+  }
+  return (
+    <div
+      className={`math-block ${className}`.trim()}
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
   )
 }
