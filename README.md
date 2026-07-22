@@ -5,7 +5,8 @@
 文字沉浸式 RPG／歷史哲學解謎。CRT 終端機介面＋KaTeX。  
 （開發中 MVP：框架＋阿基米德・青年垂直切片）
 
-> Repo／Vercel 專案名暫仍為 `numip-rpg`，產品名以此為準。
+線上：[numverse.vercel.app](https://numverse.vercel.app)  
+Repo：[github.com/bearz0811-num/NumVerse](https://github.com/bearz0811-num/NumVerse)
 
 ## 啟動
 
