@@ -1,9 +1,11 @@
 import { ERAS, MATHEMATICIANS } from '../../lib/numverse/constants'
+import { archimedesPrime } from './archimedesPrime'
 import { archimedesYouth } from './archimedesYouth'
 
-/** Playable chapter content (MVP: only Archimedes Youth has nodes). */
+/** Playable chapter content. */
 export const chaptersById = {
   ARCHIMEDES_YOUTH: archimedesYouth,
+  ARCHIMEDES_PRIME: archimedesPrime,
 }
 
 /** All 15 chapter ids in mathematician × era order. */

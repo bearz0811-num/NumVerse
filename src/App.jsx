@@ -45,6 +45,27 @@ const CHECKPOINT_LABEL = {
   CHECKPOINT_6_BALANCE: '天平',
   CHECKPOINT_6_BALANCE_PROBLEM: '天平・題面',
   CHECKPOINT_6_BALANCE_QUIZ: '天平・答題',
+  // 阿基米德・壯年
+  CHECKPOINT_P1_LINK: '重連',
+  CHECKPOINT_P1_WALL: '城牆',
+  CHECKPOINT_P2_CATAPULT: '投石',
+  CHECKPOINT_P2_CATAPULT_PROBLEM: '投石・題面',
+  CHECKPOINT_P2_CATAPULT_QUIZ: '投石・答題',
+  CHECKPOINT_P3_CRANE: '起重',
+  CHECKPOINT_P3_CRANE_PROBLEM: '起重・題面',
+  CHECKPOINT_P3_CRANE_EXPAND: '起重・展開',
+  CHECKPOINT_P3_CRANE_QUIZ: '起重・答題',
+  CHECKPOINT_P4_GEAR: '齒輪',
+  CHECKPOINT_P4_GEAR_PROBLEM: '齒輪・題面',
+  CHECKPOINT_P4_GEAR_SIMPLIFY: '齒輪・化簡',
+  CHECKPOINT_P4_GEAR_SCALE: '齒輪・倍率',
+  CHECKPOINT_P4_GEAR_QUIZ: '齒輪・答題',
+  CHECKPOINT_P5_RANGE: '測距',
+  CHECKPOINT_P5_RANGE_PROBLEM: '測距・題面',
+  CHECKPOINT_P5_RANGE_QUIZ: '測距・答題',
+  CHECKPOINT_P6_CALIB: '校準',
+  CHECKPOINT_P6_CALIB_PROBLEM: '校準・題面',
+  CHECKPOINT_P6_CALIB_QUIZ: '校準・答題',
 }
 
 function checkpointLabel(id) {
@@ -248,8 +269,9 @@ export default function App() {
     if (!session) return '待命'
     const buff = story.buff || story.buff2
     const buffTag = buff ? `｜狀態：${buff}` : ''
-    return `阿基米德・青年篇｜檢查點 ${checkpointLabel(session.checkpoint_id)}｜理智 [${bar(session.sanity, SANITY_MAX)}] ${session.sanity}/${SANITY_MAX}｜靈感 [${bar(session.insight, INSIGHT_MAX, '💡', '·')}] ${session.insight}/${INSIGHT_MAX}${buffTag}`
-  }, [session, story])
+    const chapterTitle = chapter?.title || '未知章節'
+    return `${chapterTitle}篇｜檢查點 ${checkpointLabel(session.checkpoint_id)}｜理智 [${bar(session.sanity, SANITY_MAX)}] ${session.sanity}/${SANITY_MAX}｜靈感 [${bar(session.insight, INSIGHT_MAX, '💡', '·')}] ${session.insight}/${INSIGHT_MAX}${buffTag}`
+  }, [session, story, chapter?.title])
 
   useEffect(() => {
     persistSave(save)
@@ -321,6 +343,19 @@ export default function App() {
     if (!isChapterPlayable(chapterId)) return
     if (!save.progress.unlocked_chapters.includes(chapterId)) return
     let next = startChapterSession(save, chapterId, chapterRewardOf)
+
+    // 壯年開場：依青年「最近一次結局」寫入 story.youth_ending
+    const seedStory = {}
+    if (chapterId === 'ARCHIMEDES_PRIME') {
+      const ye = save.progress?.lastEndingId?.ARCHIMEDES_YOUTH
+      if (ye) seedStory.youth_ending = ye
+    }
+    if (Object.keys(seedStory).length) {
+      next = updateSession(next, {
+        story: { ...(next.current_session?.story || {}), ...seedStory },
+      })
+    }
+
     setSave(next)
     setNodeIndex(0)
     setLineIndex(0)
@@ -340,7 +375,7 @@ export default function App() {
         nodeId: first.id,
         sanity: SANITY_MAX,
         insight: INSIGHT_MAX,
-        story: {},
+        story: { ...(next.current_session?.story || {}) },
       })
       setSave(next)
     }
