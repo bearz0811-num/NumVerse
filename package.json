@@ -7,9 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
-    "preview": "vite preview",
-    "generate:scripts": "node scripts/build_pool_manifests.mjs && node scripts/generate_scripts.mjs",
-    "validate:scripts": "node scripts/validate_scripts.mjs"
+    "preview": "vite preview"
   },
   "dependencies": {
     "canvas-confetti": "^1.9.4",
