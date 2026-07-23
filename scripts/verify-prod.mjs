@@ -28,7 +28,7 @@ async function main() {
 
   const mw = await fetchText(MATHWAGER)
   if (mw.status === 404) ok('mathwager.vercel.app is 404')
-  else fail(`mathwager.vercel.app expected 404, got ${mw.status}`)
+  else fail(`mathwager.vercel.app expected 404, got ${mw.status} (check Vercel project domains)`)
 
   const home = await fetchText(`${BASE}/?t=${Date.now()}`)
   if (home.status !== 200) fail(`numverse home status ${home.status}`)

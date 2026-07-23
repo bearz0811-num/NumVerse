@@ -1,9 +1,12 @@
 /**
  * Production deploy with NumVerse domain hygiene.
  * - vercel --prod
- * - force alias numverse.vercel.app to the new deployment
- * - remove legacy mathwager.vercel.app alias
+ * - ensure numverse.vercel.app points at the new deployment
+ * - strip legacy mathwager.vercel.app alias if it reappears
  * - run verify-prod.mjs
+ *
+ * Project production domain should be numverse.vercel.app only
+ * (mathwager.vercel.app was removed from Vercel project domains 2026-07-23).
  *
  * Usage: node scripts/deploy-prod.mjs
  */
