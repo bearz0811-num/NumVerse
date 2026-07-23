@@ -1,7 +1,7 @@
 /**
  * 第二章：阿基米德・壯年篇
- * 結構：終端重連 ➜ 城牆投石（畢氏）➜ 起重機槓桿 Eureka（乘法公式）
- *       ➜ 齒輪傳動（多項式）➜ 測距校準（根式／畢氏）➜ 決戰參數 ➜ 哲學雙結局
+ * 結構：終端重連 ➜ 城牆投石（畢氏求斜邊）➜ 起重機槓桿 Eureka（乘法公式）
+ *       ➜ 齒輪傳動（因式分解約分）➜ 測距（畢氏求一股）➜ 決戰參數（根式）➜ 哲學雙結局
  * Eureka 幣：
  *  1. 幕二起重機槓桿頓悟 (+1)
  *  2. 結局一 (+1)
@@ -14,7 +14,7 @@ export const archimedesPrime = {
   mathematicianId: 'ARCHIMEDES',
   era: 'PRIME',
   title: '阿基米德・壯年',
-  subtitle: '終端重連 ➜ 投石測距 ➜ 起重 Eureka ➜ 齒輪校準 ➜ 鏡距 ➜ 防衛抉擇',
+  subtitle: '終端重連 ➜ 投石測距 ➜ 起重 Eureka ➜ 齒輪化簡 ➜ 水平距 ➜ 防衛抉擇',
   nextChapterId: 'ARCHIMEDES_ELDER',
   rewards: {},
   eurekaMax: 3,
@@ -83,7 +83,7 @@ export const archimedesPrime = {
         },
         {
           speaker: '阿基米德',
-          text: '（抬起頭，認出你們）……又是你們。',
+          text: '（抬起頭，認出你們）「……又是你們。」',
         },
         {
           speaker: '阿基米德',
@@ -97,7 +97,7 @@ export const archimedesPrime = {
         },
         {
           speaker: '阿基米德',
-          text: '羅馬人要攻城。國王要投石機、起重爪。你們若還肯幫忙——先從城牆這台投石機開始。',
+          text: '「羅馬人要攻城。國王要投石機、起重爪。你們若還肯幫忙——先從城牆這台投石機開始。」',
         },
         {
           speaker: '姐姐',
@@ -118,11 +118,11 @@ export const archimedesPrime = {
         },
         {
           speaker: '阿基米德',
-          text: '水平六丈、高差八丈。繩索與彈道要走的，是這兩段構成的斜邊——量錯一寸，石頭就砸進自家碼頭。',
+          text: '「水平六丈、高差八丈。繩索與彈道要走的，是這兩段構成的斜邊——量錯一寸，石頭就砸進自家碼頭。」',
         },
         {
           speaker: 'NumNum',
-          text: '「直角與兩股已經確定。斜邊的必然長度，算出來就知道。」',
+          text: '「兩股定了，斜邊就定了。算出來。」',
         },
         {
           speaker: '弟弟',
@@ -155,11 +155,11 @@ export const archimedesPrime = {
           resultLines: [
             {
               speaker: 'Numi',
-              text: '「6 跟 8……這不就是把熟悉的 3、4、5 放大兩倍嗎？斜邊一定也是整數！」',
+              text: '「兩股看起來有沒有共同倍數？想想有沒有熟悉的直角三角形可以對照！」',
             },
             {
               speaker: '弟弟',
-              text: '「對耶！3、4、5 的兩倍！拉直繩子來驗證看看！」',
+              text: '「對！別急著丟石頭，先把邊長對清楚！」',
             },
           ],
         },
@@ -172,7 +172,7 @@ export const archimedesPrime = {
           resultLines: [
             {
               speaker: 'NumNum',
-              text: '「兩股平方求和再開根號。精準的數據，不需要靠運氣。」',
+              text: '「兩股各自平方後相加，再開根號。算準就好，別靠運氣。」',
             },
             {
               speaker: '姐姐',
@@ -195,9 +195,13 @@ export const archimedesPrime = {
         answer: '10',
         bankRef: { id: null, note: '答案：10' },
       },
+      hint: {
+        speaker: 'NumNum',
+        text: '畢氏定理：兩股各自平方後相加，再開根號，就是斜邊。',
+      },
       analysis: {
         speaker: 'NumNum',
-        text: '「6²＋8²＝100，√100＝10。斜距正確，第一輪試射才能對準外港浮標。」',
+        text: '「兩股各自平方後相加，再開根號。別只加兩股，也別忘了開根號。」',
       },
     },
     {
@@ -210,7 +214,7 @@ export const archimedesPrime = {
         },
         {
           speaker: '阿基米德',
-          text: '斜邊對了。下一步：海港邊的起重爪。巨船靠近時，要能把它掀翻——那需要力臂，不是蠻力。',
+          text: '「斜邊對了。下一步：海港邊的起重爪。巨船靠近時，要能把它掀翻——那需要力臂，不是蠻力。」',
         },
         {
           speaker: 'Numi',
@@ -231,7 +235,7 @@ export const archimedesPrime = {
         },
         {
           speaker: '阿基米德',
-          text: '配重箱底面的長為 (x+2) 寸、寬為 (x+5) 寸。先把長寬相乘展開，再帶入今天測好的刻度 x，配重才不會出錯！',
+          text: '「配重箱底面的長為 (x+2) 寸、寬為 (x+5) 寸。先把長寬相乘展開，再帶入今天測好的刻度 x，配重才不會出錯！」',
         },
         {
           speaker: '姐姐',
@@ -239,7 +243,7 @@ export const archimedesPrime = {
         },
         {
           speaker: '阿基米德',
-          text: '（低聲）給我夠長的力臂，再重的船也能被撬起……但前提是，數字不能飄。',
+          text: '（低聲）「給我夠長的力臂，再重的船也能被撬起……但前提是，數字不能飄。」',
         },
       ],
     },
@@ -268,7 +272,7 @@ export const archimedesPrime = {
           resultLines: [
             {
               speaker: 'Numi',
-              text: '「把大長方形畫成四塊！一塊是 x 的正方形、兩塊長形、還有一塊 2 乘 5 的小角角，分開算再加起來就好啦！」',
+              text: '「把大長方形拆成幾塊小圖：正方形、長條、小角角，分開算再加起來就好啦！」',
             },
           ],
         },
@@ -281,7 +285,7 @@ export const archimedesPrime = {
           resultLines: [
             {
               speaker: 'NumNum',
-              text: '「照公式將多項式完全展開，整理出一次項與常數項，再把刻度 x 代進去。」',
+              text: '「照公式把括號全部打開，整理好之後，再把刻度 x 代進去。」',
             },
           ],
         },
@@ -305,9 +309,13 @@ export const archimedesPrime = {
         ],
         bankRef: { id: null, note: '正確：B＝x²＋7x＋10' },
       },
+      hint: {
+        speaker: 'NumNum',
+        text: '乘法公式：(x+a)(x+b)＝x²＋(a+b)x＋ab。中間那項別漏。',
+      },
       analysis: {
         speaker: 'NumNum',
-        text: '「(x+2)(x+5)＝x²＋5x＋2x＋10＝x²＋7x＋10。一次項 7x 不能漏。」',
+        text: '「用乘法公式打開：(x+a)(x+b)。中間那項是 (a+b)x，最容易漏。」',
       },
     },
     {
@@ -327,9 +335,13 @@ export const archimedesPrime = {
         answer: '40',
         bankRef: { id: null, note: '答案：40' },
       },
+      hint: {
+        speaker: 'NumNum',
+        text: '把已知的 x 代入多項式，算出數值。',
+      },
       analysis: {
         speaker: '姐姐',
-        text: '「x＝3 時：9＋21＋10＝40。配重箱底板面積正確，長臂才能壓得住短臂勾住的船舷。」',
+        text: '「把 x＝3 代進展開式每一項，再加起來。代完檢查一次：每一項都有算到嗎？」',
       },
     },
     {
@@ -343,7 +355,7 @@ export const archimedesPrime = {
         },
         {
           speaker: '阿基米德',
-          text: '（眼睛驟亮）……我懂了。力與距離在說話：短臂承重，長臂只需較小的力。給我支點與夠長的臂，我就能撬動這艘船——甚至，撬動我以為撬不動的東西。',
+          text: '（眼睛驟亮）「……我懂了。力與距離在說話：短臂承重，長臂只需較小的力。給我支點與夠長的臂，我就能撬動這艘船——甚至，撬動我以為撬不動的東西。」',
         },
         {
           speaker: 'SYS',
@@ -359,12 +371,12 @@ export const archimedesPrime = {
         },
         {
           speaker: '阿基米德',
-          text: '爪臂能掀船。但齒盤傳動還在抖——工坊那邊，齒輪比沒對上。',
+          text: '「爪臂能掀船。但齒盤傳動還在抖——工坊那邊，齒輪比沒對上。」',
         },
       ],
     },
 
-    // ——— 幕三：齒輪／繩索（多項式） ———
+    // ——— 幕三：齒輪（因式分解／約分） ———
     {
       id: 'act3_intro',
       type: 'narrative',
@@ -372,19 +384,19 @@ export const archimedesPrime = {
       lines: [
         {
           speaker: 'narrator',
-          text: '工坊內，傳動齒盤咬合時發出刺耳聲。師傅在板上寫著：大輪齒數 2x＋4，小輪齒數 x＋2，卻說「運轉起來老是卡住」。',
+          text: '工坊內，傳動齒盤咬合時發出刺耳聲。師傅在板上寫著二次式：大輪齒數 2x²＋6x，小輪齒數 x²＋3x，卻說「怎麼約都約不乾淨」。',
         },
         {
           speaker: '工匠',
-          text: '「大輪與小輪分別設計成 (2x＋4) 與 (x＋2)。為了傳動平順，齒數比必須化成固定常數，不能跟著製造規格 x 亂飄。」',
+          text: '「規格 x 進到二次項了。為了傳動平順，齒數比必須化成固定常數，不能跟著 x 亂飄。」',
         },
         {
           speaker: '阿基米德',
-          text: '先化簡 (2x＋4)／(x＋2)。比值若是常數，再用小輪實齒去推大輪該做幾齒。',
+          text: '「化簡 (2x²＋6x)／(x²＋3x)。若約得乾淨，咬合才穩。」',
         },
         {
           speaker: 'NumNum',
-          text: '「分子提公因數約分。亂掉的齒數比，整理後就清楚了。」',
+          text: '「分子、分母都先拆成因式，再找能對消的部分。」',
         },
       ],
     },
@@ -395,8 +407,8 @@ export const archimedesPrime = {
       scene: '關卡三・齒數比化簡',
       question: {
         stem:
-          '大輪齒數為 2x＋4，小輪為 x＋2。化簡 (2x＋4)/(x＋2)，求傳動比常數。',
-        bankRef: { id: null, note: '上半：只化簡比值。' },
+          '大輪齒數為 2x²＋6x，小輪為 x²＋3x。化簡 (2x²＋6x)/(x²＋3x)，求傳動比常數。（x≠0 且 x≠−3）',
+        bankRef: { id: null, note: '因式分解後約分求常數比。' },
       },
     },
     {
@@ -406,27 +418,27 @@ export const archimedesPrime = {
       options: [
         {
           id: 'insight',
-          label: '【Numi 的直覺：看倍數關係】(靈感 −1)',
-          detail: '觀察分子與分母數字的關係。',
+          label: '【Numi 的直覺：兩邊拆開】(靈感 −1)',
+          detail: '分子、分母各自拆成因式再對消。',
           kind: 'insight',
           story: { gear_method: 'numi' },
           resultLines: [
             {
               speaker: 'Numi',
-              text: '「你看！大輪的 2x＋4，數字剛好都是小輪 x＋2 的兩倍！所以不管 x 是多少，大輪齒數都是小輪的兩倍啦！」',
+              text: '「分子分母都拆開！兩邊如果出現一樣的，就可以消掉，看最後剩什麼！」',
             },
           ],
         },
         {
           id: 'algebra',
-          label: '【NumNum 的整理：提公因式】',
-          detail: '分子提公因式約分求固定比值。',
+          label: '【NumNum 的整理：因式分解】',
+          detail: '先拆成因式，再把相同的消掉。',
           kind: 'solve',
           story: { gear_method: 'numnum' },
           resultLines: [
             {
               speaker: 'NumNum',
-              text: '「先看分子能不能提出公因數，再跟分母對齊約分。」',
+              text: '「先把分子跟分母都拆開，再把兩邊一樣的因式消掉。」',
             },
           ],
         },
@@ -440,46 +452,23 @@ export const archimedesPrime = {
       setup: [{ speaker: 'SYS', text: '請選出化簡後的傳動比：' }],
       question: {
         answerType: 'choice',
-        stem: '(2x＋4)/(x＋2) 化簡後等於？',
+        stem: '(2x²＋6x)/(x²＋3x) 化簡後等於？',
         answer: 'B',
         options: [
-          { letter: 'A', text: 'x＋2' },
+          { letter: 'A', text: '2x' },
           { letter: 'B', text: '2' },
-          { letter: 'C', text: '2x' },
-          { letter: 'D', text: '4' },
+          { letter: 'C', text: 'x＋3' },
+          { letter: 'D', text: '2(x＋3)' },
         ],
         bankRef: { id: null, note: '正確：B＝2' },
       },
+      hint: {
+        speaker: 'NumNum',
+        text: '分子、分母先拆成因式，把相同的消掉，看最後剩什麼。',
+      },
       analysis: {
         speaker: 'NumNum',
-        text: '「分子提 2：2(x＋2)/(x＋2)。約分後剩下 2——傳動比是固定常數。」',
-      },
-    },
-    {
-      id: 'problem_act3b',
-      type: 'problem',
-      checkpoint: 'CHECKPOINT_P4_GEAR_SCALE',
-      scene: '關卡三・齒數比化簡',
-      question: {
-        stem: '傳動比已確定為 2。若小輪實際有 8 齒，求大輪應有幾齒。',
-        bankRef: { id: null, note: '下半：用常數比推大輪齒數。' },
-      },
-    },
-    {
-      id: 'quiz_act3',
-      type: 'quiz',
-      checkpoint: 'CHECKPOINT_P4_GEAR_QUIZ',
-      scene: '關卡三・齒數比化簡',
-      setup: [{ speaker: 'SYS', text: '請輸入大輪應製造的齒數：' }],
-      question: {
-        answerType: 'number',
-        stem: '傳動比＝2，小輪 8 齒，大輪應有幾齒？',
-        answer: '16',
-        bankRef: { id: null, note: '答案：16' },
-      },
-      analysis: {
-        speaker: '阿基米德',
-        text: '「8×2＝16。小輪 8 齒、大輪 16 齒——咬合聲消了。傳動穩了，才能把力量送到爪尖。」',
+        text: '「分子、分母先拆成因式，把相同的消掉。若消得乾淨，應該會剩下一個常數。」',
       },
     },
     {
@@ -492,16 +481,16 @@ export const archimedesPrime = {
         },
         {
           speaker: '阿基米德',
-          text: '還差觀測。投石與爪臂都要知道：敵船離牆多遠。不能只靠喊「很近」。',
+          text: '「還差觀測。投石表要的是水平距離——斜視線與高差已知，水平邊還沒寫上。」',
         },
         {
           speaker: '姐姐',
-          text: '「測距——直角三角與根式。上牆，但別被箭射到。」',
+          text: '「直角三角：已知斜邊與一股，求另一股。上牆，但別被箭射到。」',
         },
       ],
     },
 
-    // ——— 幕四：測距（畢氏／根式） ———
+    // ——— 幕四：測距（畢氏求一股） ———
     {
       id: 'act4_intro',
       type: 'narrative',
@@ -509,15 +498,15 @@ export const archimedesPrime = {
       lines: [
         {
           speaker: 'narrator',
-          text: '城牆觀測台。你們量得：從牆根到敵船投影的水平距離 12 丈，船桅相對牆頂的高差 5 丈。視線斜距決定投石提前量。',
+          text: '城牆觀測台。視線斜距已用測繩量得 13 丈，船桅相對牆頂的高差 5 丈。投石提前量要的是水平距離。',
         },
         {
           speaker: '阿基米德',
-          text: '水平 12 與高差 5。要把這兩段的平方加起來再開根號，算出真正的斜線距離！算錯，石頭會落在空水面上。',
+          text: '「斜邊 13、一股 5。另一股是水平距——平方關係反過來用，不能搞混。」',
         },
         {
           speaker: '弟弟',
-          text: '「12 跟 5……這也是一組很有名的直角三角形組合，算算看！」',
+          text: '「已知斜邊跟一股，求另一股！先想清楚哪一邊是斜邊。」',
         },
       ],
     },
@@ -525,41 +514,41 @@ export const archimedesPrime = {
       id: 'problem_act4',
       type: 'problem',
       checkpoint: 'CHECKPOINT_P5_RANGE_PROBLEM',
-      scene: '關卡四・敵船斜距',
+      scene: '關卡四・敵船水平距',
       question: {
         stem:
-          '水平距離 12 丈、高差 5 丈，求觀測斜距 c（丈）。',
-        bankRef: { id: null, note: '畢氏／根式。' },
+          '觀測斜距（斜邊）13 丈、高差 5 丈，求水平距離（另一股）為多少丈。',
+        bankRef: { id: null, note: '畢氏逆向：已知斜邊與一股求另一股。' },
       },
     },
     {
       id: 'branch_act4',
       type: 'branch',
-      prompt: '選擇取得斜距的方式：',
+      prompt: '選擇求水平距的方式：',
       options: [
         {
           id: 'insight',
-          label: '【Numi 的直覺：直角邊長聯想】(靈感 −1)',
-          detail: '回想常見的直角三角形整數邊長。',
+          label: '【Numi 的直覺：邊長對照】(靈感 −1)',
+          detail: '回想常見的直角三角形整數邊長組合。',
           kind: 'insight',
           story: { range_method: 'numi' },
           resultLines: [
             {
               speaker: 'Numi',
-              text: '「5 跟 12！我知道這組！平方加起來開根號後也會是很漂亮的整數！」',
+              text: '「斜邊跟一股都給了……有沒有熟悉的整數直角邊可以對照？」',
             },
           ],
         },
         {
           id: 'algebra',
-          label: '【NumNum 的計算：開根號】',
-          detail: '用畢氏定理：兩股平方和再開根號。',
+          label: '【NumNum 的計算：畢氏反求】',
+          detail: '由 a²＋b²＝c² 反求未知股。',
           kind: 'solve',
           story: { range_method: 'numnum' },
           resultLines: [
             {
               speaker: 'NumNum',
-              text: '「兩股各自平方後相加，再開根號，就是斜距。」',
+              text: '「未知那一邊的平方＝斜邊平方減掉已知邊的平方，再開根號。」',
             },
           ],
         },
@@ -569,17 +558,21 @@ export const archimedesPrime = {
       id: 'quiz_act4',
       type: 'quiz',
       checkpoint: 'CHECKPOINT_P5_RANGE_QUIZ',
-      scene: '關卡四・敵船斜距',
-      setup: [{ speaker: 'SYS', text: '請輸入斜距 c（丈）：' }],
+      scene: '關卡四・敵船水平距',
+      setup: [{ speaker: 'SYS', text: '請輸入水平距離（丈）：' }],
       question: {
         answerType: 'number',
-        stem: '水平 12 丈、高差 5 丈，求直角三角形斜邊 c（丈）。',
-        answer: '13',
-        bankRef: { id: null, note: '答案：13' },
+        stem: '直角三角形斜邊 13 丈、一股 5 丈，求另一股（丈）。',
+        answer: '12',
+        bankRef: { id: null, note: '答案：12' },
+      },
+      hint: {
+        speaker: 'NumNum',
+        text: '未知邊²＝斜邊²−已知邊²，再開根號。',
       },
       analysis: {
         speaker: 'NumNum',
-        text: '「144＋25＝169，√169＝13。提前量可以寫進投石表了。」',
+        text: '「未知邊的平方＝斜邊平方減掉已知邊的平方，再開根號。別減反了。」',
       },
     },
     {
@@ -592,7 +585,7 @@ export const archimedesPrime = {
         },
         {
           speaker: '阿基米德',
-          text: '最後一步：把兩段備用繩的根式長度加總，寫成決戰校準參數。明天——不，今夜——國王要看公開試射。',
+          text: '「最後一步：把兩段備用繩的根式長度加總，寫成決戰校準參數。明天——不，今夜——國王要看公開試射。」',
         },
       ],
     },
@@ -613,7 +606,7 @@ export const archimedesPrime = {
         },
         {
           speaker: '阿基米德',
-          text: '數字齊了。但試射要給國王看什麼——最大殺傷，還是留一條能喊停的生路——那是明天以前必須決定的事。',
+          text: '「數字齊了。但試射要給國王看什麼——最大殺傷，還是留一條能喊停的生路——那是明天以前必須決定的事。」',
         },
       ],
     },
@@ -636,26 +629,26 @@ export const archimedesPrime = {
         {
           id: 'insight',
           label: '【Numi 的直覺：拆數字】(靈感 −1)',
-          detail: '把 18 與 8 拆成含有平方數的乘積。',
+          detail: '把根號裡的數字拆成「平方數 × 剩下的」。',
           kind: 'insight',
           story: { calib_method: 'numi' },
           resultLines: [
             {
               speaker: 'Numi',
-              text: '「把 18 看成 9×2，把 8 看成 4×2！9 可以提出去變成 3，4 可以提出去變成 2，再把外面的數字加起來！」',
+              text: '「根號裡先拆出平方數、提出去！化成同樣的 √2 之後，再把前面的係數加起來！」',
             },
           ],
         },
         {
           id: 'algebra',
           label: '【NumNum 的化簡：根式整理】',
-          detail: '化為最簡根式後合併同類項。',
+          detail: '化成最簡根式後，把帶 √2 的項合在一起。',
           kind: 'solve',
           story: { calib_method: 'numnum' },
           resultLines: [
             {
               speaker: 'NumNum',
-              text: '「先各自化成最簡根式，再合併 √2 的同類項。」',
+              text: '「先各自化成最簡根式，再把帶 √2 的項合在一起。」',
             },
           ],
         },
@@ -673,9 +666,13 @@ export const archimedesPrime = {
         answer: '5',
         bankRef: { id: null, note: '答案：5' },
       },
+      hint: {
+        speaker: 'NumNum',
+        text: '先各自化成最簡根式，再把 √2 前面的數字加起來。',
+      },
       analysis: {
         speaker: '姐姐',
-        text: '「3√2＋2√2＝5√2，係數和為 5。校準牌刻好了——接下來是立場，不是算式。」',
+        text: '「先各自化成最簡根式，確認都是 √2 之後，再把前面的係數加起來。問的是係數和，不是整條根式。」',
       },
     },
     {
@@ -688,7 +685,7 @@ export const archimedesPrime = {
         },
         {
           speaker: 'NumNum',
-          text: '「機械已就緒。剩下的，是你們希望這座城用什麼方式活下去。」',
+          text: '「機器都好了。接下來——你們希望這座城怎麼活下去？」',
         },
       ],
     },
@@ -724,7 +721,7 @@ export const archimedesPrime = {
           resultLines: [
             {
               speaker: '阿基米德',
-              text: '……讓數字在海面上自己說話。力臂與斜距，不容溫情修改。',
+              text: '「……讓數字在海面上自己說話。力臂與斜距，不容溫情修改。」',
             },
           ],
         },
@@ -741,7 +738,7 @@ export const archimedesPrime = {
           resultLines: [
             {
               speaker: '阿基米德',
-              text: '……先讓他們怕，再讓他們有路可退。機械可以守城，也可以留人。',
+              text: '「……先讓他們怕，再讓他們有路可退。機械可以守城，也可以留人。」',
             },
           ],
         },
@@ -761,11 +758,11 @@ export const archimedesPrime = {
         },
         {
           speaker: 'NumNum',
-          text: '「參數沒有溫情。效率達到最大。」',
+          text: '「數字不講情面。這次打得又準又狠。」',
         },
         {
-          speaker: '阿基米德',
-          text: '他看著退去的帆影，卻把臉轉向沙地上的圓與直線：防衛只是暫時的；絕對的幾何，才值得一生。',
+          speaker: 'narrator',
+          text: '阿基米德看著退走的帆影，卻把臉轉向沙地上的圓與直線：守城只是暫時的；幾何，才值得他花一輩子。',
         },
         {
           speaker: 'SYS',
@@ -788,8 +785,8 @@ export const archimedesPrime = {
           text: '「他們跑了！而且……好像沒死很多人！」',
         },
         {
-          speaker: '阿基米德',
-          text: '他擦去校準牌上的最大殺傷欄，留下「守護」二字：數學既能撬船，也能護人——這想法，會跟著他走進更艱難的歲月。',
+          speaker: 'narrator',
+          text: '阿基米德擦掉校準牌上的「最大殺傷」，留下「守護」兩字：數學既能掀船，也能護人——這個想法，會陪他走更難的日子。',
         },
         {
           speaker: 'SYS',

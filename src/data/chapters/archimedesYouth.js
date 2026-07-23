@@ -88,7 +88,7 @@ export const archimedesYouth = {
         },
         {
           speaker: '阿基米德',
-          text: '（渾然不知身後多了四個穿越者）水淹出來了……我身體進入水裡的空間，跟排開的水量……完全相等！',
+          text: '（渾然不知身後多了四個穿越者）「水淹出來了……我身體進入水裡的空間，跟排開的水量……完全相等！」',
         },
         {
           speaker: '姐姐',
@@ -114,7 +114,7 @@ export const archimedesYouth = {
     {
       id: 'branch_act1',
       type: 'branch',
-      prompt: '請選擇協助阿基米德的思考夥伴與精靈提示：',
+      prompt: '請選擇解題思路：',
       options: [
         {
           id: 'insight',
@@ -125,11 +125,11 @@ export const archimedesYouth = {
           resultLines: [
             {
               speaker: 'Numi',
-              text: '「就像我剛撞進台北房間一樣！身體佔了多少空間，就把多少水推出去！20×10×8＝1600，這塊水倒回去木盆，就是底面積 400 乘以高度 h 啦！」',
+              text: '「就像我撞進房間一樣！身體佔多少空間，就把多少水推出去！排出的水塊體積，應該等於木盆底面積乘上水面上升的高度！」',
             },
             {
               speaker: '弟弟',
-              text: '「Numi 說得真好懂！直觀看就是 1600 的水塊擠出了高度 h！」',
+              text: '「Numi 說得真好懂！直觀看就是排水體積擠出了高度 h！」',
             },
           ],
         },
@@ -142,11 +142,11 @@ export const archimedesYouth = {
           resultLines: [
             {
               speaker: 'NumNum',
-              text: '「按照數學世界的規則，兩邊代表同一個體積。右邊實體排水量為 1600，兩邊同時除以 400，規律就會展現。」',
+              text: '「兩邊代表同一體積：底面積 × 高度 = 排出水的體積。先列出等式，再用除法求高度。」',
             },
             {
               speaker: '姐姐',
-              text: '「建立守恆方程，求解 h 就非常清楚了。」',
+              text: '「兩邊體積相等——列式求 h，就清楚了。」',
             },
           ],
         },
@@ -171,9 +171,13 @@ export const archimedesYouth = {
         answer: '4',
         bankRef: { id: 520, note: '答案：4' },
       },
+      hint: {
+        speaker: 'NumNum',
+        text: '底面積 × 高度 = 排出的水體積。先列等式，再求高度。',
+      },
       analysis: {
         speaker: 'NumNum',
-        text: '「右側排水量為 20×10×8＝1600。求解 400h＝1600 ⇒ h＝4 公分。規則完美符合。」',
+        text: '「先算排出的水有多少，再拿底面積去除。h 就是『水體積 ÷ 底面積』。」',
       },
     },
     {
@@ -183,7 +187,7 @@ export const archimedesYouth = {
       lines: [
         {
           speaker: '阿基米德',
-          text: '（眼睛驟然發亮）我明白了！不破壞物體就能量出體積！國王讓我調查皇冠是否被金匠偷工減料……我有辦法了！',
+          text: '（眼睛驟然發亮）「我明白了！不破壞物體就能量出體積！國王讓我調查皇冠是否被金匠偷工減料……我有辦法了！」',
         },
         {
           speaker: 'SYS',
@@ -253,20 +257,20 @@ export const archimedesYouth = {
           resultLines: [
             {
               speaker: 'Numi',
-              text: '「看金幣跳去哪裡！工匠給出 150 剩下 (3y - 150)；學徒拿到 150 變成 (y + 150)。學徒的新金額乘以 2 再減 50，就剛好等於工匠剩下來的金幣！」',
+              text: '「看金幣跳去哪裡！工匠給出去之後還剩多少、學徒接到之後變成多少——兩邊講的是同一件事，對起來就能抓出原始數字！」',
             },
           ],
         },
         {
           id: 'algebra',
           label: '【NumNum 的整理習慣：括號展開】',
-          detail: '按順序展開右式括號，整理同類項。',
+          detail: '按順序打開右式括號，再把相同的項合在一起。',
           kind: 'solve',
           story: { ledger_strategy: 'numnum' },
           resultLines: [
             {
               speaker: 'NumNum',
-              text: '「右式 2(y + 150) - 50 按照規則展開為 2y + 250。將 y 歸併至左邊，常數排至右邊，即可解出原始預算 y。」',
+              text: '「先展開含括號的一邊，再把未知數與常數分到等號兩側。」',
             },
           ],
         },
@@ -291,9 +295,13 @@ export const archimedesYouth = {
         answer: '400',
         bankRef: { id: 532, note: '答案：400' },
       },
+      hint: {
+        speaker: 'NumNum',
+        text: '照題意列等式，先打開括號，再把未知數跟數字分到等號兩邊。',
+      },
       analysis: {
         speaker: '阿基米德',
-        text: '「解出 y ＝ 400！學徒原本 400 金幣、工匠原本 1200 金幣，兩人帳冊上的金額加起來只有 1600 金幣！」',
+        text: '「先把括號打開，再把帶 y 的項跟數字分開到等號兩邊。算完記得回頭核對：兩人加起來有沒有對上國庫。」',
       },
     },
     {
@@ -302,7 +310,7 @@ export const archimedesYouth = {
       lines: [
         {
           speaker: '姐姐',
-          text: '「果然有鬼！國庫總共撥了 2000 金幣，帳冊卻只記了 1600 金幣，這代表中間整整有 400 金幣被憑空私吞了！」',
+          text: '「果然有鬼！國庫撥了 2000，帳冊只記 1600——中間少的 400，被人私吞了！」',
         },
         {
           speaker: 'Numi',
@@ -364,7 +372,7 @@ export const archimedesYouth = {
           resultLines: [
             {
               speaker: 'Numi',
-              text: '「看第二種分法！3 座沒分到、1 座只吃到 4 桶。所以只有 (x - 4) 座熔爐吃滿了 10 桶油！再加上最後那座的 4 桶，總油量就跟第一種分法完全一樣啦！」',
+              text: '「盯第二種分法！有些熔爐沒吃滿——先搞清楚『真正吃滿的有幾座』，再把油桶總量跟第一種分法對起來！」',
             },
           ],
         },
@@ -377,7 +385,7 @@ export const archimedesYouth = {
           resultLines: [
             {
               speaker: 'NumNum',
-              text: '「左式油桶總量 8x + 12，右式總量 10(x - 4) + 4 展開為 10x - 36。按照移項規則即可求得 x。」',
+              text: '「兩邊都寫出油桶總量的式子，展開後移項，再把相同的項合在一起。」',
             },
           ],
         },
@@ -402,9 +410,13 @@ export const archimedesYouth = {
         answer: '24',
         bankRef: { id: 536, note: '答案：24' },
       },
+      hint: {
+        speaker: 'NumNum',
+        text: '兩種分法的油桶總量一樣多。兩邊列式，展開後移項求解。',
+      },
       analysis: {
         speaker: '阿基米德',
-        text: '「解出 x ＝ 24 座熔爐，油桶總數高達 204 桶！官方登記這間工坊只有 6 座熔爐，金匠居然私設了 18 座暗爐！他一直在秘密熔化並偷轉黃金！」',
+        text: '「兩種分法的油桶總量要相等。兩邊列式、展開、移項。算出 x 之後，再跟『官方登記只有 6 座』比看看差多少。」',
       },
     },
 
@@ -420,7 +432,7 @@ export const archimedesYouth = {
         },
         {
           speaker: '阿基米德',
-          text: '1000 克的純金塊排開 50 立方公分的水；但這頂 1000 克的皇冠卻排開了 70 立方公分的水！果然被摻入了密度較低、體積較大的白銀！',
+          text: '「1000 克的純金塊排開 50 立方公分的水；但這頂 1000 克的皇冠卻排開了 70 立方公分的水！果然被摻入了密度較低、體積較大的白銀！」',
         },
         {
           speaker: 'Numi',
@@ -461,20 +473,20 @@ export const archimedesYouth = {
           resultLines: [
             {
               speaker: 'Numi',
-              text: '「把皇冠分成兩塊！純金 x 克佔 (x/20) 水；白銀 (1000-x) 克佔 ((1000-x)/10) 水，兩個水塊加起來必須剛好填滿 70！」',
+              text: '「把皇冠拆成兩塊水！純金佔一塊、白銀佔一塊——兩塊的體積加起來，要剛好等於測到的總排水量！」',
             },
           ],
         },
         {
           id: 'algebra',
           label: '【NumNum 的整理：同倍消除】',
-          detail: '全式乘以最小公倍數 20 化簡分母。',
+          detail: '全式乘以分母的公倍數，消去分數再移項。',
           kind: 'solve',
           story: { density_strategy: 'numnum' },
           resultLines: [
             {
               speaker: 'NumNum',
-              text: '「全式同乘以公倍數 20：x + 2(1000 - x) = 1400，展開移項，數字就會井然有序地呈現答案。」',
+              text: '「先把分母清掉，再展開括號，把相同的項合起來求未知數。」',
             },
           ],
         },
@@ -499,9 +511,13 @@ export const archimedesYouth = {
         answer: '600',
         bankRef: { id: 527, note: '答案：600' },
       },
+      hint: {
+        speaker: 'NumNum',
+        text: '純金跟白銀排出的水加起來＝總排水量。先消分母再求解。',
+      },
       analysis: {
         speaker: '阿基米德',
-        text: '「解出 x ＝ 600 克！這頂皇冠只有 600 克純金，整整 400 克黃金被換成了白銀！這 400 克黃金，剛好完全對應帳冊裡消失的 400 金幣！」',
+        text: '「純金排水＋白銀排水＝總排水。先消分母再求 x。算完可以想：少掉的黃金，是不是剛好對上帳冊少的那筆？」',
       },
     },
 
@@ -547,30 +563,30 @@ export const archimedesYouth = {
     {
       id: 'branch_act5',
       type: 'branch',
-      prompt: '選擇去分母與力矩平衝的思路：',
+      prompt: '選擇去分母與力矩平衡的思路：',
       options: [
         {
           id: 'balance_insight',
           label: '【Numi 的直覺：槓桿同倍放大】(靈感 −1)',
-          detail: '將槓桿兩端同時放大 12 倍來消除分數。',
+          detail: '將槓桿兩端同時放大相同倍數來消除分數。',
           kind: 'insight',
           resultLines: [
             {
               speaker: 'Numi',
-              text: '「把天平兩邊同時放大 12 倍！第一項變成 4(2x - 5)，第二項變成 3(x + 1)，右邊的平衡基準值 1 也別忘了乘以 12 喔！」',
+              text: '「把天平兩邊同時放大同樣倍數！分數會變整數——但右邊的基準值也要一起放大喔！」',
             },
           ],
         },
         {
           id: 'balance_algebra',
           label: '【NumNum 的整理：分配律展開】',
-          detail: '同乘以 12，注意負號對分子的分配。',
+          detail: '先同乘分母的公倍數消去分數，展開時留意負號分配。',
           kind: 'solve',
           story: { balance_strategy: 'numnum' },
           resultLines: [
             {
               speaker: 'NumNum',
-              text: '「同乘 12 消除分母。請注意負號規則：−3(x + 1) 展開後為 −3x − 3，這是數學世界不可違背的規則。」',
+              text: '「先消分母，再把括號打開。有負號的話，負號要乘進括號裡的每一項。」',
             },
           ],
         },
@@ -595,9 +611,13 @@ export const archimedesYouth = {
         answer: '7',
         bankRef: { id: 521, note: '答案：7' },
       },
+      hint: {
+        speaker: 'NumNum',
+        text: '先乘上分母的公倍數消掉分數，打開括號時小心負號，再移項求解。',
+      },
       analysis: {
         speaker: '阿基米德',
-        text: '「解出 x ＝ 7！天平兩端在數值 7 達到了平衡偏轉，左邊皇冠浮力硬生生比右邊純金多出了整整 1 個單位的差額！」',
+        text: '「先乘公倍數消掉分數，打開括號時小心負號，再移項求 x。純金的話指針該停在 0——你的答案會不會讓它偏掉？」',
       },
     },
     {
@@ -650,7 +670,7 @@ export const archimedesYouth = {
           resultLines: [
             {
               speaker: '阿基米德',
-              text: '……讓數字在國王與世人面前自己說話。真理容不下妥協。',
+              text: '「……讓數字在國王與世人面前自己說話。真理容不下妥協。」',
             },
           ],
         },
@@ -667,7 +687,7 @@ export const archimedesYouth = {
           resultLines: [
             {
               speaker: '阿基米德',
-              text: '……先救人，並挖出背後的幕後黑手。數學可以成為拯救人的光芒。',
+              text: '「……先救人，並挖出背後的幕後黑手。數學可以成為拯救人的光芒。」',
             },
           ],
         },
@@ -687,11 +707,11 @@ export const archimedesYouth = {
         },
         {
           speaker: 'NumNum',
-          text: '「數據與規律展現了絕對的精準。金匠被逮捕下獄。」',
+          text: '「數字對上了。沒有含糊。金匠被逮捕下獄。」',
         },
         {
-          speaker: '阿基米德',
-          text: '阿基米德看著冰冷的宮殿，對世俗權謀感到厭倦，決定將一生投入純粹抽象的幾何世界。',
+          speaker: 'narrator',
+          text: '阿基米德看著冷冰冰的宮殿，對宮廷那一套感到厭煩，決定把一生都花在幾何上。',
         },
         {
           speaker: 'SYS',
@@ -707,15 +727,15 @@ export const archimedesYouth = {
         { speaker: 'SYS', text: '章節結束 — 結局二：【溫暖的理性之光】' },
         {
           speaker: 'narrator',
-          text: '前夜阿基米德展現了 x＝7 的浮力數據，老金匠痛哭流涕，連夜將偷藏的 400 克黃金熔回皇冠，並供出脅迫他的宮廷官員。',
+          text: '前夜阿基米德秀出 x＝7 的浮力數據，老金匠哭著連夜把偷藏的 400 克黃金熔回皇冠，還供出脅迫他的官員。',
         },
         {
           speaker: 'Numi',
           text: '「隔天指針完美停在 0！金匠保住了性命，壞官員也被抓起來了！弟弟的提議太棒了！」',
         },
         {
-          speaker: '阿基米德',
-          text: '阿基米德看著重新團聚的金匠一家，明白：數學不僅能揭開規律，更能成為守護善良的力量。',
+          speaker: 'narrator',
+          text: '阿基米德看著又聚在一起的金匠一家，明白：數學不但能找出規律，也能用來保護人。',
         },
         {
           speaker: 'SYS',

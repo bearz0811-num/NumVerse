@@ -1,4 +1,5 @@
 import { ERAS, MATHEMATICIANS } from '../../lib/numverse/constants'
+import { archimedesElder } from './archimedesElder'
 import { archimedesPrime } from './archimedesPrime'
 import { archimedesYouth } from './archimedesYouth'
 
@@ -6,6 +7,7 @@ import { archimedesYouth } from './archimedesYouth'
 export const chaptersById = {
   ARCHIMEDES_YOUTH: archimedesYouth,
   ARCHIMEDES_PRIME: archimedesPrime,
+  ARCHIMEDES_ELDER: archimedesElder,
 }
 
 /** All 15 chapter ids in mathematician × era order. */

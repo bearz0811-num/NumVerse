@@ -58,14 +58,33 @@ const CHECKPOINT_LABEL = {
   CHECKPOINT_P4_GEAR: '齒輪',
   CHECKPOINT_P4_GEAR_PROBLEM: '齒輪・題面',
   CHECKPOINT_P4_GEAR_SIMPLIFY: '齒輪・化簡',
-  CHECKPOINT_P4_GEAR_SCALE: '齒輪・倍率',
-  CHECKPOINT_P4_GEAR_QUIZ: '齒輪・答題',
   CHECKPOINT_P5_RANGE: '測距',
   CHECKPOINT_P5_RANGE_PROBLEM: '測距・題面',
   CHECKPOINT_P5_RANGE_QUIZ: '測距・答題',
   CHECKPOINT_P6_CALIB: '校準',
   CHECKPOINT_P6_CALIB_PROBLEM: '校準・題面',
   CHECKPOINT_P6_CALIB_QUIZ: '校準・答題',
+  // 阿基米德・暮年
+  CHECKPOINT_E1_LINK: '連線',
+  CHECKPOINT_E2_REUNION: '再會',
+  CHECKPOINT_E3_CHORD: '弦距',
+  CHECKPOINT_E3_CHORD_PROBLEM: '弦距・題面',
+  CHECKPOINT_E3_CHORD_QUIZ: '弦距・答題',
+  CHECKPOINT_E4_ANGLE: '圓心角',
+  CHECKPOINT_E4_ANGLE_PROBLEM: '圓心角・題面',
+  CHECKPOINT_E4_ANGLE_QUIZ: '圓心角・答題',
+  CHECKPOINT_E5_ARC: '弧長',
+  CHECKPOINT_E5_ARC_PROBLEM: '弧長・題面',
+  CHECKPOINT_E5_ARC_QUIZ: '弧長・答題',
+  CHECKPOINT_E6_SPHERE: '球柱',
+  CHECKPOINT_E6_SPHERE_PROBLEM: '球柱・題面',
+  CHECKPOINT_E6_SPHERE_RATIO: '球柱・比例',
+  CHECKPOINT_E6_SPHERE_QUIZ: '球柱・體積',
+  CHECKPOINT_E6_SPHERE_OUTRO: '球柱・頓悟',
+  CHECKPOINT_E7_SECTOR: '扇形',
+  CHECKPOINT_E7_SECTOR_PROBLEM: '扇形・題面',
+  CHECKPOINT_E7_SECTOR_QUIZ: '扇形・答題',
+  CHECKPOINT_E8_CIRCLES: '勿碰圓',
 }
 
 function checkpointLabel(id) {
@@ -344,11 +363,15 @@ export default function App() {
     if (!save.progress.unlocked_chapters.includes(chapterId)) return
     let next = startChapterSession(save, chapterId, chapterRewardOf)
 
-    // 壯年開場：依青年「最近一次結局」寫入 story.youth_ending
+    // 壯年／暮年開場：依前一章「最近一次結局」寫入 story
     const seedStory = {}
     if (chapterId === 'ARCHIMEDES_PRIME') {
       const ye = save.progress?.lastEndingId?.ARCHIMEDES_YOUTH
       if (ye) seedStory.youth_ending = ye
+    }
+    if (chapterId === 'ARCHIMEDES_ELDER') {
+      const pe = save.progress?.lastEndingId?.ARCHIMEDES_PRIME
+      if (pe) seedStory.prime_ending = pe
     }
     if (Object.keys(seedStory).length) {
       next = updateSession(next, {
@@ -696,10 +719,12 @@ export default function App() {
     }
     const next = updateSession(save, { insight: session.insight - 1 })
     setSave(next)
-    setInsightNote(
-      node.analysis?.text ||
-        '弟弟：先標出「已知／未知」，再看哪兩個量成比例或能列等式。',
-    )
+    const hint = node?.hint
+    const body =
+      (typeof hint === 'string' ? hint : hint?.text) ||
+      '先標出已知與未知，再想哪個公式或等式能把它們連起來。'
+    const who = typeof hint === 'object' && hint?.speaker ? hint.speaker : null
+    setInsightNote(who ? `${who}：${body}` : body)
   }
 
   function doCrashRestore() {
