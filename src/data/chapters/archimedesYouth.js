@@ -17,6 +17,10 @@ export const archimedesYouth = {
   rewards: {}, // 全章預設獎勵清空，改由各特定節點發放
   /** 本章 Eureka 蒐集上限：澡堂頓悟 1 + 結局各 1 */
   eurekaMax: 3,
+  /** 通關後知識卡（大廳／toast 一行） */
+  knowledgeCard: {
+    line: '本章練到：一元一次方程式應用｜課綱：七下・一元一次方程式',
+  },
   endings: [
     {
       id: 'ending_cold',

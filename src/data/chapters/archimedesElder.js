@@ -21,6 +21,9 @@ export const archimedesElder = {
   nextChapterId: null,
   rewards: {},
   eurekaMax: 3,
+  knowledgeCard: {
+    line: '本章練到：弦長、圓心角、弧長、圓錐展開、扇形｜課綱：九下・圓的性質；立體＝圓錐側面展開',
+  },
   endings: [
     {
       id: 'ending_cold',

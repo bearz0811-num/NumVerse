@@ -115,6 +115,7 @@ function chapterLobbyMeta(chapterId) {
         subtitle: data?.subtitle || null,
         endings: data?.endings || [],
         eurekaMax: Number(data?.eurekaMax) || (data?.endings?.length || 0) + 1,
+        knowledgeCard: data?.knowledgeCard || null,
         playable: Boolean(data?.nodes?.length),
       }
     }
@@ -133,6 +134,8 @@ function getBankQuestion(id) {
 }
 
 function DevBankAside({ bankRef }) {
+  // Prod build：整段 early-return，避免掛上 aside（字串仍可能留在 bundle，verify-prod 會檢查 UI 閘）
+  if (!import.meta.env.DEV) return null
   if (!bankRef?.id) return null
   const q = getBankQuestion(bankRef.id)
   return (
@@ -202,13 +205,38 @@ function checkStoryAnswer(question, raw) {
   return norm(value) === norm(question.answer)
 }
 
-function filterLines(lines, story = {}) {
+function filterLines(lines, story = {}, { suppressEurekaGainCopy = false } = {}) {
   return (lines || []).filter((line) => {
+    if (
+      suppressEurekaGainCopy &&
+      /獲得【Eureka|Eureka 幣\s*[×xX]/.test(String(line?.text || ''))
+    ) {
+      return false
+    }
     if (!line.whenStory) return true
     return Object.entries(line.whenStory).every(
       ([key, value]) => story[key] === value,
     )
   })
+}
+
+function chapterEurekaSettled(save, chapterId) {
+  if (!chapterId) return false
+  const claimed = save?.progress?.claimed_rewards || []
+  const completed = save?.progress?.completed_chapters || []
+  return (
+    claimed.includes(`chapter:${chapterId}`) || completed.includes(chapterId)
+  )
+}
+
+/** 重玩時隱藏「又獲得 Eureka」的劇情字（與 grantSessionNodeEureka 方案 B 對齊） */
+function shouldSuppressEurekaCopy(save, node) {
+  if (!save?.current_session || !node) return false
+  const chapterId = save.current_session.chapter_id
+  if (node.type === 'ending') {
+    return (save.progress?.unlockedEndings?.[chapterId] || []).includes(node.id)
+  }
+  return chapterEurekaSettled(save, chapterId)
 }
 
 /** 台詞出現「（獲得狀態：xxx）」時才寫入狀態列 */
@@ -264,6 +292,7 @@ export default function App() {
   const [lineHistory, setLineHistory] = useState([])
   const [eurekaToast, setEurekaToast] = useState(null) // { amount, key }
   const [endingToast, setEndingToast] = useState(null) // unlock banner
+  const [knowledgeToast, setKnowledgeToast] = useState(null) // chapter knowledge card
   const [coinPulse, setCoinPulse] = useState(false)
   const [archiveChapterId, setArchiveChapterId] = useState(null)
   const [selectedChapterId, setSelectedChapterId] = useState('ARCHIMEDES_YOUTH')
@@ -309,6 +338,12 @@ export default function App() {
     const t = window.setTimeout(() => setEndingToast(null), 4200)
     return () => window.clearTimeout(t)
   }, [endingToast])
+
+  useEffect(() => {
+    if (!knowledgeToast) return undefined
+    const t = window.setTimeout(() => setKnowledgeToast(null), 5600)
+    return () => window.clearTimeout(t)
+  }, [knowledgeToast])
 
   function showEurekaGain(amount) {
     if (!amount) return
@@ -399,16 +434,19 @@ export default function App() {
 
   function activeLinesFor(n, st = story) {
     if (!n) return []
+    const suppress = shouldSuppressEurekaCopy(save, n)
+    const opts = { suppressEurekaGainCopy: suppress }
     if (n.type === 'philosophy') {
       return filterLines(
         [{ speaker: 'SYS', text: n.prompt }, ...(n.lines || [])],
         st,
+        opts,
       )
     }
     if (n.type === 'quiz' || n.type === 'problem') {
-      return filterLines(n.setup || [], st)
+      return filterLines(n.setup || [], st, opts)
     }
-    return filterLines(n.lines || [], st)
+    return filterLines(n.lines || [], st, opts)
   }
 
   function advanceLines() {
@@ -558,6 +596,13 @@ export default function App() {
       !(Number(fromSave.current_session?.eurekaPending) > 0)
     ) {
       showEurekaGain(granted.eurekaCoin)
+    }
+    if (ch?.knowledgeCard?.line) {
+      setKnowledgeToast({
+        key: Date.now(),
+        title: ch.title,
+        line: ch.knowledgeCard.line,
+      })
     }
     setSave(next)
     setScreen('lobby')
@@ -965,6 +1010,17 @@ export default function App() {
             </div>
           </div>
         ) : null}
+        {knowledgeToast ? (
+          <div
+            key={knowledgeToast.key}
+            className={`nv-knowledge-toast${endingToast ? ' is-offset' : ''}`}
+          >
+            <div className="nv-knowledge-toast-title">
+              📒【{knowledgeToast.title}】學到什麼
+            </div>
+            <div className="nv-knowledge-toast-body">{knowledgeToast.line}</div>
+          </div>
+        ) : null}
         <div className="nv-crt">
           <div className="nv-scanlines" aria-hidden />
           <header className="nv-header nv-header-lobby">
@@ -1002,6 +1058,11 @@ export default function App() {
                   🟡 Eureka 幣已獲得：{selectedEurekaGot} /{' '}
                   {selectedEurekaMax || '—'}
                 </div>
+                {selected.knowledgeCard?.line ? (
+                  <div className="nv-chapter-card-stats nv-knowledge-line">
+                    📒 {selected.knowledgeCard.line}
+                  </div>
+                ) : null}
               </>
             )}
             <div className="nv-row">

@@ -18,6 +18,9 @@ export const archimedesPrime = {
   nextChapterId: 'ARCHIMEDES_ELDER',
   rewards: {},
   eurekaMax: 3,
+  knowledgeCard: {
+    line: '本章練到：畢氏定理、乘法公式、因式分解、根式｜課綱：八上・平方根與畢氏／乘法公式；八下・因式分解',
+  },
   endings: [
     {
       id: 'ending_cold',

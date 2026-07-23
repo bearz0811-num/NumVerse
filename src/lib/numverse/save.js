@@ -295,13 +295,37 @@ export function clearSession(save, chapterRewardOf) {
 
 /**
  * 章內頓悟：先加進 session.eurekaPending（畫面可顯示／toast）。
- * 真正入帳要等 completeChapter；中止／重玩會丟掉 pending。
+ * 真正入帳要等 completeChapter；中止會丟掉 pending。
+ *
+ * 重玩防假加總（方案 B）：
+ * - 章已通關／已 chapter: 入帳 → 章內頓悟不再 pending
+ * - 結局已在 unlockedEndings → 不發
+ * - 章已入帳但碰到「尚未解鎖的新結局」→ 不進 pending（由 completeChapter bonusEureka 補發）
  */
 export function grantSessionNodeEureka(save, node) {
   const amount = Number(node?.rewards?.eurekaCoin) || 0
   if (!save.current_session || !node?.id || amount <= 0) {
     return { save, granted: null }
   }
+
+  const chapterId = save.current_session.chapter_id
+  const claimedRewards = new Set(save.progress?.claimed_rewards || [])
+  const completed = new Set(save.progress?.completed_chapters || [])
+  const chapterSettled =
+    claimedRewards.has(`chapter:${chapterId}`) || completed.has(chapterId)
+
+  if (node.type === 'ending') {
+    const unlocked = save.progress?.unlockedEndings?.[chapterId] || []
+    if (unlocked.includes(node.id)) {
+      return { save, granted: null }
+    }
+    if (chapterSettled) {
+      return { save, granted: null }
+    }
+  } else if (chapterSettled) {
+    return { save, granted: null }
+  }
+
   const claimed = new Set(save.current_session.eurekaClaimed || [])
   if (claimed.has(node.id)) {
     return { save, granted: null }
