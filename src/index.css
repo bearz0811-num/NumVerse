@@ -356,6 +356,16 @@ body,
   align-items: center;
 }
 
+.nv-map-soon-row {
+  opacity: 0.55;
+}
+
+.nv-map-soon-label {
+  color: var(--nv-fg-dim);
+  font-size: var(--nv-fs-meta);
+  letter-spacing: 0.04em;
+}
+
 .nv-map-name {
   width: 9.5rem;
   flex-shrink: 0;

@@ -1109,47 +1109,72 @@ export default function App() {
           </div>
 
           <div className="nv-map">
-            {MATHEMATICIANS.map((m) => (
-              <div key={m.id} className="nv-map-row">
-                <span className="nv-map-name">
-                  {m.icon} {m.label}
-                </span>
-                <div className="nv-map-eras">
-                  {ERAS.map((era, i) => {
-                    const id = m.chapters[era]
-                    const unlocked = save.progress.unlocked_chapters.includes(id)
-                    const completed =
-                      save.progress.completed_chapters.includes(id)
-                    const playable = isChapterPlayable(id)
-                    const selected = id === selectedChapterId
-                    return (
-                      <span key={era} className="nv-map-era">
-                        {i > 0 ? <span className="nv-arrow">───&gt;</span> : null}
-                        <button
-                          type="button"
-                          className={`nv-chip${completed ? ' done' : ''}${selected ? ' selected' : ''}${!unlocked ? ' locked' : ''}${unlocked && !playable ? ' soon' : ''}`}
-                          onClick={() => setSelectedChapterId(id)}
-                          title={
-                            unlocked
-                              ? playable
-                                ? ERA_LABEL[era]
-                                : `${ERA_LABEL[era]}（尚未開放）`
-                              : `${ERA_LABEL[era]}（未解鎖）`
-                          }
-                        >
-                          {ERA_SHORT[era]}
-                          {completed ? '：✓' : !unlocked ? '：🔒' : playable ? '' : '：…'}
-                        </button>
-                      </span>
-                    )
-                  })}
+            {MATHEMATICIANS.map((m) => {
+              const playableHere = ERAS.some((era) =>
+                isChapterPlayable(m.chapters[era]),
+              )
+              if (!playableHere) {
+                return (
+                  <div key={m.id} className="nv-map-row nv-map-soon-row">
+                    <span className="nv-map-name">
+                      {m.icon} {m.label}
+                    </span>
+                    <span className="nv-map-soon-label">籌備中</span>
+                  </div>
+                )
+              }
+              return (
+                <div key={m.id} className="nv-map-row">
+                  <span className="nv-map-name">
+                    {m.icon} {m.label}
+                  </span>
+                  <div className="nv-map-eras">
+                    {ERAS.map((era, i) => {
+                      const id = m.chapters[era]
+                      const unlocked =
+                        save.progress.unlocked_chapters.includes(id)
+                      const completed =
+                        save.progress.completed_chapters.includes(id)
+                      const playable = isChapterPlayable(id)
+                      const selected = id === selectedChapterId
+                      return (
+                        <span key={era} className="nv-map-era">
+                          {i > 0 ? (
+                            <span className="nv-arrow">───&gt;</span>
+                          ) : null}
+                          <button
+                            type="button"
+                            className={`nv-chip${completed ? ' done' : ''}${selected ? ' selected' : ''}${!unlocked ? ' locked' : ''}${unlocked && !playable ? ' soon' : ''}`}
+                            onClick={() => setSelectedChapterId(id)}
+                            title={
+                              unlocked
+                                ? playable
+                                  ? ERA_LABEL[era]
+                                  : `${ERA_LABEL[era]}（尚未開放）`
+                                : `${ERA_LABEL[era]}（未解鎖）`
+                            }
+                          >
+                            {ERA_SHORT[era]}
+                            {completed
+                              ? '：✓'
+                              : !unlocked
+                                ? '：🔒'
+                                : playable
+                                  ? ''
+                                  : '：…'}
+                          </button>
+                        </span>
+                      )
+                    })}
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
           <PanelBox>
-            🌌 理性的神殿（終章）［進度：{completedCount}/15］
-            {completedCount >= 15 ? '［已開放］' : '（🔒 需通關 15/15）'}
+            🌌 可玩路線：阿基米德（青年→壯年→暮年）｜全館進度：
+            {completedCount}/15
+            {completedCount >= 15 ? '［終章已開放］' : '（其餘數學家籌備中）'}
           </PanelBox>
         </div>
       </div>
