@@ -6,7 +6,9 @@
  *  1. 幕四圓錐展開頓悟 (+1)
  *  2. 結局一 (+1)
  *  3. 結局二 (+1)
- * 開場態度依 progress.lastEndingId.ARCHIMEDES_PRIME（prime_ending）
+ * 開場態度依 progress.lastEndingId：
+ *   ARCHIMEDES_YOUTH → youth_ending
+ *   ARCHIMEDES_PRIME → prime_ending
  * 敘事鎖定：名句＝沙盤被干擾（Numi＋遠處人影）；不寫被殺主線
  */
 
@@ -88,6 +90,16 @@ export const archimedesElder = {
         },
         {
           speaker: '阿基米德',
+          text: '「當年大殿上刻度 7 當眾揭穿之後，我就更信：數字寫在眾人眼前，才站得住。那條路，我沒後悔。」',
+          whenStory: { youth_ending: 'ending_cold' },
+        },
+        {
+          speaker: '阿基米德',
+          text: '「金匠一家後來還常送油燈來書房。我才記起——有些證明，是為了讓人還能回家。」',
+          whenStory: { youth_ending: 'ending_warm' },
+        },
+        {
+          speaker: '阿基米德',
           text: '「城牆那套機械，後來照你們說的——把參數校成能警告、能留生路。城多撐了一陣。現在，我想把力氣留給圓。」',
           whenStory: { prime_ending: 'ending_warm' },
         },
@@ -102,7 +114,7 @@ export const archimedesElder = {
         },
         {
           speaker: '姐姐',
-          text: '「弦、圓心角、弧、球與柱……這次要把性質寫清楚，不能只憑感覺。」',
+          text: '「弦、圓心角、弧、圓錐展開、扇形……這次要把性質寫清楚，不能只憑感覺。」',
         },
       ],
     },
@@ -204,6 +216,16 @@ export const archimedesElder = {
           text: '阿基米德在沙上標出弦的兩端，長度與計算吻合。燭火晃了一下。',
         },
         {
+          speaker: 'Numi',
+          text: '「半徑當斜邊、弦心距當一股——半弦加倍就對了！」',
+          whenStory: { chord_method: 'numi' },
+        },
+        {
+          speaker: 'NumNum',
+          text: '「垂徑定理加畢氏——弦長才站得住。」',
+          whenStory: { chord_method: 'numnum' },
+        },
+        {
           speaker: '阿基米德',
           text: '「弦穩了。下一步：把圓周切成相同的角——我想用有限步，去逼近圓周有多長。」',
         },
@@ -302,6 +324,16 @@ export const archimedesElder = {
         {
           speaker: 'narrator',
           text: '六條半徑像花瓣張開。阿基米德點頭：有限的等分，已經能開始逼近圓周。',
+        },
+        {
+          speaker: '弟弟',
+          text: '「整圓均分——每一份的角就齊了。」',
+          whenStory: { angle_method: 'numi' },
+        },
+        {
+          speaker: '姐姐',
+          text: '「總度數除以份數——圓心角才不會猜。」',
+          whenStory: { angle_method: 'numnum' },
         },
         {
           speaker: '姐姐',
@@ -405,6 +437,16 @@ export const archimedesElder = {
         {
           speaker: 'narrator',
           text: '弧長的 k 寫上木牌。阿基米德擦擦手：「圓在平面上夠了。我更在意——立體模型的側面，展開後怎麼對回底面。」',
+        },
+        {
+          speaker: 'Numi',
+          text: '「角是整圓幾分之幾，弧就佔圓周同樣幾分——k 才讀得出來。」',
+          whenStory: { arc_method: 'numi' },
+        },
+        {
+          speaker: 'NumNum',
+          text: '「比例乘圓周，再讀 π 前面的係數——弧長才乾淨。」',
+          whenStory: { arc_method: 'numnum' },
         },
         {
           speaker: 'Numi',
@@ -549,6 +591,16 @@ export const archimedesElder = {
           text: '扇形弧長與底面圓周對上的瞬間，書房裡掠過一道很淡的暖黃光——不夠刺眼，卻很清楚。',
         },
         {
+          speaker: 'Numi',
+          text: '「扇形外弧捲回去——就是底面那一圈！對上了才發亮。」',
+          whenStory: { cone_method: 'numi' },
+        },
+        {
+          speaker: '姐姐',
+          text: '「弧長對底周，再回推半徑——展開與立體才是同一件事。」',
+          whenStory: { cone_method: 'numnum' },
+        },
+        {
           speaker: '阿基米德',
           text: '「……展開與立體，是同一件事的兩面。我想把這種對應留給以後所有做模型的人。」',
         },
@@ -662,6 +714,16 @@ export const archimedesElder = {
         {
           speaker: 'narrator',
           text: '扇形的 k 寫進沙盤邊緣。書房暫時只剩沙沙的刮痕聲——以及越來越近的門外腳步。',
+        },
+        {
+          speaker: '弟弟',
+          text: '「扇形是圓的幾分之幾——面積的 k 就跟著出來。」',
+          whenStory: { sector_method: 'numi' },
+        },
+        {
+          speaker: '姐姐',
+          text: '「角度比例乘圓面積——扇形才寫得進沙盤。」',
+          whenStory: { sector_method: 'numnum' },
         },
         {
           speaker: '阿基米德',
@@ -783,6 +845,14 @@ export const archimedesElder = {
         },
         {
           speaker: 'narrator',
+          text: '冊頁送進公共檔案庫，門口掛「不得塗改」。學徒只能抄，不准縮寫；他說縮寫會把嚴格性磨掉。',
+        },
+        {
+          speaker: '姐姐',
+          text: '「真理要公開，才禁得起時間。哪怕外面已經亂了。」',
+        },
+        {
+          speaker: 'narrator',
           text: '窗外的喧囂遠了一點，又近了一點。阿基米德只看著冊頁上的圓：這就夠了。',
         },
         {
@@ -804,6 +874,14 @@ export const archimedesElder = {
         {
           speaker: 'Numi',
           text: '「這樣就算沙被踩亂，也還能再畫一次對不對！」',
+        },
+        {
+          speaker: 'narrator',
+          text: '學徒把口訣帶走；瓦罐埋在牆腳。完整冊頁暫不公開——先讓火種離得開這間書房。',
+        },
+        {
+          speaker: '弟弟',
+          text: '「人要先活著。圓，可以再畫。」',
         },
         {
           speaker: 'narrator',

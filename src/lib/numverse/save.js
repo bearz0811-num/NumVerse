@@ -105,6 +105,7 @@ export function startChapterSession(save, chapterId, chapterRewardOf) {
       story: {},
       eurekaPending: 0,
       eurekaClaimed: [],
+      skipNarrative: false,
       snapshot: {
         checkpoint_id: 'CHECKPOINT_START',
         node_id: null,

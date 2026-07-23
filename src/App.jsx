@@ -270,6 +270,7 @@ export default function App() {
   const primaryKeyRef = useRef(() => {})
   const typewriterRef = useRef(null)
   const pendingJumpRef = useRef(null)
+  const skipAutoTokenRef = useRef('')
 
   function setJumpTarget(nodeId) {
     pendingJumpRef.current = nodeId || null
@@ -288,8 +289,9 @@ export default function App() {
     if (!session) return '待命'
     const buff = story.buff || story.buff2
     const buffTag = buff ? `｜狀態：${buff}` : ''
+    const skipTag = session.skipNarrative ? '｜跳過敘事' : ''
     const chapterTitle = chapter?.title || '未知章節'
-    return `${chapterTitle}篇｜檢查點 ${checkpointLabel(session.checkpoint_id)}｜理智 [${bar(session.sanity, SANITY_MAX)}] ${session.sanity}/${SANITY_MAX}｜靈感 [${bar(session.insight, INSIGHT_MAX, '💡', '·')}] ${session.insight}/${INSIGHT_MAX}${buffTag}`
+    return `${chapterTitle}篇｜檢查點 ${checkpointLabel(session.checkpoint_id)}｜理智 [${bar(session.sanity, SANITY_MAX)}] ${session.sanity}/${SANITY_MAX}｜靈感 [${bar(session.insight, INSIGHT_MAX, '💡', '·')}] ${session.insight}/${INSIGHT_MAX}${buffTag}${skipTag}`
   }, [session, story, chapter?.title])
 
   useEffect(() => {
@@ -358,7 +360,7 @@ export default function App() {
     window.scrollTo(0, 0)
   }
 
-  function beginChapter(chapterId) {
+  function beginChapter(chapterId, { skipNarrative: skip = false } = {}) {
     if (!isChapterPlayable(chapterId)) return
     if (!save.progress.unlocked_chapters.includes(chapterId)) return
     let next = startChapterSession(save, chapterId, chapterRewardOf)
@@ -370,7 +372,9 @@ export default function App() {
       if (ye) seedStory.youth_ending = ye
     }
     if (chapterId === 'ARCHIMEDES_ELDER') {
+      const ye = save.progress?.lastEndingId?.ARCHIMEDES_YOUTH
       const pe = save.progress?.lastEndingId?.ARCHIMEDES_PRIME
+      if (ye) seedStory.youth_ending = ye
       if (pe) seedStory.prime_ending = pe
     }
     if (Object.keys(seedStory).length) {
@@ -378,30 +382,19 @@ export default function App() {
         story: { ...(next.current_session?.story || {}), ...seedStory },
       })
     }
+    if (skip) {
+      next = updateSession(next, { skipNarrative: true })
+    }
 
-    setSave(next)
-    setNodeIndex(0)
-    setLineIndex(0)
-    setPhase('lines')
-    setQuizInput('')
+    skipAutoTokenRef.current = ''
     setAnalysis(null)
     setInsightNote(null)
     setJumpTarget(null)
     setFlavorLines([])
     setLineHistory([])
+    setQuizInput('')
     setScreen('chapter')
-    const ch = getChapter(chapterId)
-    const first = ch?.nodes?.[0]
-    if (first?.checkpoint) {
-      next = writeCheckpoint(next, {
-        checkpointId: first.checkpoint,
-        nodeId: first.id,
-        sanity: SANITY_MAX,
-        insight: INSIGHT_MAX,
-        story: { ...(next.current_session?.story || {}) },
-      })
-      setSave(next)
-    }
+    enterNode(0, next)
   }
 
   function activeLinesFor(n, st = story) {
@@ -581,6 +574,18 @@ export default function App() {
   }
 
   function playFlavor(lines, nextSave, jumpId = null) {
+    // 跳過敘事：branch／哲學選完後的短回饋也略過，直接進下一節或結局
+    if (nextSave.current_session?.skipNarrative) {
+      setSave(nextSave)
+      setFlavorLines([])
+      setJumpTarget(null)
+      if (jumpId) {
+        jumpToNodeId(jumpId, nextSave)
+        return
+      }
+      goNextNode(nextSave)
+      return
+    }
     setSave(nextSave)
     setFlavorLines(lines || [])
     setJumpTarget(jumpId)
@@ -620,6 +625,49 @@ export default function App() {
     }
     goNextNode(nextSave)
   }
+
+  // 跳過已讀敘事：自動略過 narrative／problem／branch；quiz 略過 setup 進答題
+  useEffect(() => {
+    if (screen !== 'chapter') return
+    if (!session?.skipNarrative || !node) return
+
+    const token = `${session.chapter_id}:${node.id}:${phase}:${nodeIndex}`
+    if (skipAutoTokenRef.current === token) return
+    skipAutoTokenRef.current = token
+
+    if (phase === 'flavor') {
+      const jump = pendingJumpRef.current
+      setFlavorLines([])
+      setJumpTarget(null)
+      if (jump) jumpToNodeId(jump, save)
+      else goNextNode(save)
+      return
+    }
+
+    if (node.type === 'narrative' && phase === 'lines') {
+      goNextNode()
+      return
+    }
+    if (node.type === 'problem' && (phase === 'lines' || phase === 'problem')) {
+      goNextNode()
+      return
+    }
+    if (node.type === 'quiz' && phase === 'lines') {
+      setPhase('quiz')
+      return
+    }
+    if (
+      (node.type === 'branch' || node.type === 'command') &&
+      (phase === 'lines' || phase === 'choices')
+    ) {
+      const opts = node.options || []
+      const pick =
+        opts.find((o) => o.kind && o.kind !== 'insight') ||
+        opts.find((o) => !/靈感/.test(o.label || '')) ||
+        opts[0]
+      if (pick) onBranchOrCommandPick(pick)
+    }
+  }, [screen, session?.skipNarrative, session?.chapter_id, node, nodeIndex, phase, save])
 
   function onPhilosophyPick(option) {
     let next = applyFlags(save, option.flags || {})
@@ -678,9 +726,14 @@ export default function App() {
     setLineIndex(lineIndex - 1)
   }
 
-  function submitQuiz() {
+  function submitQuiz(answerOverride) {
     if (!node?.question || !session) return
-    const ok = checkStoryAnswer(node.question, quizInput)
+    const value =
+      answerOverride != null && String(answerOverride).trim() !== ''
+        ? answerOverride
+        : quizInput
+    if (!String(value || '').trim()) return
+    const ok = checkStoryAnswer(node.question, value)
     if (ok) {
       let next = writeCheckpoint(save, {
         checkpointId: node.checkpoint || session.checkpoint_id,
@@ -934,7 +987,7 @@ export default function App() {
             ) : null}
             {!selected.playable ? (
               <div className="nv-chapter-card-stats">
-                🔒 本章劇本尚未開放（MVP 僅阿基米德・青年可玩）
+                🔒 本章劇本尚未開放
               </div>
             ) : (
               <>
@@ -960,6 +1013,17 @@ export default function App() {
               >
                 {hasCompleted ? '再次進入 _' : '進入 _'}
               </button>
+              {hasCompleted && canEnter ? (
+                <button
+                  type="button"
+                  className="nv-btn"
+                  onClick={() =>
+                    beginChapter(selectedChapterId, { skipNarrative: true })
+                  }
+                >
+                  跳過已讀敘事 _
+                </button>
+              ) : null}
               <button
                 type="button"
                 className="nv-btn"
@@ -1303,7 +1367,7 @@ export default function App() {
                       key={o.letter}
                       type="button"
                       className="nv-btn"
-                      onClick={() => setQuizInput(o.letter)}
+                      onClick={() => submitQuiz(o.letter)}
                     >
                       {o.letter}. {o.text}
                     </button>
@@ -1320,22 +1384,21 @@ export default function App() {
                 />
               )}
               <div className="nv-row">
-                <button
-                  type="button"
-                  className="nv-btn primary"
-                  disabled={!quizInput.trim()}
-                  onClick={submitQuiz}
-                >
-                  [1] 送出
-                </button>
+                {!node.question.options ? (
+                  <button
+                    type="button"
+                    className="nv-btn primary"
+                    disabled={!quizInput.trim()}
+                    onClick={() => submitQuiz()}
+                  >
+                    [1] 送出
+                  </button>
+                ) : null}
                 <button type="button" className="nv-btn" onClick={useInsightHint}>
-                  [2] 靈感提示 (−1)
+                  {node.question.options ? '[1]' : '[2]'} 靈感提示 (−1)
                 </button>
               </div>
               {insightNote ? <p className="nv-ok">{insightNote}</p> : null}
-              {quizInput && node.question.options ? (
-                <p className="nv-muted">已選：{quizInput}</p>
-              ) : null}
             </>
           ) : null}
 
@@ -1376,7 +1439,7 @@ export default function App() {
           中止並回大廳
         </button>
       </div>
-      <DevBankAside bankRef={bankRefForDev} />
+      {import.meta.env.DEV ? <DevBankAside bankRef={bankRefForDev} /> : null}
     </div>
   )
 }

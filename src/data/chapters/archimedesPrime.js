@@ -216,6 +216,16 @@ export const archimedesPrime = {
           text: '石頭掠過海面，砸在標定浮標外側一丈處——誤差在允許範圍。士兵歡呼。',
         },
         {
+          speaker: '弟弟',
+          text: '「剛才用熟悉直角邊對照——斜距一下子就穩了。」',
+          whenStory: { catapult_method: 'numi' },
+        },
+        {
+          speaker: '姐姐',
+          text: '「兩股平方相加再開根——斜邊才禁得起試射。」',
+          whenStory: { catapult_method: 'numnum' },
+        },
+        {
           speaker: '阿基米德',
           text: '「斜邊對了。下一步：海港邊的起重爪。巨船靠近時，要能把它掀翻——那需要力臂，不是蠻力。」',
         },
@@ -360,6 +370,16 @@ export const archimedesPrime = {
           text: '配重箱就位。短臂鐵爪扣住靶船模型——長臂緩緩下沉，模型船舷被掀離水面。',
         },
         {
+          speaker: 'Numi',
+          text: '「長方形拆成小圖塊再加——面積沒再飄了！」',
+          whenStory: { crane_method: 'numi' },
+        },
+        {
+          speaker: 'NumNum',
+          text: '「乘法公式展開後再代入——配重才不會算錯。」',
+          whenStory: { crane_method: 'numnum' },
+        },
+        {
           speaker: '阿基米德',
           text: '（眼睛驟亮）「……我懂了。力與距離在說話：短臂承重，長臂只需較小的力。給我支點與夠長的臂，我就能撬動這艘船——甚至，撬動我以為撬不動的東西。」',
         },
@@ -489,6 +509,16 @@ export const archimedesPrime = {
           text: '齒盤重新嚙合，起重爪的回收變得平順。城外敵船又靠近了一分。',
         },
         {
+          speaker: 'Numi',
+          text: '「分子分母拆開對消——傳動比終於不跟著 x 亂跳。」',
+          whenStory: { gear_method: 'numi' },
+        },
+        {
+          speaker: 'NumNum',
+          text: '「因式分解後約分——咬合才穩。」',
+          whenStory: { gear_method: 'numnum' },
+        },
+        {
           speaker: '阿基米德',
           text: '「還差觀測。投石表要的是水平距離——斜視線與高差已知，水平邊還沒寫上。」',
         },
@@ -596,6 +626,16 @@ export const archimedesPrime = {
           text: '觀測板更新。投石表與爪臂回收節拍對上同一套距離。',
         },
         {
+          speaker: '弟弟',
+          text: '「整數直角邊對照——水平距沒搞混斜邊。」',
+          whenStory: { range_method: 'numi' },
+        },
+        {
+          speaker: 'NumNum',
+          text: '「斜邊平方減一股再開根——水平邊才寫得進投石表。」',
+          whenStory: { range_method: 'numnum' },
+        },
+        {
           speaker: '阿基米德',
           text: '「最後一步：把兩段備用繩的根式長度加總，寫成決戰校準參數。明天——不，今夜——國王要看公開試射。」',
         },
@@ -699,6 +739,16 @@ export const archimedesPrime = {
           text: '校準牌釘上爪臂。城外火把連成線。國王的使者在門外等候「公開試射」的命令。',
         },
         {
+          speaker: 'Numi',
+          text: '「根號裡拆出平方數——√2 前面的數字終於加得齊。」',
+          whenStory: { calib_method: 'numi' },
+        },
+        {
+          speaker: '姐姐',
+          text: '「化成最簡根式再合併——校準牌才寫得下去。」',
+          whenStory: { calib_method: 'numnum' },
+        },
+        {
           speaker: 'NumNum',
           text: '「機器都好了。接下來——你們希望這座城怎麼活下去？」',
         },
@@ -777,6 +827,14 @@ export const archimedesPrime = {
         },
         {
           speaker: 'narrator',
+          text: '城牆上釘起「最大殺傷」校準表：水平距、斜距、爪臂節拍一律公開。漁船也暫時不准靠近外港。',
+        },
+        {
+          speaker: '姐姐',
+          text: '「敵軍看見的是絕對數據。這座城，至少今夜不會被談判拖垮。」',
+        },
+        {
+          speaker: 'narrator',
           text: '阿基米德看著退走的帆影，卻把臉轉向沙地上的圓與直線：守城只是暫時的；幾何，才值得他花一輩子。',
         },
         {
@@ -798,6 +856,14 @@ export const archimedesPrime = {
         {
           speaker: 'Numi',
           text: '「他們跑了！而且……好像沒死很多人！」',
+        },
+        {
+          speaker: 'narrator',
+          text: '校準牌改釘「警告距／勸退距」兩欄；外港重新放行小漁船，士兵記住：先喊停，再動手。',
+        },
+        {
+          speaker: '弟弟',
+          text: '「機械還在。只是射程表多留了一格給人。」',
         },
         {
           speaker: 'narrator',

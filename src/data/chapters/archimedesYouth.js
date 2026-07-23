@@ -195,6 +195,16 @@ export const archimedesYouth = {
         },
         {
           speaker: 'Numi',
+          text: '「剛才用身體撞水塊的感覺想——對了才這麼爽！」',
+          whenStory: { bath_method: 'numi' },
+        },
+        {
+          speaker: 'NumNum',
+          text: '「等式兩邊對齊之後，h 才站得住。秩序有用。」',
+          whenStory: { bath_method: 'numnum' },
+        },
+        {
+          speaker: 'Numi',
           text: '「哇哇！大叔赤裸著喊著『Eureka』跑出去了！大家快跟上！」',
         },
         {
@@ -311,6 +321,16 @@ export const archimedesYouth = {
         {
           speaker: '姐姐',
           text: '「果然有鬼！國庫撥了 2000，帳冊只記 1600——中間少的 400，被人私吞了！」',
+        },
+        {
+          speaker: '弟弟',
+          text: '「還好剛才追金幣跳哪裡——帳才對得起來。」',
+          whenStory: { ledger_strategy: 'numi' },
+        },
+        {
+          speaker: '姐姐',
+          text: '「括號展開、移項核對——亂帳最怕這種整理。」',
+          whenStory: { ledger_strategy: 'numnum' },
         },
         {
           speaker: 'Numi',
@@ -431,6 +451,16 @@ export const archimedesYouth = {
           text: '掌握假帳與暗爐的鐵證後，阿基米德封鎖工坊，取回工匠打造完成的 1000 克皇冠進行排水檢測。',
         },
         {
+          speaker: 'Numi',
+          text: '「剛才盯『沒吃飽的熔爐』想——暗爐數量才爆出來！」',
+          whenStory: { forge_strategy: 'numi' },
+        },
+        {
+          speaker: 'NumNum',
+          text: '「兩邊油桶總量列成等式，過與不足才算得乾淨。」',
+          whenStory: { forge_strategy: 'numnum' },
+        },
+        {
           speaker: '阿基米德',
           text: '「1000 克的純金塊排開 50 立方公分的水；但這頂 1000 克的皇冠卻排開了 70 立方公分的水！果然被摻入了密度較低、體積較大的白銀！」',
         },
@@ -532,6 +562,16 @@ export const archimedesYouth = {
           text: '大殿審判的前夜。阿基米德為了在國王與眾臣面前公開演示，特地製造了一台「阿基米德浮力槓桿秤」。',
         },
         {
+          speaker: '弟弟',
+          text: '「密度那題把皇冠拆成兩塊水想——金銀各佔多少，一下子就清楚了。」',
+          whenStory: { density_strategy: 'numi' },
+        },
+        {
+          speaker: '姐姐',
+          text: '「消分母再移項——混合金銀的體積才對得上排水。」',
+          whenStory: { density_strategy: 'numnum' },
+        },
+        {
           speaker: '阿基米德',
           text: '「單靠排水容器容易有觀察誤差。我設計了這台天平，左邊放皇冠，右邊放等重的純金塊，同時浸入水中。」',
         },
@@ -570,6 +610,7 @@ export const archimedesYouth = {
           label: '【Numi 的直覺：槓桿同倍放大】(靈感 −1)',
           detail: '將槓桿兩端同時放大相同倍數來消除分數。',
           kind: 'insight',
+          story: { balance_strategy: 'numi' },
           resultLines: [
             {
               speaker: 'Numi',
@@ -627,6 +668,16 @@ export const archimedesYouth = {
         {
           speaker: 'NumNum',
           text: '「這代表只要將天平放入水中，指針就會當場彈到【刻度 7】，而不是純金該有的【刻度 0】。」',
+        },
+        {
+          speaker: 'Numi',
+          text: '「兩邊同倍放大那招，分數一清，刻度就跳出來了！」',
+          whenStory: { balance_strategy: 'numi' },
+        },
+        {
+          speaker: '姐姐',
+          text: '「消分母、展開負號——天平兩邊才會真正平衡。」',
+          whenStory: { balance_strategy: 'numnum' },
         },
         {
           speaker: '姐姐',
@@ -711,7 +762,15 @@ export const archimedesYouth = {
         },
         {
           speaker: 'narrator',
-          text: '阿基米德看著冷冰冰的宮殿，對宮廷那一套感到厭煩，決定把一生都花在幾何上。',
+          text: '國王下令：往後王室金器都要當眾過浮力秤。金匠的名字寫進罪冊，沒有私下和解的空間。',
+        },
+        {
+          speaker: '姐姐',
+          text: '「這就是絕對的證明。人情不能改刻度。」',
+        },
+        {
+          speaker: 'narrator',
+          text: '阿基米德看著冷冰冰的宮殿，對宮廷那一套感到厭煩，決定把一生都花在幾何上——不再為誰求情。',
         },
         {
           speaker: 'SYS',
@@ -732,6 +791,14 @@ export const archimedesYouth = {
         {
           speaker: 'Numi',
           text: '「隔天指針完美停在 0！金匠保住了性命，壞官員也被抓起來了！弟弟的提議太棒了！」',
+        },
+        {
+          speaker: 'narrator',
+          text: '金匠一家留下一份「浮力自檢」草圖，往後每件金器先私下過秤，再送進王宮——錯誤還有機會改。',
+        },
+        {
+          speaker: '弟弟',
+          text: '「數字還是對的。只是我們先給人一條路。」',
         },
         {
           speaker: 'narrator',
