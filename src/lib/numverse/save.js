@@ -1,3 +1,4 @@
+import { defaultUnlockedChapterIds } from '../../data/chapters'
 import {
   EMPTY_FLAGS,
   INSIGHT_MAX,
@@ -18,7 +19,7 @@ export function createDefaultSave() {
       eurekaCoin: 0,
     },
     progress: {
-      unlocked_chapters: ['ARCHIMEDES_YOUTH'],
+      unlocked_chapters: defaultUnlockedChapterIds(),
       completed_chapters: [],
       practice_unlocked: [],
       claimed_rewards: [],
@@ -49,6 +50,14 @@ export function loadSave() {
       progress: {
         ...base.progress,
         ...data.progress,
+        unlocked_chapters: [
+          ...new Set([
+            ...(Array.isArray(data.progress?.unlocked_chapters)
+              ? data.progress.unlocked_chapters
+              : []),
+            ...defaultUnlockedChapterIds(),
+          ]),
+        ],
         claimed_rewards: Array.isArray(data.progress?.claimed_rewards)
           ? data.progress.claimed_rewards
           : [],
