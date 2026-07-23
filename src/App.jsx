@@ -277,7 +277,7 @@ export default function App() {
       ),
     )
   })
-  const [screen, setScreen] = useState('boot') // boot | lobby | chapter | practice | crash | archive
+  const [screen, setScreen] = useState('boot') // boot | lobby | chapter | practice | crash | archive | settlement
   const [nodeIndex, setNodeIndex] = useState(0)
   const [lineIndex, setLineIndex] = useState(0)
   const [phase, setPhase] = useState('lines') // lines | choices | quiz | analysis | crash
@@ -291,8 +291,9 @@ export default function App() {
   const [flavorLines, setFlavorLines] = useState([])
   const [lineHistory, setLineHistory] = useState([])
   const [eurekaToast, setEurekaToast] = useState(null) // { amount, key }
-  const [endingToast, setEndingToast] = useState(null) // unlock banner
+  const [endingToast, setEndingToast] = useState(null) // unlock banner (legacy / optional)
   const [knowledgeToast, setKnowledgeToast] = useState(null) // chapter knowledge card
+  const [settlement, setSettlement] = useState(null) // chapter clear summary
   const [coinPulse, setCoinPulse] = useState(false)
   const [archiveChapterId, setArchiveChapterId] = useState(null)
   const [selectedChapterId, setSelectedChapterId] = useState('ARCHIMEDES_YOUTH')
@@ -382,6 +383,7 @@ export default function App() {
   }
 
   function goLobby() {
+    setSettlement(null)
     setScreen('lobby')
     setPhase('lines')
     setAnalysis(null)
@@ -392,6 +394,61 @@ export default function App() {
     setNodeIndex(0)
     setLineIndex(0)
     setQuizInput('')
+    window.scrollTo(0, 0)
+  }
+
+  function finishChapter(fromSave = save) {
+    const chapterId = fromSave.current_session.chapter_id
+    const ch = getChapter(chapterId)
+    const endingId =
+      fromSave.current_session?.story?.chosenEndingId || null
+    const { save: completed, granted, endingUnlock } = completeChapter(
+      fromSave,
+      chapterId,
+      ch?.rewards,
+      { endingId, endings: ch?.endings || [] },
+    )
+    let next = completed
+    const unlock = nextUnlockFor(chapterId)
+    if (unlock) next = unlockChapter(next, unlock)
+    const endingDef = ch?.endings?.find((e) => e.id === endingId)
+    const nextCh = unlock ? getChapter(unlock) : null
+
+    if (endingUnlock?.isNew && endingUnlock.bonusEureka > 0) {
+      showEurekaGain(endingUnlock.bonusEureka)
+    } else if (
+      granted?.eurekaCoin &&
+      !(Number(fromSave.current_session?.eurekaPending) > 0)
+    ) {
+      showEurekaGain(granted.eurekaCoin)
+    }
+
+    setSettlement({
+      chapterTitle: ch?.title || chapterId,
+      endingTitle: endingUnlock?.title || endingDef?.title || null,
+      badgeIcon: endingUnlock?.badgeIcon || endingDef?.badgeIcon || '🏆',
+      isNewEnding: Boolean(endingUnlock?.isNew),
+      unlockedCount:
+        endingUnlock?.unlockedCount ??
+        (next.progress?.unlockedEndings?.[chapterId] || []).length,
+      totalEndings: endingUnlock?.totalEndings || ch?.endings?.length || 0,
+      knowledgeLine: ch?.knowledgeCard?.line || null,
+      unlockedNextTitle: nextCh?.title || null,
+      unlockTeaser: unlock ? ch?.unlockTeaser || null : null,
+    })
+    setEndingToast(null)
+    setKnowledgeToast(null)
+    setSave(next)
+    setScreen('settlement')
+    setPhase('lines')
+    setJumpTarget(null)
+    setFlavorLines([])
+    setLineHistory([])
+    setNodeIndex(0)
+    setLineIndex(0)
+    setQuizInput('')
+    setAnalysis(null)
+    setInsightNote(null)
     window.scrollTo(0, 0)
   }
 
@@ -567,55 +624,6 @@ export default function App() {
       return
     }
     enterNode(nextIdx, fromSave)
-  }
-
-  function finishChapter(fromSave = save) {
-    const chapterId = fromSave.current_session.chapter_id
-    const ch = getChapter(chapterId)
-    const endingId =
-      fromSave.current_session?.story?.chosenEndingId || null
-    const { save: completed, granted, endingUnlock } = completeChapter(
-      fromSave,
-      chapterId,
-      ch?.rewards,
-      { endingId, endings: ch?.endings || [] },
-    )
-    let next = completed
-    const unlock = nextUnlockFor(chapterId)
-    if (unlock) next = unlockChapter(next, unlock)
-    if (endingUnlock?.isNew) {
-      setEndingToast({
-        key: Date.now(),
-        ...endingUnlock,
-      })
-      if (endingUnlock.bonusEureka > 0) {
-        showEurekaGain(endingUnlock.bonusEureka)
-      }
-    } else if (
-      granted?.eurekaCoin &&
-      !(Number(fromSave.current_session?.eurekaPending) > 0)
-    ) {
-      showEurekaGain(granted.eurekaCoin)
-    }
-    if (ch?.knowledgeCard?.line) {
-      setKnowledgeToast({
-        key: Date.now(),
-        title: ch.title,
-        line: ch.knowledgeCard.line,
-      })
-    }
-    setSave(next)
-    setScreen('lobby')
-    setPhase('lines')
-    setJumpTarget(null)
-    setFlavorLines([])
-    setLineHistory([])
-    setNodeIndex(0)
-    setLineIndex(0)
-    setQuizInput('')
-    setAnalysis(null)
-    setInsightNote(null)
-    window.scrollTo(0, 0)
   }
 
   function playFlavor(lines, nextSave, jumpId = null) {
@@ -877,6 +885,10 @@ export default function App() {
       goLobby()
       return
     }
+    if (screen === 'settlement') {
+      goLobby()
+      return
+    }
     if (screen === 'crash') {
       doCrashRestore()
       return
@@ -957,6 +969,68 @@ export default function App() {
           <button type="button" className="nv-btn primary" onClick={doCrashRestore}>
             還原檢查點
           </button>
+        </div>
+      </div>
+    )
+  }
+
+  if (screen === 'settlement' && settlement) {
+    return (
+      <div className="nv-root">
+        {eurekaToast ? (
+          <div key={eurekaToast.key} className="nv-eureka-toast">
+            獲得 Eureka 幣 +{eurekaToast.amount}
+          </div>
+        ) : null}
+        <div className="nv-crt">
+          <div className="nv-scanlines" aria-hidden />
+          <header className="nv-header">
+            <div className="nv-header-titles">
+              <div>{PRODUCT_NAME_ZH}</div>
+              <div className="nv-muted">章節結算</div>
+            </div>
+            <div className={`nv-coin-bar${coinPulse ? ' pulse' : ''}`}>
+              🪙 Eureka 幣：{eurekaCoin}
+            </div>
+          </header>
+          <PanelBox>
+            <div className="nv-settlement">
+              <div className="nv-settlement-kicker">章節完成</div>
+              <div className="nv-settlement-title">【{settlement.chapterTitle}】</div>
+              {settlement.endingTitle ? (
+                <div className="nv-settlement-ending">
+                  {settlement.badgeIcon}{' '}
+                  {settlement.isNewEnding ? '新結局' : '結局'}：【
+                  {settlement.endingTitle}】
+                </div>
+              ) : null}
+              {settlement.totalEndings ? (
+                <div className="nv-settlement-meta">
+                  結局進度：{settlement.unlockedCount}/{settlement.totalEndings}
+                </div>
+              ) : null}
+              {settlement.knowledgeLine ? (
+                <div className="nv-settlement-knowledge">
+                  📒 {settlement.knowledgeLine}
+                </div>
+              ) : null}
+              {settlement.unlockedNextTitle ? (
+                <div className="nv-settlement-unlock">
+                  已解鎖：{settlement.unlockedNextTitle}
+                  {settlement.unlockTeaser ? (
+                    <div className="nv-settlement-teaser">
+                      {settlement.unlockTeaser}
+                    </div>
+                  ) : null}
+                </div>
+              ) : null}
+            </div>
+          </PanelBox>
+          <div className="nv-row">
+            <button type="button" className="nv-btn primary" onClick={goLobby}>
+              回大廳 _
+            </button>
+          </div>
         </div>
       </div>
     )

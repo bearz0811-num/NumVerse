@@ -281,6 +281,50 @@ body,
   color: #9ec1ff;
 }
 
+.nv-settlement {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  text-align: left;
+}
+
+.nv-settlement-kicker {
+  color: #ffd54a;
+  font-size: var(--nv-fs-meta);
+  letter-spacing: 0.06em;
+}
+
+.nv-settlement-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.nv-settlement-ending {
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.nv-settlement-meta,
+.nv-settlement-teaser {
+  color: var(--nv-fg-dim);
+  font-size: var(--nv-fs-meta);
+  line-height: 1.45;
+}
+
+.nv-settlement-knowledge {
+  color: #9ec1ff;
+  font-size: var(--nv-fs-meta);
+  line-height: 1.45;
+  margin-top: 0.25rem;
+}
+
+.nv-settlement-unlock {
+  margin-top: 0.35rem;
+  padding-top: 0.45rem;
+  border-top: 1px dashed var(--nv-fg-dim);
+  line-height: 1.45;
+}
+
 .nv-chapter-card {
   margin: 0.75rem 0 1rem;
   padding: 0.85rem 1rem;
