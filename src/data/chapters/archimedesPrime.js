@@ -21,6 +21,8 @@ export const archimedesPrime = {
   knowledgeCard: {
     line: '本章練到：畢氏定理、乘法公式、因式分解、根式｜課綱：八上・平方根與畢氏／乘法公式；八下・因式分解',
   },
+  /** 解鎖下一章時結算屏一句預告 */
+  unlockTeaser: '下一站：暮年書房沙盤——弦、圓心角、弧與圓錐展開；還有「不要碰我的圓」。',
   endings: [
     {
       id: 'ending_cold',

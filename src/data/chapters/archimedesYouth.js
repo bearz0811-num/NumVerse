@@ -21,6 +21,8 @@ export const archimedesYouth = {
   knowledgeCard: {
     line: '本章練到：一元一次方程式應用｜課綱：七下・一元一次方程式',
   },
+  /** 解鎖下一章時結算屏一句預告 */
+  unlockTeaser: '下一站：敘拉古城牆——投石測距、起重機槓桿，畢氏與防衛機械登場。',
   endings: [
     {
       id: 'ending_cold',
