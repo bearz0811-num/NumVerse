@@ -325,6 +325,18 @@ body,
   line-height: 1.45;
 }
 
+.nv-skip-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.nv-skip-hint {
+  font-size: var(--nv-fs-meta);
+  max-width: 18rem;
+  line-height: 1.35;
+}
+
 .nv-chapter-card {
   margin: 0.75rem 0 1rem;
   padding: 0.85rem 1rem;

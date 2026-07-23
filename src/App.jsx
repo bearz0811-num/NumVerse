@@ -1149,15 +1149,20 @@ export default function App() {
                 {hasCompleted ? '再次進入 _' : '進入 _'}
               </button>
               {hasCompleted && canEnter ? (
-                <button
-                  type="button"
-                  className="nv-btn"
-                  onClick={() =>
-                    beginChapter(selectedChapterId, { skipNarrative: true })
-                  }
-                >
-                  跳過已讀敘事 _
-                </button>
+                <div className="nv-skip-block">
+                  <button
+                    type="button"
+                    className="nv-btn"
+                    onClick={() =>
+                      beginChapter(selectedChapterId, { skipNarrative: true })
+                    }
+                  >
+                    跳過已讀敘事 _
+                  </button>
+                  <div className="nv-muted nv-skip-hint">
+                    蒐另一結局｜約 10–15 分鐘（答題與哲學仍要玩）
+                  </div>
+                </div>
               ) : null}
               <button
                 type="button"
