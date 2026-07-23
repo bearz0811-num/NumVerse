@@ -2,6 +2,7 @@ import { ERAS, MATHEMATICIANS } from '../../lib/numverse/constants'
 import { archimedesElder } from './archimedesElder'
 import { archimedesPrime } from './archimedesPrime'
 import { archimedesYouth } from './archimedesYouth'
+import { galileoPrime } from './galileoPrime'
 import { galileoYouth } from './galileoYouth'
 
 /** Playable chapter content. */
@@ -10,6 +11,7 @@ export const chaptersById = {
   ARCHIMEDES_PRIME: archimedesPrime,
   ARCHIMEDES_ELDER: archimedesElder,
   GALILEO_YOUTH: galileoYouth,
+  GALILEO_PRIME: galileoPrime,
 }
 
 /** 預設解鎖：所有已有內容的青年章 */

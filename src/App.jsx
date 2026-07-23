@@ -463,6 +463,10 @@ export default function App() {
       const ye = save.progress?.lastEndingId?.ARCHIMEDES_YOUTH
       if (ye) seedStory.youth_ending = ye
     }
+    if (chapterId === 'GALILEO_PRIME') {
+      const ye = save.progress?.lastEndingId?.GALILEO_YOUTH
+      if (ye) seedStory.youth_ending = ye
+    }
     if (chapterId === 'ARCHIMEDES_ELDER') {
       const ye = save.progress?.lastEndingId?.ARCHIMEDES_YOUTH
       const pe = save.progress?.lastEndingId?.ARCHIMEDES_PRIME
@@ -1246,7 +1250,7 @@ export default function App() {
             })}
           </div>
           <PanelBox>
-            🌌 可玩：阿基米德三章＋伽利略・青年｜全館進度：
+            🌌 可玩：阿基米德三章＋伽利略青／壯｜全館進度：
             {completedCount}/15
             {completedCount >= 15 ? '［終章已開放］' : '（其餘籌備中）'}
           </PanelBox>
