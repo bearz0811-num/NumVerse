@@ -108,7 +108,8 @@ Brief 草稿
 
 - 青年國一／壯年國二／暮年國三；對 `questionBank`＋`KNOWLEDGE_MAP`。
 - 已知坑：國一禁畢氏斜距主考；伽利略壯年禁二次**函數**圖主軸；國二禁韋達當主考。
-- **bankRef 硬查（強制）**：每個 `question.bankRef.id` 必須在 `questionBank.json` 存在；印出該題 `knowledgePoint`／`chapter`，與本章該關技能標籤**同大類**（例：分數乘除不可掛一元一次；科學記號不可只對大數題充數若本章考微小數——至少 KP 要是科學記號）。id 不存在或不符＝**靜態未通過**。`note` 須標「DEV對照／非同題」。
+- **bankRef 硬查（強制）**：每個 `question.bankRef.id` 必須在 `questionBank.json` 存在；印出該題 `knowledgePoint`／`chapter`，與本章該關技能標籤**同大類**。id 不存在或不符＝**靜態未通過**。`note` 須標「DEV對照／非同題」。
+- **題型學習（強制）**：寫章前須從題庫同知識點抽 ≥3 題讀問法／答案型態；章內題應像題庫的「生活情境＋求值／讀圖」，禁空降純符號牆（除非該知識點題庫本身以符號為主，如指數律）。
 
 ### F. 用詞與調性
 

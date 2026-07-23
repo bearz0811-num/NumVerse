@@ -479,6 +479,16 @@ export default function App() {
       if (ye) seedStory.youth_ending = ye
       if (pe) seedStory.prime_ending = pe
     }
+    if (chapterId === 'NEWTON_PRIME') {
+      const ye = save.progress?.lastEndingId?.NEWTON_YOUTH
+      if (ye) seedStory.youth_ending = ye
+    }
+    if (chapterId === 'NEWTON_ELDER') {
+      const ye = save.progress?.lastEndingId?.NEWTON_YOUTH
+      const pe = save.progress?.lastEndingId?.NEWTON_PRIME
+      if (ye) seedStory.youth_ending = ye
+      if (pe) seedStory.prime_ending = pe
+    }
     if (Object.keys(seedStory).length) {
       next = updateSession(next, {
         story: { ...(next.current_session?.story || {}), ...seedStory },
@@ -1256,7 +1266,7 @@ export default function App() {
             })}
           </div>
           <PanelBox>
-            🌌 可玩：阿基米德三章＋伽利略三章＋牛頓青年｜全館進度：
+            🌌 可玩：阿基米德三章＋伽利略三章＋牛頓三章｜全館進度：
             {completedCount}/15
             {completedCount >= 15 ? '［終章已開放］' : '（其餘籌備中）'}
           </PanelBox>

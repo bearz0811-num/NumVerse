@@ -5,6 +5,8 @@ import { archimedesYouth } from './archimedesYouth'
 import { galileoElder } from './galileoElder'
 import { galileoPrime } from './galileoPrime'
 import { galileoYouth } from './galileoYouth'
+import { newtonElder } from './newtonElder'
+import { newtonPrime } from './newtonPrime'
 import { newtonYouth } from './newtonYouth'
 
 /** Playable chapter content. */
@@ -16,6 +18,8 @@ export const chaptersById = {
   GALILEO_PRIME: galileoPrime,
   GALILEO_ELDER: galileoElder,
   NEWTON_YOUTH: newtonYouth,
+  NEWTON_PRIME: newtonPrime,
+  NEWTON_ELDER: newtonElder,
 }
 
 /** 預設解鎖：所有已有內容的青年章 */
