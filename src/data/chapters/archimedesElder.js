@@ -1,9 +1,9 @@
 /**
  * 第三章：阿基米德・暮年篇
  * 結構：終端連線 ➜ 承接壯年態度 ➜ 弦心距 ➜ 圓心角 ➜ 弧長
- *       ➜ 球與柱 Eureka ➜ 扇形 ➜「不要碰我的圓」➜ 哲學雙結局
+ *       ➜ 圓錐展開 Eureka ➜ 扇形 ➜「不要碰我的圓」➜ 哲學雙結局
  * Eureka 幣：
- *  1. 幕四球與柱頓悟 (+1)
+ *  1. 幕四圓錐展開頓悟 (+1)
  *  2. 結局一 (+1)
  *  3. 結局二 (+1)
  * 開場態度依 progress.lastEndingId.ARCHIMEDES_PRIME（prime_ending）
@@ -15,7 +15,7 @@ export const archimedesElder = {
   mathematicianId: 'ARCHIMEDES',
   era: 'ELDER',
   title: '阿基米德・暮年',
-  subtitle: '終端暮年 ➜ 沙盤弦距 ➜ 圓心角 ➜ 弧長 ➜ 球柱 Eureka ➜ 扇形 ➜ 不要碰我的圓',
+  subtitle: '終端暮年 ➜ 沙盤弦距 ➜ 圓心角 ➜ 弧長 ➜ 圓錐展開 Eureka ➜ 扇形 ➜ 不要碰我的圓',
   nextChapterId: null,
   rewards: {},
   eurekaMax: 3,
@@ -107,7 +107,7 @@ export const archimedesElder = {
       ],
     },
 
-    // ——— 關卡一：弦心距 ———
+    // ——— 關卡一：弦長（對齊題庫：給弦心距求弦長） ———
     {
       id: 'act1_intro',
       type: 'narrative',
@@ -115,15 +115,15 @@ export const archimedesElder = {
       lines: [
         {
           speaker: 'narrator',
-          text: '沙盤上一個圓，半徑已量成 13 寸；弦畫在圓內，長度 10 寸。阿基米德要知道圓心到這條弦的垂直距離。',
+          text: '沙盤上一個圓，半徑已量成 13 寸；圓心到弦的垂直距離量得 5 寸。阿基米德要知道這條弦有多長。',
         },
         {
           speaker: '阿基米德',
-          text: '「從圓心垂到弦，會把弦切成兩半。半弦、半徑、這段距離——組成一個直角三角形。」',
+          text: '「從圓心垂到弦，會把弦切成兩半。半徑、弦心距、半弦——組成一個直角三角形。」',
         },
         {
           speaker: 'NumNum',
-          text: '「垂徑定理：垂直平分弦。半弦長先求出來，再和半徑配。」',
+          text: '「垂徑定理：垂直平分弦。先求半弦，再加倍就是整弦。」',
         },
       ],
     },
@@ -131,41 +131,44 @@ export const archimedesElder = {
       id: 'problem_act1',
       type: 'problem',
       checkpoint: 'CHECKPOINT_E3_CHORD_PROBLEM',
-      scene: '關卡一・沙盤弦距',
+      scene: '關卡一・沙盤弦長',
       question: {
         stem:
-          '圓的半徑為 13 寸，弦長為 10 寸。從圓心作弦的垂線，求圓心到弦的距離（寸）。',
-        bankRef: { id: null, note: '垂徑定理＋畢氏：半弦 5，d＝√(13²−5²)＝12。' },
+          '圓的半徑為 13 寸，圓心到弦的距離（弦心距）為 5 寸。求弦長（寸）。',
+        bankRef: {
+          id: 1211,
+          note: '仿題庫：r=13、弦心距=5 → 弦長 24（半弦 12）。',
+        },
       },
     },
     {
       id: 'branch_act1',
       type: 'branch',
-      prompt: '選擇求弦心距的思路：',
+      prompt: '選擇求弦長的思路：',
       options: [
         {
           id: 'insight',
-          label: '【Numi 的直覺：對折弦】(靈感 −1)',
-          detail: '先把弦對折成兩半，再想像直角三角形。',
+          label: '【Numi 的直覺：直角拆半】(靈感 −1)',
+          detail: '半徑當斜邊，弦心距當一股，先求半弦再加倍。',
           kind: 'insight',
           story: { chord_method: 'numi' },
           resultLines: [
             {
               speaker: 'Numi',
-              text: '「弦對折！半邊長知道了，再跟半徑組成直角三角形，缺的那一股就是距離！」',
+              text: '「半徑是斜邊、弦心距是一股！半弦先求出來，再乘 2 就是整條弦！」',
             },
           ],
         },
         {
           id: 'algebra',
           label: '【NumNum 的步驟：垂徑＋畢氏】',
-          detail: '垂線平分弦，再用畢氏定理求另一股。',
+          detail: '垂線平分弦，用畢氏求半弦後再×2。',
           kind: 'solve',
           story: { chord_method: 'numnum' },
           resultLines: [
             {
               speaker: 'NumNum',
-              text: '「垂線平分弦。半弦與半徑已知，用畢氏求弦心距。」',
+              text: '「垂線平分弦。半弦²＝半徑²−弦心距²，再把半弦加倍。」',
             },
           ],
         },
@@ -175,22 +178,21 @@ export const archimedesElder = {
       id: 'quiz_act1',
       type: 'quiz',
       checkpoint: 'CHECKPOINT_E3_CHORD_QUIZ',
-      scene: '關卡一・沙盤弦距',
-      setup: [{ speaker: 'SYS', text: '請輸入圓心到弦的距離（寸）：' }],
+      scene: '關卡一・沙盤弦長',
+      setup: [{ speaker: 'SYS', text: '請輸入弦長（寸）：' }],
       question: {
         answerType: 'number',
-        stem:
-          '圓半徑 13 寸、弦長 10 寸，求圓心到弦的距離（寸）。',
-        answer: '12',
-        bankRef: { id: null, note: '答案：12' },
+        stem: '圓半徑 13 寸、弦心距 5 寸，求弦長（寸）。',
+        answer: '24',
+        bankRef: { id: 1211, note: '答案：24' },
       },
       hint: {
         speaker: 'NumNum',
-        text: '垂線會平分弦。半弦長、半徑、弦心距組成直角三角形，缺的那一股用畢氏求。',
+        text: '垂線會平分弦。半徑、弦心距、半弦組成直角三角形；先求半弦，再加倍。',
       },
       analysis: {
         speaker: '姐姐',
-        text: '「先求半弦長，再和半徑配成直角三角形。別把整段弦長直接當直角邊。」',
+        text: '「先用畢氏求半弦，再乘 2。別把弦心距直接當成弦長，也別忘了加倍。」',
       },
     },
     {
@@ -199,7 +201,7 @@ export const archimedesElder = {
       lines: [
         {
           speaker: 'narrator',
-          text: '阿基米德在沙上點出垂足，距離與計算吻合。燭火晃了一下。',
+          text: '阿基米德在沙上標出弦的兩端，長度與計算吻合。燭火晃了一下。',
         },
         {
           speaker: '阿基米德',
@@ -236,7 +238,7 @@ export const archimedesElder = {
       question: {
         stem:
           '一個圓被均勻分成六等份。求每一等份所對的圓心角（度）。',
-        bankRef: { id: null, note: '360÷6＝60。' },
+        bankRef: { id: 342, note: '仿題庫：圓等分求圓心角（#342 為 8 等分→45；本題 6 等分→60）。' },
       },
     },
     {
@@ -282,7 +284,7 @@ export const archimedesElder = {
         answerType: 'number',
         stem: '圓均勻六等分，求每一等份的圓心角（度）。',
         answer: '60',
-        bankRef: { id: null, note: '答案：60' },
+        bankRef: { id: 342, note: '答案：60' },
       },
       hint: {
         speaker: 'NumNum',
@@ -308,7 +310,7 @@ export const archimedesElder = {
       ],
     },
 
-    // ——— 關卡三：弧長 ———
+    // ——— 關卡三：弧長（保留 π，對齊題庫） ———
     {
       id: 'act3_intro',
       type: 'narrative',
@@ -316,15 +318,15 @@ export const archimedesElder = {
       lines: [
         {
           speaker: 'narrator',
-          text: '沙盤旁的木牌寫著：「圓周率暫以 3 計」。阿基米德指著半徑 8 寸、圓心角 90 度的那一段弧。',
+          text: '沙盤旁的木牌寫著：「弧長請保留 π」。阿基米德指著半徑 12 寸、圓心角 90 度的那一段弧。',
         },
         {
           speaker: '阿基米德',
-          text: '「弧長佔整圓周的比例，等於圓心角佔整圓的比例。先求比例，再乘圓周。」',
+          text: '「弧長佔整圓周的比例，等於圓心角佔整圓的比例。答案寫成 kπ，我要那個 k。」',
         },
         {
           speaker: 'NumNum',
-          text: '「圓周＝直徑×圓周率。這題圓周率已指定，照牌上的數來算。」',
+          text: '「圓周＝2×半徑×π。先乘角度比例，再讀出 π 前面的係數。」',
         },
       ],
     },
@@ -335,8 +337,11 @@ export const archimedesElder = {
       scene: '關卡三・弧長逼近',
       question: {
         stem:
-          '圓的半徑為 8 寸，某弧的圓心角為 90 度。圓周率以 3 計算，求該弧長（寸）。',
-        bankRef: { id: null, note: '弧長＝(90/360)×2×3×8＝12。' },
+          '圓的半徑為 12 寸，某弧的圓心角為 90 度。弧長寫成 kπ，求 k。',
+        bankRef: {
+          id: 343,
+          note: '仿題庫保留 π：弧長＝(90/360)×2π×12＝6π → k＝6。',
+        },
       },
     },
     {
@@ -353,20 +358,20 @@ export const archimedesElder = {
           resultLines: [
             {
               speaker: 'Numi',
-              text: '「角是整圓的幾分之幾，弧就是圓周的同樣幾分之幾！圓周用半徑與圓周率算。」',
+              text: '「角是整圓的幾分之幾，弧就是圓周的同樣幾分之幾！最後看 π 前面的數字。」',
             },
           ],
         },
         {
           id: 'algebra',
           label: '【NumNum 的公式：比例×圓周】',
-          detail: '用圓心角比例乘上整圓周長。',
+          detail: '用圓心角比例乘上整圓周長，再讀 k。',
           kind: 'solve',
           story: { arc_method: 'numnum' },
           resultLines: [
             {
               speaker: 'NumNum',
-              text: '「弧長＝（圓心角／360）×圓周。圓周＝2×半徑×圓周率。」',
+              text: '「弧長＝（圓心角／360）×2πr。化成 kπ 後，k 就是係數。」',
             },
           ],
         },
@@ -377,21 +382,20 @@ export const archimedesElder = {
       type: 'quiz',
       checkpoint: 'CHECKPOINT_E5_ARC_QUIZ',
       scene: '關卡三・弧長逼近',
-      setup: [{ speaker: 'SYS', text: '圓周率以 3 計。請輸入弧長（寸）：' }],
+      setup: [{ speaker: 'SYS', text: '請輸入 k（弧長＝kπ）：' }],
       question: {
         answerType: 'number',
-        stem:
-          '半徑 8 寸、圓心角 90 度，圓周率以 3 計算，求弧長（寸）。',
-        answer: '12',
-        bankRef: { id: null, note: '答案：12' },
+        stem: '半徑 12 寸、圓心角 90 度，弧長＝kπ，求 k。',
+        answer: '6',
+        bankRef: { id: 343, note: '答案：6（弧長＝6π）' },
       },
       hint: {
         speaker: 'NumNum',
-        text: '弧長佔圓周的比例，等於圓心角佔 360 度的比例。圓周＝2×半徑×圓周率。',
+        text: '弧長佔圓周的比例，等於圓心角佔 360 度的比例。圓周＝2×半徑×π；求的是 π 前面的係數。',
       },
       analysis: {
         speaker: '姐姐',
-        text: '「先確認圓心角是整圓的幾分之幾，再乘圓周。圓周率用題目指定的值，別自己換成別的。」',
+        text: '「先確認圓心角是整圓的幾分之幾，再乘 2πr。問的是 k，不是整段帶 π 的式子。」',
       },
     },
     {
@@ -400,146 +404,153 @@ export const archimedesElder = {
       lines: [
         {
           speaker: 'narrator',
-          text: '弧長寫上木牌。阿基米德擦擦手：「圓在平面上夠了。我更在意——球，能裝進多大的圓柱裡。」',
+          text: '弧長的 k 寫上木牌。阿基米德擦擦手：「圓在平面上夠了。我更在意——立體模型的側面，展開後怎麼對回底面。」',
         },
         {
           speaker: 'Numi',
-          text: '「球！圓柱！這聽起來像甜點疊疊樂——我是說，像很重要的 Eureka 前兆！」',
+          text: '「展開圖！立體！這聽起來像甜點包裝紙——我是說，像很重要的 Eureka 前兆！」',
         },
       ],
     },
 
-    // ——— 關卡四：球與柱（Eureka） ———
+    // ——— 關卡四：圓錐側面展開（Eureka；對齊題庫立體／扇形展開） ———
     {
       id: 'act4_intro',
       type: 'narrative',
-      checkpoint: 'CHECKPOINT_E6_SPHERE',
+      checkpoint: 'CHECKPOINT_E6_CONE',
       lines: [
         {
           speaker: 'narrator',
-          text: '桌上放著一個木製圓柱模型，高度恰好等於底面直徑；旁白還有一顆能剛好塞進柱內的球。',
+          text: '桌上多了一個木製直圓錐。阿基米德把它的側面沿著一條母線剪開，攤成沙盤上的扇形——扇形半徑就是母線長。',
         },
         {
           speaker: '阿基米德',
-          text: '「外切圓柱——球貼住上下底與側面。我確信：球的體積，是這個圓柱體積的固定比例。」',
+          text: '「展開後，扇形的弧要能對回底面那一圈。母線 15 寸、圓心角 216 度——底面半徑是多少？」',
         },
         {
           speaker: '姐姐',
-          text: '「先確定比例對不對，再把圓柱的體積換成球的體積。」',
+          text: '「先想清楚展開時『哪條線對哪條線』，再動手算。」',
+        },
+        {
+          speaker: 'narrator',
+          text: '（他隨口提過球與柱的體積也曾讓他著迷——但那不在今天要驗算的沙盤上。）',
         },
       ],
     },
     {
       id: 'problem_act4',
       type: 'problem',
-      checkpoint: 'CHECKPOINT_E6_SPHERE_PROBLEM',
-      scene: '關卡四・球與柱',
+      checkpoint: 'CHECKPOINT_E6_CONE_PROBLEM',
+      scene: '關卡四・圓錐展開',
       question: {
         stem:
-          '球與其外切圓柱（高＝球的直徑）體積成固定比。先選出正確比例；若圓柱體積為 45，求球的體積。',
-        bankRef: { id: null, note: '球：柱＝2:3；柱 45 → 球 30。' },
+          '一直圓錐的側面展開圖是半徑 15 寸、圓心角 216 度的扇形。求此圓錐的底面圓半徑（寸）。',
+        bankRef: {
+          id: 346,
+          note: '仿題庫：扇形展開求圓錐底半徑；(216/360)×2π×15＝2πr → r＝9。',
+        },
       },
     },
     {
       id: 'branch_act4',
       type: 'branch',
-      prompt: '選擇處理球與柱的思路：',
+      prompt: '選擇處理圓錐展開的思路：',
       options: [
         {
           id: 'insight',
-          label: '【Numi 的直覺：誰裝得比較滿】(靈感 −1)',
-          detail: '想像柱裡的空間，球會留下上下一圈空隙。',
+          label: '【Numi 的直覺：弧邊貼回圓】(靈感 −1)',
+          detail: '想像把扇形的弧重新捲成底面那一圈。',
           kind: 'insight',
-          story: { sphere_method: 'numi' },
+          story: { cone_method: 'numi' },
           resultLines: [
             {
               speaker: 'Numi',
-              text: '「球塞進柱子會留下空隙，所以球比較『瘦』一點——比例不是一半一半那麼隨便猜，要對公式！」',
+              text: '「扇形外面那條弧，捲起來就是底面圓周！弧多長，底面圓就多長。」',
             },
           ],
         },
         {
           id: 'algebra',
-          label: '【NumNum 的步驟：先比例、再乘】',
-          detail: '先確認球佔柱的幾分之幾，再乘圓柱體積。',
+          label: '【NumNum 的步驟：弧長對底周】',
+          detail: '展開後，扇形弧長對應底面圓周，再求底半徑。',
           kind: 'solve',
-          story: { sphere_method: 'numnum' },
+          story: { cone_method: 'numnum' },
           resultLines: [
             {
               speaker: 'NumNum',
-              text: '「外切時球體積是圓柱的三分之二。先鎖定比例，再代入圓柱體積。」',
+              text: '「弧長要對上底面周長。用圓心角比例算出弧長後，就能回推底半徑。」',
             },
           ],
         },
       ],
     },
     {
-      id: 'quiz_act4_ratio',
+      id: 'quiz_act4_link',
       type: 'quiz',
-      checkpoint: 'CHECKPOINT_E6_SPHERE_RATIO',
-      scene: '關卡四・球與柱',
-      setup: [{ speaker: 'SYS', text: '第一步：選出球體積：圓柱體積的正確比。' }],
+      checkpoint: 'CHECKPOINT_E6_CONE_LINK',
+      scene: '關卡四・圓錐展開',
+      setup: [{ speaker: 'SYS', text: '第一步：選出展開時正確的對應關係。' }],
       question: {
         answerType: 'choice',
-        stem:
-          '球與其外切圓柱（高＝球的直徑）的體積比（球：柱）為？',
+        stem: '直圓錐側面展開成扇形時，下列哪一項對應正確？',
         answer: 'B',
         options: [
-          { letter: 'A', text: '1：2' },
-          { letter: 'B', text: '2：3' },
-          { letter: 'C', text: '3：4' },
-          { letter: 'D', text: '1：3' },
+          { letter: 'A', text: '扇形面積＝底面圓面積' },
+          { letter: 'B', text: '扇形弧長＝底面圓周長' },
+          { letter: 'C', text: '扇形圓心角＝底面圓心角' },
+          { letter: 'D', text: '扇形半徑＝底面圓半徑' },
         ],
-        bankRef: { id: null, note: '正確：B＝2：3' },
+        bankRef: { id: 346, note: '正確：B＝弧長對應底周' },
       },
       hint: {
         speaker: 'NumNum',
-        text: '外切圓柱的高等於球的直徑。球體積對這個圓柱體積，是一個固定的簡單比。',
+        text: '展開時，母線變成扇形半徑；底面那一圈圓周，對應扇形最外面的弧。',
       },
       analysis: {
         speaker: '姐姐',
-        text: '「別用『看起來半滿』去猜。外切時球與柱有固定比，對一下選項裡哪一個是課綱會記的那個。」',
+        text: '「別把面積或角度直接劃等號。捲回去時，是『弧』對上『底面圓周』。」',
       },
     },
     {
       id: 'quiz_act4',
       type: 'quiz',
-      checkpoint: 'CHECKPOINT_E6_SPHERE_QUIZ',
-      scene: '關卡四・球與柱',
+      checkpoint: 'CHECKPOINT_E6_CONE_QUIZ',
+      scene: '關卡四・圓錐展開',
       setup: [
         {
           speaker: 'SYS',
-          text: '比例確認：球：柱＝2：3。第二步：圓柱體積為 45，求球的體積。',
+          text: '對應確認：弧長＝底面周長。第二步：母線 15 寸、圓心角 216 度，求底面半徑（寸）。',
         },
       ],
       question: {
         answerType: 'number',
-        stem: '球：柱＝2：3。圓柱體積為 45，求球的體積。',
-        answer: '30',
-        bankRef: { id: null, note: '答案：30' },
+        stem:
+          '直圓錐側面展開為半徑 15 寸、圓心角 216 度的扇形，求底面圓半徑（寸）。',
+        answer: '9',
+        bankRef: { id: 346, note: '答案：9' },
       },
       hint: {
         speaker: 'NumNum',
-        text: '球是柱的三分之二。用圓柱體積乘上這個比例。',
+        text: '用圓心角比例算出扇形弧長，再令它等於底面周長，回推半徑。',
       },
       analysis: {
         speaker: 'NumNum',
-        text: '「球佔柱的三分之二。用乘法求球，別把 2 和 3 加減錯邊。」',
+        text: '「弧長用圓心角比例去算，再對上底面周長。別把母線直接當成底半徑。」',
       },
     },
     {
       id: 'act4_outro',
       type: 'narrative',
-      checkpoint: 'CHECKPOINT_E6_SPHERE_OUTRO',
+      checkpoint: 'CHECKPOINT_E6_CONE_OUTRO',
       rewards: { eurekaCoin: 1 },
       lines: [
         {
           speaker: 'narrator',
-          text: '木球與圓柱並置。比例對上的瞬間，書房裡像有一道很淡的暖黃光掠過沙盤——不夠刺眼，卻很清楚。',
+          text: '扇形弧長與底面圓周對上的瞬間，書房裡掠過一道很淡的暖黃光——不夠刺眼，卻很清楚。',
         },
         {
           speaker: '阿基米德',
-          text: '「……就是這個。球是柱的三分之二。我想把這件事留給以後所有畫圓的人。」',
+          text: '「……展開與立體，是同一件事的兩面。我想把這種對應留給以後所有做模型的人。」',
         },
         {
           speaker: 'Numi',
@@ -547,11 +558,11 @@ export const archimedesElder = {
         },
         {
           speaker: 'NumNum',
-          text: '「收斂一點。還有扇形沒算完。」',
+          text: '「收斂一點。還有平面上的扇形面積沒算完。」',
         },
         {
           speaker: 'SYS',
-          text: '★ 球與柱關係頓悟！獲得【Eureka 幣 × 1】！',
+          text: '★ 圓錐展開對應頓悟！獲得【Eureka 幣 × 1】！',
         },
       ],
     },
@@ -584,7 +595,10 @@ export const archimedesElder = {
       question: {
         stem:
           '扇形半徑為 6，圓心角為 60 度。面積寫成 kπ，求 k。',
-        bankRef: { id: null, note: 'k＝(60/360)×36＝6。' },
+        bankRef: {
+          id: 348,
+          note: '仿題庫扇形面積比例骨架；本題 (60/360)×π×36＝6π → k＝6。',
+        },
       },
     },
     {
@@ -630,7 +644,7 @@ export const archimedesElder = {
         answerType: 'number',
         stem: '扇形半徑 6、圓心角 60 度，面積＝kπ，求 k。',
         answer: '6',
-        bankRef: { id: null, note: '答案：6' },
+        bankRef: { id: 348, note: '答案：6' },
       },
       hint: {
         speaker: 'NumNum',
@@ -702,7 +716,7 @@ export const archimedesElder = {
       id: 'philosophy_finale',
       type: 'philosophy',
       prompt:
-        '亂世書房。球與柱的比例已寫下。阿基米德問你們：這些證明，要以什麼方式留下？',
+        '亂世書房。圓錐展開與扇形都已寫下。阿基米德問你們：這些證明，要以什麼方式留下？',
       note: '重大哲學抉擇：決定本章結局。',
       lines: [
         {
@@ -761,7 +775,7 @@ export const archimedesElder = {
         { speaker: 'SYS', text: '章節結束 — 結局一：【圓上的永恆刻痕】' },
         {
           speaker: 'narrator',
-          text: '證明被謄進城邦能保存的冊頁：弦、角、弧、球與柱。沙盤可以掃掉，式子卻留在公共傳統裡。',
+          text: '證明被謄進城邦能保存的冊頁：弦、角、弧、圓錐展開與扇形。沙盤可以掃掉，式子卻留在公共傳統裡。',
         },
         {
           speaker: 'NumNum',
@@ -785,7 +799,7 @@ export const archimedesElder = {
         { speaker: 'SYS', text: '章節結束 — 結局二：【沙盤傳承】' },
         {
           speaker: 'narrator',
-          text: '他把球與柱的比例縮成學徒背得下的幾句，又另抄一份藏進瓦罐。沙盤邊，有人反覆練習「不要碰我的圓」之前的那幾步。',
+          text: '他把圓錐展開的對應縮成學徒背得下的幾句，又另抄一份藏進瓦罐。沙盤邊，有人反覆練習「不要碰我的圓」之前的那幾步。',
         },
         {
           speaker: 'Numi',

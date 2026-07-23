@@ -138,7 +138,10 @@ export const archimedesPrime = {
       question: {
         stem:
           '投石機觀測：水平距離 6 丈、高差 8 丈，構成直角三角形。求彈道斜向距離（斜邊）為多少丈。',
-        bankRef: { id: null, note: '畢氏定理基本應用。' },
+        bankRef: {
+          id: 849,
+          note: '仿題庫畢氏兩股求斜邊骨架（#849 為 5、12→13；本題 6、8→10）。',
+        },
       },
     },
     {
@@ -193,7 +196,7 @@ export const archimedesPrime = {
         stem:
           '水平 6 丈、高差 8 丈，求直角三角形斜邊 c（丈）。',
         answer: '10',
-        bankRef: { id: null, note: '答案：10' },
+        bankRef: { id: 849, note: '答案：10' },
       },
       hint: {
         speaker: 'NumNum',
@@ -255,7 +258,10 @@ export const archimedesPrime = {
       question: {
         stem:
           '配重箱底面長 (x+2) 寸、寬 (x+5) 寸。先將面積展開為多項式；若今日取 x＝3，求底面積（平方寸）。',
-        bankRef: { id: null, note: '先選展開式，再代入 x＝3。' },
+        bankRef: {
+          id: 736,
+          note: '仿題庫乘法公式展開骨架；本題 (x+2)(x+5)→x²＋7x＋10，再代入。',
+        },
       },
     },
     {
@@ -307,7 +313,7 @@ export const archimedesPrime = {
           { letter: 'C', text: 'x²＋7x' },
           { letter: 'D', text: 'x²＋2x＋5' },
         ],
-        bankRef: { id: null, note: '正確：B＝x²＋7x＋10' },
+        bankRef: { id: 736, note: '正確：B＝x²＋7x＋10' },
       },
       hint: {
         speaker: 'NumNum',
@@ -333,7 +339,7 @@ export const archimedesPrime = {
         answerType: 'number',
         stem: '已知面積＝x²＋7x＋10。當 x＝3 時，底面積為多少平方寸？',
         answer: '40',
-        bankRef: { id: null, note: '答案：40' },
+        bankRef: { id: 736, note: '答案：40' },
       },
       hint: {
         speaker: 'NumNum',
@@ -408,7 +414,10 @@ export const archimedesPrime = {
       question: {
         stem:
           '大輪齒數為 2x²＋6x，小輪為 x²＋3x。化簡 (2x²＋6x)/(x²＋3x)，求傳動比常數。（x≠0 且 x≠−3）',
-        bankRef: { id: null, note: '因式分解後約分求常數比。' },
+        bankRef: {
+          id: 886,
+          note: '仿題庫提公因式骨架；本題 (2x²＋6x)/(x²＋3x) 約分為 2。',
+        },
       },
     },
     {
@@ -460,7 +469,7 @@ export const archimedesPrime = {
           { letter: 'C', text: 'x＋3' },
           { letter: 'D', text: '2(x＋3)' },
         ],
-        bankRef: { id: null, note: '正確：B＝2' },
+        bankRef: { id: 886, note: '正確：B＝2' },
       },
       hint: {
         speaker: 'NumNum',
@@ -518,7 +527,10 @@ export const archimedesPrime = {
       question: {
         stem:
           '觀測斜距（斜邊）13 丈、高差 5 丈，求水平距離（另一股）為多少丈。',
-        bankRef: { id: null, note: '畢氏逆向：已知斜邊與一股求另一股。' },
+        bankRef: {
+          id: 849,
+          note: '仿題庫 5-12-13 骨架；本題已知斜邊 13、一股 5，求另一股 12。',
+        },
       },
     },
     {
@@ -564,7 +576,7 @@ export const archimedesPrime = {
         answerType: 'number',
         stem: '直角三角形斜邊 13 丈、一股 5 丈，求另一股（丈）。',
         answer: '12',
-        bankRef: { id: null, note: '答案：12' },
+        bankRef: { id: 849, note: '答案：12' },
       },
       hint: {
         speaker: 'NumNum',
@@ -618,7 +630,10 @@ export const archimedesPrime = {
       question: {
         stem:
           '兩段繩長為 √18 與 √8。化簡後寫成 a√2 與 b√2，求係數和 a＋b。',
-        bankRef: { id: null, note: '根式化簡後係數相加。' },
+        bankRef: {
+          id: 842,
+          note: '仿題庫 √8、√18 根式骨架；本題化簡後係數和 a＋b＝5。',
+        },
       },
     },
     {
@@ -664,7 +679,7 @@ export const archimedesPrime = {
         answerType: 'number',
         stem: '√18 與 √8 化簡成 a√2、b√2 後，求 a＋b。',
         answer: '5',
-        bankRef: { id: null, note: '答案：5' },
+        bankRef: { id: 842, note: '答案：5' },
       },
       hint: {
         speaker: 'NumNum',
